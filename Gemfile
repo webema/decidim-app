@@ -8,7 +8,7 @@ gem "decidim", "0.26.2"
 # gem "decidim-conferences", "0.26.2"
 # gem "decidim-consultations", "0.26.2"
 # gem "decidim-elections", "0.26.2"
-# gem "decidim-initiatives", "0.26.2"
+gem "decidim-initiatives", "0.26.2"
 # gem "decidim-templates", "0.26.2"
 
 gem "bootsnap", "~> 1.3"
