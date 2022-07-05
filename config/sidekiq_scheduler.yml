@@ -1,7 +1,73 @@
 default: &default
-  # archive_inquiries_trigger:
-  #   class: ArchiveInquiriesTriggerJob
-  #   cron: '0 0 * * * Europe/Berlin'
+  # Remove expired download your data files
+  decidim_delete_download_your_data_files:
+    cron: 0 0 * * *
+    class: InvokeRakeTaskJob
+    args:
+      task: decidim:delete_download_your_data_files
+
+  # Compute metrics
+  decidim_metrics_all:
+    cron: 1 0 * * *
+    class: InvokeRakeTaskJob
+    args:
+      task: decidim:metrics:all
+
+  # Compute open data
+  decidim_open_data_export:
+    cron: 2 0 * * *
+    class: InvokeRakeTaskJob
+    args:
+      task: decidim:open_data:export
+
+  # Delete old registrations forms
+  decidim_meetings_clean_registration_forms:
+    cron: 3 0 * * *
+    class: InvokeRakeTaskJob
+    args:
+      task: decidim_meetings:clean_registration_forms
+
+  # Generate reminders
+  decidim_reminders_all:
+    cron: 4 0 * * *
+    class: InvokeRakeTaskJob
+    args:
+      task: decidim:reminders:all
+
+  # Send notification mail digest daily
+  decidim_mailers_notifications_digest_daily:
+    cron: 5 0 * * *
+    class: InvokeRakeTaskJob
+    args:
+      task: decidim:mailers:notifications_digest_daily
+
+  # Send notification mail digest weekly on saturdays
+  decidim_mailers_notifications_digest_weekly:
+    cron: 5 0 * * 6
+    class: InvokeRakeTaskJob
+    args:
+      task: decidim:mailers:notifications_digest_weekly
+
+  # Tasks for decidim-initiatives
+  # see https://github.com/decidim/decidim/tree/develop/decidim-initiatives#rake-tasks
+
+  decidim_initiatives_check_validating:
+    cron: 10 0 * * *
+    class: InvokeRakeTaskJob
+    args:
+      task: decidim_initiatives:check_validating
+
+  decidim_initiatives_check_published:
+    cron: 20 0 * * *
+    class: InvokeRakeTaskJob
+    args:
+      task: decidim_initiatives:check_published
+
+  decidim_initiatives_notify_progress:
+    cron: 30 0 * * *
+    class: InvokeRakeTaskJob
+    args:
+      task: decidim_initiatives:notify_progress
 
 development:
   <<: *default
