@@ -1,0 +1,13 @@
+default: &default
+  # archive_inquiries_trigger:
+  #   class: ArchiveInquiriesTriggerJob
+  #   cron: '0 0 * * * Europe/Berlin'
+
+development:
+  <<: *default
+
+staging:
+  <<: *default
+
+production:
+  <<: *default
