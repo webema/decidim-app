@@ -30,8 +30,26 @@
 /public/assets
 .byebug_history
 
-# Ignore master key for decrypting credentials and more.
-/config/master.key
+# Ignore secrets
+config/initializers/secret_token.rb
+config/master.key
 
 # Ignore public uploads
 public/uploads
+
+# Ignore dotenv
+.env
+
+# Ignore Byebug command history file
+.byebug_history
+
+# Ignore node_modules
+node_modules/
+
+# Ignore yarn files
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# Ignore precompiled javascript packs
+/public/decidim-packs
