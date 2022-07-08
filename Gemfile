@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
 source 'https://rubygems.org'
 
 ruby RUBY_VERSION
 
-gem 'decidim', '0.26.2'
-# gem 'decidim-conferences', '0.26.2'
-# gem 'decidim-consultations', '0.26.2'
-# gem 'decidim-elections', '0.26.2'
-gem 'decidim-initiatives', '0.26.2'
-# gem 'decidim-templates', '0.26.2'
+DECIDIM_VERSION = '0.26.2'
+
+gem 'decidim', DECIDIM_VERSION
+gem 'decidim-initiatives', DECIDIM_VERSION
 
 gem 'bootsnap', '~> 1.3'
 
@@ -26,7 +26,7 @@ group :development, :test do
   gem 'byebug', '~> 11.0', platform: :mri
 
   gem 'brakeman'
-  gem 'decidim-dev', '0.26.2'
+  gem 'decidim-dev', DECIDIM_VERSION
 end
 
 group :development do

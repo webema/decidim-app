@@ -56,6 +56,31 @@ de:
           global:
             maps_enabled: maps_enabled
 
+      proposals:
+        settings:
+          global:
+            default_sort_order: default_sort_order
+            default_sort_order_options:
+              default: default
+              random: random
+              recent: recent
+              most_endorsed: most_endorsed
+              most_voted: most_voted
+              most_commented: most_commented
+              most_followed: most_followed
+              with_more_authors: with_more_authors
+          step:
+            creation_enabled: creation_enabled
+            default_sort_order: default_sort_order
+            default_sort_order_options:
+              default: default
+              random: random
+              recent: recent
+              most_endorsed: most_endorsed
+              most_voted: most_voted
+              most_commented: most_commented
+              most_followed: most_followed
+              with_more_authors: with_more_authors
 
       debates:
         settings:
