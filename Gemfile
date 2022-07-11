@@ -11,6 +11,8 @@ DECIDIM_VERSION = { github: 'decidim/decidim', branch: 'release/0.26-stable' }.f
 gem 'decidim', DECIDIM_VERSION
 gem 'decidim-initiatives', DECIDIM_VERSION
 
+gem "decidim-decidim_awesome"
+
 gem 'bootsnap', '~> 1.3'
 
 gem 'puma', '>= 5.0.0'
