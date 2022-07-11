@@ -11,7 +11,7 @@ DECIDIM_VERSION = { github: 'decidim/decidim', branch: 'release/0.26-stable' }.f
 gem 'decidim', DECIDIM_VERSION
 gem 'decidim-initiatives', DECIDIM_VERSION
 
-gem "decidim-decidim_awesome"
+gem 'decidim-decidim_awesome'
 
 gem 'bootsnap', '~> 1.3'
 
@@ -23,6 +23,8 @@ gem 'wicked_pdf', '~> 2.1'
 
 gem 'sidekiq'
 gem 'sidekiq-scheduler'
+
+gem 'haml'
 
 group :development, :test do
   gem 'byebug', '~> 11.0', platform: :mri
