@@ -6,11 +6,11 @@ module Ema
     helper Decidim::PaginateHelper
 
     def index
-      @blog_posts = Ema::BlogPost.all.page(params[:page]).per(2)
+      @blog_posts = Ema::BlogPost.all.order(created_at: :desc).page(params[:page]).per(2)
     end
 
     def show
-      # TODO
+      @blog_post = Ema::BlogPost.find(params[:id])
     end
   end
 end

@@ -1,1 +1,13 @@
-%h1 Show
+.wrapper
+  .row
+
+    .card.card--post
+      .card__content
+        .card__header
+          %h2.card__title
+            = @blog_post.title
+
+          .card__author
+            = l(@blog_post.created_at, format: :short)
+
+        = decidim_sanitize_editor(@blog_post.body.html_safe)

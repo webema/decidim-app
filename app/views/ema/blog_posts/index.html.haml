@@ -4,12 +4,16 @@
   .row
 
     - @blog_posts.each do |blog_post|
-      .card
+      .card.card--post
         .card__content
-          %h2.card-title
-            = blog_post.title
+          .card__header
+            = link_to news_path(blog_post), class: 'card__link' do
+              %h2.card__title
+                = blog_post.title
 
-          .ql-editor.ql-reset-decidim
-            = decidim_sanitize_editor(blog_post.body.html_safe)
+            .card__author
+              = l(blog_post.created_at, format: :short)
+
+          = decidim_sanitize_editor(blog_post.body.html_safe)
 
     = decidim_paginate @blog_posts
