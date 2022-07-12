@@ -3,10 +3,11 @@
 module Decidim
   module Admin
     class BlogPostsController < Decidim::Admin::ApplicationController
+      helper Decidim::PaginateHelper
       layout 'decidim/admin/blog_posts'
 
       def index
-        @blog_posts = Ema::BlogPost.all
+        @blog_posts = Ema::BlogPost.all.page(params[:page]).per(2)
       end
 
       def show

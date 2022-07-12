@@ -4,7 +4,7 @@
       %h2.card-title
         = @blog_post.title
     .card-section
-      = @blog_post.body.html_safe
+      = decidim_sanitize_editor(@blog_post.body.html_safe)
 
 .button--double
   = link_to 'Zurück', blog_posts_path, class: 'button'

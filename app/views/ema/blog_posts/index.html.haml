@@ -1,1 +1,15 @@
-%h1 Index
+- provide :meta_title, 'Aktuelles'
+
+.wrapper
+  .row
+
+    - @blog_posts.each do |blog_post|
+      .card
+        .card__content
+          %h2.card-title
+            = blog_post.title
+
+          .ql-editor.ql-reset-decidim
+            = decidim_sanitize_editor(blog_post.body.html_safe)
+
+    = decidim_paginate @blog_posts

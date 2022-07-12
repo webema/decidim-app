@@ -89,6 +89,8 @@ de:
 
     ema:
       menu:
+        blog_posts: Aktuelles
+      admin_menu:
         blog_posts: Blog
 
 
