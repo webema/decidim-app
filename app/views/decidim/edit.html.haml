@@ -1,0 +1,16 @@
+= decidim_form_for(@blog_post, url: blog_post_path(@blog_post), class: 'form') do |f|
+  .card
+    .card__content
+      .card-divider
+        %h2.card-title
+          Blogpost bearbeiten
+
+      .card-section
+        = f.text_field :title
+
+        .field
+          = f.editor :body, lines: 8, toolbar: :full
+
+  .button--double
+    = f.submit 'Blogpost speichern', class: 'button', data: { disable_with: true }
+    = link_to 'Abbrechen', blog_posts_path, class: 'button'

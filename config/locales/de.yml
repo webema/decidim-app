@@ -87,6 +87,10 @@ de:
           step:
             creation_enabled: creation_enabled
 
+    ema:
+      menu:
+        blog_posts: Blog
+
 
   forms:
     length_validator:

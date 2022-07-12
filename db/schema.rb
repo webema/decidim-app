@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_11_105938) do
+ActiveRecord::Schema.define(version: 2022_07_12_081026) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1641,6 +1641,13 @@ ActiveRecord::Schema.define(version: 2022_07_11_105938) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["decidim_organization_id"], name: "index_verifications_csv_census_to_organization"
+  end
+
+  create_table "ema_blog_posts", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "oauth_access_grants", force: :cascade do |t|

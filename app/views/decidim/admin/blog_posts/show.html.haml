@@ -1,1 +1,12 @@
-%h1 Show
+.card
+  .card__content
+    .card-divider
+      %h2.card-title
+        = @blog_post.title
+    .card-section
+      = @blog_post.body.html_safe
+
+.button--double
+  = link_to 'Zurück', blog_posts_path, class: 'button'
+  = link_to 'Bearbeiten', edit_blog_post_path(@blog_post), class: 'button'
+  = button_to 'Löschen', blog_post_path(@blog_post), method: 'delete', data: { confirm: 'dsfdfsdfdsf' }, class: 'button'
