@@ -1,4 +1,4 @@
-= decidim_form_for(@blog_post, url: blog_posts_path, html: { class: 'form' }) do |f|
+= decidim_form_for(@blog_post, url: posts_path, html: { class: 'form' }) do |f|
   .card
     .card__content
       .card-divider
@@ -15,4 +15,4 @@
 
   .button--double
     = f.submit 'Blogpost erstellen', class: 'button', data: { disable_with: true }
-    = link_to 'Abbrechen', blog_posts_path, class: 'button'
+    = link_to 'Abbrechen', posts_path, class: 'button'

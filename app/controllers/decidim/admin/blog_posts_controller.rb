@@ -22,7 +22,7 @@ module Decidim
         @blog_post = blog_posts_for_organization.new(blog_post_params.merge(organization: current_organization))
 
         if @blog_post.save
-          redirect_to blog_post_path(@blog_post)
+          redirect_to post_path(@blog_post)
         else
           render :new, status: :unprocessable_entity
         end
@@ -36,7 +36,7 @@ module Decidim
         @blog_post = blog_posts_for_organization.find(params[:id])
 
         if @blog_post.update(blog_post_params)
-          redirect_to blog_post_path(@blog_post)
+          redirect_to post_path(@blog_post)
         else
           render :edit, status: :unprocessable_entity
         end

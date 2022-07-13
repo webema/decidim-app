@@ -87,6 +87,12 @@ de:
           step:
             creation_enabled: creation_enabled
 
+
+    blog_posts_content_block:
+      content_blocks:
+        highlighted_blog_posts:
+          name: Hervorgehobene Blogeinträge
+
     ema:
       menu:
         blog_posts: Aktuelles
@@ -98,3 +104,4 @@ de:
     length_validator:
       minimum:
         other: other
+

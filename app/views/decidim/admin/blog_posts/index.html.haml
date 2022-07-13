@@ -5,7 +5,7 @@
         Blog
 
         .button--title
-          = link_to 'Neuer Blogpost', new_blog_post_path, class: 'button tiny button--title'
+          = link_to 'Neuer Blogpost', new_post_path, class: 'button tiny button--title'
     .card-section
       %table.table-list
         %thead
@@ -18,12 +18,12 @@
           - @blog_posts.each do |blog_post|
             %tr
               %td
-                = link_to blog_post.title, blog_post_path(blog_post)
+                = link_to blog_post.title, post_path(blog_post)
               %td
                 = l(blog_post.created_at, format: :short)
               %td
-                = icon_link_to 'eye', blog_post_path(blog_post), 'Anzeigen'
-                = icon_link_to 'pencil', edit_blog_post_path(blog_post), 'Bearbeiten'
-                = icon_link_to 'circle-x', blog_post_path(blog_post), 'Löschen', method: :delete, class: 'action-icon--remove', data: { confirm: 'Bist Du sicher' }
+                = icon_link_to 'eye', post_path(blog_post), 'Anzeigen'
+                = icon_link_to 'pencil', edit_post_path(blog_post), 'Bearbeiten'
+                = icon_link_to 'circle-x', post_path(blog_post), 'Löschen', method: :delete, class: 'action-icon--remove', data: { confirm: 'Bist Du sicher' }
 
 = decidim_paginate @blog_posts

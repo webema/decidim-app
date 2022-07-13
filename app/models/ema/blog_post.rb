@@ -7,8 +7,7 @@ module Ema
     include Decidim::HasAttachments
     include Decidim::HasAttachmentCollections
 
-    belongs_to :organization, foreign_key: :decidim_organization_id, class_name: "Decidim::Organization"
-
+    belongs_to :organization, foreign_key: :decidim_organization_id, class_name: 'Decidim::Organization'
 
     validates :title, presence: true
   end
