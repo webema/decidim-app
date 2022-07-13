@@ -7,11 +7,11 @@ module Decidim
       layout 'decidim/admin/blog_posts'
 
       def index
-        @blog_posts = Ema::BlogPost.all.order(created_at: :desc).page(params[:page]).per(2)
+        @blog_posts = blog_posts_for_organization.order(created_at: :desc).page(params[:page]).per(2)
       end
 
       def show
-        @blog_post = Ema::BlogPost.find(params[:id])
+        @blog_post = blog_posts_for_organization.find(params[:id])
       end
 
       def new
@@ -19,7 +19,7 @@ module Decidim
       end
 
       def create
-        @blog_post = Ema::BlogPost.new(blog_post_params)
+        @blog_post = blog_posts_for_organization.new(blog_post_params.merge(organization: current_organization))
 
         if @blog_post.save
           redirect_to blog_post_path(@blog_post)
@@ -29,11 +29,11 @@ module Decidim
       end
 
       def edit
-        @blog_post = Ema::BlogPost.find(params[:id])
+        @blog_post = blog_posts_for_organization.find(params[:id])
       end
 
       def update
-        @blog_post = Ema::BlogPost.find(params[:id])
+        @blog_post = blog_posts_for_organization.find(params[:id])
 
         if @blog_post.update(blog_post_params)
           redirect_to blog_post_path(@blog_post)
@@ -43,7 +43,7 @@ module Decidim
       end
 
       def destroy
-        @blog_post = Ema::BlogPost.find(params[:id])
+        @blog_post = blog_posts_for_organization.find(params[:id])
         @blog_post.destroy!
         redirect_to blog_posts_path
       end
@@ -52,6 +52,10 @@ module Decidim
 
       def blog_post_params
         params.require(:ema_blog_post).permit(:title, :body)
+      end
+
+      def blog_posts_for_organization
+        @blog_posts_for_organization ||= Ema::BlogPost.where(organization: current_organization)
       end
     end
   end

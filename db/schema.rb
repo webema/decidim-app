@@ -1646,8 +1646,10 @@ ActiveRecord::Schema.define(version: 2022_07_12_081026) do
   create_table "ema_blog_posts", force: :cascade do |t|
     t.string "title"
     t.text "body"
+    t.bigint "decidim_organization_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["decidim_organization_id"], name: "index_ema_blog_posts_on_decidim_organization_id"
   end
 
   create_table "oauth_access_grants", force: :cascade do |t|
