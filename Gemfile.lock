@@ -270,8 +270,8 @@ GEM
       parser (>= 2.4)
       smart_properties
     bindex (0.8.1)
-    bootsnap (1.7.5)
-      msgpack (~> 1.0)
+    bootsnap (1.12.0)
+      msgpack (~> 1.2)
     brakeman (5.1.1)
     browser (2.7.1)
     builder (3.2.4)
@@ -493,7 +493,7 @@ GEM
       tomlrb
     mixlib-shellout (3.2.7)
       chef-utils
-    msgpack (1.4.2)
+    msgpack (1.5.3)
     multi_json (1.15.0)
     multi_xml (0.6.0)
     mustache (1.1.1)
@@ -804,7 +804,7 @@ DEPENDENCIES
   wicked_pdf (~> 2.1)
 
 RUBY VERSION
-   ruby 2.7.5p203
+   ruby 3.0.3p157
 
 BUNDLED WITH
    2.3.5

@@ -1,0 +1,125 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: decidim-app-production
+  namespace: decidim
+  labels:
+    app: decidim-app-production
+spec:
+  replicas: 1
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: decidim-app-production
+  template:
+    metadata:
+      labels:
+        app: decidim-app-production
+    spec:
+      volumes:
+      - name: rails-data
+        emptyDir: {}
+      containers:
+      - image: nexus.devops-e.de:8090/ema/decidim-app:latest
+        name: decidim-app-production
+        env:
+        - name: RAILS_ENV
+          value: production
+        envFrom:
+        - configMapRef:
+            name: decidim-app-production-config
+        - secretRef:
+            name: aws-ses
+        - secretRef:
+            name: decidim-app-production-dbconfig
+        imagePullPolicy: Always
+        volumeMounts:
+        - name: rails-data
+          mountPath: /app/public-shared
+        lifecycle:
+          postStart:
+            exec:
+              command: ["/bin/sh", "-c", "cp -r /app/public/* /app/public-shared"]
+        livenessProbe:
+          httpGet:
+            path: /healthcheck
+            port: 3000
+          periodSeconds: 10
+          timeoutSeconds: 2
+        startupProbe:
+          httpGet:
+            path: /healthcheck
+            port: 3000
+          failureThreshold: 30
+          periodSeconds: 10
+        resources: {}
+        terminationMessagePolicy: FallbackToLogsOnError
+      - image: nexus.devops-e.de:8090/ema/rails-http:latest
+        name: decidim-app-nginx
+        env:
+        - name: HTTPS_PROXY_REDIRECT
+          value: "1"
+        - name: NGINX_SERVER_NAME
+          value: decidim.systeme-e.de
+        imagePullPolicy: Always
+        volumeMounts:
+        - name: rails-data
+          mountPath: /app/public
+        resources: {}
+        terminationMessagePolicy: FallbackToLogsOnError
+      hostAliases:
+      - hostnames:
+        - rails
+        ip: 127.0.0.1
+      imagePullSecrets:
+      - name: nexus
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: decidim-app-production-sidekiq-worker
+  namespace: decidim
+  labels:
+    app: decidim-app-production-sidekiq-worker
+spec:
+  replicas: 1
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: decidim-app-production-sidekiq-worker
+  template:
+    metadata:
+      labels:
+        app: decidim-app-production-sidekiq-worker
+    spec:
+      containers:
+      - env:
+        - name: RAILS_ENV
+          value: production
+        envFrom:
+        - configMapRef:
+            name: decidim-app-production-config
+        - secretRef:
+            name: aws-ses
+        - secretRef:
+            name: decidim-app-production-dbconfig
+        - secretRef:
+            name: decidim-app-production-recaptcha
+        image: nexus.devops-e.de:8090/ema/decidim-app:latest
+        command: ["bundle", "exec", "sidekiq"]
+        args: ["-c 5"]
+        imagePullPolicy: Always
+        name: decidim-app-production-sidekiq-worker
+        resources: {}
+        terminationMessagePolicy: FallbackToLogsOnError
+      dnsPolicy: ClusterFirst
+      imagePullSecrets:
+      - name: nexus
