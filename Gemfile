@@ -2,7 +2,7 @@
 
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-source 'https://rubygems.org'
+source 'https://nexus.devops-e.de/repository/rubygems'
 
 ruby RUBY_VERSION
 
@@ -23,6 +23,8 @@ gem 'wicked_pdf', '~> 2.1'
 
 gem 'sidekiq'
 gem 'sidekiq-scheduler'
+
+gem "aws-sdk-s3", require: false
 
 # Hack?
 gem 'rexml', '~> 3.2.5'
