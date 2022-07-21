@@ -584,6 +584,7 @@ GEM
       rack
     rack-test (2.0.2)
       rack (>= 1.3)
+    rack_password (1.3)
     rails (6.0.5)
       actioncable (= 6.0.5)
       actionmailbox (= 6.0.5)
@@ -814,6 +815,7 @@ DEPENDENCIES
   letter_opener_web (~> 1.3)
   listen (~> 3.1)
   puma (>= 5.0.0)
+  rack_password
   rexml (~> 3.2.5)
   sidekiq
   sidekiq-scheduler
@@ -826,4 +828,4 @@ RUBY VERSION
    ruby 2.7.5p203
 
 BUNDLED WITH
-   2.3.13
+   2.3.5
