@@ -20,8 +20,10 @@ data:
   REDIS_URL: redis.redis.svc.cluster.local
   RAILS_LOG_TO_STDOUT: "true"
   DECIDIM_APPLICATION_NAME: Zukunft2030 - Staging
-  DECIDIM_MAILER_SENDER: info@decidim.systeme-e.de
+  DECIDIM_MAILER_SENDER: info@decidim-staging.systeme-e.de
   QUEUE_ADAPTER: sidekiq
+  STORAGE_PROVIDER: s3
+  STORAGE_CDN_HOST: https://decidim-app-ema-staging.fra1.cdn.digitaloceanspaces.com
 metadata:
   name: decidim-app-staging-config
   namespace: decidim

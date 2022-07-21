@@ -24,7 +24,7 @@ spec:
       - name: rails-data
         emptyDir: {}
       containers:
-      - image: nexus.devops-e.de:8090/ema/decidim-app:latest
+      - image: nexus.devops-e.de:8090/ema/decidim-app:staging
         name: decidim-app-staging
         env:
         - name: RAILS_ENV
@@ -32,8 +32,6 @@ spec:
         envFrom:
         - configMapRef:
             name: decidim-app-staging-config
-        - secretRef:
-            name: aws-ses
         - secretRef:
             name: decidim-app-staging-dbconfig
         imagePullPolicy: Always
@@ -45,14 +43,12 @@ spec:
             exec:
               command: ["/bin/sh", "-c", "cp -r /app/public/* /app/public-shared"]
         livenessProbe:
-          httpGet:
-            path: /healthcheck
+          tcpSocket:
             port: 3000
           periodSeconds: 10
           timeoutSeconds: 2
         startupProbe:
-          httpGet:
-            path: /healthcheck
+          tcpSocket:
             port: 3000
           failureThreshold: 30
           periodSeconds: 10
@@ -108,12 +104,8 @@ spec:
         - configMapRef:
             name: decidim-app-staging-config
         - secretRef:
-            name: aws-ses
-        - secretRef:
             name: decidim-app-staging-dbconfig
-        - secretRef:
-            name: decidim-app-staging-recaptcha
-        image: nexus.devops-e.de:8090/ema/decidim-app:latest
+        image: nexus.devops-e.de:8090/ema/decidim-app:staging
         command: ["bundle", "exec", "sidekiq"]
         args: ["-c 5"]
         imagePullPolicy: Always
