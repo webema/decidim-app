@@ -24,9 +24,11 @@ gem 'wicked_pdf', '~> 2.1'
 gem 'sidekiq'
 gem 'sidekiq-scheduler'
 
+# Hack?
+gem 'rexml', '~> 3.2.5'
+
 group :development, :test do
   gem 'byebug', '~> 11.0', platform: :mri
-
   gem 'brakeman'
   gem 'decidim-dev', DECIDIM_VERSION
 end

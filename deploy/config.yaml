@@ -3,8 +3,12 @@ kind: ConfigMap
 data:
   MEMCACHED_HOST: memcached.memcached.svc.cluster.local
   REDIS_URL: redis.redis.svc.cluster.local
-  SECRET_KEY_BASE: be539ada6314748600795b0d3e758fa21ffb5b50db8fc0f41025178e9d26525d196ed968e7cde9db9c711128f9987e4ddcb912eacce3a6c5d32baf01c9ec6eec
   RAILS_LOG_TO_STDOUT: "true"
+  DECIDIM_APPLICATION_NAME: Zukunft2030
+  DECIDIM_MAILER_SENDER: info@decidim.systeme-e.de
+  QUEUE_ADAPTER: sidekiq
+  STORAGE_PROVIDER: s3
+  STORAGE_CDN_HOST: https://decidim-app-ema.fra1.cdn.digitaloceanspaces.com
 metadata:
   name: decidim-app-production-config
   namespace: decidim
@@ -14,8 +18,10 @@ kind: ConfigMap
 data:
   MEMCACHED_HOST: memcached.memcached.svc.cluster.local
   REDIS_URL: redis.redis.svc.cluster.local
-  SECRET_KEY_BASE: be539ada6314748600795b0d3e758fa21ffb5b50db8fc0f41025178e9d26525d196ed968e7cde9db9c711128f9987e4ddcb912eacce3a6c5d32baf01c9ec6eec
   RAILS_LOG_TO_STDOUT: "true"
+  DECIDIM_APPLICATION_NAME: Zukunft2030 - Staging
+  DECIDIM_MAILER_SENDER: info@decidim.systeme-e.de
+  QUEUE_ADAPTER: sidekiq
 metadata:
   name: decidim-app-staging-config
   namespace: decidim
