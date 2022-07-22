@@ -16,7 +16,7 @@ RUN bundle --without="development test"
 
 # Yarn Dependencies
 COPY package.json $APPDIR/
-COPY yarn.lock $APPDIR/
+# COPY yarn.lock $APPDIR/
 
 RUN yarn install
 
