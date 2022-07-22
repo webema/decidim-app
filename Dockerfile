@@ -20,7 +20,7 @@ COPY package.json $APPDIR/
 
 COPY . $APPDIR/
 
-RUN bundle exec rake decidim:webpacker:install
+# RUN bundle exec rake decidim:webpacker:install
 
 RUN RAILS_ENV=production NODE_ENV=production \
   bundle exec rake assets:precompile \
