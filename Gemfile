@@ -6,12 +6,12 @@ source 'https://nexus.devops-e.de/repository/rubygems'
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = { github: 'decidim/decidim', branch: 'release/0.26-stable' }.freeze # '0.26.2'
+DECIDIM_VERSION = { github: 'decidim/decidim', branch: 'release/0.27-stable' }.freeze
 
 gem 'decidim', DECIDIM_VERSION
 gem 'decidim-initiatives', DECIDIM_VERSION
 
-gem "decidim-decidim_awesome"
+# gem "decidim-decidim_awesome"
 
 gem 'bootsnap', '~> 1.3'
 
@@ -23,8 +23,6 @@ gem 'wicked_pdf', '~> 2.1'
 
 gem 'sidekiq'
 gem 'sidekiq-scheduler'
-
-gem "aws-sdk-s3", require: false
 
 # Hack?
 gem 'rexml', '~> 3.2.5'
@@ -39,9 +37,13 @@ group :development, :test do
 end
 
 group :development do
-  gem 'letter_opener_web', '~> 1.3'
-  gem 'listen', '~> 3.1'
-  gem 'spring', '~> 2.0'
-  gem 'spring-watcher-listen', '~> 2.0'
-  gem 'web-console', '~> 4.0'
+  gem "letter_opener_web", "~> 2.0"
+  gem "listen", "~> 3.1"
+  gem "spring", "~> 2.0"
+  gem "spring-watcher-listen", "~> 2.0"
+  gem "web-console", "~> 4.2"
+end
+
+group :production do
+  gem 'aws-sdk-s3', require: false
 end
