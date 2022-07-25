@@ -1,17 +1,5 @@
 ---
 :concurrency: 5
-
-production:
-  :queues:
-    - decidim_app_production_default
-    - decidim_app_production_mailers
-
-staging:
-  :queues:
-    - decidim_app_staging_default
-    - decidim_app_staging_mailers
-
-development:
-  :queues:
-    - default
-    - mailers
+:queues:
+  - decidim_app_<%= ENV['RAILS_ENV'] %>_default
+  - decidim_app_<%= ENV['RAILS_ENV'] %>_mailers
