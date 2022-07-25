@@ -44,6 +44,6 @@ group :development do
   gem "web-console", "~> 4.2"
 end
 
-group :production do
+group :production, :staging do
   gem 'aws-sdk-s3', require: false
 end
