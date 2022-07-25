@@ -1,5 +1,17 @@
 ---
 :concurrency: 5
-:queues:
-  - <%= ::Rails.application.config.active_job.queue_name_prefix %>default
-  - <%= ::Rails.application.config.active_job.queue_name_prefix %>mailers
+
+production:
+  :queues:
+    - decidim_app_production_default
+    - decidim_app_production_mailers
+
+staging:
+  :queues:
+    - decidim_app_staging_default
+    - decidim_app_staging_mailers
+
+development:
+  :queues:
+    - default
+    - mailers
