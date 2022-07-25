@@ -22,6 +22,8 @@ RUN npm install
 
 COPY . $APPDIR/
 
+RUN bundle exec decidim .
+
 RUN RAILS_ENV=production NODE_ENV=production \
   bundle exec rake assets:precompile \
   && mkdir -p $APPDIR/log \
