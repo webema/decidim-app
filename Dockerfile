@@ -18,9 +18,9 @@ RUN bundle --without="development test"
 COPY package.json $APPDIR/
 # COPY yarn.lock $APPDIR/
 
-COPY . $APPDIR/
+RUN rails decidim:webpacker:install
 
-RUN bundle exec rake decidim:webpacker:install
+COPY . $APPDIR/
 
 RUN RAILS_ENV=production NODE_ENV=production \
   bundle exec rake assets:precompile \
