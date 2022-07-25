@@ -2,6 +2,7 @@ require 'sidekiq'
 require 'sidekiq/web'
 require 'sidekiq-scheduler'
 require 'sidekiq-scheduler/web'
+require 'config_parser'
 
 Sidekiq.configure_server do |config|
   config.on(:startup) do
