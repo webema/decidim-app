@@ -1,5 +1,5 @@
 ---
 :concurrency: 5
 :queues:
-  - <%= Rails.application.config.active_job.queue_name_prefix %>default
-  - <%= Rails.application.config.active_job.queue_name_prefix %>mailers
+  - <%= ::Rails.application.config.active_job.queue_name_prefix %>default
+  - <%= ::Rails.application.config.active_job.queue_name_prefix %>mailers
