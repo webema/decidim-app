@@ -18,7 +18,7 @@ RUN bundle --without="development test"
 COPY package.json $APPDIR/
 # COPY yarn.lock $APPDIR/
 
-RUN rails decidim:webpacker:install
+RUN yarn install
 
 COPY . $APPDIR/
 
