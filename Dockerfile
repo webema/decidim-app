@@ -26,6 +26,7 @@ RUN RAILS_ENV=staging NODE_ENV=staging \
   bundle exec rake assets:precompile \
   && mkdir -p $APPDIR/log \
   && mkdir -p $APPDIR/tmp \
+  && mkdir -p $APPDIR/storage \
   && chown -R daemon:daemon $APPDIR/log \
   && chown -R daemon:daemon $APPDIR/tmp \
   && chown -R daemon:daemon $APPDIR/storage \
