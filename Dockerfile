@@ -14,17 +14,15 @@ COPY Gemfile* $APPDIR/
 RUN bundle config set deployment 'true'
 RUN bundle --without="development test"
 
-# Yarn Dependencies
+# NPM deps
 COPY package.json $APPDIR/
-# COPY yarn.lock $APPDIR/
+COPY package-lock.json $APPDIR/
 
 RUN npm install
 
 COPY . $APPDIR/
 
-RUN bundle exec decidim .
-
-RUN RAILS_ENV=production NODE_ENV=production \
+RUN RAILS_ENV=staging NODE_ENV=staging \
   bundle exec rake assets:precompile \
   && mkdir -p $APPDIR/log \
   && mkdir -p $APPDIR/tmp \
