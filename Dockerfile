@@ -28,6 +28,7 @@ RUN RAILS_ENV=staging NODE_ENV=staging \
   && mkdir -p $APPDIR/tmp \
   && chown -R daemon:daemon $APPDIR/log \
   && chown -R daemon:daemon $APPDIR/tmp \
+  && chown -R daemon:daemon $APPDIR/storage \
   && chown daemon:daemon $APPDIR/db/schema.rb
 
 USER daemon:daemon
