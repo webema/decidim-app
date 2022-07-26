@@ -47,3 +47,8 @@ end
 group :production, :staging do
   gem 'aws-sdk-s3', require: false
 end
+
+group :staging do
+  # avoid emailing your users from non-production environments [https://github.com/croaky/recipient_interceptor]
+  gem 'recipient_interceptor'
+end
