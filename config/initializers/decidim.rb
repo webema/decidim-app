@@ -2,7 +2,7 @@
 
 Decidim.configure do |config|
   # The name of the application
-  config.application_name = Rails.application.secrets.decidim[:application_name] || 'Foobar'
+  config.application_name = Rails.application.secrets.decidim[:application_name]
 
   # The email that will be used as sender in all emails from Decidim
   config.mailer_sender = Rails.application.secrets.decidim[:mailer_sender]
@@ -12,7 +12,7 @@ Decidim.configure do |config|
   # When an organization is created through the System area, system admins will
   # be able to choose the available languages for that organization. That list
   # of languages will be equal or a subset of the list in this file.
-  config.available_locales = [:de, :en]
+  config.available_locales = Rails.application.secrets.decidim[:available_locales].presence || [:de]
   # Or block set it up manually and prevent ENV manipulation:
   # config.available_locales = %w(en ca es)
 
