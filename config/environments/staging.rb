@@ -125,7 +125,7 @@ end
 
 Mail.register_interceptor(
   RecipientInterceptor.new(
-    'hei.sam@gmail.com', #,johanna.huke@evlka.de
+    'hei.sam@gmail.com,johanna.huke@evlka.de',
     subject_prefix: proc { |msg| "[staging]#{msg.to}" }
   )
 )
