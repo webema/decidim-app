@@ -480,7 +480,6 @@ end
 
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
-Rails.application.config.i18n.fallbacks = true
 
 # Inform Decidim about the assets folder
 Decidim.register_assets_path File.expand_path("app/packs", Rails.application.root)
