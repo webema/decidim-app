@@ -107,7 +107,7 @@ de:
         form:
           select_organization: Organisation wählen
         index:
-          confirm_delete: Möchten Sie diese Anwendung wirklich löschen?
+          confirm_delete: Möchtest Du diese Anwendung wirklich löschen?
           title: OAuth-Anwendungen
         new:
           save: Speichern

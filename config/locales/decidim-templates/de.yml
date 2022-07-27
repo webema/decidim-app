@@ -45,7 +45,7 @@ de:
         questionnaire_templates:
           choose:
             create_from_template: Aus Vorlage erstellen
-            description: Sie sind im Begriff, einen neuen Fragebogen zu erstellen. Sie können eine vordefinierte Vorlage auswählen und sie anschließend ändern.
+            description: Du bist im Begriff, einen neuen Fragebogen zu erstellen. Du kannst eine vordefinierte Vorlage auswählen und sie anschließend ändern.
             label: Vorlage auswählen
             placeholder: Vorlage auswählen
             skip_template: Überspringen
@@ -58,7 +58,7 @@ de:
             template_title: Vorlageninformation
             title: Fragebogenvorlage %{questionnaire_for}
           index:
-            confirm_delete: Möchten Sie diese Vorlage wirklich löschen?
+            confirm_delete: Möchtest Du diese Vorlage wirklich löschen?
             title: Fragebogenvorlagen
           preview:
             current_step: Schritt %{step}

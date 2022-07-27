@@ -165,7 +165,7 @@ de:
       participatory_process_copies:
         new:
           copy: Kopieren
-          select: Wählen Sie aus, welche Daten Sie duplizieren möchten
+          select: Wähle aus, welche Daten Sie duplizieren möchten
           title: Beteiligungsprozess duplizieren
       participatory_process_group_landing_page:
         edit:
@@ -193,7 +193,7 @@ de:
           success: Beteiligungsprozess wurde erfolgreich importiert.
         new:
           import: Importieren
-          select: Wählen Sie aus, welche Daten Sie importieren möchten
+          select: Wähle aus, welche Daten Sie importieren möchten
           title: Beteiligungsprozess importieren
       participatory_process_publications:
         create:
@@ -323,18 +323,18 @@ de:
     events:
       participatory_process:
         role_assigned:
-          email_intro: Sie wurden als %{role} für den Beteiligungsprozess "%{resource_title}" ausgewählt.
-          email_outro: Sie haben diese Benachrichtigung erhalten, weil Sie %{role} im Beteiligungsprozess "%{resource_title}" sind.
-          email_subject: Sie wurden als %{role} für "%{resource_title}" ausgewählt.
-          notification_title: Sie wurden als %{role} für den Beteiligungsprozess <a href="%{resource_url}">%{resource_title}</a> ausgewählt.
+          email_intro: Du wurdest als %{role} für den Beteiligungsprozess "%{resource_title}" ausgewählt.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie %{role} im Beteiligungsprozess "%{resource_title}" sind.
+          email_subject: Du wurdest als %{role} für "%{resource_title}" ausgewählt.
+          notification_title: Du wurdest als %{role} für den Beteiligungsprozess <a href="%{resource_url}">%{resource_title}</a> ausgewählt.
         step_activated:
-          email_intro: 'Der Prozessschritt %{resource_title} ist jetzt aktiv in %{participatory_space_title}. Sie können das auf dieser Seite sehen:'
-          email_outro: Sie haben diese Benachrichtigung erhalten, weil Sie %{participatory_space_title} folgen. Falls Sie keine solchen Benachrichtigungen mehr erhalten möchten, besuchen Sie den obigen Link.
+          email_intro: 'Der Prozessschritt %{resource_title} ist jetzt aktiv in %{participatory_space_title}. Du kannst das auf dieser Seite sehen:'
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie %{participatory_space_title} folgen. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Eine Aktualisierung auf %{participatory_space_title}
           notification_title: Der Prozessschritt %{resource_title} ist jetzt aktiv in <a href="%{resource_path}">%{participatory_space_title}</a>
         step_changed:
-          email_intro: 'Die Daten für den Schritt %{resource_title} bei %{participatory_space_title} wurden aktualisiert. Sie können das auf dieser Seite sehen:'
-          email_outro: Sie haben diese Benachrichtigung erhalten, weil Sie %{participatory_space_title} folgen. Falls Sie keine solchen Benachrichtigungen mehr erhalten möchten, besuchen Sie den obigen Link.
+          email_intro: 'Die Daten für den Schritt %{resource_title} bei %{participatory_space_title} wurden aktualisiert. Du kannst das auf dieser Seite sehen:'
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie %{participatory_space_title} folgen. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Eine Aktualisierung auf %{participatory_space_title}
           notification_title: Die Daten für den Prozessschritt <a href="%{resource_path}">%{resource_title}</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a> wurden aktualisiert.
     help:
@@ -417,9 +417,9 @@ de:
             other: Andere
             related_processes: Ähnliche Beteiligungsprozesse
             scope_type_max_depth_help: Beschränken Sie die Bereichs-Filtertiefe; der Filter zeigt nur Ergebnisse von Allgemein bis zum ausgewählten Bereichstyp an.
-            select_an_area: Wählen Sie einen Bereich aus
-            select_participatory_process_type: Wählen Sie einen Prozesstyp aus
-            select_process_group: Wählen Sie eine Prozessgruppe aus
+            select_an_area: Wähle einen Bereich aus
+            select_participatory_process_type: Wähle einen Prozesstyp aus
+            select_process_group: Wähle eine Prozessgruppe aus
             slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf diesen Prozess verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
             title: Allgemeine Information
             visbility: Sichtweite
