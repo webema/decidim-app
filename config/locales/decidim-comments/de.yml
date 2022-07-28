@@ -41,23 +41,23 @@ de:
           error: Beim Abstimmen des Kommentars sind Fehler aufgetreten.
     components:
       add_comment_form:
-        account_message: <a href="%{sign_in_url}">Melden Sie sich mit Ihrem Konto an</a> oder <a href="%{sign_up_url}">registrieren Sie sich</a>, um Ihren Kommentar hinzuzufügen.
+        account_message: <a href="%{sign_in_url}">Melde Dich mit Deinem Konto an</a> oder <a href="%{sign_up_url}">registriere Dich</a>, um Deinen Kommentar hinzuzufügen.
         form:
           body:
             label: Kommentar
-            placeholder: Was denken Sie darüber?
+            placeholder: Was denkst Du darüber?
           form_error: Der Text ist erforderlich und darf nicht länger als %{length} Zeichen sein.
           submit: Senden
           user_group_id:
             label: Kommentieren als
         opinion:
-          label: Ihre Meinung zu diesem Thema
+          label: Deine Meinung zu diesem Thema
           negative: Negativ
-          negative_selected: Ihre Meinung zu diesem Thema ist negativ
+          negative_selected: Deine Meinung zu diesem Thema ist negativ
           neutral: Neutral
-          neutral_selected: Ihre Meinung zu diesem Thema ist neutral
+          neutral_selected: Deine Meinung zu diesem Thema ist neutral
           positive: Positiv
-          positive_selected: Ihre Meinung zu diesem Thema ist positiv
+          positive_selected: Deine Meinung zu diesem Thema ist positiv
         remaining_characters: "%{count} Zeichen übrig"
         remaining_characters_1: "%{count} Zeichen übrig"
         title: Kommentar hinzufügen
@@ -81,8 +81,8 @@ de:
           description: Ist dieser Inhalt unangemessen?
           details: Zusätzliche Kommentare
           reasons:
-            does_not_belong: Enthält illegale Aktivitäten, Selbstmorddrohungen, persönliche Informationen oder etwas anderes, von dem Sie denken, dass es nicht auf %{organization_name} gehört.
-            offensive: Enthält Rassismus, Sexismus, Verleumdungen, persönliche Angriffe, Morddrohungen, Selbstmordanträge oder jegliche Form von Hassreden.
+            does_not_belong: Enthält illegale Aktivitäten, Selbstmorddrohungen, persönliche Informationen oder etwas anderes, von dem Du denkst, dass es nicht auf %{organization_name} gehört.
+            offensive: Enthält Rassismus, Sexismus, Verleumdungen, persönliche Angriffe, Morddrohungen, Aufforderungen zum Selbstmord oder jegliche Form von Hassrede.
             spam: Enthält Clickbait, Werbung, Scams oder Script Bots.
           title: Ungeeigneten Inhalt melden
         show_replies: '%{replies_count} Antworten anzeigen'
@@ -97,13 +97,13 @@ de:
       comment_thread:
         title: Konversation mit %{authorName}
       comments:
-        blocked_comments_for_unauthorized_user_warning: Sie müssen aktuell verifiziert sein um zu kommentieren, aber Du kannst die bisherigen Kommentare lesen.
+        blocked_comments_for_unauthorized_user_warning: Du musst aktuell verifiziert sein um zu kommentieren, aber Du kannst die bisherigen Kommentare lesen.
         blocked_comments_for_user_warning: Du kannst momentan nichts kommentieren, aber Du kannst die vorherigen lesen.
         blocked_comments_warning: Kommentare sind zu diesem Zeitpunkt deaktiviert, aber Du kannst die vorherigen lesen.
         comment_details_title: Kommentarinformationen
         loading: Kommentare werden geladen ...
         single_comment_warning: <a href="%{url}">Alle Kommentare anzeigen</a>
-        single_comment_warning_title: Ihnen wird ein einzelner Kommentar angezeigt
+        single_comment_warning_title: Dir wird ein einzelner Kommentar angezeigt
         title:
           one: "%{count} Kommentar"
           other: "%{count} Kommentare"
@@ -114,7 +114,7 @@ de:
         form:
           body:
             label: Kommentar
-            placeholder: Was denken Sie darüber?
+            placeholder: Was denkst Du darüber?
           submit: Senden
         title: Kommentar bearbeiten
       up_vote_button:
@@ -123,42 +123,42 @@ de:
       comments:
         comment_by_followed_user:
           email_intro: "%{author_name} hat einen Kommentar zu %{resource_title} hinterlassen. Du kannst diesen auf dieser Seite lesen:"
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie %{author_name} folgen. Falls Sie keine solchen Benachrichtigungen mehr erhalten möchten, besuchen Sie die Profil-Seite dieses Benutzers.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{author_name} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, besuche die Profil-Seite dieses Benutzers.
           email_subject: Neuer Kommentar von %{author_name} zu %{resource_title}
           notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>.
         comment_by_followed_user_group:
           email_intro: 'Die Gruppe %{author_name} hat einen Kommentar in %{resource_title} hinterlassen. Du kannst diesen auf dieser Seite lesen:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie %{author_name} folgen. Falls Sie keine solchen Benachrichtigungen mehr erhalten möchten, besuchen Sie die Profil-Seite dieser Gruppe.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{author_name} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, besuche die Profil-Seite dieser Gruppe.
           email_subject: Neuer Kommentar von %{author_name} zu %{resource_title}
           notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>.
         comment_created:
           email_intro: "%{resource_title} wurde kommentiert. Du kannst den Kommentar auf dieser Seite lesen:"
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie "%{resource_title}" oder seinem Autor folgen. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du "%{resource_title}" oder seinem Autor folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Neuer Kommentar von %{author_name} zu %{resource_title}
           notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>
         comment_downvoted:
-          email_intro: Ihr Kommentar in "%{resource_title}" wurde negativ bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie der Autor des Vorschlags sind.
-          email_subject: Ihr Kommentar in "%{resource_title}" wurde negativ bewertet.
-          notification_title: Ihr <a href="%{resource_path}">Kommentar</a> in "%{resource_title}" wurde negativ bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
+          email_intro: Dein Kommentar in "%{resource_title}" wurde negativ bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Autor des Vorschlags bist.
+          email_subject: Dein Kommentar in "%{resource_title}" wurde negativ bewertet.
+          notification_title: Dein <a href="%{resource_path}">Kommentar</a> in "%{resource_title}" wurde negativ bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
         comment_upvoted:
-          email_intro: Ihr Kommentar in "%{resource_title}" wurde positiv bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie der Autor des Vorschlags sind.
-          email_subject: Ihr Kommentar in "%{resource_title}" wurde positiv bewertet.
-          notification_title: Ihr <a href="%{resource_path}">Kommentar</a> in "%{resource_title}" wurde positiv bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
+          email_intro: Dein Kommentar in "%{resource_title}" wurde positiv bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Autor des Vorschlags bist.
+          email_subject: Dein Kommentar in "%{resource_title}" wurde positiv bewertet.
+          notification_title: Dein <a href="%{resource_path}">Kommentar</a> in "%{resource_title}" wurde positiv bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
         reply_created:
-          email_intro: "%{author_name} hat auf Ihren Kommentar zu %{resource_title} geantwortet. Du kannst das auf dieser Seite lesen:"
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Ihr Kommentar beantwortet wurde.
-          email_subject: "%{author_name} hat auf Ihren Kommentar zu %{resource_title} geantwortet"
-          notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> hat auf Ihren Kommentar in <a href="%{resource_path}">%{resource_title}</a> geantwortet
+          email_intro: "%{author_name} hat auf Deinen Kommentar zu %{resource_title} geantwortet. Du kannst das auf dieser Seite lesen:"
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Dein Kommentar beantwortet wurde.
+          email_subject: "%{author_name} hat auf Deinen Kommentar zu %{resource_title} geantwortet"
+          notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> hat auf Deinen Kommentar in <a href="%{resource_path}">%{resource_title}</a> geantwortet
         user_group_mentioned:
-          email_intro: Eine Ihrer Gruppen wurde erwähnt
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie ein Mitglied der Gruppe %{group_name} sind, die in %{resource_title} erwähnt wurde.
+          email_intro: Eine Deiner Gruppen wurde erwähnt
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Mitglied der Gruppe %{group_name} bist, die in %{resource_title} erwähnt wurde.
           email_subject: Du wurdest in %{resource_title} als Mitglied von %{group_name} erwähnt
           notification_title: Du wurdest in <a href="%{resource_path}">%{resource_title}</a> von <a href="%{author_path}">%{author_name} %{author_nickname}</a> als ein Mitglied von <a href="%{group_path}">%{group_name} %{group_nickname}</a> erwähnt
         user_mentioned:
           email_intro: Du wurdest erwähnt
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie in %{resource_title} erwähnt wurden.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du in %{resource_title} erwähnt wurdest.
           email_subject: Du wurdest in %{resource_title} erwähnt
           notification_title: Du wurdest in <a href="%{resource_path}">%{resource_title}</a> von <a href="%{author_path}">%{author_name} %{author_nickname}</a> erwähnt
     metrics:

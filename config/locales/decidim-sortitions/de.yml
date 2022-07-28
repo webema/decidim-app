@@ -4,10 +4,10 @@ de:
     attributes:
       sortition:
         additional_info: Sortierinformationen
-        decidim_category_id: Kategorien der Vorschläge, in denen Sie die Auslosung anwenden möchten
+        decidim_category_id: Kategorien der Vorschläge, in denen Du die Auslosung anwenden möchtest
         decidim_proposals_component_id: Vorschläge festgelegt
         dice: Ergebnis des Würfelwurfs. Wirf einen 6-seitigen Würfel oder suche nach einem anderen zufälligen Weg, um eine Zahl von 1 bis 6 zu erzeugen, und gib die resultierende Zahl vor einigen Zeugen ein. Dies trägt zur Qualität und zur Gewährleistung der Zufälligkeit des Ergebnisses bei
-        target_items: Anzahl der auszuwählenden Vorschläge (gibt die Anzahl der Vorschläge an, die Sie auswählen möchten, indem Sie viele der Vorschläge auswählen, die Sie zuvor ausgewählt haben)
+        target_items: Anzahl der auszuwählenden Vorschläge (gibt die Anzahl der Vorschläge an, die Du auswählen möchtest, indem Du viele der Vorschläge auswählst, die Du zuvor ausgewählt hast)
         title: Titel
         witnesses: Zeugen
     models:
@@ -30,14 +30,14 @@ de:
     events:
       sortitions:
         sortition_created:
-          email_intro: Die Auslosung "%{resource_title}" wurde zu "%{participatory_space_title}" hinzugefügt, dem Sie folgen.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie "%{participatory_space_title}" folgen. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_intro: Die Auslosung "%{resource_title}" wurde zu "%{participatory_space_title}" hinzugefügt, dem Du folgst.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du "%{participatory_space_title}" folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Neue Sortierung wurde zu %{participatory_space_title}hinzugefügt
           notification_title: Die Auslosung <a href="%{resource_path}">%{resource_title}</a> wurde zu %{participatory_space_title} hinzugefügt
     sortitions:
       admin:
         actions:
-          destroy: Brechen Sie die Sortierung ab
+          destroy: Die Sortierung abbrechen
           edit: Bearbeiten
           new: Neue Sortierung
           show: Sortierdetails
@@ -68,7 +68,7 @@ de:
             error: Die Sortierung kann nicht abgebrochen werden.
             success: Die Sortierung wurde erfolgreich abgebrochen
           edit:
-            title: Aktualisieren Sie die Informationen zur Sortierung
+            title: Aktualisiere die Informationen zur Sortierung
             update: Aktualisieren
           form:
             all_categories: Alle Kategorien

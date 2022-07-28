@@ -600,7 +600,7 @@ de:
       not_found:
         back_home: Zurück zur Startseite
         content_doesnt_exist: Diese Adresse ist falsch oder wurde entfernt.
-        title: Die von Ihnen gesuchte Seite kann nicht gefunden werden
+        title: Die von Dir gesuchte Seite kann nicht gefunden werden
     events:
       amendments:
         amendment_accepted:
@@ -702,7 +702,7 @@ de:
           email_subject: Deine Anfrage, der Gruppe %{user_group_name} beizutreten, wurde abgelehnt!
           notification_title: Deine Anfrage, der Gruppe <a href="%{resource_path}">%{user_group_name}</a> beizutreten, wurde abgelehnt.
         promoted_to_admin:
-          email_intro: Ein Administrator der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat Ihnen Administratorrechte für diese Gruppe erteilt.
+          email_intro: Ein Administrator der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat Dir Administratorrechte für diese Gruppe erteilt.
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du Mitglied dieser Gruppe bist.
           email_subject: Du bist jetzt ein Admin der Gruppe %{user_group_name}!
           notification_title: Du bist jetzt ein Administrator in der Gruppe <a href="%{resource_path}">%{user_group_name}</a>.
@@ -848,21 +848,21 @@ de:
         index:
           badge_title: "%{name} Abzeichen"
           how: Wie kannst du es verdienen?
-          page_description: Badges sind Anerkennungen für Aktionen der Teilnehmer und Fortschritt in der Plattform. Wenn Sie auf der Plattform entdecken, teilnehmen und interagieren, verdienen Sie verschiedene Abzeichen. Hier ist die Liste der Abzeichen und einige Möglichkeiten, wie Sie sie verdienen können.
+          page_description: Badges sind Anerkennungen für Aktionen der Teilnehmer auf der Plattform. Wenn Du die Plattform erkundest, mitmachst und kommunizierst, verdienst Du verschiedene Abzeichen. Hier ist die Liste der Abzeichen und einige Möglichkeiten, wie Du sie verdienen kannst.
           title: Abzeichen
         invitations:
           conditions:
             - Verwende den Link "Freunde einladen" auf Deiner Nutzerseite, um Deine Freunde einzuladen
-            - Passen Sie, wenn Sie möchten, die gesendete Nachricht an
-            - Sie werden auf den neuesten Stand gebracht, indem Sie Einladungen senden und sie registrieren lassen.
-          description: Dieses Abzeichen wird gewährt, wenn Sie einige Personen eingeladen haben und sie sich ein wenig Zeit genommen haben, um sich in %{organization_name} zu registrieren und Teilnehmer zu werden. Vielen Dank für die Herstellung von %{organization_name} anderen bekannt und helfen , die Gemeinschaft zu erweitern!
+            - Wenn Du möchtest, kannst Du die Nachricht vor dem Senden anpassen
+            - Du kannst das nächste Level erreichen, indem Du Einladungen an Freunde verschickst und diese sich registrieren lassen.
+          description: Dieses Abzeichen wird gewährt, wenn Du einige Personen eingeladen hast und sie sich die Zeit genommen haben, um sich auf %{organization_name} zu registrieren werden. Vielen Dank, dass Du %{organization_name} bekannt machst und hilfst, unsere Gemeinschaft zu erweitern!
           description_another: Diese*r Benutzer*in hat %{score} Benutzer*innen eingeladen.
           description_own: Du hast %{score} Benutzer*innen eingeladen.
           name: Einladungen
-          next_level_in: Laden Sie %{score} weitere Benutzer*innen ein, um das nächste Level zu erreichen!
+          next_level_in: Lade %{score} weitere Benutzer*innen ein, um das nächste Level zu erreichen!
           unearned_another: Diese*r Benutzer*in hat noch niemanden eingeladen.
           unearned_own: Du hast noch keine Benutzer*innen eingeladen.
-      description: Badges sind Anerkennungen für Aktionen der Teilnehmer und Fortschritt in der Plattform. Wenn Sie auf der Plattform entdecken, teilnehmen und interagieren, verdienen Sie verschiedene Abzeichen.
+      description: Badges sind Anerkennungen für Aktionen der Teilnehmer und Fortschritt in der Plattform. Wenn Du die Plattform erkundest, mitmachst und kommunizierst, verdienst Du verschiedene Abzeichen.
       level: Level %{level}
       reached_top: Du hast die höchste Stufe für dieses Abzeichen erreicht.
     group_admins:
@@ -880,10 +880,10 @@ de:
         error: Bei der Annahme dieser Einladung ist ein Fehler aufgetreten
         success: Einladung wurde erfolgreich angenommen
       accept_invitation: Akzeptieren
-      accept_or_reject_group_invitations: 'Die folgenden Gruppen haben Sie eingeladen, sich ihnen anzuschließen. Akzeptieren oder ablehnen ihrer Anfragen:'
+      accept_or_reject_group_invitations: 'Die folgenden Gruppen haben Dich eingeladen, sich ihnen anzuschließen. Anfragen ablehnen oder akzeptieren:'
       index:
         invite: Einladen
-        invite_user: Laden Sie einen Benutzer ein
+        invite_user: Lade einen Benutzer ein
       invite:
         error: Beim Laden dieses Nutzers ist ein Fehler aufgetreten
         success: Benutzer wurde erfolgreich eingeladen
@@ -921,7 +921,7 @@ de:
         edit_user_group: Gruppe bearbeiten
         update_user_group: Gruppe aktualisieren
       form:
-        document_number_help: Verwenden Sie keine Bindestriche oder Leerzeichen
+        document_number_help: Verwende keine Bindestriche oder Leerzeichen
         email_help: E-Mail Deiner Organisation, Deiner Vereinigung, Deines Kollektivs, Deiner Gruppe usw.
         fill_in_for_verification: 'Fülle diese Felder aus, wenn Deine Gruppe überprüft werden soll:'
         name_help: Name Deiner Organisation, Deiner Vereinigung, Deines Kollektivs, Deiner Gruppe usw.
@@ -929,10 +929,10 @@ de:
         phone_help: Verwende keine Bindestriche oder Leerzeichen
       join:
         error: Es ist ein Problem aufgetreten, der Gruppe beizutreten
-        success: Join-Anforderung wurde erfolgreich erstellt. Ein Administrator überprüft Deine Anfrage, bevor er Sie für die Gruppe akzeptiert.
+        success: Deine Beitritts-Anforderung wurde erfolgreich erstellt. Ein Administrator überprüft Deine Anfrage, bevor er Dich für die Gruppe akzeptiert.
       leave:
         error: Es gab ein Problem, die Gruppe zu verlassen
-        last_admin: Du kannst sich nicht von dieser Gruppe entfernen, da Sie der letzte Administrator sind. Machen Sie ein anderes Mitglied zum Administrator, um die Gruppe zu verlassen.
+        last_admin: Du kannst diese Gruppe nicht verlassen, da Du der letzte Administrator bist. Mache ein anderes Mitglied zum Administrator, um die Gruppe zu verlassen.
         success: Gruppe erfolgreich verlassen.
       members:
         accept_or_reject_join_requests: 'Die folgenden Benutzer haben sich angemeldet, um dieser Gruppe beizutreten. Akzeptieren oder ablehnen ihrer Anfragen:'
@@ -941,7 +941,7 @@ de:
       new:
         create_user_group: Gruppe erstellen
         new_user_group: Neue Gruppe
-        subtitle: Erstellen Sie eine Gruppe und laden Sie andere Benutzer ein, an einer kollektiven Ebene teilzunehmen.
+        subtitle: Erstelle eine Gruppe und lade andere Benutzer ein, an einer kollektiven Ebene teilzunehmen.
       no_user_groups: Gehört noch keiner Gruppe an.
       roles:
         admin: Administrator
@@ -953,9 +953,9 @@ de:
     help:
       main_topic:
         default_page:
-          content: "<p>In %{organization} können Sie durch die Felder, die Sie im oberen Menü sehen, an verschiedenen Themen teilnehmen: Prozesse, Gremien, Initiativen, Beratungen.</p> <p>In jedem Bereich finden Sie verschiedene Optionen für die Teilnahme: Vorschläge machen - einzeln oder mit anderen -, an Debatten teilnehmen, Prioritäten für umzusetzende Projekte setzen, persönliche Treffen und andere Aktionen besuchen.</p>\n"
+          content: "<p>In %{organization} kannst Du durch die Felder, die Du im oberen Menü siehst, an verschiedenen Themen teilnehmen: Prozesse, Gremien, Initiativen, Beratungen.</p> <p>In jedem Bereich findest Du verschiedene Optionen für die Teilnahme: Vorschläge machen - einzeln oder mit anderen -, an Debatten teilnehmen, Prioritäten für umzusetzende Projekte setzen, persönliche Treffen und andere Aktionen besuchen.</p>\n"
           title: Was kann ich in %{organization} tun?
-        description: Lesen Sie mehr über %{organization}
+        description: Lese mehr über %{organization}
         title: Allgemeine Hilfe
     last_activities:
       activities:
@@ -967,8 +967,8 @@ de:
     links:
       invalid_url: Ungültige URL
       warning:
-        body_1: Du bist dabei einen externen Link zu besuchen und wir möchten, dass Sie hinsichtlich der Inhalte auf der externen Seite vorsichtig sind.
-        body_2: Bitte überprüfen Sie den Link und stellen Sie sicher, dass es sich um eine vertrauenswürdige Seite handelt, bevor Sie fortfahren.
+        body_1: Du bist dabei einen externen Link zu besuchen und wir möchten, dass Du hinsichtlich der Inhalte auf der externen Seite vorsichtig bist.
+        body_2: Bitte überprüfe den Link und stelle sicher, dass es sich um eine vertrauenswürdige Seite handelt, bevor Du fortfährst.
         cancel: Abbrechen
         close_modal: Dialog schließen
         proceed: Fortfahren
@@ -1010,42 +1010,42 @@ de:
     messaging:
       conversation_mailer:
         comanagers_new_conversation:
-          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Sie ein Administrator von %{group} sind.
+          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator von %{group} bist.
           greeting: Hallo, %{recipient}!
-          intro: "%{manager} hat eine Unterhaltung im Namen von %{group} begonnen. Klicken Sie hier, um diese anzuzeigen:"
+          intro: "%{manager} hat eine Unterhaltung im Namen von %{group} begonnen. Klicke hier, um diese anzuzeigen:"
           outro: Viel Spaß mit Decidim!
           subject: "%{manager} hat eine Unterhaltung als %{group} begonnen"
         comanagers_new_message:
-          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Sie ein Administrator von %{group} sind.
+          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator von %{group} bist.
           greeting: Hallo, %{recipient}!
-          intro: "%{manager} hat Nachrichten in einer Unterhaltung im Namen von %{group} gesendet. Klicken Sie hier, um diese anzuzeigen:"
+          intro: "%{manager} hat Nachrichten in einer Unterhaltung im Namen von %{group} gesendet. Klicke hier, um diese anzuzeigen:"
           outro: Viel Spaß mit Decidim!
           subject: "%{manager} hat neue Nachrichten als %{group} gesendet"
         new_conversation:
           greeting: Hallo, %{recipient}!
-          intro: "%{sender} hat eine neue Unterhaltung mit Ihnen begonnen. Klicken Sie hier, um es zu sehen:"
+          intro: "%{sender} hat eine neue Unterhaltung mit Dir begonnen. Klicke hier, um diese zu sehen:"
           outro: Viel Spaß mit Decidim!
-          subject: "%{sender} hat ein Gespräch mit Ihnen begonnen"
+          subject: "%{sender} hat ein Gespräch mit Dir begonnen"
         new_group_conversation:
-          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Sie ein Administrator von %{group} sind.
+          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator von %{group} bist.
           greeting: Hallo, %{recipient}!
-          intro: "%{sender} hat eine neue Unterhaltung mit der Gruppe %{group} begonnen. Klicken Sie hier, um diese anzuzeigen:"
+          intro: "%{sender} hat eine neue Unterhaltung mit der Gruppe %{group} begonnen. Klicke hier, um diese anzuzeigen:"
           outro: Viel Spaß mit Decidim!
           subject: "%{sender} hat eine Unterhaltung mit %{group} begonnen"
         new_group_message:
-          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Sie ein Administrator von %{group} sind.
+          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator von %{group} bist.
           greeting: Hallo, %{recipient}!
-          intro: "%{sender} hat neue Nachrichten in einer Unterhaltung mit der Gruppe %{group} gesendet. Klicken Sie hier, um diese anzuzeigen:"
+          intro: "%{sender} hat neue Nachrichten in einer Unterhaltung mit der Gruppe %{group} gesendet. Klicke hier, um diese anzuzeigen:"
           outro: Viel Spaß mit Decidim!
           subject: "%{group} hat neue Nachrichten von %{sender}"
         new_message:
           greeting: Hallo, %{recipient}!
-          intro: "%{sender} hat neue Nachrichten in Deiner Konversation gepostet. Klicke hier, um sie zu sehen:"
+          intro: "%{sender} hat neue Nachrichten in Deiner Konversation gepostet. Klicke hier, um diese zu sehen:"
           outro: Viel Spaß mit Decidim!
           subject: Du hast neue Nachrichten von %{sender}
       conversations:
         add_conversation_users:
-          add_max_users: 'Fügen Sie der Unterhaltung Benutzer hinzu: max. 9 Benutzer'
+          add_max_users: 'Füge der Unterhaltung Benutzer hinzu: max. 9 Benutzer'
           add_users_placeholder: Suche...
           modal_title: Neue Unterhaltung
           no_results: Keine Ergebnisse
@@ -1102,8 +1102,8 @@ de:
         title: Benutzer
     newsletter_mailer:
       newsletter:
-        note: Du hast diese E-Mail erhalten, weil Du Newsletter auf %{organization_name}abonniert hast. Du kannst Deine Einstellungen auf Deiner <a href="%{link}">Benachrichtigungen Seite</a> ändern.
-        see_on_website: Kann diese E-Mail nicht korrekt angezeigt werden? Klicken Sie bitte hier <a href="%{link}" target="_blank">website</a>.
+        note: Du hast diese E-Mail erhalten, weil Du Newsletter auf %{organization_name} abonniert hast. Du kannst Deine Einstellungen auf Deiner <a href="%{link}">Benachrichtigungen Seite</a> ändern.
+        see_on_website: Kann diese E-Mail nicht korrekt angezeigt werden? Klicke bitte hier <a href="%{link}" target="_blank">website</a>.
         unsubscribe: Um den Empfang dieser Art von E-Mail zu deaktivieren, <a href="%{link}" target="_blank" class="unsubscribe">Abbestellen</a>.
     newsletter_templates:
       basic_only_text:
@@ -1247,7 +1247,7 @@ de:
           modal_title: Lehnst Du die aktualisierten Geschäftsbedingungen wirklich ab?
         required_review:
           alert: Wir haben unsere Nutzungsbedingungen aktualisiert. Bitte überprüfe diese.
-          body: Bitte nimm Dir einen Moment Zeit, um sich über die Aktualisierungen unserer Nutzungsbedingungen zu informieren. Andernfalls können Sie die Plattform nicht nutzen.
+          body: Bitte nimm Dir einen Moment Zeit, um sich über die Aktualisierungen unserer Nutzungsbedingungen zu informieren. Andernfalls kannst Du die Plattform nicht nutzen.
           title: 'Erforderlich: Überprüfe die Aktualisierungen unserer Nutzungsbedingungen'
     participatory_space_private_users:
       not_allowed: Du darfst diesen Inhalt nicht sehen
@@ -1375,8 +1375,8 @@ de:
         already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator überprüft.
         close: Schließen
         description: Ist dieser Inhalt unangemessen?
-        does_not_belong: Enthält illegale Aktivitäten, Selbstmorddrohungen, persönliche Informationen oder etwas anderes, von dem Sie denken, dass es nicht auf %{organization_name}.
-        offensive: Enthält Rassismus, Sexismus, Verunglimpfungen, persönliche Angriffe, Morddrohungen, Selbstmordanträge oder jede Form von Hassreden.
+        does_not_belong: Enthält illegale Aktivitäten, Selbstmorddrohungen, persönliche Informationen oder etwas anderes, von dem Du denkst, dass es nicht auf %{organization_name} gehört.
+        offensive: Enthält Rassismus, Sexismus, Verunglimpfungen, persönliche Angriffe, Morddrohungen, Aufforderungen zum Selbstmord oder jede Form von Hassrede.
         reason: Begründung
         report: Bericht
         spam: Enthält Clickbait, Werbung, Scams oder Script Bots.
@@ -1385,8 +1385,8 @@ de:
         already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator überprüft.
         close: Schließen
         description: Was ist unangebracht über den Benutzer?
-        does_not_belong: Enthält illegale Aktivitäten, Selbstmorddrohungen, persönliche Informationen oder etwas anderes, von dem Sie denken, dass es nicht auf %{organization_name} gehört.
-        offensive: Enthält Rassismus, Sexismus, Verunglimpfungen, persönliche Angriffe, Morddrohungen, Selbstmordanträge oder eine Form von Hassrede.
+        does_not_belong: Enthält illegale Aktivitäten, Selbstmorddrohungen, persönliche Informationen oder etwas anderes, von dem Du denkst, dass es nicht auf %{organization_name} gehört.
+        offensive: Enthält Rassismus, Sexismus, Verunglimpfungen, persönliche Angriffe, Morddrohungen, Aufforderungen zum Selbstmord oder jede Form von Hassrede.
         report: Melden
         spam: Enthält Clickbait, Werbung, Scams oder Script Bots.
         title: Unangemessenen Nutzer melden
@@ -1521,7 +1521,7 @@ de:
       show:
         version_index: Version %{index}
     welcome_notification:
-      default_body: <p>Hallo {{name}}, Danke für die Verbindung {{organization}} und willkommen!</p><ul><li>Wenn Du Dir schnell ein Bild machen möchtest, was Du hier tun kannst, sieh Dir den Abschnitt <a href="{{help_url}}">Hilfe</a> .</li><li>Sobald Du es gelesen hast, erhältst Du Dein erstes Abzeichen. Hier ist eine <a href="{{badges_url}}">Liste aller Abzeichen</a> die Du erhalten kannst, wenn Du an {{organization}}</li><li>teilnehmen. Schließe Dich  anderen Personen an, und teile mit ihnen die Erfahrung, an {{organization}} teilzunehmen. Mache Vorschläge, kommentiere, diskutiere, wie Du einen Beitrag zum Gemeinwohl leisten kannst, gib Argumente an, die überzeugen, zuhören und lesen, um überzeugt zu sein, drücke Deine Ideen konkret und direkt aus, reagiere Sie mit Geduld und Entscheidung, verteidigen Sie Ihre Ideen und halten Sie sie Offenheit, um zusammenzuarbeiten und sich den Ideen anderer anzuschließen.</li></ul> TODO
+      default_body: <p>Hallo {{name}}, Danke für Deine Anmeldung bei {{organization}} und herzlich willkommen!</p><ul><li>Wenn Du Dir einen Überblick verschaffen möchtest, was Du hier tun kannst, sieh Dir den Abschnitt <a href="{{help_url}}">Hilfe</a> .</li><li>Sobald Du diesen gelesen hast, erhältst Du Dein erstes Abzeichen. Hier findest Du eine <a href="{{badges_url}}">Liste aller Abzeichen</a> die Du erhalten kannst, wenn Du bei {{organization}}</li><li>mitmachst. Zu guter Letzt, vernetze Dich mit anderen Teilnehmern! Mache Vorschläge, kommentiere und diskutiere, wie sich unser gemeinsames Anliegen fördern lasst. Verwende überzeugende Argumente, höre zu und sei offen für die Argumente Anderer. Äußere Deine Ideen auf konkrete Weise, antworte geduldig und entschlossen. Verteidige Deine Ideen und schließe Dich den Ideen Anderer an.
       default_subject: Danke, dass Du {{organization}} beigetreten bist!
     wizard_step_form:
       wizard_aside:
@@ -1621,8 +1621,8 @@ de:
         title: Passwort ändern
       new:
         forgot_your_password: Hast Du Dein Passwort vergessen?
-        send_me_reset_password_instructions: Senden Sie mir das Passwort zurück TODO
-      no_token: Du kannst nicht auf diese Seite zugreifen, ohne von einer E-Mail zum Zurücksetzen des Kennworts zu stammen. Wenn Sie eine E-Mail zum Zurücksetzen des Passworts erhalten, vergewissern Sie sich bitte, dass Sie die vollständige URL verwendet haben. TODO
+        send_me_reset_password_instructions: Anweisungen zum Zurücksetzen des Passwortes zusenden
+      no_token: Du kannst nicht auf diese Seite zugreifen, ohne von einer E-Mail zum Zurücksetzen des Kennworts zu stammen. Wenn Du eine E-Mail zum Zurücksetzen des Passworts erhalten hast, vergewissere Dich bitte, dass Du die vollständige URL verwendet hast.
       send_instructions: Du erhältst in wenigen Minuten eine E-Mail mit Anweisungen zum Zurücksetzen Deines Passworts.
       send_paranoid_instructions: Wenn Deine E-Mail-Adresse in unserer Datenbank vorhanden ist, erhältst DU innerhalb weniger Minuten eine E-Mail mit Anweisungen zum Zurücksetzen Deines Passworts.
       updated: Dein Passwort wurde erfolgreich geändert. Du bist jetzt angemeldet.
@@ -1631,7 +1631,7 @@ de:
       destroyed: Tschüss! Dein Konto wurde erfolgreich gelöscht. Wir hoffen, Dich bald wieder zu sehen.
       edit:
         are_you_sure: Bist Du sicher?
-        cancel_my_account: Brechen Sie mein Konto ab TODO
+        cancel_my_account: Mein Konto löschen
         currently_waiting_confirmation_for_email: 'Momentan wartende Bestätigung für: %{email}'
         leave_blank_if_you_don_t_want_to_change_it: lasse das Feld leer, wenn Du es nicht ändern möchtest
         title: Bearbeite %{resource}
@@ -1726,7 +1726,7 @@ de:
           accept_all: Alle akzeptieren
           accept_only_essential: Nur essentielle Cookies akzeptieren
           cookie_settings: Einstellungen
-          description: Wir verwenden Cookies auf unserer Website, um die Leistung und den Inhalt der Website zu verbessern. Die Cookies ermöglichen uns, Ihnen eine individuellere Nutzererfahrung und Social-Media-Kanäle zu bieten.
+          description: Wir verwenden Cookies auf unserer Website, um die Leistung und den Inhalt der Website zu verbessern. Die Cookies ermöglichen uns, Dir eine individuellere Nutzererfahrung und Social-Media-Kanäle zu bieten.
           title: Informationen über die auf dieser Website verwendeten Cookies
         modal:
           accept_all: Alle akzeptieren
@@ -1768,7 +1768,7 @@ de:
         user_menu: Benutzer-Menü
       impersonation_warning:
         close_session: Sitzung schließen
-        description_html: Sie geben sich als Benutzer <b>%{user_name}</b>. TODO
+        description_html: Du gibst Dichh als Benutzer <b>%{user_name}</b> aus.
         expire_time_html: Deine Sitzung wird in <b><span class="minutes">%{minutes}</span> Minuten</b>ablaufen.
       language_chooser:
         choose_language: Sprache wählen

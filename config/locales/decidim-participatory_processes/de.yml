@@ -165,7 +165,7 @@ de:
       participatory_process_copies:
         new:
           copy: Kopieren
-          select: Wähle aus, welche Daten Sie duplizieren möchten
+          select: Wähle aus, welche Daten Du duplizieren möchtest
           title: Beteiligungsprozess duplizieren
       participatory_process_group_landing_page:
         edit:
@@ -193,7 +193,7 @@ de:
           success: Beteiligungsprozess wurde erfolgreich importiert.
         new:
           import: Importieren
-          select: Wähle aus, welche Daten Sie importieren möchten
+          select: Wähle aus, welche Daten Du importieren möchtest
           title: Beteiligungsprozess importieren
       participatory_process_publications:
         create:
@@ -266,7 +266,7 @@ de:
       participatory_processes:
         create:
           error: Beim Erstellen eines neuen Beteiligungsprozesses ist ein Fehler aufgetreten.
-          success: Partizipativer Prozess erfolgreich erstellt. Konfigurieren Sie jetzt seine Schritte.
+          success: Partizipativer Prozess erfolgreich erstellt. Konfiguriere jetzt seine Schritte.
         edit:
           update: Aktualisieren
         index:
@@ -324,17 +324,17 @@ de:
       participatory_process:
         role_assigned:
           email_intro: Du wurdest als %{role} für den Beteiligungsprozess "%{resource_title}" ausgewählt.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie %{role} im Beteiligungsprozess "%{resource_title}" sind.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{role} im Beteiligungsprozess "%{resource_title}" bist.
           email_subject: Du wurdest als %{role} für "%{resource_title}" ausgewählt.
           notification_title: Du wurdest als %{role} für den Beteiligungsprozess <a href="%{resource_url}">%{resource_title}</a> ausgewählt.
         step_activated:
           email_intro: 'Der Prozessschritt %{resource_title} ist jetzt aktiv in %{participatory_space_title}. Du kannst das auf dieser Seite sehen:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie %{participatory_space_title} folgen. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{participatory_space_title} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Eine Aktualisierung auf %{participatory_space_title}
           notification_title: Der Prozessschritt %{resource_title} ist jetzt aktiv in <a href="%{resource_path}">%{participatory_space_title}</a>
         step_changed:
           email_intro: 'Die Daten für den Schritt %{resource_title} bei %{participatory_space_title} wurden aktualisiert. Du kannst das auf dieser Seite sehen:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie %{participatory_space_title} folgen. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{participatory_space_title} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Eine Aktualisierung auf %{participatory_space_title}
           notification_title: Die Daten für den Prozessschritt <a href="%{resource_path}">%{resource_title}</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a> wurden aktualisiert.
     help:
@@ -405,18 +405,18 @@ de:
             slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf diesen Prozess verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
         participatory_process_steps:
           form:
-            cta_path_help: 'Verwenden Sie hier Teilpfade, nicht vollständige URLs. Akzeptiert Buchstaben, Zahlen, Bindestriche und Schrägstriche und muss mit einem Buchstaben beginnen. Wenn nicht eingestellt, wird die Schaltfläche nicht angezeigt. Beispiel: %{url}'
+            cta_path_help: 'Verwende hier Teilpfade, nicht vollständige URLs. Akzeptiert Buchstaben, Zahlen, Bindestriche und Schrägstriche und muss mit einem Buchstaben beginnen. Wenn nicht eingestellt, wird die Schaltfläche nicht angezeigt. Beispiel: %{url}'
             cta_text_help: Wenn nicht eingestellt, wird die Schaltfläche nicht angezeigt.
         participatory_processes:
           form:
-            announcement_help: Der Text, den Sie hier eingeben, wird dem Benutzer direkt unter den Prozessinformationen angezeigt.
+            announcement_help: Der Text, den Du hier eingibst, wird dem Benutzer direkt unter den Prozessinformationen angezeigt.
             duration: Dauer
             filters: Filter
             images: Bilder
             metadata: Metadaten
             other: Andere
             related_processes: Ähnliche Beteiligungsprozesse
-            scope_type_max_depth_help: Beschränken Sie die Bereichs-Filtertiefe; der Filter zeigt nur Ergebnisse von Allgemein bis zum ausgewählten Bereichstyp an.
+            scope_type_max_depth_help: Beschränke die Bereichs-Filtertiefe; der Filter zeigt nur Ergebnisse von Allgemein bis zum ausgewählten Bereichstyp an.
             select_an_area: Wähle einen Bereich aus
             select_participatory_process_type: Wähle einen Prozesstyp aus
             select_process_group: Wähle eine Prozessgruppe aus
@@ -510,13 +510,13 @@ de:
           more_info: Mehr Info
           more_info_about: Weitere Informationen zum Prozess %{resource_name}
           take_part: Teilnehmen
-          take_part_in: Beteiligen Sie sich am Prozess %{resource_name}
+          take_part_in: Beteilige Dich sich am Prozess %{resource_name}
         promoted_process:
           active_step: 'Aktueller Schritt:'
           more_info: Mehr Informationen
           more_info_about: Weitere Informationen zum Prozess %{resource_name}
           take_part: Teilnehmen
-          take_part_in: Beteiligen Sie sich am Prozess %{resource_name}
+          take_part_in: Beteilige Dich sich am Prozess %{resource_name}
         promoted_process_group:
           more_info: Mehr Info
       process_header_steps:

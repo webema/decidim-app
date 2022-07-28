@@ -106,7 +106,7 @@ de:
           success: Dupliziertes Meeting erfolgreich
         new:
           copy: Kopieren
-          select: Wähle die Daten aus, die Sie duplizieren möchten
+          select: Wähle die Daten aus, die Du duplizieren möchtest
           title: Doppelte Besprechung
     components:
       meetings:
@@ -121,7 +121,7 @@ de:
             comments_max_length: Maximale Länge der Kommentare (0 für Standardwert)
             creation_enabled_for_participants: Teilnehmer können Besprechungen erstellen
             default_registration_terms: Standard-Registrierungsbedingungen
-            enable_pads_creation: Aktivieren Sie die Pads-Erstellung
+            enable_pads_creation: Pads-Erstellung aktivieren
             maps_enabled: Karten aktiviert
             registration_code_enabled: Registrierungscode aktiviert
             resources_permissions_enabled: Aktionsberechtigungen können für jedes Meeting festgelegt werden
@@ -137,57 +137,57 @@ de:
       meetings:
         meeting_closed:
           affected_user:
-            email_intro: 'Ihre Sitzung "%{resource_title}" wurde geschlossen. Du kannst die Ergebnisse auf dieser Seite lesen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil Sie die Sitzung "%{resource_title}" organisiert haben.
+            email_intro: 'Deine Sitzung "%{resource_title}" wurde geschlossen. Du kannst die Ergebnisse auf dieser Seite lesen:'
+            email_outro: Du hast diese Benachrichtigung erhalten, weil Du die Sitzung "%{resource_title}" organisiert hast.
             email_subject: Die Sitzung "%{resource_title}" wurde geschlossen
             notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde geschlossen.
           follower:
             email_intro: 'Die Sitzung "%{resource_title}" wurde geschlossen. Du kannst die Ergebnisse auf dieser Seite lesen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil Sie der Sitzung "%{resource_title}" folgen. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Sitzung "%{resource_title}" folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
             email_subject: Die Sitzung "%{resource_title}" wurde geschlossen
             notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde geschlossen.
         meeting_created:
           button_text: Für das Treffen anmelden
-          email_intro: Die Sitzung "%{resource_title}" wurde zu "%{participatory_space_title}" hinzugefügt, welchem Sie folgen.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie "%{participatory_space_title}" folgen. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_intro: Die Sitzung "%{resource_title}" wurde zu "%{participatory_space_title}" hinzugefügt, welchem Du folgst.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du "%{participatory_space_title}" folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Neue Sitzung zu %{participatory_space_title} hinzugefügt
           notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde zu %{participatory_space_title} hinzugefügt
         meeting_registration_confirmed:
-          notification_title: Ihre Anmeldung zur Sitzung <a href="%{resource_url}">%{resource_title}</a> wurde bestätigt. Ihr Registrierungscode ist %{registration_code}.
+          notification_title: Deine Anmeldung zur Sitzung <a href="%{resource_url}">%{resource_title}</a> wurde bestätigt. Dein Registrierungscode ist %{registration_code}.
         meeting_registrations_over_percentage:
           email_intro: Die Slots der Sitzung "%{resource_title}" sind zu über %{percentage}% belegt.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie ein Administrator des Teilnahmebereichs der Besprechung sind.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator des Teilnahmebereichs der Besprechung bist.
           email_subject: Slots der Sitzung "%{resource_title}" über %{percentage}% belegt
           notification_title: Die Slots der Sitzung <a href="%{resource_path}">%{resource_title}</a> sind zu über %{percentage}% belegt.
         meeting_updated:
           email_intro: 'Die Sitzung "%{resource_title}" wurde aktualisiert. Du kannst die neue Version auf der Sitzungs-Seite lesen:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie der Sitzung "%{resource_title}" folgen. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Sitzung "%{resource_title}" folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Die Sitzung "%{resource_title}" wurde aktualisiert
           notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde aktualisiert.
         registration_code_validated:
-          email_intro: Ihr Registrierungscode "%{registration_code}" für die Sitzung "%{resource_title}" wurde bestätigt.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Ihr Registrierungscode für die Sitzung "%{resource_title}" validiert wurde.
-          email_subject: Ihr Registrierungscode "%{registration_code}" für die Sitzung "%{resource_title}" wurde bestätigt
-          notification_title: Ihr Registrierungscode "%{registration_code}" für die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde bestätigt.
+          email_intro: Dein Registrierungscode "%{registration_code}" für die Sitzung "%{resource_title}" wurde bestätigt.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Dein Registrierungscode für die Sitzung "%{resource_title}" validiert wurde.
+          email_subject: Dein Registrierungscode "%{registration_code}" für die Sitzung "%{resource_title}" wurde bestätigt
+          notification_title: Dein Registrierungscode "%{registration_code}" für die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde bestätigt.
         registrations_enabled:
           email_intro: 'Die Sitzung "%{resource_title}" hat Registrierungen aktiviert. Du kannst sich auf der Sitzungs-Seite registrieren:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie der Sitzung "%{resource_title}" folgen. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Sitzung "%{resource_title}" folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Die Sitzung "%{resource_title}" hat Registrierungen aktiviert.
           notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> hat Registrierungen aktiviert.
         upcoming_meeting:
           email_intro: Die Sitzung "%{resource_title}" beginnt in weniger als 48 Stunden.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Sie der Sitzung "%{resource_title}" folgen. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Sitzung "%{resource_title}" folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Die Sitzung "%{resource_title}" beginnt in weniger als 48 Stunden.
           notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> beginnt in weniger als 48 Stunden.
     forms:
       meetings:
-        attendees_count_help_text: Vergessen Sie nicht, die Gesamtzahl der Teilnehmer an Ihrem Meeting anzugeben, egal ob dies persönlich, online oder hybrid stattgefunden hat.
+        attendees_count_help_text: Vergiss nicht, die Gesamtzahl der Teilnehmer an Deinem Meeting anzugeben, egal ob dieses persönlich, online oder hybrid stattgefunden hat.
     gamification:
       badges:
         attended_meetings:
           conditions:
-            - Registrieren Sie sich in den Sitzungen, an denen Sie teilnehmen möchten
-          description: Dieses Abzeichen wird gewährt, wenn Sie mehrere persönliche Sitzungen besuchen.
+            - Registriere Dich für die Sitzungen, an denen Du teilnehmen möchtest
+          description: Dieses Abzeichen wird gewährt, wenn Du mehrere persönliche Sitzungen besuchst.
           description_another: Dieser Benutzer hat an %{score} Sitzungen teilgenommen.
           description_own: Du hast an %{score} Sitzungen teilgenommen.
           name: Besuchte Sitzungen
@@ -215,14 +215,14 @@ de:
       admin:
         agenda:
           agenda_item:
-            add_agenda_item_child: Fügen Sie den Tagesordnungspunkt child hinzu
+            add_agenda_item_child: Füge den Tagesordnungsunterpunkt hinzu
             agenda_item: Tagesordnungspunkt
-            agenda_item_children: Tagesordnungspunkt Childs
+            agenda_item_children: Tagesordnungsunterpunkte
             down: Nieder
             remove: Löschen
             up: Oben
           agenda_item_child:
-            agenda_item_child: Tagesordnungspunkt Kind
+            agenda_item_child: Tagesordnungsunterpunkt
             down: Nieder
             remove: Löschen
             up: Oben
@@ -251,7 +251,7 @@ de:
         invite_join_meeting_mailer:
           invite:
             decline: Einladung ablehnen
-            invited_you_to_join_a_meeting: "%{invited_by} hat Sie eingeladen, an einem Meeting um %{application}. Du kannst dies über die unten stehenden Links ablehnen oder akzeptieren."
+            invited_you_to_join_a_meeting: "%{invited_by} hat Dich eingeladen, an einem Meeting um %{application}. Du kannst dies über die unten stehenden Links ablehnen oder akzeptieren."
             join: Trete dem Meeting '%{meeting_title}' bei
         invites:
           create:
@@ -288,7 +288,7 @@ de:
             success: Sitzung erfolgreich abgeschlossen
           create:
             invalid: Beim Erstellen dieses Meetings ist ein Problem aufgetreten
-            success: Sitzung erfolgreich erstellt. Beachten Sie, dass dies noch nicht veröffentlicht wurde. Sie müssen es manuell veröffentlichen.
+            success: Sitzung erfolgreich erstellt. Beachte, dass dies noch nicht veröffentlicht wurde. Du musst es manuell veröffentlichen.
           destroy:
             invalid:
               proposals_count:
@@ -300,13 +300,13 @@ de:
             update: Aktualisieren
           form:
             address_help: 'Adresse: wird von Geocoder zur Lokalisierung verwendet'
-            disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems wissen Sie, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche die Benutzer dem externen Dienst zur Verfügung stellen.'
+            disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist Dir bewusst, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer dem externen Dienst zur Verfügung stellen.'
             location_help: 'Ort: an die Benutzer gerichtete Nachricht mit dem Treffpunkt'
             location_hints_help: 'Hinweise zum Standort: Zusätzliche Informationen. Beispiel: das Stockwerk im Gebäude wenn es eine Sitzung vor Ort ist, oder das Passwort wenn es eine Online-Sitzung mit eingeschränktem Zugriff ist.'
-            online_meeting_url_help: 'Link: Erlaubt Teilnehmern, sich direkt mit Ihrem Meeting zu verbinden'
-            registration_url_help: 'Link: Erlaubt den Teilnehmern den externen Service zu nutzen, den Sie für die Registrierung verwenden'
+            online_meeting_url_help: 'Link: Erlaubt Teilnehmern, sich direkt mit Deinem Meeting zu verbinden'
+            registration_url_help: 'Link: Erlaubt den Teilnehmern den externen Service zu nutzen, den Du für die Registrierung verwendest'
             select_a_meeting_type: Bitte eine Meeting-Typ auswählen
-            select_a_registration_type: Bitte wählen Sie eine Registrierungsart aus
+            select_a_registration_type: Bitte wähle eine Registrierungsart aus
           index:
             title: Meetings
           new:
@@ -343,15 +343,15 @@ de:
             validate: Bestätigen
             validate_registration_code: Validiere den Registrierungscode
           form:
-            available_slots_help: Belassen Sie es auf 0, wenn Sie unbegrenzte Plätze zur Verfügung haben.
+            available_slots_help: Belasse es auf 0, wenn unbegrenzte Plätze zur Verfügung stehen.
             invites: Lädt ein
-            recommendation_message: Aus Datenschutzgründen empfehlen wir, dass Sie dieses Einschreibeformular löschen, wenn es nicht länger benötigt wird. Standardmäßig ist das 3 Monate nachdem die Besprechung durchgeführt wurde.
+            recommendation_message: Aus Datenschutzgründen empfehlen wir, dass Du dieses Anmweldeformular löschst, wenn es nicht länger benötigt wird. Standardmäßig erfolgt dies 3 Monate nachdem die Besprechung durchgeführt wurde.
             registration_email_help: Dieser Text erscheint in der Mitte der Registrierungs-E-Mail, direkt nach dem Registrierungscode.
             registration_form: Anmeldeformular
             registrations_count:
               one: Es wurde %{count} registriert.
               other: Es wurden %{count} Anmeldungen vorgenommen.
-            reserved_slots_help: Belassen Sie es auf 0, wenn Sie keine reservierten Slots haben
+            reserved_slots_help: Belasse es auf 0, wenn es keine reservierten Slots gibt
             reserved_slots_less_than: Muss kleiner oder gleich %{count}
             title: Anmeldungen
           update:
@@ -387,8 +387,8 @@ de:
         copy_calendar_url: Kopieren
         copy_calendar_url_clarification: Kalender-URL in Zwischenablage kopieren
         copy_calendar_url_copied: Kopiert!
-        copy_calendar_url_description: Du kannst alle veröffentlichten Meetings in Ihrer Kalenderanwendung oder bei Ihrem Kalender-Anbieter sehen. Kopieren und fügen Sie diese URL mit der Option "Neuen Kalender von einer URL hinzufügen" in Ihren Kalender ein.
-        copy_calendar_url_explanation: Bitte beachten Sie, dass Sie eine Auswahl von Meetings exportieren, da es aktive Filter gibt. Wenn Sie alle exportieren möchten, setzen Sie zuerst alle Filter zurück.
+        copy_calendar_url_description: Du kannst alle veröffentlichten Meetings in Deinerf Kalenderanwendung oder bei Deinem Kalender-Anbieter sehen. Kopiere und füge diese URL mit der Option "Neuen Kalender von einer URL hinzufügen" in Deinen Kalender ein.
+        copy_calendar_url_explanation: Bitte beachte, dass Du eine Auswahl von Meetings exportierst, da es aktive Filter gibt. Wenn Du alle exportieren möchtest, setze zuerst alle Filter zurück.
         copy_calendar_url_message: Die URL wurde erfolgreich in die Zwischenablage kopiert.
         export_calendar: Kalender exportieren
       close_meeting_reminder_mailer:
@@ -428,9 +428,9 @@ de:
             subject: Einladung, an einem Meeting teilzunehmen
         registration_mailer:
           confirmation:
-            subject: Die Registrierung Ihrer Konferenz wurde bestätigt
+            subject: Die Registrierung Deiner Konferenz wurde bestätigt
       meeting:
-        not_allowed: Sie dürfen dieses Meeting nicht sehen
+        not_allowed: Du darfst dieses Meeting nicht sehen
       meeting_closes:
         edit:
           back: Zurück
@@ -441,7 +441,7 @@ de:
           add_to_calendar: Zum Kalender hinzufügen
           apple: Zu Apple Kalender hinzufügen
           close_window: Fenster schließen
-          full_details_html: Für alle Details gehen Sie zu %{link}
+          full_details_html: Für alle Details gehe zu %{link}
           google: Zum Google-Kalender hinzufügen
           outlook: Zum Outlook-Kalender hinzufügen
         count:
@@ -453,7 +453,7 @@ de:
           success: Du hast die Besprechung erfolgreich erstellt.
         edit:
           back: Zurück
-          title: Ihre Besprechung bearbeiten
+          title: Deine Besprechung bearbeiten
           update: Aktualisieren
         filters:
           activity: Meine Aktivität
@@ -486,16 +486,16 @@ de:
           unfold: Entfalten
         form:
           address_help: 'Adresse: wird von Geocoder zur Lokalisierung verwendet'
-          available_slots_help: Belassen Sie es auf 0, wenn Sie unbegrenzte Plätze zur Verfügung haben
+          available_slots_help: Belasse es auf 0, wenn unbegrenzte Plätze zur Verfügung stehen
           create_as: Besprechung erstellen als
-          disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems wissen Sie, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche die Benutzer dem externen Dienst zur Verfügung stellen.'
+          disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist Dir bewusst, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer dem externen Dienst zur Verfügung stellen.'
           location_help: 'Ort: an die Benutzer gerichtete Nachricht mit dem Treffpunkt'
           location_hints_help: 'Standorthinweise: Zusätzliche Informationen. Beispiel: die Etage des Gebäudes, wenn es sich um eine persönliche Sitzung oder das Sitzungspasswort, wenn es sich um ein Online-Meeting mit eingeschränktem Zugriff handelt.'
-          online_meeting_url_help: 'Link: Erlaubt Teilnehmern, sich direkt mit Ihrem Meeting zu verbinden'
-          registration_url_help: 'Link: Erlaubt den Teilnehmern den externen Service zu nutzen, den Sie für die Registrierung verwenden'
+          online_meeting_url_help: 'Link: Erlaubt Teilnehmern, sich direkt mit Deinem Meeting zu verbinden'
+          registration_url_help: 'Link: Erlaubt den Teilnehmern den externen Service zu nutzen, den Du für die Registrierung verwendest'
           select_a_category: Bitte wählen sie eine Kategorie
           select_a_meeting_type: Bitte eine Meeting-Art auswählen
-          select_a_registration_type: Bitte wählen Sie eine Registrierungsart aus
+          select_a_registration_type: Bitte wähle eine Registrierungsart aus
         index:
           click_here: Alle Treffen anzeigen
           new_meeting: Neue Besprechung
@@ -504,12 +504,12 @@ de:
         meeting_minutes:
           related_information: Zugehörige Informationen
         meetings:
-          no_meetings_warning: Keine Besprechung entspricht Ihren Suchkriterien oder es ist keine Besprechung geplant.
-          upcoming_meetings_warning: Momentan gibt es keine geplanten Besprechungen, aber hier finden Sie alle aufgelisteten Besprechungen.
+          no_meetings_warning: Keine Besprechung entspricht Deinen Suchkriterien oder es ist keine Besprechung geplant.
+          upcoming_meetings_warning: Momentan gibt es keine geplanten Besprechungen, aber hier findest Du alle aufgelisteten Besprechungen.
         new:
           back: Zurück
           create: Erstellen
-          title: Ihre Besprechung erstellen
+          title: Deine Besprechung erstellen
         registration_confirm:
           cancel: Stornieren
           confirm: Bestätigen
@@ -523,14 +523,14 @@ de:
           going: Du hast Dich für diese Sitzung angemeldet
           join: Tritt dem Treffen bei
           leave: Registrierung stornieren
-          leave_confirmation: Bist Du sicher dass Sie Ihre Registrierung für diese Sitzung stornieren möchten?
+          leave_confirmation: Bist Du sicher dass Du Deine Registrierung für diese Sitzung stornieren möchtest?
           link_available_soon: Link in Kürze verfügbar
           link_closed: Der Link, um an dem Treffen teilzunehmen, wird einige Minuten vor dem Start verfügbar sein
           live_event: Dieses Meeting findet gerade statt
           meeting_minutes: Sitzungsprotokolle
           no_slots_available: Keine Steckplätze verfügbar
           organizations: Teilnahme an Organisationen
-          registration_code_help_text: Ihr Registrierungscode
+          registration_code_help_text: Dein Registrierungscode
           registration_state:
             validated: GÜLTIG
             validation_pending: Validierung ausstehend
@@ -539,7 +539,7 @@ de:
             other: "Noch %{count} Slots"
           view: Anzeigen
           visit_finished: Vergangene Treffen anzeigen
-          withdraw_btn_hint: Du kannst Ihr Treffen zurückziehen, wenn Sie Ihre Meinung ändern. Das Meeting wird nicht gelöscht, es wird in der Liste der zurückgezogenen Meetings angezeigt.
+          withdraw_btn_hint: Du kannst Dein Treffen zurückziehen, wenn Du Deine Meinung änderst. Das Meeting wird nicht gelöscht, es wird in der Liste der zurückgezogenen Meetings angezeigt.
           withdraw_meeting: Treffen zurückziehen
         update:
           invalid: Beim Aktualisieren der Besprechung ist ein Fehler aufgetreten.
@@ -569,7 +569,7 @@ de:
       polls:
         questions:
           index:
-            empty_questions: Während dieses Treffens werden einige Fragen gesendet und Sie werden sie beantworten können. Sie werden hier angezeigt.
+            empty_questions: Während dieses Treffens werden einige Fragen gesendet und Du wirst diese beantworten können. Sie werden hier angezeigt.
           index_admin:
             admin_dashboard: Administrations-Dashboard
             edit: Im Adminbereich bearbeiten
@@ -590,9 +590,9 @@ de:
       read_more: "(Weiterlesen)"
       registration_mailer:
         confirmation:
-          confirmed_html: Ihre Registrierung für das Treffen <a href="%{url}">%{title}</a> wurde bestätigt.
-          details: Sie finden die Details zum Meeting im Anhang.
-          registration_code: Ihr Registrierungscode ist %{code}.
+          confirmed_html: Deine Registrierung für das Treffen <a href="%{url}">%{title}</a> wurde bestätigt.
+          details: Du findest die Details zum Meeting im Anhang.
+          registration_code: Dein Registrierungscode ist %{code}.
       registration_type:
         on_different_platform: Auf einer anderen Plattform
         on_this_platform: Auf dieser Plattform
@@ -600,7 +600,7 @@ de:
       registrations:
         create:
           invalid: Bei diesem Meeting ist ein Problem aufgetreten.
-          success: Du bist der Sitzung erfolgreich beigetreten. Da sie sich für die Sitzung registriert haben, werden Sie benachrichtigt wenn sich an der Sitzung etwas ändert.
+          success: Du bist der Sitzung erfolgreich beigetreten. Da Du Dich für die Sitzung registriert hast, wirst Du benachrichtigt wenn sich an der Sitzung etwas ändert.
         decline_invitation:
           invalid: Es ist ein Problem aufgetreten, dass die Einladung abgelehnt wurde.
           success: Du hast die Einladung erfolgreich abgelehnt.

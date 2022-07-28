@@ -63,7 +63,7 @@ de:
           current_organizations: Aktuelle Organisationen
       default_pages:
         placeholders:
-          content: Fügen Sie der statischen Seite %{page} im Admin-Dashboard sinnvollen Inhalt hinzu.
+          content: Füge der statischen Seite %{page} im Admin-Dashboard sinnvollen Inhalt hinzu.
           title: Standardtitel für %{page}
       menu:
         admins: Admins
@@ -123,12 +123,12 @@ de:
           error: Beim Erstellen einer neuen Organisation ist ein Fehler aufgetreten.
           success: Organisation erfolgreich erstellt
         edit:
-          secondary_hosts_hint: Geben Sie jede von ihnen in einer neuen Zeile ein
+          secondary_hosts_hint: Gib jede von ihnen in einer neuen Zeile ein
         file_upload_settings:
           content_types:
             admin_hint: Diese MIME-Typen sind für das Hochladen im Admin-Panel erlaubt. Admin-Benutzer sollten sich der Risiken des Hochladens einiger Dokumentformate bewusst sein, so dass man von ihnen erwarten kann dass sie vorsichtiger mit Datei-Uploads sind.
             default_hint: Diese MIME-Typen sind standardmäßig für alle Benutzer erlaubt.
-            intro_html: Sie fügen Platzhalter mit dem Sternzeichen für die MIME-Typen hinzu, z.B. <code>image/*</code>.
+            intro_html: Füge Platzhalter mit dem Sternzeichen für die MIME-Typen hinzu, z.B. <code>image/*</code>.
             title: Erlaubte MIME-Typen
           file_extensions:
             admin_hint: Diese Datei-Erweiterungen sind für das Hochladen im Admin-Panel erlaubt. Admin-Benutzer sollten sich der Risiken des Hochladens einiger Dokumentformate bewusst sein, so dass man von ihnen erwarten kann dass sie vorsichtiger mit Datei-Uploads sind.
@@ -140,13 +140,13 @@ de:
             default_hint: Megabytes (MB). Diese Dateigröße ist die Standardeinstellung, die für alle Datei-Uploads verwendet wird, sofern nicht anders angegeben.
             title: Maximale Dateigröße
           intro: |
-            Bitte seien Sie besonders vorsichtig, wenn Sie überlegen, diese Einstellungen zu ändern. Je weniger Sie erlauben, desto besser.
+            Bitte sei besonders vorsichtig, wenn Du überlegst, diese Einstellungen zu ändern. Je weniger Du erlaubst, desto besser.
             Wenn bestimmte Dateierweiterungen oder MIME-Typen zugelassen werden, können Benutzer Sicherheitsrisiken ausgesetzt werden und es kann auch die Zugänglichkeit der Website beeinträchtigen.
         index:
           title: Organisationen
         new:
           reference_prefix_hint: Das Referenzpräfix wird zur eindeutigen Identifizierung von Ressourcen in allen Organisationen verwendet
-          secondary_hosts_hint: Geben Sie jede von ihnen in einer neuen Zeile ein
+          secondary_hosts_hint: Gib jede von ihnen in einer neuen Zeile ein
           title: Neue Organisation
         omniauth_settings:
           decidim:
@@ -180,10 +180,10 @@ de:
         users_registration_mode:
           disabled: Der Zugriff kann nur mit externen Konten erfolgen
           enabled: Benutzern erlauben, sich zu registrieren und sich anzumelden
-          existing: Erlauben Sie Benutzern keine Registrierung, sondern erlauben Sie bestehenden Benutzern, sich anzumelden
+          existing: Erlaube Benutzern keine Registrierung, sondern erlaube nur bestehenden Benutzern, sich anzumelden
       shared:
         notices:
-          no_organization_warning_html: Sie müssen eine Organisation erstellen, um zu beginnen. Stellen Sie sicher, dass Sie %{guide} lesen, bevor Sie fortfahren.
+          no_organization_warning_html: Du musst eine Organisation erstellen, um zu beginnen. Stelle sicher, dass Du %{guide} gelesen hast, bevor Du fortfährst.
           our_getting_started_guide: unser Leitfaden für Anfänger
       titles:
         dashboard: Instrumententafel
