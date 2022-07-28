@@ -457,7 +457,7 @@ if Decidim.module_installed? :initiatives
     unless Rails.application.secrets.dig(:decidim, :initiatives, :print_enabled) == "auto"
       config.print_enabled = Rails.application.secrets.dig(:decidim, :initiatives, :print_enabled).present?
     end
-    config.do_not_require_authorization = Rails.application.secrets.dig(:decidim, :initiatives, :do_not_require_authorization).present? || true
+    config.do_not_require_authorization = true
   end
 end
 
