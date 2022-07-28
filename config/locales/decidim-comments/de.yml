@@ -1,0 +1,171 @@
+---
+de:
+  activemodel:
+    models:
+      decidim/comments/comment_by_followed_user_event: Kommentar
+      decidim/comments/comment_created_event: Kommentar
+      decidim/comments/comment_upvoted_event: Kommentar positiv bewertet
+      decidim/comments/reply_created_event: Kommentarantwort
+      decidim/comments/user_group_mentioned_event: Erwähnen
+      decidim/comments/user_mentioned_event: Erwähnen
+  activerecord:
+    models:
+      decidim/comments/comment:
+        one: Kommentar
+        other: Bemerkungen
+      decidim/comments/comment_vote:
+        one: Abstimmung
+        other: Stimmen
+  decidim:
+    comments:
+      admin:
+        shared:
+          availability_fields:
+            enabled: Kommentare aktiviert
+            end_time: Kommentare aktiviert bis
+            start_time: Kommentare aktiviert von
+      comments:
+        create:
+          error: Beim Erstellen des Kommentars ist ein Fehler aufgetreten.
+        delete:
+          error: Die Sendung konnte nicht gelöscht werden.
+        update:
+          error: Beim Erstellen des Kommentars ist ein Fehler aufgetreten.
+      comments_count: Kommentaranzahl
+      comments_title: Kommentare
+      last_activity:
+        new_comment_at_html: "<span>Neuer Kommentar unter %{link}</span>"
+      view: Ansicht
+      votes:
+        create:
+          error: Beim Abstimmen des Kommentars sind Fehler aufgetreten.
+    components:
+      add_comment_form:
+        account_message: <a href="%{sign_in_url}">Melde Dich mit Deinem Konto an</a> oder <a href="%{sign_up_url}">registriere Dich</a>, um Deinen Kommentar hinzuzufügen.
+        form:
+          body:
+            label: Kommentar
+            placeholder: Was denkst Du darüber?
+          form_error: Der Text ist erforderlich und darf nicht länger als %{length} Zeichen sein.
+          submit: Senden
+          user_group_id:
+            label: Kommentieren als
+        opinion:
+          label: Deine Meinung zu diesem Thema
+          negative: Negativ
+          negative_selected: Deine Meinung zu diesem Thema ist negativ
+          neutral: Neutral
+          neutral_selected: Deine Meinung zu diesem Thema ist neutral
+          positive: Positiv
+          positive_selected: Deine Meinung zu diesem Thema ist positiv
+        remaining_characters: "%{count} Zeichen übrig"
+        remaining_characters_1: "%{count} Zeichen übrig"
+        title: Kommentar hinzufügen
+      comment:
+        alignment:
+          against: Gegen
+          in_favor: Zugunsten
+        confirm_destroy: Bist Du sicher, dass du diesen Kommentar löschen willst?
+        delete: Löschen
+        deleted_at: Kommentar gelöscht am %{date}
+        deleted_user: Gelöschter Benutzer
+        edit: Bearbeiten
+        edited: Bearbeitet
+        hide_replies: Antworten verbergen
+        moderated_at: Kommentar moderiert am %{date}
+        reply: Antworten
+        report:
+          action: Melden
+          already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator überprüft.
+          close: Schließen
+          description: Ist dieser Inhalt unangemessen?
+          details: Zusätzliche Kommentare
+          reasons:
+            does_not_belong: Enthält illegale Aktivitäten, Selbstmorddrohungen, persönliche Informationen oder etwas anderes, von dem Du denkst, dass es nicht auf %{organization_name} gehört.
+            offensive: Enthält Rassismus, Sexismus, Verleumdungen, persönliche Angriffe, Morddrohungen, Aufforderungen zum Selbstmord oder jegliche Form von Hassrede.
+            spam: Enthält Clickbait, Werbung, Scams oder Script Bots.
+          title: Ungeeigneten Inhalt melden
+        show_replies: '%{replies_count} Antworten anzeigen'
+        single_comment_link_title: Link erhalten
+      comment_order_selector:
+        order:
+          best_rated: Am besten bewertet
+          most_discussed: Meist diskutiert
+          older: Chronologisch
+          recent: Kürzlich hinzugefügt
+        title: 'Sortieren nach:'
+      comment_thread:
+        title: Konversation mit %{authorName}
+      comments:
+        blocked_comments_for_unauthorized_user_warning: Du musst aktuell verifiziert sein um zu kommentieren, aber Du kannst die bisherigen Kommentare lesen.
+        blocked_comments_for_user_warning: Du kannst momentan nichts kommentieren, aber Du kannst die vorherigen lesen.
+        blocked_comments_warning: Kommentare sind zu diesem Zeitpunkt deaktiviert, aber Du kannst die vorherigen lesen.
+        comment_details_title: Kommentarinformationen
+        loading: Kommentare werden geladen ...
+        single_comment_warning: <a href="%{url}">Alle Kommentare anzeigen</a>
+        single_comment_warning_title: Dir wird ein einzelner Kommentar angezeigt
+        title:
+          one: "%{count} Kommentar"
+          other: "%{count} Kommentare"
+      down_vote_button:
+        text: Ich bin mit diesem Kommentar nicht einverstanden
+      edit_comment_modal_form:
+        close: Schliessen
+        form:
+          body:
+            label: Kommentar
+            placeholder: Was denkst Du darüber?
+          submit: Senden
+        title: Kommentar bearbeiten
+      up_vote_button:
+        text: Ich stimme diesem Kommentar zu
+    events:
+      comments:
+        comment_by_followed_user:
+          email_intro: "%{author_name} hat einen Kommentar zu %{resource_title} hinterlassen. Du kannst diesen auf dieser Seite lesen:"
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{author_name} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, besuche die Profil-Seite dieses Benutzers.
+          email_subject: Neuer Kommentar von %{author_name} zu %{resource_title}
+          notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>.
+        comment_by_followed_user_group:
+          email_intro: 'Die Gruppe %{author_name} hat einen Kommentar in %{resource_title} hinterlassen. Du kannst diesen auf dieser Seite lesen:'
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{author_name} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, besuche die Profil-Seite dieser Gruppe.
+          email_subject: Neuer Kommentar von %{author_name} zu %{resource_title}
+          notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>.
+        comment_created:
+          email_intro: "%{resource_title} wurde kommentiert. Du kannst den Kommentar auf dieser Seite lesen:"
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du "%{resource_title}" oder seinem Autor folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_subject: Neuer Kommentar von %{author_name} zu %{resource_title}
+          notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>
+        comment_downvoted:
+          email_intro: Dein Kommentar in "%{resource_title}" wurde negativ bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Autor des Vorschlags bist.
+          email_subject: Dein Kommentar in "%{resource_title}" wurde negativ bewertet.
+          notification_title: Dein <a href="%{resource_path}">Kommentar</a> in "%{resource_title}" wurde negativ bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
+        comment_upvoted:
+          email_intro: Dein Kommentar in "%{resource_title}" wurde positiv bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Autor des Vorschlags bist.
+          email_subject: Dein Kommentar in "%{resource_title}" wurde positiv bewertet.
+          notification_title: Dein <a href="%{resource_path}">Kommentar</a> in "%{resource_title}" wurde positiv bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
+        reply_created:
+          email_intro: "%{author_name} hat auf Deinen Kommentar zu %{resource_title} geantwortet. Du kannst das auf dieser Seite lesen:"
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Dein Kommentar beantwortet wurde.
+          email_subject: "%{author_name} hat auf Deinen Kommentar zu %{resource_title} geantwortet"
+          notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> hat auf Deinen Kommentar in <a href="%{resource_path}">%{resource_title}</a> geantwortet
+        user_group_mentioned:
+          email_intro: Eine Deiner Gruppen wurde erwähnt
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Mitglied der Gruppe %{group_name} bist, die in %{resource_title} erwähnt wurde.
+          email_subject: Du wurdest in %{resource_title} als Mitglied von %{group_name} erwähnt
+          notification_title: Du wurdest in <a href="%{resource_path}">%{resource_title}</a> von <a href="%{author_path}">%{author_name} %{author_nickname}</a> als ein Mitglied von <a href="%{group_path}">%{group_name} %{group_nickname}</a> erwähnt
+        user_mentioned:
+          email_intro: Du wurdest erwähnt
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du in %{resource_title} erwähnt wurdest.
+          email_subject: Du wurdest in %{resource_title} erwähnt
+          notification_title: Du wurdest in <a href="%{resource_path}">%{resource_title}</a> von <a href="%{author_path}">%{author_name} %{author_nickname}</a> erwähnt
+    metrics:
+      comments:
+        description: Anzahl der von Benutzern generierten Kommentare
+        object: Bemerkungen
+        title: Bemerkungen
+  errors:
+    messages:
+      cannot_have_comments: kann keine Kommentare haben
