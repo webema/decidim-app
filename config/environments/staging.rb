@@ -122,3 +122,10 @@ Rails.application.configure do
 
   config.middleware.use RackPassword::Block, auth_codes: ['zp30'], cookie_domain: 'decidim-staging.systeme-e.de'
 end
+
+Mail.register_interceptor(
+  RecipientInterceptor.new(
+    'hei.sam@gmail.com,johanna.huke@evlka.de',
+    subject_prefix: proc { |msg| "[staging]#{msg.to}" }
+  )
+)

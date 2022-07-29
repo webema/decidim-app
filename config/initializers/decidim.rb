@@ -2,7 +2,7 @@
 
 Decidim.configure do |config|
   # The name of the application
-  config.application_name = Rails.application.secrets.decidim[:application_name] || 'Foobar'
+  config.application_name = Rails.application.secrets.decidim[:application_name]
 
   # The email that will be used as sender in all emails from Decidim
   config.mailer_sender = Rails.application.secrets.decidim[:mailer_sender]
@@ -12,14 +12,14 @@ Decidim.configure do |config|
   # When an organization is created through the System area, system admins will
   # be able to choose the available languages for that organization. That list
   # of languages will be equal or a subset of the list in this file.
-  config.available_locales = Rails.application.secrets.decidim[:available_locales].presence || [:en]
+  config.available_locales = Rails.application.secrets.decidim[:available_locales].presence || [:de]
   # Or block set it up manually and prevent ENV manipulation:
   # config.available_locales = %w(en ca es)
 
   # Sets the default locale for new organizations. When creating a new
   # organization from the System area, system admins will be able to overwrite
   # this value for that specific organization.
-  config.default_locale = Rails.application.secrets.decidim[:default_locale].presence || :en
+  config.default_locale = :en
 
   # Restrict access to the system part with an authorized ip list.
   # You can use a single ip like ("1.2.3.4"), or an ip subnet like ("1.2.3.4/24")
@@ -457,7 +457,7 @@ if Decidim.module_installed? :initiatives
     unless Rails.application.secrets.dig(:decidim, :initiatives, :print_enabled) == "auto"
       config.print_enabled = Rails.application.secrets.dig(:decidim, :initiatives, :print_enabled).present?
     end
-    config.do_not_require_authorization = Rails.application.secrets.dig(:decidim, :initiatives, :do_not_require_authorization).present?
+    config.do_not_require_authorization = Rails.application.secrets.dig(:decidim, :initiatives, :do_not_require_authorization).present? || true
   end
 end
 

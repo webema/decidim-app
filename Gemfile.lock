@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 8fd0978ff85d074bd39eac0deb3b020bc5ac45f4
-  branch: release/0.27-stable
+  revision: 0aa279c9bc767014eb7b38f53f8e3fd2a0753f35
+  branch: chore/l10n/release/0.27-stable
   specs:
     decidim (0.27.0.rc1)
       decidim-accountability (= 0.27.0.rc1)
@@ -143,7 +143,6 @@ GIT
       decidim-core (= 0.27.0.rc1)
       decidim-verifications (= 0.27.0.rc1)
       origami (~> 2.1)
-      rexml (~> 3.2.5)
       wicked (~> 1.3)
       wicked_pdf (~> 2.1)
       wkhtmltopdf-binary (~> 0.12)
@@ -531,7 +530,7 @@ GEM
     multi_xml (0.6.0)
     mustache (1.1.1)
     nio4r (2.5.8)
-    nokogiri (1.13.7)
+    nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     oauth (0.5.10)
@@ -596,7 +595,7 @@ GEM
       rack (>= 1.0, < 3)
     rack-cors (1.1.1)
       rack (>= 2.0.0)
-    rack-protection (2.2.1)
+    rack-protection (2.2.2)
       rack
     rack-proxy (0.7.2)
       rack
@@ -645,6 +644,8 @@ GEM
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    recipient_interceptor (0.3.1)
+      mail
     redcarpet (3.5.1)
     redis (4.7.1)
     regexp_parser (2.5.0)
@@ -761,7 +762,7 @@ GEM
       unicode-display_width (>= 1.1.1, < 3)
     thor (1.2.1)
     thread_safe (0.3.6)
-    tilt (2.0.10)
+    tilt (2.0.11)
     tomlrb (2.0.3)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
@@ -831,6 +832,7 @@ DEPENDENCIES
   listen (~> 3.1)
   puma (>= 5.0.0)
   rack_password
+  recipient_interceptor
   rexml (~> 3.2.5)
   sidekiq
   sidekiq-scheduler

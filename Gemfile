@@ -6,7 +6,7 @@ source 'https://nexus.devops-e.de/repository/rubygems'
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = { github: 'decidim/decidim', branch: 'release/0.27-stable' }.freeze
+DECIDIM_VERSION = { github: 'decidim/decidim', branch: 'chore/l10n/release/0.27-stable' }.freeze
 
 gem 'decidim', DECIDIM_VERSION
 gem 'decidim-initiatives', DECIDIM_VERSION
@@ -46,4 +46,9 @@ end
 
 group :production, :staging do
   gem 'aws-sdk-s3', require: false
+end
+
+group :staging do
+  # avoid emailing your users from non-production environments [https://github.com/croaky/recipient_interceptor]
+  gem 'recipient_interceptor'
 end
