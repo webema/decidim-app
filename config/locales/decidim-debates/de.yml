@@ -42,7 +42,7 @@ de:
           step:
             announcement: Ankündigung
             comments_blocked: Kommentare blockiert
-            creation_enabled: Teilnehmer können Debatten erstellen
+            creation_enabled: Teilnehmende können Debatten erstellen
             endorsements_blocked: Bestätigungen blockiert
             endorsements_enabled: Bestätigungen aktiviert
     debates:
@@ -226,11 +226,11 @@ de:
           conditions:
             - Wähle eine offene Debatte, an der Du teilnehmen kannst
           description: Dieses Abzeichen wird gewährt, wenn Du aktiv an den verschiedenen Debatten teilnimmst, indem Du Kommentare hinterlässt.
-          description_another: Dieser Benutzer hat an %{score} Debatten teilgenommen.
+          description_another: Diese/r Benutzer:in hat an %{score} Debatten teilgenommen.
           description_own: Du hast an %{score} Debatten teilgenommen.
           name: Debatten
           next_level_in: Nimm an %{score} weiteren Debatten teil, um das nächste Level zu erreichen!
-          unearned_another: Dieser Benutzer hat noch keine Diskussionen geführt.
+          unearned_another: Diese/r Benutzer:in hat noch keine Diskussionen geführt.
           unearned_own: Du hast bisher an keiner Debatte teilgenommen.
     metrics:
       debates:

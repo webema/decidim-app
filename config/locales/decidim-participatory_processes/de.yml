@@ -11,7 +11,7 @@ de:
         copy_steps: Phasen kopieren
         decidim_area_id: Bereich
         description: Beschreibung
-        developer_group: Promoter-Gruppe
+        developer_group: Promoter:innen-Gruppe
         domain: Domäne
         end_date: Enddatum
         hashtag: Hashtag
@@ -120,8 +120,8 @@ de:
           components: Komponenten
           info: Info
           moderations: Moderationen
-          private_users: Private Benutzer
-          process_admins: Benutzer verarbeiten
+          private_users: Private Benutzer:innen
+          process_admins: Benutzer:innen verarbeiten
           steps: Schritte
       models:
         participatory_process:
@@ -152,12 +152,12 @@ de:
             email: Email
             name: Name
             role: Rolle
-          name: Partizipativer Prozessbenutzer
+          name: Partizipative/r Prozessbenutzer:in
           roles:
-            admin: Administrator
-            collaborator: Mitarbeiter
-            moderator: Moderator
-            valuator: Schätzer
+            admin: Administrator:in
+            collaborator: Mitarbeiter:in
+            moderator: Moderator:in
+            valuator: Schätzer:in
         user:
           fields:
             invitation_accepted_at: Einladung akzeptiert am
@@ -248,21 +248,21 @@ de:
           success: Prozesstyp erfolgreich aktualisiert.
       participatory_process_user_roles:
         create:
-          error: Beim Hinzufügen eines Benutzers für diesen partizipativen Prozess ist ein Fehler aufgetreten.
-          success: Benutzer hat diesen partizipativen Prozess erfolgreich hinzugefügt.
+          error: Beim Hinzufügen eines Benutzers bzw. einer Benutzerin zu diesen partizipativen Prozess ist ein Fehler aufgetreten.
+          success: Der/Die Benutzer:in wurde diesem partizipativen Prozess erfolgreich hinzugefügt.
         destroy:
-          success: Der Benutzer wurde erfolgreich aus diesem partizipativen Prozess entfernt.
+          success: Der Der/Die Benutzer:in erfolgreich aus diesem partizipativen Prozess entfernt.
         edit:
-          title: Administrator des Beteiligungsprozesses aktualisieren
+          title: Administrator:in des Beteiligungsprozesses aktualisieren
           update: Aktualisieren
         index:
-          process_admins_title: Partizipative Prozessbenutzer
+          process_admins_title: Partizipative Prozessbenutzer:innen
         new:
           create: Erstellen
-          title: Neuer Administrator des Beteiligungsprozesses
+          title: Neue/r Administrator:in des Beteiligungsprozesses
         update:
-          error: Für diesen partizipativen Prozess wurde ein Fehler bei einem Benutzer aktualisiert.
-          success: Der Benutzer wurde für diesen partizipativen Prozess erfolgreich aktualisiert.
+          error: Bei der Aktualisierung des Administrators bzw. der Administratorin für diesen partizipativen Prozess ist ein Fehler aufgetreten.
+          success: Der/Die Administrator:in für diesen partizipativen Prozess wurde erfolgreich aktualisiert.
       participatory_processes:
         create:
           error: Beim Erstellen eines neuen Beteiligungsprozesses ist ein Fehler aufgetreten.
@@ -317,9 +317,9 @@ de:
         create: "%{user_name} hat den Beteiligungsprozesstyp %{resource_name} erstellt"
         delete: "%{user_name} hat den Beteiligungsprozesstyp %{resource_name} gelöscht"
       participatory_process_user_role:
-        create: "%{user_name} lud den Benutzer %{resource_name} zu dem %{space_name} Partizipationsprozess ein"
-        delete: "%{user_name} entfernte den Benutzer %{resource_name} aus dem %{space_name} Partizipationsprozess"
-        update: "%{user_name} änderte die Rolle des Benutzers %{resource_name} im %{space_name} Partizipationsprozess"
+        create: "%{user_name} lud den/die Benutzer:in %{resource_name} zu dem %{space_name} Partizipationsprozess ein"
+        delete: "%{user_name} entfernte den/die Benutzer:in %{resource_name} aus dem %{space_name} Partizipationsprozess"
+        update: "%{user_name} änderte die Rolle des Benutzers bzw. der Benutzerin %{resource_name} im %{space_name} Partizipationsprozess"
     events:
       participatory_process:
         role_assigned:
@@ -409,7 +409,7 @@ de:
             cta_text_help: Wenn nicht eingestellt, wird die Schaltfläche nicht angezeigt.
         participatory_processes:
           form:
-            announcement_help: Der Text, den Du hier eingibst, wird dem Benutzer direkt unter den Prozessinformationen angezeigt.
+            announcement_help: Der Text, den Du hier eingibst, wird dem/der Benutzer:in direkt unter den Prozessinformationen angezeigt.
             duration: Dauer
             filters: Filter
             images: Bilder
@@ -478,7 +478,7 @@ de:
         area: Bereich
         belongs_to_group: Dieser Prozess gehört zu
         dates: Daten
-        developer_group: Promoter-Gruppe
+        developer_group: Promoter:innen-Gruppe
         end_date: Enddatum
         local_area: Organisationsbereich
         participatory_scope: Was wird entschieden?
