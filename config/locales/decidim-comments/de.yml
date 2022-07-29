@@ -133,17 +133,17 @@ de:
           notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>.
         comment_created:
           email_intro: "%{resource_title} wurde kommentiert. Du kannst den Kommentar auf dieser Seite lesen:"
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du "%{resource_title}" oder seinem Autor folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du "%{resource_title}" oder seinem Autor bzw. seiner Autorin folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Neuer Kommentar von %{author_name} zu %{resource_title}
           notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>
         comment_downvoted:
           email_intro: Dein Kommentar in "%{resource_title}" wurde negativ bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Autor des Vorschlags bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der/die Autor:in des Vorschlags bist.
           email_subject: Dein Kommentar in "%{resource_title}" wurde negativ bewertet.
           notification_title: Dein <a href="%{resource_path}">Kommentar</a> in "%{resource_title}" wurde negativ bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
         comment_upvoted:
           email_intro: Dein Kommentar in "%{resource_title}" wurde positiv bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Autor des Vorschlags bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der/die Autor:in des Vorschlags bist.
           email_subject: Dein Kommentar in "%{resource_title}" wurde positiv bewertet.
           notification_title: Dein <a href="%{resource_path}">Kommentar</a> in "%{resource_title}" wurde positiv bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
         reply_created:

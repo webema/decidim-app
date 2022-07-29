@@ -22,7 +22,7 @@ de:
         decidim_assemblies_type_id: Versammlungstyp
         decidim_scope_id: Umfang
         description: Beschreibung
-        developer_group: Promoter-Gruppe
+        developer_group: Promoter:innen-Gruppe
         domain: Domain
         duration: Dauer
         facebook: Facebook
@@ -233,10 +233,10 @@ de:
             role: Rolle
           name: Assembly Benutzer:in
           roles:
-            admin: Administrator
-            collaborator: Mitarbeiter
-            moderator: Moderator
-            valuator: Schätzer
+            admin: Administrator:in
+            collaborator: Mitarbeiter:in
+            moderator: Moderator:in
+            valuator: Schätzer:in
       titles:
         assemblies: Gremien
         assemblies_types: Versammlungstypen
@@ -305,7 +305,7 @@ de:
             existing_user: Existierender Benutzer:innen
             explanation: 'Hinweise für das Bild:'
             image_guide: Vorzugsweise ein Bild im Querformat, das keinen Text enthält.
-            non_user: Nichtbenutzer
+            non_user: Nichtbenutzer:in
             non_user_avatar_help: Du solltest die Zustimmung der Personen einholen, bevor Du sie als Mitglied veröffentlichst.
             select_a_position: Wähle eine Position
             select_user: Wähle eine/n Benutzer:in aus
@@ -375,7 +375,7 @@ de:
         composition: Zusammensetzung
         created_by: Erstellt von
         creation_date: Datum erstellt
-        developer_group: Promoter-Gruppe
+        developer_group: Promoter:innen-Gruppe
         duration: Dauer
         included_at: Inbegriffen bei
         indefinite_duration: Unbestimmt

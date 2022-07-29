@@ -3,7 +3,7 @@ de:
   activemodel:
     attributes:
       initiative:
-        decidim_user_group_id: Autor
+        decidim_user_group_id: Autor:in
         description: Beschreibung
         offline_votes: Face-to-Face-Unterstützung
         offline_votes_for_scope: Persönliche Unterschriften für %{scope_name}
@@ -20,13 +20,13 @@ de:
       initiatives_committee_member:
         user: Ausschussmitglied
       initiatives_type:
-        area_enabled: Die Auswahl des Bereichs von Initiativen für Autoren freigeben
+        area_enabled: Die Auswahl des Bereichs von Initiativen für Autoren bzw. Autorinnen freigeben
         attachments_enabled: Anhänge freigeben
         banner_image: Banner-Bild
         child_scope_threshold_enabled: Unterschriften von Unterbereichen aktivieren
         collect_user_extra_fields: Persönliche Daten von Benutzer:innen bei der Unterschrift sammeln
         comments_enabled: Kommentare aktivieren
-        custom_signature_end_date_enabled: Die Auswahl des Enddatums der Unterschriftensammlung für Autoren freigeben
+        custom_signature_end_date_enabled: Die Auswahl des Enddatums der Unterschriftensammlung für Autoren bzw. Autorinnen freigeben
         description: Beschreibung
         document_number_authorization_handler: Berechtigung zur Überprüfung der Belegnummer bei Abstimmungen
         extra_fields_legal_information: Rechtliche Informationen zur Erhebung personenbezogener Daten
@@ -85,7 +85,7 @@ de:
           type_id_eq:
             label: Typ
         search_placeholder:
-          title_or_description_or_id_string_or_author_name_or_author_nickname_cont: Suche in %{collection} nach Titel, Beschreibung, ID oder Autoren.
+          title_or_description_or_id_string_or_author_name_or_author_nickname_cont: Suche in %{collection} nach Titel, Beschreibung, ID oder/die Autor:in:innen.
       initiatives_settings:
         update:
           error: Ein Fehler ist aufgetreten
@@ -157,7 +157,7 @@ de:
         milestone_completed:
           affected_user:
             email_intro: Deine Initiative %{resource_title} hat %{percentage}% der Unterschriften erreicht!
-            email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Autor der Initiative %{resource_title} bist.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil Du der/die Autor:in der Initiative %{resource_title} bist.
             email_subject: Neuer Meilenstein abgeschlossen!
             notification_title: Deine Initiative <a href="%{resource_path}">%{resource_title}</a> hat %{percentage}% der Unterschriften erreicht.
           follower:
@@ -208,7 +208,7 @@ de:
             approve: Genehmigen
             confirm_revoke: Bist Du sicher?
             invite_to_committee_help: Teile diesen Link, um andere Benutzer:innen zum Promotionskomitee einzuladen
-            no_members_yet: Es gibt keine Mitglieder im Promoter-Ausschuss
+            no_members_yet: Es gibt keine Mitglieder im Promoter:innen-Ausschuss
             revoke: Widerrufen
             title: Ausschussmitglieder
         content_blocks:
@@ -337,11 +337,11 @@ de:
           success: Anfrage wurde bestätigt.
         new:
           continue: Fortsetzen
-          help_text: Du bist dabei, ein Mitglied des Promoter-Komitees dieser Initiative zu werden
+          help_text: Du bist dabei, ein Mitglied des Promoter:innen-Komitees dieser Initiative zu werden
         revoke:
           success: Anfrage wurde zurückgezogen.
         spawn:
-          success: Deine Anfrage wurde an den Initiativautor gesendet.
+          success: Deine Anfrage wurde an den/die Initiativautor:in gesendet.
       content_blocks:
         highlighted_initiatives:
           name: Hervorgehobene Initiativen
@@ -383,7 +383,7 @@ de:
           select_initiative_type_help: Bürgerinitiativen sind ein Mittel, mit dem die Bürger eingreifen können, damit die Organisation Maßnahmen zur Verteidigung des Allgemeininteresses ergreifen kann, die in den Zuständigkeitsbereich der Stadtverwaltung fallen. Welche Initiative möchtest Du starten?
         share_committee_link:
           continue: Fortsetzen
-          invite_to_committee_help: Link, um Leute einzuladen, die Teil des Promoter-Komitees sein werden
+          invite_to_committee_help: Link, um Leute einzuladen, die Teil des Promoter:innen-Komitees sein werden
         show_similar_initiatives:
           back: Zurück
           compare_help: Wenn eine der folgenden Initiativen Deiner ähnelt, empfehlen wir Dir, sie zu unterstützen. Dein Vorschlag wird mehr Chancen auf Umsetzung haben.
@@ -401,10 +401,10 @@ de:
         update: Aktualisieren
       events:
         approve_membership_request:
-          email_intro: "%{author_nickname} hat Deine Anfrage fürs Promoter-Komittee der Initiative %{resource_title} akzeptiert."
+          email_intro: "%{author_nickname} hat Deine Anfrage fürs Promoter:innen-Komittee der Initiative %{resource_title} akzeptiert."
           email_outro: 'Du hast diese Benachrichtigung erhalten, weil Du Dich bei dieser Initiative beworben hast: %{resource_title}'
-          email_subject: "%{author_nickname} hat Deine Anfrage fürs Promoter-Komittee akzeptiert"
-          notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> hat Deine Anfrage fürs Promoter-Komittee der Initiative <a href="%{resource_url}">%{resource_title}</a> akzeptiert.
+          email_subject: "%{author_nickname} hat Deine Anfrage fürs Promoter:innen-Komittee akzeptiert"
+          notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> hat Deine Anfrage fürs Promoter:innen-Komittee der Initiative <a href="%{resource_url}">%{resource_title}</a> akzeptiert.
         create_initiative_event:
           email_intro: "%{author_name} %{author_nickname}, dem du folgst, hat eine neue Initiative erstellt, sieh sie Dir an und beteilige Dich:"
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{author_nickname} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
@@ -416,15 +416,15 @@ de:
           email_subject: Initiative wurde von %{author_nickname} unterstützt
           notification_title: Die Initiative <a href="%{resource_path}">%{resource_title}</a> wurde von <a href="%{author_path}">%{author_name} %{author_nickname}</a> unterstützt.
         revoke_membership_request:
-          email_intro: "%{author_nickname} hat Deine Anfrage fürs Promoter-Komittee der Initiative %{resource_title} abgelehnt."
+          email_intro: "%{author_nickname} hat Deine Anfrage fürs Promoter:innen-Komittee der Initiative %{resource_title} abgelehnt."
           email_outro: 'Du hast diese Benachrichtigung erhalten, weil Du Dich bei dieser Initiative beworben hast: %{resource_title}.'
-          email_subject: "%{author_nickname} hat Deine Anfrage fürs Promoter-Komittee abgelehnt"
-          notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> hat Deine Anfrage für das Promoter-Komittee der Initiative <a href="%{resource_url}">%{resource_title}</a> abgelehnt.
+          email_subject: "%{author_nickname} hat Deine Anfrage fürs Promoter:innen-Komittee abgelehnt"
+          notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> hat Deine Anfrage für das Promoter:innen-Komittee der Initiative <a href="%{resource_url}">%{resource_title}</a> abgelehnt.
         spawn_committee_request_event:
-          email_intro: "%{applicant_nickname} hat sich fürs Promoter-Komittee Deiner Initiative %{resource_title} beworben. Um die Anfrage zu akzeptieren oder abzulehnen, besuche das Bearbeitungsformular Deiner Initiative."
-          email_outro: 'Du hast diese Benachrichtigung erhalten, weil Du der Autor der Initiative %{resource_title} bist'
+          email_intro: "%{applicant_nickname} hat sich fürs Promoter:innen-Komittee Deiner Initiative %{resource_title} beworben. Um die Anfrage zu akzeptieren oder abzulehnen, besuche das Bearbeitungsformular Deiner Initiative."
+          email_outro: 'Du hast diese Benachrichtigung erhalten, weil Du der/die Autor:in der Initiative %{resource_title} bist'
           email_subject: "%{applicant_nickname} möchte Deiner Initiative beitreten"
-          notification_title: <a href="%{applicant_profile_url}">%{applicant_nickname}</a> hat sich für das Promoter-Komittee Deiner Initiative <a href="%{resource_url}">%{resource_title}</a> beworben. Um anzunehmen oder abzulehnen, klicke <a href="%{resource_url}/edit">hier</a>.
+          notification_title: <a href="%{applicant_profile_url}">%{applicant_nickname}</a> hat sich für das Promoter:innen-Komittee Deiner Initiative <a href="%{resource_url}">%{resource_title}</a> beworben. Um anzunehmen oder abzulehnen, klicke <a href="%{resource_url}/edit">hier</a>.
       form:
         add_attachments: Dokumente
         attachment_legend: "(Optional) Anhang hinzufügen"
@@ -469,7 +469,7 @@ de:
           approve: Genehmigen
           confirm_revoke: Bist Du dir sicher?
           invite_to_committee_help: Teile diesen Link, um andere Benutzer:innen zum Promotionskomitee einzuladen
-          no_members_yet: Es gibt keine Mitglieder im Promoter-Ausschuss
+          no_members_yet: Es gibt keine Mitglieder im Promoter:innen-Ausschuss
           revoke: Widerrufen
           title: Ausschussmitglieder
         count:
@@ -479,7 +479,7 @@ de:
         filters:
           any: Irgendein
           area: Bereich
-          author: Autor
+          author: Autor:in
           myself: Meine Initiativen
           scope: Umfang
           search: Suche
@@ -514,7 +514,7 @@ de:
           recently_published: Zuletzt veröffentlicht
         print:
           address: Adresse
-          author_title: Autor der Initiative
+          author_title: Autor:in der Initiative
           city: Stadt
           email: E-Mail
           full_name: Vollständiger Name
@@ -567,7 +567,7 @@ de:
         more_information: Hier findest Du weitere Informationen zum Initiativerstellungsprozess.
         progress_report_body_for: Die Initiative %{title} hat die %{percentage}% der erforderlichen Unterstützung erreicht.
         progress_report_for: 'Resume über die Initiative: %{title}'
-        promotal_committee_help: Denke daran, dass Du mindestens %{member_count} Personen zum Promoter-Komitee einladen musst. Leite den folgenden Link weiter, um Personen zum Promoter-Komitee einzuladen
+        promotal_committee_help: Denke daran, dass Du mindestens %{member_count} Personen zum Promoter:innen-Komitee einladen musst. Leite den folgenden Link weiter, um Personen zum Promoter:innen-Komitee einzuladen
         status_change_body_for: 'Die Initiative %{title} hat ihren Status geändert in: %{state}'
         status_change_for: Die Initiative %{title} hat ihren Status geändert
       last_activity:
@@ -614,7 +614,7 @@ de:
         fill_data: Erstellen
         finish: Fertig
         previous_form: Anfang
-        promotal_committee: Promoter-Komitee
+        promotal_committee: Promoter:innen-Komitee
         select_initiative_type: Wählen
         show_similar_initiatives: Vergleichen
         step: Schritt %{current} von %{total}

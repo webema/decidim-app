@@ -654,7 +654,7 @@ de:
             spam: Spam
         reports:
           index:
-            author: Autor(en)
+            author: Autoren/Autorinnen
             callout_html: Ein Inhalt erscheint im Moderations-Panel, wenn er von einem Benutzer bzw. einer Benutzerin gemeldet wurde. Jede/r registrierte/r Benutzer:in kann Inhalte melden, indem er/sie auf die %{icon} Flagge neben dem Element klickt.
             content_original_language: Originalsprache des Inhalts
             participatory_space: Beteiligungsbereich

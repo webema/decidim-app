@@ -12,7 +12,7 @@ de:
         about: Über
         avatar: Profilbild
         document_number: Dokumentennummer
-        email: E-Mail
+        email: E-Mail-Adresse
         name: Name
         nickname: Pseudonym
         phone: Telefonnummer
@@ -95,7 +95,7 @@ de:
       half_a_minute: eine halbe Minute
       less_than_x_minutes:
         one: weniger als eine Minute
-        other: weingier als %{count} Minuten
+        other: weniger als %{count} Minuten
       less_than_x_seconds:
         one: gerade eben
         other: weniger als %{count} Sekunden
@@ -111,12 +111,13 @@ de:
       x_seconds:
         one: Vor 1 Sekunde
         other: "Vor %{count} Sekunden"
+        zero: Gerade eben
   decidim:
     accessibility:
       external_link: Externer Link
       front_page_link: Zur Startseite gehen
       logo: "Offizielles Logo von %{organization}"
-      skip_button: Zu Hauptinhalten überspringen
+      skip_button: Zu Hauptinhalten springen
     account:
       blocked: Dieses Konto wurde wegen Verletzung der Allgemeinen Geschäftsbedingungen gesperrt
       delete:
@@ -131,17 +132,18 @@ de:
         error: Beim Löschen Deines Kontos ist ein Fehler aufgetreten.
         success: Dein Konto wurde erfolgreich gelöscht.
       download_your_data_export:
-        file_no_exists: Diese Datei existiert nicht
+        file_no_exists: Datei existiert nicht
         notice: Deine Daten werden gerade bereitgestellt. Du erhältst nach Fertigstellung eine E-Mail.
       email_change:
         body1: Wir haben eine E-Mail an %{unconfirmed_email} gesendet, um Deine neue E-Mail-Adresse zu verifizieren.
         body2: Möchtest Du die Verifizierungs-E-Mail erneut senden? %{resend_link} oder %{cancel_link}.
         cancel: stornieren
-        cancel_error: Die Änderung der E-Mail-Adresse konnte nicht storniert werden.
-        cancel_successfully: Die Änderung der E-Mail-Adresse wurde erfolgreich storniert.
-        resend_error: Bestätigungs-E-Mail konnte nicht erneut gesendet werden.
+        cancel_error: Die Änderung Deiner E-Mail-Adresse konnte nicht storniert werden.
+        cancel_successfully: Die Änderung Deiner E-Mail-Adresse wurde erfolgreich storniert.
+        resend_error: Die Bestätigungs-E-Mail konnte nicht erneut gesendet werden.
         resend_successfully: Die Bestätigungs-E-Mail wurde erfolgreich an %{unconfirmed_email} gesendet
         send_again: Erneut senden
+        title: Änderung Deiner E-Mail-Adresse verifizieren
       show:
         available_locales_helper: Wähle die Sprache aus, in der Du Decidim verwenden und Benachrichtigungen erhalten möchtest
         change_password: Passwort ändern
@@ -207,6 +209,7 @@ de:
         update: "%{user_name} hat die OAuth-Applikation %{resource_name} aktualisiert"
       organization:
         update: "%{user_name} hat die Organisationseinstellungen aktualisiert"
+        update_external_domain: "%{user_name} hat die externen Domains der Organisation aktualisiert"
       participatory_space_private_user:
         create: "%{user_name} hat %{resource_name} als private/n Benutzer:in eingeladen"
         create_via_csv: "%{user_name} hat %{resource_name} per CSV als private/n Teilnehmer:in eingeladen"
@@ -218,6 +221,10 @@ de:
         delete_with_parent: "%{user_name} hat den Bereich %{resource_name} aus dem übergeordneten Bereich %{parent_scope} gelöscht"
         update: "%{user_name} hat den Bereich %{resource_name} aktualisiert"
         update_with_parent: "%{user_name} hat den Bereich %{resource_name} im übergeordneten Bereich %{parent_scope} aktualisiert"
+      scope_type:
+        create: "%{user_name} hat den scope type %{resource_name} erstellt"
+        delete: "%{user_name} hat den scope type %{resource_name} gelöscht"
+        update: "%{user_name} hat den scope type %{resource_name} aktualisiert"
       static_page:
         create: "%{user_name} hat die statische Seite %{resource_name} erstellt"
         delete: "%{user_name} hat die statische Seite %{resource_name} gelöscht"
@@ -228,7 +235,7 @@ de:
         officialize: "%{user_name} den/die Benutzer:in %{resource_name} offiziell anerkannt"
         promote: "%{user_name} hat %{resource_name} befördert"
         remove_from_admin: "%{user_name} hat den/die Benutzer:in %{resource_name} mit der Rolle %{role} entfernt"
-        show_email: "%{user_name} hat die E-Mail des Teilnehmers %{resource_name} abgerufen"
+        show_email: "%{user_name} hat die E-Mail des Teilnehmers bzw. der Teilnehmerin %{resource_name} abgerufen"
         transfer: "%{user_name} hat den/die Teilnehmer:in %{resource_name} verschoben"
         unblock: "%{user_name} hat die Blockierung von %{resource_name} aufgehoben"
         unofficialize: "%{user_name} hat die offizielle Anerkennung des Benutzer bzw. der Benutzerin %{resource_name} widerrufen"
@@ -274,7 +281,7 @@ de:
         actions:
           button_accept: Akzeptieren
           button_reject: Ablehnen
-          help_text: Überprüfe die Änderungen und akzeptiere diese oder lehne diese ab. Eine Benachrichtigung wird an den / die Verfasser gesendet.
+          help_text: Überprüfe die Änderungen und akzeptiere diese oder lehne diese ab. Eine Benachrichtigung wird an den/die Verfasser:innen gesendet.
         announcement:
           accepted: |-
             Diese Änderung für %{amendable_type} %{proposal_link}
@@ -286,9 +293,9 @@ de:
           rejected: Diese Änderung für %{amendable_type} %{proposal_link} wurde am <strong>%{date}</strong> abgelehnt.
           withdrawn: |-
             Diese Änderung für %{amendable_type} %{proposal_link}
-            wurde vom Autor zurückgezogen.
+            wurde vom Autor bzw. von der Autorin zurückgezogen.
       new:
-        amendment_author: Änderungsautor
+        amendment_author: Änderungsautor:in
         send: Erstellen
         title: Änderungsvorschlag erstellen
       preview_draft:
@@ -606,7 +613,7 @@ de:
         amendment_accepted:
           affected_user:
             email_intro: 'Eine Änderung an %{amendable_title} wurde akzeptiert. Du kannst das auf dieser Seite sehen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Autor von %{amendable_title} bist.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Autor:in von %{amendable_title} bist.
             email_subject: Akzeptierte Änderung für %{amendable_title} von %{emendation_author_nickname}
             notification_title: Die <a href="%{emendation_path}">Änderung</a> von <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> für <a href="%{amendable_path}">%{amendable_title}</a> wurde angenommen.
           follower:
@@ -617,7 +624,7 @@ de:
         amendment_created:
           affected_user:
             email_intro: 'Eine neue Änderung wurde für %{amendable_title} vorgeschlagen. Du kannst das auf dieser Seite sehen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Autor von %{amendable_title} bist.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Autor:in von %{amendable_title} bist.
             email_subject: Neuer Änderungsantrag für %{amendable_title}
             notification_title: Neue Änderung für <a href="%{amendable_path}">%{amendable_title}</a> erstellt.
           follower:
@@ -628,7 +635,7 @@ de:
         amendment_promoted:
           affected_user:
             email_intro: 'Eine abgelehnte Änderung an %{amendable_title} wurde als neue/n %{amendable_type} veröffentlicht. Du kannst das auf dieser Seite sehen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Autor von %{amendable_title} bist.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Autor:in von %{amendable_title} bist.
             email_subject: Eine Änderung von %{emendation_author_nickname} wurde als neue/n %{amendable_type} veröffentlicht
             notification_title: Die <a href="%{emendation_path}">abgelehnte Änderung</a> für <a href="%{amendable_path}">%{amendable_title}</a> wurde von <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> als neue/n %{amendable_type} veröffentlicht.
           follower:
@@ -639,7 +646,7 @@ de:
         amendment_rejected:
           affected_user:
             email_intro: 'Eine Änderung an %{amendable_title} wurde abgelehnt. Du kannst das auf dieser Seite sehen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Autor von %{amendable_title} bist.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Autor:in von %{amendable_title} bist.
             email_subject: Abgelehnter Änderungsantrag für %{amendable_title} von %{emendation_author_nickname}
             notification_title: Die <a href="%{emendation_path}">Änderung</a> von <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> für <a href="%{amendable_path}">%{amendable_title}</a> wurde abgelehnt.
           follower:
@@ -726,7 +733,7 @@ de:
       reports:
         resource_hidden:
           email_intro: Ein/e Administrator:in hat Dein/e/n %{resource_type} entfernt, weil diese/r/s als %{report_reasons} gemeldet wurde.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du Autor des entfernten Inhalts bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der/die Autor:in des entfernten Inhalts bist.
           email_subject: Dein/e %{resource_type} wurde entfernt
           notification_title: |-
             Ein/e Administrator:in hat Dein/e %{resource_type} entfernt, weil es als %{report_reasons} gemeldet wurde.</br>
@@ -870,8 +877,8 @@ de:
         are_you_sure: Bist Du sicher? Dies wird den/die Benutzer:in nicht aus der Gruppe entfernen.
         demote_admin: Entferne Admin
       demote:
-        error: Beim Entfernen dieses Benutzers bzw. dieser Benutzerin aus der Administrator:innen-Liste ist ein Fehler aufgetreten
-        success: Der/Die Benutzer:in wurde erfolgreich aus der Administrator:innen-Liste entfernt
+        error: Beim Entfernen dieses Benutzers bzw. dieser Benutzerin aus der Administrierenden-Liste ist ein Fehler aufgetreten
+        success: Der/Die Benutzer:in wurde erfolgreich aus der Administrierenden-Liste entfernt
       index:
         current_admins: 'Aktuelle Admins:'
         manage_admins: Admins verwalten
@@ -1297,7 +1304,7 @@ de:
         report_html: <p>Der folgende <a href="%{url}">Inhalt</a> wurde automatisch ausgeblendet.</p>
         subject: Eine Ressource wurde automatisch ausgeblendet
       report:
-        authors: Autoren
+        authors: Autoren/Autorinnen
         content: Gemeldeter Inhalt
         content_original_language: Originalsprache des Inhalts
         date: Gemeldet am
@@ -1498,7 +1505,7 @@ de:
         changes_at_title: Änderungen an „%{title}“
         number_of_versions: Versionen
         show_all_versions: Alle Versionen anzeigen
-        version_author: Autor dieser Version
+        version_author: Autor:in dieser Version
         version_created_at: Version erstellt am
         version_number: Versionsnummer
         version_number_out_of_total: "%{current_version} von %{total_count}"

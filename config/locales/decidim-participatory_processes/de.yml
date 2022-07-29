@@ -11,7 +11,7 @@ de:
         copy_steps: Phasen kopieren
         decidim_area_id: Bereich
         description: Beschreibung
-        developer_group: Promoter-Gruppe
+        developer_group: Promoter:innen-Gruppe
         domain: Domäne
         end_date: Enddatum
         hashtag: Hashtag
@@ -152,12 +152,12 @@ de:
             email: Email
             name: Name
             role: Rolle
-          name: Partizipativer Prozessbenutzer
+          name: Partizipative/r Prozessbenutzer:in
           roles:
-            admin: Administrator
-            collaborator: Mitarbeiter
-            moderator: Moderator
-            valuator: Schätzer
+            admin: Administrator:in
+            collaborator: Mitarbeiter:in
+            moderator: Moderator:in
+            valuator: Schätzer:in
         user:
           fields:
             invitation_accepted_at: Einladung akzeptiert am
@@ -256,7 +256,7 @@ de:
           title: Administrator:in des Beteiligungsprozesses aktualisieren
           update: Aktualisieren
         index:
-          process_admins_title: Partizipative Prozessbenutzer
+          process_admins_title: Partizipative Prozessbenutzer:innen
         new:
           create: Erstellen
           title: Neue/r Administrator:in des Beteiligungsprozesses
@@ -478,7 +478,7 @@ de:
         area: Bereich
         belongs_to_group: Dieser Prozess gehört zu
         dates: Daten
-        developer_group: Promoter-Gruppe
+        developer_group: Promoter:innen-Gruppe
         end_date: Enddatum
         local_area: Organisationsbereich
         participatory_scope: Was wird entschieden?

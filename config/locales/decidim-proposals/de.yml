@@ -152,7 +152,7 @@ de:
               most_voted: Am meisten unterstützt
               random: Zufällig
               recent: Neueste
-              with_more_authors: Mit mehr Autoren
+              with_more_authors: Mit mehr Autoren/Autorinnen
             geocoding_enabled: Geocoding aktiviert
             minimum_votes_per_user: Mindeststimmen pro Nutzer
             new_proposal_body_template: Textvorlage für neuen Vorschlag
@@ -162,7 +162,7 @@ de:
             participatory_texts_enabled: Partizipative Texte aktiviert
             participatory_texts_enabled_readonly: Die Interaktion mit dieser Einstellung ist nicht möglich, wenn Vorschläge bestehen. Bitte erstelle eine neue „Vorschlagskomponente“, wenn Du diese Funktion aktivieren möchtest, oder verwerfe alle importierten Vorschläge im Menü „Beteiligungstexte“, wenn Du diese Funktion deaktivieren möchtest.
             proposal_answering_enabled: Vorschlagsantworten aktiviert
-            proposal_edit_before_minutes: Vorschläge können von Autoren innerhalb dieser Zeit bearbeitet werden
+            proposal_edit_before_minutes: Vorschläge können von Autoren/Autorinnen innerhalb dieser Zeit bearbeitet werden
             proposal_edit_time: Vorschläge bearbeiten
             proposal_edit_time_choices:
               infinite: Vorschläge können beliebig lang bearbeitet werden
@@ -188,8 +188,8 @@ de:
             amendments_visibility: Sichtbarkeit der Ergänzungen
             amendments_visibility_choices:
               all: Ergänzungen sind für alle sichtbar
-              participants: Ergänzungen sind nur für ihre Autoren sichtbar
-            amendments_visibility_help: Wenn die Option „Ergänzungen sind nur für ihre Autoren sichtbar“ ausgewählt ist, müssen Teilnehmende eingeloggt sein, um die vorgenommenen Ergänzungen zu sehen.
+              participants: Ergänzungen sind nur für ihre Autoren/Autorinnen sichtbar
+            amendments_visibility_help: Wenn die Option „Ergänzungen sind nur für ihre Autoren/Autorinnen sichtbar“ ausgewählt ist, müssen Teilnehmende eingeloggt sein, um die vorgenommenen Ergänzungen zu sehen.
             announcement: Ankündigung
             answers_with_costs: Kosten für Vorschlagsantworten aktivieren
             automatic_hashtags: Hashtags wurden allen Vorschlägen hinzugefügt
@@ -204,7 +204,7 @@ de:
               most_voted: Am häufigsten unterstützt
               random: Zufällig
               recent: Neueste
-              with_more_authors: Mit mehr Autoren
+              with_more_authors: Mit mehr Autoren/Autorinnen
             endorsements_blocked: Zustimmungen blockiert
             endorsements_enabled: Bestätigungen aktiviert
             proposal_answering_enabled: Vorschlagsantworten aktiviert
@@ -252,7 +252,7 @@ de:
         proposal_accepted:
           affected_user:
             email_intro: 'Dein Vorschlag "%{resource_title}" wurde angenommen. Du kannst die Antwort auf dieser Seite lesen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Autor von "%{resource_title}" bist.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Autor:in von "%{resource_title}" bist.
             email_subject: Dein Vorschlag wurde angenommen
             notification_title: Dein Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde angenommen.
           follower:
@@ -263,7 +263,7 @@ de:
         proposal_evaluating:
           affected_user:
             email_intro: 'Dein Vorschlag "%{resource_title}" wird derzeit geprüft. Das Resultat wird auf dieser Seite aufgeschaltet werden:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Autor von "%{resource_title}" bist.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Autor:in von "%{resource_title}" bist.
             email_subject: Dein Vorschlag wird evaluiert
             notification_title: Dein Vorschlag <a href="%{resource_path}">%{resource_title}</a> wird evaluiert.
           follower:
@@ -273,7 +273,7 @@ de:
             notification_title: Der Vorschlag <a href="%{resource_path}">%{resource_title}</a> wird evaluiert.
         proposal_mentioned:
           email_intro: Dein Vorschlag "%{mentioned_proposal_title}" wurde <a href="%{resource_url}">hier</a> in den Kommentaren erwähnt.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Autor von "%{resource_title}" bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Autor:in von "%{resource_title}" bist.
           email_subject: Dein Vorschlag "%{mentioned_proposal_title}" wurde erwähnt
           notification_title: Dein Vorschlag "%{mentioned_proposal_title}" wurde <a href="%{resource_path}">hier</a> in den Kommentaren erwähnt.
         proposal_published:
@@ -288,7 +288,7 @@ de:
         proposal_rejected:
           affected_user:
             email_intro: 'Dein Vorschlag "%{resource_title}" wurde abgelehnt. Du kannst die Antwort auf dieser Seite lesen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Autor von "%{resource_title}" bist.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Autor:in von "%{resource_title}" bist.
             email_subject: Dein Vorschlag wurde abgelehnt
             notification_title: Dein Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde abgelehnt.
           follower:
@@ -298,12 +298,12 @@ de:
             notification_title: Der Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde abgelehnt.
         proposal_update_category:
           email_intro: 'Ein/e Administrator:in hat die Kategorie Deines Vorschlags "%{resource_title}" aktualisiert, sieh ihn Dir an:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Autor des Vorschlags bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der/die Autor:in des Vorschlags bist.
           email_subject: Die Vorschlagskategorie %{resource_title} wurde aktualisiert
           notification_title: Die Vorschlagskategorie <a href="%{resource_path}">%{resource_title}</a> wurde von einem Administrator bzw. einer Administratorin aktualisiert.
         proposal_update_scope:
           email_intro: 'Ein/e Administrator:in hat den Bereich Deines Vorschlags „%{resource_title}“ aktualisiert, sieh es Dir auf dieser Seite an:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Autor des Vorschlags bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der/die Autor:in des Vorschlags bist.
           email_subject: Der Bereich des Vorschlags %{resource_title} wurde aktualisiert
           notification_title: Der Bereich des Vorschlags <a href="%{resource_path}">%{resource_title}</a> wurde von einem Administrator bzw. einer Administratorin aktualisiert.
         voting_enabled:
@@ -489,7 +489,7 @@ de:
           show:
             amendments_count: Anzahl der Ergänzungen
             assigned_valuators: Zugewiesene Schätzer
-            authors: Autoren
+            authors: Autoren/Autorinnen
             body: Haupttext
             comments_count: Anzahl der Kommentare
             comments_negative_count: Dagegen
@@ -589,7 +589,7 @@ de:
           publish:
             error: Bei der Veröffentlichung des gemeinsamen Entwurfs sind Fehler aufgetreten.
             irreversible_action_modal:
-              body: Nachdem der Entwurf als Vorschlag veröffentlicht wurde, kann der Entwurf nicht mehr bearbeitet werden. Der Vorschlag akzeptiert keine neuen Autoren oder Beiträge.
+              body: Nachdem der Entwurf als Vorschlag veröffentlicht wurde, kann der Entwurf nicht mehr bearbeitet werden. Der Vorschlag akzeptiert keine neuen Autoren/Autorinnen oder Beiträge.
               cancel: Abbrechen
               ok: Als Vorschlag veröffentlichen
               title: Die folgende Aktion ist irreversibel
@@ -598,7 +598,7 @@ de:
           withdraw:
             error: Es gab Fehler beim Schließen des gemeinsamen Entwurfs.
             irreversible_action_modal:
-              body: Nach dem Schließen des Entwurfs wird der Entwurf nicht mehr bearbeitet werden können. Der Entwurf akzeptiert keine neuen Autoren oder Beiträge.
+              body: Nach dem Schließen des Entwurfs kann der Entwurf nicht mehr bearbeitet werden. Der Entwurf akzeptiert keine neuen Autoren/Autorinnen oder Beiträge.
               cancel: Abbrechen
               ok: Den gemeinsamen Entwurf zurückziehen
               title: Die folgende Aktion ist irreversibel
@@ -665,7 +665,7 @@ de:
           hidden_authors_count:
             one: und %{count} weitere Person
             other: und %{count} weitere Personen
-          info-message: Dies ist ein <strong>kollaborativen Entwurf</strong> für einen Vorschlag. Dies bedeutet, dass Du den Autoren helfen kannst, den Vorschlag zu gestalten, indem Du den unten stehenden Kommentarabschnitt verwendest, oder ihn direkt verbesserst, indem Du Zugriff anforderst, um ihn zu bearbeiten. Sobald die Autoren Dir Zugriff gewähren, kannst Du Änderungen an diesem Entwurf vornehmen.
+          info-message: Dies ist ein <strong>kollaborativen Entwurf</strong> für einen Vorschlag. Dies bedeutet, dass Du den Autoren/Autorinnen helfen kannst, den Vorschlag zu gestalten, indem Du den unten stehenden Kommentarabschnitt verwendest, oder ihn direkt verbesserst, indem Du Zugriff anforderst, um ihn zu bearbeiten. Sobald die Autoren/Autorinnen Dir Zugriff gewähren, kannst Du Änderungen an diesem Entwurf vornehmen.
           publish: Veröffentlichen
           publish_info: Veröffentliche diese Version des Entwurfs oder
           published_proposal: Veröffentlichter Vorschlag
@@ -700,7 +700,7 @@ de:
       models:
         collaborative_draft:
           fields:
-            authors: Autoren
+            authors: Autoren/Autorinnen
             comments: Bemerkungen
             contributions: Beiträge
         proposal:
@@ -799,7 +799,7 @@ de:
           most_voted: Am meisten unterstützt
           random: Zufällig
           recent: Kürzlich hinzugefügt
-          with_more_authors: Mit mehr Autoren
+          with_more_authors: Mit mehr Autoren/Autorinnen
         participatory_texts:
           index:
             document_index: Dokumentenindex
