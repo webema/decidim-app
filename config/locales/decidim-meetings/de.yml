@@ -156,7 +156,7 @@ de:
           notification_title: Deine Anmeldung zur Sitzung <a href="%{resource_url}">%{resource_title}</a> wurde bestätigt. Dein Registrierungscode ist %{registration_code}.
         meeting_registrations_over_percentage:
           email_intro: Die Slots der Sitzung "%{resource_title}" sind zu über %{percentage}% belegt.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator des Teilnahmebereichs der Besprechung bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Administrator:in des Teilnahmebereichs der Besprechung bist.
           email_subject: Slots der Sitzung "%{resource_title}" über %{percentage}% belegt
           notification_title: Die Slots der Sitzung <a href="%{resource_path}">%{resource_title}</a> sind zu über %{percentage}% belegt.
         meeting_updated:

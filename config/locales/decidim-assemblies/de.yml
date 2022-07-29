@@ -78,14 +78,14 @@ de:
   activerecord:
     models:
       decidim/assembly:
-        one: Gre­mi­um
+        one: Gremium
         other: Gremien
       decidim/assembly_member:
         one: Gremienmitglieder
         other: Mitglieder der Versammlung
       decidim/assembly_user_role:
-        one: Assembly-Benutzerrolle
-        other: Zusammenbau von Benutzerrollen
+        one: Assembly-Benutzer:innen-Rolle
+        other: Assembly-Benutzer:innen-Rollen
   decidim:
     admin:
       actions:
@@ -169,7 +169,7 @@ de:
       assembly_user_roles:
         create:
           error: Beim Hinzufügen eines Benutzers bzw. einer Benutzerin für diese Assembly ist ein Fehler aufgetreten.
-          success: Der Administrator wurde dieser Versammlung erfolgreich hinzugefügt.
+          success: Der/Die Administrator:in wurde dieser Versammlung erfolgreich hinzugefügt.
         destroy:
           success: Der/Die Benutzer:in wurde erfolgreich von dieser Assembly entfernt.
         edit:
@@ -403,7 +403,7 @@ de:
     events:
       assemblies:
         create_assembly_member:
-          email_intro: Ein Administrator des Gremiums <a href="%{resource_url}">%{resource_name}</a> hat Dich als Mitglied eingeladen.
+          email_intro: Ein/e Administrator:in des Gremiums <a href="%{resource_url}">%{resource_name}</a> hat Dich als Mitglied eingeladen.
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du zu einem Gremium eingeladen wurdest. Gehe zur <a href="%{resource_url}">Gremiumsseite</a>, um mitzumachen!
           email_subject: Du wurdest als Mitglied des Gremiums %{resource_name} eingeladen!
           notification_title: Du wurdest als Mitglied des Gremiums <a href="%{resource_path}">%{resource_name}</a> registriert. Gehe zur <a href="%{resource_path}">Gremiumsseite</a>, um mitzuwirken!

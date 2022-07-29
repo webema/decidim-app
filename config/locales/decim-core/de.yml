@@ -231,7 +231,7 @@ de:
         show_email: "%{user_name} hat die E-Mail des Teilnehmers %{resource_name} abgerufen"
         transfer: "%{user_name} hat den/die Teilnehmer:in %{resource_name} verschoben"
         unblock: "%{user_name} hat die Blockierung von %{resource_name} aufgehoben"
-        unofficialize: "%{user_name} hat die offizielle Anerkennung des Benutzers %{resource_name} widerrufen"
+        unofficialize: "%{user_name} hat die offizielle Anerkennung des Benutzer bzw. der Benutzerin %{resource_name} widerrufen"
       user_group:
         reject: "%{user_name} hat die Gruppen-Verifikation %{resource_name} abgelehnt"
         verify: "%{user_name} hat die Gruppe %{resource_name} verifiziert"
@@ -364,7 +364,7 @@ de:
       dummy_authorization_workflow:
         name: Arbeitsablauf Dummy Berechtigung
       errors:
-        duplicate_authorization: Ein/e Teilnehmer:in mit den gleichen Daten ist bereits autorisiert. Ein Administrator wird Dich kontaktieren, um Deine Daten zu überprüfen.
+        duplicate_authorization: Ein/e Teilnehmer:in mit den gleichen Daten ist bereits autorisiert. Ein/e Administrator:in wird Dich kontaktieren, um Deine Daten zu überprüfen.
       expired_at: Abgelaufen am %{timestamp}
       expires_at: Läuft am %{timestamp} ab
       foo_authorization:
@@ -677,17 +677,17 @@ de:
           notification_title: Gratulation! Du hast Level %{current_level} auf dem Abzeichen <a href="%{resource_path}">%{badge_name}</a> erreicht!
       groups:
         demoted_membership:
-          email_intro: Ein Administrator der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat Deine Administratorrechte für diese Gruppe entfernt.
+          email_intro: Ein/e Administrator:in der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat Deine Administratorrechte für diese Gruppe entfernt.
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du Mitglied dieser Gruppe bist.
-          email_subject: Du bist kein Administrator der Gruppe %{user_group_name} mehr!
-          notification_title: Du bist nicht mehr Administrator in der Gruppe <a href="%{resource_path}">%{user_group_name}</a>.
+          email_subject: Du bist kein/e Administrator:in der Gruppe %{user_group_name} mehr!
+          notification_title: Du bist nicht mehr Administrator:in in der Gruppe <a href="%{resource_path}">%{user_group_name}</a>.
         invited_to_group:
-          email_intro: Ein Administrator der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat Dich in die Gruppe eingeladen.
+          email_intro: Ein/e Administrator:in der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat Dich in die Gruppe eingeladen.
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du zu einer Gruppe eingeladen wurdest. Überprüfe das Tab "Gruppen" in Deinem Profil, um die Einladung zu akzeptieren.
           email_subject: Du wurdest eingeladen, der Gruppe %{user_group_name} beizutreten!
           notification_title: Du wurdest eingeladen, der Gruppe <a href="%{resource_path}">%{user_group_name}</a> beizutreten. Besuche die <a href="%{groups_profile_tab_path}">Gruppen-Seite</a> in Deinem Profil, um die Einladung zu akzeptieren!
         join_request_accepted:
-          email_intro: Herzlichen Glückwunsch! Ein Administrator der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat Deine Anfrage akzeptiert, der Gruppe beizutreten.
+          email_intro: Herzlichen Glückwunsch! Ein/e Administrator:in der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat Deine Anfrage akzeptiert, der Gruppe beizutreten.
           email_outro: Du hast diese Benachrichtigung erhalten, weil Deine Beitrittsanfrage aktualisiert wurde.
           email_subject: Du wurdest in die Gruppe %{user_group_name} aufgenommen!
           notification_title: Du wurdest in die Gruppe <a href="%{resource_path}">%{user_group_name}</a> aufgenommen.
@@ -697,15 +697,15 @@ de:
           email_subject: Jemand hat darum gebeten, der Gruppe %{user_group_name} beizutreten!
           notification_title: Jemand hat darum gebeten, der Gruppe %{user_group_name} beizutreten. Du kannst die Anfrage auf der <a href="%{resource_path}">Gruppenmitglieder-Seite</a> akzeptieren oder ablehnen.
         join_request_rejected:
-          email_intro: Ein Administrator der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat Deine Anfrage abgelehnt, der Gruppe beizutreten.
+          email_intro: Ein/e Administrator:in der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat Deine Anfrage abgelehnt, der Gruppe beizutreten.
           email_outro: Du hast diese Benachrichtigung erhalten, weil Deine Beitrittsanfrage aktualisiert wurde.
           email_subject: Deine Anfrage, der Gruppe %{user_group_name} beizutreten, wurde abgelehnt!
           notification_title: Deine Anfrage, der Gruppe <a href="%{resource_path}">%{user_group_name}</a> beizutreten, wurde abgelehnt.
         promoted_to_admin:
-          email_intro: Ein Administrator der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat Dir Administratorrechte für diese Gruppe erteilt.
+          email_intro: Ein/e Administrator:in der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat Dir Administratorrechte für diese Gruppe erteilt.
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du Mitglied dieser Gruppe bist.
           email_subject: Du bist jetzt ein Admin der Gruppe %{user_group_name}!
-          notification_title: Du bist jetzt ein Administrator in der Gruppe <a href="%{resource_path}">%{user_group_name}</a>.
+          notification_title: Du bist jetzt ein/e Administrator:in in der Gruppe <a href="%{resource_path}">%{user_group_name}</a>.
         removed_from_group:
           email_intro: Ein Admin der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat Dich aus der Gruppe entfernt.
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du Mitglied dieser Gruppe warst.
@@ -713,23 +713,23 @@ de:
           notification_title: Du wurdest aus der Gruppe <a href="%{resource_path}">%{user_group_name}</a> entfernt.
         user_group_created:
           email_intro: Eine neue Benutzer:innen-Gruppe mit dem Namen %{user_group_name} wurde erstellt. Du kannst sie über das <a href="%{groups_admin_url}">Admin-Panel</a> verifizieren.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator der Plattform bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Administrator:in der Plattform bist.
           email_subject: Eine neue Benutzer:innen-Gruppe wurde erstellt
           notification_title: Die Benutzer:innen-Gruppe %{user_group_name} wurde erstellt. Du kannst sie über das <a href="%{groups_admin_path}">Admin-Panel</a> verifizieren.
         user_group_updated:
           email_intro: Die Benutzer:innen-Gruppe mit dem Namen %{user_group_name} hat ihr Profil aktualisiert, wodurch diese erneut verifiziert werden muss. Du kannst sie über das <a href="%{groups_admin_url}">Admin-Panel</a> verifizieren.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator der Plattform bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Administrator:in der Plattform bist.
           email_subject: Eine Benutzer:innen-Gruppe hat ihr Profil aktualisiert
           notification_title: Die Benutzer:innen-Gruppe %{user_group_name} hat ihr Profil aktualisiert, wodurch diese erneut verifiziert werden muss. Du kannst sie über das <a href="%{groups_admin_path}">Admin-Panel</a> verifizieren.
       notification_event:
         notification_title: Ein Ereignis trat auf <a href="%{resource_path}">%{resource_title}</a>.
       reports:
         resource_hidden:
-          email_intro: Ein Administrator hat Dein/e/n %{resource_type} entfernt, weil diese/r/s als %{report_reasons} gemeldet wurde.
+          email_intro: Ein/e Administrator:in hat Dein/e/n %{resource_type} entfernt, weil diese/r/s als %{report_reasons} gemeldet wurde.
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du Autor des entfernten Inhalts bist.
           email_subject: Dein/e %{resource_type} wurde entfernt
           notification_title: |-
-            Ein Administrator hat Dein/e %{resource_type} entfernt, weil es als %{report_reasons} gemeldet wurde.</br>
+            Ein/e Administrator:in hat Dein/e %{resource_type} entfernt, weil es als %{report_reasons} gemeldet wurde.</br>
             <i>%{resource_content}</i>
       resource_endorsed:
         email_intro: '%{endorser_name} %{endorser_nickname}, dem Du folgst, hat gerade "%{resource_title}" unterstützt, und wir denken, das könnte interessant für Dich sein. Schaue es Dir an und reden mit:'
@@ -744,7 +744,7 @@ de:
           notification_title: Die <a href="%{resource_path}">Profilseite</a> von %{name} (%{nickname}), der Du folgst, wurde aktualisiert.
         user_officialized:
           email_intro: Teilnehmer:in %{name} (%{nickname}) wurde offiziell bestätigt.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator der Organisation bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Administrator:in der Organisation bist.
           email_subject: "%{name} wurde offiziell bestätigt"
           notification_title: Teilnehmer:in %{name} (%{nickname}) wurde offiziell bestätigt.
     export_mailer:
@@ -870,8 +870,8 @@ de:
         are_you_sure: Bist Du sicher? Dies wird den/die Benutzer:in nicht aus der Gruppe entfernen.
         demote_admin: Entferne Admin
       demote:
-        error: Beim Entfernen dieses Benutzers aus der Administratorliste ist ein Fehler aufgetreten
-        success: Der/Die Benutzer:in vom Administrator erfolgreich entfernt
+        error: Beim Entfernen dieses Benutzers bzw. dieser Benutzerin aus der Administrator:innen-Liste ist ein Fehler aufgetreten
+        success: Der/Die Benutzer:in wurde erfolgreich aus der Administrator:innen-Liste entfernt
       index:
         current_admins: 'Aktuelle Admins:'
         manage_admins: Admins verwalten
@@ -929,10 +929,10 @@ de:
         phone_help: Verwende keine Bindestriche oder Leerzeichen
       join:
         error: Es ist ein Problem aufgetreten, der Gruppe beizutreten
-        success: Deine Beitritts-Anforderung wurde erfolgreich erstellt. Ein Administrator überprüft Deine Anfrage, bevor er Dich für die Gruppe akzeptiert.
+        success: Deine Beitritts-Anforderung wurde erfolgreich erstellt. Ein/e Administrator:in überprüft Deine Anfrage, bevor er Dich für die Gruppe akzeptiert.
       leave:
         error: Es gab ein Problem, die Gruppe zu verlassen
-        last_admin: Du kannst diese Gruppe nicht verlassen, da Du der letzte Administrator bist. Mache ein anderes Mitglied zum Administrator, um die Gruppe zu verlassen.
+        last_admin: Du kannst diese Gruppe nicht verlassen, da Du der/die letzte Administrator:in bist. Mache ein anderes Mitglied zum/zur Administrator:in, um die Gruppe zu verlassen.
         success: Gruppe erfolgreich verlassen.
       members:
         accept_or_reject_join_requests: 'Die folgenden Benutzer:innen haben sich angemeldet, um dieser Gruppe beizutreten. Anfragen akzeptieren oder ablehnen:'
@@ -1010,13 +1010,13 @@ de:
     messaging:
       conversation_mailer:
         comanagers_new_conversation:
-          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator von %{group} bist.
+          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Du ein/e Administrator:in von %{group} bist.
           greeting: Hallo, %{recipient}!
           intro: "%{manager} hat eine Unterhaltung im Namen von %{group} begonnen. Klicke hier, um diese anzuzeigen:"
           outro: Viel Spaß mit Decidim!
           subject: "%{manager} hat eine Unterhaltung als %{group} begonnen"
         comanagers_new_message:
-          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator von %{group} bist.
+          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Du ein/e Administrator:in von %{group} bist.
           greeting: Hallo, %{recipient}!
           intro: "%{manager} hat Nachrichten in einer Unterhaltung im Namen von %{group} gesendet. Klicke hier, um diese anzuzeigen:"
           outro: Viel Spaß mit Decidim!
@@ -1027,13 +1027,13 @@ de:
           outro: Viel Spaß mit Decidim!
           subject: "%{sender} hat ein Gespräch mit Dir begonnen"
         new_group_conversation:
-          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator von %{group} bist.
+          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Du ein/e Administrator:in von %{group} bist.
           greeting: Hallo, %{recipient}!
           intro: "%{sender} hat eine neue Unterhaltung mit der Gruppe %{group} begonnen. Klicke hier, um diese anzuzeigen:"
           outro: Viel Spaß mit Decidim!
           subject: "%{sender} hat eine Unterhaltung mit %{group} begonnen"
         new_group_message:
-          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator von %{group} bist.
+          admin_in_group: Du hast diese Benachrichtigung erhalten, weil Du ein/e Administrator:in von %{group} bist.
           greeting: Hallo, %{recipient}!
           intro: "%{sender} hat neue Nachrichten in einer Unterhaltung mit der Gruppe %{group} gesendet. Klicke hier, um diese anzuzeigen:"
           outro: Viel Spaß mit Decidim!
@@ -1098,8 +1098,8 @@ de:
         title: Teilnehmer
       users:
         description: Anzahl der Benutzer:innen in der Organisation
-        object: Benutzer
-        title: Benutzer
+        object: Benutzer:in
+        title: Benutzer:in
     newsletter_mailer:
       newsletter:
         note: Du hast diese E-Mail erhalten, weil Du Newsletter auf %{organization_name} abonniert hast. Du kannst Deine Einstellungen auf Deiner <a href="%{link}">Benachrichtigungen Seite</a> ändern.
@@ -1312,7 +1312,7 @@ de:
     reports:
       create:
         error: Beim Erstellen des Berichts ist ein Fehler aufgetreten. Bitte, versuche es noch einmal.
-        success: Der Bericht wurde erfolgreich erstellt und wird von einem Administrator überprüft.
+        success: Der Bericht wurde erfolgreich erstellt und wird von einem Administrator bzw. einer Administratorin überprüft.
     resource_endorsements:
       create:
         error: Bei der Befürwortung ist ein Fehler aufgetreten.
@@ -1372,7 +1372,7 @@ de:
         help: Das untenstehende Formular filtert die Suchergebnisse dynamisch, wenn die Suchbedingungen geändert werden.
         skip: Zu Ergebnissen springen
       flag_modal:
-        already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator überprüft.
+        already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator bzw. einer Administratorin überprüft.
         close: Schließen
         description: Ist dieser Inhalt unangemessen?
         does_not_belong: Enthält illegale Aktivitäten, Selbstmorddrohungen, persönliche Informationen oder etwas anderes, von dem Du denkst, dass es nicht auf %{organization_name} gehört.
@@ -1382,7 +1382,7 @@ de:
         spam: Enthält Clickbait, Werbung, Scams oder Script Bots.
         title: Ein Problem melden
       flag_user_modal:
-        already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator überprüft.
+        already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator bzw. einer Administratorin überprüft.
         close: Schließen
         description: Was ist unangebracht im Zusammenhang mit dem/der Benutzer:in?
         does_not_belong: Enthält illegale Aktivitäten, Selbstmorddrohungen, persönliche Informationen oder etwas anderes, von dem Du denkst, dass es nicht auf %{organization_name} gehört.
@@ -1765,7 +1765,7 @@ de:
         navigation: Navigation
         sign_in: Anmelden
         sign_up: Registrieren
-        user_menu: Benutzer-Menü
+        user_menu: Benutzer:innen-Menü
       impersonation_warning:
         close_session: Sitzung schließen
         description_html: Du gibst Dich als Benutzer:in <b>%{user_name}</b> aus.
@@ -1804,7 +1804,7 @@ de:
         my_data: Meine Daten
         my_interests: Meine Interessen
         notifications_settings: Benachrichtigungseinstellungen
-        title: Benutzereinstellungen
+        title: Benutzer:innen-Einstellungen
         user_groups: Gruppen
       widget:
         see_more: Mehr sehen

@@ -330,7 +330,7 @@ de:
       conflicts:
         attempts: Versuche
         'false': 'Nein'
-        managed_user_name: Verwalteter Benutzer
+        managed_user_name: Verwaltete/r Benutzer:in
         solved: Gelöst
         title: Überprüfungskonflikte
         transfer:
@@ -542,7 +542,7 @@ de:
         settings: die Einstellungen
         static_pages: Seiten
         user_groups: Benutzer:innen-Gruppen
-        users: Benutzer
+        users: Benutzer:innen
       metrics:
         metrics:
           see_more_metrics: Mehr Kriterien anzeigen
@@ -568,12 +568,12 @@ de:
           name: Kategorie
         impersonation_log:
           fields:
-            admin: Administrator
+            admin: Administrator:in
             ended_at: Beendet um
             expired_at: Abgelaufen um
             reason: Grund
             started_at: Fing an bei
-            user: Benutzer
+            user: Benutzer:in
         newsletter:
           fields:
             created_at: Hergestellt in
@@ -583,7 +583,7 @@ de:
             subject: Gegenstand
           name: Newsletter
         participatory_space_private_user:
-          name: Participatory Space privater Benutzer
+          name: Participatory Space private/r Benutzer:in
         scope:
           fields:
             name: Name
@@ -614,7 +614,7 @@ de:
             roles:
               admin: Administrator
               user_manager: Benutzer:innen Manager
-          name: Benutzer
+          name: Benutzer:in
         user_group:
           fields:
             actions: Aktionen
@@ -690,14 +690,14 @@ de:
           title: Newsletter bearbeiten
         index:
           all: Alle
-          all_users: 'Alle Benutzer'
+          all_users: 'Alle :innen'
           and: 'und '
           confirm_delete: Möchtest Du diesen Newsletter wirklich löschen?
           followers: 'Follower '
           has_been_sent_to: 'Wurde gesendet an: '
           no_scopes: Keine Themenbereiche
           not_sent: Nicht gesendet
-          participants: 'Teilnehmer: '
+          participants: 'Teilnehmende: '
           segmented_to: 'Unterteilt in %{subject}: '
           subscribed_count: 'Abonniert:'
           title: Newsletter
@@ -706,12 +706,12 @@ de:
           title: Neuer Newsletter
         select_recipients_to_deliver:
           all_spaces: Alle
-          all_users_help: Sendet Newsletter an alle bestätigten Benutzer.
+          all_users_help: Sendet Newsletter an alle bestätigten Benutzer:innen.
           confirm_deliver: Möchtest Du diesen Newsletter wirklich liefern? Diese Aktion kann nicht rückgängig gemacht werden.
           deliver: Liefern Newsletter
-          followers_help: Sendet den Newsletter an alle bestätigten Benutzer, die den ausgewählten Teilnehmerräumen in der Liste folgen.
+          followers_help: Sendet den Newsletter an alle bestätigten Benutzer:innen, die den ausgewählten Teilnehmerräumen in der Liste folgen.
           none: Niemand
-          participants_help: Sendet den Newsletter an alle bestätigten Benutzer, die an den ausgewählten Teilnehmerräumen der Liste teilgenommen haben.
+          participants_help: Sendet den Newsletter an alle bestätigten Benutzer:innen, die an den ausgewählten Teilnehmerräumen der Liste teilgenommen haben.
           recipients_count: Dieser Newsletter wird an <strong id='recipients_count'>%{count}</strong> Teilnehmende gesendet.
           scopes_help: Sendet den Newsletter an Teilnehmer, die einen der gewählten Themenbereiche in den "Meine Interessen" Einstellungen Deines Kontos aktiviert haben.
           select_scopes: Nur Teilnehmende anzeigen, die einen der gewählten Themenbereiche in Deinen "Meine Interessen" Einstellungen Deines Kontos aktiviert haben.
@@ -963,11 +963,11 @@ de:
         areas: Bereiche
         authorization_workflows: Verifizierungsmethoden
         dashboard: Instrumententafel
-        impersonatable_users: Überschaubare Benutzer
-        impersonations: Benutzerverwaltung
+        impersonatable_users: Überschaubare Benutzer:innen
+        impersonations: Benutzer:innen-Verwaltung
         metrics: Kriterien
         panel: Admin
-        participants: Benutzer
+        participants: Benutzer:innen
         scope_types: Bereichstypen
         scopes: Bereiche
         static_pages: Seiten
@@ -1009,7 +1009,7 @@ de:
           role: Rolle
         new:
           create: Einladen
-          title: Neuen Administrator einladen
+          title: Neue/n Administrator:in einladen
       users_statistics:
         users_count:
           admins: Admins

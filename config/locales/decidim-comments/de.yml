@@ -68,7 +68,7 @@ de:
         confirm_destroy: Bist Du sicher, dass du diesen Kommentar löschen willst?
         delete: Löschen
         deleted_at: Kommentar gelöscht am %{date}
-        deleted_user: Gelöschter Benutzer
+        deleted_user: Gelöschte/r Benutzer:in
         edit: Bearbeiten
         edited: Bearbeitet
         hide_replies: Antworten verbergen
@@ -76,7 +76,7 @@ de:
         reply: Antworten
         report:
           action: Melden
-          already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator überprüft.
+          already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator bzw. einer Administratorin überprüft.
           close: Schließen
           description: Ist dieser Inhalt unangemessen?
           details: Zusätzliche Kommentare

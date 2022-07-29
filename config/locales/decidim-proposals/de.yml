@@ -297,15 +297,15 @@ de:
             email_subject: Ein Vorschlag, dem Du folgst, wurde abgelehnt
             notification_title: Der Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde abgelehnt.
         proposal_update_category:
-          email_intro: 'Ein Administrator hat die Kategorie Deines Vorschlags "%{resource_title}" aktualisiert, sieh ihn Dir an:'
+          email_intro: 'Ein/e Administrator:in hat die Kategorie Deines Vorschlags "%{resource_title}" aktualisiert, sieh ihn Dir an:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Autor des Vorschlags bist.
           email_subject: Die Vorschlagskategorie %{resource_title} wurde aktualisiert
-          notification_title: Die Vorschlagskategorie <a href="%{resource_path}">%{resource_title}</a> wurde von einem Administrator aktualisiert.
+          notification_title: Die Vorschlagskategorie <a href="%{resource_path}">%{resource_title}</a> wurde von einem Administrator bzw. einer Administratorin aktualisiert.
         proposal_update_scope:
-          email_intro: 'Ein Administrator hat den Bereich Deines Vorschlags „%{resource_title}“ aktualisiert, sieh es Dir auf dieser Seite an:'
+          email_intro: 'Ein/e Administrator:in hat den Bereich Deines Vorschlags „%{resource_title}“ aktualisiert, sieh es Dir auf dieser Seite an:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Autor des Vorschlags bist.
           email_subject: Der Bereich des Vorschlags %{resource_title} wurde aktualisiert
-          notification_title: Der Bereich des Vorschlags <a href="%{resource_path}">%{resource_title}</a> wurde von einem Administrator aktualisiert.
+          notification_title: Der Bereich des Vorschlags <a href="%{resource_path}">%{resource_title}</a> wurde von einem Administrator bzw. einer Administratorin aktualisiert.
         voting_enabled:
           email_intro: 'Du kannst für Vorschläge in %{participatory_space_title} abstimmen! Beteilige Dich auf dieser Seite:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{participatory_space_title} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.

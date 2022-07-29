@@ -141,7 +141,7 @@ de:
         admin:
           initiative_sent_to_technical_validation:
             email_intro: Die Initiative "%{resource_title}" wurde zur technischen Validierung gesendet. Über das <a href="%{admin_initiative_url}">Admin-Panel</a> kannst Du sie aufrufen
-            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator der Plattform bist.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Administrator:in der Plattform bist.
             email_subject: Die Initiative "%{resource_title}" wurde zur technischen Validierung gesendet.
             notification_title: Die Initiative "%{resource_title}" wurde zur technischen Validierung gesendet. Über das <a href="%{admin_initiative_path}">Admin-Panel</a> kannst Du sie aufrufen
         initiative_extended:
@@ -151,7 +151,7 @@ de:
           notification_title: Das Enddatum der Unterschriftensammlung für die Initiative <a href="%{resource_path}">%{resource_title}</a> wurde verlängert.
         initiative_sent_to_technical_validation:
           email_intro: Die Initiative „%{resource_title}“ wurde zur technischen Validierung gesendet. Über das <a href="%{admin_initiative_url}">Admin-Panel</a> kannst Du sie aufrufen
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator der Plattform bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Administrator:in der Plattform bist.
           email_subject: Die Initiative "%{resource_title}" wurde zur technischen Validierung gesendet.
           notification_title: Die Initiative "%{resource_title}" wurde zur technischen Validierung gesendet. Über das <a href="%{admin_initiative_path}">Admin-Panel</a> kannst Du sie aufrufen
         milestone_completed:
@@ -167,7 +167,7 @@ de:
             notification_title: Die Initiative <a href="%{resource_path}">%{resource_title}</a> hat %{percentage}% der Unterschriften erreicht.
         support_threshold_reached:
           email_intro: Die Initiative %{resource_title} hat die Mindestanzahl an Unterschriften erreicht
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator der Plattform bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Administrator:in der Plattform bist.
           email_subject: Mindestanzahl an Unterschriften erreicht
           notification_title: Die Initiative <a href="%{resource_path}">%{resource_title}</a> hat die Mindestanzahl an Unterschriften erreicht
     gamification:
@@ -365,7 +365,7 @@ de:
           send_my_initiative: Meine Initiative zur technischen Validierung senden
         finish_help:
           access_reminder: Du kannst auf Deine Initiativen über den Filter %{link} auf der Seite Initiativen zugreifen.
-          publish_helper_text: Denke daran, dass Du für die Veröffentlichung Deiner Initiative die erforderlichen Informationen ausfüllen musst und <strong>diese an die technische Validierung</strong> senden must, damit ein Administrator diese prüfen kann.
+          publish_helper_text: Denke daran, dass Du für die Veröffentlichung Deiner Initiative die erforderlichen Informationen ausfüllen musst und <strong>diese an die technische Validierung</strong> senden must, damit ein/e Administrator:in diese prüfen kann.
         previous_form:
           back: Zurück
           continue: Fortsetzen
