@@ -536,7 +536,7 @@ de:
             legend: Registrieren als
           subtitle: Registriere Dich, um an Diskussionen teilzunehmen und Vorschläge zu unterstützen.
           terms: Nutzungsbedingungen
-          tos_agreement: Mit der Anmeldung stimmst Du %{link} zu.
+          tos_agreement: Mit der Anmeldung stimmst Du den %{link} zu.
           tos_title: Nutzungsbedingungen
           username_help: Öffentlich sichtbarer Name, der in Deinen Beiträgen angezeigt wird. Um Anonymität zu gewährleisten, kann es sich um einen beliebigen Namen handeln.
       sessions:
@@ -1624,7 +1624,7 @@ de:
         change_my_password: Ändere mein Passwort
         confirm_new_password: Bestätige neues Passwort
         new_password: Neues Passwort
-        password_help: "Mindestens %{minimun_characters} Zeichen, nicht zu gewöhnlich (z. B. 123456) und darf nicht Deine Benutzer:innen-Name oder Deine E-Mail-Adresse sein."
+        password_help: "Mindestens %{minimun_characters} Zeichen, nicht zu gewöhnlich (z. B. 123456) und darf nicht Deinen Benutzer:innen-Name oder Deine E-Mail-Adresse sein."
         title: Passwort ändern
       new:
         forgot_your_password: Hast Du Dein Passwort vergessen?
