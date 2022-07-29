@@ -45,7 +45,7 @@ de:
       decidim/removed_from_group: Aus der Gruppe entfernt
       decidim/resource_endorsed_event: Ressource befürwortet
       decidim/resource_hidden_event: Ressource versteckt
-      decidim/user_group_created_event: Benutzergruppe erstellt
+      decidim/user_group_created_event: Benutzer:innen-Gruppe erstellt
       decidim/welcome_notification_event: Willkommensnachricht
   activerecord:
     attributes:
@@ -64,11 +64,11 @@ de:
         one: Befürwortung
         other: Befürwortungen
       decidim/user:
-        one: Benutzer
-        other: Benutzer
+        one: Benutzer:in
+        other: Benutzer:innen
       decidim/user_group:
-        one: Benutzergruppe
-        other: Benutzergruppen
+        one: Benutzer:innen-Gruppe
+        other: Benutzer:innen-Gruppen
   booleans:
     'false': 'Nein'
     'true': 'Ja'
@@ -208,9 +208,9 @@ de:
       organization:
         update: "%{user_name} hat die Organisationseinstellungen aktualisiert"
       participatory_space_private_user:
-        create: "%{user_name} hat %{resource_name} als privaten Benutzer eingeladen"
-        create_via_csv: "%{user_name} hat %{resource_name} per CSV als privaten Teilnehmer eingeladen"
-        delete: "%{user_name} hat den Benutzer %{resource_name} als privaten Benutzer entfernt"
+        create: "%{user_name} hat %{resource_name} als private/n Benutzer:in eingeladen"
+        create_via_csv: "%{user_name} hat %{resource_name} per CSV als private/n Teilnehmer:in eingeladen"
+        delete: "%{user_name} hat den/die Benutzer:in %{resource_name} als private/n Benutzer:in entfernt"
       scope:
         create: "%{user_name} hat den Bereich %{resource_name} erstellt"
         create_with_parent: "%{user_name} hat den Bereich %{resource_name} im übergeordneten Bereich %{parent_scope} erstellt"
@@ -224,12 +224,12 @@ de:
         update: "%{user_name} hat die statische Seite %{resource_name} aktualisiert"
       user:
         block: "%{user_name} hat %{resource_name} blockiert"
-        invite: "%{user_name} hat den Benutzer %{resource_name} mit der Rolle %{role} eingeladen"
-        officialize: "%{user_name} den Benutzer %{resource_name} offiziell anerkannt"
+        invite: "%{user_name} hat den/die Benutzer:in %{resource_name} mit der Rolle %{role} eingeladen"
+        officialize: "%{user_name} den/die Benutzer:in %{resource_name} offiziell anerkannt"
         promote: "%{user_name} hat %{resource_name} befördert"
-        remove_from_admin: "%{user_name} hat den Benutzer %{resource_name} mit der Rolle %{role} entfernt"
+        remove_from_admin: "%{user_name} hat den/die Benutzer:in %{resource_name} mit der Rolle %{role} entfernt"
         show_email: "%{user_name} hat die E-Mail des Teilnehmers %{resource_name} abgerufen"
-        transfer: "%{user_name} hat den Teilnehmer %{resource_name} verschoben"
+        transfer: "%{user_name} hat den/die Teilnehmer:in %{resource_name} verschoben"
         unblock: "%{user_name} hat die Blockierung von %{resource_name} aufgehoben"
         unofficialize: "%{user_name} hat die offizielle Anerkennung des Benutzers %{resource_name} widerrufen"
       user_group:
@@ -337,7 +337,7 @@ de:
         related_photos: Zugehörige Bilder
     author:
       avatar: 'Avatar: %{name}'
-      avatar_multiuser: Avatar für mehrere Benutzer
+      avatar_multiuser: Avatar für mehrere Benutzer:innen
       comments:
         one: Kommentar
         other: Kommentare
@@ -364,7 +364,7 @@ de:
       dummy_authorization_workflow:
         name: Arbeitsablauf Dummy Berechtigung
       errors:
-        duplicate_authorization: Ein Teilnehmer mit den gleichen Daten ist bereits autorisiert. Ein Administrator wird Dich kontaktieren, um Deine Daten zu überprüfen.
+        duplicate_authorization: Ein/e Teilnehmer:in mit den gleichen Daten ist bereits autorisiert. Ein Administrator wird Dich kontaktieren, um Deine Daten zu überprüfen.
       expired_at: Abgelaufen am %{timestamp}
       expires_at: Läuft am %{timestamp} ab
       foo_authorization:
@@ -537,7 +537,7 @@ de:
           are_you_new?: Neu auf der Plattform?
           register: Konto erstellen
           sign_in_disabled: Du kannst mit einem externen Konto darauf zugreifen
-          sign_up_disabled: Die Anmeldung ist deaktiviert. Du kannst einen vorhandenen Benutzer für den Zugriff verwenden
+          sign_up_disabled: Die Anmeldung ist deaktiviert. Du kannst eine/n vorhandene/n Benutzer:in für den Zugriff verwenden
         user:
           timed_out: Du warst zu lange inaktiv und wurdest automatisch abgemeldet. Wenn Du den Dienst weiterhin nutzen möchtest, melde Dich bitte erneut an.
       shared:
@@ -566,7 +566,7 @@ de:
           publish_content: Inhalte für Dich veröffentlichen
           see_email: Deine E-Mail anzeigen
           see_name: Deinen Namen anzeigen
-          see_username: Deinen Benutzernamen anzeigen
+          see_username: Deinen Benutzer:innen-Namen anzeigen
           this_application_will_be_able_to: 'Diese Anwendung wird in der Lage sein:'
           this_application_will_not_be_able_to: 'Diese Anwendung kann nicht:'
           update_profile: Profil aktualisieren
@@ -712,15 +712,15 @@ de:
           email_subject: Du wurdest aus der Gruppe %{user_group_name} entfernt!
           notification_title: Du wurdest aus der Gruppe <a href="%{resource_path}">%{user_group_name}</a> entfernt.
         user_group_created:
-          email_intro: Eine neue Benutzergruppe mit dem Namen %{user_group_name} wurde erstellt. Du kannst sie über das <a href="%{groups_admin_url}">Admin-Panel</a> verifizieren.
+          email_intro: Eine neue Benutzer:innen-Gruppe mit dem Namen %{user_group_name} wurde erstellt. Du kannst sie über das <a href="%{groups_admin_url}">Admin-Panel</a> verifizieren.
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator der Plattform bist.
-          email_subject: Eine neue Benutzergruppe wurde erstellt
-          notification_title: Die Benutzergruppe %{user_group_name} wurde erstellt. Du kannst sie über das <a href="%{groups_admin_path}">Admin-Panel</a> verifizieren.
+          email_subject: Eine neue Benutzer:innen-Gruppe wurde erstellt
+          notification_title: Die Benutzer:innen-Gruppe %{user_group_name} wurde erstellt. Du kannst sie über das <a href="%{groups_admin_path}">Admin-Panel</a> verifizieren.
         user_group_updated:
-          email_intro: Die Benutzergruppe mit dem Namen %{user_group_name} hat ihr Profil aktualisiert, wodurch diese erneut verifiziert werden muss. Du kannst sie über das <a href="%{groups_admin_url}">Admin-Panel</a> verifizieren.
+          email_intro: Die Benutzer:innen-Gruppe mit dem Namen %{user_group_name} hat ihr Profil aktualisiert, wodurch diese erneut verifiziert werden muss. Du kannst sie über das <a href="%{groups_admin_url}">Admin-Panel</a> verifizieren.
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator der Plattform bist.
-          email_subject: Eine Benutzergruppe hat ihr Profil aktualisiert
-          notification_title: Die Benutzergruppe %{user_group_name} hat ihr Profil aktualisiert, wodurch diese erneut verifiziert werden muss. Du kannst sie über das <a href="%{groups_admin_path}">Admin-Panel</a> verifizieren.
+          email_subject: Eine Benutzer:innen-Gruppe hat ihr Profil aktualisiert
+          notification_title: Die Benutzer:innen-Gruppe %{user_group_name} hat ihr Profil aktualisiert, wodurch diese erneut verifiziert werden muss. Du kannst sie über das <a href="%{groups_admin_path}">Admin-Panel</a> verifizieren.
       notification_event:
         notification_title: Ein Ereignis trat auf <a href="%{resource_path}">%{resource_title}</a>.
       reports:
@@ -743,10 +743,10 @@ de:
           email_subject: "%{nickname} hat ihr Profil aktualisiert"
           notification_title: Die <a href="%{resource_path}">Profilseite</a> von %{name} (%{nickname}), der Du folgst, wurde aktualisiert.
         user_officialized:
-          email_intro: Teilnehmer %{name} (%{nickname}) wurde offiziell bestätigt.
+          email_intro: Teilnehmer:in %{name} (%{nickname}) wurde offiziell bestätigt.
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein Administrator der Organisation bist.
           email_subject: "%{name} wurde offiziell bestätigt"
-          notification_title: Teilnehmer %{name} (%{nickname}) wurde offiziell bestätigt.
+          notification_title: Teilnehmer:in %{name} (%{nickname}) wurde offiziell bestätigt.
     export_mailer:
       download_your_data_export:
         click_button: 'Klicke auf den Link, um Deine Daten herunterzuladen.<br/>Die Datei steht bis zum %{date} zur Verfügung.<br/>Du benötigst <a href="https://www.7-zip.org/">7-Zip</a> (für Windows), <a href="https://www.keka.io/en/">Keka</a> (für MacOS) oder <a href="https://peazip.github.io">PeaZip</a> (für Linux) um die Datei zu öffnen. Passwort: %{password}'
@@ -843,12 +843,12 @@ de:
           description_own: "%{score} Benutzer*innen folgen dir."
           name: Follower
           next_level_in: Erhalte %{score} weitere Follower, um das nächste Level zu erreichen!
-          unearned_another: Dieser Benutzer hat noch keine Follower.
+          unearned_another: Diese/r Benutzer:in hat noch keine Follower.
           unearned_own: Du hast noch keine Follower.
         index:
           badge_title: "%{name} Abzeichen"
           how: Wie kannst du es verdienen?
-          page_description: Badges sind Anerkennungen für Aktionen der Teilnehmer auf der Plattform. Wenn Du die Plattform erkundest, mitmachst und kommunizierst, verdienst Du verschiedene Abzeichen. Hier ist die Liste der Abzeichen und einige Möglichkeiten, wie Du sie verdienen kannst.
+          page_description: Badges sind Anerkennungen für Aktionen der Teilnehmenden auf der Plattform. Wenn Du die Plattform erkundest, mitmachst und kommunizierst, verdienst Du verschiedene Abzeichen. Hier ist die Liste der Abzeichen und einige Möglichkeiten, wie Du sie verdienen kannst.
           title: Abzeichen
         invitations:
           conditions:
@@ -862,16 +862,16 @@ de:
           next_level_in: Lade %{score} weitere Benutzer*innen ein, um das nächste Level zu erreichen!
           unearned_another: Diese*r Benutzer*in hat noch niemanden eingeladen.
           unearned_own: Du hast noch keine Benutzer*innen eingeladen.
-      description: Badges sind Anerkennungen für Aktionen der Teilnehmer und Fortschritt in der Plattform. Wenn Du die Plattform erkundest, mitmachst und kommunizierst, verdienst Du verschiedene Abzeichen.
+      description: Badges sind Anerkennungen für Aktionen der Teilnehmenden und Fortschritt auf der Plattform. Wenn Du die Plattform erkundest, mitmachst und kommunizierst, verdienst Du verschiedene Abzeichen.
       level: Level %{level}
       reached_top: Du hast die höchste Stufe für dieses Abzeichen erreicht.
     group_admins:
       actions:
-        are_you_sure: Bist Du sicher? Dies wird den Benutzer nicht aus der Gruppe entfernen.
+        are_you_sure: Bist Du sicher? Dies wird den/die Benutzer:in nicht aus der Gruppe entfernen.
         demote_admin: Entferne Admin
       demote:
         error: Beim Entfernen dieses Benutzers aus der Administratorliste ist ein Fehler aufgetreten
-        success: Benutzer wurde vom Administrator erfolgreich entfernt
+        success: Der/Die Benutzer:in vom Administrator erfolgreich entfernt
       index:
         current_admins: 'Aktuelle Admins:'
         manage_admins: Admins verwalten
@@ -883,10 +883,10 @@ de:
       accept_or_reject_group_invitations: 'Die folgenden Gruppen haben Dich eingeladen, sich ihnen anzuschließen. Anfragen ablehnen oder akzeptieren:'
       index:
         invite: Einladen
-        invite_user: Lade einen Benutzer ein
+        invite_user: Lade eine/n Benutzer:in ein
       invite:
         error: Beim Laden dieses Nutzers ist ein Fehler aufgetreten
-        success: Benutzer wurde erfolgreich eingeladen
+        success: Der/Die Benutzer:in erfolgreich eingeladen
       reject:
         error: Beim Ablehnen dieser Einladung ist ein Fehler aufgetreten
         success: Einladung wurde erfolgreich abgelehnt
@@ -898,19 +898,19 @@ de:
       actions:
         are_you_sure: Bist Du sicher?
         promote_to_admin: Machen Admin
-        remove_from_group: Benutzer entfernen
+        remove_from_group: Benutzer:in entfernen
       index:
         current_members_without_admins: 'Aktuelle Mitglieder (ohne Admins):'
         manage_members: Mitglieder verwalten
       promote:
-        error: Bei der Förderung dieses Benutzers ist ein Fehler aufgetreten
-        success: Benutzer wurde erfolgreich befördert
+        error: Bei der Beförderung dieses Benutzers bzw. dieser Benutzerin ist ein Fehler aufgetreten
+        success: Der/Die Benutzer:in erfolgreich befördert
       reject:
         error: Beim Ablehnen dieser Beitrittsanfrage ist ein Fehler aufgetreten
         success: Beitrittsanfrage wurde erfolgreich abgelehnt
       remove:
-        error: Beim Entfernen dieses Benutzers aus der Gruppe ist ein Fehler aufgetreten
-        success: Der Benutzer wurde erfolgreich aus der Gruppe entfernt
+        error: Beim Entfernen dieses dieses Benutzers bzw. dieser Benutzerin aus der Gruppe ist ein Fehler aufgetreten
+        success: Der/Die Benutzer:in wurde erfolgreich aus der Gruppe entfernt
     groups:
       actions:
         are_you_sure: Bist Du sicher?
@@ -925,7 +925,7 @@ de:
         email_help: E-Mail Deiner Organisation, Deiner Vereinigung, Deines Kollektivs, Deiner Gruppe usw.
         fill_in_for_verification: 'Fülle diese Felder aus, wenn Deine Gruppe überprüft werden soll:'
         name_help: Name Deiner Organisation, Deiner Vereinigung, Deines Kollektivs, Deiner Gruppe usw.
-        nickname_help: Benutzername Deiner Organisation, Deiner Vereinigung, Deines Kollektivs, Deiner Gruppe usw. Verwende keine Leerzeichen oder Akzente.
+        nickname_help: Pseudonym Deiner Organisation, Deiner Vereinigung, Deines Kollektivs, Deiner Gruppe usw. Verwende keine Leerzeichen oder Akzente.
         phone_help: Verwende keine Bindestriche oder Leerzeichen
       join:
         error: Es ist ein Problem aufgetreten, der Gruppe beizutreten
@@ -935,13 +935,13 @@ de:
         last_admin: Du kannst diese Gruppe nicht verlassen, da Du der letzte Administrator bist. Mache ein anderes Mitglied zum Administrator, um die Gruppe zu verlassen.
         success: Gruppe erfolgreich verlassen.
       members:
-        accept_or_reject_join_requests: 'Die folgenden Benutzer haben sich angemeldet, um dieser Gruppe beizutreten. Akzeptieren oder ablehnen ihrer Anfragen:'
+        accept_or_reject_join_requests: 'Die folgenden Benutzer:innen haben sich angemeldet, um dieser Gruppe beizutreten. Anfragen akzeptieren oder ablehnen:'
         accept_request: Akzeptieren
         reject_request: Ablehnen
       new:
         create_user_group: Gruppe erstellen
         new_user_group: Neue Gruppe
-        subtitle: Erstelle eine Gruppe und lade andere Benutzer ein, an einer kollektiven Ebene teilzunehmen.
+        subtitle: Erstelle eine Gruppe und lade andere Benutzer:innen ein, an einer kollektiven Ebene teilzunehmen. TODO
       no_user_groups: Gehört noch keiner Gruppe an.
       roles:
         admin: Administrator
@@ -1003,7 +1003,7 @@ de:
         latlng_text: 'Breitengrad: %{latitude}, Längengrad: %{longitude}'
         map_service_brand: OpenStreetMap
     members:
-      no_members: Diese Benutzergruppe hat noch kein Mitglied.
+      no_members: Diese Benutzer:innen-Gruppe hat noch kein Mitglied.
     menu:
       help: Hilfe
       home: Start
@@ -1045,11 +1045,11 @@ de:
           subject: Du hast neue Nachrichten von %{sender}
       conversations:
         add_conversation_users:
-          add_max_users: 'Füge der Unterhaltung Benutzer hinzu: max. 9 Benutzer'
+          add_max_users: 'Füge der Unterhaltung Benutzer:innen hinzu: max. 9 Benutzer:innen'
           add_users_placeholder: Suche...
           modal_title: Neue Unterhaltung
           no_results: Keine Ergebnisse
-          participant_with_disabled_message_reception: Dieser Teilnehmer hat Nachrichten deaktiviert
+          participant_with_disabled_message_reception: Diese/r Teilnehmer:in hat Nachrichten deaktiviert
         conversation:
           show: Gespräch mit %{sender} anzeigen
         create:
@@ -1078,7 +1078,7 @@ de:
           back: Zurück zu allen Unterhaltungen
           chat_with: Unterhaltung mit
           deleted_accounts: Du kannst keine Unterhaltung mit gelöschten Konten führen.
-          not_allowed: Dieser Teilnehmer akzeptiert keine direkten Nachrichten.
+          not_allowed: Diese/r Teilnehmer:in akzeptiert keine direkten Nachrichten.
           title: Gespräch mit %{usernames}
         start:
           send: Senden
@@ -1089,15 +1089,15 @@ de:
       download:
         csv: Daten herunterladen (CSV)
       followers:
-        description: Anzahl der Benutzer, die dieser Teilnahme folgen
-        object: Anhänger
-        title: Anhänger
+        description: Anzahl der Benutzer:innen, die diesem Participatory Space folgen
+        object: Follower
+        title: Follower
       participants:
-        description: Anzahl der aktiven Benutzer in der Organisation
+        description: Anzahl der aktiven Benutzer:innen in der Organisation
         object: Teilnehmer
         title: Teilnehmer
       users:
-        description: Anzahl der Benutzer in der Organisation
+        description: Anzahl der Benutzer:innen in der Organisation
         object: Benutzer
         title: Benutzer
     newsletter_mailer:
@@ -1194,7 +1194,7 @@ de:
         rejected: Abgelehnt
         verified: Überprüft
     pad_iframe:
-      disclaimer: Der Inhalt dieses Blocks wird von registrierten Benutzern verfasst und gibt deren Meinung wieder. %{organization} kann nicht für den Inhalt verantwortlich gemacht werden.
+      disclaimer: Der Inhalt dieses Blocks wurde von registrierten Benutzenden verfasst und gibt deren Meinung wieder. %{organization} kann nicht für den Inhalt verantwortlich gemacht werden.
       explanation: Verwende dieses Pad, um während des Meetings gemeinsam Notizen zu machen.
       pad: Pad
     pages:
@@ -1256,12 +1256,12 @@ de:
         error: Es gab ein Problem bei der Aktualisierung des Passwortes
         success: Passwort erfolgreich aktualisiert
     profile:
-      deleted: Teilnehmer gelöscht
+      deleted: Teilnehmer:in gelöscht
       inaccessible_message: Dieses Profil ist wegen Verletzung der Nutzungsbedingungen nicht zugänglich!
       view: Anzeigen
     profiles:
-      default_officialization_text_for_user_groups: Diese Benutzergruppe wurde öffentlich überprüft, ihr Name wurde mit dem tatsächlichen Namen verifiziert
-      default_officialization_text_for_users: Dieser Teilnehmer wird öffentlich überprüft, sein Name oder seine Rolle wurde nachweislich seinem tatsächlichen Namen und seiner Rolle zugeordnet
+      default_officialization_text_for_user_groups: Diese Benutzer:innen-Gruppe wurde öffentlich überprüft, ihr Name wurde mit dem tatsächlichen Namen verifiziert
+      default_officialization_text_for_users: Diese/r Teilnehmer:in wurde öffentlich überprüft, sein/ihr Name oder seine/ihre Rolle wurde nachweislich seinem/ihrem tatsächlichen Namen und seiner/ihrer Rolle zugeordnet
       show:
         activity: Aktivität
         badges: Abzeichen
@@ -1384,7 +1384,7 @@ de:
       flag_user_modal:
         already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator überprüft.
         close: Schließen
-        description: Was ist unangebracht über den Benutzer?
+        description: Was ist unangebracht im Zusammenhang mit dem/der Benutzer:in?
         does_not_belong: Enthält illegale Aktivitäten, Selbstmorddrohungen, persönliche Informationen oder etwas anderes, von dem Du denkst, dass es nicht auf %{organization_name} gehört.
         offensive: Enthält Rassismus, Sexismus, Verunglimpfungen, persönliche Angriffe, Morddrohungen, Aufforderungen zum Selbstmord oder jede Form von Hassrede.
         report: Melden
@@ -1425,13 +1425,13 @@ de:
         share_link: Link teilen
     statistics:
       comments_count: Kommentare
-      endorsements_count: Befürworungen
+      endorsements_count: Befürwortungen
       followers_count: Follower
       headline: Statistik
       no_stats: Es gibt noch keine Statistiken.
       pages_count: Seiten
-      participants_count: Teilnehmer
-      users_count: Benutzer
+      participants_count: Teilnehmende
+      users_count: Benutzer:innen
     tags:
       filter_results_for_category: 'Ergebnisse nach Kategorie filtern: %{resource}'
       filter_results_for_scope: 'Ergebnisse nach Anwendungsbereich filtern: %{resource}'
@@ -1441,18 +1441,18 @@ de:
       show_translated: Automatisch übersetzter Text anzeigen
     user_activity:
       index:
-        no_activities_warning: Dieser Benutzer hat noch keine Aktivität gehabt.
-    user_contact_disabled: Dieser Teilnehmer akzeptiert keine Direktnachrichten.
+        no_activities_warning: Diese/r Benutzer:in hat noch keine Aktivität gehabt.
+    user_contact_disabled: Diese/r Teilnehmer:in akzeptiert keine Direktnachrichten.
     user_conversations:
       create:
         error: Die Nachricht konnte nicht erstellt werden. Versuche es später nochmal
         existing_error: Die Nachricht konnte nicht erstellt werden. Die Unterhaltung besteht bereits, versuche es noch einmal.
         success: Unterhaltung erfolgreich gestartet!
       index:
-        add_max_users: 'Füge der Unterhaltung Benutzer hinzu: max. 9 Benutzer'
+        add_max_users: 'Füge der Unterhaltung Benutzer:innen hinzu: max. 9 Benutzer:innen'
         add_users_placeholder: Suche...
         close: Schließen
-        conversations_info: Unterhaltungen sind privat, niemand sonst kann sie anzeigen. Eine Unterhaltung kann von jedem auf der Plattform registrierten Teilnehmer oder jeder Gruppe gestartet werden.
+        conversations_info: Unterhaltungen sind privat, niemand sonst kann sie anzeigen. Eine Unterhaltung kann von allen auf der Plattform registrierten Teilnehmenden oder jeder Gruppe gestartet werden.
         from: Von
         last_message: Letzte Nachricht
         modal_title: Neue Unterhaltung
@@ -1460,7 +1460,7 @@ de:
         next: Weiter
         no_conversations_warning: Es gibt noch keine Unterhaltungen.
         no_results: Keine Ergebnisse
-        participant_with_disabled_message_reception: Dieser Teilnehmer hat Nachrichten deaktiviert
+        participant_with_disabled_message_reception: Dies/r Teilnehmer:in hat Nachrichten deaktiviert
         time_ago: "Vor %{time}"
       new:
         title: Eine Unterhaltung beginnen
@@ -1471,7 +1471,7 @@ de:
       show:
         back: Alle Unterhaltungen anzeigen
         deleted_accounts: Du kannst keine Unterhaltung mit gelöschten Konten führen.
-        not_allowed: Dieser Benutzer akzeptiert keine Direktnachrichten mehr.
+        not_allowed: Diese/r Benutzer:in akzeptiert keine Direktnachrichten mehr.
         title: Unterhaltung mit %{usernames}
       update:
         error: Nachricht wurde nicht gesendet. Versuche es später noch einmal
@@ -1486,12 +1486,12 @@ de:
         success: Deine Interessen wurden erfolgreich aktualisiert.
     user_report_mailer:
       notify:
-        body_1: Benutzer %{user} wurde von %{token} gemeldet
+        body_1: Benutzer:in %{user} wurde von %{token} gemeldet
         body_2: 'Grund: %{reason}'
-        details: Vom Nutzer übermittelte Details
+        details: von dem/der Nutzer:in übermittelte Details
         greetings: Grüße,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
         hello: Hallo %{admin},
-        subject: Ein neuer Benutzer wurde in %{organization_name} gemeldet
+        subject: Ein neuer Der/Die Benutzer:in in %{organization_name} gemeldet
     version:
       show:
         back_to_resource: Zurück
@@ -1504,7 +1504,7 @@ de:
         version_number_out_of_total: "%{current_version} von %{total_count}"
     version_author:
       show:
-        deleted: Gelöschter Benutzer
+        deleted: Gelöschte/r Benutzer:in
     versions:
       resource_version:
         of_versions: "(von %{number})"
@@ -1538,7 +1538,7 @@ de:
       send_paranoid_instructions: Wenn Deine E-Mail-Adresse in unserer Datenbank vorhanden ist, erhältst Du innerhalb weniger Minuten eine E-Mail mit Anweisungen zur Bestätigung Deiner E-Mail-Adresse.
     failure:
       already_authenticated: Du bist bereits angemeldet.
-      inactive: Dein Benutzerkonto ist noch nicht aktiviert.
+      inactive: Dein Benutzer:innen-Konto ist noch nicht aktiviert.
       invalid: Ungültige %{authentication_keys} oder Passwort
       invited: Du hast eine ausstehende Einladung, akzeptiere diese, um die Erstellung Deines Kontos abzuschließen.
       last_attempt: Du hast noch einen Versuch, bevor Dein Konto gesperrt ist.
@@ -1550,7 +1550,7 @@ de:
       edit:
         header: Beende die Erstellung Deines Kontos
         submit_button: Speichern
-        subtitle: Wenn Du die Einladung annimmst, gib bitte Deinen Benutzernamen und Dein Passwort ein.
+        subtitle: Wenn Du die Einladung annimmst, gib bitte Deinen Benutzer:innen-Namen und Dein Passwort ein.
       invitation_removed: Deine Einladung wurde entfernt.
       invitation_token_invalid: Das angegebene Einladungstoken ist nicht gültig!
       new:
@@ -1577,12 +1577,12 @@ de:
         hello: Hallo %{email},
         ignore: |-
           Wenn Du die Einladung nicht annehmen möchtest, ignoriere einfach diese E-Mail.<br />
-          Dein Konto wird erst erstellt, wenn Du auf den obigen Link zugreifst und Deinen Benutzernamen und Dein Passwort festlegst.
-        invited_you_as_admin: "%{invited_by} hat dich als Admin von %{application}eingeladen. Du kannst es über den folgenden Link akzeptieren."
-        invited_you_as_private_user: "%{invited_by} hat dich als privaten Benutzer von %{application}eingeladen. Du kannst es über den folgenden Link akzeptieren."
+          Dein Konto wird erst erstellt, wenn Du auf den obigen Link zugreifst und Deinen Benutzer:innen-Namen und Dein Passwort festlegst.
+        invited_you_as_admin: "%{invited_by} hat dich als Admin von %{application} eingeladen. Du kannst die Einladung über den folgenden Link akzeptieren."
+        invited_you_as_private_user: "%{invited_by} hat dich als private/n Benutzer:in von %{application} eingeladen. Du kannst die Einladung über den folgenden Link akzeptieren."
         someone_invited_you: Jemand hat dich zu %{application}eingeladen. Du kannst es über den folgenden Link akzeptieren.
-        someone_invited_you_as_admin: Jemand hat dich als Admin von %{application}eingeladen, du kannst es über den untenstehenden Link akzeptieren.
-        someone_invited_you_as_private_user: Jemand hat dich als private_user von %{application}eingeladen, du kannst es über den folgenden Link akzeptieren.
+        someone_invited_you_as_admin: Jemand hat dich als Admin von %{application} eingeladen, du kannst die Einladung über den untenstehenden Link akzeptieren.
+        someone_invited_you_as_private_user: Jemand hat dich als private_user von %{application} eingeladen, du kannst die Einladung über den folgenden Link akzeptieren.
         subject: Anweisungen zur Einladung
       invite_admin:
         subject: Du wurdest eingeladen, %{organization} zu verwalten
@@ -1617,7 +1617,7 @@ de:
         change_my_password: Ändere mein Passwort
         confirm_new_password: Bestätige neues Passwort
         new_password: Neues Passwort
-        password_help: "Mindestens %{minimun_characters} Zeichen, nicht zu gewöhnlich (z. B. 123456) und darf nicht Deinen Benutzernamen oder Deine E-Mail-Adresse sein."
+        password_help: "Mindestens %{minimun_characters} Zeichen, nicht zu gewöhnlich (z. B. 123456) und darf nicht Deine Benutzer:innen-Name oder Deine E-Mail-Adresse sein."
         title: Passwort ändern
       new:
         forgot_your_password: Hast Du Dein Passwort vergessen?
@@ -1715,10 +1715,10 @@ de:
             type: Typ
           cookies:
             _session_id:
-              description: Ermöglicht es Websites, sich an Benutzer zu erinnern, wenn diese verschiedene Seiten aufrufen.
+              description: Ermöglicht es Websites, sich an Benutzer:innen zu erinnern, wenn diese verschiedene Seiten aufrufen.
               service: Diese Website
             decidim-consent:
-              description: Speichert Informationen über die vom Benutzer erlaubten Cookies auf dieser Website.
+              description: Speichert Informationen über von dem/der Benutzer:in erlaubten Cookies auf dieser Website.
               service: Diese Website
           types:
             cookie: Cookie
@@ -1732,7 +1732,7 @@ de:
           accept_all: Alle akzeptieren
           accept_only_essential: Nur essentielle Cookies akzeptieren
           analytics:
-            description: Analytics-Cookies sind Cookies, die verfolgen, wie Benutzer navigieren und mit einer Website interagieren. Die gesammelten Informationen werden verwendet, um dem Website-Eigentümer zu helfen, die Website zu verbessern.
+            description: Analytics-Cookies sind Cookies, die verfolgen, wie Benutzer:innen navigieren und mit einer Website interagieren. Die gesammelten Informationen werden verwendet, um dem Website-Eigentümer zu helfen, die Website zu verbessern.
             title: Analysen und Statistiken
           description: Wir verwenden Cookies, um die grundlegenden Funktionalitäten der Website zu gewährleisten und Dein Online-Erlebnis zu verbessern. Du kannst die einzelnen Kategorien jederzeit aktivieren oder deaktivieren.
           essential:
@@ -1768,7 +1768,7 @@ de:
         user_menu: Benutzer-Menü
       impersonation_warning:
         close_session: Sitzung schließen
-        description_html: Du gibst Dichh als Benutzer <b>%{user_name}</b> aus.
+        description_html: Du gibst Dich als Benutzer:in <b>%{user_name}</b> aus.
         expire_time_html: Deine Sitzung wird in <b><span class="minutes">%{minutes}</span> Minuten</b>ablaufen.
       language_chooser:
         choose_language: Sprache wählen
@@ -1789,7 +1789,7 @@ de:
       upload_modal:
         close_modal: Modal schließen
       user_menu:
-        account: 'Benutzerkonto: %{name}'
+        account: 'Benutzer:innen-Konto: %{name}'
         admin_dashboard: Admin-Dashboard
         conversations: Gespräche
         notifications: Benachrichtigungen

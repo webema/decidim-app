@@ -30,8 +30,8 @@ de:
             starts_at_help: Leer lassen für kein bestimmtes Datum
           step:
             allow_answers: Erlaube Antworten
-            allow_unregistered: Nicht registrierten Benutzern die Beantwortung des Fragebogens erlauben
-            allow_unregistered_help: Wenn aktiviert, ist keine Anmeldung erforderlich, um die Umfrage zu beantworten. Dies kann zu schlechten oder unzuverlässigen Daten führen und ist anfälliger für automatisierte Angriffe. Verwende diese Funktion mit Vorsicht! Beachte, dass ein Teilnehmer die gleiche Umfrage mehrfach beantworten kann, indem er verschiedene Browser oder die "Private Browsing"-Funktion ihres Web-Browsers nutzt.
+            allow_unregistered: Nicht registrierten Benutzenden die Beantwortung des Fragebogens erlauben
+            allow_unregistered_help: Wenn aktiviert, ist keine Anmeldung erforderlich, um die Umfrage zu beantworten. Dies kann zu schlechten oder unzuverlässigen Daten führen und ist anfälliger für automatisierte Angriffe. Verwende diese Funktion mit Vorsicht! Beachte, dass Teilnehmende die gleiche Umfrage mehrfach beantworten können, indem sie verschiedene Browser oder die "Private Browsing"-Funktion ihres Web-Browsers nutzen.
             announcement: Ankündigung
     events:
       surveys:
@@ -47,7 +47,7 @@ de:
           notification_title: Die Umfrage <a href="%{resource_path}">%{resource_title}</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a> ist jetzt geöffnet.
     metrics:
       survey_answers:
-        description: Anzahl der Umfragen, die von den Benutzern beantwortet wurden
+        description: Anzahl der Umfragen, die von den Benutzenden beantwortet wurden
         object: Antworten auf Umfragen
         title: Antworten zu Umfragen
     statistics:
@@ -55,7 +55,7 @@ de:
     surveys:
       admin:
         exports:
-          survey_user_answers: Umfrage Benutzer Antworten
+          survey_user_answers: Antworten der Teilnehmenden
         surveys:
           update:
             invalid: Beim Speichern der Umfrage sind Fehler aufgetreten.

@@ -21,7 +21,7 @@ de:
         customize_registration_email: Registrierungs-E-Mail anpassen
         decidim_category_id: Kategorie
         decidim_scope_id: Umfang
-        decidim_user_group_id: Benutzergruppe
+        decidim_user_group_id: Benutzer:innen-Gruppe
         description: Beschreibung
         end_time: Endzeit
         id: ID
@@ -93,7 +93,7 @@ de:
             values:
               official: Offiziell
               participants: Teilnehmer
-              user_group: Benutzergruppen
+              user_group: Benutzer:innen-Gruppen
           with_any_type:
             label: Art des Treffens
             values:
@@ -119,7 +119,7 @@ de:
             announcement: Ankündigung
             comments_enabled: Kommentare aktiviert
             comments_max_length: Maximale Länge der Kommentare (0 für Standardwert)
-            creation_enabled_for_participants: Teilnehmer können Besprechungen erstellen
+            creation_enabled_for_participants: Teilnehmende können Besprechungen erstellen
             default_registration_terms: Standard-Registrierungsbedingungen
             enable_pads_creation: Pads-Erstellung aktivieren
             maps_enabled: Karten aktiviert
@@ -131,8 +131,8 @@ de:
           step:
             announcement: Ankündigung
             comments_blocked: Kommentare blockiert
-            creation_enabled_for_participants: Besprechung-Erstellung durch Teilnehmer aktiviert
-            creation_enabled_for_user_groups: Besprechung-Erstellung durch Benutzergruppen aktiviert
+            creation_enabled_for_participants: Besprechung-Erstellung durch Teilnehmende aktiviert
+            creation_enabled_for_user_groups: Besprechung-Erstellung durch Benutzer:innen-Gruppen aktiviert
     events:
       meetings:
         meeting_closed:
@@ -181,18 +181,18 @@ de:
           notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> beginnt in weniger als 48 Stunden.
     forms:
       meetings:
-        attendees_count_help_text: Vergiss nicht, die Gesamtzahl der Teilnehmer an Deinem Meeting anzugeben, egal ob dieses persönlich, online oder hybrid stattgefunden hat.
+        attendees_count_help_text: Vergiss nicht, die Gesamtzahl der Teilnehmenden an Deinem Meeting anzugeben, egal ob dieses persönlich, online oder hybrid stattgefunden hat.
     gamification:
       badges:
         attended_meetings:
           conditions:
             - Registriere Dich für die Sitzungen, an denen Du teilnehmen möchtest
           description: Dieses Abzeichen wird gewährt, wenn Du mehrere persönliche Sitzungen besuchst.
-          description_another: Dieser Benutzer hat an %{score} Sitzungen teilgenommen.
+          description_another: Diese/r Benutzer:in hat an %{score} Sitzungen teilgenommen.
           description_own: Du hast an %{score} Sitzungen teilgenommen.
           name: Besuchte Sitzungen
           next_level_in: Nimm an %{score} weiteren Sitzungen teil, um das nächste Level zu erreichen!
-          unearned_another: Dieser Benutzer hat noch kein Sitzungen besucht.
+          unearned_another: Diese/r Benutzer:in hat noch kein Sitzungen besucht.
           unearned_own: Du hast noch keine Sitzung besucht.
     meetings:
       actions:
@@ -256,13 +256,13 @@ de:
         invites:
           create:
             error: Beim Einladen des Nutzers in das Meeting ist ein Problem aufgetreten.
-            success: Der Benutzer wurde erfolgreich zum Meeting eingeladen.
+            success: Der Der/Die Benutzer:in erfolgreich zum Meeting eingeladen.
           form:
             attendee_type: Teilnehmertyp
-            existing_user: Existierender Benutzer
+            existing_user: Existierende/r Benutzer:in
             invite: Einladen
-            invite_explanation: Der Benutzer wird eingeladen, dem Meeting und der Organisation beizutreten.
-            non_user: Nicht existierender Benutzer
+            invite_explanation: Der/Die Benutzer:in wird eingeladen, dem Meeting und der Organisation beizutreten.
+            non_user: Nicht existierende/r Benutzer:in
             select_user: Nutzer wählen
           index:
             filter:
@@ -271,9 +271,9 @@ de:
               rejected: Abgelehnt
               sent: Geschickt
             filter_by: Filtern nach
-            invite_attendee: Teilnehmer einladen
+            invite_attendee: Teilnehmende einladen
             invites: Lädt ein
-            registrations_disabled: Du kannst keinen Teilnehmer einladen, da die Registrierungen deaktiviert sind.
+            registrations_disabled: Du kannst keine Teilnehmenden einladen, da Registrierungen deaktiviert sind.
             search: Suche
         meeting_closes:
           edit:
@@ -300,8 +300,8 @@ de:
             update: Aktualisieren
           form:
             address_help: 'Adresse: wird von Geocoder zur Lokalisierung verwendet'
-            disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist Dir bewusst, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer dem externen Dienst zur Verfügung stellen.'
-            location_help: 'Ort: an die Benutzer gerichtete Nachricht mit dem Treffpunkt'
+            disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist Dir bewusst, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer:innen dem externen Dienst zur Verfügung stellen.'
+            location_help: 'Ort: an Benutzer:innen gerichtete Nachricht mit dem Treffpunkt'
             location_hints_help: 'Hinweise zum Standort: Zusätzliche Informationen. Beispiel: das Stockwerk im Gebäude wenn es eine Sitzung vor Ort ist, oder das Passwort wenn es eine Online-Sitzung mit eingeschränktem Zugriff ist.'
             online_meeting_url_help: 'Link: Erlaubt Teilnehmern, sich direkt mit Deinem Meeting zu verbinden'
             registration_url_help: 'Link: Erlaubt den Teilnehmern den externen Service zu nutzen, den Du für die Registrierung verwendest'
@@ -407,7 +407,7 @@ de:
             space_type: Partizipativer Raum
       iframe_access_level:
         all: Alle Besucher
-        registered: Registrierte Teilnehmer zu diesem Meeting
+        registered: Registrierte Teilnehmende zu diesem Meeting
         signed_in: Nur angemeldete Teilnehmer
       iframe_embed_type:
         embed_in_meeting_page: In Meeting-Seite einbetten
@@ -488,8 +488,8 @@ de:
           address_help: 'Adresse: wird von Geocoder zur Lokalisierung verwendet'
           available_slots_help: Belasse es auf 0, wenn unbegrenzte Plätze zur Verfügung stehen
           create_as: Besprechung erstellen als
-          disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist Dir bewusst, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer dem externen Dienst zur Verfügung stellen.'
-          location_help: 'Ort: an die Benutzer gerichtete Nachricht mit dem Treffpunkt'
+          disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist Dir bewusst, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer:innen dem externen Dienst zur Verfügung stellen.'
+          location_help: 'Ort: an Benutzer:innen gerichtete Nachricht mit dem Treffpunkt'
           location_hints_help: 'Standorthinweise: Zusätzliche Informationen. Beispiel: die Etage des Gebäudes, wenn es sich um eine persönliche Sitzung oder das Sitzungspasswort, wenn es sich um ein Online-Meeting mit eingeschränktem Zugriff handelt.'
           online_meeting_url_help: 'Link: Erlaubt Teilnehmern, sich direkt mit Deinem Meeting zu verbinden'
           registration_url_help: 'Link: Erlaubt den Teilnehmern den externen Service zu nutzen, den Du für die Registrierung verwendest'
@@ -514,7 +514,7 @@ de:
           cancel: Stornieren
           confirm: Bestätigen
         show:
-          attendees: Teilnehmer zählen
+          attendees: Teilnehmende zählen
           back: Zurück zur Liste
           close_meeting: Meeting beenden
           contributions: Beiträge zählen

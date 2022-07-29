@@ -48,7 +48,7 @@ de:
         facebook_handler: Facebook-Handler
         favicon: Icon
         force_authentication: Authentifizierung erzwingen
-        force_users_to_authenticate_before_access_organization: Benutzer müssen sich authentifizieren bevor sie auf die Organisation zugreifen können
+        force_users_to_authenticate_before_access_organization: Benutzer:innen müssen sich authentifizieren bevor sie auf die Organisation zugreifen können
         from: E-Mail-Adresse des Absenders
         github_handler: GitHub-Handler
         header_snippets: Header-Snippets
@@ -79,7 +79,7 @@ de:
         organization_locales: Verfügbare Sprachen
         primary_color: Primär
         reference_prefix: Referenzpräfix
-        rich_text_editor_in_public_views: Rich-Text-Editor für Teilnehmer aktivieren
+        rich_text_editor_in_public_views: Rich-Text-Editor für Teilnehmende aktivieren
         secondary_color: Sekundär
         secondary_hosts: Weitere Hosts
         send_welcome_notification: Willkommens-Benachrichtigung senden
@@ -87,8 +87,8 @@ de:
         time_zone: Zeitzone
         tos_version: Nutzungsbedingungen Version
         twitter_handler: Twitter-Handler
-        user_groups_enabled: Benutzergruppen aktivieren
-        users_registration_mode: Benutzerregistrierungs-Modus
+        user_groups_enabled: Benutzer:innen-Gruppen aktivieren
+        users_registration_mode: Benutzer:innen-Registrierungs-Modus
         warning_color: Warnung
         welcome_notification_body: Text der Willkommens-Benachrichtigung
         welcome_notification_subject: Betreff der Willkommens-Benachrichtigung
@@ -172,7 +172,7 @@ de:
         newsletter:
           new: Neuer Newsletter
         participatory_space_private_user:
-          new: Neuer privater Benutzer
+          new: Neue/r private/r Benutzer:in
         per_page: Pro Seite
         permissions: Berechtigungen
         reject: Ablehnen
@@ -262,16 +262,16 @@ de:
           error: Beim Aktualisieren dieses Anhangs ist ein Fehler aufgetreten.
           success: Anhang wurde erfolgreich aktualisiert.
       attachments_privacy_warning:
-        message: Sei vorsichtig, wenn Du mit Anhängen in einem privaten Raum arbeitest. Jeder Teilnehmer kann dieses Dokument mit anderen teilen.
+        message: Sei vorsichtig, wenn Du mit Anhängen in einem privaten Raum arbeitest. Jeder Teilnehmende können dieses Dokument mit anderen teilen.
       autocomplete:
         no_results: keine Ergebnisse gefunden
         search_prompt: Gib mindestens drei Zeichen ein, um zu suchen
       block_user:
         new:
           action: Konto sperren und Begründung senden
-          description: Das Blockieren eines Benutzers wird sein Konto unbrauchbar machen. Du kannst begründen und Richtlinien dafür bieten, wie der Benutzer vorgehen könnte, damit Du in Betracht ziehst, die Blockierung wieder aufzuheben.
+          description: Das Blockieren eines Benutzers / einer Benutzerin wird sein/ihr Konto unbrauchbar machen. Du kannst begründen und Richtlinien dafür bieten, wie er/sie vorgehen könnte, damit Du in Betracht ziehst, die Blockierung wieder aufzuheben.
           justification: Begründung
-          title: Benutzer %{name} blockieren
+          title: Benutzer:in %{name} blockieren
       categories:
         create:
           error: Beim Erstellen dieser Kategorie ist ein Fehler aufgetreten.
@@ -414,12 +414,12 @@ de:
           label: Themenbereich
         search_label: Suche
         search_placeholder:
-          name_or_nickname_or_email_cont: Suche in %{collection} nach E-Mail, Name oder Benutzername.
+          name_or_nickname_or_email_cont: Suche in %{collection} nach E-Mail, Name oder Benutzer:innen-Name.
           report_count_eq: Anzahl Meldungen
           reported_id_string_or_reported_content_cont: Suche %{collection} nach meldbarer Id oder Inhalt.
           title_cont: In %{collection} nach Titel suchen.
           user_name_or_user_email_cont: In %{collection} nach Name oder E-Mail suchen.
-          user_name_or_user_nickname_or_user_email_cont: '%{collection} nach E-Mail, Name oder Benutzername durchsuchen.'
+          user_name_or_user_nickname_or_user_email_cont: '%{collection} nach E-Mail, Name oder Benutzer:innen-Name durchsuchen.'
         state_eq:
           label: Bundesland
           values:
@@ -446,7 +446,7 @@ de:
             not_managed: Nicht verwaltet
           filter_by: Filtern nach
           impersonate: Imitieren
-          impersonate_new_managed_user: Sich als neuer verwalteter Benutzer ausgeben
+          impersonate_new_managed_user: Sich als neue/r verwaltete/r Benutzer:in ausgeben
           managed: Gelang es
           name: Name
           needs_authorization_warning: Du benötigst mindestens eine Autorisierung, die für diese Organisation aktiviert ist.
@@ -460,17 +460,17 @@ de:
           error: Beim Schließen der aktuellen Identitätswechsel-Sitzung ist ein Fehler aufgetreten.
           success: Die aktuelle Identitätswechselsitzung wurde erfolgreich beendet.
         create:
-          error: Es gab einen Fehler bei der Identität des Benutzers.
-          success: Der verwaltete Benutzer wurde erfolgreich erstellt.
+          error: Es gab einen Fehler mit der Identität des/der Benutzer:in.
+          success: Der/Die verwaltete Benutzer:in wurde erfolgreich erstellt.
         form:
           authorization_method: Autorisierungsmethode
           name: Name
           reason: Grund
         new:
           impersonate: Imitieren
-          impersonate_existing_managed_user: Angenommen, dass der Benutzer "%{name}" verwaltet wird
-          impersonate_existing_user: Imitieren von Benutzer "%{name}"
-          impersonate_new_managed_user: Sich als neuer verwalteter Benutzer ausgeben
+          impersonate_existing_managed_user: Angenommen, dass der/die Benutzer:in "%{name}" verwaltet wird
+          impersonate_existing_user: Imitieren von Benutzer:in "%{name}"
+          impersonate_new_managed_user: Sich als neue/r verwaltete/r Benutzer:in ausgeben
       imports:
         and: und
         data_errors:
@@ -514,12 +514,12 @@ de:
           no_logs_yet: Es gibt noch keine Protokolle
       managed_users:
         promotion:
-          error: Es ist ein Fehler aufgetreten, der den verwalteten Benutzer unterstützt.
-          success: Der verwaltete Benutzer wurde erfolgreich hochgestuft.
+          error: Bei der Beförderung des verwalteten Benutzers bzw. der veralteten Benutzerin ist ein Fehler aufgetreten.
+          success: Der/Die verwaltete Benutzer:in wurde erfolgreich hochgestuft.
         promotions:
           new:
-            explanation: Verwaltete Benutzer können zu Standardbenutzern heraufgestuft werden. Das bedeutet, dass sie zu der Anwendung eingeladen werden und nicht in der Lage sind, sie erneut zu repräsentieren. Der eingeladene Benutzer erhält eine E-Mail, um Deine Einladung anzunehmen.
-            new_managed_user_promotion: Neue verwaltete Benutzerwerbung
+            explanation: Verwaltete Benutzer:innen können zu Standardbenutzenden heraufgestuft werden. Das bedeutet, dass sie zu der Anwendung eingeladen werden und nicht in der Lage sind, sie erneut zu repräsentieren. Der/Die eingeladene Benutzer:in erhält eine E-Mail, um Deine Einladung anzunehmen.
+            new_managed_user_promotion: Neue verwaltete Benutzer:innen-Beförderung
             promote: Fördern
       menu:
         admin_log: Admin-Aktivitätsprotokoll
@@ -541,7 +541,7 @@ de:
         scopes: Bereiche
         settings: die Einstellungen
         static_pages: Seiten
-        user_groups: Benutzergruppen
+        user_groups: Benutzer:innen-Gruppen
         users: Benutzer
       metrics:
         metrics:
@@ -613,7 +613,7 @@ de:
             role: Rolle
             roles:
               admin: Administrator
-              user_manager: Benutzer Manager
+              user_manager: Benutzer:innen Manager
           name: Benutzer
         user_group:
           fields:
@@ -623,19 +623,19 @@ de:
             name: Name
             phone: Telefon
             state: Zustand
-            users_count: Benutzer zählen
+            users_count: Benutzer:innen zählen
       moderated_users:
         index:
           actions:
-            block: Benutzer blockieren
+            block: Benutzer:in blockieren
             title: Aktionen
-            unblock: Blockierung des Benutzers aufheben
+            unblock: Blockierung des/der Benutzer:in aufheben
             unreport: Meldung Rückgängig machen
           name: Name
           nickname: Pseudonym
           reason: Grund
           reports: Anzahl Meldungen
-          title: Liste der gemeldeten Benutzer
+          title: Liste der gemeldeten Benutzer:innen
         report:
           reasons:
             does_not_belong: Gehört nicht zu
@@ -655,7 +655,7 @@ de:
         reports:
           index:
             author: Autor(en)
-            callout_html: Ein Inhalt erscheint im Moderations-Panel, wenn er von einem Benutzer gemeldet wurde. Jeder Benutzer mit einem registrierten Konto kann Inhalte melden, indem er auf die %{icon} Flagge neben dem Element klickt.
+            callout_html: Ein Inhalt erscheint im Moderations-Panel, wenn er von einem Benutzer bzw. einer Benutzerin gemeldet wurde. Jede/r registrierte/r Benutzer:in kann Inhalte melden, indem er/sie auf die %{icon} Flagge neben dem Element klickt.
             content_original_language: Originalsprache des Inhalts
             participatory_space: Beteiligungsbereich
             reported_content: Gemeldeter Inhalt
@@ -712,16 +712,16 @@ de:
           followers_help: Sendet den Newsletter an alle bestätigten Benutzer, die den ausgewählten Teilnehmerräumen in der Liste folgen.
           none: Niemand
           participants_help: Sendet den Newsletter an alle bestätigten Benutzer, die an den ausgewählten Teilnehmerräumen der Liste teilgenommen haben.
-          recipients_count: Dieser Newsletter wird an <strong id='recipients_count'>%{count}</strong> Teilnehmer gesendet.
+          recipients_count: Dieser Newsletter wird an <strong id='recipients_count'>%{count}</strong> Teilnehmende gesendet.
           scopes_help: Sendet den Newsletter an Teilnehmer, die einen der gewählten Themenbereiche in den "Meine Interessen" Einstellungen Deines Kontos aktiviert haben.
-          select_scopes: Nur Teilnehmer anzeigen, die einen der gewählten Themenbereiche in Deinen "Meine Interessen" Einstellungen Deines Kontos aktiviert haben.
+          select_scopes: Nur Teilnehmende anzeigen, die einen der gewählten Themenbereiche in Deinen "Meine Interessen" Einstellungen Deines Kontos aktiviert haben.
           select_spaces: Wähle Abschnitte, um den Newsletter zu unterteilen
-          select_users: Wähle aus, welchen Benutzern Du den Newsletter senden möchtest
-          send_to_all_users: An alle Benutzer senden
+          select_users: Wähle aus, welchen Benutzer:innen Du den Newsletter senden möchtest
+          send_to_all_users: An alle Benutzer:innen senden
           send_to_followers: An Follower senden
-          send_to_participants: An Teilnehmer senden
+          send_to_participants: An Teilnehmende senden
           title: Empfänger auswählen
-          warning: "<strong>Achtung:</strong> Dieser Newsletter wird nur an Benutzer gesendet, die <em>Ich möchte Newsletter empfangen</em> in ihren Benachrichtigungseinstellungen aktiviert haben."
+          warning: "<strong>Achtung:</strong> Dieser Newsletter wird nur an Benutzer:innen gesendet, die <em>Ich möchte Newsletter empfangen</em> in ihren Benachrichtigungseinstellungen aktiviert haben."
         send:
           no_recipients: Keine Empfänger für diese Auswahl
         show:
@@ -733,16 +733,16 @@ de:
           success: Newsletter erfolgreich aktualisiert. Bitte überprüfe ihn vor dem Senden.
       officializations:
         block:
-          error: Beim Blockieren des Teilnehmers ist ein Fehler aufgetreten
-          success: Teilnehmer erfolgreich blockiert
+          error: Beim Blockieren des/der Teilnehmenden ist ein Fehler aufgetreten
+          success: Teilnehmer:in erfolgreich blockiert
         create:
-          success: Benutzer wurde offiziell anerkannt
+          success: Der/Die Benutzer:in offiziell anerkannt
         destroy:
-          success: Der Benutzer wurde erfolgreich inoffizialisiert
+          success: Der/Die Benutzer:in wurde erfolgreich inoffizialisiert
         index:
           actions: Aktionen
           badge: Abzeichen
-          block: Benutzer blockieren
+          block: Benutzer:in blockieren
           created_at: Hergestellt in
           name: Name
           nickname: Pseudonym
@@ -758,10 +758,10 @@ de:
         new:
           badge: Offizielles Abzeichen
           officialize: Offizialisieren
-          title: Benutzer "%{name}" offiziellisieren
+          title: Benutzer:in "%{name}" offiziellisieren
         show_email_modal:
           close_modal: Modal schließen
-          description: Wenn Du einen Teilnehmer direkt kontaktieren möchtest, kannst Du auf die Schaltfläche "Anzeigen" klicken, um seine E-Mail-Adresse zu sehen. Diese Aktion wird protokolliert.
+          description: Wenn Du eine:n Teilnehmenden direkt kontaktieren möchtest, kannst Du auf die Schaltfläche "Anzeigen" klicken, um seine E-Mail-Adresse zu sehen. Diese Aktion wird protokolliert.
           email_address: E-Mail-Adresse
           full_name: Voller Name
           hidden: versteckt
@@ -778,7 +778,7 @@ de:
           facebook: Facebook
           github: GitHub
           instagram: Instagram
-          rich_text_editor_in_public_views_help: In einigen Textbereichen können Teilnehmer mit Hilfe des Rich-Text-Editors HTML-Tags einfügen.
+          rich_text_editor_in_public_views_help: In einigen Textbereichen können Teilnehmende mit Hilfe des Rich-Text-Editors HTML-Tags einfügen.
           social_handlers: Sozial
           twitter: Twitter
           url: URL
@@ -832,7 +832,7 @@ de:
           title: Participatory Space privater Benutzer
         new:
           create: Erstellen
-          title: Neuer privater Benutzer des Participatory Space.
+          title: Neue/r private/r Benutzer:in des Participatory Space.
       participatory_space_private_users_csv_imports:
         create:
           invalid: Beim Lesen der CSV-Datei ist ein Fehler aufgetreten.
@@ -851,8 +851,8 @@ de:
         create:
           error: Beim Erstellen dieser Erinnerungen ist ein Problem aufgetreten.
           success:
-            one: "%{count} Benutzer wird erinnert."
-            other: "%{count} Benutzer werden erinnert."
+            one: "%{count} Benutzer:in wird erinnert."
+            other: "%{count} Benutzer:innen werden erinnert."
         new:
           submit: Senden
       resource_permissions:
@@ -906,7 +906,7 @@ de:
           success: Token wurde erfolgreich gelöscht.
         share_tokens:
           empty: Es gibt keine aktiven Token
-          help: Token werden verwendet, um diese unveröffentlichte Ressource mit jedem Benutzer zu teilen. Diese werden ausgeblendet, sobald die Ressource veröffentlicht wird. Klicke auf das Teilen-Symbol des Tokens um die teilbare URL zu besuchen.
+          help: Token werden verwendet, um diese unveröffentlichte Ressource mit Benutzer:innen zu teilen. Diese werden ausgeblendet, sobald die Ressource veröffentlicht wird. Klicke auf das Teilen-Symbol des Tokens um die teilbare URL zu besuchen.
           title: Token teilen
       shared:
         gallery:
@@ -938,7 +938,7 @@ de:
         destroy:
           success: Seite erfolgreich zerstört
         edit:
-          changed_notably_help: Wenn diese Option aktiviert ist, werden Benutzer benachrichtigt, um die neuen Nutzungsbedingungen zu akzeptieren.
+          changed_notably_help: Wenn diese Option aktiviert ist, werden Benutzer:innen benachrichtigt, um die neuen Nutzungsbedingungen zu akzeptieren.
           title: Seite bearbeiten
           update: Aktualisieren
         form:
@@ -972,18 +972,18 @@ de:
         scopes: Bereiche
         static_pages: Seiten
         statistics: Aktivität
-        user_groups: Benutzergruppen
+        user_groups: Benutzer:innen-Gruppen
         users: Administratoren
       user_group:
         csv_verify:
           invalid: Beim Lesen der CSV-Datei ist ein Fehler aufgetreten.
-          success: CSV-Datei wurde erfolgreich hochgeladen. Wir überprüfen, ob die Benutzergruppen den Kriterien entsprechen. Das kann eine Weile dauern.
+          success: CSV-Datei wurde erfolgreich hochgeladen. Wir überprüfen, ob die Benutzer:innen-Gruppen den Kriterien entsprechen. Das kann eine Weile dauern.
         reject:
-          invalid: Beim Ablehnen dieser Benutzergruppe ist ein Fehler aufgetreten.
-          success: Benutzergruppe wurde erfolgreich abgelehnt
+          invalid: Beim Ablehnen dieser Benutzer:innen-Gruppe ist ein Fehler aufgetreten.
+          success: Benutzer:innen-Gruppe wurde erfolgreich abgelehnt
         verify:
-          invalid: Beim Überprüfen dieser Benutzergruppe ist ein Fehler aufgetreten.
-          success: Benutzergruppe erfolgreich verifiziert
+          invalid: Beim Überprüfen dieser Benutzer:innen-Gruppe ist ein Fehler aufgetreten.
+          success: Benutzer:innen-Gruppe erfolgreich verifiziert
       user_groups:
         index:
           state:
@@ -993,16 +993,16 @@ de:
           verify_via_csv: Überprüfe über CSV
       user_groups_csv_verifications:
         new:
-          explanation: Lade Deine CSV-Datei hoch. In der ersten Spalte der Datei müssen die offiziellen E-Mails der Benutzergruppen in Deiner Organisation enthalten sein, ohne Kopfzeilen. Nur Benutzergruppen, die ihre E-Mail bestätigt haben und deren E-Mail in der CSV-Datei enthalten ist, werden überprüft.
+          explanation: Lade Deine CSV-Datei hoch. In der ersten Spalte der Datei müssen die offiziellen E-Mails der Benutzer:innen-Gruppen in Deiner Organisation enthalten sein, ohne Kopfzeilen. Nur Benutzer:innen-Gruppen, die ihre E-Mail bestätigt haben und deren E-Mail in der CSV-Datei enthalten ist, werden überprüft.
           title: Lade Deine CSV-Datei hoch
           upload: Hochladen
       users:
         create:
           error: Beim Einladen dieses Benutzers ist ein Fehler aufgetreten.
-          success: Benutzer wurde erfolgreich eingeladen.
+          success: Der/Die Benutzer:in erfolgreich eingeladen.
         destroy:
-          error: Beim Versuch, diesen Benutzer zu löschen, ist ein Fehler aufgetreten.
-          success: Der Benutzer ist kein Administrator mehr.
+          error: Beim Versuch, diese/n Benutzer:in zu löschen, ist ein Fehler aufgetreten.
+          success: Der/Die Benutzer:in ist kein/e Administrator:in mehr.
         form:
           email: Email
           name: Name
@@ -1022,17 +1022,17 @@ de:
     forms:
       errors:
         impersonate_user:
-          reason: Du musst einen Grund angeben, weshalb Du Dich als nicht-verwalteten Benutzer ausfibst
+          reason: Du musst einen Grund angeben, weshalb Du Dich als nicht-verwaltete/n Benutzer:in ausgibst
     metrics:
       blocked_users:
-        object: blockierte Benutzer
-        title: Blockierte Benutzer
+        object: blockierte Benutzer:innen
+        title: Blockierte Benutzer:innen
       reported_users:
-        object: gemeldete Benutzer
-        title: Gemeldete Benutzer
+        object: gemeldete Benutzer:innen
+        title: Gemeldete Benutzer:innen
       user_reports:
-        object: Benutzer-Meldungen
-        title: Benutzer-Meldungen
+        object: Benutzer:innen-Meldungen
+        title: Benutzer:innen-Meldungen
     moderations:
       actions:
         expand: Ausklappen
@@ -1083,4 +1083,4 @@ de:
         settings:
           title: die Einstellungen
         users:
-          title: Benutzer
+          title: Benutzer:innen

@@ -123,7 +123,7 @@ de:
       comments:
         comment_by_followed_user:
           email_intro: "%{author_name} hat einen Kommentar zu %{resource_title} hinterlassen. Du kannst diesen auf dieser Seite lesen:"
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{author_name} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, besuche die Profil-Seite dieses Benutzers.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{author_name} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, besuche die Profil-Seite dieses Benutzers bzw. dieser Benutzerin.
           email_subject: Neuer Kommentar von %{author_name} zu %{resource_title}
           notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>.
         comment_by_followed_user_group:
@@ -163,7 +163,7 @@ de:
           notification_title: Du wurdest in <a href="%{resource_path}">%{resource_title}</a> von <a href="%{author_path}">%{author_name} %{author_nickname}</a> erwähnt
     metrics:
       comments:
-        description: Anzahl der von Benutzern generierten Kommentare
+        description: Anzahl der von Benutzenden generierten Kommentare
         object: Bemerkungen
         title: Bemerkungen
   errors:

@@ -24,7 +24,7 @@ de:
         attachments_enabled: Anhänge freigeben
         banner_image: Banner-Bild
         child_scope_threshold_enabled: Unterschriften von Unterbereichen aktivieren
-        collect_user_extra_fields: Persönliche Daten des Benutzers bei der Unterschrift sammeln
+        collect_user_extra_fields: Persönliche Daten von Benutzer:innen bei der Unterschrift sammeln
         comments_enabled: Kommentare aktivieren
         custom_signature_end_date_enabled: Die Auswahl des Enddatums der Unterschriftensammlung für Autoren freigeben
         description: Beschreibung
@@ -35,7 +35,7 @@ de:
         only_global_scope_enabled: Nur die Erstellung globaler Initiativen zulassen
         promoting_committee_enabled: Förderkomitee freigeben
         title: Titel
-        undo_online_signatures_enabled: Benutzern ermöglichen, ihre Online-Signaturen rückgängig zu machen
+        undo_online_signatures_enabled: Benutzer:innen ermöglichen, ihre Online-Signaturen rückgängig zu machen
         validate_sms_code_on_votes: Dem Signaturprozess einen SMS-Validierungsschritt hinzufügen
       initiatives_vote:
         date_of_birth: Geburtsdatum
@@ -177,17 +177,17 @@ de:
             - Gehe zum Teilnehmerbereich von Intiativen
             - Folge diesen Schritten, um eine neue Initiative zu erstellen
           description: Dieses Abzeichen wird gewährt, wenn Du neue Initiativen startest und mit anderen zusammenarbeitest, um diese durchzuführen.
-          description_another: Dieser Benutzer hat %{score} Initiativen veröffentlicht.
+          description_another: Diese/r Benutzer:in hat %{score} Initiativen veröffentlicht.
           description_own: Du hast %{score} Initiativen veröffentlicht.
           name: Veröffentlichte Initiativen
           next_level_in: Veröffentliche %{score} weitere Initiativen, um das nächste Level zu erreichen!
-          unearned_another: Dieser Benutzer hat noch keine Initiativen veröffentlicht.
+          unearned_another: Diese/r Benutzer:in hat noch keine Initiativen veröffentlicht.
           unearned_own: Du hast noch keine Initiativen veröffentlicht.
     help:
       participatory_spaces:
         initiatives:
-          contextual: "<p>Eine Initiative ist ein Vorschlag, der von jedermann aus eigener Initiative (unabhängig von anderen Kanälen oder Beteiligungsräumen) durch die Sammlung von (digitalen) Unterschriften für die Organisation zur Durchführung einer bestimmten Aktion (Änderung einer Verordnung, Initiierung eines Projekts) gefördert werden kann , ändere den Namen einer Abteilung oder einer Straße usw.).</p> <p>Die Initiatoren einer Initiative können ihre Ziele festlegen, Unterstützung sammeln, diskutieren, verbreiten und Treffpunkte definieren, an denen Unterschriften der Teilnehmer oder Debatten gesammelt werden können, die für andere Teilnehmer offen sind.</p> <p>Beispiele: Eine Initiative kann Unterschriften sammeln, um eine Konsultation unter allen Mitarbeitern einer Organisation einzuberufen, eine Versammlung zu gründen oder einzuberufen oder einen Prozess zur Aufstockung des Budgets für ein Gebiet oder einen Bereich der Organisation einzuleiten. Während des Sammelns von Unterschriften können mehr Personen zu diesem Bedarf beitragen und ihn in der Organisation vorantreiben.</p>\n"
-          page: "<p>Eine Initiative ist ein Vorschlag, der von jedermann aus eigener Initiative (unabhängig von anderen Kanälen oder Beteiligungsräumen) durch die Sammlung von (digitalen) Unterschriften für die Organisation zur Durchführung einer bestimmten Aktion (Änderung einer Verordnung, Initiierung eines Projekts) gefördert werden kann , ändere den Namen einer Abteilung oder einer Straße usw.).</p> <p>Die Initiatoren einer Initiative können ihre Ziele festlegen, Unterstützung sammeln, diskutieren, verbreiten und Treffpunkte definieren, an denen Unterschriften der Teilnehmer oder Debatten gesammelt werden können, die für andere Teilnehmer offen sind.</p> <p>Beispiele: Eine Initiative kann Unterschriften sammeln, um eine Konsultation unter allen Mitarbeitern einer Organisation einzuberufen, eine Versammlung zu gründen oder einzuberufen oder einen Prozess zur Aufstockung des Budgets für ein Gebiet oder einen Bereich der Organisation einzuleiten. Während des Sammelns von Unterschriften können mehr Personen zu diesem Bedarf beitragen und ihn in der Organisation vorantreiben.</p>\n"
+          contextual: "<p>Eine Initiative ist ein Vorschlag, der von jedermann aus eigener Initiative (unabhängig von anderen Kanälen oder Beteiligungsräumen) durch die Sammlung von (digitalen) Unterschriften für die Organisation zur Durchführung einer bestimmten Aktion (Änderung einer Verordnung, Initiierung eines Projekts) gefördert werden kann , ändere den Namen einer Abteilung oder einer Straße usw.).</p> <p>Die Initiatoren einer Initiative können ihre Ziele festlegen, Unterstützung sammeln, diskutieren, verbreiten und Treffpunkte definieren, an denen Unterschriften der Teilnehmenden oder Debatten gesammelt werden können, die für andere Teilnehmende offen sind.</p> <p>Beispiele: Eine Initiative kann Unterschriften sammeln, um eine Konsultation unter allen Mitarbeitern einer Organisation einzuberufen, eine Versammlung zu gründen oder einzuberufen oder einen Prozess zur Aufstockung des Budgets für ein Gebiet oder einen Bereich der Organisation einzuleiten. Während des Sammelns von Unterschriften können mehr Personen zu diesem Bedarf beitragen und ihn in der Organisation vorantreiben.</p>\n"
+          page: "<p>Eine Initiative ist ein Vorschlag, der von jedermann aus eigener Initiative (unabhängig von anderen Kanälen oder Beteiligungsräumen) durch die Sammlung von (digitalen) Unterschriften für die Organisation zur Durchführung einer bestimmten Aktion (Änderung einer Verordnung, Initiierung eines Projekts) gefördert werden kann , ändere den Namen einer Abteilung oder einer Straße usw.).</p> <p>Die Initiatoren einer Initiative können ihre Ziele festlegen, Unterstützung sammeln, diskutieren, verbreiten und Treffpunkte definieren, an denen Unterschriften der Teilnehmenden oder Debatten gesammelt werden können, die für andere Teilnehmende offen sind.</p> <p>Beispiele: Eine Initiative kann Unterschriften sammeln, um eine Konsultation unter allen Mitarbeitern einer Organisation einzuberufen, eine Versammlung zu gründen oder einzuberufen oder einen Prozess zur Aufstockung des Budgets für ein Gebiet oder einen Bereich der Organisation einzuleiten. Während des Sammelns von Unterschriften können mehr Personen zu diesem Bedarf beitragen und ihn in der Organisation vorantreiben.</p>\n"
           title: Was sind Initiativen?
     initiatives:
       actions:
@@ -207,7 +207,7 @@ de:
           index:
             approve: Genehmigen
             confirm_revoke: Bist Du sicher?
-            invite_to_committee_help: Teile diesen Link, um andere Benutzer zum Promotionskomitee einzuladen
+            invite_to_committee_help: Teile diesen Link, um andere Benutzer:innen zum Promotionskomitee einzuladen
             no_members_yet: Es gibt keine Mitglieder im Promoter-Ausschuss
             revoke: Widerrufen
             title: Ausschussmitglieder
@@ -468,7 +468,7 @@ de:
         committee_members:
           approve: Genehmigen
           confirm_revoke: Bist Du dir sicher?
-          invite_to_committee_help: Teile diesen Link, um andere Benutzer zum Promotionskomitee einzuladen
+          invite_to_committee_help: Teile diesen Link, um andere Benutzer:innen zum Promotionskomitee einzuladen
           no_members_yet: Es gibt keine Mitglieder im Promoter-Ausschuss
           revoke: Widerrufen
           title: Ausschussmitglieder

@@ -168,7 +168,7 @@ de:
               infinite: Vorschläge können beliebig lang bearbeitet werden
               limited: Vorschläge können nach einem spezifischen Zeitfenster nicht mehr bearbeitet werden
             proposal_length: Maximale Länge des Haupttextes
-            proposal_limit: Vorschlagslimit pro Benutzer
+            proposal_limit: Vorschlagslimit pro Benutzer:in
             proposal_wizard_step_1_help_text: Hilfetext "Erstellen"-Schritt im Vorschlagsassistenten
             proposal_wizard_step_2_help_text: Hilfetext "Vergleichen"-Schritt im Vorschlagsassistenten
             proposal_wizard_step_3_help_text: Hilfetext "Fertigstellen"-Schritt im Vorschlagsassistenten
@@ -177,10 +177,10 @@ de:
             scope_id: Bereich
             scopes_enabled: Bereiche aktiviert
             threshold_per_proposal: Schwellenwert pro Vorschlag
-            vote_limit: Unterstützungslimit pro Benutzer
+            vote_limit: Unterstützungslimit pro Benutzer:in
           step:
             amendment_creation_enabled: Ergänzungserstellung aktiviert
-            amendment_creation_enabled_help: Teilnehmer kann Vorschläge ergänzen.
+            amendment_creation_enabled_help: Teilnehmende können Vorschläge ergänzen.
             amendment_promotion_enabled: Hervorheben von Ergänzungen aktiviert
             amendment_promotion_enabled_help: Berichtigungsautoren können die abgelehnten Berichtigungen im Vorschlag hervorheben.
             amendment_reaction_enabled: Reaktionen auf Ergänzungen aktiviert
@@ -189,12 +189,12 @@ de:
             amendments_visibility_choices:
               all: Ergänzungen sind für alle sichtbar
               participants: Ergänzungen sind nur für ihre Autoren sichtbar
-            amendments_visibility_help: Wenn die Option „Ergänzungen sind nur für ihre Autoren sichtbar“ ausgewählt ist, müssen Teilnehmer eingeloggt sein, um die vorgenommenen Ergänzungen zu sehen.
+            amendments_visibility_help: Wenn die Option „Ergänzungen sind nur für ihre Autoren sichtbar“ ausgewählt ist, müssen Teilnehmende eingeloggt sein, um die vorgenommenen Ergänzungen zu sehen.
             announcement: Ankündigung
             answers_with_costs: Kosten für Vorschlagsantworten aktivieren
             automatic_hashtags: Hashtags wurden allen Vorschlägen hinzugefügt
             comments_blocked: Kommentare blockiert
-            creation_enabled: Teilnehmer können Vorschläge erstellen
+            creation_enabled: Teilnehmende können Vorschläge erstellen
             default_sort_order: Standardsortierung für Vorschläge
             default_sort_order_options:
               default: Standard
@@ -209,7 +209,7 @@ de:
             endorsements_enabled: Bestätigungen aktiviert
             proposal_answering_enabled: Vorschlagsantworten aktiviert
             publish_answers_immediately: Vorschlagsantworten sofort veröffentlichten
-            suggested_hashtags: Hashtags schlug Benutzern neue Vorschläge vor
+            suggested_hashtags: Hashtags die Benutzer:innen für neue Vorschläge vorgeschlagen werden
             votes_blocked: Abstimmung blockiert
             votes_enabled: Abstimmung aktiviert
             votes_hidden: Abstimmungen ausgeblendet (wenn Abstimmungen aktiviert sind, wird dies die Anzahl der Abstimmungen verbergen)
@@ -318,37 +318,37 @@ de:
             - Wähle den Bereich für die Teilnahme Deiner Interessen mit der Einreichung von Vorschlägen aktiviert TODO
             - Versuche Vorschläge zu machen, die ausgeführt werden können. Auf diese Weise werden sie eher akzeptiert.
           description: Dieses Abzeichen wird gewährt, wenn Du neue Vorschläge machst und diese angenommen werden.
-          description_another: Dieser Benutzer hat %{score} akzeptierte Vorschläge.
+          description_another: Diese/r Benutzer:in hat %{score} akzeptierte Vorschläge.
           description_own: Du hast %{score} Vorschläge angenommen.
           name: Akzeptierte Vorschläge
           next_level_in: Erhalte %{score} weitere akzeptierte Vorschläge, um das nächste Level zu erreichen!
-          unearned_another: Dieser Benutzer hat noch keine akzeptierten Vorschläge.
+          unearned_another: Diese/r Benutzer:in hat noch keine akzeptierten Vorschläge.
           unearned_own: Du hast noch keine akzeptierten Vorschläge.
         proposal_votes:
           conditions:
             - Stöbere und verbringe etwas Zeit, um die Vorschläge anderer Leute zu lesen
             - Unterstütze die Vorschläge, die Du magst oder interessant findest
           description: Dieses Abzeichen wird gewährt, wenn Du Vorschläge anderer Personen unterstützt.
-          description_another: Dieser Benutzer hat %{score} Vorschläge unterstützt.
+          description_another: Diese/r Benutzer:in hat %{score} Vorschläge unterstützt.
           description_own: Du hast %{score} Vorschläge unterstützt.
           name: Vorschlag unterstützt
           next_level_in: Unterstütze %{score} weitere Vorschläge, um das nächste Level zu erreichen!
-          unearned_another: Dieser Benutzer hat noch keine Vorschläge unterstützt.
+          unearned_another: Diese/r Benutzer:in hat noch keine Vorschläge unterstützt.
           unearned_own: Du hast noch keine Vorschläge unterstützt.
         proposals:
           conditions:
             - Wähle den Bereich für die Teilnahme Deiner Interessen mit der Einreichung von Vorschlägen aktiviert TODO
             - Neuen Vorschlag erstellen
           description: Dieses Abzeichen wird gewährt, wenn Du aktiv an neuen Vorschlägen teilnimmst.
-          description_another: Dieser Benutzer hat %{score} Vorschläge erstellt.
+          description_another: Diese/r Benutzer:in hat %{score} Vorschläge erstellt.
           description_own: Du hast %{score} Vorschläge erstellt.
           name: Vorschläge
           next_level_in: Erstelle %{score} weitere Vorschläge, um das nächste Level zu erreichen!
-          unearned_another: Dieser Benutzer hat noch keine Vorschläge erstellt.
+          unearned_another: Diese/r Benutzer:in hat noch keine Vorschläge erstellt.
           unearned_own: Du hast noch keine Vorschläge erstellt.
     metrics:
       accepted_proposals:
-        description: Anzahl der von den Benutzern akzeptierten Vorschläge
+        description: Anzahl der von Benutzenden akzeptierten Vorschläge
         object: Vorschläge
         title: Akzeptierte Vorschläge
       endorsements:
@@ -571,7 +571,7 @@ de:
           meetings: Meetings
           official: Offiziell
           participants: Teilnehmer
-          user_groups: Benutzergruppen
+          user_groups: Benutzer:innen-Gruppen
         filter_scope_values:
           all: Alle
         filter_state_values:
