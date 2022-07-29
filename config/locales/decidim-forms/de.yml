@@ -81,7 +81,7 @@ de:
             add_question: Frage hinzufügen
             add_separator: Trennzeichen hinzufügen
             add_title_and_description: Füge Titel und Beschreibung hinzu
-            already_answered_warning: Der Fragebogen wird bereits von einigen Benutzern beantwortet, sodass Du die Fragen nicht ändern kannst.
+            already_answered_warning: Der Fragebogen wurde bereits von einigen Benutzenden beantwortet, sodass Du die Fragen nicht ändern kannst.
             collapse: Alle Fragen einklappen
             expand: Alle Fragen ausklappen
             preview: Vorschau
@@ -187,6 +187,6 @@ de:
         ip_hash: IP-Hash
         question: Frage
         registered: Registriert
-        session_token: Benutzerkennung
+        session_token: Benutzer:innen-Kennung
         unregistered: Nicht registriert
-        user_status: Benutzerstatus
+        user_status: Benutzer:innen-Status

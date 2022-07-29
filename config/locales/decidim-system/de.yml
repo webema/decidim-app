@@ -14,7 +14,7 @@ de:
         from_label: Beschreibung
         password: Passwort
         port: Datenbank Port
-        user_name: Benutzername
+        user_name: Benutzer:innen-Name
       organization_file_uploads:
         allowed_content_types:
           admin: Admin MIME-Typen
@@ -44,11 +44,11 @@ de:
       admins:
         create:
           error: Beim Erstellen eines neuen Administrators ist ein Fehler aufgetreten.
-          success: Administrator erfolgreich erstellt
+          success: Administrator:in erfolgreich erstellt
         destroy:
-          success: Der Administrator wurde erfolgreich gelöscht
+          success: Der/Die Administrator:in wurde erfolgreich gelöscht
         edit:
-          title: Administrator bearbeiten
+          title: Administrator:in bearbeiten
           update: Aktualisieren
         index:
           title: Admins
@@ -56,8 +56,8 @@ de:
           create: Erstellen
           title: Neuer Administrator
         update:
-          error: Beim Aktualisieren dieses Administrators ist ein Fehler aufgetreten.
-          success: Administrator wurde erfolgreich aktualisiert
+          error: Beim Aktualisieren dieses Administrators bzw. dieser Administratorin ist ein Fehler aufgetreten.
+          success: Der/Die Administrator:in wurde erfolgreich aktualisiert
       dashboard:
         show:
           current_organizations: Aktuelle Organisationen
@@ -77,7 +77,7 @@ de:
             email: Email
           name: Administrator
           validations:
-            email_uniqueness: ein anderer Administrator mit der gleichen E-Mail existiert bereits
+            email_uniqueness: ein/e andere/r Administrator:in mit der gleichen E-Mail existiert bereits
         oauth_application:
           fields:
             created_at: Erstellt am
@@ -126,13 +126,13 @@ de:
           secondary_hosts_hint: Gib jede von ihnen in einer neuen Zeile ein
         file_upload_settings:
           content_types:
-            admin_hint: Diese MIME-Typen sind für das Hochladen im Admin-Panel erlaubt. Admin-Benutzer sollten sich der Risiken des Hochladens einiger Dokumentformate bewusst sein, so dass man von ihnen erwarten kann dass sie vorsichtiger mit Datei-Uploads sind.
-            default_hint: Diese MIME-Typen sind standardmäßig für alle Benutzer erlaubt.
+            admin_hint: Diese MIME-Typen sind für das Hochladen im Admin-Panel erlaubt. Admin-Benutzer:innen sollten sich der Risiken des Hochladens einiger Dokumentformate bewusst sein, so dass man von ihnen erwarten kann dass sie vorsichtiger mit Datei-Uploads sind.
+            default_hint: Diese MIME-Typen sind standardmäßig für alle Benutzer:innen erlaubt.
             intro_html: Füge Platzhalter mit dem Sternzeichen für die MIME-Typen hinzu, z.B. <code>image/*</code>.
             title: Erlaubte MIME-Typen
           file_extensions:
-            admin_hint: Diese Datei-Erweiterungen sind für das Hochladen im Admin-Panel erlaubt. Admin-Benutzer sollten sich der Risiken des Hochladens einiger Dokumentformate bewusst sein, so dass man von ihnen erwarten kann dass sie vorsichtiger mit Datei-Uploads sind.
-            default_hint: Diese Dateierweiterungen sind standardmäßig für alle Benutzer erlaubt.
+            admin_hint: Diese Datei-Erweiterungen sind für das Hochladen im Admin-Panel erlaubt. Admin-Benutzer:innen sollten sich der Risiken des Hochladens einiger Dokumentformate bewusst sein, so dass man von ihnen erwarten kann dass sie vorsichtiger mit Datei-Uploads sind.
+            default_hint: Diese Dateierweiterungen sind standardmäßig für alle Benutzer:innen erlaubt.
             image_hint: Diese Dateierweiterungen sind für alle Arten von Bild-Uploads erlaubt.
             title: Zulässige Dateierweiterungen
           file_sizes:
@@ -141,7 +141,7 @@ de:
             title: Maximale Dateigröße
           intro: |
             Bitte sei besonders vorsichtig, wenn Du überlegst, diese Einstellungen zu ändern. Je weniger Du erlaubst, desto besser.
-            Wenn bestimmte Dateierweiterungen oder MIME-Typen zugelassen werden, können Benutzer Sicherheitsrisiken ausgesetzt werden und es kann auch die Zugänglichkeit der Website beeinträchtigen.
+            Wenn bestimmte Dateierweiterungen oder MIME-Typen zugelassen werden, können Benutzer:innen Sicherheitsrisiken ausgesetzt werden und es kann auch die Zugänglichkeit der Website beeinträchtigen.
         index:
           title: Organisationen
         new:
@@ -179,8 +179,8 @@ de:
           success: Die Organisation wurde erfolgreich aktualisiert.
         users_registration_mode:
           disabled: Der Zugriff kann nur mit externen Konten erfolgen
-          enabled: Benutzern erlauben, sich zu registrieren und sich anzumelden
-          existing: Erlaube Benutzern keine Registrierung, sondern erlaube nur bestehenden Benutzern, sich anzumelden
+          enabled: Benutzenden erlauben, sich zu registrieren und sich anzumelden
+          existing: Erlaube Benutzenden keine Registrierung, sondern erlaube nur bestehenden Benutzenden, sich anzumelden
       shared:
         notices:
           no_organization_warning_html: Du musst eine Organisation erstellen, um zu beginnen. Stelle sicher, dass Du %{guide} gelesen hast, bevor Du fortfährst.

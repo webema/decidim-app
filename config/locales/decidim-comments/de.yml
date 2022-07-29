@@ -68,7 +68,7 @@ de:
         confirm_destroy: Bist Du sicher, dass du diesen Kommentar löschen willst?
         delete: Löschen
         deleted_at: Kommentar gelöscht am %{date}
-        deleted_user: Gelöschter Benutzer
+        deleted_user: Gelöschte/r Benutzer:in
         edit: Bearbeiten
         edited: Bearbeitet
         hide_replies: Antworten verbergen
@@ -76,7 +76,7 @@ de:
         reply: Antworten
         report:
           action: Melden
-          already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator überprüft.
+          already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator bzw. einer Administratorin überprüft.
           close: Schließen
           description: Ist dieser Inhalt unangemessen?
           details: Zusätzliche Kommentare
@@ -123,7 +123,7 @@ de:
       comments:
         comment_by_followed_user:
           email_intro: "%{author_name} hat einen Kommentar zu %{resource_title} hinterlassen. Du kannst diesen auf dieser Seite lesen:"
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{author_name} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, besuche die Profil-Seite dieses Benutzers.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{author_name} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, besuche die Profil-Seite dieses Benutzers bzw. dieser Benutzerin.
           email_subject: Neuer Kommentar von %{author_name} zu %{resource_title}
           notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>.
         comment_by_followed_user_group:
@@ -133,17 +133,17 @@ de:
           notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>.
         comment_created:
           email_intro: "%{resource_title} wurde kommentiert. Du kannst den Kommentar auf dieser Seite lesen:"
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du "%{resource_title}" oder seinem Autor folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du "%{resource_title}" oder seinem Autor bzw. seiner Autorin folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Neuer Kommentar von %{author_name} zu %{resource_title}
           notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>
         comment_downvoted:
           email_intro: Dein Kommentar in "%{resource_title}" wurde negativ bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Autor des Vorschlags bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der/die Autor:in des Vorschlags bist.
           email_subject: Dein Kommentar in "%{resource_title}" wurde negativ bewertet.
           notification_title: Dein <a href="%{resource_path}">Kommentar</a> in "%{resource_title}" wurde negativ bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
         comment_upvoted:
           email_intro: Dein Kommentar in "%{resource_title}" wurde positiv bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der Autor des Vorschlags bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du der/die Autor:in des Vorschlags bist.
           email_subject: Dein Kommentar in "%{resource_title}" wurde positiv bewertet.
           notification_title: Dein <a href="%{resource_path}">Kommentar</a> in "%{resource_title}" wurde positiv bewertet. Er hat nun insgesamt %{upvotes} positive und %{downvotes} negative Stimmen.
         reply_created:
@@ -163,7 +163,7 @@ de:
           notification_title: Du wurdest in <a href="%{resource_path}">%{resource_title}</a> von <a href="%{author_path}">%{author_name} %{author_nickname}</a> erwähnt
     metrics:
       comments:
-        description: Anzahl der von Benutzern generierten Kommentare
+        description: Anzahl der von Benutzenden generierten Kommentare
         object: Bemerkungen
         title: Bemerkungen
   errors:

@@ -139,9 +139,9 @@ de:
             other: Vorschläge ausgewählt
           view: Anzeigen
         sortition_author:
-          deleted: Gelöschter Benutzer
+          deleted: Gelöschter Benutzer:innen
         sortition_cancel_author:
-          deleted: Gelöschter Benutzer
+          deleted: Gelöschter Benutzer:innen
         sortitions_count:
           count:
             one: 1 Sortierung

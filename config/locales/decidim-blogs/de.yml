@@ -50,7 +50,7 @@ de:
       models:
         post:
           fields:
-            author: Autor
+            author: Autor:in
             body: Haupttext
             created_at: Hergestellt in
             official_blog_post: Offizieller Post

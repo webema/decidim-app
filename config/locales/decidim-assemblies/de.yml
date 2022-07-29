@@ -22,7 +22,7 @@ de:
         decidim_assemblies_type_id: Versammlungstyp
         decidim_scope_id: Umfang
         description: Beschreibung
-        developer_group: Promoter-Gruppe
+        developer_group: Promoter:innen-Gruppe
         domain: Domain
         duration: Dauer
         facebook: Facebook
@@ -78,14 +78,14 @@ de:
   activerecord:
     models:
       decidim/assembly:
-        one: Gre­mi­um
+        one: Gremium
         other: Gremien
       decidim/assembly_member:
         one: Gremienmitglieder
         other: Mitglieder der Versammlung
       decidim/assembly_user_role:
-        one: Assembly-Benutzerrolle
-        other: Zusammenbau von Benutzerrollen
+        one: Assembly-Benutzer:innen-Rolle
+        other: Assembly-Benutzer:innen-Rollen
   decidim:
     admin:
       actions:
@@ -168,21 +168,21 @@ de:
           success: Die Assembly wurde nicht veröffentlicht.
       assembly_user_roles:
         create:
-          error: Beim Hinzufügen eines Benutzers für diese Assembly ist ein Fehler aufgetreten.
-          success: Der Administrator wurde dieser Versammlung erfolgreich hinzugefügt.
+          error: Beim Hinzufügen eines Benutzers bzw. einer Benutzerin für diese Assembly ist ein Fehler aufgetreten.
+          success: Der/Die Administrator:in wurde dieser Versammlung erfolgreich hinzugefügt.
         destroy:
-          success: Benutzer wurde erfolgreich von dieser Assembly entfernt.
+          success: Der/Die Benutzer:in wurde erfolgreich von dieser Assembly entfernt.
         edit:
-          title: Aktualisiere den Benutzer der Baugruppe
+          title: Aktualisiere den/die Benutzer:in der Assembly
           update: Aktualisieren
         index:
-          assembly_admins_title: Assembly Benutzer
+          assembly_admins_title: Assembly Benutzer:in
         new:
           create: Erstellen
-          title: Neuer Assembly-Benutzer
+          title: Neue/r Assembly-Benutzer:in
         update:
-          error: Bei einem Fehler ist ein Benutzer für diese Assembly aktualisiert worden.
-          success: Der Benutzer wurde für diese Assembly erfolgreich aktualisiert.
+          error: Bei einem Fehler ist ein/e Benutzer:in für diese Assembly aktualisiert worden.
+          success: Der Der/Die Benutzer:in für diese Assembly erfolgreich aktualisiert.
       filters:
         decidim_assemblies_type_id_eq:
           label: Versammlungstyp
@@ -190,7 +190,7 @@ de:
         assemblies: Gremien
         assemblies_settings: Einstellungen
         assemblies_submenu:
-          assembly_admins: Assembly Benutzer
+          assembly_admins: Assembly Benutzer:innen
           assembly_members: Mitglieder
           attachment_collections: Ordner
           attachment_files: Dateien
@@ -199,7 +199,7 @@ de:
           components: Komponenten
           info: Info
           moderations: Moderationen
-          private_users: Private Benutzer
+          private_users: Private Benutzer:innen
         assemblies_types: Versammlungstypen
       models:
         assemblies_types:
@@ -231,12 +231,12 @@ de:
             email: Email
             name: Name
             role: Rolle
-          name: Assembly Benutzer
+          name: Assembly Benutzer:in
           roles:
-            admin: Administrator
-            collaborator: Mitarbeiter
-            moderator: Moderator
-            valuator: Schätzer
+            admin: Administrator:in
+            collaborator: Mitarbeiter:in
+            moderator: Moderator:in
+            valuator: Schätzer:in
       titles:
         assemblies: Gremien
         assemblies_types: Versammlungstypen
@@ -269,7 +269,7 @@ de:
       admin:
         assemblies:
           form:
-            announcement_help: Der Text, den Du hier eingibst, wird dem Benutzer direkt unter den Gremien-Informationen angezeigt.
+            announcement_help: Der Text, den Du hier eingibst, wird dem/der Benutzer:in direkt unter den Gremien-Informationen angezeigt.
             duration: Dauer
             duration_help: Wenn die Dauer dieser Assembly begrenzt ist, wähle das Enddatum aus. Andernfalls wird es als unbestimmt angezeigt.
             filters: Filter
@@ -302,14 +302,14 @@ de:
             slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf diese Versammlung verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
         assembly_members:
           form:
-            existing_user: Existierender Benutzer
+            existing_user: Existierender Benutzer:innen
             explanation: 'Hinweise für das Bild:'
             image_guide: Vorzugsweise ein Bild im Querformat, das keinen Text enthält.
-            non_user: Nichtbenutzer
+            non_user: Nichtbenutzer:in
             non_user_avatar_help: Du solltest die Zustimmung der Personen einholen, bevor Du sie als Mitglied veröffentlichst.
             select_a_position: Wähle eine Position
-            select_user: Wähle einen Benutzer aus
-            user_type: Benutzertyp
+            select_user: Wähle eine/n Benutzer:in aus
+            user_type: Benutzer:innen-Typ
           index:
             filter:
               all: Alle
@@ -375,7 +375,7 @@ de:
         composition: Zusammensetzung
         created_by: Erstellt von
         creation_date: Datum erstellt
-        developer_group: Promoter-Gruppe
+        developer_group: Promoter:innen-Gruppe
         duration: Dauer
         included_at: Inbegriffen bei
         indefinite_duration: Unbestimmt
@@ -403,7 +403,7 @@ de:
     events:
       assemblies:
         create_assembly_member:
-          email_intro: Ein Administrator des Gremiums <a href="%{resource_url}">%{resource_name}</a> hat Dich als Mitglied eingeladen.
+          email_intro: Ein/e Administrator:in des Gremiums <a href="%{resource_url}">%{resource_name}</a> hat Dich als Mitglied eingeladen.
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du zu einem Gremium eingeladen wurdest. Gehe zur <a href="%{resource_url}">Gremiumsseite</a>, um mitzumachen!
           email_subject: Du wurdest als Mitglied des Gremiums %{resource_name} eingeladen!
           notification_title: Du wurdest als Mitglied des Gremiums <a href="%{resource_path}">%{resource_name}</a> registriert. Gehe zur <a href="%{resource_path}">Gremiumsseite</a>, um mitzuwirken!
