@@ -352,7 +352,7 @@ de:
         title: KonKreationen
     participatory_process:
       show:
-        related_assemblies: Ähnliche Versammlungen
+        related_assemblies: Ähnliche Machwerke
     participatory_process_groups:
       content_blocks:
         html_1:
@@ -439,7 +439,7 @@ de:
             participate: Sich beteiligen
             participate_in: An KonKreation %{resource_name} teilnehmen
             processes_button_title: Link zur KonKreationen-Seite die alle KonKreationen anzeigt
-            see_all_processes: Alle KonKreationens anzeigen
+            see_all_processes: Alle KonKreationen anzeigen
       participatory_process_steps:
         index:
           back_to_process: Zurück zur KonKreation-Seite
@@ -454,10 +454,10 @@ de:
               one: 1 KonKreation
               other: "%{count} KonKreationen"
             past:
-              one: 1 vergangener KonKreation
+              one: 1 vergangene KonKreation
               other: "%{count} vergangene KonKreationen"
             upcoming:
-              one: 1 bevorstehender KonKreation
+              one: 1 bevorstehende KonKreation
               other: "%{count} bevorstehende KonKreationen"
           explanations:
             no_active: Keine aktiven KonKreationen
