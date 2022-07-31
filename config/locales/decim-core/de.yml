@@ -157,7 +157,7 @@ de:
         cancel: Stornieren
       password_change:
         alert: Du musst Dein Passwort ändern, um fortzufahren
-        notification: Administratoren müssen ihr Passwort alle %{days} Tage ändern.
+        notification: Administrator:innen müssen ihr Passwort alle %{days} Tage ändern.
     admin_log:
       area:
         create: "%{user_name} hat den Bereich %{resource_name} erstellt"
@@ -438,7 +438,7 @@ de:
           collaborative_draft: Gemeinsamer Entwurf
           comment: Kommentar
           debate: Debatte
-          initiative: Initiative
+          initiative: Idee
           meeting: Treffen
           post: Beitrag
           proposal: Vorschlag
@@ -583,7 +583,7 @@ de:
         ready: Bereit
       show:
         download_data: Daten herunterladen
-        download_data_description: Eine Datei, die alle mit Deinem Konto verknüpften Informationen enthält, wird an <strong>%{user_email}</strong> gesendet. Diese E-Mail enthält eine .zip-Datei und ein Passwort, um sie zu öffnen.<br/><br/>Um die Datei zu entpacken, benötigst Du <a href="https://www.7-zip.org/">7-Zip</a> (für Windows) oder <a href="https://www.keka.io/">Keka</a> (für MacOS). Wenn Du Linux verwendest, wird es meistens standardmäßig installiert. Wenn nicht, kannst Du <a href="https://gitlab.gnome.org/GNOME/file-roller">File Roller</a> oder <a href="https://peazip.github.io">PeaZip</a> verwenden.
+        download_data_description: Eine Datei mit allen mit Deinem Konto verknüpften Informationen, wird an <strong>%{user_email}</strong> gesendet. Diese E-Mail enthält eine .zip-Datei und ein Passwort, um diese zu entpacken.<br/><br/>Um die Datei zu entpacken, benötigst Du <a href="https://www.7-zip.org/">7-Zip</a> (für Windows) oder <a href="https://www.keka.io/">Keka</a> (für MacOS). Wenn Du Linux verwendest, wird es meistens standardmäßig installiert. Wenn nicht, kannst Du <a href="https://gitlab.gnome.org/GNOME/file-roller">File Roller</a> oder <a href="https://peazip.github.io">PeaZip</a> verwenden.
         request_data: Daten anfordern
     editor_images:
       create:
@@ -960,7 +960,7 @@ de:
     help:
       main_topic:
         default_page:
-          content: "<p>In %{organization} kannst Du durch die Felder, die Du im oberen Menü siehst, an verschiedenen Themen teilnehmen: Prozesse, Gremien, Initiativen, Beratungen.</p> <p>In jedem Bereich findest Du verschiedene Optionen für die Teilnahme: Vorschläge machen - einzeln oder mit anderen -, an Debatten teilnehmen, Prioritäten für umzusetzende Projekte setzen, persönliche Treffen und andere Aktionen besuchen.</p>\n"
+          content: "<p>In %{organization} kannst Du durch die Felder, die Du im oberen Menü siehst, an verschiedenen Themen teilnehmen: KonKreationen, Machwerke, Ideen, Beratungen.</p> <p>In jedem Bereich findest Du verschiedene Optionen für die Teilnahme: Vorschläge machen - einzeln oder mit anderen -, an Debatten teilnehmen, Prioritäten für umzusetzende Projekte setzen, persönliche Treffen und andere Aktionen besuchen.</p>\n"
           title: Was kann ich in %{organization} tun?
         description: Lese mehr über %{organization}
         title: Allgemeine Hilfe
@@ -1167,21 +1167,23 @@ de:
       subject: Dies ist deine E-Mail-Zusammenfassung
     notifications_settings:
       show:
-        administrators: Administratoren
+        administrators: Administrator:innen
         allow_public_contact: Allen erlauben, mir Direktnachrichten zu senden, selbst wenn ich ihnen nicht folge.
         allow_push_notifications: Erhalte Push-Benachrichtigungen, um herauszufinden, was vor sich geht, wenn Du nicht auf der Plattform bist. Du kannst diese jederzeit ausschalten.
         direct_messages: Direktnachrichten von allen erhalten
         email_on_moderations: Ich möchte jedes Mal, wenn etwas oder jemand zur Moderation gemeldet wird, eine E-Mail erhalten.
-        everything_followed: Alles was ich folge
+        everything_followed: Alle Inhalte, denen ich folge
         newsletter_notifications: Ich möchte Newsletter erhalten
         newsletters: Newsletter
+        notification_settings:
+          close_meeting_reminder: Ich möchte per E-Mail über closed meetings unpublished reports informiert werden
         notifications_sending_frequencies:
           daily: Täglich
           none: Keine
           real_time: In Echtzeit
           weekly: Wöchentlich
         notifications_sending_frequency: Wie oft möchtest Du die Benachrichtigungs-E-Mail erhalten?
-        own_activity: Meine eigene Tätigkeit, etwa wenn sich jemand in meinem Vorschlag äußert oder mich erwähnt
+        own_activity: Meine eigenen Aktivitäten, etwa wenn sich jemand zu meinem Vorschlag äußert oder mich erwähnt
         push_notifications: Push-Benachrichtigungen
         push_notifications_reminder: Um Benachrichtigungen von der Plattform zu erhalten, musst Du diese zuerst in den Browser-Einstellungen zulassen.
         receive_notifications_about: Ich möchte Benachrichtigungen erhalten über
@@ -1810,7 +1812,7 @@ de:
         delete_my_account: Mein Konto löschen
         my_data: Meine Daten
         my_interests: Meine Interessen
-        notifications_settings: Benachrichtigungseinstellungen
+        notifications_settings: Benachrichtigungen
         title: Benutzer:innen-Einstellungen
         user_groups: Gruppen
       widget:

@@ -256,7 +256,7 @@ de:
         invites:
           create:
             error: Beim Einladen des Nutzers in das Meeting ist ein Problem aufgetreten.
-            success: Der Der/Die Benutzer:in erfolgreich zum Meeting eingeladen.
+            success: Der/Die Benutzer:in erfolgreich zum Meeting eingeladen.
           form:
             attendee_type: Teilnehmertyp
             existing_user: Existierende/r Benutzer:in

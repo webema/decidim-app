@@ -20,7 +20,7 @@ de:
       initiatives_committee_member:
         user: Ausschussmitglied
       initiatives_type:
-        area_enabled: Die Auswahl des Bereichs von Initiativen für Autoren bzw. Autorinnen freigeben
+        area_enabled: Die Auswahl des Bereichs von Ideen für Autoren bzw. Autorinnen freigeben
         attachments_enabled: Anhänge freigeben
         banner_image: Banner-Bild
         child_scope_threshold_enabled: Unterschriften von Unterbereichen aktivieren
@@ -32,7 +32,7 @@ de:
         extra_fields_legal_information: Rechtliche Informationen zur Erhebung personenbezogener Daten
         minimum_committee_members: Minimum der Ausschussmitglieder
         online_signature_enabled: Online-Signatur aktiviert
-        only_global_scope_enabled: Nur die Erstellung globaler Initiativen zulassen
+        only_global_scope_enabled: Nur die Erstellung globaler Ideen zulassen
         promoting_committee_enabled: Förderkomitee freigeben
         title: Titel
         undo_online_signatures_enabled: Benutzer:innen ermöglichen, ihre Online-Signaturen rückgängig zu machen
@@ -57,8 +57,8 @@ de:
   activerecord:
     models:
       decidim/initiative:
-        one: Initativ
-        other: Initiativen
+        one: Idee
+        other: Ideen
       decidim/initiative_comittee:
         one: Komitee
         other: Ausschüsse
@@ -68,7 +68,7 @@ de:
   decidim:
     admin:
       actions:
-        new_initiative_type: Neuer Initiativentyp
+        new_initiative_type: Neuer Ideen-Typ
       filters:
         initiatives:
           decidim_area_id_eq:
@@ -89,106 +89,106 @@ de:
       initiatives_settings:
         update:
           error: Ein Fehler ist aufgetreten
-          success: Die Einstellungen für Initiativen wurden erfolgreich aktualisiert
+          success: Die Einstellungen für Ideen wurden erfolgreich aktualisiert
       menu:
         attachments: Anhänge
         committee_members: Ausschussmitglieder
         components: Komponenten
         information: Information
-        initiatives: Initiativen
+        initiatives: Ideen
         initiatives_settings: Einstellungen
-        initiatives_types: Arten von Initiativen
+        initiatives_types: Arten von Ideen
         moderations: Moderationen
       models:
         initiatives:
           fields:
             created_at: Hergestellt in
-            id: ICH WÜRDE
+            id: ID
             published_at: Veröffentlicht am
             state: Zustand
             supports_count: Unterschriften
-            title: Initiativen
+            title: Ideen
         initiatives_type_scope:
           fields:
             scope: Umfang
             supports_required: Unterstützungen erforderlich
-          name: Typ der Initiative
+          name: Typ der Idee
         initiatives_types:
           fields:
             created_at: Hergestellt in
-            title: Arten von Initiativen
-          name: Art der Initiative
+            title: Arten von Ideen
+          name: Art der Idee
         initiatives_votes:
           fields:
             date_of_birth: Geburtsdatum
             document_number: Dokumentnummer
             hash: Hash
             initiative_end_date: Enddatum
-            initiative_id: Initiativ-ID
+            initiative_id: Ideen-ID
             initiative_signatures_count: Anzahl der Unterschriften
             initiative_start_date: Startdatum
-            initiative_title: Initiativentitel
+            initiative_title: Ideentitel
             name_and_surname: Name und Nachname
             postal_code: Postleitzahl
             scope: Umfang
             time_and_date: Zeit und Datum
             timestamp: Zeitstempel
       titles:
-        initiatives: Initiativen
-        initiatives_types: Arten von Initiativen
+        initiatives: Ideen
+        initiatives_types: Arten von Ideen
     events:
       initiatives:
         admin:
           initiative_sent_to_technical_validation:
-            email_intro: Die Initiative "%{resource_title}" wurde zur technischen Validierung gesendet. Über das <a href="%{admin_initiative_url}">Admin-Panel</a> kannst Du sie aufrufen
+            email_intro: Die Idee "%{resource_title}" wurde zur technischen Validierung gesendet. Über das <a href="%{admin_initiative_url}">Admin-Panel</a> kannst Du sie aufrufen
             email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Administrator:in der Plattform bist.
-            email_subject: Die Initiative "%{resource_title}" wurde zur technischen Validierung gesendet.
-            notification_title: Die Initiative "%{resource_title}" wurde zur technischen Validierung gesendet. Über das <a href="%{admin_initiative_path}">Admin-Panel</a> kannst Du sie aufrufen
+            email_subject: Die Idee "%{resource_title}" wurde zur technischen Validierung gesendet.
+            notification_title: Die Idee "%{resource_title}" wurde zur technischen Validierung gesendet. Über das <a href="%{admin_initiative_path}">Admin-Panel</a> kannst Du sie aufrufen
         initiative_extended:
-          email_intro: Das Enddatum der Unterschriftensammlung für die Initiative %{resource_title} wurde verlängert!
+          email_intro: Das Enddatum der Unterschriftensammlung für die Idee %{resource_title} wurde verlängert!
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{resource_title} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Enddatum der Unterschriftensammlung verlängert!
-          notification_title: Das Enddatum der Unterschriftensammlung für die Initiative <a href="%{resource_path}">%{resource_title}</a> wurde verlängert.
+          notification_title: Das Enddatum der Unterschriftensammlung für die Idee <a href="%{resource_path}">%{resource_title}</a> wurde verlängert.
         initiative_sent_to_technical_validation:
-          email_intro: Die Initiative „%{resource_title}“ wurde zur technischen Validierung gesendet. Über das <a href="%{admin_initiative_url}">Admin-Panel</a> kannst Du sie aufrufen
+          email_intro: Die Idee „%{resource_title}“ wurde zur technischen Validierung gesendet. Über das <a href="%{admin_initiative_url}">Admin-Panel</a> kannst Du sie aufrufen
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Administrator:in der Plattform bist.
-          email_subject: Die Initiative "%{resource_title}" wurde zur technischen Validierung gesendet.
-          notification_title: Die Initiative "%{resource_title}" wurde zur technischen Validierung gesendet. Über das <a href="%{admin_initiative_path}">Admin-Panel</a> kannst Du sie aufrufen
+          email_subject: Die Idee "%{resource_title}" wurde zur technischen Validierung gesendet.
+          notification_title: Die Idee "%{resource_title}" wurde zur technischen Validierung gesendet. Über das <a href="%{admin_initiative_path}">Admin-Panel</a> kannst Du sie aufrufen
         milestone_completed:
           affected_user:
-            email_intro: Deine Initiative %{resource_title} hat %{percentage}% der Unterschriften erreicht!
-            email_outro: Du hast diese Benachrichtigung erhalten, weil Du der/die Autor:in der Initiative %{resource_title} bist.
+            email_intro: Deine Idee %{resource_title} hat %{percentage}% der Unterschriften erreicht!
+            email_outro: Du hast diese Benachrichtigung erhalten, weil Du der/die Autor:in der Idee %{resource_title} bist.
             email_subject: Neuer Meilenstein abgeschlossen!
-            notification_title: Deine Initiative <a href="%{resource_path}">%{resource_title}</a> hat %{percentage}% der Unterschriften erreicht.
+            notification_title: Deine Idee <a href="%{resource_path}">%{resource_title}</a> hat %{percentage}% der Unterschriften erreicht.
           follower:
-            email_intro: Die Initiative %{resource_title} hat %{percentage}% der Unterschriften erreicht!
+            email_intro: Die Idee %{resource_title} hat %{percentage}% der Unterschriften erreicht!
             email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{resource_title} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
             email_subject: Neuer Meilenstein abgeschlossen!
-            notification_title: Die Initiative <a href="%{resource_path}">%{resource_title}</a> hat %{percentage}% der Unterschriften erreicht.
+            notification_title: Die Idee <a href="%{resource_path}">%{resource_title}</a> hat %{percentage}% der Unterschriften erreicht.
         support_threshold_reached:
-          email_intro: Die Initiative %{resource_title} hat die Mindestanzahl an Unterschriften erreicht
+          email_intro: Die Idee %{resource_title} hat die Mindestanzahl an Unterschriften erreicht
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein/e Administrator:in der Plattform bist.
           email_subject: Mindestanzahl an Unterschriften erreicht
-          notification_title: Die Initiative <a href="%{resource_path}">%{resource_title}</a> hat die Mindestanzahl an Unterschriften erreicht
+          notification_title: Die Idee <a href="%{resource_path}">%{resource_title}</a> hat die Mindestanzahl an Unterschriften erreicht
     gamification:
       badges:
         initiatives:
           conditions:
-            - Gehe zum Teilnehmerbereich von Intiativen
-            - Folge diesen Schritten, um eine neue Initiative zu erstellen
-          description: Dieses Abzeichen wird gewährt, wenn Du neue Initiativen startest und mit anderen zusammenarbeitest, um diese durchzuführen.
-          description_another: Diese/r Benutzer:in hat %{score} Initiativen veröffentlicht.
-          description_own: Du hast %{score} Initiativen veröffentlicht.
-          name: Veröffentlichte Initiativen
-          next_level_in: Veröffentliche %{score} weitere Initiativen, um das nächste Level zu erreichen!
-          unearned_another: Diese/r Benutzer:in hat noch keine Initiativen veröffentlicht.
-          unearned_own: Du hast noch keine Initiativen veröffentlicht.
+            - Gehe zum Teilnehmerbereich von Ideen
+            - Folge diesen Schritten, um eine neue Idee zu erstellen
+          description: Dieses Abzeichen wird gewährt, wenn Du neue Ideen erstellst und mit anderen zusammenarbeitest, um diese durchzuführen.
+          description_another: Diese/r Benutzer:in hat %{score} Ideen veröffentlicht.
+          description_own: Du hast %{score} Ideen veröffentlicht.
+          name: Veröffentlichte Ideen
+          next_level_in: Veröffentliche %{score} weitere Ideen, um das nächste Level zu erreichen!
+          unearned_another: Diese/r Benutzer:in hat noch keine Ideen veröffentlicht.
+          unearned_own: Du hast noch keine Ideen veröffentlicht.
     help:
       participatory_spaces:
         initiatives:
-          contextual: "<p>Eine Initiative ist ein Vorschlag, der von jedermann aus eigener Initiative (unabhängig von anderen Kanälen oder Beteiligungsräumen) durch die Sammlung von (digitalen) Unterschriften für die Organisation zur Durchführung einer bestimmten Aktion (Änderung einer Verordnung, Initiierung eines Projekts) gefördert werden kann , ändere den Namen einer Abteilung oder einer Straße usw.).</p> <p>Die Initiatoren einer Initiative können ihre Ziele festlegen, Unterstützung sammeln, diskutieren, verbreiten und Treffpunkte definieren, an denen Unterschriften der Teilnehmenden oder Debatten gesammelt werden können, die für andere Teilnehmende offen sind.</p> <p>Beispiele: Eine Initiative kann Unterschriften sammeln, um eine Konsultation unter allen Mitarbeitern einer Organisation einzuberufen, eine Versammlung zu gründen oder einzuberufen oder einen Prozess zur Aufstockung des Budgets für ein Gebiet oder einen Bereich der Organisation einzuleiten. Während des Sammelns von Unterschriften können mehr Personen zu diesem Bedarf beitragen und ihn in der Organisation vorantreiben.</p>\n"
-          page: "<p>Eine Initiative ist ein Vorschlag, der von jedermann aus eigener Initiative (unabhängig von anderen Kanälen oder Beteiligungsräumen) durch die Sammlung von (digitalen) Unterschriften für die Organisation zur Durchführung einer bestimmten Aktion (Änderung einer Verordnung, Initiierung eines Projekts) gefördert werden kann , ändere den Namen einer Abteilung oder einer Straße usw.).</p> <p>Die Initiatoren einer Initiative können ihre Ziele festlegen, Unterstützung sammeln, diskutieren, verbreiten und Treffpunkte definieren, an denen Unterschriften der Teilnehmenden oder Debatten gesammelt werden können, die für andere Teilnehmende offen sind.</p> <p>Beispiele: Eine Initiative kann Unterschriften sammeln, um eine Konsultation unter allen Mitarbeitern einer Organisation einzuberufen, eine Versammlung zu gründen oder einzuberufen oder einen Prozess zur Aufstockung des Budgets für ein Gebiet oder einen Bereich der Organisation einzuleiten. Während des Sammelns von Unterschriften können mehr Personen zu diesem Bedarf beitragen und ihn in der Organisation vorantreiben.</p>\n"
-          title: Was sind Initiativen?
+          contextual: "<p>Eine Idee ist ein Vorschlag, der von jedermann aus eigener Initiative (unabhängig von anderen Kanälen oder Beteiligungsräumen) durch die Sammlung von (digitalen) Unterschriften für die Organisation zur Durchführung einer bestimmten Aktion (Änderung einer Verordnung, Initiierung eines Projekts) gefördert werden kann , ändere den Namen einer Abteilung oder einer Straße usw.).</p> <p>Die Initiatoren einer Idee können ihre Ziele festlegen, Unterstützung sammeln, diskutieren, verbreiten und Treffpunkte definieren, an denen Unterschriften der Teilnehmenden oder Debatten gesammelt werden können, die für andere Teilnehmende offen sind.</p> <p>Beispiele: Eine Idee kann Unterschriften sammeln, um eine Konsultation unter allen Mitarbeitern einer Organisation einzuberufen, ein Machwerk zu gründen oder einzuberufen oder eine KonKreation zur Aufstockung des Budgets für ein Gebiet oder einen Bereich der Organisation einzuleiten. Während des Sammelns von Unterschriften können mehr Personen zu diesem Bedarf beitragen und ihn in der Organisation vorantreiben.</p>\n"
+          page: "<p>Eine Idee ist ein Vorschlag, der von jedermann aus eigener Initiative (unabhängig von anderen Kanälen oder Beteiligungsräumen) durch die Sammlung von (digitalen) Unterschriften für die Organisation zur Durchführung einer bestimmten Aktion (Änderung einer Verordnung, Initiierung eines Projekts) gefördert werden kann , ändere den Namen einer Abteilung oder einer Straße usw.).</p> <p>Die Initiatoren einer Idee können ihre Ziele festlegen, Unterstützung sammeln, diskutieren, verbreiten und Treffpunkte definieren, an denen Unterschriften der Teilnehmenden oder Debatten gesammelt werden können, die für andere Teilnehmende offen sind.</p> <p>Beispiele: Eine Idee kann Unterschriften sammeln, um eine Konsultation unter allen Mitarbeitern einer Organisation einzuberufen, ein Machwerk zu gründen oder einzuberufen oder eine KonKreation zur Aufstockung des Budgets für ein Gebiet oder einen Bereich der Organisation einzuleiten. Während des Sammelns von Unterschriften können mehr Personen zu diesem Bedarf beitragen und ihn in der Organisation vorantreiben.</p>\n"
+          title: Was sind Ideen?
     initiatives:
       actions:
         answer: Antworten
@@ -201,7 +201,7 @@ de:
             created_at: Hergestellt in
             description: Beschreibung
             initiative_votes_count: Stimmen zählen
-            initiatives: Initiativen
+            initiatives: Ideen
             state: Zustand
         committee_requests:
           index:
@@ -219,18 +219,18 @@ de:
               label: 'Einträge ordnen nach:'
               most_recent: Neueste zuerst
         exports:
-          initiatives: Initiativen
+          initiatives: Ideen
         initiatives:
           edit:
-            accept: Initiative akzeptieren
+            accept: Idee akzeptieren
             confirm: Bist Du sicher?
             confirm_send_to_technical_validation: Bist Du sicher?
-            discard: Die Initiative verwerfen
+            discard: Die Idee verwerfen
             export_pdf_signatures: Exportieren von PDF-Signaturen
             export_votes: Export unterstützt
-            reject: Initiative ablehnen
+            reject: Idee ablehnen
             send_to_technical_validation: An technische Validierung senden
-            success: Die Initiative wurde an die technische Validierung gesendet
+            success: Die Idee wurde an die technische Validierung gesendet
             update: Aktualisieren
           form:
             attachments: Beilagen
@@ -257,32 +257,32 @@ de:
             publication_date: Zuletzt veröffentlicht
             random: Zufällig
             signatures: Am häufigsten unterzeichnet
-            title: Einstellungen für Initiativen
+            title: Einstellungen für Ideen
         initiatives_type_scopes:
           create:
             error: Ein Fehler ist aufgetreten
-            success: Ein neuer Bereich für den angegebenen Initiativentyp wurde erstellt
+            success: Ein neuer Bereich für den angegebenen Ideen-Typ wurde erstellt
           destroy:
             success: Der Bereich wurde erfolgreich entfernt
           edit:
             back: Zurück
             confirm_destroy: Bist Du sicher?
             destroy: Löschen
-            title: Initiativentyp bearbeiten
+            title: Ideen-Typ bearbeiten
             update: Aktualisieren
           new:
             back: Zurück
             create: Erstellen
-            title: Initiativentypbereich erstellen
+            title: Ideen-Typbereich erstellen
           update:
             error: Ein Fehler ist aufgetreten
             success: Der Bereich wurde erfolgreich aktualisiert
         initiatives_types:
           create:
             error: Ein Fehler ist aufgetreten
-            success: Ein neuer Initiativentyp wurde erfolgreich erstellt
+            success: Ein neuer Ideen-Typ wurde erfolgreich erstellt
           destroy:
-            success: Der Initiativentyp wurde erfolgreich entfernt
+            success: Der Ideen-Typ wurde erfolgreich entfernt
           edit:
             confirm_destroy: Bist Du sicher?
             destroy: Löschen
@@ -292,25 +292,25 @@ de:
             options: Optionen
             title: Allgemeine Information
           initiative_type_scopes:
-            title: Bereiche für den Typ der Initiative
+            title: Bereiche für den Typ der Idee
           new:
             create: Erstellen
-            title: Neuer Initiativentyp
+            title: Neuer Ideen-Typ
           update:
             error: Ein Fehler ist aufgetreten
-            success: Der Initiativentyp wurde erfolgreich aktualisiert
+            success: Der Ideen-Typ wurde erfolgreich aktualisiert
       admin_log:
         initiative:
-          publish: "%{user_name} hat die Initiative %{resource_name} veröffentlicht"
-          send_to_technical_validation: "%{user_name} hat die Initiative %{resource_name} zur technischen Validierung gesendet"
-          unpublish: "%{user_name} hat die Initiative %{resource_name} verworfen"
-          update: "%{user_name} hat die Initiative %{resource_name} aktualisiert"
+          publish: "%{user_name} hat die Idee %{resource_name} veröffentlicht"
+          send_to_technical_validation: "%{user_name} hat die Idee %{resource_name} zur technischen Validierung gesendet"
+          unpublish: "%{user_name} hat die Idee %{resource_name} verworfen"
+          update: "%{user_name} hat die Idee %{resource_name} aktualisiert"
         initiatives_settings:
-          update: "%{user_name} hat die Einstellungen für Initiativen aktualisiert"
+          update: "%{user_name} hat die Einstellungen für Ideen aktualisiert"
         initiatives_type:
-          create: "%{user_name} hat den Initiativentyp %{resource_name} erstellt"
-          delete: "%{user_name} hat den Initiativentyp %{resource_name} gelöscht"
-          update: "%{user_name} hat den Initiativentyp %{resource_name} aktualisiert"
+          create: "%{user_name} hat den Ideen-Typ %{resource_name} erstellt"
+          delete: "%{user_name} hat den Ideen-Typ %{resource_name} gelöscht"
+          update: "%{user_name} hat den Ideen-Typ %{resource_name} aktualisiert"
       admin_states:
         accepted: Ausreichend Unterschriften
         created: Erstellt
@@ -337,100 +337,100 @@ de:
           success: Anfrage wurde bestätigt.
         new:
           continue: Fortsetzen
-          help_text: Du bist dabei, ein Mitglied des Promoter:innen-Komitees dieser Initiative zu werden
+          help_text: Du bist dabei, ein Mitglied des Promoter:innen-Komitees dieser Idee zu werden
         revoke:
           success: Anfrage wurde zurückgezogen.
         spawn:
-          success: Deine Anfrage wurde an den/die Initiativautor:in gesendet.
+          success: Deine Anfrage wurde an den/die Autor:in der Idee gesendet.
       content_blocks:
         highlighted_initiatives:
-          name: Hervorgehobene Initiativen
+          name: Hervorgehobene Ideen
       create_initiative:
         fill_data:
           back: Zurück
           continue: Fortsetzen
-          fill_data_help: "<ul> <li>Inhalt Deiner Initiative überprüfen. Ist der Titel leicht verständlich? Ist das Ziel der Initiative klar?</li> <li>Du musst die Art der Unterschrift wählen. Persönlich, online oder eine Kombination aus beidem</li> <li>Was ist die geografische Reichweite der Initiative? Stadt, Bezirk?</li> </ul>"
-          initiative_type: Art der Initiative
+          fill_data_help: "<ul> <li>Inhalt Deiner Idee überprüfen. Ist der Titel leicht verständlich? Ist das Ziel der Idee klar?</li> <li>Du musst die Art der Unterschrift wählen. Persönlich, online oder eine Kombination aus beidem</li> <li>Was ist die geografische Reichweite der Idee? Stadt, Bezirk?</li> </ul>"
+          initiative_type: Art der Idee
           more_information: "(Weitere Informationen)"
           select_area: Wähle einen Bereich aus
           select_scope: Wähle einen Bereich aus
         finish:
           back: Zurück
-          back_to_initiatives: Zurück zu den Initiativen
-          callout_text: Herzlichen Glückwunsch! Deine Initiative wurde erfolgreich erstellt.
-          confirm: Hiermit sendest Du die Initiative an einen Administrator, welcher sie überprüft und veröffentlicht. Sobald die Initiative veröffentlicht ist, kannst Du sie nicht bearbeiten. Bist Du sicher?
-          edit_my_initiative: Meine Initiativen bearbeiten
-          go_to_my_initiatives: Geh zu meinen Initiativen
+          back_to_initiatives: Zurück zu den Ideen
+          callout_text: Herzlichen Glückwunsch! Deine Idee wurde erfolgreich erstellt.
+          confirm: Hiermit sendest Du die Idee an einen Administrator, welcher sie überprüft und veröffentlicht. Sobald die Idee veröffentlicht ist, kannst Du sie nicht bearbeiten. Bist Du sicher?
+          edit_my_initiative: Meine Ideen bearbeiten
+          go_to_my_initiatives: Geh zu meinen Ideen
           more_information: "(Weitere Informationen)"
-          send_my_initiative: Meine Initiative zur technischen Validierung senden
+          send_my_initiative: Meine Idee zur technischen Validierung senden
         finish_help:
-          access_reminder: Du kannst auf Deine Initiativen über den Filter %{link} auf der Seite Initiativen zugreifen.
-          publish_helper_text: Denke daran, dass Du für die Veröffentlichung Deiner Initiative die erforderlichen Informationen ausfüllen musst und <strong>diese an die technische Validierung</strong> senden must, damit ein/e Administrator:in diese prüfen kann.
+          access_reminder: Du kannst auf Deine Ideen über den Filter %{link} auf der Seite Ideen zugreifen.
+          publish_helper_text: Denke daran, dass Du für die Veröffentlichung Deiner Idee die erforderlichen Informationen ausfüllen musst und <strong>diese an die technische Validierung</strong> senden must, damit ein/e Administrator:in diese prüfen kann.
         previous_form:
           back: Zurück
           continue: Fortsetzen
-          help: Woraus besteht die Initiative? Fülle den Titel und die Beschreibung aus. Wir empfehlen einen kurzen und prägnanten Titel und eine Beschreibung der vorgeschlagenen Lösung.
+          help: Woraus besteht die Idee? Fülle den Titel und die Beschreibung aus. Wir empfehlen einen kurzen und prägnanten Titel und eine Beschreibung der vorgeschlagenen Lösung.
           more_information: "(Weitere Informationen)"
         promotal_committee:
           back: Zurück
-          individual_help_text: Diese Art der Bürgerinitiative erfordert einen Ausschuss der Initiatoren, der aus mindestens %{committee_size} Personen (Zeugen) besteht. Du musst den folgenden Link mit den anderen Personen teilen, die an dieser Initiative beteiligt sind. Wenn Deine Kontakte diesen Link erhalten, müssen sie die angegebenen Schritte befolgen.
+          individual_help_text: Diese Art der Bürgerinitiative erfordert einen Ausschuss der Initiatoren, der aus mindestens %{committee_size} Personen (Zeugen) besteht. Du musst den folgenden Link mit den anderen Personen teilen, die an dieser Idee beteiligt sind. Wenn Deine Kontakte diesen Link erhalten, müssen sie die angegebenen Schritte befolgen.
           more_information: "(Weitere Informationen)"
         select_initiative_type:
           back: Zurück
           choose_html: Ich möchte eine <strong>%{title}</strong> erstellen
           more_information: "(Weitere Informationen)"
-          select: Ich möchte diese Initiative fördern
-          select_initiative_type_help: Bürgerinitiativen sind ein Mittel, mit dem die Bürger eingreifen können, damit die Organisation Maßnahmen zur Verteidigung des Allgemeininteresses ergreifen kann, die in den Zuständigkeitsbereich der Stadtverwaltung fallen. Welche Initiative möchtest Du starten?
+          select: Ich möchte diese Idee fördern
+          select_initiative_type_help: Bürgerinitiativen sind ein Mittel, mit dem die Bürger eingreifen können, damit die Organisation Maßnahmen zur Verteidigung des Allgemeininteresses ergreifen kann, die in den Zuständigkeitsbereich der Stadtverwaltung fallen. Welche Idee möchtest Du starten?
         share_committee_link:
           continue: Fortsetzen
           invite_to_committee_help: Link, um Leute einzuladen, die Teil des Promoter:innen-Komitees sein werden
         show_similar_initiatives:
           back: Zurück
-          compare_help: Wenn eine der folgenden Initiativen Deiner ähnelt, empfehlen wir Dir, sie zu unterstützen. Dein Vorschlag wird mehr Chancen auf Umsetzung haben.
-          continue: Meine Initiative ist anders
+          compare_help: Wenn eine der folgenden Ideen Deiner ähnelt, empfehlen wir Dir, sie zu unterstützen. Dein Vorschlag wird mehr Chancen auf Umsetzung haben.
+          continue: Meine Idee ist anders
           more_information: "(Weitere Informationen)"
       edit:
-        accept: Initiative akzeptieren
+        accept: Idee akzeptieren
         back: Zurück
         confirm: Bist Du dir sicher?
-        discard: Initiative verwerfen
+        discard: Idee verwerfen
         export_pdf_signatures: PDF der Unterschriften exportieren
         export_votes: Unterschriften exportieren
-        reject: Initiative ablehnen
-        title: Initiativen bearbeiten
+        reject: Idee ablehnen
+        title: Ideen bearbeiten
         update: Aktualisieren
       events:
         approve_membership_request:
-          email_intro: "%{author_nickname} hat Deine Anfrage fürs Promoter:innen-Komittee der Initiative %{resource_title} akzeptiert."
-          email_outro: 'Du hast diese Benachrichtigung erhalten, weil Du Dich bei dieser Initiative beworben hast: %{resource_title}'
+          email_intro: "%{author_nickname} hat Deine Anfrage fürs Promoter:innen-Komittee der Idee %{resource_title} akzeptiert."
+          email_outro: 'Du hast diese Benachrichtigung erhalten, weil Du Dich bei dieser Idee beworben hast: %{resource_title}'
           email_subject: "%{author_nickname} hat Deine Anfrage fürs Promoter:innen-Komittee akzeptiert"
-          notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> hat Deine Anfrage fürs Promoter:innen-Komittee der Initiative <a href="%{resource_url}">%{resource_title}</a> akzeptiert.
+          notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> hat Deine Anfrage fürs Promoter:innen-Komittee der Idee <a href="%{resource_url}">%{resource_title}</a> akzeptiert.
         create_initiative_event:
-          email_intro: "%{author_name} %{author_nickname}, dem du folgst, hat eine neue Initiative erstellt, sieh sie Dir an und beteilige Dich:"
+          email_intro: "%{author_name} %{author_nickname}, dem du folgst, hat eine neue Idee erstellt, sieh sie Dir an und beteilige Dich:"
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{author_nickname} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
-          email_subject: Neue Initiative von %{author_nickname}
-          notification_title: Die Initiative <a href="%{resource_path}">%{resource_title}</a> wurde von <a href="%{author_path}">%{author_name} %{author_nickname}</a> erstellt.
+          email_subject: Neue Idee von %{author_nickname}
+          notification_title: Die Idee <a href="%{resource_path}">%{resource_title}</a> wurde von <a href="%{author_path}">%{author_name} %{author_nickname}</a> erstellt.
         endorse_initiative_event:
-          email_intro: "%{author_name} %{author_nickname}, dem Du folgst, hat die folgende Initiative unterstützt, vielleicht möchtest Du mitreden:"
+          email_intro: "%{author_name} %{author_nickname}, dem Du folgst, hat die folgende Idee unterstützt, vielleicht möchtest Du mitreden:"
           email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{author_nickname} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
-          email_subject: Initiative wurde von %{author_nickname} unterstützt
-          notification_title: Die Initiative <a href="%{resource_path}">%{resource_title}</a> wurde von <a href="%{author_path}">%{author_name} %{author_nickname}</a> unterstützt.
+          email_subject: Idee wurde von %{author_nickname} unterstützt
+          notification_title: Die Idee <a href="%{resource_path}">%{resource_title}</a> wurde von <a href="%{author_path}">%{author_name} %{author_nickname}</a> unterstützt.
         revoke_membership_request:
-          email_intro: "%{author_nickname} hat Deine Anfrage fürs Promoter:innen-Komittee der Initiative %{resource_title} abgelehnt."
-          email_outro: 'Du hast diese Benachrichtigung erhalten, weil Du Dich bei dieser Initiative beworben hast: %{resource_title}.'
+          email_intro: "%{author_nickname} hat Deine Anfrage fürs Promoter:innen-Komittee der Idee %{resource_title} abgelehnt."
+          email_outro: 'Du hast diese Benachrichtigung erhalten, weil Du Dich bei dieser Idee beworben hast: %{resource_title}.'
           email_subject: "%{author_nickname} hat Deine Anfrage fürs Promoter:innen-Komittee abgelehnt"
-          notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> hat Deine Anfrage für das Promoter:innen-Komittee der Initiative <a href="%{resource_url}">%{resource_title}</a> abgelehnt.
+          notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> hat Deine Anfrage für das Promoter:innen-Komittee der Idee <a href="%{resource_url}">%{resource_title}</a> abgelehnt.
         spawn_committee_request_event:
-          email_intro: "%{applicant_nickname} hat sich fürs Promoter:innen-Komittee Deiner Initiative %{resource_title} beworben. Um die Anfrage zu akzeptieren oder abzulehnen, besuche das Bearbeitungsformular Deiner Initiative."
-          email_outro: 'Du hast diese Benachrichtigung erhalten, weil Du der/die Autor:in der Initiative %{resource_title} bist'
-          email_subject: "%{applicant_nickname} möchte Deiner Initiative beitreten"
-          notification_title: <a href="%{applicant_profile_url}">%{applicant_nickname}</a> hat sich für das Promoter:innen-Komittee Deiner Initiative <a href="%{resource_url}">%{resource_title}</a> beworben. Um anzunehmen oder abzulehnen, klicke <a href="%{resource_url}/edit">hier</a>.
+          email_intro: "%{applicant_nickname} hat sich fürs Promoter:innen-Komittee Deiner Idee %{resource_title} beworben. Um die Anfrage zu akzeptieren oder abzulehnen, besuche das Bearbeitungsformular Deiner Idee."
+          email_outro: 'Du hast diese Benachrichtigung erhalten, weil Du der/die Autor:in der Idee %{resource_title} bist'
+          email_subject: "%{applicant_nickname} möchte Deiner Idee beitreten"
+          notification_title: <a href="%{applicant_profile_url}">%{applicant_nickname}</a> hat sich für das Promoter:innen-Komittee Deiner Idee <a href="%{resource_url}">%{resource_title}</a> beworben. Um anzunehmen oder abzulehnen, klicke <a href="%{resource_url}/edit">hier</a>.
       form:
         add_attachments: Dokumente
         attachment_legend: "(Optional) Anhang hinzufügen"
         delete_attachment: Löschen
       index:
-        title: Initiativen
+        title: Ideen
       initiative_signatures:
         fill_personal_data:
           continue: Fortsetzen
@@ -438,9 +438,9 @@ de:
             day: Tag
             month: Monat
             year: Jahr
-          help: Bitte fülle die folgenden Felder mit Deinen persönlichen Daten aus, um die Initiative zu unterzeichnen
+          help: Bitte fülle die folgenden Felder mit Deinen persönlichen Daten aus, um die Idee zu unterzeichnen
         finish:
-          back_to_initiative: Zurück zur Initiative
+          back_to_initiative: Zurück zur Idee
         sms_code:
           continue: Code überprüfen und fortfahren
           help: Überprüfe die empfangene SMS
@@ -449,9 +449,9 @@ de:
           help: Fülle das Formular mit Deiner bestätigten Telefonnummer aus, um Deinen Bestätigungscode anzufordern
       initiative_votes:
         create:
-          error: Beim Signieren der Initiative sind Fehler aufgetreten.
-          invalid: Die zur Unterzeichnung der Initiative bereitgestellten Daten sind nicht gültig
-          success_html: Herzliche Glückwünsche! Die <strong> %{title}</strong> -Initiative wurde korrekt unterzeichnet
+          error: Beim Signieren der Idee sind Fehler aufgetreten.
+          invalid: Die zur Unterzeichnung der Idee bereitgestellten Daten sind nicht gültig
+          success_html: Herzliche Glückwünsche! Die <strong> %{title}</strong> -Idee wurde korrekt unterzeichnet
         personal_data:
           invalid: Persönliche Daten stimmen nicht mit den zur Autorisierung angegebenen Daten überein.
         sms_code:
@@ -474,13 +474,13 @@ de:
           title: Ausschussmitglieder
         count:
           title:
-            one: "%{count} Initiative"
-            other: "%{count} Initiativen"
+            one: "%{count} Idee"
+            other: "%{count} Ideen"
         filters:
           any: Irgendein
           area: Bereich
           author: Autor:in
-          myself: Meine Initiativen
+          myself: Meine Ideen
           scope: Umfang
           search: Suche
           state: Zustand
@@ -491,22 +491,22 @@ de:
           filter_by: Filtern nach
           unfold: Entfalten
         index_header:
-          new_initiative: Neue Initiative
+          new_initiative: Neue Idee
           not_authorized:
             authorizations_page: Autorisierungen anzeigen
             close: Schließen
-            explanation: Du musst authorisiert werden, bevor Du eine neue Initiative erstellen kannst.
+            explanation: Du musst authorisiert werden, bevor Du eine neue Idee erstellen kannst.
             title: Autorisierung erforderlich
         initiatives:
-          closed_initiatives_warning: Derzeit gibt es keine offenen Initiativen, aber hier findest Du alle abgeschlossenen Initiativen aufgelistet.
-          no_initiatives_warning: Keine Initiativen entsprechen Deinen Suchkriterien.
+          closed_initiatives_warning: Derzeit gibt es keine offenen Ideen, aber hier findest Du alle abgeschlossenen Ideen aufgelistet.
+          no_initiatives_warning: Keine Ideen entsprechen Deinen Suchkriterien.
         interactions:
           comments_count:
             count:
               one: Kommentar
               other: Bemerkungen
         orders:
-          label: 'Initiativen sortieren nach:'
+          label: 'Ideen sortieren nach:'
           most_commented: Am meisten kommentiert
           most_voted: Am meisten unterzeichnet
           random: Zufällig
@@ -514,17 +514,17 @@ de:
           recently_published: Zuletzt veröffentlicht
         print:
           address: Adresse
-          author_title: Autor:in der Initiative
+          author_title: Autor:in der Idee
           city: Stadt
           email: E-Mail
           full_name: Vollständiger Name
-          general_title: Antrag auf Aufnahme einer Initiative
+          general_title: Antrag auf Aufnahme einer Idee
           id_number: ID Nummer
           initiative:
             attachments: Angehängte Dokumentation (bitte gib den Namen jedes Dokuments unten ein)
             description: 'Beschreibung:'
             title: 'Titel:'
-            type: Art der Initiative
+            type: Art der Idee
           legal_text: Die erhobenen personenbezogenen Daten werden von der Organisation entsprechend der geltenden Gesetzgebung vertraulich behandelt und aufgenommen.
           phone_number: Telefonnummer
           place_date: Ort, Datum
@@ -534,15 +534,15 @@ de:
           section: 'Falls von der Organisation angefragt, drucke bitte dieses Formular aus und fülle es aus, um es dort einzureichen, wo angegeben wurde:'
           signature: Unterschrift
         result:
-          answer_title: Diese Initiative wurde beantwortet
-          initiative_rejected_reason: Diese Initiative wurde wegen fehlender Unterstützung abgelehnt.
+          answer_title: Diese Idee wurde beantwortet
+          initiative_rejected_reason: Diese Idee wurde wegen fehlender Unterstützung abgelehnt.
         show:
           any_vote_method: Diese Bürgerinitiative sammelt sowohl online als auch persönlich Unterschriften.
-          confirm: Hiermit sendest Du die Initiative an einen Administrator, welcher sie überprüft und veröffentlicht. Sobald die Initiative veröffentlicht ist, kannst Du sie nicht bearbeiten. Bist Du sicher?
+          confirm: Hiermit sendest Du die Idee an einen Administrator, welcher sie überprüft und veröffentlicht. Sobald die Idee veröffentlicht ist, kannst Du sie nicht bearbeiten. Bist Du sicher?
           edit: Bearbeiten
-          follow_description: Erhalte eine Benachrichtigung, wenn es Neuigkeiten bei dieser Initiative gibt
+          follow_description: Erhalte eine Benachrichtigung, wenn es Neuigkeiten bei dieser Idee gibt
           offline_method: Diese Bürgerinitiative sammelt nur persönliche Unterschriften.
-          print: Initiative ausdrucken
+          print: Idee ausdrucken
           send_to_technical_validation: Zur technischen Validierung senden
         signatures_count:
           one: " Unterschrift"
@@ -550,33 +550,33 @@ de:
         vote_cabin:
           already_voted: Schon unterschrieben
           supports_required: "%{total_supports} Signaturen erforderlich"
-          verification_required: Bestätige Dein Konto, um die Initiative zu unterzeichnen
+          verification_required: Bestätige Dein Konto, um die Idee zu unterzeichnen
           vote: Signieren
           votes_blocked: Die Anmeldung ist deaktiviert
         votes_count:
           count:
             one: UNTERSCHRIFT
             other: Unterschriften
-          most_popular_initiative: Populärste Initiative
+          most_popular_initiative: Populärste Idee
           need_more_votes: Benötigt mehr Unterschriften
       initiatives_mailer:
         creation_subject: Deine Bürgerinitiative '%{title}' wurde erstellt
         initiative_link:
-          check_initiative_details: Du kannst die Initiativendetails sehen
+          check_initiative_details: Du kannst die Ideendetails sehen
           here: Hier
-        more_information: Hier findest Du weitere Informationen zum Initiativerstellungsprozess.
-        progress_report_body_for: Die Initiative %{title} hat die %{percentage}% der erforderlichen Unterstützung erreicht.
-        progress_report_for: 'Resume über die Initiative: %{title}'
+        more_information: Hier findest Du weitere Informationen zum Ideenerstellungsprozess.
+        progress_report_body_for: Die Idee %{title} hat die %{percentage}% der erforderlichen Unterstützung erreicht.
+        progress_report_for: 'Resume über die Idee: %{title}'
         promotal_committee_help: Denke daran, dass Du mindestens %{member_count} Personen zum Promoter:innen-Komitee einladen musst. Leite den folgenden Link weiter, um Personen zum Promoter:innen-Komitee einzuladen
-        status_change_body_for: 'Die Initiative %{title} hat ihren Status geändert in: %{state}'
-        status_change_for: Die Initiative %{title} hat ihren Status geändert
+        status_change_body_for: 'Die Idee %{title} hat ihren Status geändert in: %{state}'
+        status_change_for: Die Idee %{title} hat ihren Status geändert
       last_activity:
-        new_initiative: Neue Initiative
+        new_initiative: Neue Idee
       pages:
         home:
           highlighted_initiatives:
-            active_initiatives: Aktive Initiativen
-            see_all_initiatives: Alle Initiativen anzeigen
+            active_initiatives: Aktive Ideen
+            see_all_initiatives: Alle Ideen anzeigen
       show:
         badge_name:
           accepted: Ausreichend Unterschriften
@@ -593,12 +593,12 @@ de:
       unavailable_scope: Nicht verfügbarer Umfang
       update:
         error: Ein Fehler ist aufgetreten
-        success: Die Initiative wurde erfolgreich aktualisiert
+        success: Die Idee wurde erfolgreich aktualisiert
       versions:
         shared:
-          back_to_resource: Zurück zur Initiative
+          back_to_resource: Zurück zur Idee
     menu:
-      initiatives: Initiativen
+      initiatives: Ideen
     resources:
       initiative:
         actions:
@@ -618,14 +618,14 @@ de:
         select_initiative_type: Wählen
         show_similar_initiatives: Vergleichen
         step: Schritt %{current} von %{total}
-        title: Neue Initiative schaffen
+        title: Neue Idee schaffen
       initiative_header:
-        initiative_menu_item: Initiative
+        initiative_menu_item: Idee
       initiative_signature_creation_header:
         back: Zurück
         fill_personal_data: Ergänze Deine Daten
         finish: Fertig
-        finished: Initiativsignatur erstellt
+        finished: Ideen-Signatur erstellt
         see_steps: siehe Schritte
         select_identity: Identität auswählen
         sms_code: SMS-Code-Bestätigung
@@ -637,4 +637,4 @@ de:
           check: Mehr erfahren
           check_and_support: Überprüfe es und unterschreibe es
         no_initiatives_yet:
-          no_initiatives_yet: Keine Initiativen bisher!
+          no_initiatives_yet: Keine Ideen bisher!

@@ -6,8 +6,8 @@ de:
         enable_organization_chart: Organisationsdiagramm aktivieren
       assembly:
         area_id: Bereich
-        assembly_type: Versammlungstyp
-        assembly_type_other: Sonstiger Versammlungstyp
+        assembly_type: Machwerks-Typ
+        assembly_type_other: Sonstiger Machwerks-Typ
         banner_image: Banner-Bild
         closing_date: Einsendeschluss
         closing_date_reason: Schlussdatums Grund
@@ -19,7 +19,7 @@ de:
         created_by_other: Erstellt von anderen
         creation_date: Datum erstellt
         decidim_area_id: Bereich
-        decidim_assemblies_type_id: Versammlungstyp
+        decidim_assemblies_type_id: Machwerks-Typ
         decidim_scope_id: Umfang
         description: Beschreibung
         developer_group: Promoter:innen-Gruppe
@@ -35,8 +35,8 @@ de:
         is_transparent: Ist transparent
         local_area: Organisationsbereich
         meta_scope: Bereichs-Metadaten
-        parent_id: Haupt Versammlung
-        participatory_processes_ids: Ähnliche Beteiligungsprozesse
+        parent_id: Haupt-Machwerk
+        participatory_processes_ids: Ähnliche KonKreationen
         participatory_scope: Was wird entschieden?
         participatory_structure: Wie wird es entschieden?
         private_space: Privatsphäre
@@ -78,24 +78,24 @@ de:
   activerecord:
     models:
       decidim/assembly:
-        one: Gremium
-        other: Gremien
+        one: Machwerk
+        other: Machwerke
       decidim/assembly_member:
-        one: Gremienmitglieder
-        other: Mitglieder der Versammlung
+        one: Machwerk-Mitglieder
+        other: Mitglieder des Machwerks
       decidim/assembly_user_role:
-        one: Assembly-Benutzer:innen-Rolle
-        other: Assembly-Benutzer:innen-Rollen
+        one: Machwerk-Benutzer:innen-Rolle
+        other: Machwerk-Benutzer:innen-Rollen
   decidim:
     admin:
       actions:
         import_assembly: Importieren
-        new_assembly: Neues Gremium
-        new_assembly_type: Neuer Gremiumtyp
+        new_assembly: Neues Machwerk
+        new_assembly_type: Neuer Machwerke-Typ
       assemblies:
         create:
-          error: Beim Erstellen eines neuen Gremiums ist ein Fehler aufgetreten.
-          success: Das Gremium wurde erfolgreich erstellt.
+          error: Beim Erstellen eines neuen Machwerks ist ein Fehler aufgetreten.
+          success: Das Machwerk wurde erfolgreich erstellt.
         edit:
           update: Aktualisieren
         index:
@@ -105,30 +105,30 @@ de:
           published: Veröffentlicht
         new:
           create: Erstellen
-          title: Neues Gremium
+          title: Neues Machwerk
         update:
-          error: Beim Aktualisieren dieses Gremiums ist ein Fehler aufgetreten.
-          success: Das Gremium wurde erfolgreich aktualisiert.
+          error: Beim Aktualisieren dieses Machwerks ist ein Fehler aufgetreten.
+          success: Das Machwerk wurde erfolgreich aktualisiert.
       assemblies_copies:
         create:
-          error: Beim Duplizieren dieses Gremiums ist ein Fehler aufgetreten.
-          success: Das Gremium wurde erfolgreich dupliziert.
+          error: Beim Duplizieren dieses Machwerks ist ein Fehler aufgetreten.
+          success: Das Machwerk wurde erfolgreich dupliziert.
       assemblies_settings:
         update:
           error: Beim Aktualisieren der Einstellungen ist ein Fehler aufgetreten.
           success: Einstellungen wurden erfolgreich aktualisiert.
       assemblies_types:
         create:
-          error: Beim Erstellen eines neuen Gremiumtyps ist ein Fehler aufgetreten.
-          success: Gremiumtyp wurde erfolgreich erstellt.
+          error: Beim Erstellen eines neuen Machwerke-Typs ist ein Fehler aufgetreten.
+          success: Machwerke-Typ wurde erfolgreich erstellt.
         destroy:
-          success: Gremiumtyp wurde erfolgreich gelöscht.
+          success: Machwerke-Typ wurde erfolgreich gelöscht.
         new:
           create: Erstellen
-          title: Neuer Gremiumtyp
+          title: Neuer Machwerke-Typ
         update:
-          error: Beim Aktualisieren dieses Gremiumtyps ist ein Fehler aufgetreten.
-          success: Gremiumtyp wurde erfolgreich aktualisiert.
+          error: Beim Aktualisieren dieses Machwerke-Typs ist ein Fehler aufgetreten.
+          success: Machwerke-Typ wurde erfolgreich aktualisiert.
       assembly_copies:
         new:
           copy: Kopieren
@@ -136,61 +136,61 @@ de:
           title: Doppelte Montage
       assembly_imports:
         create:
-          error: Beim Importieren dieses Gremiums ist ein Fehler aufgetreten.
-          success: Gremium wurde erfolgreich importiert.
+          error: Beim Importieren dieses Machwerks ist ein Fehler aufgetreten.
+          success: Machwerk wurde erfolgreich importiert.
         new:
           import: Importieren
           select: Wähle aus, welche Daten Du importieren möchtest
-          title: Gremium importieren
+          title: Machwerk importieren
       assembly_members:
         create:
-          error: Beim Hinzufügen eines Mitglieds zu diesem Gremium ist ein Fehler aufgetreten.
-          success: Mitglied wurde diesem Gremium erfolgreich hinzugefügt.
+          error: Beim Hinzufügen eines Mitglieds zu diesem Machwerk ist ein Fehler aufgetreten.
+          success: Mitglied wurde diesem Machwerk erfolgreich hinzugefügt.
         destroy:
-          success: Mitglied wurde erfolgreich aus diesem Gremium entfernt.
+          success: Mitglied wurde erfolgreich aus diesem Machwerk entfernt.
         edit:
-          title: Aktualisiere die Versammlungsmitglieder.
+          title: Aktualisiere die Mitglieder des Machwerks.
           update: Aktualisieren
         index:
-          assembly_members_title: Gremienmitglieder
+          assembly_members_title: Machwerks-Mitglieder
         new:
           create: Erstellen
-          title: Neues Gremienmitglied.
+          title: Neues Machwerk-Mitglied.
         update:
-          error: Beim Aktualisieren des Mitglieds dieses Gremiums ist ein Fehler aufgetreten.
-          success: Mitglied dieses Gremiums erfolgreich aktualisiert.
+          error: Beim Aktualisieren des Mitglieds dieses Machwerks ist ein Fehler aufgetreten.
+          success: Mitglied dieses Machwerks erfolgreich aktualisiert.
       assembly_publications:
         create:
-          error: Beim Veröffentlichen dieses Gremiums ist ein Fehler aufgetreten.
-          success: Gremium erfolgreich veröffentlicht.
+          error: Beim Veröffentlichen dieses Machwerks ist ein Fehler aufgetreten.
+          success: Machwerk erfolgreich veröffentlicht.
         destroy:
-          error: Beim Aufheben der Veröffentlichung dieser Assembly ist ein Fehler aufgetreten.
-          success: Die Assembly wurde nicht veröffentlicht.
+          error: Beim Aufheben der Veröffentlichung dieses Machwerks ist ein Fehler aufgetreten.
+          success: Dieses Machwerk wurde auf nicht veröffentlicht gesetzt.
       assembly_user_roles:
         create:
-          error: Beim Hinzufügen eines Benutzers bzw. einer Benutzerin für diese Assembly ist ein Fehler aufgetreten.
-          success: Der/Die Administrator:in wurde dieser Versammlung erfolgreich hinzugefügt.
+          error: Beim Hinzufügen eines Benutzers bzw. einer Benutzerin zu diesem Machwerk ist ein Fehler aufgetreten.
+          success: Der/Die Administrator:in wurde zu diesem Machwerk erfolgreich hinzugefügt.
         destroy:
-          success: Der/Die Benutzer:in wurde erfolgreich von dieser Assembly entfernt.
+          success: Der/Die Benutzer:in wurde erfolgreich von diesem Machwerk entfernt.
         edit:
-          title: Aktualisiere den/die Benutzer:in der Assembly
+          title: Aktualisiere den/die Benutzer:in des Machwerks
           update: Aktualisieren
         index:
-          assembly_admins_title: Assembly Benutzer:in
+          assembly_admins_title: Machwerk-Benutzer:in
         new:
           create: Erstellen
-          title: Neue/r Assembly-Benutzer:in
+          title: Neue/r Machwerk-Benutzer:in
         update:
-          error: Bei einem Fehler ist ein/e Benutzer:in für diese Assembly aktualisiert worden.
-          success: Der Der/Die Benutzer:in für diese Assembly erfolgreich aktualisiert.
+          error: Bei Aktualisierung des/der Benutzer:in für dieses Machwerk ist ein Fehler aufgetreten.
+          success: Der/Die Benutzer:in für dieses Machwerk wurde erfolgreich aktualisiert.
       filters:
         decidim_assemblies_type_id_eq:
-          label: Versammlungstyp
+          label: Machwerks-Typ
       menu:
-        assemblies: Gremien
+        assemblies: Machwerke
         assemblies_settings: Einstellungen
         assemblies_submenu:
-          assembly_admins: Assembly Benutzer:innen
+          assembly_admins: Machwerk-Benutzer:innen
           assembly_members: Mitglieder
           attachment_collections: Ordner
           attachment_files: Dateien
@@ -200,7 +200,7 @@ de:
           info: Info
           moderations: Moderationen
           private_users: Private Benutzer:innen
-        assemblies_types: Versammlungstypen
+        assemblies_types: Machwerks-Typen
       models:
         assemblies_types:
           fields:
@@ -213,7 +213,7 @@ de:
             promoted: Hervorgehoben
             published: Veröffentlicht
             title: Titel
-          name: Gremium
+          name: Machwerk
         assembly_member:
           fields:
             ceased_date: Aufgegebenes Datum
@@ -231,57 +231,57 @@ de:
             email: Email
             name: Name
             role: Rolle
-          name: Assembly Benutzer:in
+          name: Machwerk-Benutzer:in
           roles:
             admin: Administrator:in
             collaborator: Mitarbeiter:in
             moderator: Moderator:in
             valuator: Schätzer:in
       titles:
-        assemblies: Gremien
-        assemblies_types: Versammlungstypen
+        assemblies: Machwerke
+        assemblies_types: Machwerks-Typen
     admin_log:
       assembly:
-        create: "%{user_name} hat das Gremium %{resource_name} erstellt"
-        duplicate: "%{user_name} hat das Gremium %{resource_name} aktualisiert"
-        export: "%{user_name} hat das Gremium %{resource_name} exportiert"
-        import: "%{user_name} hat das Gremium %{resource_name} importiert"
-        publish: "%{user_name} hat das Gremium %{resource_name} veröffentlicht"
-        unpublish: "%{user_name} hat das Gremium %{resource_name} auf \"unveröffentlicht\" gesetzt"
-        update: "%{user_name} hat das Gremium %{resource_name} aktualisiert"
+        create: "%{user_name} hat das Machwerk %{resource_name} erstellt"
+        duplicate: "%{user_name} hat das Machwerk %{resource_name} aktualisiert"
+        export: "%{user_name} hat das Machwerk %{resource_name} exportiert"
+        import: "%{user_name} hat das Machwerk %{resource_name} importiert"
+        publish: "%{user_name} hat das Machwerk %{resource_name} veröffentlicht"
+        unpublish: "%{user_name} hat das Machwerk %{resource_name} auf \"unveröffentlicht\" gesetzt"
+        update: "%{user_name} hat das Machwerk %{resource_name} aktualisiert"
       assembly_member:
-        create: "%{user_name} hat das Mitglied %{resource_name} im Gremium %{space_name} erstellt"
-        delete: "%{user_name} hat das Mitglied %{resource_name} aus dem Gremium %{space_name} entfernt"
-        update: "%{user_name} hat das Mitglied %{resource_name} im Gremium %{space_name} aktualisiert"
+        create: "%{user_name} hat das Mitglied %{resource_name} im Machwerk %{space_name} erstellt"
+        delete: "%{user_name} hat das Mitglied %{resource_name} aus dem Machwerk %{space_name} entfernt"
+        update: "%{user_name} hat das Mitglied %{resource_name} im Machwerk %{space_name} aktualisiert"
       assembly_setting:
-        update: "%{user_name} hat die Gremieneinstellungen aktualisiert"
+        update: "%{user_name} hat die Machwerkeeinstellungen aktualisiert"
       assembly_type:
-        create: "%{user_name} hat den Gremientyp %{resource_name} erstellt"
-        delete: "%{user_name} hat den Gremientyp %{resource_name} entfernt"
-        publish: "%{user_name} hat den Gremientyp %{resource_name} veröffentlicht"
-        unpublish: "%{user_name} hat den Gremientyp %{resource_name} auf \"unveröffentlicht\" gesetzt"
-        update: "%{user_name} hat den Gremientyp %{resource_name} aktualisiert"
+        create: "%{user_name} hat den Machwerke-Typ %{resource_name} erstellt"
+        delete: "%{user_name} hat den Machwerke-Typ %{resource_name} entfernt"
+        publish: "%{user_name} hat den Machwerke-Typ %{resource_name} veröffentlicht"
+        unpublish: "%{user_name} hat den Machwerke-Typ %{resource_name} auf \"unveröffentlicht\" gesetzt"
+        update: "%{user_name} hat den Machwerke-Typ %{resource_name} aktualisiert"
       assembly_user_role:
-        create: "%{user_name} hat %{resource_name} zum Gremium %{space_name} eingeladen"
-        delete: "%{user_name} hat %{resource_name} aus dem Gremium %{space_name} entfernt"
-        update: "%{user_name} hat die Rolle von %{resource_name} im Gremium %{space_name} geändert"
+        create: "%{user_name} hat %{resource_name} zum Machwerk %{space_name} eingeladen"
+        delete: "%{user_name} hat %{resource_name} aus dem Machwerk %{space_name} entfernt"
+        update: "%{user_name} hat die Rolle von %{resource_name} im Machwerk %{space_name} geändert"
     assemblies:
       admin:
         assemblies:
           form:
-            announcement_help: Der Text, den Du hier eingibst, wird dem/der Benutzer:in direkt unter den Gremien-Informationen angezeigt.
+            announcement_help: Der Text, den Du hier eingibst, wird dem/der Benutzer:in direkt unter den Machwerke-Informationen angezeigt.
             duration: Dauer
-            duration_help: Wenn die Dauer dieser Assembly begrenzt ist, wähle das Enddatum aus. Andernfalls wird es als unbestimmt angezeigt.
+            duration_help: Wenn die Dauer dieses Machwerks begrenzt ist, wähle das Enddatum aus. Andernfalls wird es als unbestimmt angezeigt.
             filters: Filter
             images: Bilder
-            included_at_help: Wähle das Datum aus, an dem dieses Gremium zu Decidim hinzugefügt wurde. Es muss nicht unbedingt mit dem Erstellungsdatum identisch sein.
+            included_at_help: Wähle das Datum aus, an dem dieses Machwerk zu Decidim hinzugefügt wurde. Es muss nicht unbedingt mit dem Erstellungsdatum identisch sein.
             metadata: Metadaten
             other: Andere
             select_a_created_by: Wähle eine erstellt von aus
             select_an_area: Wähle einen Bereich
-            select_an_assembly_type: Wähle einen Gremiumstyp
+            select_an_assembly_type: Wähle einen Machwerkstyp
             select_parent_assembly: Wähle die übergeordnete Baugruppe aus
-            slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf diese Assembly verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
+            slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf dieses Machwerk verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
             social_handlers: Sozial
             title: Allgemeine Information
             visbility: Sichtweite
@@ -289,17 +289,17 @@ de:
           edit:
             update: Aktualisieren
           form:
-            title: Einstellungen für Versammlungen
+            title: Einstellungen für Machwerke
         assemblies_types:
           form:
             title: Titel
         assembly_copies:
           form:
-            slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf diese Assembly verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
+            slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf dieses Machwerk verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
         assembly_imports:
           form:
             document_legend: Dokument hinzufügen
-            slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf diese Versammlung verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
+            slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf dieses Machwerk verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
         assembly_members:
           form:
             existing_user: Existierender Benutzer:innen
@@ -325,7 +325,7 @@ de:
             json: JSON
       assemblies:
         show:
-          title: Über dieses Gremium
+          title: Über dieses Machwerk
       assembly_members:
         index:
           members: Mitglieder
@@ -339,7 +339,7 @@ de:
         working_group: Arbeitsgruppe
       content_blocks:
         highlighted_assemblies:
-          name: Hervorgehobene Gremien
+          name: Hervorgehobene Machwerke
       created_by:
         city_council: Stadtrat
         others: Andere
@@ -355,22 +355,22 @@ de:
         participatory: Partizipativ
         working_group: Arbeitsgruppe
       index:
-        title: Gremien
+        title: Machwerke
       last_activity:
-        new_assembly: Neues Gremium
+        new_assembly: Neues Machwerk
       pages:
         home:
           highlighted_assemblies:
-            active_assemblies: Aktive Gremien
-            assemblies_button_title: Verknüpfung zu der Versammlungsseite mit einem Überblick aller Versammlungen
-            see_all_assemblies: Alle Gremien anzeigen
+            active_assemblies: Aktive Machwerke
+            assemblies_button_title: Verknüpfung zu der Machwerke-Seite mit einem Überblick aller Machwerke
+            see_all_assemblies: Alle Machwerke anzeigen
         user_profile:
           member_of:
             member_of: Mitglied von
       show:
         area: Bereich
         assembly_type: Montageart
-        children: Gremien
+        children: Machwerke
         closing_date: Einsendeschluss
         composition: Zusammensetzung
         created_by: Erstellt von
@@ -386,14 +386,14 @@ de:
         local_area: Organisationsbereich
         participatory_scope: Was ist entschieden?
         participatory_structure: Wie ist es entschieden?
-        private_space: Dies ist eine private Versammlung
+        private_space: Dies ist ein privates Machwerk
         purpose_of_action: Zweck der Aktion
         read_less: Lese weniger
         read_more: Weiterlesen
-        related_participatory_processes: Ähnliche Beteiligungsprozesse
+        related_participatory_processes: Ähnliche KonKreationen
         scope: Umfang
         social_networks: Soziale Netzwerke
-        social_networks_title: Gremium besuchen unter
+        social_networks_title: Machwerk besuchen unter
         target: Wer nimmt teil?
     assembly_members:
       assembly_member:
@@ -403,40 +403,40 @@ de:
     events:
       assemblies:
         create_assembly_member:
-          email_intro: Ein/e Administrator:in des Gremiums <a href="%{resource_url}">%{resource_name}</a> hat Dich als Mitglied eingeladen.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du zu einem Gremium eingeladen wurdest. Gehe zur <a href="%{resource_url}">Gremiumsseite</a>, um mitzumachen!
-          email_subject: Du wurdest als Mitglied des Gremiums %{resource_name} eingeladen!
-          notification_title: Du wurdest als Mitglied des Gremiums <a href="%{resource_path}">%{resource_name}</a> registriert. Gehe zur <a href="%{resource_path}">Gremiumsseite</a>, um mitzuwirken!
+          email_intro: Ein/e Administrator:in des Machwerks <a href="%{resource_url}">%{resource_name}</a> hat Dich als Mitglied eingeladen.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du zu einem Machwerk eingeladen wurdest. Gehe zur <a href="%{resource_url}">Machwerksseite</a>, um mitzumachen!
+          email_subject: Du wurdest als Mitglied des Machwerks %{resource_name} eingeladen!
+          notification_title: Du wurdest als Mitglied des Machwerks <a href="%{resource_path}">%{resource_name}</a> registriert. Gehe zur <a href="%{resource_path}">Machwerksseite</a>, um mitzuwirken!
       assembly:
         role_assigned:
-          email_intro: Du wurdest als %{role} für die Versammlung "%{resource_title}" ausgewählt.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein %{role} der Versammlung "%{resource_title}" bist.
+          email_intro: Du wurdest als %{role} für das Machwerk "%{resource_title}" ausgewählt.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein %{role} des Machwerks "%{resource_title}" bist.
           email_subject: Du wurdest als %{role} für "%{resource_title}" ausgewählt.
-          notification_title: Du wurdest als %{role} für die Versammlung <a href="%{resource_url}">%{resource_title}</a> ausgewählt.
+          notification_title: Du wurdest als %{role} für das Machwerk <a href="%{resource_url}">%{resource_title}</a> ausgewählt.
     help:
       participatory_spaces:
         assemblies:
-          contextual: "<p>Eine Versammlung ist eine Gruppe von Mitgliedern einer Organisation, die sich regelmäßig treffen, um Entscheidungen über einen bestimmten Bereich oder einen bestimmten Bereich der Organisation zu treffen.</p> <p>Versammlungen halten Meetings ab, einige sind privat und andere sind offen. Wenn sie offen sind, ist es möglich, an ihnen teilzunehmen (z. B. Teilnahme, wenn die Kapazität es erlaubt, Punkte auf die Tagesordnung setzen oder Vorschläge und Entscheidungen dieses Organs kommentieren).</p> <p>Beispiele: Eine Generalversammlung (die einmal im Jahr zusammentritt, um die wichtigsten Aktionslinien der Organisation sowie ihre Exekutivorgane per Abstimmung festzulegen), ein Gleichstellungsbeirat (der alle zwei Monate zusammentritt, um Vorschläge zur Verbesserung der Geschlechterbeziehungen vorzulegen In der Organisation sind eine Evaluierungskommission (die sich jeden Monat zur Überwachung eines Prozesses trifft) oder eine Garantieeinrichtung (die Vorfälle, Missbräuche oder Vorschläge zur Verbesserung der Entscheidungsverfahren sammelt) Beispiele für Versammlungen.</p>\n"
-          page: "<p>Eine Versammlung ist eine Gruppe von Mitgliedern einer Organisation, die sich regelmäßig treffen, um Entscheidungen über einen bestimmten Bereich oder einen bestimmten Bereich der Organisation zu treffen.</p> <p>Versammlungen halten Meetings ab, einige sind privat und andere sind offen. Wenn sie offen sind, ist es möglich, an ihnen teilzunehmen (z. B. Teilnahme, wenn die Kapazität es erlaubt, Punkte auf die Tagesordnung setzen oder Vorschläge und Entscheidungen dieses Organs kommentieren).</p> <p>Beispiele: Eine Generalversammlung (die einmal im Jahr zusammentritt, um die wichtigsten Aktionslinien der Organisation sowie ihre Exekutivorgane per Abstimmung festzulegen), ein Gleichstellungsbeirat (der alle zwei Monate zusammentritt, um Vorschläge zur Verbesserung der Geschlechterbeziehungen vorzulegen In der Organisation sind eine Evaluierungskommission (die sich jeden Monat zur Überwachung eines Prozesses trifft) oder eine Garantieeinrichtung (die Vorfälle, Missbräuche oder Vorschläge zur Verbesserung der Entscheidungsverfahren sammelt) Beispiele für Versammlungen.</p>\n"
-          title: Was sind Gremien?
+          contextual: "<p>Ein Machwerk ist eine Gruppe von Mitgliedern einer Organisation, die sich regelmäßig treffen, um Entscheidungen über einen bestimmten Bereich oder einen bestimmten Bereich der Organisation zu treffen.</p> <p>Machwerke halten Meetings ab, einige sind privat und andere sind offen. Wenn sie offen sind, ist es möglich, an ihnen teilzunehmen (z. B. Teilnahme, wenn die Kapazität es erlaubt, Punkte auf die Tagesordnung setzen oder Vorschläge und Entscheidungen dieses Organs kommentieren).</p> <p>Beispiele: Eine Generalversammlung (die einmal im Jahr zusammentritt, um die wichtigsten Aktionslinien der Organisation sowie ihre Exekutivorgane per Abstimmung festzulegen), ein Gleichstellungsbeirat (der alle zwei Monate zusammentritt, um Vorschläge zur Verbesserung der Geschlechterbeziehungen vorzulegen In der Organisation sind eine Evaluierungskommission (die sich jeden Monat zur Überwachung eines Prozesses trifft) oder eine Garantieeinrichtung (die Vorfälle, Missbräuche oder Vorschläge zur Verbesserung der Entscheidungsverfahren sammelt) Beispiele für Machwerke.</p>\n"
+          page: "<p>Ein Machwerk ist eine Gruppe von Mitgliedern einer Organisation, die sich regelmäßig treffen, um Entscheidungen über einen bestimmten Bereich oder einen bestimmten Bereich der Organisation zu treffen.</p> <p>Machwerke halten Meetings ab, einige sind privat und andere sind offen. Wenn sie offen sind, ist es möglich, an ihnen teilzunehmen (z. B. Teilnahme, wenn die Kapazität es erlaubt, Punkte auf die Tagesordnung setzen oder Vorschläge und Entscheidungen dieses Organs kommentieren).</p> <p>Beispiele: Eine Generalversammlung (die einmal im Jahr zusammentritt, um die wichtigsten Aktionslinien der Organisation sowie ihre Exekutivorgane per Abstimmung festzulegen), ein Gleichstellungsbeirat (der alle zwei Monate zusammentritt, um Vorschläge zur Verbesserung der Geschlechterbeziehungen vorzulegen In der Organisation sind eine Evaluierungskommission (die sich jeden Monat zur Überwachung eines Prozesses trifft) oder eine Garantieeinrichtung (die Vorfälle, Missbräuche oder Vorschläge zur Verbesserung der Entscheidungsverfahren sammelt) Beispiele für Machwerke.</p>\n"
+          title: Was sind Machwerke?
     log:
       value_types:
         assembly_presenter:
-          not_found: 'Die Assembly wurde nicht in der Datenbank gefunden (ID: %{id})'
+          not_found: 'Das Machwerk wurde nicht in der Datenbank gefunden (ID: %{id})'
         assembly_type_presenter:
-          not_found: 'Der Versammlungstyp wurde nicht in der Datenbank gefunden (ID: %{id})'
+          not_found: 'Der Machwerks-Typ wurde nicht in der Datenbank gefunden (ID: %{id})'
     menu:
-      assemblies: Gremien
+      assemblies: Machwerke
     metrics:
       assemblies:
-        description: Anzahl der erstellten Gremien
-        object: Gremien
-        title: Gremien
+        description: Anzahl der erstellten Machwerke
+        object: Machwerke
+        title: Machwerke
     participatory_processes:
       show:
-        related_assemblies: Ähnliche Versammlungen
+        related_assemblies: Ähnliche Machwerke
     statistics:
-      assemblies_count: Gremien
+      assemblies_count: Machwerke
   errors:
     messages:
       cannot_be_blank: darf nicht leer sein
@@ -447,20 +447,20 @@ de:
           more_info: Mehr Informationen
           take_part: Teilnehmen
         index:
-          children: 'Versammlungen:'
+          children: 'Machwerke:'
           organizational_chart: Organigramm
-          promoted_assemblies: Hervorgehobene Gremien
+          promoted_assemblies: Hervorgehobene Machwerke
           reset_chart: Zurücksetzen
         order_by_assemblies:
           assemblies:
-            one: "%{count} Gremien"
-            other: "%{count} Gremien"
+            one: "%{count} Machwerke"
+            other: "%{count} Machwerke"
         promoted_assembly:
           more_info: Mehr Informationen
           take_part: Teilnehmen
       assembly_navigation:
         assembly_member_menu_item: Mitglieder
-        assembly_menu_item: Das Gremium
+        assembly_menu_item: Das Machwerk
       assembly_widgets:
         show:
           take_part: Teilnehmen
