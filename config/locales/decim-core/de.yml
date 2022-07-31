@@ -438,7 +438,7 @@ de:
           collaborative_draft: Gemeinsamer Entwurf
           comment: Kommentar
           debate: Debatte
-          initiative: Initiative
+          initiative: Idee
           meeting: Treffen
           post: Beitrag
           proposal: Vorschlag
@@ -960,7 +960,7 @@ de:
     help:
       main_topic:
         default_page:
-          content: "<p>In %{organization} kannst Du durch die Felder, die Du im oberen Menü siehst, an verschiedenen Themen teilnehmen: Prozesse, Machwerke, Initiativen, Beratungen.</p> <p>In jedem Bereich findest Du verschiedene Optionen für die Teilnahme: Vorschläge machen - einzeln oder mit anderen -, an Debatten teilnehmen, Prioritäten für umzusetzende Projekte setzen, persönliche Treffen und andere Aktionen besuchen.</p>\n"
+          content: "<p>In %{organization} kannst Du durch die Felder, die Du im oberen Menü siehst, an verschiedenen Themen teilnehmen: KonKreationen, Machwerke, Ideen, Beratungen.</p> <p>In jedem Bereich findest Du verschiedene Optionen für die Teilnahme: Vorschläge machen - einzeln oder mit anderen -, an Debatten teilnehmen, Prioritäten für umzusetzende Projekte setzen, persönliche Treffen und andere Aktionen besuchen.</p>\n"
           title: Was kann ich in %{organization} tun?
         description: Lese mehr über %{organization}
         title: Allgemeine Hilfe
