@@ -36,7 +36,7 @@ de:
         local_area: Organisationsbereich
         meta_scope: Bereichs-Metadaten
         parent_id: Haupt Versammlung
-        participatory_processes_ids: Ähnliche Beteiligungsprozesse
+        participatory_processes_ids: Ähnliche KonKreationen
         participatory_scope: Was wird entschieden?
         participatory_structure: Wie wird es entschieden?
         private_space: Privatsphäre
@@ -182,7 +182,7 @@ de:
           title: Neue/r Assembly-Benutzer:in
         update:
           error: Bei einem Fehler ist ein/e Benutzer:in für diese Assembly aktualisiert worden.
-          success: Der Der/Die Benutzer:in für diese Assembly erfolgreich aktualisiert.
+          success: Der/Die Benutzer:in für diese Assembly erfolgreich aktualisiert.
       filters:
         decidim_assemblies_type_id_eq:
           label: Versammlungstyp
@@ -390,7 +390,7 @@ de:
         purpose_of_action: Zweck der Aktion
         read_less: Lese weniger
         read_more: Weiterlesen
-        related_participatory_processes: Ähnliche Beteiligungsprozesse
+        related_participatory_processes: Ähnliche KonKreationen
         scope: Umfang
         social_networks: Soziale Netzwerke
         social_networks_title: Gremium besuchen unter
