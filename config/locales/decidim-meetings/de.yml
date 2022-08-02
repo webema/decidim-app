@@ -480,7 +480,7 @@ de:
             in_person: Persönlich
             online: Online
         filters_small_view:
-          close_modal: Modal schließen
+          close_modal: Dialog schließen
           filter: Filter
           filter_by: Filtern nach
           unfold: Entfalten

@@ -15,7 +15,9 @@ de:
           any: Gemischt
           offline: Angesicht zu Angesicht
           online: Online
-        state: Zustand
+        state: Status
+        type_id: Typ
+        decidim_scope_id: Bereich
         title: Titel
       initiatives_committee_member:
         user: Ausschussmitglied
@@ -74,9 +76,9 @@ de:
           decidim_area_id_eq:
             label: Bereich
           state_eq:
-            label: Zustand
+            label: Status
             values:
-              accepted: Ausreichend Unterschriften
+              accepted: Ausreichende Unterschriften
               created: Erstellt
               discarded: Verworfen
               published: Veröffentlicht
@@ -105,7 +107,7 @@ de:
             created_at: Hergestellt in
             id: ID
             published_at: Veröffentlicht am
-            state: Zustand
+            state: Status
             supports_count: Unterschriften
             title: Ideen
         initiatives_type_scope:
@@ -186,8 +188,8 @@ de:
     help:
       participatory_spaces:
         initiatives:
-          contextual: "<p>Eine Idee ist ein Vorschlag, der von jedermann aus eigener Initiative (unabhängig von anderen Kanälen oder Beteiligungsräumen) durch die Sammlung von (digitalen) Unterschriften für die Organisation zur Durchführung einer bestimmten Aktion (Änderung einer Verordnung, Initiierung eines Projekts) gefördert werden kann , ändere den Namen einer Abteilung oder einer Straße usw.).</p> <p>Die Initiatoren einer Idee können ihre Ziele festlegen, Unterstützung sammeln, diskutieren, verbreiten und Treffpunkte definieren, an denen Unterschriften der Teilnehmenden oder Debatten gesammelt werden können, die für andere Teilnehmende offen sind.</p> <p>Beispiele: Eine Idee kann Unterschriften sammeln, um eine Konsultation unter allen Mitarbeitern einer Organisation einzuberufen, ein Machwerk zu gründen oder einzuberufen oder eine KonKreation zur Aufstockung des Budgets für ein Gebiet oder einen Bereich der Organisation einzuleiten. Während des Sammelns von Unterschriften können mehr Personen zu diesem Bedarf beitragen und ihn in der Organisation vorantreiben.</p>\n"
-          page: "<p>Eine Idee ist ein Vorschlag, der von jedermann aus eigener Initiative (unabhängig von anderen Kanälen oder Beteiligungsräumen) durch die Sammlung von (digitalen) Unterschriften für die Organisation zur Durchführung einer bestimmten Aktion (Änderung einer Verordnung, Initiierung eines Projekts) gefördert werden kann , ändere den Namen einer Abteilung oder einer Straße usw.).</p> <p>Die Initiatoren einer Idee können ihre Ziele festlegen, Unterstützung sammeln, diskutieren, verbreiten und Treffpunkte definieren, an denen Unterschriften der Teilnehmenden oder Debatten gesammelt werden können, die für andere Teilnehmende offen sind.</p> <p>Beispiele: Eine Idee kann Unterschriften sammeln, um eine Konsultation unter allen Mitarbeitern einer Organisation einzuberufen, ein Machwerk zu gründen oder einzuberufen oder eine KonKreation zur Aufstockung des Budgets für ein Gebiet oder einen Bereich der Organisation einzuleiten. Während des Sammelns von Unterschriften können mehr Personen zu diesem Bedarf beitragen und ihn in der Organisation vorantreiben.</p>\n"
+          contextual: "<p>Eine Idee ist ein Vorschlag, der von jedermann aus eigener Initiative (unabhängig von anderen Kanälen oder Beteiligungsräumen) durch die Sammlung von (digitalen) Unterschriften für die Organisation zur Durchführung einer bestimmten Aktion (Änderung einer Verordnung, Initiierung eines Projekts) gefördert werden kann , ändere den Namen einer Abteilung oder einer Straße usw.).</p> <p>Die Initiatoren einer Idee können ihre Ziele festlegen, Unterstützung sammeln, diskutieren, verbreiten und Treffpunkte definieren, an denen Unterschriften der Teilnehmenden oder Debatten gesammelt werden können, die für andere Teilnehmende offen sind.</p> <p>Beispiele: Eine Idee kann Unterschriften sammeln, um eine Konsultation unter allen Mitarbeitern einer Organisation einzuberufen, ein Machwerk zu gründen oder einzuberufen oder eine konKreation zur Aufstockung des Budgets für ein Gebiet oder einen Bereich der Organisation einzuleiten. Während des Sammelns von Unterschriften können mehr Personen zu diesem Bedarf beitragen und ihn in der Organisation vorantreiben.</p>\n"
+          page: "<p>Eine Idee ist ein Vorschlag, der von jedermann aus eigener Initiative (unabhängig von anderen Kanälen oder Beteiligungsräumen) durch die Sammlung von (digitalen) Unterschriften für die Organisation zur Durchführung einer bestimmten Aktion (Änderung einer Verordnung, Initiierung eines Projekts) gefördert werden kann , ändere den Namen einer Abteilung oder einer Straße usw.).</p> <p>Die Initiatoren einer Idee können ihre Ziele festlegen, Unterstützung sammeln, diskutieren, verbreiten und Treffpunkte definieren, an denen Unterschriften der Teilnehmenden oder Debatten gesammelt werden können, die für andere Teilnehmende offen sind.</p> <p>Beispiele: Eine Idee kann Unterschriften sammeln, um eine Konsultation unter allen Mitarbeitern einer Organisation einzuberufen, ein Machwerk zu gründen oder einzuberufen oder eine konKreation zur Aufstockung des Budgets für ein Gebiet oder einen Bereich der Organisation einzuleiten. Während des Sammelns von Unterschriften können mehr Personen zu diesem Bedarf beitragen und ihn in der Organisation vorantreiben.</p>\n"
           title: Was sind Ideen?
     initiatives:
       actions:
@@ -202,7 +204,7 @@ de:
             description: Beschreibung
             initiative_votes_count: Stimmen zählen
             initiatives: Ideen
-            state: Zustand
+            state: Status
         committee_requests:
           index:
             approve: Genehmigen
@@ -233,7 +235,7 @@ de:
             success: Die Idee wurde an die technische Validierung gesendet
             update: Aktualisieren
           form:
-            attachments: Beilagen
+            attachments: Anhänge
             settings: Einstellungen
             title: Allgemeine Information
           index:
@@ -312,11 +314,11 @@ de:
           delete: "%{user_name} hat den Ideen-Typ %{resource_name} gelöscht"
           update: "%{user_name} hat den Ideen-Typ %{resource_name} aktualisiert"
       admin_states:
-        accepted: Ausreichend Unterschriften
+        accepted: Ausreichende Unterschriften
         created: Erstellt
         discarded: Verworfen
         published: Veröffentlicht
-        rejected: Ungenügend Unterschriften
+        rejected: Zu wenige Unterschriften
         validating: Technische Validierung
       application_helper:
         filter_area_values:
@@ -324,12 +326,12 @@ de:
         filter_scope_values:
           all: Alle
         filter_state_values:
-          accepted: Ausreichend Unterschriften
+          accepted: Ausreichende Unterschriften
           all: Alle
           answered: Beantwortet
           closed: Geschlossen
-          open: Öffnen
-          rejected: Ungenügend Unterschriften
+          open: Offen
+          rejected: Zu wenige Unterschriften
         filter_type_values:
           all: Alle
       committee_requests:
@@ -477,13 +479,13 @@ de:
             one: "%{count} Idee"
             other: "%{count} Ideen"
         filters:
-          any: Irgendein
+          any: Alle
           area: Bereich
           author: Autor:in
-          myself: Meine Ideen
+          myself: Eigene Ideen
           scope: Umfang
           search: Suche
-          state: Zustand
+          state: Status
           type: Art
         filters_small_view:
           close_modal: Fenster schließen
@@ -504,7 +506,7 @@ de:
           comments_count:
             count:
               one: Kommentar
-              other: Bemerkungen
+              other: Kommentare
         orders:
           label: 'Ideen sortieren nach:'
           most_commented: Am meisten kommentiert
@@ -579,11 +581,11 @@ de:
             see_all_initiatives: Alle Ideen anzeigen
       show:
         badge_name:
-          accepted: Ausreichend Unterschriften
+          accepted: Ausreichende Unterschriften
           created: Erstellt
           discarded: Verworfen
           published: Veröffentlicht
-          rejected: Ungenügend Unterschriften
+          rejected: Zu wenige Unterschriften
           validating: Technische Validierung
       signature_interval:
         title: Zeitraum der Unterschriftensammlung
