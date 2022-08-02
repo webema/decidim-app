@@ -1,0 +1,35 @@
+name: build-and-deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: whoan/docker-build-with-cache-action@v5
+        env:
+          FA_NPM_TOKEN: ${{ secrets.FA_NPM_TOKEN }}
+        with:
+          image_name: ema/decidim-app
+          registry: nexus.devops-e.de:8090
+          username: github-nexus
+          password: ${{ secrets.NEXUS_PASSWORD }}
+          build_extra_args: "--build-arg FA_NPM_TOKEN"
+  
+  redeploy:
+    needs: build-docker
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Login Nexus
+        run: |
+          docker login -u github-nexus -p ${{ secrets.NEXUS_PASSWORD }} nexus.devops-e.de:8090
+      - name: Redeploy with Rancher
+        run: |
+          docker run -e RANCHER_TOKEN="${{ secrets.RANCHER_TOKEN }}" -e RANCHER_CONTEXT="c-zggzp:p-zr2fh" -e RANCHER_URL="https://rancher.devops-e.de" --rm nexus.devops-e.de:8090/ema/rancher-deployer rollout restart deployment decidim-app-production -n decidim
+          docker run -e RANCHER_TOKEN="${{ secrets.RANCHER_TOKEN }}" -e RANCHER_CONTEXT="c-zggzp:p-zr2fh" -e RANCHER_URL="https://rancher.devops-e.de" --rm nexus.devops-e.de:8090/ema/rancher-deployer rollout restart deployment decidim-app-production-sidekiq-worker -n decidim
+         
