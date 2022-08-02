@@ -1230,7 +1230,7 @@ de:
         metrics:
           headline: Teilnahme an Zahlen
         statistics:
-          headline: Aktueller Zustand von %{organization}
+          headline: Aktueller Status von %{organization}
         sub_hero:
           register: Registrieren
       index:

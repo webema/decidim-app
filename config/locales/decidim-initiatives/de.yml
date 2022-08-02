@@ -15,7 +15,9 @@ de:
           any: Gemischt
           offline: Angesicht zu Angesicht
           online: Online
-        state: Zustand
+        state: Status
+        type_id: Typ
+        decidim_scope_id: Bereich
         title: Titel
       initiatives_committee_member:
         user: Ausschussmitglied
@@ -74,7 +76,7 @@ de:
           decidim_area_id_eq:
             label: Bereich
           state_eq:
-            label: Zustand
+            label: Status
             values:
               accepted: Ausreichend Unterschriften
               created: Erstellt
@@ -105,7 +107,7 @@ de:
             created_at: Hergestellt in
             id: ID
             published_at: Veröffentlicht am
-            state: Zustand
+            state: Status
             supports_count: Unterschriften
             title: Ideen
         initiatives_type_scope:
@@ -202,7 +204,7 @@ de:
             description: Beschreibung
             initiative_votes_count: Stimmen zählen
             initiatives: Ideen
-            state: Zustand
+            state: Status
         committee_requests:
           index:
             approve: Genehmigen
@@ -233,7 +235,7 @@ de:
             success: Die Idee wurde an die technische Validierung gesendet
             update: Aktualisieren
           form:
-            attachments: Beilagen
+            attachments: Anhänge
             settings: Einstellungen
             title: Allgemeine Information
           index:
@@ -483,7 +485,7 @@ de:
           myself: Meine Ideen
           scope: Umfang
           search: Suche
-          state: Zustand
+          state: Status
           type: Art
         filters_small_view:
           close_modal: Fenster schließen

@@ -101,7 +101,7 @@ de:
           category: Kategorie
           category_prompt: Wähle eine Kategorie
           search: Suche
-          state: Zustand
+          state: Status
         filters_small_view:
           close_modal: Dialog schließen
           filter: Filter
