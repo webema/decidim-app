@@ -621,6 +621,7 @@ de:
         title: Neue Idee schaffen
       initiative_header:
         initiative_menu_item: Idee
+        all_initiatives_menu_item: Alle Ideen
       initiative_signature_creation_header:
         back: Zurück
         fill_personal_data: Ergänze Deine Daten
