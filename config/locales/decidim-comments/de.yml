@@ -12,7 +12,7 @@ de:
     models:
       decidim/comments/comment:
         one: Kommentar
-        other: Bemerkungen
+        other: Kommentare
       decidim/comments/comment_vote:
         one: Abstimmung
         other: Stimmen
@@ -164,8 +164,8 @@ de:
     metrics:
       comments:
         description: Anzahl der von Benutzenden generierten Kommentare
-        object: Bemerkungen
-        title: Bemerkungen
+        object: Kommentare
+        title: Kommentare
   errors:
     messages:
       cannot_have_comments: kann keine Kommentare haben

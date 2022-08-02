@@ -61,7 +61,7 @@ de:
           comments: Kommentare
           view: Anzeigen
         sidebar_blog:
-          comments: Bemerkungen
+          comments: Kommentare
           most_commented_posts: Meist kommentierte Posts
       read_more: Weiterlesen
     components:

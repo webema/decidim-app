@@ -25,7 +25,7 @@ de:
       component:
         name: Name
         published_at: Veröffentlicht unter
-        weight: Bestellposition
+        weight: Sortierung
       id: ID
       import:
         user_group_id: Importierte Inhalte erstellen als
@@ -38,12 +38,12 @@ de:
         available_authorizations: Verfügbare Autorisierungen
         badges_enabled: Abzeichen aktivieren
         comments_max_length: Maximale Länge der Kommentare (0 für Standardwert)
-        cta_button_path: Call To Action Schaltfläche Pfad
-        cta_button_text: Call To Action Schaltfläche Text
+        cta_button_path: Pfad der Call To Action Schaltfläche
+        cta_button_text: Text der Call To Action Schaltfläche
         customize_welcome_notification: Willkommens-Benachrichtigung anpassen
         default_locale: Standardgebietsschema
         description: Beschreibung
-        enable_omnipresent_banner: Zeige allgegenwärtiges Banner
+        enable_omnipresent_banner: Das allgegenwärtige Banner anzeigen
         enable_participatory_space_filters: Bereichs- und Gebietsfilter aktivieren
         facebook_handler: Facebook-Handler
         favicon: Icon
@@ -54,9 +54,9 @@ de:
         header_snippets: Header-Snippets
         highlight_alternative_color: Hervorhebung, Alternative
         highlight_color: Hervorheben
-        highlighted_content_banner_action_subtitle: Aktion Schaltfläche Untertitel
+        highlighted_content_banner_action_subtitle: Untertitel der Aktionsschaltfläche
         highlighted_content_banner_action_title: Titel der Aktionsschaltfläche
-        highlighted_content_banner_action_url: Aktionsschaltflächen-URL
+        highlighted_content_banner_action_url: URL der Aktionsschaltfläche
         highlighted_content_banner_enabled: Das hervorgehobene Inhaltsbanner anzeigen
         highlighted_content_banner_image: Bild
         highlighted_content_banner_short_description: Kurze Beschreibung
@@ -112,14 +112,14 @@ de:
         content: Inhalt
         organization: Organisation
         show_in_footer: In der Fußzeile anzeigen
-        slug: URL-Block
+        slug: URL-Slug
         title: Titel
-        weight: Bestellposition
+        weight: Sortierung
       static_page_topic:
         description: Beschreibung
         show_in_footer: In der Fußzeile anzeigen
         title: Titel
-        weight: Bestellposition
+        weight: Sortierung
       user_group_csv_verification:
         file: Datei
     errors:
@@ -143,7 +143,7 @@ de:
     attributes:
       decidim/static_page:
         content: Inhalt
-        slug: URL-Block
+        slug: URL-Slug
         title: Titel
       doorkeeper/application:
         authorize_url: URL autorisieren
@@ -385,7 +385,7 @@ de:
           reportable_type_string_eq:
             label: Art
         officialized_at_null:
-          label: Zustand
+          label: Status
           values:
             'false': Offizialisiert
             'true': Nicht offiziell
@@ -539,7 +539,7 @@ de:
         reported_users: Gemeldete Nutzer
         scope_types: Bereichstypen
         scopes: Bereiche
-        settings: die Einstellungen
+        settings: Einstellungen
         static_pages: Seiten
         user_groups: Benutzer:innen-Gruppen
         users: Benutzer:innen
@@ -583,7 +583,7 @@ de:
             subject: Gegenstand
           name: Newsletter
         participatory_space_private_user:
-          name: Participatory Space private/r Benutzer:in
+          name: private/r Benutzer:in der konKreation
         scope:
           fields:
             name: Name
@@ -622,7 +622,7 @@ de:
             document_number: Dokumentnummer
             name: Name
             phone: Telefon
-            state: Zustand
+            state: Status
             users_count: Benutzer:innen zählen
       moderated_users:
         index:
@@ -760,7 +760,7 @@ de:
           officialize: Offizialisieren
           title: Benutzer:in "%{name}" offiziellisieren
         show_email_modal:
-          close_modal: Modal schließen
+          close_modal: Dialog schließen
           description: Wenn Du eine:n Teilnehmenden direkt kontaktieren möchtest, kannst Du auf die Schaltfläche "Anzeigen" klicken, um seine E-Mail-Adresse zu sehen. Diese Aktion wird protokolliert.
           email_address: E-Mail-Adresse
           full_name: Voller Name
@@ -779,7 +779,7 @@ de:
           github: GitHub
           instagram: Instagram
           rich_text_editor_in_public_views_help: In einigen Textbereichen können Teilnehmende mit Hilfe des Rich-Text-Editors HTML-Tags einfügen.
-          social_handlers: Sozial
+          social_handlers: Soziale Medien
           twitter: Twitter
           url: URL
           youtube: Youtube
@@ -797,11 +797,11 @@ de:
           cta_button_path_help: 'Du kannst überschreiben, wo die Call To Action-Schaltfläche in der Homepage verlinkt ist. Verwende hier Teilpfade, nicht vollständige URLs. Akzeptiert Buchstaben, Zahlen, Bindestriche und Schrägstriche und muss mit einem Buchstaben beginnen. Die Call To Action-Schaltfläche wird auf der Startseite zwischen Begrüßungstext und Beschreibung angezeigt. Beispiel: %{url}'
           cta_button_text_help: Du kannst den Text der Call To Action-Schaltfläche auf der Startseite für jede verfügbare Sprache in Deiner Organisation überschreiben. Wenn nicht festgelegt, wird der Standardwert verwendet. Die Call To Action-Schaltfläche wird auf der Startseite zwischen Begrüßungstext und Beschreibung angezeigt.
           homepage_appearance_title: Homepage-Erscheinungsbild bearbeiten
-          homepage_highlighted_content_banner_title: Highlighted Inhaltsbanner
+          homepage_highlighted_content_banner_title: Hervorgehobenes Inhaltsbanner
           images:
             layout_appearance_title: Layout-Layout bearbeiten
             preview: Vorschau
-          omnipresent_banner_appearance_title: Bearbeite das allgegenwärtige Banner
+          omnipresent_banner_appearance_title: Allgegenwärtiges Banner
       organization_external_domain_whitelist:
         edit:
           update: Aktualisieren
@@ -822,17 +822,17 @@ de:
           update: Aktualisieren
       participatory_space_private_users:
         create:
-          error: Beim Hinzufügen eines privaten Benutzers für diesen partizipativen Bereich ist ein Fehler aufgetreten.
-          success: Participatory Space Privater Benutzerzugriff erfolgreich erstellt.
+          error: Beim Hinzufügen eines privaten Benutzers bzw. einer privaten Benutzerin für diese konKreation ist ein Fehler aufgetreten.
+          success: Der private Benutzerzugriff für diese konKreation wurde erfolgreich erstellt.
         destroy:
-          error: Beim Löschen eines privaten Benutzers für diesen partizipativen Bereich ist ein Fehler aufgetreten.
-          success: Participatory Space Privater Benutzerzugriff wurde erfolgreich zerstört.
+          error: Beim Löschen eines privaten Benutzers bzw. einer privaten Benutzerin für diese konKreation ist ein Fehler aufgetreten.
+          success: Der private Benutzerzugriff für diese konKreation wurde erfolgreich gelöscht.
         index:
           import_via_csv: Aus CSV-Datein importieren
-          title: Participatory Space privater Benutzer
+          title: Private Benutzer:innen
         new:
           create: Erstellen
-          title: Neue/r private/r Benutzer:in des Participatory Space.
+          title: Neue/r private/r Benutzer:in
       participatory_space_private_users_csv_imports:
         create:
           invalid: Beim Lesen der CSV-Datei ist ein Fehler aufgetreten.
@@ -1081,6 +1081,6 @@ de:
         newsletters:
           title: Newsletter
         settings:
-          title: die Einstellungen
+          title: Einstellungen
         users:
           title: Benutzer:innen

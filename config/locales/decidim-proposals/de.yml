@@ -40,7 +40,7 @@ de:
         keep_authors: Ursprüngliche Autoren beibehalten
       valuation_assignment:
         admin_log:
-          valuator_role_id: Name des Schätzers
+          valuator_role_id: Name des Gutachters bzw. der Gutachterin
     errors:
       models:
         participatory_text:
@@ -105,7 +105,7 @@ de:
           scope_id_eq:
             label: Umfang
           state_eq:
-            label: Zustand
+            label: Status
             values:
               accepted: Angenommen
               evaluating: In Bearbeitung
@@ -118,7 +118,7 @@ de:
             values:
               'true': Unbeantwortet
           valuator_role_ids_has:
-            label: Zugewiesen zu dem Schätzer
+            label: Zugewiesen zu dem/der Gutachter:in
         search_placeholder:
           id_string_or_title_cont: In %{collection} nach ID oder Titel suchen.
     components:
@@ -205,8 +205,8 @@ de:
               random: Zufällig
               recent: Neueste
               with_more_authors: Mit mehr Autoren/Autorinnen
-            endorsements_blocked: Zustimmungen blockiert
-            endorsements_enabled: Bestätigungen aktiviert
+            endorsements_blocked: Unterstützung blockiert
+            endorsements_enabled: Unterstützung aktiviert
             proposal_answering_enabled: Vorschlagsantworten aktiviert
             publish_answers_immediately: Vorschlagsantworten sofort veröffentlichten
             suggested_hashtags: Hashtags die Benutzer:innen für neue Vorschläge vorgeschlagen werden
@@ -462,7 +462,7 @@ de:
             select_a_meeting: Besprechung auswählen
           index:
             actions: Aktionen
-            assign_to_valuator: Zuweisen zu dem Schätzer
+            assign_to_valuator: Zuweisen zu dem/der Gutachter:in
             assign_to_valuator_button: Zuweisen
             cancel: Abbrechen
             change_category: Kategorie ändern
@@ -476,7 +476,7 @@ de:
             split: Vorschläge aufteilen
             split_button: Aufteilen
             title: Vorschläge
-            unassign_from_valuator: Zuweisung an den Schätzer zurückziehen
+            unassign_from_valuator: Zuweisung an den/die Gutachter:in zurückziehen
             unassign_from_valuator_button: Zuweisung aufheben
             update: Aktualisieren
             update_scope_button: Umfang aktualisieren
@@ -488,7 +488,7 @@ de:
             select_a_proposal: Bitte wähle einen Vorschlag
           show:
             amendments_count: Anzahl der Ergänzungen
-            assigned_valuators: Zugewiesene Schätzer
+            assigned_valuators: Zugewiesen Gutachter:innen
             authors: Autoren/Autorinnen
             body: Haupttext
             comments_count: Anzahl der Kommentare
@@ -497,9 +497,9 @@ de:
             comments_positive_count: Dafür
             created_at: Erstellungsdatum
             documents: Unterlagen
-            endorsements_count: Anzahl der Befürwortungen
-            endorsements_ranking: Nach Befürwortungen sortieren
-            endorsers: Befürworter
+            endorsements_count: Anzahl der Unterstützer:innen
+            endorsements_ranking: Nach Unterstützer:innen sortieren
+            endorsers: Unterstützer:innen
             link: Verknüpfung
             n_more_endorsers:
               one: und 1 mehr
@@ -509,8 +509,8 @@ de:
             ranking: "%{ranking} von %{total}"
             related_meetings: Ähnliche Besprechungen
             remove_assignment: Zuweisung entfernen
-            remove_assignment_confirmation: Bist Du sicher, diesen Schätzer von diesem Vorschlag zurückzuziehen?
-            valuators: Schätzer
+            remove_assignment_confirmation: Bist Du sicher, dass Du diese/n Gutachter:in von diesem Vorschlag zurückziehen willst?
+            valuators: Gutachter:innen
             votes_count: Anzahl der Unterstützungen
             votes_ranking: Nach Unterstützungen sortieren
           update_category:
@@ -541,11 +541,11 @@ de:
             success: Die Vorschläge wurden erfolgreich in neue aufgeteilt.
         valuation_assignments:
           create:
-            invalid: Bei der Zuweisung von Vorschlägen an einen Schätzer ist ein Fehler aufgetreten
-            success: Die Vorschläge wurden erfolgreich dem Schätzer zugewiesen
+            invalid: Bei der Zuweisung von Vorschlägen an eine/n Gutachter:in ist ein Fehler aufgetreten
+            success: Die Vorschläge wurden erfolgreich dem/der Gutachter:in zugewiesen
           delete:
-            invalid: Beim Zurückziehen der Zuweisung von Vorschlägen an einen Schätzer ist ein Fehler aufgetreten
-            success: Die Zuweisung der Vorschläge wurden erfolgreich von dem Schätzer zurückgezogen
+            invalid: Beim Zurückziehen der Zuweisung von Vorschlägen an eine/n Gutachter:in ist ein Fehler aufgetreten
+            success: Die Zuweisung der Vorschläge wurden erfolgreich von dem/der Gutachter:in zurückgezogen
       admin_log:
         proposal:
           answer: "%{user_name} beantwortete den %{resource_name} Vorschlag auf den %{space_name} Feldern"
@@ -555,8 +555,8 @@ de:
         proposal_note:
           create: "%{user_name} eine private Notiz zu dem %{resource_name} Vorschlag auf dem %{space_name} Feld hinterlassen"
         valuation_assignment:
-          create: "%{user_name} hat den Vorschlag %{resource_name} einem Schätzer zugewiesen"
-          delete: "%{user_name} hat die Zuweisung vom Vorschlag %{proposal_title} von einem Schätzer zurückgezogen"
+          create: "%{user_name} hat den Vorschlag %{resource_name} einem/einer Gutachter:in zugewiesen"
+          delete: "%{user_name} hat die Zuweisung des Vorschlags %{proposal_title} an einen/eine Gutachter:in zurückgezogen"
       answers:
         accepted: Angenommen
         evaluating: In Bewertung
@@ -701,22 +701,22 @@ de:
         collaborative_draft:
           fields:
             authors: Autoren/Autorinnen
-            comments: Bemerkungen
+            comments: Kommentare
             contributions: Beiträge
         proposal:
           fields:
             category: Kategorie
-            comments: Bemerkungen
+            comments: Kommentare
             id: ID
             notes: Anmerkungen
             official_proposal: Offizieller Vorschlag
             published_answer: Veröffentlichte Antwort
             published_at: Veröffentlicht unter
             scope: Umfang
-            state: Zustand
+            state: Status
             title: Titel
-            valuator: Schätzer
-            valuators: Schätzer
+            valuator: Gutachter:in
+            valuators: Gutachter:innen
             votes: Stimmen
       new:
         limit_reached: Du kannst keine neuen Vorschläge erstellen, da Du das Maximum erreicht hast.
@@ -725,7 +725,7 @@ de:
         buttons:
           amend: Ändern
           comment: Kommentar
-          comments: Bemerkungen
+          comments: Kommentare
       proposal_votes:
         create:
           error: Es gab Fehler bei der Abstimmung des Vorschlags.
@@ -769,11 +769,11 @@ de:
           related_to: Bezüglich
           scope: Umfang
           search: Suche
-          state: Zustand
+          state: Status
           type: Art
           voted: Gewählt
         filters_small_view:
-          close_modal: Modal schließen
+          close_modal: Dialog schließen
           filter: Filter
           filter_by: Filtern nach
           unfold: Aufklappen
@@ -829,7 +829,7 @@ de:
           changes_at_title: Ergänzung zu „%{title}“
           comments: Kommentare
           edit_proposal: Vorschlag bearbeiten
-          endorsements_list: Liste der Befürworter
+          endorsements_list: Liste der Unterstützer:innen
           estimated_cost: Geschätzte Kosten
           hidden_endorsers_count:
             one: und %{count} weitere Person
