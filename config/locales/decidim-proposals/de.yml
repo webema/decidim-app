@@ -701,12 +701,12 @@ de:
         collaborative_draft:
           fields:
             authors: Autoren/Autorinnen
-            comments: Bemerkungen
+            comments: Kommentare
             contributions: Beiträge
         proposal:
           fields:
             category: Kategorie
-            comments: Bemerkungen
+            comments: Kommentare
             id: ID
             notes: Anmerkungen
             official_proposal: Offizieller Vorschlag
@@ -725,7 +725,7 @@ de:
         buttons:
           amend: Ändern
           comment: Kommentar
-          comments: Bemerkungen
+          comments: Kommentare
       proposal_votes:
         create:
           error: Es gab Fehler bei der Abstimmung des Vorschlags.

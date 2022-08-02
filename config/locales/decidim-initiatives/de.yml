@@ -78,7 +78,7 @@ de:
           state_eq:
             label: Status
             values:
-              accepted: Ausreichend Unterschriften
+              accepted: Ausreichende Unterschriften
               created: Erstellt
               discarded: Verworfen
               published: Veröffentlicht
@@ -314,11 +314,11 @@ de:
           delete: "%{user_name} hat den Ideen-Typ %{resource_name} gelöscht"
           update: "%{user_name} hat den Ideen-Typ %{resource_name} aktualisiert"
       admin_states:
-        accepted: Ausreichend Unterschriften
+        accepted: Ausreichende Unterschriften
         created: Erstellt
         discarded: Verworfen
         published: Veröffentlicht
-        rejected: Ungenügend Unterschriften
+        rejected: Zu wenige Unterschriften
         validating: Technische Validierung
       application_helper:
         filter_area_values:
@@ -326,12 +326,12 @@ de:
         filter_scope_values:
           all: Alle
         filter_state_values:
-          accepted: Ausreichend Unterschriften
+          accepted: Ausreichende Unterschriften
           all: Alle
           answered: Beantwortet
           closed: Geschlossen
-          open: Öffnen
-          rejected: Ungenügend Unterschriften
+          open: Offen
+          rejected: Zu wenige Unterschriften
         filter_type_values:
           all: Alle
       committee_requests:
@@ -479,10 +479,10 @@ de:
             one: "%{count} Idee"
             other: "%{count} Ideen"
         filters:
-          any: Irgendein
+          any: Alle
           area: Bereich
           author: Autor:in
-          myself: Meine Ideen
+          myself: Eigene Ideen
           scope: Umfang
           search: Suche
           state: Status
@@ -506,7 +506,7 @@ de:
           comments_count:
             count:
               one: Kommentar
-              other: Bemerkungen
+              other: Kommentare
         orders:
           label: 'Ideen sortieren nach:'
           most_commented: Am meisten kommentiert
@@ -581,11 +581,11 @@ de:
             see_all_initiatives: Alle Ideen anzeigen
       show:
         badge_name:
-          accepted: Ausreichend Unterschriften
+          accepted: Ausreichende Unterschriften
           created: Erstellt
           discarded: Verworfen
           published: Veröffentlicht
-          rejected: Ungenügend Unterschriften
+          rejected: Zu wenige Unterschriften
           validating: Technische Validierung
       signature_interval:
         title: Zeitraum der Unterschriftensammlung
