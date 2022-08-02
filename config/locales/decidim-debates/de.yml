@@ -43,8 +43,8 @@ de:
             announcement: Ankündigung
             comments_blocked: Kommentare blockiert
             creation_enabled: Teilnehmende können Debatten erstellen
-            endorsements_blocked: Bestätigungen blockiert
-            endorsements_enabled: Bestätigungen aktiviert
+            endorsements_blocked: Unterstützung blockiert
+            endorsements_enabled: Unterstützung aktiviert
     debates:
       actions:
         close: Schließen
@@ -131,7 +131,7 @@ de:
             open: Offen
           user_groups: Gruppen
         filters_small_view:
-          close_modal: Modal schließen
+          close_modal: Dialog schließen
           filter: Filter
           filter_by: Filtern nach
           unfold: Entfalten

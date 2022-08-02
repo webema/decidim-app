@@ -25,7 +25,7 @@ de:
       component:
         name: Name
         published_at: Veröffentlicht unter
-        weight: Bestellposition
+        weight: Sortierung
       id: ID
       import:
         user_group_id: Importierte Inhalte erstellen als
@@ -114,12 +114,12 @@ de:
         show_in_footer: In der Fußzeile anzeigen
         slug: URL-Block
         title: Titel
-        weight: Bestellposition
+        weight: Sortierung
       static_page_topic:
         description: Beschreibung
         show_in_footer: In der Fußzeile anzeigen
         title: Titel
-        weight: Bestellposition
+        weight: Sortierung
       user_group_csv_verification:
         file: Datei
     errors:
@@ -583,7 +583,7 @@ de:
             subject: Gegenstand
           name: Newsletter
         participatory_space_private_user:
-          name: Participatory Space private/r Benutzer:in
+          name: private/r Benutzer:in der konKreation
         scope:
           fields:
             name: Name
@@ -760,7 +760,7 @@ de:
           officialize: Offizialisieren
           title: Benutzer:in "%{name}" offiziellisieren
         show_email_modal:
-          close_modal: Modal schließen
+          close_modal: Dialog schließen
           description: Wenn Du eine:n Teilnehmenden direkt kontaktieren möchtest, kannst Du auf die Schaltfläche "Anzeigen" klicken, um seine E-Mail-Adresse zu sehen. Diese Aktion wird protokolliert.
           email_address: E-Mail-Adresse
           full_name: Voller Name
@@ -822,17 +822,17 @@ de:
           update: Aktualisieren
       participatory_space_private_users:
         create:
-          error: Beim Hinzufügen eines privaten Benutzers für diesen partizipativen Bereich ist ein Fehler aufgetreten.
-          success: Participatory Space Privater Benutzerzugriff erfolgreich erstellt.
+          error: Beim Hinzufügen eines privaten Benutzers bzw. einer privaten Benutzerin für diese konKreation ist ein Fehler aufgetreten.
+          success: Der private Benutzerzugriff für diese konKreation wurde erfolgreich erstellt.
         destroy:
-          error: Beim Löschen eines privaten Benutzers für diesen partizipativen Bereich ist ein Fehler aufgetreten.
-          success: Participatory Space Privater Benutzerzugriff wurde erfolgreich zerstört.
+          error: Beim Löschen eines privaten Benutzers bzw. einer privaten Benutzerin für diese konKreation ist ein Fehler aufgetreten.
+          success: Der private Benutzerzugriff für diese konKreation wurde erfolgreich gelöscht.
         index:
           import_via_csv: Aus CSV-Datein importieren
-          title: Participatory Space privater Benutzer
+          title: Participatory Space privater Benutzer TODO
         new:
           create: Erstellen
-          title: Neue/r private/r Benutzer:in des Participatory Space.
+          title: Neue/r private/r Benutzer:in für konKreation.
       participatory_space_private_users_csv_imports:
         create:
           invalid: Beim Lesen der CSV-Datei ist ein Fehler aufgetreten.

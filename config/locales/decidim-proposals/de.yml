@@ -205,8 +205,8 @@ de:
               random: Zufällig
               recent: Neueste
               with_more_authors: Mit mehr Autoren/Autorinnen
-            endorsements_blocked: Zustimmungen blockiert
-            endorsements_enabled: Bestätigungen aktiviert
+            endorsements_blocked: Unterstützung blockiert
+            endorsements_enabled: Unterstützung aktiviert
             proposal_answering_enabled: Vorschlagsantworten aktiviert
             publish_answers_immediately: Vorschlagsantworten sofort veröffentlichten
             suggested_hashtags: Hashtags die Benutzer:innen für neue Vorschläge vorgeschlagen werden
@@ -497,9 +497,9 @@ de:
             comments_positive_count: Dafür
             created_at: Erstellungsdatum
             documents: Unterlagen
-            endorsements_count: Anzahl der Befürwortungen
-            endorsements_ranking: Nach Befürwortungen sortieren
-            endorsers: Befürworter
+            endorsements_count: Anzahl der Unterstützer:innen
+            endorsements_ranking: Nach Unterstützer:innen sortieren
+            endorsers: Unterstützer:innen
             link: Verknüpfung
             n_more_endorsers:
               one: und 1 mehr
@@ -773,7 +773,7 @@ de:
           type: Art
           voted: Gewählt
         filters_small_view:
-          close_modal: Modal schließen
+          close_modal: Dialog schließen
           filter: Filter
           filter_by: Filtern nach
           unfold: Aufklappen
@@ -829,7 +829,7 @@ de:
           changes_at_title: Ergänzung zu „%{title}“
           comments: Kommentare
           edit_proposal: Vorschlag bearbeiten
-          endorsements_list: Liste der Befürworter
+          endorsements_list: Liste der Unterstützer:innen
           estimated_cost: Geschätzte Kosten
           hidden_endorsers_count:
             one: und %{count} weitere Person
