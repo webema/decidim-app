@@ -3,7 +3,7 @@
     .card__content
       .card-divider
         %h2.card-title
-          Blogpost
+          = t('title', scope: 'ema.blog_posts.admin.show')
 
       .card-section
         %h2.card__title
@@ -12,10 +12,9 @@
         .card__author
           = l(@blog_post.created_at, format: :short)
 
-
       = decidim_sanitize_editor(@blog_post.body.html_safe)
 
   .button--double
-    = link_to 'Zurück', posts_path, class: 'button'
-    = link_to 'Bearbeiten', edit_post_path(@blog_post), class: 'button'
-    = button_to 'Löschen', post_path(@blog_post), method: 'delete', data: { confirm: 'dsfdfsdfdsf' }, class: 'button'
+    = link_to t('back', scope: 'ema.blog_posts.admin.show'), posts_path, class: 'button'
+    = link_to t('edit', scope: 'ema.blog_posts.admin.show'), edit_post_path(@blog_post), class: 'button'
+    = button_to t('delete', scope: 'ema.blog_posts.admin.show'), post_path(@blog_post), method: 'delete', data: { confirm: t('delete_confirmation', scope: 'ema.blog_posts.admin.show') }, class: 'button'

@@ -3,7 +3,7 @@
     .card__content
       .card-divider
         %h2.card-title
-          Blogpost bearbeiten
+          = t('title', scope: 'ema.blog_posts.admin.edit')
 
       .card-section
         .row.column
@@ -14,5 +14,5 @@
             = f.editor :body, lines: 8, toolbar: :full
 
   .button--double
-    = f.submit 'Blogpost speichern', class: 'button', data: { disable_with: true }
-    = link_to 'Abbrechen', posts_path, class: 'button'
+    = f.submit t('save', scope: 'ema.blog_posts.admin.edit'), class: 'button', data: { disable_with: true }
+    = link_to t('cancel', scope: 'ema.blog_posts.admin.edit'), posts_path, class: 'button'

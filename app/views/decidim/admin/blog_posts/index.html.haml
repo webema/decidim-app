@@ -2,10 +2,10 @@
   .card__content
     .card-divider
       %h2.card-title
-        Blog
+        = t('title', scope: 'ema.blog_posts.admin.index')
 
         .button--title
-          = link_to 'Neuer Blogpost', new_post_path, class: 'button tiny button--title'
+          = link_to t('new_blog_post', scope: 'ema.blog_posts.admin.index'), new_post_path, class: 'button tiny button--title'
     .card-section
       %table.table-list
         %thead
@@ -22,8 +22,8 @@
               %td
                 = l(blog_post.created_at, format: :short)
               %td
-                = icon_link_to 'eye', post_path(blog_post), 'Anzeigen'
-                = icon_link_to 'pencil', edit_post_path(blog_post), 'Bearbeiten'
-                = icon_link_to 'circle-x', post_path(blog_post), 'Löschen', method: :delete, class: 'action-icon--remove', data: { confirm: 'Bist Du sicher' }
+                = icon_link_to 'eye', post_path(blog_post), t('show', scope: 'ema.blog_posts.admin.index')
+                = icon_link_to 'pencil', edit_post_path(blog_post), t('edit', scope: 'ema.blog_posts.admin.index')
+                = icon_link_to 'circle-x', post_path(blog_post), t('delete', scope: 'ema.blog_posts.admin.index'), method: :delete, class: 'action-icon--remove', data: { confirm: t('delete_confirmation', scope: 'ema.blog_posts.admin.index') }
 
 = decidim_paginate @blog_posts

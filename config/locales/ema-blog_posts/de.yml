@@ -1,0 +1,39 @@
+de:
+  activerecord:
+    attributes:
+      ema/blog_post:
+        title: Titel
+        body: Text
+
+  decidim:
+    blog_posts_content_block:
+      content_blocks:
+        recent_blog_posts:
+          name: Neueste Blogposts
+
+  ema:
+    blog_posts:
+      index:
+        title: Aktuelles
+      admin:
+        new:
+          title: Neuer Blogpost
+          save: Blogpost erstellen
+          cancel: Abbrechen
+        edit:
+          title: Blogpost bearbeiten
+          save: Änderungen speichern
+          cancel: Abbrechen
+        show:
+          title: Blogpost
+          back: Zurück
+          edit: Bearbeiten
+          delete: Löschen
+          delete_confirmation: <p>Bist Du sicher, dass Du diesen Blogpost löschen möchtest?</p>
+        index:
+          title: Blog
+          new_blog_post: Neuer Blogpost
+          show: Anzeigen
+          edit: Bearbeiten
+          delete: Löschen
+          delete_confirmation: <p>Bist Du sicher, dass Du diesen Blogpost löschen möchtest?</p>

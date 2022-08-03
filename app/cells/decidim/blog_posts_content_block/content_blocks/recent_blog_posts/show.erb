@@ -1,9 +1,9 @@
 <section class="wrapper-home home-section">
   <div class="row" id="highlighted-blog-posts">
-    <h3 class="section-heading">Aktuelles</h3>
+    <h3 class="section-heading"><%= t('title', scope: 'ema.blog_posts.index') %></h3>
     <div class="row collapse">
       <div class="row small-up-1 medium-up-2 large-up-3 card-grid">
-        <% highlighted_blog_posts.each do |blog_post| %>
+        <% recent_blog_posts.each do |blog_post| %>
           <div class="column">
             <article class="card card--process card--mini">
               <% if false # blog_post.hero_image.url.present? %>
