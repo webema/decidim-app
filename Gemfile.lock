@@ -350,10 +350,6 @@ GEM
     db-query-matchers (0.10.0)
       activesupport (>= 4.0, < 7)
       rspec (~> 3.0)
-    decidim-decidim_awesome (0.8.3)
-      decidim-admin (>= 0.25.0, < 0.27)
-      decidim-core (>= 0.25.0, < 0.27)
-      sassc (~> 2.3)
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
@@ -442,6 +438,9 @@ GEM
       graphql (~> 1.12)
       html-pipeline (~> 2.9)
       sass (~> 3.4)
+    haml (5.2.2)
+      temple (>= 0.8.0)
+      tilt
     hashdiff (1.0.1)
     hashie (5.0.0)
     highline (2.0.3)
@@ -722,8 +721,6 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sassc (2.4.0)
-      ffi (~> 1.9)
     selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -831,7 +828,6 @@ DEPENDENCIES
   brakeman
   byebug (~> 11.0)
   decidim!
-  decidim-decidim_awesome
   decidim-dev!
   decidim-initiatives!
   faker (~> 2.14)
