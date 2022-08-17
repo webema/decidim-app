@@ -167,7 +167,7 @@ de:
       participatory_process_copies:
         new:
           copy: Kopieren
-          select: Wähle aus, welche Daten Du duplizieren möchtest
+          select: Wähle aus, welche Daten du duplizieren möchtest
           title: konKreation duplizieren
       participatory_process_group_landing_page:
         edit:
@@ -195,7 +195,7 @@ de:
           success: Die konKreation wurde erfolgreich importiert.
         new:
           import: Importieren
-          select: Wähle aus, welche Daten Du importieren möchtest
+          select: Wähle aus, welche Daten du importieren möchtest
           title: konKreation importieren
       participatory_process_publications:
         create:
@@ -326,17 +326,17 @@ de:
       participatory_process:
         role_assigned:
           email_intro: Du wurdest als %{role} für die konKreation "%{resource_title}" ausgewählt.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{role} in der konKreation "%{resource_title}" bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{role} in der konKreation "%{resource_title}" bist.
           email_subject: Du wurdest als %{role} für "%{resource_title}" ausgewählt.
           notification_title: Du wurdest als %{role} für die konKreation <a href="%{resource_url}">%{resource_title}</a> ausgewählt.
         step_activated:
           email_intro: 'Der konKreationen-Schritt %{resource_title} ist jetzt aktiv in %{participatory_space_title}. Du kannst das auf dieser Seite sehen:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{participatory_space_title} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Aktualisierung von %{participatory_space_title}
           notification_title: Der konKreationen-Schritt %{resource_title} ist jetzt aktiv in <a href="%{resource_path}">%{participatory_space_title}</a>
         step_changed:
           email_intro: 'Die Daten für den Schritt %{resource_title} bei %{participatory_space_title} wurden aktualisiert. Du kannst das auf dieser Seite sehen:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du %{participatory_space_title} folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Aktualisierung von %{participatory_space_title}
           notification_title: Die Daten für den konKreationen-Schritt <a href="%{resource_path}">%{resource_title}</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a> wurden aktualisiert.
     help:
@@ -411,7 +411,7 @@ de:
             cta_text_help: Wenn nicht eingestellt, wird die Schaltfläche nicht angezeigt.
         participatory_processes:
           form:
-            announcement_help: Der Text, den Du hier eingibst, wird dem/der Benutzer:in direkt unter den Informationen zur konKreation angezeigt.
+            announcement_help: Der Text, den du hier eingibst, wird dem/der Benutzer:in direkt unter den Informationen zur konKreation angezeigt.
             duration: Dauer
             filters: Filter
             images: Bilder
@@ -512,13 +512,13 @@ de:
           more_info: Mehr Info
           more_info_about: Weitere Informationen zu konKreation %{resource_name}
           take_part: Teilnehmen
-          take_part_in: Beteilige Dich sich an der konKreation %{resource_name}
+          take_part_in: Beteilige dich sich an der konKreation %{resource_name}
         promoted_process:
           active_step: 'Aktueller Schritt:'
           more_info: Mehr Informationen
           more_info_about: Weitere Informationen zur konKreation %{resource_name}
           take_part: Teilnehmen
-          take_part_in: Beteilige Dich sich an der konKreation %{resource_name}
+          take_part_in: Beteilige dich sich an der konKreation %{resource_name}
         promoted_process_group:
           more_info: Mehr Info
       process_header_steps:

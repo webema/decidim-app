@@ -133,7 +133,7 @@ de:
       assembly_copies:
         new:
           copy: Kopieren
-          select: Wähle die Daten aus, die Du duplizieren möchtest
+          select: Wähle die Daten aus, die du duplizieren möchtest
           title: Dupliziertes Machwerk
       assembly_imports:
         create:
@@ -141,7 +141,7 @@ de:
           success: Machwerk wurde erfolgreich importiert.
         new:
           import: Importieren
-          select: Wähle aus, welche Daten Du importieren möchtest
+          select: Wähle aus, welche Daten du importieren möchtest
           title: Machwerk importieren
       assembly_members:
         create:
@@ -270,7 +270,7 @@ de:
       admin:
         assemblies:
           form:
-            announcement_help: Der Text, den Du hier eingibst, wird dem/der Benutzer:in direkt unter den Machwerke-Informationen angezeigt.
+            announcement_help: Der Text, den du hier eingibst, wird dem/der Benutzer:in direkt unter den Machwerke-Informationen angezeigt.
             duration: Zeitraum
             duration_help: Wenn die Dauer dieses Machwerks begrenzt ist, wähle das Enddatum aus. Andernfalls wird es als unbestimmt angezeigt.
             filters: Filter
@@ -307,7 +307,7 @@ de:
             explanation: 'Hinweise für das Bild:'
             image_guide: Vorzugsweise ein Bild im Querformat, das keinen Text enthält.
             non_user: Nichtbenutzer:in
-            non_user_avatar_help: Du solltest die Zustimmung der Personen einholen, bevor Du sie als Mitglied veröffentlichst.
+            non_user_avatar_help: Du solltest die Zustimmung der Personen einholen, bevor du sie als Mitglied veröffentlichst.
             select_a_position: Wähle eine Position
             select_user: Wähle eine/n Benutzer:in aus
             user_type: Benutzer:innen-Typ
@@ -404,14 +404,14 @@ de:
     events:
       assemblies:
         create_assembly_member:
-          email_intro: Ein/e Administrator:in des Machwerks <a href="%{resource_url}">%{resource_name}</a> hat Dich als Mitglied eingeladen.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du zu einem Machwerk eingeladen wurdest. Gehe zur <a href="%{resource_url}">Machwerksseite</a>, um mitzumachen!
+          email_intro: Ein/e Administrator:in des Machwerks <a href="%{resource_url}">%{resource_name}</a> hat dich als Mitglied eingeladen.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du zu einem Machwerk eingeladen wurdest. Gehe zur <a href="%{resource_url}">Machwerksseite</a>, um mitzumachen!
           email_subject: Du wurdest als Mitglied des Machwerks %{resource_name} eingeladen!
           notification_title: Du wurdest als Mitglied des Machwerks <a href="%{resource_path}">%{resource_name}</a> registriert. Gehe zur <a href="%{resource_path}">Machwerksseite</a>, um mitzuwirken!
       assembly:
         role_assigned:
           email_intro: Du wurdest als %{role} für das Machwerk "%{resource_title}" ausgewählt.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du ein %{role} des Machwerks "%{resource_title}" bist.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du ein %{role} des Machwerks "%{resource_title}" bist.
           email_subject: Du wurdest als %{role} für "%{resource_title}" ausgewählt.
           notification_title: Du wurdest als %{role} für das Machwerk <a href="%{resource_url}">%{resource_title}</a> ausgewählt.
     help:

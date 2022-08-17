@@ -107,7 +107,7 @@ de:
         form:
           select_organization: Organisation wählen
         index:
-          confirm_delete: Möchtest Du diese Anwendung wirklich löschen?
+          confirm_delete: Möchtest du diese Anwendung wirklich löschen?
           title: OAuth-Anwendungen
         new:
           save: Speichern
@@ -140,7 +140,7 @@ de:
             default_hint: Megabytes (MB). Diese Dateigröße ist die Standardeinstellung, die für alle Datei-Uploads verwendet wird, sofern nicht anders angegeben.
             title: Maximale Dateigröße
           intro: |
-            Bitte sei besonders vorsichtig, wenn Du überlegst, diese Einstellungen zu ändern. Je weniger Du erlaubst, desto besser.
+            Bitte sei besonders vorsichtig, wenn du überlegst, diese Einstellungen zu ändern. Je weniger du erlaubst, desto besser.
             Wenn bestimmte Dateierweiterungen oder MIME-Typen zugelassen werden, können Benutzer:innen Sicherheitsrisiken ausgesetzt werden und es kann auch die Zugänglichkeit der Website beeinträchtigen.
         index:
           title: Organisationen
@@ -172,7 +172,7 @@ de:
           instructions:
             from_label: 'E-Mail-Absender lautet: "Dein-Organisationsname <your-organization@example.org>". Leer lassen um ''from_email'' als Absender zu verwenden'
           placeholder:
-            from_email: deine-organisation@example.org
+            from_email: Deine-organisation@example.org
             from_label: name-ihrer-organisation
         update:
           error: Beim Aktualisieren dieser Organisation ist ein Fehler aufgetreten.
@@ -183,7 +183,7 @@ de:
           existing: Erlaube Benutzenden keine Registrierung, sondern erlaube nur bestehenden Benutzenden, sich anzumelden
       shared:
         notices:
-          no_organization_warning_html: Du musst eine Organisation erstellen, um zu beginnen. Stelle sicher, dass Du %{guide} gelesen hast, bevor Du fortfährst.
+          no_organization_warning_html: Du musst eine Organisation erstellen, um zu beginnen. Stelle sicher, dass du %{guide} gelesen hast, bevor du fortfährst.
           our_getting_started_guide: unser Leitfaden für Anfänger
       titles:
         dashboard: Instrumententafel

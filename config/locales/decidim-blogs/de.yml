@@ -12,7 +12,7 @@ de:
     blogs:
       actions:
         author_id: Beitrag erstellen als
-        confirm_destroy: Möchtest Du diesen Beitrag wirklich löschen?
+        confirm_destroy: Möchtest du diesen Beitrag wirklich löschen?
         destroy: Löschen
         edit: Bearbeiten
         new: Neuer Beitrag
@@ -84,8 +84,8 @@ de:
     events:
       blogs:
         post_created:
-          email_intro: Der Beitrag "%{resource_title}" wurde in "%{participatory_space_title}" veröffentlicht, dem Du folgst.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du "%{participatory_space_title}" folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_intro: Der Beitrag "%{resource_title}" wurde in "%{participatory_space_title}" veröffentlicht, dem du folgst.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du "%{participatory_space_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Neuer Beitrag in %{participatory_space_title}
           notification_title: Der Beitrag <a href="%{resource_path}">%{resource_title}</a> wurde in %{participatory_space_title} veröffentlicht
     statistics:
