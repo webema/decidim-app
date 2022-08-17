@@ -87,6 +87,10 @@ de:
           step:
             creation_enabled: creation_enabled
 
+    ema:
+      admin_menu:
+        newsletters: Newsletter
+
 
   forms:
     length_validator:

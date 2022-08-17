@@ -24,6 +24,8 @@ gem 'wicked_pdf', '~> 2.1'
 gem 'sidekiq'
 gem 'sidekiq-scheduler'
 
+gem 'haml'
+
 # Hack?
 gem 'rexml', '~> 3.2.5'
 

@@ -438,6 +438,9 @@ GEM
       graphql (~> 1.12)
       html-pipeline (~> 2.9)
       sass (~> 3.4)
+    haml (5.2.2)
+      temple (>= 0.8.0)
+      tilt
     hashdiff (1.0.1)
     hashie (5.0.0)
     highline (2.0.3)
@@ -828,6 +831,7 @@ DEPENDENCIES
   decidim-dev!
   decidim-initiatives!
   faker (~> 2.14)
+  haml
   letter_opener_web (~> 2.0)
   listen (~> 3.1)
   puma (>= 5.0.0)

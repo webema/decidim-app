@@ -9,8 +9,14 @@ Rails.application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
 
+  # namespace :admin do
+  #   resources :newsletters, controller: :ema_newsletters
+  # end
+
   mount Decidim::Core::Engine => '/'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+
 
   get 'healthcheck' => 'healthcheck#index'
 end
