@@ -388,7 +388,7 @@ de:
           invite_to_committee_help: Link, um Leute einzuladen, die Teil des Promoter:innen-Komitees sein werden
         show_similar_initiatives:
           back: Zurück
-          compare_help: Wenn eine der folgenden Inspirationen deiner ähnelt, empfehlen wir Dir, sie zu unterstützen. Dein Vorschlag wird mehr Chancen auf Umsetzung haben.
+          compare_help: Wenn eine der folgenden Inspirationen deiner ähnelt, empfehlen wir dir, sie zu unterstützen. Dein Vorschlag wird mehr Chancen auf Umsetzung haben.
           continue: Meine Inspiration ist anders
           more_information: "(Weitere Informationen)"
       edit:
@@ -408,7 +408,7 @@ de:
           email_subject: "%{author_nickname} hat deine Anfrage fürs Promoter:innen-Komittee akzeptiert"
           notification_title: <a href="%{author_profile_url}">%{author_nickname}</a> hat deine Anfrage fürs Promoter:innen-Komittee der Inspiration <a href="%{resource_url}">%{resource_title}</a> akzeptiert.
         create_initiative_event:
-          email_intro: "%{author_name} %{author_nickname}, dem du folgst, hat eine neue Inspiration erstellt, sieh sie Dir an und beteilige Dich:"
+          email_intro: "%{author_name} %{author_nickname}, dem du folgst, hat eine neue Inspiration erstellt, sieh sie dir an und beteilige dich:"
           email_outro: Du hast diese Benachrichtigung erhalten, weil du %{author_nickname} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Neue Inspiration von %{author_nickname}
           notification_title: Die Inspiration <a href="%{resource_path}">%{resource_title}</a> wurde von <a href="%{author_path}">%{author_name} %{author_nickname}</a> erstellt.
@@ -457,7 +457,7 @@ de:
         personal_data:
           invalid: Persönliche Daten stimmen nicht mit den zur Autorisierung angegebenen Daten überein.
         sms_code:
-          invalid: Dein Bestätigungscode stimmt nicht mit unserem überein. Bitte überprüfe noch einmal die SMS, die wir Dir gesendet haben.
+          invalid: Dein Bestätigungscode stimmt nicht mit unserem überein. Bitte überprüfe noch einmal die SMS, die wir dir gesendet haben.
         sms_phone:
           invalid: Die Telefonnummer ist ungültig oder muss noch autorisiert werden. Bitte überprüfe deine Berechtigungen.
       initiatives:

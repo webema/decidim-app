@@ -188,14 +188,14 @@ de:
           space_followers:
             email_intro: |-
               Hallo,
-              Eine neue Debatte "%{resource_title}" wurde in %{space_title} erstellt, sieh sie Dir an und beteilige Dich:
+              Eine neue Debatte "%{resource_title}" wurde in %{space_title} erstellt, sieh sie dir an und beteilige dich:
             email_outro: Du hast diese Benachrichtigung erhalten, weil du %{space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
             email_subject: Neue Debatte "%{resource_title}" in %{space_title}
             notification_title: Die Debatte <a href="%{resource_path}">%{resource_title}</a> wurde in <a href="%{space_path}">%{space_title}</a> erstellt.
           user_followers:
             email_intro: |-
               Hallo,
-              %{author_name} %{author_nickname}, dem du folgst, hat eine neue Debatte "%{resource_title}" erstellt. Sieh sie Dir an und diskutiere mit:
+              %{author_name} %{author_nickname}, dem du folgst, hat eine neue Debatte "%{resource_title}" erstellt. Sieh sie dir an und diskutiere mit:
             email_outro: Du hast diese Benachrichtigung erhalten, weil du %{author_nickname} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
             email_subject: Neue Debatte "%{resource_title}" von %{author_nickname}
             notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> hat die Debatte <a href="%{resource_path}">%{resource_title}</a> erstellt.

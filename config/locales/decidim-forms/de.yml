@@ -154,7 +154,7 @@ de:
           max_choices: 'Max Auswahlmöglichkeiten: %{n}'
         show:
           answer_questionnaire:
-            anonymous_user_message: <a href="%{sign_in_link}">Melde dich mit deinem Konto an</a> oder <a href="%{sign_up_link}">Registriere Dich</a>, um den Fragebogen zu beantworten.
+            anonymous_user_message: <a href="%{sign_in_link}">Melde dich mit deinem Konto an</a> oder <a href="%{sign_up_link}">Registriere dich</a>, um den Fragebogen zu beantworten.
             title: Beantworte den Fragebogen
           current_step: Schritt %{step}
           of_total_steps: von %{total_steps}

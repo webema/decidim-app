@@ -41,7 +41,7 @@ de:
           error: Beim Abstimmen des Kommentars sind Fehler aufgetreten.
     components:
       add_comment_form:
-        account_message: <a href="%{sign_in_url}">Melde dich mit deinem Konto an</a> oder <a href="%{sign_up_url}">registriere Dich</a>, um deinen Kommentar hinzuzufügen.
+        account_message: <a href="%{sign_in_url}">Melde dich mit deinem Konto an</a> oder <a href="%{sign_up_url}">registriere dich</a>, um deinen Kommentar hinzuzufügen.
         form:
           body:
             label: Kommentar

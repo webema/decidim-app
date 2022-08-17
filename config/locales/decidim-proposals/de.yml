@@ -217,7 +217,7 @@ de:
       proposals:
         admin:
           proposal_note_created:
-            email_intro: Jemand hat eine Notiz zum Vorschlag "%{resource_title}" hinterlassen. Schaue Dir diese im <a href="%{admin_proposal_info_url}">Admin-Panel</a> an
+            email_intro: Jemand hat eine Notiz zum Vorschlag "%{resource_title}" hinterlassen. Schaue dir diese im <a href="%{admin_proposal_info_url}">Admin-Panel</a> an
             email_outro: Du hast diese Benachrichtigung erhalten, weil du diesen Vorschlag bewerten kannst.
             email_subject: Jemand hat eine Notiz für Vorschlag %{resource_title} erstellt.
             notification_title: Jemand hat eine Notiz für den Vorschlag <a href="%{resource_path}">%{resource_title}</a>erstellt. Du kannst sie über das <a href="%{admin_proposal_info_path}">Admin-Panel</a> anzeigen
@@ -277,7 +277,7 @@ de:
           email_subject: Dein Vorschlag "%{mentioned_proposal_title}" wurde erwähnt
           notification_title: Dein Vorschlag "%{mentioned_proposal_title}" wurde <a href="%{resource_path}">hier</a> in den Kommentaren erwähnt.
         proposal_published:
-          email_intro: '%{author_name} %{author_nickname}, dem du folgst, hat einen neuen Vorschlag mit dem Namen "%{resource_title}" veröffentlicht. Sieh ihn Dir an und dieskutiere mit:'
+          email_intro: '%{author_name} %{author_nickname}, dem du folgst, hat einen neuen Vorschlag mit dem Namen "%{resource_title}" veröffentlicht. Sieh ihn dir an und dieskutiere mit:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du %{author_nickname} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Neuer Vorschlag "%{resource_title}" von %{author_nickname}
           notification_title: Der Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde von <a href="%{author_path}">%{author_name} %{author_nickname}</a> veröffentlicht.
@@ -297,12 +297,12 @@ de:
             email_subject: Ein Vorschlag, dem du folgst, wurde abgelehnt
             notification_title: Der Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde abgelehnt.
         proposal_update_category:
-          email_intro: 'Ein/e Administrator:in hat die Kategorie deines Vorschlags "%{resource_title}" aktualisiert, sieh ihn Dir an:'
+          email_intro: 'Ein/e Administrator:in hat die Kategorie deines Vorschlags "%{resource_title}" aktualisiert, sieh ihn dir an:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du der/die Autor:in des Vorschlags bist.
           email_subject: Die Vorschlagskategorie %{resource_title} wurde aktualisiert
           notification_title: Die Vorschlagskategorie <a href="%{resource_path}">%{resource_title}</a> wurde von einem Administrator bzw. einer Administratorin aktualisiert.
         proposal_update_scope:
-          email_intro: 'Ein/e Administrator:in hat den Bereich deines Vorschlags „%{resource_title}“ aktualisiert, sieh es Dir auf dieser Seite an:'
+          email_intro: 'Ein/e Administrator:in hat den Bereich deines Vorschlags „%{resource_title}“ aktualisiert, sieh es dir auf dieser Seite an:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du der/die Autor:in des Vorschlags bist.
           email_subject: Der Bereich des Vorschlags %{resource_title} wurde aktualisiert
           notification_title: Der Bereich des Vorschlags <a href="%{resource_path}">%{resource_title}</a> wurde von einem Administrator bzw. einer Administratorin aktualisiert.
@@ -665,7 +665,7 @@ de:
           hidden_authors_count:
             one: und %{count} weitere Person
             other: und %{count} weitere Personen
-          info-message: Dies ist ein <strong>kollaborativen Entwurf</strong> für einen Vorschlag. Dies bedeutet, dass du den Autoren/Autorinnen helfen kannst, den Vorschlag zu gestalten, indem du den unten stehenden Kommentarabschnitt verwendest, oder ihn direkt verbesserst, indem du Zugriff anforderst, um ihn zu bearbeiten. Sobald die Autoren/Autorinnen Dir Zugriff gewähren, kannst du Änderungen an diesem Entwurf vornehmen.
+          info-message: Dies ist ein <strong>kollaborativen Entwurf</strong> für einen Vorschlag. Dies bedeutet, dass du den Autoren/Autorinnen helfen kannst, den Vorschlag zu gestalten, indem du den unten stehenden Kommentarabschnitt verwendest, oder ihn direkt verbesserst, indem du Zugriff anforderst, um ihn zu bearbeiten. Sobald die Autoren/Autorinnen dir Zugriff gewähren, kannst du Änderungen an diesem Entwurf vornehmen.
           publish: Veröffentlichen
           publish_info: Veröffentliche diese Version des Entwurfs oder
           published_proposal: Veröffentlichter Vorschlag
@@ -782,7 +782,7 @@ de:
           collaborative_drafts_list: Greife auf gemeinsame Entwürfe zu
           new_proposal: Neuer Vorschlag
           see_all: Alle Vorschläge ansehen
-          see_all_withdrawn: Sieh Dir alle zurückgezogenen Vorschläge an
+          see_all_withdrawn: Sieh dir alle zurückgezogenen Vorschläge an
           view_proposal: Vorschlag anzeigen
         linked_proposals:
           proposal_votes:
@@ -846,7 +846,7 @@ de:
           read_less: Weniger lesen
           read_more: Weiterlesen
           report: Melden
-          withdraw_btn_hint: Du kannst deinen Vorschlag zurückziehen, wenn du es Dir anders überlegst, solange der Vorschlag keine Unterstützung erhalten hat. Der Vorschlag wird nicht gelöscht, er erscheint in der Liste der zurückgezogenen Vorschläge.
+          withdraw_btn_hint: Du kannst deinen Vorschlag zurückziehen, wenn du es dir anders überlegst, solange der Vorschlag keine Unterstützung erhalten hat. Der Vorschlag wird nicht gelöscht, er erscheint in der Liste der zurückgezogenen Vorschläge.
           withdraw_confirmation_html: Bist du sicher, dass du diesen Vorschlag zurückziehen möchtest?<br><br><strong>Diese Aktion kann nicht abgebrochen werden!</strong>
           withdraw_proposal: Vorschlag zurückziehen
         tags:

@@ -300,7 +300,7 @@ de:
             update: Aktualisieren
           form:
             address_help: 'Adresse: wird von Geocoder zur Lokalisierung verwendet'
-            disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist Dir bewusst, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer:innen dem externen Dienst zur Verfügung stellen.'
+            disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist dir bewusst, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer:innen dem externen Dienst zur Verfügung stellen.'
             location_help: 'Ort: an Benutzer:innen gerichtete Nachricht mit dem Treffpunkt'
             location_hints_help: 'Hinweise zum Standort: Zusätzliche Informationen. Beispiel: das Stockwerk im Gebäude wenn es eine Sitzung vor Ort ist, oder das Passwort wenn es eine Online-Sitzung mit eingeschränktem Zugriff ist.'
             online_meeting_url_help: 'Link: Erlaubt Teilnehmern, sich direkt mit deinem Meeting zu verbinden'
@@ -488,7 +488,7 @@ de:
           address_help: 'Adresse: wird von Geocoder zur Lokalisierung verwendet'
           available_slots_help: Belasse es auf 0, wenn unbegrenzte Plätze zur Verfügung stehen
           create_as: Besprechung erstellen als
-          disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist Dir bewusst, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer:innen dem externen Dienst zur Verfügung stellen.'
+          disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist dir bewusst, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer:innen dem externen Dienst zur Verfügung stellen.'
           location_help: 'Ort: an Benutzer:innen gerichtete Nachricht mit dem Treffpunkt'
           location_hints_help: 'Standorthinweise: Zusätzliche Informationen. Beispiel: die Etage des Gebäudes, wenn es sich um eine persönliche Sitzung oder das Sitzungspasswort, wenn es sich um ein Online-Meeting mit eingeschränktem Zugriff handelt.'
           online_meeting_url_help: 'Link: Erlaubt Teilnehmern, sich direkt mit deinem Meeting zu verbinden'

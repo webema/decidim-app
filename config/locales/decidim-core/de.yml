@@ -537,7 +537,7 @@ de:
           sign_up: Registrieren
           sign_up_as:
             legend: Registrieren als
-          subtitle: Registriere Dich, um an Diskussionen teilzunehmen und Vorschläge zu unterstützen.
+          subtitle: Registriere dich, um an Diskussionen teilzunehmen und Vorschläge zu unterstützen.
           terms: Nutzungsbedingungen
           tos_agreement: Mit der Anmeldung stimmst du den %{link} zu.
           tos_title: Nutzungsbedingungen
@@ -558,8 +558,8 @@ de:
             uncheck: Ohne Kontakterlaubnis fortfahren
           notice: |-
             <p>Hey, bist du sicher, dass du keinen Newsletter erhalten möchtest?<br>
-            Bitte überlege Dir noch einmal das Kontrollkästchen für den Newsletter doch anzukreuzen.<br>
-            Für uns ist es sehr wichtig, die Möglichkeit zu haben, Dir gelegentlich E-Mails mit wichtigen Ankündigungen schicken zu können. Du kannst dies jederzeit in den Benachrichtigungseinstellungen ändern.</p>
+            Bitte überlege dir noch einmal das Kontrollkästchen für den Newsletter doch anzukreuzen.<br>
+            Für uns ist es sehr wichtig, die Möglichkeit zu haben, dir gelegentlich E-Mails mit wichtigen Ankündigungen schicken zu können. Du kannst dies jederzeit in den Benachrichtigungseinstellungen ändern.</p>
             <p>Wenn du das Kontrollkästchen nicht ankreuzt, verpasst du möglicherweise relevante Informationen zu neuen Beteiligungsmöglichkeiten auf der Plattform.<br>
             Wenn du nach wie vor keinen Newsletter erhalten möchten, verstehen wir natürlich deine Entscheidung.</p>
             <p>Danke fürs Lesen!</p>
@@ -610,7 +610,7 @@ de:
       not_found:
         back_home: Zurück zur Startseite
         content_doesnt_exist: Diese Adresse ist falsch oder wurde entfernt.
-        title: Die von Dir gesuchte Seite kann nicht gefunden werden
+        title: Die von dir gesuchte Seite kann nicht gefunden werden
     events:
       amendments:
         amendment_accepted:
@@ -712,7 +712,7 @@ de:
           email_subject: Deine Anfrage, der Gruppe %{user_group_name} beizutreten, wurde abgelehnt!
           notification_title: Deine Anfrage, der Gruppe <a href="%{resource_path}">%{user_group_name}</a> beizutreten, wurde abgelehnt.
         promoted_to_admin:
-          email_intro: Ein/e Administrator:in der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat Dir Administratorrechte für diese Gruppe erteilt.
+          email_intro: Ein/e Administrator:in der Gruppe <a href="%{resource_url}">%{user_group_name}</a> hat dir Administratorrechte für diese Gruppe erteilt.
           email_outro: Du hast diese Benachrichtigung erhalten, weil du Mitglied dieser Gruppe bist.
           email_subject: Du bist jetzt ein Admin der Gruppe %{user_group_name}!
           notification_title: Du bist jetzt ein/e Administrator:in in der Gruppe <a href="%{resource_path}">%{user_group_name}</a>.
@@ -742,7 +742,7 @@ de:
             Ein/e Administrator:in hat dein/e %{resource_type} entfernt, weil es als %{report_reasons} gemeldet wurde.</br>
             <i>%{resource_content}</i>
       resource_endorsed:
-        email_intro: '%{endorser_name} %{endorser_nickname}, dem du folgst, hat gerade "%{resource_title}" unterstützt, und wir denken, das könnte interessant für dich sein. Schaue es Dir an und reden mit:'
+        email_intro: '%{endorser_name} %{endorser_nickname}, dem du folgst, hat gerade "%{resource_title}" unterstützt, und wir denken, das könnte interessant für dich sein. Schaue es dir an und reden mit:'
         email_outro: Du hast diese Benachrichtigung erhalten, weil du %{endorser_nickname} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
         email_subject: "%{endorser_nickname} hat eine neue Unterstützung vergeben"
         notification_title: <a href="%{resource_path}">%{resource_title}</a> %{resource_type} wurde von <a href="%{endorser_path}">%{endorser_name} %{endorser_nickname}</a> befürwortet.
@@ -1033,9 +1033,9 @@ de:
           subject: "%{manager} hat neue Nachrichten als %{group} gesendet"
         new_conversation:
           greeting: Hallo, %{recipient}!
-          intro: "%{sender} hat eine neue Unterhaltung mit Dir begonnen. Klicke hier, um diese zu sehen:"
+          intro: "%{sender} hat eine neue Unterhaltung mit dir begonnen. Klicke hier, um diese zu sehen:"
           outro: Viel Spaß mit Decidim! TODO
-          subject: "%{sender} hat ein Gespräch mit Dir begonnen"
+          subject: "%{sender} hat ein Gespräch mit dir begonnen"
         new_group_conversation:
           admin_in_group: Du hast diese Benachrichtigung erhalten, weil du ein/e Administrator:in von %{group} bist.
           greeting: Hallo, %{recipient}!
@@ -1150,7 +1150,7 @@ de:
       notify:
         body_1: Die Verarbeitung personenbezogener Daten und deren Schutz wird für uns alle immer wichtiger. Mit der neuen Datenschutz-Grundverordnung (DSGV) vom 25. Mai 2018 haben Einzelpersonen eine bessere Kontrolle über ihre personenbezogenen Daten. Aus diesem Grund benötigen wir dein "OK" um weiterhin relevante Informationen über die Aktivitäten der %{organization_name}zu senden.
         body_2: 'Wie kannst du uns deine Zustimmung geben? Klicke einfach auf den folgenden Knopf:'
-        body_3: Mit dieser Zustimmung kannst du weiterhin Informationen über die Dienste der Plattform erhalten. Wenn wir im Gegenteil keine positive Bestätigung von Dir erhalten, werden wir Dir keine Nachrichten mehr senden. Wenn du bestätigst, dass du weiterhin informiert werden möchtest, habst du jederzeit die Möglichkeit, den Vorgang abzubrechen.
+        body_3: Mit dieser Zustimmung kannst du weiterhin Informationen über die Dienste der Plattform erhalten. Wenn wir im Gegenteil keine positive Bestätigung von dir erhalten, werden wir dir keine Nachrichten mehr senden. Wenn du bestätigst, dass du weiterhin informiert werden möchtest, habst du jederzeit die Möglichkeit, den Vorgang abzubrechen.
         button: Ja, ich möchte weiterhin relevante Informationen erhalten
         greetings: Grüße,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
         hello: Hallo,
@@ -1259,7 +1259,7 @@ de:
           modal_title: Lehnst du die aktualisierten Geschäftsbedingungen wirklich ab?
         required_review:
           alert: Wir haben unsere Nutzungsbedingungen aktualisiert. Bitte überprüfe diese.
-          body: Bitte nimm Dir einen Moment Zeit, um sich über die Aktualisierungen unserer Nutzungsbedingungen zu informieren. Andernfalls kannst du die Plattform nicht nutzen.
+          body: Bitte nimm dir einen Moment Zeit, um sich über die Aktualisierungen unserer Nutzungsbedingungen zu informieren. Andernfalls kannst du die Plattform nicht nutzen.
           title: 'Erforderlich: Überprüfe die Aktualisierungen unserer Nutzungsbedingungen'
     participatory_space_private_users:
       not_allowed: Du darfst diesen Inhalt nicht sehen
@@ -1533,7 +1533,7 @@ de:
       show:
         version_index: Version %{index}
     welcome_notification:
-      default_body: <p>Hallo {{name}}, Danke für deine Anmeldung bei {{organization}} und herzlich willkommen!</p><ul><li>Wenn du Dir einen Überblick verschaffen möchtest, was du hier tun kannst, sieh Dir den Abschnitt <a href="{{help_url}}">Hilfe</a> .</li><li>Sobald du diesen gelesen hast, erhältst du dein erstes Abzeichen. Hier findest du eine <a href="{{badges_url}}">Liste aller Abzeichen</a> die du erhalten kannst, wenn du bei {{organization}}</li><li>mitmachst. Zu guter Letzt, vernetze dich mit anderen Teilnehmern! Mache Vorschläge, kommentiere und diskutiere, wie sich unser gemeinsames Anliegen fördern lasst. Verwende überzeugende Argumente, höre zu und sei offen für die Argumente Anderer. Äußere deine Ideen auf konkrete Weise, antworte geduldig und entschlossen. Verteidige deine Ideen und schließe dich den Ideen Anderer an.
+      default_body: <p>Hallo {{name}}, Danke für deine Anmeldung bei {{organization}} und herzlich willkommen!</p><ul><li>Wenn du dir einen Überblick verschaffen möchtest, was du hier tun kannst, sieh dir den Abschnitt <a href="{{help_url}}">Hilfe</a> .</li><li>Sobald du diesen gelesen hast, erhältst du dein erstes Abzeichen. Hier findest du eine <a href="{{badges_url}}">Liste aller Abzeichen</a> die du erhalten kannst, wenn du bei {{organization}}</li><li>mitmachst. Zu guter Letzt, vernetze dich mit anderen Teilnehmern! Mache Vorschläge, kommentiere und diskutiere, wie sich unser gemeinsames Anliegen fördern lasst. Verwende überzeugende Argumente, höre zu und sei offen für die Argumente Anderer. Äußere deine Ideen auf konkrete Weise, antworte geduldig und entschlossen. Verteidige deine Ideen und schließe dich den Ideen Anderer an.
       default_subject: Danke, dass du {{organization}} beigetreten bist!
     wizard_step_form:
       wizard_aside:
@@ -1580,7 +1580,7 @@ de:
         subject: Bestätigungsanweisungen
       email_changed:
         greeting: Hallo %{recipient}!
-        message: Wir setzen uns mit Dir in Verbindung, um dich darüber zu informieren, dass deine E-Mail-Adresse auf %{email} geändert wurde.
+        message: Wir setzen uns mit dir in Verbindung, um dich darüber zu informieren, dass deine E-Mail-Adresse auf %{email} geändert wurde.
         subject: E-Mail geändert
       invitation_instructions:
         accept: Einladung annehmen
@@ -1606,7 +1606,7 @@ de:
         subject: Du wurdest eingeladen, %{organization} zu administrieren
       password_change:
         greeting: Hallo %{recipient}!
-        message: Wir kontaktieren Dich, um dich darüber zu informieren, dass dein Passwort geändert wurde.
+        message: Wir kontaktieren dich, um dich darüber zu informieren, dass dein Passwort geändert wurde.
         subject: Passwort geändert
       reset_password_instructions:
         action: Mein Passwort ändern
@@ -1738,7 +1738,7 @@ de:
           accept_all: Alle akzeptieren
           accept_only_essential: Nur essentielle Cookies akzeptieren
           cookie_settings: Einstellungen
-          description: Wir verwenden Cookies auf unserer Website, um die Leistung und den Inhalt der Website zu verbessern. Die Cookies ermöglichen uns, Dir eine individuellere Nutzererfahrung und Social-Media-Kanäle zu bieten.
+          description: Wir verwenden Cookies auf unserer Website, um die Leistung und den Inhalt der Website zu verbessern. Die Cookies ermöglichen uns, dir eine individuellere Nutzererfahrung und Social-Media-Kanäle zu bieten.
           title: Informationen über die auf dieser Website verwendeten Cookies
         modal:
           accept_all: Alle akzeptieren
@@ -1754,7 +1754,7 @@ de:
             description: Diese Cookies sammeln Informationen darüber, wie du die Website nutzt, welche Seiten du besucht hast und welche Links du angeklickt hast.
             title: Marketing
           preferences:
-            description: Diese Cookies ermöglichen es der Website, sich an die von Dir in der Vergangenheit getroffenen Auswahlen zu erinnern
+            description: Diese Cookies ermöglichen es der Website, sich an die von dir in der Vergangenheit getroffenen Auswahlen zu erinnern
             title: Präferenzen
           save_settings: Einstellungen speichern
           title: Cookie Einstellungen
