@@ -1,6 +1,10 @@
 .home-section.zukunftsprozess {
   padding: 4rem 0;
   background-color: transparent;
+  background-image: url("~images/startpage_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center -200px;
 
   .cta {
     margin: 2rem 2rem 0 2rem;
@@ -17,7 +21,7 @@
 
   .blog-post {
     position: relative;
-    margin: 2rem 2rem 2rem 0;
+    margin: 3rem 3rem 3rem 0;
 
     img {
       transform: rotate(-2deg);
