@@ -55,3 +55,5 @@ yarn-debug.log*
 /public/decidim-packs
 /public/sw.js
 /public/sw.js.map
+
+.DS_Store
