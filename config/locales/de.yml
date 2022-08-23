@@ -87,7 +87,6 @@ de:
           step:
             creation_enabled: creation_enabled
 
-
   forms:
     length_validator:
       minimum:
