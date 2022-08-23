@@ -58,10 +58,8 @@
   }
 }
 
-
-
 a.primary_button {
-  background-color: $primary;
+  background-color: var(--primary);
   border: 0 solid #E5E7EB;
   box-sizing: border-box;
   color: #000000;
