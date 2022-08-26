@@ -580,11 +580,17 @@ $navbar-active-shadow-medium: inset 0 -8px 0 0 var(--primary);
   display: block;
   padding: 1em 2em;
   color: $navbar-color;
+  font-weight: 800;
 
   &:hover{
     background: $navbar-bg-hover;
     color: $navbar-color-hover;
-    text-decoration: underline;
+    text-decoration: none;
+    box-shadow: $navbar-active-shadow-small;
+
+    @include breakpoint(medium){
+      box-shadow: $navbar-active-shadow-medium;
+    }
   }
 
   &:focus{

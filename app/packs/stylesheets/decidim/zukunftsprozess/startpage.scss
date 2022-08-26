@@ -53,7 +53,7 @@
     &:after {
       content: '';
       position: absolute;
-      border: 1px solid #000000;
+      border: 1px solid $black;
       bottom: 0px;
       left: 0px;
       width: calc(100% - 1px);
@@ -62,31 +62,12 @@
   }
 }
 
-a.primary_button {
-  background-color: var(--primary);
-  border: 0 solid #E5E7EB;
-  box-sizing: border-box;
-  color: #000000;
+a.startpage_primary_button {
   display: flex;
   flex-direction: column;
-  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: 1.5rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1.5rem;
-  padding: .75rem .5rem;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
   width: 100%;
-  max-width: 460px;
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-
   margin: 1rem 0;
+  font-size: 1.5rem;
 
   &.initiatives, &.processes {
     transform: rotate(-2deg);
@@ -103,24 +84,55 @@ a.primary_button {
   }
 }
 
-a.primary_button:focus {
-  outline: 0;
+a.startpage_primary_button, button.button:not(.secondary), a.button:not(.secondary) {
+  background-color: var(--primary);
+  border: 0 solid #E5E7EB;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: $black;
+  
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.5rem;
+  padding: .75rem .5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-transform: none;
+  letter-spacing: 0;
+
+  &:hover {
+    color: $black;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    border: 1px solid $black;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+  }
+
+  &:hover:after {
+    bottom: 2px;
+    left: 2px;
+  }
 }
 
-a.primary_button:after {
-  content: '';
-  position: absolute;
-  border: 1px solid #000000;
-  bottom: 4px;
-  left: 4px;
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
-}
 
-a.primary_button:hover:after {
-  bottom: 2px;
-  left: 2px;
-}
+
+
+
+
 
 @media (min-width: 768px) {
   a.primary_button {
