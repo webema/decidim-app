@@ -1,0 +1,25 @@
+- provide :meta_title, t('title', scope: 'ema.blog_posts.index')
+
+.wrapper
+  .row 
+    .columns
+
+      - @blog_posts.each do |blog_post|
+        .card.card--post
+          .row
+            .columns.medium-3
+              - if blog_post.hero_image.attached?
+                = image_tag blog_post.attached_uploader(:hero_image).variant_path :small
+            .columns.medium-9
+              .card__header
+              = link_to post_path(blog_post), class: 'card__link' do
+                %h2.card__title
+                  = blog_post.title
+ 
+              = decidim_sanitize_editor(blog_post.body.html_safe)
+
+
+              .card__author
+                = l(blog_post.created_at, format: :short)
+
+    = decidim_paginate @blog_posts

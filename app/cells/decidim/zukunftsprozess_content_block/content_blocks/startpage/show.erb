@@ -9,11 +9,12 @@
     </div>
     <div class="column">
       <div class="blog-post">
-        <%= image_pack_tag "media/images/blog_post.jpeg" %>
+        <%= image_tag recent_blog_post.attached_uploader(:hero_image).variant_path :medium %>
         <div class="teaser">
-          Lorem ipsum dolor sit amet, consectetur adipisici elit
-          <br>
-          <%= link_to 'weiterlesen', '#' %>
+          <%= truncate(recent_blog_post.title, length: 60) %>
+          <div class="text-right">
+            <%= link_to 'weiterlesen', post_path(recent_blog_post) %>
+          </div>
         </div>
       </div>
     </div>

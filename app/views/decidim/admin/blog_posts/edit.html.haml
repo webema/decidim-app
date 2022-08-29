@@ -1,0 +1,22 @@
+= decidim_form_for(@form, url: post_path(@form), html: { class: 'form' }) do |f|
+  .card
+    .card__content
+      .card-divider
+        %h2.card-title
+          = t('title', scope: 'ema.blog_posts.admin.edit')
+
+      .card-section
+        .row.column
+          = f.text_field :title
+
+        .row.column
+          .field
+            = f.editor :body, lines: 8, toolbar: :full
+
+        .row.columns.xlarge-6
+          .field
+            = f.upload :hero_image
+
+  .button--double
+    = f.submit t('save', scope: 'ema.blog_posts.admin.edit'), class: 'button', data: { disable_with: true }
+    = link_to t('cancel', scope: 'ema.blog_posts.admin.edit'), posts_path, class: 'button'

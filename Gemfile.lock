@@ -430,6 +430,9 @@ GEM
     globalid (1.0.0)
       activesupport (>= 5.0)
     graphql (1.12.24)
+    haml (5.2.2)
+      temple (>= 0.8.0)
+      tilt
     graphql-docs (2.1.0)
       commonmarker (~> 0.16)
       escape_utils (~> 1.2)
@@ -828,6 +831,7 @@ DEPENDENCIES
   decidim-dev!
   decidim-initiatives!
   faker (~> 2.14)
+  haml
   letter_opener_web (~> 2.0)
   listen (~> 3.1)
   puma (>= 5.0.0)

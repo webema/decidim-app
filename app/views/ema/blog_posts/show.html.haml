@@ -1,0 +1,16 @@
+.wrapper
+  .row
+
+    .card.card--post
+      .card__content
+        .card__header
+          %h2.card__title
+            = @blog_post.title
+
+          .card__author
+            = l(@blog_post.created_at, format: :short)
+
+        - if @blog_post.hero_image.attached?
+          = image_tag @blog_post.attached_uploader(:hero_image).variant_path :large
+
+        = decidim_sanitize_editor(@blog_post.body.html_safe)
