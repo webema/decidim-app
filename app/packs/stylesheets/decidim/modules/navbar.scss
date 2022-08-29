@@ -320,8 +320,9 @@ $navbar-active-shadow-medium: inset 0 -8px 0 0 var(--primary);
 }
 
 .language-choose{
+  font-size: 80%;
+
   @include breakpoint(smallmedium down){
-    font-size: .8rem;
     position: absolute;
     top: -2.2rem;
     left: .5rem;
@@ -359,6 +360,7 @@ $navbar-active-shadow-medium: inset 0 -8px 0 0 var(--primary);
   text-align: right;
   padding-right: 2.5rem;
   display: none;
+  font-size: 80%;
 
   // hide caret down
   .dropdown.menu > li.is-dropdown-submenu-parent > a::after{
@@ -500,6 +502,8 @@ $navbar-active-shadow-medium: inset 0 -8px 0 0 var(--primary);
 }
 
 .topbar__admin__link{
+  font-size: 80%;
+
   a{
     color: $black;
 
@@ -580,7 +584,7 @@ $navbar-active-shadow-medium: inset 0 -8px 0 0 var(--primary);
   display: block;
   padding: 1em 2em;
   color: $navbar-color;
-  font-weight: 800;
+  font-weight: 700;
 
   &:hover{
     background: $navbar-bg-hover;

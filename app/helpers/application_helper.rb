@@ -3,7 +3,7 @@ module ApplicationHelper
     return unless items.any?
 
     items.prepend({
-      name: t(".all_#{current_participatory_space_key}_menu_item"),
+      name: icon("chevron-left", aria_label: t(".all_#{current_participatory_space_key}_menu_item"), role: "img"),
       url: extended_navigation_bar_back_link_path
     })
 
