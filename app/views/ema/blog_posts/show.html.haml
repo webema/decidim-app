@@ -12,5 +12,6 @@
 
         - if @blog_post.hero_image.attached?
           = image_tag @blog_post.attached_uploader(:hero_image).variant_path :large
-
-        = decidim_sanitize_editor(@blog_post.body.html_safe)
+          
+        .body
+          = decidim_sanitize_editor(@blog_post.body.html_safe)

@@ -11,7 +11,7 @@
       <div class="blog-post">
         <%= image_tag recent_blog_post.attached_uploader(:hero_image).variant_path :medium %>
         <div class="teaser">
-          <%= truncate(recent_blog_post.title, length: 60) %>
+          <%= truncate(recent_blog_post.title, length: 50) %>
           <div class="text-right">
             <%= link_to 'weiterlesen', post_path(recent_blog_post) %>
           </div>

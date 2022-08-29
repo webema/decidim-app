@@ -1,0 +1,36 @@
+.card--post {
+  .body {
+    margin: 1rem 0 0;
+  }
+}
+
+.blog-posts {
+  .blog-post {
+    background-color: $white;
+
+    .image {
+      width: 300px;
+      height: 200px;
+      background-color: $dark-gray;
+    }
+
+    .text {
+      padding: 1rem 0;
+
+      p {
+        margin-bottom: .5rem;
+      }
+    }
+
+    @include breakpoint(small down){
+      .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .text {
+        padding: 0 1rem .5rem;
+      }
+    }
+  }
+}
