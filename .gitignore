@@ -53,3 +53,7 @@ yarn-debug.log*
 
 # Ignore precompiled javascript packs
 /public/decidim-packs
+/public/sw.js
+/public/sw.js.map
+
+.DS_Store

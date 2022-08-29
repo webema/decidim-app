@@ -25,8 +25,8 @@ de:
               bar: Bar
               foo: Foo
           step:
-            endorsements_blocked: Befürwortungen blockiert
-            endorsements_enabled: Befürwortungen aktiviert
+            endorsements_blocked: Unterstützung blockiert
+            endorsements_enabled: Unterstützung aktiviert
             readonly_step_attribute: Schritt-Attribut schreibgeschützt
             test_options:
               bar: Bar

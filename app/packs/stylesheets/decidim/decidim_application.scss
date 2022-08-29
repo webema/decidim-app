@@ -5,3 +5,22 @@
 // To override CSS variables or Foundation settings use _decidim-settings.scss
 //
 // By default this is empty.
+
+@import './zukunftsprozess/startpage';
+
+.header {
+  box-shadow: 0 5px 5px rgba(black, .25);
+}
+
+.decidim-accessibility-badge {
+  display: none !important;
+}
+
+.home-section.zukunftsprozess {
+  .cta {
+    h1 {
+      font-family: 'Literata', sans-serif !important;
+      font-weight: 900;
+    }
+  }
+}

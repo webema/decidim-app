@@ -3,3 +3,6 @@
 
 // Load images
 require.context("../../images", true)
+
+import "@fontsource/open-sans";
+import "@fontsource/literata";

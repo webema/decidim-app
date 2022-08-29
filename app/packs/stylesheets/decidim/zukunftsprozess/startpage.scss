@@ -1,0 +1,145 @@
+.home-section.zukunftsprozess {
+  padding: 4rem 0;
+  background-color: transparent;
+  background-image: url("~images/startpage_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center -200px;
+
+  .cta {
+    margin: 2rem 2rem 0 2rem;
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+
+  .blog-post {
+    position: relative;
+    margin: 3rem 3rem 3rem 0;
+
+    img {
+      transform: rotate(-2deg);
+    }
+
+    .teaser {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+
+      transform: rotate(-2deg);
+
+      background-color: $white;
+      width: 45%;
+      height: 35%;
+
+      padding: .5rem;
+      line-height: 1.4rem;
+
+      font-size: 1.2rem;
+
+      a {
+        text-decoration: none;
+        font-weight: 600;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      border: 1px solid $black;
+      bottom: 0px;
+      left: 0px;
+      width: calc(100% - 1px);
+      height: calc(100% - 1px);
+    }
+  }
+}
+
+#content {
+  a.startpage_primary_button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  
+    &.initiatives, &.processes {
+      transform: rotate(-2deg);
+    }
+  
+    &.assemblies {
+      transform: rotate(2deg);
+    }
+  
+    & div.small {
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-top: .3rem;
+    }
+  }
+  
+  a.startpage_primary_button, button.button:not(.secondary):not(.process-nav__more), a.button:not(.secondary) {
+    background-color: var(--primary);
+    border: 0 solid #E5E7EB;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: $black;
+    
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.5rem;
+    padding: .75rem .5rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-transform: none;
+    letter-spacing: 0;
+  
+    &:hover {
+      color: $black;
+    }
+  
+    &:focus {
+      outline: 0;
+    }
+  
+    &:after {
+      content: '';
+      position: absolute;
+      border: 1px solid $black;
+      bottom: 4px;
+      left: 4px;
+      width: calc(100% - 1px);
+      height: calc(100% - 1px);
+    }
+  
+    &:hover:after {
+      bottom: 2px;
+      left: 2px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    a.primary_button {
+      padding: 2rem 1rem;
+      font-size: 1.6rem;
+  
+      & div.small {
+        margin-top: .3rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+

@@ -70,7 +70,7 @@ de:
             display_condition: Bedingung anzeigen
             mandatory: Diese Bedingung muss immer erfüllt werden, unabhängig vom Status anderer Bedingungen
             remove: Löschen
-            save_warning: Vergiss nicht, das Formular zu speichern, bevor Du die Anzeigebedingungen konfigurierst
+            save_warning: Vergiss nicht, das Formular zu speichern, bevor du die Anzeigebedingungen konfigurierst
             select_answer_option: Antwortoption auswählen
             select_condition_question: Eine Frage
             select_condition_type: Wähle einen Bedingungstyp
@@ -81,7 +81,7 @@ de:
             add_question: Frage hinzufügen
             add_separator: Trennzeichen hinzufügen
             add_title_and_description: Füge Titel und Beschreibung hinzu
-            already_answered_warning: Der Fragebogen wurde bereits von einigen Benutzenden beantwortet, sodass Du die Fragen nicht ändern kannst.
+            already_answered_warning: Der Fragebogen wurde bereits von einigen Benutzenden beantwortet, sodass du die Fragen nicht ändern kannst.
             collapse: Alle Fragen einklappen
             expand: Alle Fragen ausklappen
             preview: Vorschau
@@ -154,7 +154,7 @@ de:
           max_choices: 'Max Auswahlmöglichkeiten: %{n}'
         show:
           answer_questionnaire:
-            anonymous_user_message: <a href="%{sign_in_link}">Melde Dich mit Deinem Konto an</a> oder <a href="%{sign_up_link}">Registriere Dich</a>, um den Fragebogen zu beantworten.
+            anonymous_user_message: <a href="%{sign_in_link}">Melde dich mit deinem Konto an</a> oder <a href="%{sign_up_link}">Registriere dich</a>, um den Fragebogen zu beantworten.
             title: Beantworte den Fragebogen
           current_step: Schritt %{step}
           of_total_steps: von %{total_steps}
@@ -168,14 +168,14 @@ de:
             body: Der Fragebogen ist nur für Privatanwender verfügbar
             title: Fragebogen geschlossen
           questionnaire_js_disabled:
-            body: Manche Funktionen des Formulars werden deaktiviert sein. Aktiviere JavaScript in Deinem Browser für eine bessere Erfahrung.
+            body: Manche Funktionen des Formulars werden deaktiviert sein. Aktiviere JavaScript in deinem Browser für eine bessere Erfahrung.
             title: JavaScript ist deaktiviert
           questionnaire_not_published:
             body: Dieses Formular ist noch nicht veröffentlicht.
-          tos_agreement: Mit der Teilnahme stimmst Du den Nutzungsbedingungen zu
+          tos_agreement: Mit der Teilnahme stimmst du den Nutzungsbedingungen zu
       step_navigation:
         show:
-          are_you_sure: Diese Aktion kann nicht rückgängig gemacht werden und Du kannst Deine Antworten nicht bearbeiten. Bist Du sicher?
+          are_you_sure: Diese Aktion kann nicht rückgängig gemacht werden und du kannst deine Antworten nicht bearbeiten. Bist du sicher?
           back: Zurück
           continue: Weiter
           submit: einreichen

@@ -25,7 +25,7 @@ de:
       component:
         name: Name
         published_at: Veröffentlicht unter
-        weight: Bestellposition
+        weight: Sortierung
       id: ID
       import:
         user_group_id: Importierte Inhalte erstellen als
@@ -38,12 +38,12 @@ de:
         available_authorizations: Verfügbare Autorisierungen
         badges_enabled: Abzeichen aktivieren
         comments_max_length: Maximale Länge der Kommentare (0 für Standardwert)
-        cta_button_path: Call To Action Schaltfläche Pfad
-        cta_button_text: Call To Action Schaltfläche Text
+        cta_button_path: Pfad der Call To Action Schaltfläche
+        cta_button_text: Text der Call To Action Schaltfläche
         customize_welcome_notification: Willkommens-Benachrichtigung anpassen
         default_locale: Standardgebietsschema
         description: Beschreibung
-        enable_omnipresent_banner: Zeige allgegenwärtiges Banner
+        enable_omnipresent_banner: Das allgegenwärtige Banner anzeigen
         enable_participatory_space_filters: Bereichs- und Gebietsfilter aktivieren
         facebook_handler: Facebook-Handler
         favicon: Icon
@@ -54,9 +54,9 @@ de:
         header_snippets: Header-Snippets
         highlight_alternative_color: Hervorhebung, Alternative
         highlight_color: Hervorheben
-        highlighted_content_banner_action_subtitle: Aktion Schaltfläche Untertitel
+        highlighted_content_banner_action_subtitle: Untertitel der Aktionsschaltfläche
         highlighted_content_banner_action_title: Titel der Aktionsschaltfläche
-        highlighted_content_banner_action_url: Aktionsschaltflächen-URL
+        highlighted_content_banner_action_url: URL der Aktionsschaltfläche
         highlighted_content_banner_enabled: Das hervorgehobene Inhaltsbanner anzeigen
         highlighted_content_banner_image: Bild
         highlighted_content_banner_short_description: Kurze Beschreibung
@@ -112,14 +112,14 @@ de:
         content: Inhalt
         organization: Organisation
         show_in_footer: In der Fußzeile anzeigen
-        slug: URL-Block
+        slug: URL-Slug
         title: Titel
-        weight: Bestellposition
+        weight: Sortierung
       static_page_topic:
         description: Beschreibung
         show_in_footer: In der Fußzeile anzeigen
         title: Titel
-        weight: Bestellposition
+        weight: Sortierung
       user_group_csv_verification:
         file: Datei
     errors:
@@ -143,7 +143,7 @@ de:
     attributes:
       decidim/static_page:
         content: Inhalt
-        slug: URL-Block
+        slug: URL-Slug
         title: Titel
       doorkeeper/application:
         authorize_url: URL autorisieren
@@ -186,12 +186,12 @@ de:
           success: Super! Du hast die Admin-Nutzungsbedingungen akzeptiert.
         actions:
           accept: Ich stimme den folgenden Bedingungen zu
-          are_you_sure: Bist Du sicher, dass Du die Admin-Nutzungsbedingungen ablehnen möchtest?
+          are_you_sure: Bist du sicher, dass du die Admin-Nutzungsbedingungen ablehnen möchtest?
           refuse: Die Admin-Nutzungsbedingungen ablehnen
           title: Den Admin-Nutzungsbedingungen zustimmen
         required_review:
           alert: 'Erforderlich: Überprüfe unsere Admin-Nutzungsbedingungen'
-          callout: Bitte nimm Dir einen Moment Zeit, um die Admin-Nutzungsbedingungen zu lesen. Ansonsten kannst Du die Plattform nicht verwalten.
+          callout: Bitte nimm dir einen Moment Zeit, um die Admin-Nutzungsbedingungen zu lesen. Ansonsten kannst du die Plattform nicht verwalten.
           cta: Lies diese jetzt.
         title: Admin-Nutzungsbedingungen
       area_types:
@@ -214,7 +214,7 @@ de:
           error: Beim Erstellen eines neuen Bereichs ist ein Fehler aufgetreten.
           success: Bereich wurde erfolgreich erstellt.
         destroy:
-          has_spaces: Dieser Bereich hat abhängige partizipative Räume. Bitte stelle sicher, dass kein partizipativer Raum mehr diesen Bereich referenziert, bevor Du ihn löschst.
+          has_spaces: Dieser Bereich hat abhängige partizipative Räume. Bitte stelle sicher, dass kein partizipativer Raum mehr diesen Bereich referenziert, bevor du ihn löschst.
           success: Bereich wurde erfolgreich gelöscht
         edit:
           title: Bereich bearbeiten
@@ -262,14 +262,14 @@ de:
           error: Beim Aktualisieren dieses Anhangs ist ein Fehler aufgetreten.
           success: Anhang wurde erfolgreich aktualisiert.
       attachments_privacy_warning:
-        message: Sei vorsichtig, wenn Du mit Anhängen in einem privaten Raum arbeitest. Jeder Teilnehmende können dieses Dokument mit anderen teilen.
+        message: Sei vorsichtig, wenn du mit Anhängen in einem privaten Raum arbeitest. Jeder Teilnehmende können dieses Dokument mit anderen teilen.
       autocomplete:
         no_results: keine Ergebnisse gefunden
         search_prompt: Gib mindestens drei Zeichen ein, um zu suchen
       block_user:
         new:
           action: Konto sperren und Begründung senden
-          description: Das Blockieren eines Benutzers / einer Benutzerin wird sein/ihr Konto unbrauchbar machen. Du kannst begründen und Richtlinien dafür bieten, wie er/sie vorgehen könnte, damit Du in Betracht ziehst, die Blockierung wieder aufzuheben.
+          description: Das Blockieren eines Benutzers / einer Benutzerin wird sein/ihr Konto unbrauchbar machen. Du kannst begründen und Richtlinien dafür bieten, wie er/sie vorgehen könnte, damit du in Betracht ziehst, die Blockierung wieder aufzuheben.
           justification: Begründung
           title: Benutzer:in %{name} blockieren
       categories:
@@ -385,7 +385,7 @@ de:
           reportable_type_string_eq:
             label: Art
         officialized_at_null:
-          label: Zustand
+          label: Status
           values:
             'false': Offizialisiert
             'true': Nicht offiziell
@@ -518,7 +518,7 @@ de:
           success: Der/Die verwaltete Benutzer:in wurde erfolgreich hochgestuft.
         promotions:
           new:
-            explanation: Verwaltete Benutzer:innen können zu Standardbenutzenden heraufgestuft werden. Das bedeutet, dass sie zu der Anwendung eingeladen werden und nicht in der Lage sind, sie erneut zu repräsentieren. Der/Die eingeladene Benutzer:in erhält eine E-Mail, um Deine Einladung anzunehmen.
+            explanation: Verwaltete Benutzer:innen können zu Standardbenutzenden heraufgestuft werden. Das bedeutet, dass sie zu der Anwendung eingeladen werden und nicht in der Lage sind, sie erneut zu repräsentieren. Der/Die eingeladene Benutzer:in erhält eine E-Mail, um deine Einladung anzunehmen.
             new_managed_user_promotion: Neue verwaltete Benutzer:innen-Beförderung
             promote: Fördern
       menu:
@@ -539,7 +539,7 @@ de:
         reported_users: Gemeldete Nutzer
         scope_types: Bereichstypen
         scopes: Bereiche
-        settings: die Einstellungen
+        settings: Einstellungen
         static_pages: Seiten
         user_groups: Benutzer:innen-Gruppen
         users: Benutzer:innen
@@ -583,7 +583,7 @@ de:
             subject: Gegenstand
           name: Newsletter
         participatory_space_private_user:
-          name: Participatory Space private/r Benutzer:in
+          name: private/r Benutzer:in der konKreation
         scope:
           fields:
             name: Name
@@ -622,7 +622,7 @@ de:
             document_number: Dokumentnummer
             name: Name
             phone: Telefon
-            state: Zustand
+            state: Status
             users_count: Benutzer:innen zählen
       moderated_users:
         index:
@@ -692,7 +692,7 @@ de:
           all: Alle
           all_users: 'Alle :innen'
           and: 'und '
-          confirm_delete: Möchtest Du diesen Newsletter wirklich löschen?
+          confirm_delete: Möchtest du diesen Newsletter wirklich löschen?
           followers: 'Follower '
           has_been_sent_to: 'Wurde gesendet an: '
           no_scopes: Keine Themenbereiche
@@ -707,16 +707,16 @@ de:
         select_recipients_to_deliver:
           all_spaces: Alle
           all_users_help: Sendet Newsletter an alle bestätigten Benutzer:innen.
-          confirm_deliver: Möchtest Du diesen Newsletter wirklich liefern? Diese Aktion kann nicht rückgängig gemacht werden.
+          confirm_deliver: Möchtest du diesen Newsletter wirklich liefern? Diese Aktion kann nicht rückgängig gemacht werden.
           deliver: Liefern Newsletter
           followers_help: Sendet den Newsletter an alle bestätigten Benutzer:innen, die den ausgewählten Teilnehmerräumen in der Liste folgen.
           none: Niemand
           participants_help: Sendet den Newsletter an alle bestätigten Benutzer:innen, die an den ausgewählten Teilnehmerräumen der Liste teilgenommen haben.
           recipients_count: Dieser Newsletter wird an <strong id='recipients_count'>%{count}</strong> Teilnehmende gesendet.
-          scopes_help: Sendet den Newsletter an Teilnehmer, die einen der gewählten Themenbereiche in den "Meine Interessen" Einstellungen Deines Kontos aktiviert haben.
-          select_scopes: Nur Teilnehmende anzeigen, die einen der gewählten Themenbereiche in Deinen "Meine Interessen" Einstellungen Deines Kontos aktiviert haben.
+          scopes_help: Sendet den Newsletter an Teilnehmer, die einen der gewählten Themenbereiche in den "Meine Interessen" Einstellungen deines Kontos aktiviert haben.
+          select_scopes: Nur Teilnehmende anzeigen, die einen der gewählten Themenbereiche in deinen "Meine Interessen" Einstellungen deines Kontos aktiviert haben.
           select_spaces: Wähle Abschnitte, um den Newsletter zu unterteilen
-          select_users: Wähle aus, welchen Benutzer:innen Du den Newsletter senden möchtest
+          select_users: Wähle aus, welchen Benutzer:innen du den Newsletter senden möchtest
           send_to_all_users: An alle Benutzer:innen senden
           send_to_followers: An Follower senden
           send_to_participants: An Teilnehmende senden
@@ -760,8 +760,8 @@ de:
           officialize: Offizialisieren
           title: Benutzer:in "%{name}" offiziellisieren
         show_email_modal:
-          close_modal: Modal schließen
-          description: Wenn Du eine:n Teilnehmenden direkt kontaktieren möchtest, kannst Du auf die Schaltfläche "Anzeigen" klicken, um seine E-Mail-Adresse zu sehen. Diese Aktion wird protokolliert.
+          close_modal: Dialog schließen
+          description: Wenn du eine:n Teilnehmenden direkt kontaktieren möchtest, kannst du auf die Schaltfläche "Anzeigen" klicken, um seine E-Mail-Adresse zu sehen. Diese Aktion wird protokolliert.
           email_address: E-Mail-Adresse
           full_name: Voller Name
           hidden: versteckt
@@ -779,7 +779,7 @@ de:
           github: GitHub
           instagram: Instagram
           rich_text_editor_in_public_views_help: In einigen Textbereichen können Teilnehmende mit Hilfe des Rich-Text-Editors HTML-Tags einfügen.
-          social_handlers: Sozial
+          social_handlers: Soziale Medien
           twitter: Twitter
           url: URL
           youtube: Youtube
@@ -792,16 +792,16 @@ de:
         form:
           colors:
             colors_title: Organisationsfarben
-            colors_warning_html: Warnung! Das Ändern dieser Farben kann die für Barrierefreiheit notwendigen Kontraste brechen. Du kannst den Kontrast Deiner Wahl mit <a href="%{link}">WebAIM Contrast Checker</a> oder ähnlichen Tools überprüfen.
-            header_snippets_help: Verwende dieses Feld, um Dinge zum HTML-Kopf hinzuzufügen. Die häufigste Verwendung ist die Integration von Drittanbieterdiensten, für die zusätzliches JavaScript oder CSS erforderlich ist. Außerdem kannst Du damit dem HTML zusätzliche Meta-Tags hinzufügen. Beachte, dass dies nur auf öffentlichen Seiten und nicht im Admin-Bereich erfolgt.
+            colors_warning_html: Warnung! Das Ändern dieser Farben kann die für Barrierefreiheit notwendigen Kontraste brechen. Du kannst den Kontrast deiner Wahl mit <a href="%{link}">WebAIM Contrast Checker</a> oder ähnlichen Tools überprüfen.
+            header_snippets_help: Verwende dieses Feld, um Dinge zum HTML-Kopf hinzuzufügen. Die häufigste Verwendung ist die Integration von Drittanbieterdiensten, für die zusätzliches JavaScript oder CSS erforderlich ist. Außerdem kannst du damit dem HTML zusätzliche Meta-Tags hinzufügen. Beachte, dass dies nur auf öffentlichen Seiten und nicht im Admin-Bereich erfolgt.
           cta_button_path_help: 'Du kannst überschreiben, wo die Call To Action-Schaltfläche in der Homepage verlinkt ist. Verwende hier Teilpfade, nicht vollständige URLs. Akzeptiert Buchstaben, Zahlen, Bindestriche und Schrägstriche und muss mit einem Buchstaben beginnen. Die Call To Action-Schaltfläche wird auf der Startseite zwischen Begrüßungstext und Beschreibung angezeigt. Beispiel: %{url}'
-          cta_button_text_help: Du kannst den Text der Call To Action-Schaltfläche auf der Startseite für jede verfügbare Sprache in Deiner Organisation überschreiben. Wenn nicht festgelegt, wird der Standardwert verwendet. Die Call To Action-Schaltfläche wird auf der Startseite zwischen Begrüßungstext und Beschreibung angezeigt.
+          cta_button_text_help: Du kannst den Text der Call To Action-Schaltfläche auf der Startseite für jede verfügbare Sprache in deiner Organisation überschreiben. Wenn nicht festgelegt, wird der Standardwert verwendet. Die Call To Action-Schaltfläche wird auf der Startseite zwischen Begrüßungstext und Beschreibung angezeigt.
           homepage_appearance_title: Homepage-Erscheinungsbild bearbeiten
-          homepage_highlighted_content_banner_title: Highlighted Inhaltsbanner
+          homepage_highlighted_content_banner_title: Hervorgehobenes Inhaltsbanner
           images:
             layout_appearance_title: Layout-Layout bearbeiten
             preview: Vorschau
-          omnipresent_banner_appearance_title: Bearbeite das allgegenwärtige Banner
+          omnipresent_banner_appearance_title: Allgegenwärtiges Banner
       organization_external_domain_whitelist:
         edit:
           update: Aktualisieren
@@ -822,17 +822,17 @@ de:
           update: Aktualisieren
       participatory_space_private_users:
         create:
-          error: Beim Hinzufügen eines privaten Benutzers für diesen partizipativen Bereich ist ein Fehler aufgetreten.
-          success: Participatory Space Privater Benutzerzugriff erfolgreich erstellt.
+          error: Beim Hinzufügen eines privaten Benutzers bzw. einer privaten Benutzerin für diese konKreation ist ein Fehler aufgetreten.
+          success: Der private Benutzerzugriff für diese konKreation wurde erfolgreich erstellt.
         destroy:
-          error: Beim Löschen eines privaten Benutzers für diesen partizipativen Bereich ist ein Fehler aufgetreten.
-          success: Participatory Space Privater Benutzerzugriff wurde erfolgreich zerstört.
+          error: Beim Löschen eines privaten Benutzers bzw. einer privaten Benutzerin für diese konKreation ist ein Fehler aufgetreten.
+          success: Der private Benutzerzugriff für diese konKreation wurde erfolgreich gelöscht.
         index:
           import_via_csv: Aus CSV-Datein importieren
-          title: Participatory Space privater Benutzer
+          title: Private Benutzer:innen
         new:
           create: Erstellen
-          title: Neue/r private/r Benutzer:in des Participatory Space.
+          title: Neue/r private/r Benutzer:in
       participatory_space_private_users_csv_imports:
         create:
           invalid: Beim Lesen der CSV-Datei ist ein Fehler aufgetreten.
@@ -840,11 +840,11 @@ de:
         new:
           destroy:
             button: Alle private Teilnehmende auswählen
-            confirm: Bist Du sicher, dass Du alle privaten Teilnehmenden entfernen möchten? Diese Aktion kann nicht rückgängig gemacht werden. Du wirst sie nicht wiederherstellen können.
+            confirm: Bist du sicher, dass du alle privaten Teilnehmenden entfernen möchten? Diese Aktion kann nicht rückgängig gemacht werden. Du wirst sie nicht wiederherstellen können.
             empty: Du hast keine private Teilnehmende.
             explanation: Du hast %{count} private Teilnehmende.
             title: Alle private Teilnehmende entfernen
-          explanation: 'Lade Deine CSV-Datei hoch. Diese muss zwei Spalten haben ohne Kopfzeile, mit E-Mail in der ersten Spalte der Datei und Namen in der letzten Spalte der Datei (E-Mail, Name) in Bezug auf die Benutzer, die Du dem Beteiligungsbereich hinzufügen möchtest. Vermeide ungültige Zeichen wie `<>?%&^*#@()[]=+:;"{}\|` im Namen des Nutzers zu verwenden.'
+          explanation: 'Lade deine CSV-Datei hoch. Diese muss zwei Spalten haben ohne Kopfzeile, mit E-Mail in der ersten Spalte der Datei und Namen in der letzten Spalte der Datei (E-Mail, Name) in Bezug auf die Benutzer, die du dem Beteiligungsbereich hinzufügen möchtest. Vermeide ungültige Zeichen wie `<>?%&^*#@()[]=+:;"{}\|` im Namen des Nutzers zu verwenden.'
           title: CSV-Datei hochladen
           upload: Hochladen
       reminders:
@@ -898,7 +898,7 @@ de:
           success: Bereich wurde erfolgreich aktualisiert
       share_tokens:
         actions:
-          confirm_destroy: Bist Du sicher, dass Du diesen Token löschen willst?
+          confirm_destroy: Bist du sicher, dass du diesen Token löschen willst?
           destroy: Löschen
           share: Teilen
         destroy:
@@ -993,8 +993,8 @@ de:
           verify_via_csv: Überprüfe über CSV
       user_groups_csv_verifications:
         new:
-          explanation: Lade Deine CSV-Datei hoch. In der ersten Spalte der Datei müssen die offiziellen E-Mails der Benutzer:innen-Gruppen in Deiner Organisation enthalten sein, ohne Kopfzeilen. Nur Benutzer:innen-Gruppen, die ihre E-Mail bestätigt haben und deren E-Mail in der CSV-Datei enthalten ist, werden überprüft.
-          title: Lade Deine CSV-Datei hoch
+          explanation: Lade deine CSV-Datei hoch. In der ersten Spalte der Datei müssen die offiziellen E-Mails der Benutzer:innen-Gruppen in deiner Organisation enthalten sein, ohne Kopfzeilen. Nur Benutzer:innen-Gruppen, die ihre E-Mail bestätigt haben und deren E-Mail in der CSV-Datei enthalten ist, werden überprüft.
+          title: Lade deine CSV-Datei hoch
           upload: Hochladen
       users:
         create:
@@ -1022,7 +1022,7 @@ de:
     forms:
       errors:
         impersonate_user:
-          reason: Du musst einen Grund angeben, weshalb Du Dich als nicht-verwaltete/n Benutzer:in ausgibst
+          reason: Du musst einen Grund angeben, weshalb du dich als nicht-verwaltete/n Benutzer:in ausgibst
     metrics:
       blocked_users:
         object: blockierte Benutzer:innen
@@ -1081,6 +1081,6 @@ de:
         newsletters:
           title: Newsletter
         settings:
-          title: die Einstellungen
+          title: Einstellungen
         users:
           title: Benutzer:innen

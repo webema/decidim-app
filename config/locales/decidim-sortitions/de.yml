@@ -4,10 +4,10 @@ de:
     attributes:
       sortition:
         additional_info: Sortierinformationen
-        decidim_category_id: Kategorien der Vorschläge, in denen Du die Auslosung anwenden möchtest
+        decidim_category_id: Kategorien der Vorschläge, in denen du die Auslosung anwenden möchtest
         decidim_proposals_component_id: Vorschläge festgelegt
         dice: Ergebnis des Würfelwurfs. Wirf einen 6-seitigen Würfel oder suche nach einem anderen zufälligen Weg, um eine Zahl von 1 bis 6 zu erzeugen, und gib die resultierende Zahl vor einigen Zeugen ein. Dies trägt zur Qualität und zur Gewährleistung der Zufälligkeit des Ergebnisses bei
-        target_items: Anzahl der auszuwählenden Vorschläge (gibt die Anzahl der Vorschläge an, die Du auswählen möchtest, indem Du viele der Vorschläge auswählst, die Du zuvor ausgewählt hast)
+        target_items: Anzahl der auszuwählenden Vorschläge (gibt die Anzahl der Vorschläge an, die du auswählen möchtest, indem du viele der Vorschläge auswählst, die du zuvor ausgewählt hast)
         title: Titel
         witnesses: Zeugen
     models:
@@ -30,8 +30,8 @@ de:
     events:
       sortitions:
         sortition_created:
-          email_intro: Die Auslosung "%{resource_title}" wurde zu "%{participatory_space_title}" hinzugefügt, dem Du folgst.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil Du "%{participatory_space_title}" folgst. Falls Du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_intro: Die Auslosung "%{resource_title}" wurde zu "%{participatory_space_title}" hinzugefügt, dem du folgst.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du "%{participatory_space_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
           email_subject: Neue Sortierung wurde zu %{participatory_space_title}hinzugefügt
           notification_title: Die Auslosung <a href="%{resource_path}">%{resource_title}</a> wurde zu %{participatory_space_title} hinzugefügt
     sortitions:
@@ -58,7 +58,7 @@ de:
               other: Sortierungen
         sortitions:
           confirm_destroy:
-            confirm_destroy: Möchtest Du diese Sortierung wirklich abbrechen?
+            confirm_destroy: Möchtest du diese Sortierung wirklich abbrechen?
             destroy: Sortierung abbrechen
             title: Stornierung der Sortierung
           create:
@@ -101,9 +101,9 @@ de:
           category: Kategorie
           category_prompt: Wähle eine Kategorie
           search: Suche
-          state: Zustand
+          state: Status
         filters_small_view:
-          close_modal: Modal schließen
+          close_modal: Dialog schließen
           filter: Filter
           filter_by: Filtern nach
           unfold: Entfalten

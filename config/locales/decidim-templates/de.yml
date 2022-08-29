@@ -58,11 +58,11 @@ de:
             template_title: Vorlageninformation
             title: Fragebogenvorlage %{questionnaire_for}
           index:
-            confirm_delete: Möchtest Du diese Vorlage wirklich löschen?
+            confirm_delete: Möchtest du diese Vorlage wirklich löschen?
             title: Fragebogenvorlagen
           preview:
             current_step: Schritt %{step}
             of_total_steps: von %{total_steps}
-            tos_agreement: Mit der Teilnahme stimmst Du den Nutzungsbedingungen zu
+            tos_agreement: Mit der Teilnahme stimmst du den Nutzungsbedingungen zu
       template_types:
         questionnaires: Fragebögen
