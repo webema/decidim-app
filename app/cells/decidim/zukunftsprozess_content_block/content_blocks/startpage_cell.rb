@@ -15,13 +15,10 @@ module Decidim
           render
         end
 
-        # def recent_blog_posts
-        #   Ema::BlogPost.where(organization: current_organization).order(created_at: :desc).limit(4)
-        # end
+        def recent_blog_post
+          Ema::BlogPost.where(organization: current_organization).order(created_at: :desc).first
+        end
 
-        # def i18n_scope
-        #   "decidim.process_groups_content_block.pages.home.highlighted_process_groups"
-        # end
 
         private
 

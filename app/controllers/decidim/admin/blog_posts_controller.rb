@@ -15,30 +15,40 @@ module Decidim
       end
 
       def new
-        @blog_post = Ema::BlogPost.new
+        @form = form(EmaBlogPostForm).instance
       end
 
       def create
-        @blog_post = blog_posts_for_organization.new(blog_post_params.merge(organization: current_organization))
+        @form = form(EmaBlogPostForm).from_params(params)
 
-        if @blog_post.save
-          redirect_to post_path(@blog_post)
-        else
-          render :new, status: :unprocessable_entity
+        CreateBlogPost.call(@form) do
+          on(:ok) do
+            redirect_to posts_path
+          end
+
+          on(:invalid) do
+            render :new, status: :unprocessable_entity
+          end
         end
       end
 
       def edit
-        @blog_post = blog_posts_for_organization.find(params[:id])
+        blog_post = blog_posts_for_organization.find(params[:id])
+        @form = form(EmaBlogPostForm).from_model(blog_post)
       end
 
       def update
         @blog_post = blog_posts_for_organization.find(params[:id])
+        @form = form(EmaBlogPostForm).from_params(params)
 
-        if @blog_post.update(blog_post_params)
-          redirect_to post_path(@blog_post)
-        else
-          render :edit, status: :unprocessable_entity
+        UpdateBlogPost.call(@form, @blog_post) do
+          on(:ok) do
+            redirect_to post_path(@blog_post)
+          end
+
+          on(:invalid) do
+            render :edit, status: :unprocessable_entity
+          end
         end
       end
 
@@ -51,7 +61,8 @@ module Decidim
       private
 
       def blog_post_params
-        params.require(:ema_blog_post).permit(:title, :body)
+        params[:ema_blog_post].to_unsafe_h
+        # params.require(:ema_blog_post).permit(:title, :body)
       end
 
       def blog_posts_for_organization
@@ -60,38 +71,3 @@ module Decidim
     end
   end
 end
-
-
-
-
-# def create
-#   @content_element = @containable.content_elements.build(content_element_params.merge(type: type))
-#   @content_element.position = 1 if content_element_params[:prepend]
-
-#   if @content_element.save
-#     analyze_images
-#     render_editable_content_element
-#   else
-#     render :new, status: :unprocessable_entity
-#   end
-# end
-
-# def edit
-#   @content_element = @containable.content_elements.find(params[:id])
-# end
-
-# def update
-#   @content_element = @containable.content_elements.find(params[:id])
-#   if @content_element.update(update_content_element_params)
-#     analyze_images
-#     render_editable_content_element
-#   else
-#     render :edit, status: :unprocessable_entity
-#   end
-# end
-
-# def destroy
-#   @content_element = @containable.content_elements.find(params[:id])
-#   @content_element.destroy!
-#   head :ok
-# end

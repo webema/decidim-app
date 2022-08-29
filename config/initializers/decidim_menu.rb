@@ -13,8 +13,3 @@ Decidim.menu :menu do |menu|
             position: 5,
             active: :inclusive
 end
-
-Decidim.content_blocks.register(:homepage, :recent_blog_posts) do |content_block|
-  content_block.cell = 'decidim/blog_posts_content_block/content_blocks/recent_blog_posts'
-  content_block.public_name_key = 'decidim.blog_posts_content_block.content_blocks.recent_blog_posts.name'
-end
