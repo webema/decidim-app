@@ -55,7 +55,7 @@ module Decidim
       def destroy
         @blog_post = blog_posts_for_organization.find(params[:id])
         @blog_post.destroy!
-        redirect_to blog_posts_path
+        redirect_to posts_path
       end
 
       private
