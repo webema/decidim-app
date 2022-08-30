@@ -107,7 +107,7 @@ $body-font-family: "Open Sans", sans-serif;
 // $global-position: 1rem;
 // $global-weight-normal: normal;
 // $global-weight-bold: 600;
-// $global-radius: 4px;
+$global-radius: 0;
 // $global-menu-padding: .7rem 1rem;
 // $global-menu-nested-margin: 1rem;
 // $global-text-direction: ltr;
@@ -336,7 +336,7 @@ $header-font-family: $body-font-family;
 // $button-color: $white;
 // $button-color-alt: $black;
 // $button-shadow: 0 2px 0 rgba(0, 0, 0, .2);
-// $button-radius: $global-radius;
+$button-radius: $global-radius;
 // $button-hollow-border-width: 1px;
 // $button-sizes: (
 //   tiny: .9rem,
@@ -434,7 +434,7 @@ $header-font-family: $body-font-family;
 // $dropdown-border: 1px solid $medium-gray;
 // $dropdown-font-size: 1rem;
 // $dropdown-width: 300px;
-// $dropdown-radius: $global-radius;
+$dropdown-radius: $global-radius;
 // $dropdown-sizes: (
 //   tiny: 100px,
 //   small: 200px,
@@ -485,7 +485,7 @@ $header-font-family: $body-font-family;
 // $form-label-line-height: 1.8;
 // $select-background: $white;
 // $select-triangle-color: $dark-gray;
-// $select-radius: $global-radius;
+$select-radius: $global-radius;
 // $input-color: $black;
 // $input-placeholder-color: $medium-gray;
 // $input-multiple-placeholder-color: $dark-medium-gray;
@@ -507,8 +507,8 @@ $header-font-family: $body-font-family;
 // $input-cursor-disabled: not-allowed;
 // $input-transition: box-shadow .5s, border-color .25s ease-in-out;
 // $input-number-spinners: true;
-// $input-radius: $global-radius;
-// $form-button-radius: $global-radius;
+$input-radius: $global-radius;
+$form-button-radius: $global-radius;
 
 // // 21. Label
 // // ---------
@@ -519,7 +519,7 @@ $header-font-family: $body-font-family;
 // $label-palette: $foundation-palette;
 // $label-font-size: .8rem;
 // $label-padding: .33333rem .5rem;
-// $label-radius: $global-radius;
+$label-radius: $global-radius;
 
 // // 22. Media Object
 // // ----------------
@@ -597,7 +597,7 @@ $header-font-family: $body-font-family;
 // $pagination-item-color: $body-font-color;
 // $pagination-item-padding: rem-calc(3 10);
 // $pagination-item-spacing: rem-calc(1);
-// $pagination-radius: $global-radius;
+$pagination-radius: $global-radius;
 // $pagination-item-background-hover: $medium-gray;
 // $pagination-item-background-current: $secondary-color;
 // $pagination-item-color-current: $white;
@@ -614,7 +614,7 @@ $header-font-family: $body-font-family;
 // $progress-background: $medium-gray;
 // $progress-margin-bottom: $global-margin;
 // $progress-meter-background: $primary-color;
-// $progress-radius: $global-radius;
+$progress-radius: $global-radius;
 
 // // 29. Prototype Arrow
 // // -------------------

@@ -85,7 +85,12 @@
     }
   }
   
-  a.startpage_primary_button, button.button:not(.secondary):not(.process-nav__more), a.button:not(.secondary) {
+  a.startpage_primary_button, 
+  a.title-action__action, 
+  .actions > a.button,
+  form:not(.button_to) > button[type=submit]:not(.secondary), 
+  .actions > button[type=submit]:not(.secondary),
+  .field > button[type=submit]:not(.secondary) {
     background-color: var(--primary);
     border: 0 solid #E5E7EB;
     border-radius: 0;

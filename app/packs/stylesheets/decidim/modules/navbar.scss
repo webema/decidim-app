@@ -600,7 +600,6 @@ $navbar-active-shadow-medium: inset 0 -8px 0 0 var(--primary);
   &:focus{
     z-index: 1;
     color: $navbar-color-hover;
-    text-decoration: underline;
     outline-offset: -2px;
   }
 
