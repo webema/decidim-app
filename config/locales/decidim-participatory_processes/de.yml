@@ -450,8 +450,8 @@ de:
           all_types: Alle Typen
           counters:
             active:
-              one: 1 aktiver konKreation
-              other: "%{count} konKreationen"
+              one: 1 aktive konKreation
+              other: "%{count} aktive konKreationen"
             all:
               one: 1 konKreation
               other: "%{count} konKreationen"

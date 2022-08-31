@@ -23,6 +23,7 @@
     touch-action: manipulation;
     text-transform: none;
     letter-spacing: 0;
+    // transform: rotate(2deg);
   
     &:hover {
       color: $black;
@@ -63,6 +64,18 @@
 
   a.button, button.button {
     background-color: var(--primary);
+  }
+
+  a.hollow {
+    border: 1px solid var(--primary);
+  }
+
+  button.follow-button {
+    border: none;
+
+     .icon-wrap {
+      border-right: 1px solid white;
+     }
   }
 
 }
