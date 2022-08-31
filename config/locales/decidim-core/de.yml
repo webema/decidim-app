@@ -795,7 +795,7 @@ de:
         error: Beim Folgen dieser Ressource ist ein Fehler aufgetreten.
         participatory_space: Du folgst <span class="show-for-sr">%{resource_name}</span>
       destroy:
-        button: Entfolgen
+        button: Nicht folgen
         error: Beim Entfolgen dieser Ressource ist ein Fehler aufgetreten.
     forms:
       current_image: Aktuelles Bild
@@ -1015,7 +1015,7 @@ de:
     members:
       no_members: Diese Gruppe hat noch keine Mitglieder.
     menu:
-      help: Hilfe
+      help: Info
       home: Start
     messaging:
       conversation_mailer:
@@ -1237,7 +1237,7 @@ de:
         read_more: Weiterlesen
         standalone_pages: Seiten
         subheading: Navigiere durch die Hilfeseiten von %{name}
-        title: Hilfe
+        title: Info
         topics: Themen
       participatory_space:
         metrics:

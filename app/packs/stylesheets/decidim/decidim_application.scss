@@ -29,3 +29,81 @@
 :root {
   color-scheme: light only;
 }
+
+.card--initiative, .card--proposal, .card--assembly, .card--process {
+  .card__footer {
+    display: none;
+  }
+}
+
+.card--process__column {
+  a.button {
+    display: none;
+  }
+}
+
+.card__content {
+  a {
+    color: var(--secondary);
+    font-weight: 600;
+
+    &:hover {
+      color: var(--secondary);
+    }
+  }
+}
+
+a {
+  color: var(--secondary);
+  font-weight: 600;
+
+  &:hover {
+    color: var(--secondary);
+  }
+}
+
+.card__image{
+  width: 100%;
+  max-height: 15rem;
+  min-height: 10rem;
+  object-fit: cover;
+
+  // &.card__image--smaller{
+  //   max-height: 5rem;
+  // }
+
+  // &.card__image--larger{
+  //   max-height: 20rem;
+  //   min-height: 10rem;
+  // }
+}
+
+.process-header__inner {
+  height: 300px;
+
+  .process-header__main {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .process-header__hashtag a {
+    color: $white;
+  }
+}
+
+.wrapper {
+  background-color: $white;
+  margin: 20px;
+}
+
+.off-canvas-wrapper {
+  &.assemblies {
+    background-color: #70ab37;
+  }
+  &.initiatives {
+    background-color: #d61b72;
+  }
+  &.processes {
+    background-color: #1293ba;
+  }
+}

@@ -4,7 +4,8 @@
   .actions > a.button,
   form:not(.button_to) > button[type=submit]:not(.secondary), 
   .actions > button[type=submit]:not(.secondary),
-  .field > button[type=submit]:not(.secondary) {
+  .field > button[type=submit]:not(.secondary),
+  .show-more > button {
     background-color: var(--primary);
     border: 0 solid #E5E7EB;
     border-radius: 0;
@@ -62,20 +63,37 @@
     }
   }
 
-  a.button, button.button {
-    background-color: var(--primary);
-  }
+  // a.button, button.button {
+  //   background-color: var(--primary);
+  // }
 
-  a.hollow {
+  
+
+  a.button.hollow {
     border: 1px solid var(--primary);
   }
 
   button.follow-button {
-    border: none;
+    .icon-wrap {
+      border-right: 1px solid var(--primary);
+    }
 
-     .icon-wrap {
-      border-right: 1px solid white;
-     }
+    &:hover {
+      .icon-wrap {
+        border-right: 1px solid $white;
+      }
+    }
+  }
+
+  button.secondary, a.button.secondary, button.secondary.active {
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    color: var(--secondary);
+    filter: brightness(100%);
+
+    &:hover {
+      background-color: var(--primary);
+    }
   }
 
 }
@@ -85,3 +103,24 @@ a.button, button.button {
   text-transform: none !important;
 }
 
+
+.hide-more > button {
+  display: none;
+}
+
+
+.section-heading > a.text-small {
+  display: none;
+}
+
+.opinion-toggle.button-group {
+  button {
+    background-color: var(--primary);
+    color: var(--secondary) !important;
+
+    &[aria-pressed="true"] {
+      background-color: var(--secondary);
+      color: $white !important;
+    }
+  }
+}
