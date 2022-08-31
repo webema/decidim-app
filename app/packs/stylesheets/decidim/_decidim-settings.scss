@@ -244,7 +244,7 @@ $header-font-family: $body-font-family;
 // $keystroke-color: $black;
 // $keystroke-background: $light-gray;
 // $keystroke-padding: rem-calc(2 4 0);
-// $keystroke-radius: $global-radius;
+$keystroke-radius: $global-radius;
 // $abbr-underline: 1px dotted $black;
 
 // // 5. Typography Helpers
@@ -378,7 +378,7 @@ $button-radius: $global-radius;
 // $callout-padding: 1rem;
 // $callout-font-color: $body-font-color;
 // $callout-font-color-alt: $body-background;
-// $callout-radius: 0;
+$callout-radius: 0;
 // $callout-link-tint: 30%;
 
 // // 14. Card
@@ -389,7 +389,7 @@ $button-radius: $global-radius;
 // $card-divider-background: $light-gray;
 // $card-border: 1px solid $light-gray;
 // $card-shadow: none;
-// $card-border-radius: $global-radius;
+$card-border-radius: $global-radius;
 // $card-padding: $global-padding;
 // $card-margin-bottom: $global-margin;
 
@@ -547,7 +547,7 @@ $label-radius: $global-radius;
 // // ---------
 
 // $meter-height: 1rem;
-// $meter-radius: $global-radius;
+$meter-radius: $global-radius;
 // $meter-background: $medium-gray;
 // $meter-fill-good: $success-color;
 // $meter-fill-medium: $warning-color;
@@ -759,7 +759,7 @@ $progress-radius: $global-radius;
 // $reveal-max-width: $global-width;
 // $reveal-padding: $global-padding;
 // $reveal-border: 1px solid $medium-gray;
-// $reveal-radius: $global-radius;
+$reveal-radius: $global-radius;
 // $reveal-zindex: 1005;
 // $reveal-overlay-background: rgba($black, .45);
 
@@ -775,7 +775,7 @@ $progress-radius: $global-radius;
 // $slider-handle-width: 1.4rem;
 // $slider-handle-background: $primary-color;
 // $slider-opacity-disabled: .25;
-// $slider-radius: $global-radius;
+$slider-radius: $global-radius;
 
 // // 30. Switch
 // // ----------
@@ -786,7 +786,7 @@ $progress-radius: $global-radius;
 // $switch-height-tiny: 1.5rem;
 // $switch-height-small: 1.75rem;
 // $switch-height-large: 2.5rem;
-// $switch-radius: $global-radius;
+$switch-radius: $global-radius;
 // $switch-margin: $global-margin;
 // $switch-paddle-background: $white;
 // $switch-paddle-offset: .25rem;
@@ -843,7 +843,7 @@ $progress-radius: $global-radius;
 // $thumbnail-shadow: 0 0 0 1px $medium-gray;
 // $thumbnail-shadow-hover: 0 0 0 1px $primary-color;
 // $thumbnail-transition: box-shadow 200ms ease-out;
-// $thumbnail-radius: $global-radius;
+$thumbnail-radius: $global-radius;
 
 // // 53. Title Bar
 // // -------------
@@ -869,7 +869,7 @@ $progress-radius: $global-radius;
 // $tooltip-font-size: $small-font-size;
 // $tooltip-pip-width: .75rem;
 // $tooltip-pip-height: $tooltip-pip-width * .866;
-// $tooltip-radius: $global-radius;
+$tooltip-radius: $global-radius;
 
 // // 55. Top Bar
 // // -----------
