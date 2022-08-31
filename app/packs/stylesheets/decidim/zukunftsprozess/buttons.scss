@@ -60,6 +60,11 @@
       }
     }
   }
+
+  a.button, button.button {
+    background-color: var(--primary) !important;
+  }
+
 }
 
 a.button, button.button {
