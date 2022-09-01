@@ -463,7 +463,7 @@ de:
             enable_pads_creation: Aktiviere die Pads-Erstellung
             resources_permissions_enabled: Ressourcenberechtigungen aktiviert
             scope_id: Bereich
-            scopes_enabled: Bereiche aktiviert
+            scopes_enabled: Themen aktiviert
           step:
             amendment_creation_enabled: Änderungserstellung aktiviert
             amendment_promotion_enabled: Hervorheben von Änderungen aktiviert
@@ -1331,15 +1331,15 @@ de:
     scopes:
       global: Globaler Umfang
       picker:
-        cancel: Stornieren
+        cancel: Abbrechen
         change: Ausgewählten Bereich ändern
         choose: Wählen
-        currently_selected: Aktuell ausgewählter Bereich
+        currently_selected: Aktuell ausgewähltes Thema
         title: Wähle %{field}
-      prompt: Wähle einen Bereich aus
-      scopes: Bereiche
+      prompt: Wähle ein Thema aus
+      scopes: Themen
       scopes_picker_input:
-        select_scope: 'Wähle einen Bereich (aktuell: %{current})'
+        select_scope: 'Wähle ein Thema (aktuell: %{current})'
     search:
       results: Suchergebnisse
       results_found_for_term: '%{count} Ergebnisse für die Suche: "%{term}"'

@@ -263,9 +263,9 @@ de:
         initiatives_type_scopes:
           create:
             error: Ein Fehler ist aufgetreten
-            success: Ein neuer Bereich für den angegebenen Inspirationen-Typ wurde erstellt
+            success: Ein neues Thema für den angegebenen Inspirationen-Typ wurde erstellt
           destroy:
-            success: Der Bereich wurde erfolgreich entfernt
+            success: Das Thema wurde erfolgreich entfernt
           edit:
             back: Zurück
             confirm_destroy: Bist du sicher?
@@ -294,7 +294,7 @@ de:
             options: Optionen
             title: Allgemeine Information
           initiative_type_scopes:
-            title: Bereiche für den Typ der Inspiration
+            title: Themen für den Typ der Inspiration
           new:
             create: Erstellen
             title: Neuer Inspirationen-Typ

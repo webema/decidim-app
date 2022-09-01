@@ -27,7 +27,7 @@ de:
         related_process_ids: Ähnliche konKreationen
         scope_id: Themenbereich
         scope_type_max_depth_id: Umfang-Filtertiefe
-        scopes_enabled: Themenbereiche aktiviert
+        scopes_enabled: Themen aktiviert
         short_description: Kurzbeschreibung
         show_metrics: Metriken anzeigen
         show_statistics: Statistiken anzeigen

@@ -126,7 +126,7 @@ de:
             registration_code_enabled: Registrierungscode aktiviert
             resources_permissions_enabled: Aktionsberechtigungen können für jedes Meeting festgelegt werden
             scope_id: Bereich
-            scopes_enabled: Bereiche aktiviert
+            scopes_enabled: Themen aktiviert
             terms_and_conditions_url_for_meeting_creators: Nutzungsbedingungen URL für Meeting-Ersteller
           step:
             announcement: Ankündigung

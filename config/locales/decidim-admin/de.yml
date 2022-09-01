@@ -537,8 +537,8 @@ de:
         newsletters: Newsletter
         participants: Teilnehmer
         reported_users: Gemeldete Nutzer
-        scope_types: Bereichstypen
-        scopes: Bereiche
+        scope_types: Themenbereiche
+        scopes: Themen
         settings: Einstellungen
         static_pages: Seiten
         user_groups: Benutzer:innen-Gruppen
@@ -695,7 +695,7 @@ de:
           confirm_delete: Möchtest du diesen Newsletter wirklich löschen?
           followers: 'Follower '
           has_been_sent_to: 'Wurde gesendet an: '
-          no_scopes: Keine Themenbereiche
+          no_scopes: Keine Themen
           not_sent: Nicht gesendet
           participants: 'Teilnehmende: '
           segmented_to: 'Unterteilt in %{subject}: '
@@ -713,8 +713,8 @@ de:
           none: Niemand
           participants_help: Sendet den Newsletter an alle bestätigten Benutzer:innen, die an den ausgewählten Teilnehmerräumen der Liste teilgenommen haben.
           recipients_count: Dieser Newsletter wird an <strong id='recipients_count'>%{count}</strong> Teilnehmende gesendet.
-          scopes_help: Sendet den Newsletter an Teilnehmer, die einen der gewählten Themenbereiche in den "Meine Interessen" Einstellungen deines Kontos aktiviert haben.
-          select_scopes: Nur Teilnehmende anzeigen, die einen der gewählten Themenbereiche in deinen "Meine Interessen" Einstellungen deines Kontos aktiviert haben.
+          scopes_help: Sendet den Newsletter an Teilnehmende, die eines der gewählten Themen in den "Meine Interessen" Einstellungen ihres Kontos aktiviert haben.
+          select_scopes: Nur Teilnehmende anzeigen, die eines der gewählten Themen in deinen "Meine Interessen" Einstellungen deines Kontos aktiviert haben.
           select_spaces: Wähle Abschnitte, um den Newsletter zu unterteilen
           select_users: Wähle aus, welchen Benutzer:innen du den Newsletter senden möchtest
           send_to_all_users: An alle Benutzer:innen senden
@@ -867,35 +867,35 @@ de:
             scope: Bereich
       scope_types:
         create:
-          error: Beim Erstellen eines neuen Geltungstyps ist ein Fehler aufgetreten.
-          success: Der Geltungsbereichstyp wurde erfolgreich erstellt.
+          error: Beim Erstellen eines neuen Themenbereichs ist ein Fehler aufgetreten.
+          success: Der Themenbereich wurde erfolgreich erstellt.
         destroy:
-          success: Der Scope-Typ wurde erfolgreich zerstört
+          success: Der Themenbereich wurde erfolgreich gelöscht
         edit:
-          title: Bereichstyp bearbeiten
+          title: Themenbereich bearbeiten
           update: Aktualisieren
         new:
-          create: Erstelle den Geltungsbereichstyp
-          title: Neuer Umfang
+          create: Erstellen
+          title: Neuer Themenbereich
         update:
-          error: Beim Aktualisieren dieses Bereichstyps ist ein Fehler aufgetreten.
-          success: Der Geltungsbereichstyp wurde erfolgreich aktualisiert
+          error: Beim Aktualisieren dieses Themenbereich ist ein Fehler aufgetreten.
+          success: Der Themenbereich wurde erfolgreich aktualisiert
       scopes:
         create:
-          error: Beim Erstellen eines neuen Bereichs ist ein Fehler aufgetreten.
-          success: Bereich erfolgreich erstellt
+          error: Beim Erstellen eines neuen Themas ist ein Fehler aufgetreten.
+          success: Thema erfolgreich erstellt
         destroy:
-          success: Bereich wurde erfolgreich zerstört
+          success: Das Thema wurde erfolgreich gelöscht
         edit:
-          title: Bereich bearbeiten
+          title: Thema bearbeiten
           update: Aktualisieren
         new:
-          create: Bereich erstellen
-          title: Neuer Umfang
-        no_scopes: Keine Bereiche auf dieser Ebene.
+          create: Erstellen
+          title: Neues Thema
+        no_scopes: Keine Themen auf dieser Ebene.
         update:
-          error: Beim Aktualisieren dieses Bereichs ist ein Fehler aufgetreten.
-          success: Bereich wurde erfolgreich aktualisiert
+          error: Beim Aktualisieren dieses Themas ist ein Fehler aufgetreten.
+          success: Das Thema wurde erfolgreich aktualisiert
       share_tokens:
         actions:
           confirm_destroy: Bist du sicher, dass du diesen Token löschen willst?
@@ -968,8 +968,8 @@ de:
         metrics: Kriterien
         panel: Admin
         participants: Benutzer:innen
-        scope_types: Bereichstypen
-        scopes: Bereiche
+        scope_types: Themenbereiche
+        scopes: Themen
         static_pages: Seiten
         statistics: Aktivität
         user_groups: Benutzer:innen-Gruppen
