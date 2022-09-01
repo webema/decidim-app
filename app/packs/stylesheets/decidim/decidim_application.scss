@@ -79,7 +79,13 @@ a {
 }
 
 .process-header__inner {
-  height: 300px;
+  @include breakpoint(mediumlarge){
+    height: 300px;
+  }
+  
+  @include breakpoint(small) {
+    height: 200px;
+  }
 
   .process-header__main {
     background-repeat: no-repeat;
@@ -92,13 +98,29 @@ a {
 }
 
 .wrapper {
-  background-color: $white;
-  margin: 20px;
+  background-color: white;
+
+  @include breakpoint(mediumlarge){
+    margin: 20px;
+  }
+  
+  @include breakpoint(small) {
+    margin: 5px;
+  }
+
+  // margin-top: 500px !important;
 }
 
 .off-canvas-wrapper {
+  background-color: #e5e7ea;
+
   &.assemblies {
     background-color: #70ab37;
+
+    // background-image: url("~images/startpage_bg.png");
+    // background-repeat: no-repeat;
+    // background-size: auto; 
+    // background-position: center -500px;
   }
   &.initiatives {
     background-color: #d61b72;
@@ -106,4 +128,23 @@ a {
   &.processes {
     background-color: #1293ba;
   }
+  &.start {
+    background-color: $white;
+  }
+
+  // &.processes, &.assemblies, &.initiatives, &.posts, &.pages {
+  //   .content-wrapper {
+  //     @include grid-row;
+
+  //     section {
+  //       background-color: $white;
+  //     }
+  //   }
+  // }
+}
+
+
+// remove overlay from process header
+.process-header__main::after {
+  background-color: transparent;
 }

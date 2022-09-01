@@ -10,7 +10,7 @@ if respond_to?(:current_component) && current_component && can_be_managed?(curre
 end
 %>
 
-<div class="off-canvas-wrapper <%= request.path[1..-1].split('/').first %>">
+<div class="off-canvas-wrapper <%= request.path[1..-1].split('/').first || 'start' %>">
   <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
     <div class="off-canvas position-right hide-for-large" data-position="right"
          id="offCanvas" data-off-canvas>
@@ -103,8 +103,10 @@ end
         </div>
 
         <main id="content">
-          <%= display_flash_messages %>
-          <%= yield %>
+          <div class="content-wrapper">
+            <%= display_flash_messages %>
+            <%= yield %>
+          </div>
         </main>
       </div>
       <div class="footer" role="contentinfo">

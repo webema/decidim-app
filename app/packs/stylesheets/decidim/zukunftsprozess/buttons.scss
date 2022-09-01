@@ -73,7 +73,7 @@
     border: 1px solid var(--primary);
   }
 
-  button.follow-button {
+  button.follow-button:not(.card__button) {
     .icon-wrap {
       border-right: 1px solid var(--primary);
     }
@@ -85,7 +85,7 @@
     }
   }
 
-  button.secondary, a.button.secondary, button.secondary.active {
+  button.secondary:not(.card__button), a.button.secondary, button.secondary.active {
     border: 1px solid var(--primary);
     background-color: transparent;
     color: var(--secondary);
