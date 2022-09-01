@@ -1329,7 +1329,7 @@ de:
       create:
         error: Bei der Unterstützung ist ein Fehler aufgetreten.
     scopes:
-      global: Globaler Umfang
+      global: Alle Themen
       picker:
         cancel: Abbrechen
         change: Ausgewählten Bereich ändern

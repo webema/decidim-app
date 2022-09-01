@@ -86,10 +86,6 @@ a, a.card__link {
   @include breakpoint(mediumlarge){
     height: 300px;
   }
-  
-  // @include breakpoint(small) {
-  //   height: 200px;
-  // }
 
   .process-header__main {
     background-repeat: no-repeat;
@@ -111,8 +107,6 @@ a, a.card__link {
   @include breakpoint(small) {
     margin: 5px;
   }
-
-  // margin-top: 500px !important;
 }
 
 .off-canvas-wrapper {
@@ -120,11 +114,6 @@ a, a.card__link {
 
   &.assemblies {
     background-color: #76b82a;
-
-    // background-image: url("~images/startpage_bg.png");
-    // background-repeat: no-repeat;
-    // background-size: auto; 
-    // background-position: center -500px;
   }
   &.initiatives {
     background-color: #00b5e5;
@@ -136,17 +125,36 @@ a, a.card__link {
     background-color: $white;
   }
 
-  // &.processes, &.assemblies, &.initiatives, &.posts, &.pages {
-  //   .content-wrapper {
-  //     @include grid-row;
-
-  //     section {
-  //       background-color: $white;
-  //     }
-  //   }
-  // }
+  &.processes, &.assemblies, &.initiatives {
+    &.listing {
+      .wrapper {
+        background-color: transparent;
+        color: white;
+      }
+    }
+  }
 }
 
+.floating-helper__content {
+  background-color: transparent;
+  color: $black;
+  border: none;
+  max-width: 500px;
+  padding: 0;
+
+  p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+
+    span {
+      background: rgba(255, 255, 255, 0.8);
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      padding: 0 0.75rem;
+    }
+  }
+}
 
 // remove overlay from process header
 .process-header__main::after {
@@ -163,4 +171,3 @@ a, a.card__link {
     text-decoration: none;
   }
 }
-

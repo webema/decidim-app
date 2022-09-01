@@ -10,7 +10,10 @@ if respond_to?(:current_component) && current_component && can_be_managed?(curre
 end
 %>
 
-<div class="off-canvas-wrapper <%= request.path[1..-1].split('/').first || 'start' %>">
+<%- wrapper_class = request.path[1..-1].split('/').first || 'start' %>
+<%- wrapper_class += ' listing' unless request.path[1..-1].split('/').size > 1 %>
+
+<div class="off-canvas-wrapper <%= wrapper_class %>">
   <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
     <div class="off-canvas position-right hide-for-large" data-position="right"
          id="offCanvas" data-off-canvas>
