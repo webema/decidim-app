@@ -180,6 +180,20 @@ GIT
     decidim-verifications (0.27.0.rc1)
       decidim-core (= 0.27.0.rc1)
 
+PATH
+  remote: ../decidim-ideas
+  specs:
+    decidim-ideas (0.27.0.rc1)
+      decidim-admin (= 0.27.0.rc1)
+      decidim-comments (= 0.27.0.rc1)
+      decidim-core (= 0.27.0.rc1)
+      decidim-verifications (= 0.27.0.rc1)
+      origami (~> 2.1)
+      rexml (~> 3.2.5)
+      wicked (~> 1.3)
+      wicked_pdf (~> 2.1)
+      wkhtmltopdf-binary (~> 0.12)
+
 GEM
   remote: https://nexus.devops-e.de/repository/rubygems/
   specs:
@@ -430,9 +444,6 @@ GEM
     globalid (1.0.0)
       activesupport (>= 5.0)
     graphql (1.12.24)
-    haml (5.2.2)
-      temple (>= 0.8.0)
-      tilt
     graphql-docs (2.1.0)
       commonmarker (~> 0.16)
       escape_utils (~> 1.2)
@@ -441,6 +452,9 @@ GEM
       graphql (~> 1.12)
       html-pipeline (~> 2.9)
       sass (~> 3.4)
+    haml (5.2.2)
+      temple (>= 0.8.0)
+      tilt
     hashdiff (1.0.1)
     hashie (5.0.0)
     highline (2.0.3)
@@ -829,6 +843,7 @@ DEPENDENCIES
   byebug (~> 11.0)
   decidim!
   decidim-dev!
+  decidim-ideas!
   decidim-initiatives!
   faker (~> 2.14)
   haml
