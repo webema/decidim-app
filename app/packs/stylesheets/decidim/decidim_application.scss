@@ -87,6 +87,10 @@ a, a.card__link {
     height: 300px;
   }
 
+  @include breakpoint(small){
+    min-height: 200px;
+  }
+
   .process-header__main {
     background-repeat: no-repeat;
     background-position: center;
@@ -94,18 +98,6 @@ a, a.card__link {
 
   .process-header__hashtag a {
     color: $white;
-  }
-}
-
-.wrapper {
-  background-color: white;
-
-  @include breakpoint(mediumlarge){
-    margin: 20px;
-  }
-  
-  @include breakpoint(small) {
-    margin: 5px;
   }
 }
 
@@ -125,11 +117,35 @@ a, a.card__link {
     background-color: $white;
   }
 
+  &.processes, &.assemblies, &.initiatives, &.pages {
+    .wrapper {
+      background-color: $white;
+    
+      @include breakpoint(mediumlarge){
+        margin: 20px;
+      }
+      
+      @include breakpoint(small) {
+        margin: 5px;
+      }
+    }
+  }
+
   &.processes, &.assemblies, &.initiatives {
     &.listing {
       .wrapper {
         background-color: transparent;
-        color: white;
+        color: $white;
+        margin: 0;
+      }
+
+      .with_scope_scopes_picker_filter {
+        legend {
+          color: $white;
+          text-transform: none;
+          letter-spacing: 0;
+          display: none;
+        }
       }
     }
   }
@@ -151,7 +167,7 @@ a, a.card__link {
       background: rgba(255, 255, 255, 0.8);
       -webkit-box-decoration-break: clone;
       box-decoration-break: clone;
-      padding: 0 0.75rem;
+      padding: 0 0.5rem;
     }
   }
 }
@@ -169,5 +185,28 @@ a, a.card__link {
   
   &:hover {
     text-decoration: none;
+  }
+}
+
+.section-heading {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.text-uppercase {
+  text-transform: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+.process-nav__content {
+  ul {
+    li:first-child {
+      @include breakpoint(small down){
+        display: none;
+      }
+    }
   }
 }
