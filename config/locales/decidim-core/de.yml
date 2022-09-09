@@ -1246,17 +1246,17 @@ de:
       terms_and_conditions:
         accept:
           error: Beim Akzeptieren der Nutzungsbedingungen ist ein Fehler aufgetreten.
-          success: Groß! Du hast die Allgemeinen Geschäftsbedingungen akzeptiert.
+          success: Vielen Dank! Du hast die Nutzungsbedingungen akzeptiert.
         form:
-          agreement: Ich stimme diesen Bedingungen zu
+          agreement: Ich stimme diesen Nutzungsbedingungen zu
           legend: Stimme den Nutzungsbedingungen zu
         refuse:
           modal_body: Wenn du deine Zustimmung nicht erteilst, wirst du nicht in der Lage sein, die Plattform zu nutzen; du kannst <a href="%{download_your_data_path}">Deine Daten herunterladen</a> und/oder <a href="%{delete_path}">Dein Konto löschen</a>.
-          modal_btn_continue: Bedingungen akzeptieren und fortfahren
+          modal_btn_continue: Nutzungsbedingungen akzeptieren und fortfahren
           modal_btn_exit: Ich werde es später überprüfen
-          modal_button: Bedingungen ablehnen
+          modal_button: Nutzungsbedingungen ablehnen
           modal_close: Dialog schließen
-          modal_title: Lehnst du die aktualisierten Geschäftsbedingungen wirklich ab?
+          modal_title: Lehnst du die aktualisierten Nutzungsbedingungen wirklich ab?
         required_review:
           alert: Wir haben unsere Nutzungsbedingungen aktualisiert. Bitte überprüfe diese.
           body: Bitte nimm dir einen Moment Zeit, um sich über die Aktualisierungen unserer Nutzungsbedingungen zu informieren. Andernfalls kannst du die Plattform nicht nutzen.

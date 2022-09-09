@@ -606,7 +606,7 @@ de:
         count:
           drafts_count:
             one: "%{count} kollaborativer Entwurf"
-            other: "%{count} kollaborativer Entwurf"
+            other: "%{count} kollaborative Entwürfe"
         create:
           error: Beim Erstellen dieser kollaborativen Entwürfe ist ein Problem aufgetreten
           success: Collaborative Draft wurde erfolgreich erstellt.
@@ -674,7 +674,7 @@ de:
           version_history: Änderungsverlauf für diesen Vorschlag
           withdraw: den Entwurf zurückziehen
         states:
-          open: Öffnen
+          open: Offen
           published: Veröffentlicht
           withdrawn: Zurückgezogen
         update:

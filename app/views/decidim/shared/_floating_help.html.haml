@@ -1,0 +1,10 @@
+- return if request.path[1..-1].split('/').size > 1
+
+.floating-helper-container{"data-help-id" => "floating-help-#{id}"}
+  #floating-helper-block.floating-helper__wrapper.row.column{"data-toggler" => ".hide"}
+    .floating-helper__content
+      .floating-helper__content-inner
+        %div
+          %p
+            %span
+              = strip_tags(content)

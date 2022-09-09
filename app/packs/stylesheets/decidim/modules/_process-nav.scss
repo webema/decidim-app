@@ -157,7 +157,7 @@ $nav-border-width: 3px;
     margin-right: .25em;
     width: 20px;
     height: 20px;
-    fill: $muted;
+    fill: var(--secondary);
 
     .stroked-shape{
       fill: none;
@@ -166,7 +166,7 @@ $nav-border-width: 3px;
       stroke-miterlimit: 4;
       stroke-dasharray: none;
       stroke-dashoffset: 0;
-      stroke: $muted;
+      stroke: var(--secondary);
     }
   }
 }
