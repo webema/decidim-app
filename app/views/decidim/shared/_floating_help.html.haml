@@ -5,6 +5,9 @@
     .floating-helper__content
       .floating-helper__content-inner
         %div
+          %h2
+            %span
+              = t("decidim.menu.#{id}")
           %p
             %span
-              = strip_tags(content)
+              = sanitize(content, tags: %w(a))

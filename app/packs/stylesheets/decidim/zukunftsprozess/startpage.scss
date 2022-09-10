@@ -1,13 +1,20 @@
 .home-section.zukunftsprozess {
-  padding: 4rem 0;
   background-color: transparent;
-  background-image: url("~images/startpage_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover; 
-  background-position: center -200px;
+
+  .container {
+    padding: 4rem 0 15rem;
+    max-width: 1920px;
+    margin: auto;
+    background-image: url("~images/startpage_bg.png");
+
+    background-repeat: no-repeat;
+    // background-size: cover;
+    background-position: center -100px;
+  }
+
 
   .cta {
-    margin: 2rem 2rem 0 2rem;
+    margin: 5rem 2rem 0 2rem;
 
     h1 {
       font-family: 'Literata', sans-serif;
@@ -81,25 +88,33 @@
     vertical-align: baseline;
   }
 
-  a.startpage_primary_button {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 1rem 0;
-    font-size: 1.5rem;
-  
-    &.ideas, &.processes {
-      transform: rotate(-2deg) !important;
-    }
-  
-    &.assemblies {
-      transform: rotate(2deg);
-    }
-  
-    & div.small {
-      font-size: 0.9rem;
-      font-weight: 500;
-      margin-top: .3rem;
+  .buttons {
+    margin-top: 3em;
+
+    a.startpage_primary_button {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 1rem 0;
+      font-size: 1.5rem;
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+
+      &.ideas, &.processes {
+        transform: rotate(-2deg) !important;
+      }
+
+      &.assemblies {
+        transform: rotate(2deg);
+      }
+
+      & div.small {
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-top: .3rem;
+      }
     }
   }
+
+
 }

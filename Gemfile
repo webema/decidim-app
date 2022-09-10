@@ -11,7 +11,7 @@ DECIDIM_VERSION = { github: 'decidim/decidim', branch: 'chore/l10n/release/0.27-
 gem 'decidim', DECIDIM_VERSION
 # gem 'decidim-initiatives', DECIDIM_VERSION
 
-# gem 'decidim-ideas', path: '../decidim-ideas'
+gem 'decidim-ideas', path: '../decidim-ideas'
 
 # gem "decidim-decidim_awesome"
 

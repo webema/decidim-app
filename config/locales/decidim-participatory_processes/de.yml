@@ -347,6 +347,7 @@ de:
           title: Was ist eine konKreation?
     menu:
       processes: konKreationen
+      participatory_processes: konKreationen
     metrics:
       participatory_processes:
         description: Anzahl der konKreationen in dieser Organisation
