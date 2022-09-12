@@ -470,9 +470,9 @@ de:
           names:
             active: Aktiv
             all: Alle
-            past: Vergangenheit
+            past: Zurückliegende
             upcoming: Bevorstehende
-          see: Sehen
+          see: Anzeigen
         index:
           loading: Ergebnisse werden geladen ...
         show:
