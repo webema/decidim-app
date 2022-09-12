@@ -1,10 +1,10 @@
 # This migration comes from decidim_ideas (originally 20220909134845)
 class InitialDataStructure < ActiveRecord::Migration[6.1]
   def change
-    remove_table "decidim_ideas"
-    remove_table "decidim_ideas_settings"
-    remove_table "decidim_ideas_type_scopes"
-    remove_table "decidim_ideas_types"
+    drop_table "decidim_ideas"
+    drop_table "decidim_ideas_settings"
+    drop_table "decidim_ideas_type_scopes"
+    drop_table "decidim_ideas_types"
 
     create_table "decidim_ideas", force: :cascade do |t|
       t.jsonb "title", null: false
