@@ -9,7 +9,10 @@ ruby RUBY_VERSION
 DECIDIM_VERSION = { github: 'decidim/decidim', branch: 'chore/l10n/release/0.27-stable' }.freeze
 
 gem 'decidim', DECIDIM_VERSION
-gem 'decidim-initiatives', DECIDIM_VERSION
+# gem 'decidim-initiatives', DECIDIM_VERSION
+
+gem 'decidim-ideas', github: 'webema/decidim-ideas', branch: 'main'
+# gem 'decidim-ideas', path: '../decidim-ideas'
 
 # gem "decidim-decidim_awesome"
 
