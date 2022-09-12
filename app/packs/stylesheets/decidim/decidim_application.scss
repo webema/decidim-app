@@ -139,7 +139,9 @@ a, a.card__link {
     }
 
     .order-by__tabs {
-      color: $white;
+      .muted {
+        color: $white;
+      }
 
       .order-by__tab {
         color: $white;
@@ -345,5 +347,20 @@ h1, h2, h3, h4, h5, h6 {
 ul.card-data {
   li.card-data__item {
     border: none;
+  }
+}
+
+
+.wizard__steps {
+  li, .step--active ~ li  {
+    color: var(--secondary);
+    border-color: var(--secondary);
+
+    &::before {
+      background-color: var(--secondary);
+    }
+  }
+  .step--active {
+    color: var(--secondary);
   }
 }

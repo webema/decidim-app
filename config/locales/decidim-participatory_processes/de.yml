@@ -468,7 +468,7 @@ de:
             no_active_nor_upcoming_callout: Es gibt keine aktiven oder zukünftigen konKreationen. Hier ist eine Liste der vergangenen.
           filter_by: Anzeigen
           names:
-            active: Aktiv
+            active: Aktive
             all: Alle
             past: Zurückliegende
             upcoming: Bevorstehende
