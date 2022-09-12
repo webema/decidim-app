@@ -19,8 +19,8 @@ module ApplicationHelper
 
   def extended_navigation_bar_back_link_path
     case current_participatory_space
-    when Decidim::Initiative
-      decidim_initiatives.initiatives_path
+    when Decidim::Idea
+      decidim_ideas.ideas_path
     when Decidim::Assembly
       decidim_assemblies.assemblies_path
     when Decidim::ParticipatoryProcess

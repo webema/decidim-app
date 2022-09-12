@@ -1,52 +1,54 @@
 <section id="zukunftsprozess" class="home-section zukunftsprozess">
-  <div class="row small-up-1 medium-up-2">
-    <div class="column">
-      <div class="cta">
-        <h1>Willkommen!</h1>
-        <p>Hier kannst DU deine Kirche der Zukunft mitgestalten</p>
-        <p><%= link_to "mehr erfahren #{icon('chevron-right', class: 'inline')}", '#' %></p>
+  <div class="container">
+    <div class="row small-up-1 medium-up-2">
+      <div class="column">
+        <div class="cta">
+          <h1>Willkommen!</h1>
+          <p>Hier kannst DU deine Kirche der Zukunft mitgestalten</p>
+          <p><%= link_to "mehr erfahren #{icon('chevron-right', class: 'inline')}", '#' %></p>
+        </div>
       </div>
-    </div>
-    <div class="column">
-      <%- if recent_blog_post.present? %>
-        <div class="blog-post">
-          <%- if recent_blog_post.hero_image.attached? %>
-            <%= image_tag recent_blog_post.attached_uploader(:hero_image).variant_path :medium %>
-          <%- end %>
-          <div class="teaser">
-            <%= truncate(recent_blog_post.title, length: 50) %>
-            <div class="text-right">
-              <%= link_to "weiterlesen #{icon('chevron-right', class: 'inline')}", post_path(recent_blog_post) %>
+      <div class="column">
+        <%- if recent_blog_post.present? %>
+          <div class="blog-post">
+            <%- if recent_blog_post.hero_image.attached? %>
+              <%= image_tag recent_blog_post.attached_uploader(:hero_image).variant_path :medium %>
+            <%- end %>
+            <div class="teaser">
+              <%= truncate(recent_blog_post.title, length: 50) %>
+              <div class="text-right">
+                <%= link_to "weiterlesen #{icon('chevron-right', class: 'inline')}", post_path(recent_blog_post) %>
+              </div>
             </div>
           </div>
-        </div>
-      <%- end %>
+        <%- end %>
+      </div>
     </div>
-  </div>
 
 
-  <div class="row small-up-1 medium-up-3">
-      <div class="column">
-        <a href="#" class="startpage_primary_button initiatives">
-          Inspirationen
+    <div class="row small-up-1 medium-up-3 buttons">
+        <div class="column">
+          <a href="/ideas" class="startpage_primary_button ideas">
+            Inspirationen
 
-          <div class="small">Finden & beitragen</div>
-        </a>
-      </div>
-      <div class="column">
-        <a href="#" class="startpage_primary_button assemblies">
-          Machwerke
+            <div class="small">Finden & beitragen</div>
+          </a>
+        </div>
+        <div class="column">
+          <a href="/assemblies" class="startpage_primary_button assemblies">
+            Machwerke
 
-          <div class="small">erkunden & mitgestalten</div>
-        </a>
+            <div class="small">erkunden & mitgestalten</div>
+          </a>
 
-      </div>
-      <div class="column">
-        <a href="#" class="startpage_primary_button processes">
-          konKreationen
+        </div>
+        <div class="column">
+          <a href="/processes" class="startpage_primary_button processes">
+            konKreationen
 
-          <div class="small">vorbereiten & verwirklichen</div>
-        </a>
+            <div class="small">vorbereiten & verwirklichen</div>
+          </a>
+        </div>
       </div>
     </div>
   </section>

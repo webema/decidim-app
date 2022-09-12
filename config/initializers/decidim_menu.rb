@@ -12,6 +12,6 @@ Decidim.menu :menu do |menu|
             '/posts',
             position: 5,
             active: :inclusive
-  menu.move :assemblies, after: :initiatives
+  menu.move :assemblies, after: :ideas
   menu.move :participatory_processes, after: :assemblies
 end

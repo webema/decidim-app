@@ -32,6 +32,16 @@
 de:
   hello: "Hallo Welt"
 
+  devise:
+    passwords:
+      edit:
+        password_help_admin: password_help_admin
+
+  layouts:
+    decidim:
+      offline_banner:
+        cache_version_page: cache_version_page
+
   decidim:
     pages:
       home:
@@ -86,7 +96,7 @@ de:
         settings:
           step:
             creation_enabled: creation_enabled
-            
+
     ema:
       menu:
         blog_posts: Aktuelles
@@ -96,4 +106,3 @@ de:
     length_validator:
       minimum:
         other: other
-
