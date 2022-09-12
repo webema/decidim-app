@@ -60,7 +60,7 @@ spec:
         - name: HTTPS_PROXY_REDIRECT
           value: "1"
         - name: NGINX_SERVER_NAME
-          value: decidim.systeme-e.de
+          value: www.zukunftsprozess.de zukunftsprozess.de
         imagePullPolicy: Always
         volumeMounts:
         - name: rails-data
