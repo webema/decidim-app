@@ -171,8 +171,10 @@ GIT
     decidim-verifications (0.27.0.rc1)
       decidim-core (= 0.27.0.rc1)
 
-PATH
-  remote: ../decidim-ideas
+GIT
+  remote: https://github.com/webema/decidim-ideas.git
+  revision: 1f1e494e7b140cb80de585d1bcc8a7198a3f4bd5
+  branch: main
   specs:
     decidim-ideas (0.27.0)
       decidim-admin (= 0.27.0.rc1)
