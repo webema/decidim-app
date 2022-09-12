@@ -2,6 +2,12 @@
   .body {
     margin: 1rem 0 0;
   }
+
+  .card_creation_date {
+    color: $muted;
+    font-size: 90%;
+    line-height: 1rem;
+  }
 }
 
 .blog-posts {
@@ -20,6 +26,12 @@
       p {
         margin-bottom: .5rem;
       }
+    }
+
+    .card_creation_date {
+      color: $muted;
+      font-size: 80%;
+      line-height: 1rem;
     }
 
     @include breakpoint(small down){

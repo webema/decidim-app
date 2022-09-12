@@ -3,11 +3,14 @@
 .wrapper.blog-posts
   .row
 
-    .floating-helper-container{"data-help-id" => "floating-help-participatory_processes"}
-      #floating-helper-block.floating-helper__wrapper.row.column{"data-hide" => "e6e32x-hide", "data-toggler" => ".hide"}
+    .floating-helper-container
+      #floating-helper-block.floating-helper__wrapper.row.column
         .floating-helper__content
           .floating-helper__content-inner
             %div
+              %h2
+                %span
+                  Aktuelles
               %p
                 %span
                   Necessitatibus dolores sunt fuga aperiam eum fugiat neque voluptatum deserunt veniam ex et aut architecto.
@@ -23,10 +26,11 @@
           = link_to post_path(blog_post), class: 'card__link' do
             %h2.card__title
               = blog_post.title
-          %p
-            = truncate(strip_tags(blog_post.body), length: 200)
+
+          %p.card_creation_date
+            = l(blog_post.created_at, format: :short)
 
           %p
-            = l(blog_post.created_at, format: :short)
+            = truncate(strip_tags(blog_post.body), length: 200)
 
   = decidim_paginate @blog_posts
