@@ -10,4 +10,9 @@
               = t("decidim.menu.#{id}")
           %p
             %span
-              = sanitize(content, tags: %w(a))
+              = strip_tags(Nokogiri::HTML.parse(content).css('p').first.text)
+
+
+          = link_to 'Mehr erfahren', '/pages/help', data: { open: 'pageModal', open_url: '/pages/help' }
+
+.reveal#pageModal{ data: { reveal: true } }
