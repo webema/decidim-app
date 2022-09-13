@@ -461,6 +461,19 @@ if Decidim.module_installed? :initiatives
   end
 end
 
+if Decidim.module_installed? :ideas
+  Decidim::Ideas.configure do |config|
+    unless Rails.application.secrets.dig(:decidim, :ideas, :creation_enabled) == "auto"
+      config.creation_enabled = Rails.application.secrets.dig(:decidim, :ideas, :creation_enabled).present?
+    end
+    config.similarity_threshold = Rails.application.secrets.dig(:decidim, :ideas, :similarity_threshold).presence || 0.25
+    config.similarity_limit = Rails.application.secrets.dig(:decidim, :ideas, :similarity_limit).presence || 5
+    config.stats_cache_expiration_time = Rails.application.secrets.dig(:decidim, :ideas, :stats_cache_expiration_time).to_i.minutes
+    config.max_time_in_validating_state = Rails.application.secrets.dig(:decidim, :ideas, :max_time_in_validating_state).to_i.days
+    config.do_not_require_authorization = Rails.application.secrets.dig(:decidim, :ideas, :do_not_require_authorization).present? || true
+  end
+end
+
 if Decidim.module_installed? :elections
   Decidim::Elections.configure do |config|
     config.setup_minimum_hours_before_start = Rails.application.secrets.dig(:elections, :setup_minimum_hours_before_start).presence || 3
