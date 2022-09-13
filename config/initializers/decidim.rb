@@ -478,6 +478,7 @@ if Decidim.module_installed? :elections
   end
 end
 
+Rails.application.config.i18n.raise_on_missing_translations = false
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
 
