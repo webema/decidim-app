@@ -31,6 +31,6 @@ jobs:
           docker login -u github-nexus -p ${{ secrets.NEXUS_PASSWORD }} nexus.devops-e.de:8090
       - name: Redeploy with Rancher
         run: |
-          docker run -e RANCHER_TOKEN="${{ secrets.RANCHER_TOKEN }}" -e RANCHER_CONTEXT="c-zggzp:p-zr2fh" -e RANCHER_URL="https://rancher.devops-e.de" --rm nexus.devops-e.de:8090/ema/rancher-deployer rollout restart deployment decidim-app-staging -n decidim
-          docker run -e RANCHER_TOKEN="${{ secrets.RANCHER_TOKEN }}" -e RANCHER_CONTEXT="c-zggzp:p-zr2fh" -e RANCHER_URL="https://rancher.devops-e.de" --rm nexus.devops-e.de:8090/ema/rancher-deployer rollout restart deployment decidim-app-staging-sidekiq-worker -n decidim
+          docker run -e RANCHER_TOKEN="${{ secrets.RANCHER_TOKEN }}" -e RANCHER_CONTEXT="${{ secrets.RANCHER_CONTEXT }}" -e RANCHER_URL="https://rancher.devops-e.de" --rm nexus.devops-e.de:8090/ema/rancher-deployer rollout restart deployment decidim-app-staging -n decidim
+          docker run -e RANCHER_TOKEN="${{ secrets.RANCHER_TOKEN }}" -e RANCHER_CONTEXT="${{ secrets.RANCHER_CONTEXT }}" -e RANCHER_URL="https://rancher.devops-e.de" --rm nexus.devops-e.de:8090/ema/rancher-deployer rollout restart deployment decidim-app-staging-sidekiq-worker -n decidim
          
