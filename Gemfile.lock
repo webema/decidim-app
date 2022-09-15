@@ -173,7 +173,7 @@ GIT
 
 GIT
   remote: https://github.com/webema/decidim-ideas.git
-  revision: 3dacda509a377ea78e6ba53bb44d64581833e2d4
+  revision: ed10022e164cb863af2dac36eaeab05e2ffe28f7
   branch: main
   specs:
     decidim-ideas (0.27.0)
@@ -604,7 +604,7 @@ GEM
       rack (>= 2.0.0)
     rack-protection (2.2.2)
       rack
-    rack-proxy (0.7.2)
+    rack-proxy (0.7.4)
       rack
     rack-test (2.0.2)
       rack (>= 1.3)
