@@ -336,6 +336,7 @@ h1, h2, h3, h4, h5, h6 {
   .badge {
     border-radius: 0;
     margin: 0 0 .5rem 0;
+    line-height: 1;
 
     &.card__text--status{
       text-transform: none;
@@ -347,6 +348,18 @@ h1, h2, h3, h4, h5, h6 {
 ul.card-data {
   li.card-data__item {
     border: none;
+
+    .icon-wrap span {
+      font-size: 80%;
+      vertical-align:text-top;
+    }
+
+    svg {
+      // color: var(--secondary)
+      height: 1.2rem;
+      width: 1.2rem;
+      margin-right: .25rem;
+    }
   }
 }
 

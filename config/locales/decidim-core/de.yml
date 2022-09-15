@@ -1633,7 +1633,7 @@ de:
         title: Passwort ändern
       new:
         forgot_your_password: Hast du dein Passwort vergessen?
-        send_me_reset_password_instructions: Anweisungen zum Zurücksetzen des Passwortes zusenden
+        send_me_reset_password_instructions: Passwort zurücksetzen
       no_token: Du kannst nicht auf diese Seite zugreifen, ohne von einer E-Mail zum Zurücksetzen des Kennworts zu stammen. Wenn du eine E-Mail zum Zurücksetzen des Passworts erhalten hast, vergewissere dich bitte, dass du die vollständige URL verwendet hast.
       send_instructions: Du erhältst in wenigen Minuten eine E-Mail mit Anweisungen zum Zurücksetzen deines Passworts.
       send_paranoid_instructions: Wenn deine E-Mail-Adresse in unserer Datenbank vorhanden ist, erhältst du innerhalb weniger Minuten eine E-Mail mit Anweisungen zum Zurücksetzen deines Passworts.
@@ -1735,14 +1735,14 @@ de:
           types:
             cookie: Cookie
         dialog:
-          accept_all: Alle akzeptieren
-          accept_only_essential: Nur essentielle Cookies akzeptieren
-          cookie_settings: Einstellungen
-          description: Wir verwenden Cookies auf unserer Website, um die Leistung und den Inhalt der Website zu verbessern. Die Cookies ermöglichen uns, dir eine individuellere Nutzererfahrung und Social-Media-Kanäle zu bieten.
-          title: Informationen über die auf dieser Website verwendeten Cookies
+          accept_all: Cookies zulassen
+          accept_only_essential: Nur notwendige Cookies verwenden
+          cookie_settings: Anpassen
+          description: Wir verwenden Cookies, um die grundlegenden Funktionalitäten der Website zu gewährleisten und dein Online-Erlebnis zu verbessern.
+          title: Unsere Website verwendet Cookies
         modal:
-          accept_all: Alle akzeptieren
-          accept_only_essential: Nur essentielle Cookies akzeptieren
+          accept_all: Cookies zulassen
+          accept_only_essential: Nur notwendige Cookies verwenden
           analytics:
             description: Diese Cookies sammeln Informationen darüber, wie du auf dieser Website navigierst und interagierst. Die gesammelten Informationen werden verwendet, um dem Website-Betreiber zu helfen, die Website zu verbessern.
             title: Analysen und Statistiken

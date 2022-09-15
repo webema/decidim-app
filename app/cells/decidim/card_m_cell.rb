@@ -119,31 +119,20 @@ module Decidim
     end
 
     def creation_date_status
-      return 'TODO'
-
       explanation = content_tag(:strong, t("activemodel.attributes.common.created_at"))
       "#{explanation}<br>#{l(model.created_at.to_date, format: :decidim_short)}"
     end
 
     def follow_status
-      return 'TODO'
-      cell "decidim/follow_button", model, inline: true
+      cell "decidim/follow_button", model, inline: true, card_m: true
     end
 
     def comments_count_status
-      return 'TODO'
-
-      return render_comments_count unless has_link_to_resource?
-
-      link_to resource_path, "aria-label" => "#{t("decidim.comments.comments_count")}: #{comments_count}", title: t("decidim.comments.comments_count") do
-        render_comments_count
-      end
+      render_comments_count
     end
 
     def render_comments_count
-      with_tooltip t("decidim.comments.comments_title") do
-        render :comments_counter
-      end
+      render :comments_counter
     end
 
     def render_authorship
