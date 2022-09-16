@@ -1,9 +1,18 @@
 $nav-border-width: 3px;
 
 .process-nav{
-  background-color: $white;
+  @include breakpoint(medium){
+    background-color: transparent;
+  }
+  @include breakpoint(small){
+    background-color: $white;
+  }
   padding: .75rem $container-padding-y;
-  box-shadow: inset 0 (-1 * $nav-border-width) 0 0 $medium-gray;
+  // box-shadow: inset 0 (-1 * $nav-border-width) 0 0 $medium-gray;
+
+  & > .row {
+    background-color: $white;
+  }
 
   ul{
     margin: 0;

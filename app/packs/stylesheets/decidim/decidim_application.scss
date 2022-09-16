@@ -63,24 +63,11 @@ a, a.card__link {
   }
 }
 
-// .card__link {
-//   color: var(--secondary);
-// }
-
 .card__image{
   width: 100%;
   max-height: 15rem;
   min-height: 10rem;
   object-fit: cover;
-
-  // &.card__image--smaller{
-  //   max-height: 5rem;
-  // }
-
-  // &.card__image--larger{
-  //   max-height: 20rem;
-  //   min-height: 10rem;
-  // }
 }
 
 .process-header__inner {
@@ -167,16 +154,48 @@ a, a.card__link {
   }
 
   &.processes, &.assemblies, &.ideas, &.create_idea {
+
+    .content-wrapper {
+      max-width: 75rem;
+
+      margin-right: auto;
+      margin-left: auto;
+    }
+
     .wrapper {
       background-color: $white;
+    }
 
-      @include breakpoint(mediumlarge){
-        margin: 20px;
+    @include breakpoint(small){
+      .wrapper {
+        margin: 3px;
       }
+    }
 
-      @include breakpoint(small) {
-        margin: 5px;
+    @include breakpoint(medium){
+      .wrapper {
+        margin: 3px 0 0 0;
       }
+    }
+
+
+
+    @include breakpoint(medium){
+      .footer {
+        margin-top: 3px;
+      }
+    }
+
+    @include breakpoint(large){
+      .footer {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &.create_idea {
+    .wrapper {
+      margin: 3px;
     }
   }
 
