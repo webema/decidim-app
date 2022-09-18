@@ -1,0 +1,6 @@
+.help_section_modal_header
+  %h2= t("decidim.menu.#{params[:id]}")
+  %button.close-button{"aria-label" => t(".buttons.close_modal"), "data-close" => "", :type => "button"}
+    %span{"aria-hidden" => "true"} ×
+.help_section_modal_content
+  = decidim_sanitize_editor(@content)

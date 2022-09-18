@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   resources :posts, controller: 'blog_posts', only: %i[index show], module: 'ema'
 
+  resources :help_sections, only: :show, module: 'decidim'
+
   Decidim::Admin::Engine.routes.draw do
     resources :posts, controller: 'blog_posts'
   end

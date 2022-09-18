@@ -12,7 +12,10 @@
             %span
               = strip_tags(Nokogiri::HTML.parse(content).css('p').first.text)
 
+          %p.read-more
+            %span
+              = link_to("/help_sections/#{id}", data: { open: 'pageModal', open_url: "/help_sections/#{id}" }) do
+                Mehr erfahren
+                = icon("chevron-right")
 
-          = link_to 'Mehr erfahren', '/pages/help', data: { open: 'pageModal', open_url: '/pages/help' }
-
-.reveal#pageModal{ data: { reveal: true } }
+              .reveal#pageModal{ data: { reveal: true } }
