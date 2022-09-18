@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: 0aa279c9bc767014eb7b38f53f8e3fd2a0753f35
+  revision: e73e93705953dfa7923522a0d11045f29fe19300
   branch: chore/l10n/release/0.27-stable
   specs:
     decidim (0.27.0.rc1)
@@ -343,7 +343,7 @@ GEM
     crack (0.4.5)
       rexml
     crass (1.0.6)
-    css_parser (1.11.0)
+    css_parser (1.12.0)
       addressable
     date_validator (0.12.0)
       activemodel (>= 3)
@@ -542,11 +542,11 @@ GEM
       version_gem (~> 1.1)
     oauth-tty (1.0.3)
       version_gem (~> 1.1)
-    oauth2 (2.0.8)
+    oauth2 (2.0.9)
       faraday (>= 0.17.3, < 3.0)
       jwt (>= 1.0, < 3.0)
       multi_xml (~> 0.5)
-      rack (>= 1.2, < 3)
+      rack (>= 1.2, < 4)
       snaky_hash (~> 2.0)
       version_gem (~> 1.1)
     omniauth (2.1.0)
@@ -577,17 +577,17 @@ GEM
       activerecord (>= 5.2)
       request_store (~> 1.1)
     parallel (1.22.1)
-    parallel_tests (3.11.1)
+    parallel_tests (3.12.1)
       parallel
-    parser (3.1.2.0)
+    parser (3.1.2.1)
       ast (~> 2.4.1)
     pg (1.1.4)
     pg_search (2.3.6)
       activerecord (>= 5.2)
       activesupport (>= 5.2)
-    premailer (1.16.0)
+    premailer (1.17.0)
       addressable
-      css_parser (>= 1.6.0)
+      css_parser (>= 1.12.0)
       htmlentities (>= 4.0.0)
     premailer-rails (1.11.1)
       actionmailer (>= 3)
@@ -671,7 +671,7 @@ GEM
       rspec-rails (< 6.0)
     rspec-core (3.11.0)
       rspec-support (~> 3.11.0)
-    rspec-expectations (3.11.0)
+    rspec-expectations (3.11.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.11.0)
     rspec-html-matchers (0.9.4)
@@ -690,7 +690,7 @@ GEM
       rspec-support (~> 3.10)
     rspec-retry (0.6.2)
       rspec-core (> 3.3)
-    rspec-support (3.11.0)
+    rspec-support (3.11.1)
     rspec_junit_formatter (0.3.0)
       rspec-core (>= 2, < 4, != 2.12.0)
     rubocop (1.28.2)
@@ -702,7 +702,7 @@ GEM
       rubocop-ast (>= 1.17.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.19.1)
+    rubocop-ast (1.21.0)
       parser (>= 3.1.1.0)
     rubocop-rails (2.15.2)
       activesupport (>= 4.2.0)
@@ -777,7 +777,7 @@ GEM
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
-    unicode-display_width (2.2.0)
+    unicode-display_width (2.3.0)
     valid_email2 (2.3.1)
       activemodel (>= 3.2)
       mail (~> 2.5)
@@ -801,7 +801,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webmock (3.14.0)
+    webmock (3.18.1)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
