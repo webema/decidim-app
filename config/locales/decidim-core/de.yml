@@ -530,14 +530,14 @@ de:
       registrations:
         new:
           already_have_an_account?: Hast du bereits ein Konto?
-          newsletter: Gelegentlich einen Newsletter mit relevanten Informationen erhalten
+          newsletter: Hiermit willige ein, gelegentlich einen Newsletter unter der oben angegebenen E-Mail-Adresse zu erhalten
           newsletter_title: Kontakterlaubnis
           nickname_help: Dein Pseudonym in %{organization}. Kann nur Buchstaben, Zahlen, '-' und '_' enthalten.
           sign_in: Anmelden
           sign_up: Registrieren
           sign_up_as:
             legend: Registrieren als
-          subtitle: Registriere dich, um an Diskussionen teilzunehmen und Vorschläge zu unterstützen.
+          subtitle: Registriere dich, um Inspirationen einzugeben, Machwerke und konKreationen mitzugestalten und abzustimmen.
           terms: Nutzungsbedingungen
           tos_agreement: Mit der Anmeldung stimmst du den %{link} zu.
           tos_title: Nutzungsbedingungen
@@ -1632,7 +1632,7 @@ de:
         password_help: "Mindestens %{minimun_characters} Zeichen, nicht zu gewöhnlich (z. B. 123456) und darf nicht dein Benutzer:innen-Name oder deine E-Mail-Adresse sein."
         title: Passwort ändern
       new:
-        forgot_your_password: Hast du dein Passwort vergessen?
+        forgot_your_password: Passwort vergessen?
         send_me_reset_password_instructions: Passwort zurücksetzen
       no_token: Du kannst nicht auf diese Seite zugreifen, ohne von einer E-Mail zum Zurücksetzen des Kennworts zu stammen. Wenn du eine E-Mail zum Zurücksetzen des Passworts erhalten hast, vergewissere dich bitte, dass du die vollständige URL verwendet hast.
       send_instructions: Du erhältst in wenigen Minuten eine E-Mail mit Anweisungen zum Zurücksetzen deines Passworts.
@@ -1667,9 +1667,9 @@ de:
     shared:
       links:
         back: Zurück
-        didn_t_receive_confirmation_instructions: Hast du keine Bestätigungs-Mail erhalten?
-        didn_t_receive_unlock_instructions: Hast du keine Entsperrungsanweisungen erhalten?
-        forgot_your_password: Hast du dein Passwort vergessen?
+        didn_t_receive_confirmation_instructions: Du hast keine Bestätigungs-Mail erhalten?
+        didn_t_receive_unlock_instructions: Du hast keine Entsperrungsanweisungen erhalten?
+        forgot_your_password: Passwort vergessen?
         sign_in: Anmelden
         sign_in_with_provider: Mit %{provider} anmelden
         sign_up: Registrieren
@@ -1738,7 +1738,7 @@ de:
           accept_all: Cookies zulassen
           accept_only_essential: Nur notwendige Cookies verwenden
           cookie_settings: Anpassen
-          description: Wir verwenden Cookies, um die grundlegenden Funktionalitäten der Website zu gewährleisten und dein Online-Erlebnis zu verbessern.
+          description: In den Einstellungen kannst du auswählen, welche Cookies du zulassen möchtest. Standardmäßig werden nur notwendige Cookies gespeichert. Weiterführende Informationen findest du unter Anpassen und in unserer <a href="/pages/datenschutzerklaerung">Datenschutzerklärung</a>.
           title: Unsere Website verwendet Cookies
         modal:
           accept_all: Cookies zulassen
