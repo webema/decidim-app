@@ -457,7 +457,7 @@ ul.card-data {
 .help_section_modal_header {
   h2 {
     font-family: 'Literata', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
   }
@@ -466,5 +466,29 @@ ul.card-data {
 .help_section_modal_content {
   p {
     margin: .5rem 0;
+  }
+}
+
+.timeline__item--current  {
+  .timeline__header, .timeline__phase {
+    background-color: var(--secondary);
+  }
+
+  .timeline__info {
+    border-color: #e8e8e8;
+  }
+}
+
+.process-header__progress {
+  .phase-current {
+    text-transform: none;
+  }
+  .phase-item--past {
+    span {
+      background-color: var(--secondary);
+    }
+    &::after {
+      background-color: var(--secondary);
+    }
   }
 }
