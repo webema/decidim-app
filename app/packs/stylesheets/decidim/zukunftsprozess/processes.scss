@@ -43,7 +43,17 @@
     background-color: #00b5e5;
 
     main {
-      background-image: url("~images/ideas_1200.png");
+      @include breakpoint(medium){
+        background-image: url("~images/ideas_810.png");
+        background-position: center 30px;
+      }
+
+      @include breakpoint(large){
+        background-image: url("~images/ideas_2_1200.png");
+        background-position: center 30px;
+      }
+
+
     }
 
     .collection-sort-controls {
@@ -110,8 +120,20 @@
   &.processes, &.assemblies, &.ideas, &.create_idea {
 
     .floating-helper-container {
-      padding: 10rem 0 3rem;
-      margin-bottom: 3rem;
+      @include breakpoint(small){
+        padding: 1rem 0 1rem;
+        margin-bottom: 1rem;
+      }
+
+      @include breakpoint(medium){
+        padding: 1rem 0 3rem;
+        margin-bottom: 3rem;
+      }
+
+      @include breakpoint(large){
+        padding: 10rem 0 3rem;
+        margin-bottom: 3rem;
+      }
     }
 
     .content-wrapper {
@@ -124,10 +146,22 @@
       background-color: $white;
     }
 
+    @include breakpoint(large){
+      .footer {
+        margin-top: 20px;
+      }
+    }
+
     main {
       background-repeat: no-repeat;
-      background-size: 60%;
-      background-position: center top;
+
+      @include breakpoint(medium){
+        background-size: 100% auto;
+      }
+
+      @include breakpoint(large){
+        background-size: 1920px auto;
+      }
     }
 
     @include breakpoint(small){
@@ -183,40 +217,117 @@
   background-color: transparent;
   color: $black;
   border: none;
-  max-width: 500px;
+
   padding: 0;
 
-  p {
-    font-size: 2rem;
-    font-weight: 500;
-    margin: 0;
-    line-height: 3rem;
+  @include breakpoint(small){
 
-    span {
-      padding: 0 0.5rem;
+    p {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 0;
+      line-height: 2.5rem;
+
+      span {
+        padding: 0 0.4rem;
+      }
+    }
+
+    p.read-more {
+      margin-top: .2rem;
+      font-size: 1rem;
+
+      svg {
+        height: .6rem;
+        width: .6rem;
+      }
+    }
+
+    h2 {
+      font-family: 'Literata', sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: .8rem;
+
+      span {
+        padding: 0 0.4rem;
+      }
     }
   }
 
-  p.read-more {
-    margin-top: .4rem;
-    font-size: 1.2rem;
+  @include breakpoint(medium){
+    max-width: 50%;
 
-    svg {
-      height: .8rem;
-      width: .8rem;
+    p {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 0;
+      line-height: 2.5rem;
+
+      span {
+        padding: 0 0.4rem;
+      }
+    }
+
+    p.read-more {
+      margin-top: .4rem;
+      font-size: 1rem;
+
+      svg {
+        height: .7rem;
+        width: .7rem;
+      }
+    }
+
+    h2 {
+      font-family: 'Literata', sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: .8rem;
+
+      span {
+        padding: 0 0.4rem;
+      }
     }
   }
 
-  h2 {
-    font-family: 'Literata', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+  @include breakpoint(large){
+    max-width: 500px;
 
-    span {
-      padding: 0 0.5rem;
+    p {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 0;
+      line-height: 3rem;
+
+      span {
+        padding: 0 0.5rem;
+      }
+    }
+
+    p.read-more {
+      margin-top: .4rem;
+      font-size: 1.2rem;
+
+      svg {
+        height: .8rem;
+        width: .8rem;
+      }
+    }
+
+    h2 {
+      font-family: 'Literata', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+
+      span {
+        padding: 0 0.5rem;
+      }
     }
   }
+
+
 
   p, h2 {
     span {
