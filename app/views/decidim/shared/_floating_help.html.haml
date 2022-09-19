@@ -1,5 +1,7 @@
 - return if request.path[1..-1].split('/').size > 1
 
+.reveal#helpSectionModal{ data: { reveal: true } }
+
 .floating-helper-container{"data-help-id" => "floating-help-#{id}"}
   #floating-helper-block.floating-helper__wrapper.row.column{"data-toggler" => ".hide"}
     .floating-helper__content
@@ -11,11 +13,10 @@
           %p
             %span
               = strip_tags(Nokogiri::HTML.parse(content).css('p').first.text)
-
           %p.read-more
             %span
-              = link_to("/help_sections/#{id}", data: { open: 'pageModal', open_url: "/help_sections/#{id}" }) do
+              = link_to("/help_sections/#{id}", data: { open: 'helpSectionModal', open_url: "/help_sections/#{id}" }) do
                 Mehr erfahren
                 = icon("chevron-right")
 
-              .reveal#pageModal{ data: { reveal: true } }
+

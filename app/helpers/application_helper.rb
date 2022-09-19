@@ -1,6 +1,6 @@
 module ApplicationHelper
   def extended_navigation_bar(items, max_items: 5)
-    return unless items.any?
+    return unless items.count > 1
 
     items.prepend({
       name: icon("chevron-left", aria_label: t(".all_#{current_participatory_space_key}_menu_item"), role: "img"),

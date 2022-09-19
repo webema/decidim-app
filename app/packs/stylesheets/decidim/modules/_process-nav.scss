@@ -193,3 +193,14 @@ $nav-border-width: 3px;
     }
   }
 }
+
+// remove backlink on mobile
+.process-nav__content {
+  ul {
+    li:first-child {
+      @include breakpoint(small down){
+        display: none;
+      }
+    }
+  }
+}

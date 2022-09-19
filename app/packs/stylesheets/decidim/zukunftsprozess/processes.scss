@@ -1,0 +1,234 @@
+// Remove geometric form over banner-image
+.process-header{
+  background-image: none;
+
+  .process-header__main {
+    clip-path: none;
+  }
+}
+
+// increase height of banner image
+.process-header__inner {
+  @include breakpoint(mediumlarge){
+    height: 500px;
+  }
+
+  @include breakpoint(small){
+    min-height: 250px;
+  }
+
+  .process-header__main {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .process-header__hashtag a {
+    color: $white;
+  }
+}
+
+// color and design for different processes
+.off-canvas-wrapper {
+  background-color: $zp_gray;
+
+  &.assemblies {
+    background-color: #76b82a;
+
+    main {
+      background-image: url("~images/assemblies_1200.png");
+    }
+  }
+
+  &.ideas, &.create_idea {
+    background-color: #00b5e5;
+
+    main {
+      background-image: url("~images/ideas_1200.png");
+    }
+
+    .collection-sort-controls {
+      color: $black;
+
+      a, a:focus, a.active {
+        color: $black !important;
+
+        &::after {
+          border-color: $black transparent transparent !important;
+          border-top-color: $black !important;
+        }
+      }
+    }
+
+    .results-per-page__dropdown {
+      a {
+        background-color: transparent !important;
+      }
+
+    }
+  }
+
+  &.processes {
+    background-color: #551285;
+
+    main {
+      background-image: url("~images/processes_1200.png");
+    }
+
+    label {
+      color: $white;
+    }
+
+    .order-by__tabs {
+      .muted {
+        color: $white;
+      }
+
+      .order-by__tab {
+        color: $white;
+      }
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &.start {
+    background-color: $white;
+  }
+
+  &.assemblies, &.ideas {
+    h1.section-heading, h3, label {
+      color: black;
+    }
+
+    hr {
+      border-bottom: 1px solid black;
+    }
+  }
+
+  &.processes, &.assemblies, &.ideas, &.create_idea {
+
+    .floating-helper-container {
+      padding: 10rem 0 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .content-wrapper {
+      max-width: 75rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .wrapper {
+      background-color: $white;
+    }
+
+    main {
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position: center top;
+    }
+
+    @include breakpoint(small){
+      .wrapper {
+        margin: 3px 0;
+      }
+    }
+
+    @include breakpoint(medium){
+      .wrapper {
+        margin: 3px 0 0 0;
+      }
+
+      .footer {
+        margin-top: 3px;
+      }
+    }
+
+    @include breakpoint(large){
+      .footer {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &.create_idea {
+    .wrapper {
+      margin: 3px;
+    }
+  }
+
+  &.processes, &.assemblies, &.ideas {
+    &.listing {
+      .wrapper {
+        background-color: transparent;
+        color: $white;
+        margin: 0;
+      }
+
+      .with_scope_scopes_picker_filter {
+        legend {
+          color: $white;
+          text-transform: none;
+          letter-spacing: 0;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.floating-helper__content {
+  background-color: transparent;
+  color: $black;
+  border: none;
+  max-width: 500px;
+  padding: 0;
+
+  p {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+    line-height: 3rem;
+
+    span {
+      padding: 0 0.5rem;
+    }
+  }
+
+  p.read-more {
+    margin-top: .4rem;
+    font-size: 1.2rem;
+
+    svg {
+      height: .8rem;
+      width: .8rem;
+    }
+  }
+
+  h2 {
+    font-family: 'Literata', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+    span {
+      padding: 0 0.5rem;
+    }
+  }
+
+  p, h2 {
+    span {
+      background: rgba(255, 255, 255, 0.8);
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+  }
+}
+
+
+.process-header__container {
+  align-items: end;
+  display: flex;
+}
