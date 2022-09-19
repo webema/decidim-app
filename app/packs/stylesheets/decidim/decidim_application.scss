@@ -11,6 +11,10 @@
 @import './zukunftsprozess/buttons';
 @import './zukunftsprozess/ideas';
 
+html, body {
+  text-transform: none !important;
+}
+
 .header {
   box-shadow: 0 5px 5px rgba(black, .25);
 }
@@ -31,7 +35,19 @@
   color-scheme: light only;
 }
 
-.card--idea, .card--proposal, .card--assembly, .card--process, .card--collaborative_draft {
+.card--idea,
+.card--proposal,
+.card--assembly,
+.card--process,
+.card--collaborative_draft,
+.card--debate,
+.card--meeting,
+.card--budget,
+.card--project,
+.card--post,
+.card--user,
+.card--user_group,
+.card--comment {
   .card__footer {
     display: none;
   }
@@ -351,10 +367,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.filters{
+#participatory-space-filters{
   display: block;
   padding: 0;
-  margin-bottom: 5rem !important;
+  margin-bottom: 2rem;
 
   form {
     display: block;
@@ -384,8 +400,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.card__icondata {
+  font-size: .9em;
+}
+
 ul.card-data {
   li.card-data__item {
+    text-transform: unset;
+    letter-spacing: 0;
+
+    strong {
+      font-size: 1em;
+      text-transform: unset;
+      letter-spacing: 0;
+    }
+
     border: none;
 
     .icon-wrap span {
@@ -394,7 +423,7 @@ ul.card-data {
     }
 
     svg {
-      // color: var(--secondary)
+      color: #726a70;
       height: 1.2rem;
       width: 1.2rem;
       margin-right: .25rem;
@@ -490,5 +519,18 @@ ul.card-data {
     &::after {
       background-color: var(--secondary);
     }
+  }
+}
+
+
+.search-filters {
+  a, a > .section-title {
+    color: var(--secondary) !important;
+  }
+}
+
+.filters {
+  fieldset {
+    margin-bottom: 0;
   }
 }
