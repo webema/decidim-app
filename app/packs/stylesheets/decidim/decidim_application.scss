@@ -88,11 +88,11 @@ a, a.card__link {
 
 .process-header__inner {
   @include breakpoint(mediumlarge){
-    height: 300px;
+    height: 500px;
   }
 
   @include breakpoint(small){
-    min-height: 200px;
+    min-height: 250px;
   }
 
   .process-header__main {
