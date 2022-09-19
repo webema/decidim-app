@@ -292,7 +292,7 @@
   }
 
   @include breakpoint(large){
-    max-width: 500px;
+    max-width: 50%;
 
     p {
       font-size: 2rem;
