@@ -41,16 +41,14 @@
 
   &.ideas, &.create_idea {
     background-color: #00b5e5;
+  }
+
+  &.ideas.listing {
 
     main {
       // @include breakpoint(small){
       //   background-image: url("~images/ideas_810.png");
       //   background-position: center 230px;
-      // }
-
-      // @include breakpoint(medium){
-      //   background-image: url("~images/ideas_810.png");
-      //   background-position: center 30px;
       // }
 
       @include breakpoint(medium){
@@ -302,7 +300,7 @@
   }
 
   @include breakpoint(medium){
-    max-width: 45%;
+    max-width: 50%;
     min-height: auto;
 
     margin-bottom: 0;
@@ -341,7 +339,7 @@
   }
 
   @include breakpoint(large){
-    max-width: 45%;
+    max-width: 50%;
     margin-bottom: 3rem;
 
     p {
@@ -378,7 +376,7 @@
   }
 
   @include breakpoint(xlarge){
-    max-width: 45%;
+    max-width: 50%;
     min-height: 280px;
 
     margin-bottom: 3rem;
