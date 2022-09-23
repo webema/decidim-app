@@ -32,7 +32,7 @@ gem 'haml'
 gem 'rexml', '~> 3.2.5'
 
 # Password protect staging environment
-gem 'rack_password'
+gem 'lockup'
 
 group :development, :test do
   gem 'byebug', '~> 11.0', platform: :mri

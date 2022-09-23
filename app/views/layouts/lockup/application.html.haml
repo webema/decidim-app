@@ -1,0 +1,17 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "noindex, nofollow", :name => "robots"}/
+    %meta{:content => "width=device-width,initial-scale = 1.0,maximum-scale = 1.0,user-scalable=no", :name => "viewport"}/
+
+    %title Bitte gib das Codewort ein…
+
+    :javascript
+      #{render partial: 'layouts/lockup/inline_js'}
+
+    = stylesheet_pack_tag "decidim_core", media: "all"
+
+  %body
+    .lockup#content
+      = yield

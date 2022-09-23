@@ -1,0 +1,22 @@
+.card.form
+  .card-divider
+    %h4
+      Bitte gib das Codewort ein...
+  - if @wrong
+    .card-section
+      Hmm… Das war leider falsch. Versuche es noch einmal…
+  .card-section
+    = form_for :lockup, url: { action: 'unlock' } do |form|
+      - unless @wrong == true
+        %p= form.password_field "codeword", placeholder: "code word", autofocus: true
+      - else
+        %p= form.password_field "codeword", value: @codeword, class: 'nope', autofocus: true
+      - if lockup_hint
+        %p#hint_icon ?
+        %p#hint= lockup_hint
+      - if params[:return_to].present?
+        = form.hidden_field "return_to", value: params[:return_to]
+      - elsif @return_to.present?
+        = form.hidden_field "return_to", value: @return_to
+      .actions
+        = button_tag "Senden", class: 'button', type: 'submit'
