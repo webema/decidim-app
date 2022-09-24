@@ -273,14 +273,14 @@ $keystroke-radius: $global-radius;
 // // 7. Accordion
 // // ------------
 
-// $accordion-background: $primary-color;
-// $accordion-plusminus: true;
-// $accordion-title-font-size: rem-calc(12);
-// $accordion-item-color: $white;
-// $accordion-item-background-hover: $light-gray;
+$accordion-background: #DEE2E6;
+$accordion-plusminus: false;
+$accordion-title-font-size: rem-calc(16);
+$accordion-item-color: $white;
+$accordion-item-background-hover: var(--secondary);
 // $accordion-item-padding: 1.25rem 1rem;
-// $accordion-content-background: $white;
-// $accordion-content-border: 1px solid $light-gray;
+$accordion-content-background: white;
+$accordion-content-border: 1px solid #DEE2E6;
 // $accordion-content-color: inherit;
 // $accordion-content-padding: 1rem;
 

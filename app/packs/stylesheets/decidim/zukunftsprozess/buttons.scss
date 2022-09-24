@@ -4,7 +4,7 @@ $button-color: #FEF166;
   a.startpage_primary_button,
   a.title-action__action,
   button.title-action__action,
-  .actions > a.button,
+  .actions > a.button:not(.secondary),
   form:not(.button_to) > button[type=submit]:not(.secondary),
   .actions > button[type=submit]:not(.secondary),
   .field > button[type=submit]:not(.secondary),
