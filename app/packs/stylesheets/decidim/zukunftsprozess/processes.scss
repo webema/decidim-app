@@ -276,6 +276,13 @@
       }
     }
   }
+
+  &.posts, &.pages {
+    .floating-helper__content {
+      height: auto;
+      min-height: auto;
+    }
+  }
 }
 
 .floating-helper__content {
@@ -445,7 +452,6 @@
     }
   }
 }
-
 
 .process-header__container {
   align-items: end;
