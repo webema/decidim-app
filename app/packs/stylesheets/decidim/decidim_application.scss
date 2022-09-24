@@ -305,6 +305,9 @@ ul.card-data {
 }
 
 .filters {
+  display: block;
+  padding: 0;
+
   fieldset {
     margin-bottom: 0;
   }
