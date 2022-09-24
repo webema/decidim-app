@@ -8,6 +8,12 @@
 
     background-repeat: no-repeat;
 
+    @include breakpoint(small) {
+      background-image: url("~images/startpage_640.jpg");
+      background-size: 640px auto;
+      background-position: center top;
+    }
+
     @include breakpoint(medium) {
       background-image: url("~images/startpage_1024_new.jpg");
       background-size: 1024px auto;

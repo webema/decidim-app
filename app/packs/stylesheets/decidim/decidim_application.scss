@@ -313,7 +313,6 @@ ul.card-data {
   }
 }
 
-
 .lockup {
   display: flex;
   align-items: center;
@@ -321,6 +320,12 @@ ul.card-data {
   height: 100vh;
   background-color: $white;
   background-repeat: no-repeat;
+
+  @include breakpoint(small) {
+    background-image: url("~images/startpage_640.jpg");
+    background-size: 640px auto;
+    background-position: center top;
+  }
 
   @include breakpoint(medium) {
     background-image: url("~images/startpage_1024_new.jpg");
@@ -354,13 +359,18 @@ ul.card-data {
 
 
 .accordion-item {
+  .accordion-title::before {
+    font-size: 24px;
+    margin-top: -12px;
+  }
   a {
     color: black;
     text-decoration: none;
+    background-color: $white;
 
     &:hover {
-      color: white;
-      border: 1px solid var(--secondary);
+      color: black;
+      background-color: #DEE2E6;
     }
   }
 
