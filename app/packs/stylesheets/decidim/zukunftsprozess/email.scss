@@ -94,12 +94,12 @@ td{
 @media only screen{
   html{
     min-height: 100%;
-    background: #f3f3f3;
+    background: $zp_gray;
   }
 }
 
 table.body{
-  background: #f3f3f3;
+  background: $zp_gray;
   height: 100%;
   width: 100%;
 }
@@ -1119,7 +1119,7 @@ h6 a:visited{
 }
 
 pre{
-  background: #f3f3f3;
+  background: $zp_gray;
   margin: 30px 0;
 }
 
@@ -1167,7 +1167,7 @@ span.preheader{
   visibility: hidden;
   mso-hide: all !important;
   font-size: 1px;
-  color: #f3f3f3;
+  color: $zp_gray;
   line-height: 1px;
   max-height: 0;
   max-width: 0;
@@ -1718,11 +1718,15 @@ body.outlook p{
 table.body th.decidim-bar,
 table.body td.decidim-bar{
   padding: 10px 0;
-  background-color: #1a181d;
+  background-color: white;
+}
+
+table.body td.decidim-bar{
+  border-bottom: 5px solid $zp_gray;
 }
 
 table.body{
-  background-color: #f3f3f3;
+  background-color: $zp_gray;
   margin: 20px 0;
 }
 
@@ -1738,6 +1742,7 @@ table.body{
 .cityhall-bar{
   background-color: #551285;
   padding-top: 16px;
+  border-top: 5px solid $zp_gray;
 
   p {
     font-size: 12px;

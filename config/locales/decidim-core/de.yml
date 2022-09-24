@@ -1576,8 +1576,9 @@ de:
       confirmation_instructions:
         action: Bestätige mein Konto
         greeting: Willkommen %{recipient}!
-        instruction: 'Du kannst deine Konto-E-Mail über den folgenden Link bestätigen:'
-        subject: Bestätigungsanweisungen
+        instruction: 'Wir freuen uns riesig, dass du dich auf der Beteiligungsplattform des Zukunftsprozesses registriert hast!
+Du bist nur noch einen Klick entfernt, dein Konto freizuschalten. Bestätige jetzt deine E-Mail-Adresse:'
+        subject: Wie aufregend, jetzt kannst du dich beteiligen!
       email_changed:
         greeting: Hallo %{recipient}!
         message: Wir setzen uns mit dir in Verbindung, um dich darüber zu informieren, dass deine E-Mail-Adresse auf %{email} geändert wurde.
@@ -1611,16 +1612,16 @@ de:
       reset_password_instructions:
         action: Mein Passwort ändern
         greeting: Hallo %{recipient}!
-        instruction: Jemand hat einen Link angefordert, um dein Passwort zu ändern, und du kannst dies über den folgenden Link tun.
-        instruction_2: Wenn du dies nicht angefordert hast, ignoriere diese E-Mail.
+        instruction: 'Du hast einen Link angefordert, um dein Passwort zu ändern. Du kannst das nun über folgenden Link tun:'
+        instruction_2: Ignoriere diese E-Mail, wenn du selbst keinen Link angefordert hast.
         instruction_3: Dein Passwort ändert sich erst, wenn du auf den obigen Link zugreifst und ein neues Passwort erstellst.
-        subject: Anweisungen zum zurücksetzen deines Passwortes
+        subject: Du möchtest dein Passwort zurücksetzen?
       unlock_instructions:
         action: Mein Konto entsperren
         greeting: Hallo %{recipient}!
         instruction: 'Klicke auf den folgenden Link, um dein Konto zu entsperren:'
         message: Dein Konto wurde aufgrund einer übermäßigen Anzahl fehlgeschlagener Anmeldeversuche gesperrt.
-        subject: Anweisungen zum Entsperren
+        subject: Konto gesperrt, doch Hilfe naht!
     omniauth_callbacks:
       failure: 'Du konntest nicht mit deinem %{kind}-Account angemeldet werden. Grund: "%{reason}".'
       success: Du hast dich erfolgreich mit deinem %{kind}-Account angemeldet.
