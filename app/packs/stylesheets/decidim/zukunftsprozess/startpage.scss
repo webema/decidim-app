@@ -3,13 +3,34 @@
 
   .container {
     padding: 4rem 0 15rem;
-    max-width: 1920px;
+    max-width: 2560px;
     margin: auto;
-    background-image: url("~images/startpage_bg.png");
 
     background-repeat: no-repeat;
-    // background-size: cover;
-    background-position: center -100px;
+
+    @include breakpoint(medium) {
+      background-image: url("~images/startpage_1024.jpg");
+      background-size: 1024px auto;
+      background-position: center 300px;
+    }
+
+    @include breakpoint(large only) {
+      background-image: url("~images/startpage_1200.jpg");
+      background-size: 1200px auto;
+      background-position: center 350px;
+    }
+
+    @include breakpoint(xlarge only) {
+      background-image: url("~images/startpage_1440.jpg");
+      background-size: 1440px auto;
+      background-position: center 300px;
+    }
+
+    @include breakpoint(xxlarge only) {
+      background-image: url("~images/startpage_2560.jpg");
+      background-position: center 30px;
+      background-size: 2560px auto;
+    }
   }
 
 

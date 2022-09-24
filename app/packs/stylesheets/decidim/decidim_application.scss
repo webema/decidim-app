@@ -317,13 +317,32 @@ ul.card-data {
   justify-content: center;
   height: 100vh;
   background-color: $white;
-
-  background-image: url("~images/startpage_2560.jpg");
-
-  background-size: 2560px auto;
-
   background-repeat: no-repeat;
-  background-position: center center;
+
+  @include breakpoint(medium) {
+    background-image: url("~images/startpage_1024.jpg");
+    background-size: 1024px auto;
+    background-position: center center;
+  }
+
+  @include breakpoint(large only) {
+    background-image: url("~images/startpage_1200.jpg");
+    background-size: 1200px auto;
+    background-position: center center;
+  }
+
+  @include breakpoint(xlarge only) {
+    background-image: url("~images/startpage_1440.jpg");
+    background-size: 1440px auto;
+    background-position: center center;
+  }
+
+  @include breakpoint(xxlarge only) {
+    background-image: url("~images/startpage_2560.jpg");
+    background-position: center center;
+    background-size: 2560px auto;
+  }
+
 
   .form {
     max-width: 400px;
