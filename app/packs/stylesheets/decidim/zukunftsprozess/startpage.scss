@@ -1,13 +1,52 @@
 .home-section.zukunftsprozess {
-  padding: 4rem 0;
   background-color: transparent;
-  background-image: url("~images/startpage_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover; 
-  background-position: center -200px;
+
+  .container {
+    padding: 4rem 0 15rem;
+    max-width: 2560px;
+    margin: auto;
+
+    background-repeat: no-repeat;
+
+    @include breakpoint(small) {
+      background-image: url("~images/startpage_640.jpg");
+      background-size: 640px auto;
+      background-position: center top;
+    }
+
+    @include breakpoint(medium) {
+      background-image: url("~images/startpage_1024_new.jpg");
+      background-size: 1024px auto;
+      background-position: center 200px;
+    }
+
+    @include breakpoint(large only) {
+      background-image: url("~images/startpage_1200_new.jpg");
+      background-size: 1200px auto;
+      background-position: center 200px;
+    }
+
+    @include breakpoint(xlarge only) {
+      background-image: url("~images/startpage_1440_new.jpg");
+      background-size: 1440px auto;
+      background-position: center 200px;
+    }
+
+    @include breakpoint(xxlarge only) {
+      background-image: url("~images/startpage_2560.jpg");
+      background-position: center 30px;
+      background-size: 2560px auto;
+    }
+  }
+
 
   .cta {
-    margin: 2rem 2rem 0 2rem;
+    margin: 5rem 2rem 0 2rem;
+
+    h1 {
+      font-family: 'Literata', sans-serif;
+      font-weight: 600;
+    }
 
     p {
       font-size: 1.6rem;
@@ -16,6 +55,11 @@
     a {
       text-decoration: none;
       font-weight: 600;
+
+      .icon.inline {
+        width: 16px;
+        height: 16px;
+      }
     }
   }
 
@@ -47,6 +91,11 @@
       a {
         text-decoration: none;
         font-weight: 600;
+
+        .icon.inline {
+          width: 12px;
+          height: 12px;
+        }
       }
     }
 
@@ -60,86 +109,39 @@
       height: calc(100% - 1px);
     }
   }
-}
 
-#content {
-  a.startpage_primary_button {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 1rem 0;
-    font-size: 1.5rem;
-  
-    &.initiatives, &.processes {
-      transform: rotate(-2deg);
-    }
-  
-    &.assemblies {
-      transform: rotate(2deg);
-    }
-  
-    & div.small {
-      font-size: 0.9rem;
-      font-weight: 500;
-      margin-top: .3rem;
-    }
+  svg {
+    display: inline;
+    vertical-align: baseline;
   }
-  
-  a.startpage_primary_button, button.button:not(.secondary):not(.process-nav__more), a.button:not(.secondary) {
-    background-color: var(--primary);
-    border: 0 solid #E5E7EB;
-    border-radius: 0;
-    box-sizing: border-box;
-    color: $black;
-    
-    font-weight: 700;
-    justify-content: center;
-    line-height: 1.5rem;
-    padding: .75rem .5rem;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    text-transform: none;
-    letter-spacing: 0;
-  
-    &:hover {
-      color: $black;
-    }
-  
-    &:focus {
-      outline: 0;
-    }
-  
-    &:after {
-      content: '';
-      position: absolute;
-      border: 1px solid $black;
-      bottom: 4px;
-      left: 4px;
-      width: calc(100% - 1px);
-      height: calc(100% - 1px);
-    }
-  
-    &:hover:after {
-      bottom: 2px;
-      left: 2px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    a.primary_button {
-      padding: 2rem 1rem;
-      font-size: 1.6rem;
-  
+
+  .buttons {
+    margin-top: 3em;
+
+    a.startpage_primary_button {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 1rem 0;
+      font-size: 1.5rem;
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+
+      &.ideas, &.processes {
+        transform: rotate(-2deg) !important;
+      }
+
+      &.assemblies {
+        transform: rotate(2deg);
+      }
+
       & div.small {
-        margin-top: .3rem;
         font-size: 0.9rem;
         font-weight: 500;
+        margin-top: .3rem;
       }
     }
   }
-}
 
+
+}

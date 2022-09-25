@@ -1,0 +1,128 @@
+$button-color: #FEF166;
+
+#content {
+  a.startpage_primary_button,
+  a.title-action__action,
+  button.title-action__action,
+  .actions > a.button:not(.secondary),
+  form:not(.button_to) > button[type=submit]:not(.secondary),
+  .actions > button[type=submit]:not(.secondary),
+  .field > button[type=submit]:not(.secondary),
+  .show-more > button {
+    background-color: $button-color;
+    border: 0 solid #E5E7EB;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: $black;
+
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.5rem;
+    padding: .75rem .5rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-transform: none;
+    letter-spacing: 0;
+
+    &:hover {
+      color: $black;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      border: 1px solid $black;
+      bottom: 4px;
+      left: 4px;
+      width: calc(100% - 1px);
+      height: calc(100% - 1px);
+    }
+
+    &:hover:after {
+      bottom: 2px;
+      left: 2px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    a.primary_button {
+      padding: 2rem 1rem;
+      font-size: 1.6rem;
+
+      & div.small {
+        margin-top: .3rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  // a.button, button.button {
+  //   background-color: $button-color;
+  // }
+
+
+
+  a.button.hollow {
+    border: 1px solid $button-color;
+  }
+
+  button.follow-button:not(.card__button) {
+    .icon-wrap {
+      border-right: 1px solid $button-color;
+    }
+
+    &:hover {
+      .icon-wrap {
+        border-right: 1px solid $white;
+      }
+    }
+  }
+
+  button.secondary:not(.card__button), a.button.secondary, button.secondary.active {
+    border: 1px solid $button-color;
+    background-color: transparent;
+    color: var(--secondary);
+    filter: brightness(100%);
+
+    &:hover {
+      background-color: $button-color;
+    }
+  }
+
+}
+
+a.button, button.button {
+  color: $black !important;
+  text-transform: none !important;
+}
+
+
+.hide-more > button {
+  display: none;
+}
+
+
+.section-heading > a.text-small {
+  display: none;
+}
+
+.opinion-toggle.button-group {
+  button {
+    background-color: $button-color;
+    color: var(--secondary) !important;
+
+    &[aria-pressed="true"] {
+      background-color: var(--secondary);
+      color: $white !important;
+    }
+  }
+}

@@ -27,7 +27,7 @@ de:
         related_process_ids: Ähnliche konKreationen
         scope_id: Themenbereich
         scope_type_max_depth_id: Umfang-Filtertiefe
-        scopes_enabled: Themenbereiche aktiviert
+        scopes_enabled: Themen aktiviert
         short_description: Kurzbeschreibung
         show_metrics: Metriken anzeigen
         show_statistics: Statistiken anzeigen
@@ -347,6 +347,7 @@ de:
           title: Was ist eine konKreation?
     menu:
       processes: konKreationen
+      participatory_processes: konKreationen
     metrics:
       participatory_processes:
         description: Anzahl der konKreationen in dieser Organisation
@@ -450,8 +451,8 @@ de:
           all_types: Alle Typen
           counters:
             active:
-              one: 1 aktiver konKreation
-              other: "%{count} konKreationen"
+              one: 1 aktive konKreation
+              other: "%{count} aktive konKreationen"
             all:
               one: 1 konKreation
               other: "%{count} konKreationen"
@@ -467,11 +468,11 @@ de:
             no_active_nor_upcoming_callout: Es gibt keine aktiven oder zukünftigen konKreationen. Hier ist eine Liste der vergangenen.
           filter_by: Anzeigen
           names:
-            active: Aktiv
+            active: Aktive
             all: Alle
-            past: Vergangenheit
+            past: Zurückliegende
             upcoming: Bevorstehende
-          see: Sehen
+          see: Anzeigen
         index:
           loading: Ergebnisse werden geladen ...
         show:

@@ -463,7 +463,7 @@ de:
             enable_pads_creation: Aktiviere die Pads-Erstellung
             resources_permissions_enabled: Ressourcenberechtigungen aktiviert
             scope_id: Bereich
-            scopes_enabled: Bereiche aktiviert
+            scopes_enabled: Themen aktiviert
           step:
             amendment_creation_enabled: Änderungserstellung aktiviert
             amendment_promotion_enabled: Hervorheben von Änderungen aktiviert
@@ -530,14 +530,14 @@ de:
       registrations:
         new:
           already_have_an_account?: Hast du bereits ein Konto?
-          newsletter: Gelegentlich einen Newsletter mit relevanten Informationen erhalten
+          newsletter: Hiermit willige ein, gelegentlich einen Newsletter unter der oben angegebenen E-Mail-Adresse zu erhalten
           newsletter_title: Kontakterlaubnis
           nickname_help: Dein Pseudonym in %{organization}. Kann nur Buchstaben, Zahlen, '-' und '_' enthalten.
           sign_in: Anmelden
           sign_up: Registrieren
           sign_up_as:
             legend: Registrieren als
-          subtitle: Registriere dich, um an Diskussionen teilzunehmen und Vorschläge zu unterstützen.
+          subtitle: Registriere dich, um Inspirationen einzugeben, Machwerke und konKreationen mitzugestalten und abzustimmen.
           terms: Nutzungsbedingungen
           tos_agreement: Mit der Anmeldung stimmst du den %{link} zu.
           tos_title: Nutzungsbedingungen
@@ -795,7 +795,7 @@ de:
         error: Beim Folgen dieser Ressource ist ein Fehler aufgetreten.
         participatory_space: Du folgst <span class="show-for-sr">%{resource_name}</span>
       destroy:
-        button: Entfolgen
+        button: Nicht folgen
         error: Beim Entfolgen dieser Ressource ist ein Fehler aufgetreten.
     forms:
       current_image: Aktuelles Bild
@@ -1015,7 +1015,7 @@ de:
     members:
       no_members: Diese Gruppe hat noch keine Mitglieder.
     menu:
-      help: Hilfe
+      help: Info
       home: Start
     messaging:
       conversation_mailer:
@@ -1237,7 +1237,7 @@ de:
         read_more: Weiterlesen
         standalone_pages: Seiten
         subheading: Navigiere durch die Hilfeseiten von %{name}
-        title: Hilfe
+        title: Info
         topics: Themen
       participatory_space:
         metrics:
@@ -1246,17 +1246,17 @@ de:
       terms_and_conditions:
         accept:
           error: Beim Akzeptieren der Nutzungsbedingungen ist ein Fehler aufgetreten.
-          success: Groß! Du hast die Allgemeinen Geschäftsbedingungen akzeptiert.
+          success: Vielen Dank! Du hast die Nutzungsbedingungen akzeptiert.
         form:
-          agreement: Ich stimme diesen Bedingungen zu
+          agreement: Ich stimme diesen Nutzungsbedingungen zu
           legend: Stimme den Nutzungsbedingungen zu
         refuse:
           modal_body: Wenn du deine Zustimmung nicht erteilst, wirst du nicht in der Lage sein, die Plattform zu nutzen; du kannst <a href="%{download_your_data_path}">Deine Daten herunterladen</a> und/oder <a href="%{delete_path}">Dein Konto löschen</a>.
-          modal_btn_continue: Bedingungen akzeptieren und fortfahren
+          modal_btn_continue: Nutzungsbedingungen akzeptieren und fortfahren
           modal_btn_exit: Ich werde es später überprüfen
-          modal_button: Bedingungen ablehnen
+          modal_button: Nutzungsbedingungen ablehnen
           modal_close: Dialog schließen
-          modal_title: Lehnst du die aktualisierten Geschäftsbedingungen wirklich ab?
+          modal_title: Lehnst du die aktualisierten Nutzungsbedingungen wirklich ab?
         required_review:
           alert: Wir haben unsere Nutzungsbedingungen aktualisiert. Bitte überprüfe diese.
           body: Bitte nimm dir einen Moment Zeit, um sich über die Aktualisierungen unserer Nutzungsbedingungen zu informieren. Andernfalls kannst du die Plattform nicht nutzen.
@@ -1329,17 +1329,17 @@ de:
       create:
         error: Bei der Unterstützung ist ein Fehler aufgetreten.
     scopes:
-      global: Globaler Umfang
+      global: Alle Themen
       picker:
-        cancel: Stornieren
+        cancel: Abbrechen
         change: Ausgewählten Bereich ändern
         choose: Wählen
-        currently_selected: Aktuell ausgewählter Bereich
+        currently_selected: Aktuell ausgewähltes Thema
         title: Wähle %{field}
-      prompt: Wähle einen Bereich aus
-      scopes: Bereiche
+      prompt: Wähle ein Thema aus
+      scopes: Themen
       scopes_picker_input:
-        select_scope: 'Wähle einen Bereich (aktuell: %{current})'
+        select_scope: 'Wähle ein Thema (aktuell: %{current})'
     search:
       results: Suchergebnisse
       results_found_for_term: '%{count} Ergebnisse für die Suche: "%{term}"'
@@ -1576,8 +1576,9 @@ de:
       confirmation_instructions:
         action: Bestätige mein Konto
         greeting: Willkommen %{recipient}!
-        instruction: 'Du kannst deine Konto-E-Mail über den folgenden Link bestätigen:'
-        subject: Bestätigungsanweisungen
+        instruction: 'Wir freuen uns riesig, dass du dich auf der Beteiligungsplattform des Zukunftsprozesses registriert hast!
+Du bist nur noch einen Klick entfernt, dein Konto freizuschalten. Bestätige jetzt deine E-Mail-Adresse:'
+        subject: Wie aufregend, jetzt kannst du dich beteiligen!
       email_changed:
         greeting: Hallo %{recipient}!
         message: Wir setzen uns mit dir in Verbindung, um dich darüber zu informieren, dass deine E-Mail-Adresse auf %{email} geändert wurde.
@@ -1611,16 +1612,16 @@ de:
       reset_password_instructions:
         action: Mein Passwort ändern
         greeting: Hallo %{recipient}!
-        instruction: Jemand hat einen Link angefordert, um dein Passwort zu ändern, und du kannst dies über den folgenden Link tun.
-        instruction_2: Wenn du dies nicht angefordert hast, ignoriere diese E-Mail.
+        instruction: 'Du hast einen Link angefordert, um dein Passwort zu ändern. Du kannst das nun über folgenden Link tun:'
+        instruction_2: Ignoriere diese E-Mail, wenn du selbst keinen Link angefordert hast.
         instruction_3: Dein Passwort ändert sich erst, wenn du auf den obigen Link zugreifst und ein neues Passwort erstellst.
-        subject: Anweisungen zum zurücksetzen deines Passwortes
+        subject: Du möchtest dein Passwort zurücksetzen?
       unlock_instructions:
         action: Mein Konto entsperren
         greeting: Hallo %{recipient}!
         instruction: 'Klicke auf den folgenden Link, um dein Konto zu entsperren:'
         message: Dein Konto wurde aufgrund einer übermäßigen Anzahl fehlgeschlagener Anmeldeversuche gesperrt.
-        subject: Anweisungen zum Entsperren
+        subject: Konto gesperrt, doch Hilfe naht!
     omniauth_callbacks:
       failure: 'Du konntest nicht mit deinem %{kind}-Account angemeldet werden. Grund: "%{reason}".'
       success: Du hast dich erfolgreich mit deinem %{kind}-Account angemeldet.
@@ -1632,8 +1633,8 @@ de:
         password_help: "Mindestens %{minimun_characters} Zeichen, nicht zu gewöhnlich (z. B. 123456) und darf nicht dein Benutzer:innen-Name oder deine E-Mail-Adresse sein."
         title: Passwort ändern
       new:
-        forgot_your_password: Hast du dein Passwort vergessen?
-        send_me_reset_password_instructions: Anweisungen zum Zurücksetzen des Passwortes zusenden
+        forgot_your_password: Passwort vergessen?
+        send_me_reset_password_instructions: Passwort zurücksetzen
       no_token: Du kannst nicht auf diese Seite zugreifen, ohne von einer E-Mail zum Zurücksetzen des Kennworts zu stammen. Wenn du eine E-Mail zum Zurücksetzen des Passworts erhalten hast, vergewissere dich bitte, dass du die vollständige URL verwendet hast.
       send_instructions: Du erhältst in wenigen Minuten eine E-Mail mit Anweisungen zum Zurücksetzen deines Passworts.
       send_paranoid_instructions: Wenn deine E-Mail-Adresse in unserer Datenbank vorhanden ist, erhältst du innerhalb weniger Minuten eine E-Mail mit Anweisungen zum Zurücksetzen deines Passworts.
@@ -1667,9 +1668,9 @@ de:
     shared:
       links:
         back: Zurück
-        didn_t_receive_confirmation_instructions: Hast du keine Bestätigungs-Mail erhalten?
-        didn_t_receive_unlock_instructions: Hast du keine Entsperrungsanweisungen erhalten?
-        forgot_your_password: Hast du dein Passwort vergessen?
+        didn_t_receive_confirmation_instructions: Du hast keine Bestätigungs-Mail erhalten?
+        didn_t_receive_unlock_instructions: Du hast keine Entsperrungsanweisungen erhalten?
+        forgot_your_password: Passwort vergessen?
         sign_in: Anmelden
         sign_in_with_provider: Mit %{provider} anmelden
         sign_up: Registrieren
@@ -1735,14 +1736,14 @@ de:
           types:
             cookie: Cookie
         dialog:
-          accept_all: Alle akzeptieren
-          accept_only_essential: Nur essentielle Cookies akzeptieren
-          cookie_settings: Einstellungen
-          description: Wir verwenden Cookies auf unserer Website, um die Leistung und den Inhalt der Website zu verbessern. Die Cookies ermöglichen uns, dir eine individuellere Nutzererfahrung und Social-Media-Kanäle zu bieten.
-          title: Informationen über die auf dieser Website verwendeten Cookies
+          accept_all: Cookies zulassen
+          accept_only_essential: Nur notwendige Cookies verwenden
+          cookie_settings: Anpassen
+          description: In den Einstellungen kannst du auswählen, welche Cookies du zulassen möchtest. Standardmäßig werden nur notwendige Cookies gespeichert. Weiterführende Informationen findest du unter Anpassen und in unserer <a href="/pages/datenschutzerklaerung">Datenschutzerklärung</a>.
+          title: Unsere Website verwendet Cookies
         modal:
-          accept_all: Alle akzeptieren
-          accept_only_essential: Nur essentielle Cookies akzeptieren
+          accept_all: Cookies zulassen
+          accept_only_essential: Nur notwendige Cookies verwenden
           analytics:
             description: Diese Cookies sammeln Informationen darüber, wie du auf dieser Website navigierst und interagierst. Die gesammelten Informationen werden verwendet, um dem Website-Betreiber zu helfen, die Website zu verbessern.
             title: Analysen und Statistiken

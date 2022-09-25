@@ -1,0 +1,31 @@
+- if participatory_process.steps.any?
+  .columns.mediumlarge-4
+    .process-header__phase
+      .process-header__progress
+        %ol
+          - past_step = true
+          - participatory_process.steps.each_with_index do |step, index|
+            - if past_step
+              %li.phase-item--past
+                %span
+            - else
+              %li
+                %span
+            - past_step = false if step.active?
+        %span.phase-current= t(".step", current: (participatory_process.active_step.position + 1), total: current_participatory_space.steps.count)
+      %div
+        %span.phase-title= translated_attribute participatory_process.active_step.title
+        %span.phase-date
+          = participatory_space_helpers.step_dates participatory_process.active_step
+      - cta_text = translated_attribute(participatory_process.active_step.cta_text)
+      - if participatory_process.active_step.cta_path.present? && cta_text.present?
+        = link_to t(".view_steps"), decidim_participatory_processes.participatory_process_participatory_process_steps_path(current_participatory_space), class: "clear button secondary tiny show-for-medium"
+        = link_to(                                           |
+            cta_text,                                        |
+            step_cta_url(participatory_process),             |
+            class: "button small button--sc show-for-medium" |
+          )                                                  |
+      - else
+        = link_to t(".view_steps"), decidim_participatory_processes.participatory_process_participatory_process_steps_path(current_participatory_space), data: { open: 'stepsModal', open_url: decidim_participatory_processes.participatory_process_participatory_process_steps_path(current_participatory_space) }
+
+.reveal#stepsModal{ data: { reveal: true } }

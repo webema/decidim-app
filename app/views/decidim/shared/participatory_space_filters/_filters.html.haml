@@ -1,0 +1,2 @@
+= filter_form_for filter do |form|
+  = form.select :with_scope, Decidim::Scope.where(parent_id: nil).order(:name).collect { |p| [ p.name[current_locale], p.id ] }, prompt: 'Alle Themen', label: 'Nach Thema filtern'

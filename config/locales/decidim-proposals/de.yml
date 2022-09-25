@@ -455,7 +455,7 @@ de:
             title: Vorschlag aktualisieren
             update: Aktualisieren
           form:
-            attachment_legend: "(Optional) Anhang hinzufügen"
+            attachment_legend: "Titelbild und Anhänge hinzufügen"
             created_in_meeting: Dieser Vorschlag stammt von einer Besprechung
             delete_attachment: Anhang löschen
             select_a_category: Kategorie auswählen
@@ -606,7 +606,7 @@ de:
         count:
           drafts_count:
             one: "%{count} kollaborativer Entwurf"
-            other: "%{count} kollaborativer Entwurf"
+            other: "%{count} kollaborative Entwürfe"
         create:
           error: Beim Erstellen dieser kollaborativen Entwürfe ist ein Problem aufgetreten
           success: Collaborative Draft wurde erfolgreich erstellt.
@@ -669,12 +669,12 @@ de:
           publish: Veröffentlichen
           publish_info: Veröffentliche diese Version des Entwurfs oder
           published_proposal: Veröffentlichter Vorschlag
-          request_access: Zugangsanfragen
+          request_access: Zugriff anfordern
           requested_access: Zugriff angefordert
           version_history: Änderungsverlauf für diesen Vorschlag
           withdraw: den Entwurf zurückziehen
         states:
-          open: Öffnen
+          open: Offen
           published: Veröffentlicht
           withdrawn: Zurückgezogen
         update:

@@ -1,0 +1,76 @@
+!!! Strict
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    = stylesheet_pack_tag "zp_email"
+  %body
+    %table.body
+      - if content_for?(:see_on_website)
+        %table.container
+          %th.small-12.first.columns.headnote.float-right
+            = yield(:see_on_website)
+      %tr
+        %td.float-center{:align => "center", :valign => "top"}
+          %center
+            %table.main.container
+              %tr
+                %td.decidim-bar
+                  %table.row.collapse
+                    %tr
+                      %th.small-3.large-3.first.columns.decidim-bar
+                        %table
+                          %tr
+                            %th
+                      %th.small-6.large-6.columns.decidim-bar
+                        %table
+                          %tr
+                            %th
+                              %center
+                                = render partial: "layouts/decidim/mailer_logo", locals: { organization: @organization }
+                      %th.small-3.large-3.last.columns.decidim-bar
+                        %table
+                          %tr
+                            %th
+                              - if @organization.official_img_header.attached?
+                                = link_to @organization.official_url do
+                                  = image_tag @organization.attached_uploader(:official_img_header).url(host: @organization.host), alt: "", style: "max-height: 50px", class: "float-right"
+                      %th.expander
+              %tr
+                %td
+                  %table.spacer
+                    %tbody
+                      %tr
+                        %td{:height => "40px", :style => "font-size:40px;line-height:40px;"}
+                  %table.row.content
+                    %tr
+                      %th.small-12.first.columns
+                        = yield
+
+                        %p
+                          Dein Zukunftsprozess-Team
+                      %th.expander
+                  %table.row
+                    %tr
+                      %th.small-12.first.columns
+                      %th.expander
+                  %table.row
+                    %tr
+                      %th.expander
+                      %th.small-12.first.columns.cityhall-bar
+                        = render partial: "layouts/decidim/mailer_footer"
+                        -# .decidim-logo{:style => "float: right; text-align: right; padding-right: 16px"}
+                        -#   - if @custom_url_for_mail_root.present?
+                        -#     = link_to @organization.name.html_safe, @custom_url_for_mail_root
+                        -#   - else
+                        -#     = link_to @organization.name.html_safe, decidim.root_url(host: @organization.host)
+            - if content_for?(:note) or content_for?(:unsubscribe)
+              %table.container
+                %tr
+                  %td
+                    %table.row
+                      %th.expander
+                      %th.small-12.first.last.columns.footnote
+                        %center
+                          = yield(:note) if content_for?(:note)
+                          = yield(:unsubscribe) if content_for?(:unsubscribe)

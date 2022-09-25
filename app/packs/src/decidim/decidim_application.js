@@ -4,5 +4,8 @@
 // Load images
 require.context("../../images", true)
 
-import "@fontsource/open-sans";
-import "@fontsource/literata";
+import "@fontsource/literata/600.css";
+
+import "@fontsource/open-sans/400.css"
+import "@fontsource/open-sans/600.css"
+import "@fontsource/open-sans/700.css"

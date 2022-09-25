@@ -6,7 +6,17 @@
 //
 // By default this is empty.
 
+$zp_gray: #DEE2E6;
+
 @import './zukunftsprozess/startpage';
+@import './zukunftsprozess/blog_posts';
+@import './zukunftsprozess/buttons';
+@import './zukunftsprozess/ideas';
+@import './zukunftsprozess/processes';
+
+html, body {
+  text-transform: none !important;
+}
 
 .header {
   box-shadow: 0 5px 5px rgba(black, .25);
@@ -16,11 +26,360 @@
   display: none !important;
 }
 
-.home-section.zukunftsprozess {
-  .cta {
-    h1 {
-      font-family: 'Literata', sans-serif !important;
-      font-weight: 900;
+:root {
+  color-scheme: light only;
+}
+
+.card--idea,
+.card--proposal,
+.card--assembly,
+.card--process,
+.card--collaborative_draft,
+.card--debate,
+.card--meeting,
+.card--budget,
+.card--project,
+.card--post,
+.card--user,
+.card--user_group,
+.card--comment {
+  .card__footer {
+    display: none;
+  }
+}
+
+.card--process__column {
+  a.button {
+    display: none;
+  }
+}
+
+.card__content {
+  a {
+    color: var(--secondary);
+    font-weight: 600;
+
+    &:hover {
+      color: var(--secondary);
     }
   }
+}
+
+a, a.card__link {
+  color: var(--secondary);
+  font-weight: 600;
+
+  &:hover {
+    color: var(--secondary);
+  }
+}
+
+.card__image{
+  width: 100%;
+  max-height: 15rem;
+  min-height: 10rem;
+  object-fit: cover;
+}
+
+// remove overlay from process header
+.process-header__main::after {
+  background-color: transparent;
+}
+
+.data-picker.picker-single .picker-values div a, .data-picker .picker-prompt a {
+  border-radius: 0px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.section-heading {
+  text-transform: none;
+  letter-spacing: 0;
+  border: none;
+
+  // remove balken
+  &:before {
+    display: none;
+  }
+}
+
+.text-uppercase {
+  text-transform: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+.follow-button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  font-size: 0.9rem;
+
+  .icon-wrap {
+    padding: 0.5rem;
+    min-width: 2.5rem;
+  }
+
+  .icon {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+
+#participatory-space-filters{
+  display: block;
+  padding: 0;
+  margin-bottom: 2rem;
+
+  form {
+    display: block;
+  }
+
+  select {
+    width: 100% !important;
+  }
+}
+
+.card {
+  &.warning, &.success, &.alert, &.mutetd {
+    border: 1px solid #e8e8e8;
+  }
+}
+
+.card__text {
+  .badge {
+    border-radius: 0;
+    margin: 0 0 .5rem 0;
+    line-height: 1;
+
+    &.card__text--status{
+      text-transform: none;
+      color: white;
+    }
+  }
+}
+
+.card__icondata {
+  font-size: .9em;
+}
+
+ul.card-data {
+  li.card-data__item {
+    text-transform: unset;
+    letter-spacing: 0;
+
+    strong {
+      font-size: 1em;
+      text-transform: unset;
+      letter-spacing: 0;
+    }
+
+    border: none;
+
+    .icon-wrap span {
+      font-size: 80%;
+      vertical-align:text-top;
+    }
+
+    svg {
+      color: #726a70;
+      height: 1.2rem;
+      width: 1.2rem;
+      margin-right: .25rem;
+    }
+
+    &.creation_date_status {
+
+      strong {
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 1em;
+      }
+      font-size: .7em;
+      line-height: .6 !important;
+    }
+  }
+}
+
+// fix wizard steps color
+.wizard__steps {
+  li, .step--active ~ li  {
+    color: var(--secondary);
+    border-color: var(--secondary);
+
+    &::before {
+      background-color: var(--secondary);
+    }
+  }
+  .step--active {
+    color: var(--secondary);
+  }
+}
+
+// all badges rectangular
+.badge {
+  border-radius: 0;
+}
+
+// we don't really need option to order
+.comments {
+  .order-by__dropdown {
+    display: none;
+  }
+}
+
+.register-form {
+  #card__tos, #card__newsletter {
+    text-align: left;
+
+    label {
+      line-height: .5;
+    }
+  }
+
+  .tos-text {
+    font-style: normal;
+    text-align: left;
+  }
+}
+
+// floating help opens in modal
+#helpSectionModal {
+  .help_section_modal_header {
+    h2 {
+      font-family: 'Literata', sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .help_section_modal_content {
+    p {
+      margin: .5rem 0;
+    }
+  }
+}
+
+// fix color for dots in phase-indicator
+.process-header__progress {
+  .phase-current {
+    text-transform: none;
+  }
+  .phase-item--past {
+    span {
+      background-color: var(--secondary);
+    }
+    &::after {
+      background-color: var(--secondary);
+    }
+  }
+}
+
+
+// timeline opens in modal
+#stepsModal {
+  .timeline__item--current  {
+    .timeline__header, .timeline__phase {
+      background-color: var(--secondary);
+    }
+
+    .timeline__info {
+      border-color: #e8e8e8;
+    }
+  }
+}
+
+// fix search filter colors and design
+.search-filters {
+  a, a > .section-title {
+    color: var(--secondary) !important;
+  }
+}
+
+.filters {
+  display: block;
+  padding: 0;
+
+  fieldset {
+    margin-bottom: 0;
+  }
+}
+
+.lockup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $white;
+  background-repeat: no-repeat;
+
+  @include breakpoint(small) {
+    background-image: url("~images/startpage_640.jpg");
+    background-size: 640px auto;
+    background-position: center top;
+  }
+
+  @include breakpoint(medium) {
+    background-image: url("~images/startpage_1024_new.jpg");
+    background-size: 1024px auto;
+    background-position: center center;
+  }
+
+  @include breakpoint(large only) {
+    background-image: url("~images/startpage_1200_new.jpg");
+    background-size: 1200px auto;
+    background-position: center center;
+  }
+
+  @include breakpoint(xlarge only) {
+    background-image: url("~images/startpage_1440_new.jpg");
+    background-size: 1440px auto;
+    background-position: center center;
+  }
+
+  @include breakpoint(xxlarge only) {
+    background-image: url("~images/startpage_2560.jpg");
+    background-position: center center;
+    background-size: 2560px auto;
+  }
+
+
+  .form {
+    max-width: 400px;
+  }
+}
+
+
+.accordion-item {
+  .accordion-title::before {
+    font-size: 24px;
+    margin-top: -12px;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    background-color: $white;
+
+    &:hover {
+      color: black;
+      background-color: #DEE2E6;
+    }
+  }
+
+  &.is-active {
+    a {
+      color: $white;
+      background-color: var(--secondary);
+      border: 1px solid var(--secondary);
+    }
+  }
+
 }

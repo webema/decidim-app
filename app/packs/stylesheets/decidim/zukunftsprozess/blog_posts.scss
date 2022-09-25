@@ -1,0 +1,48 @@
+.card--post {
+  .body {
+    margin: 1rem 0 0;
+  }
+
+  .card_creation_date {
+    color: $muted;
+    font-size: 90%;
+    line-height: 1rem;
+  }
+}
+
+.blog-posts {
+  .blog-post {
+    background-color: $white;
+
+    .image {
+      width: 300px;
+      height: 200px;
+      background-color: $dark-gray;
+    }
+
+    .text {
+      padding: 1rem 0;
+
+      p {
+        margin-bottom: .5rem;
+      }
+    }
+
+    .card_creation_date {
+      color: $muted;
+      font-size: 80%;
+      line-height: 1rem;
+    }
+
+    @include breakpoint(small down){
+      .image {
+        width: 100%;
+        height: auto;
+      }
+
+      .text {
+        padding: 0 1rem .5rem;
+      }
+    }
+  }
+}

@@ -1,9 +1,9 @@
 module ApplicationHelper
   def extended_navigation_bar(items, max_items: 5)
-    return unless items.any?
+    return unless items.count > 1
 
     items.prepend({
-      name: t(".all_#{current_participatory_space_key}_menu_item"),
+      name: icon("chevron-left", aria_label: t(".all_#{current_participatory_space_key}_menu_item"), role: "img"),
       url: extended_navigation_bar_back_link_path
     })
 
@@ -19,8 +19,8 @@ module ApplicationHelper
 
   def extended_navigation_bar_back_link_path
     case current_participatory_space
-    when Decidim::Initiative
-      decidim_initiatives.initiatives_path
+    when Decidim::Idea
+      decidim_ideas.ideas_path
     when Decidim::Assembly
       decidim_assemblies.assemblies_path
     when Decidim::ParticipatoryProcess

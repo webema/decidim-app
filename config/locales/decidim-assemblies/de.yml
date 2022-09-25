@@ -45,7 +45,7 @@ de:
         published_at: Veröffentlicht am
         purpose_of_action: Aufgaben
         scope_id: Umfang
-        scopes_enabled: Bereiche aktiviert
+        scopes_enabled: Themen aktiviert
         short_description: Kurze Beschreibung
         show_statistics: Zeige Statistiken
         slug: URL-Slug

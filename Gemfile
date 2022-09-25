@@ -9,7 +9,10 @@ ruby RUBY_VERSION
 DECIDIM_VERSION = { github: 'decidim/decidim', branch: 'chore/l10n/release/0.27-stable' }.freeze
 
 gem 'decidim', DECIDIM_VERSION
-gem 'decidim-initiatives', DECIDIM_VERSION
+# gem 'decidim-initiatives', DECIDIM_VERSION
+
+gem 'decidim-ideas', github: 'webema/decidim-ideas', branch: 'main'
+# gem 'decidim-ideas', path: '../decidim-ideas'
 
 # gem "decidim-decidim_awesome"
 
@@ -24,11 +27,12 @@ gem 'wicked_pdf', '~> 2.1'
 gem 'sidekiq'
 gem 'sidekiq-scheduler'
 
+gem 'haml'
 # Hack?
 gem 'rexml', '~> 3.2.5'
 
 # Password protect staging environment
-gem 'rack_password'
+gem 'lockup'
 
 group :development, :test do
   gem 'byebug', '~> 11.0', platform: :mri

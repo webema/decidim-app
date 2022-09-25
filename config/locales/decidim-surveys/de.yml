@@ -25,7 +25,7 @@ de:
             ends_at: Antworten akzeptiert bis
             ends_at_help: Leer lassen für kein bestimmtes Datum
             scope_id: Bereich
-            scopes_enabled: Bereiche aktiviert
+            scopes_enabled: Themen aktiviert
             starts_at: Antworten akzeptiert von
             starts_at_help: Leer lassen für kein bestimmtes Datum
           step:

@@ -19,7 +19,7 @@ Decidim.configure do |config|
   # Sets the default locale for new organizations. When creating a new
   # organization from the System area, system admins will be able to overwrite
   # this value for that specific organization.
-  config.default_locale = :en
+  config.default_locale = :de
 
   # Restrict access to the system part with an authorized ip list.
   # You can use a single ip like ("1.2.3.4"), or an ip subnet like ("1.2.3.4/24")
@@ -461,6 +461,19 @@ if Decidim.module_installed? :initiatives
   end
 end
 
+if Decidim.module_installed? :ideas
+  Decidim::Ideas.configure do |config|
+    # unless Rails.application.secrets.dig(:decidim, :ideas, :creation_enabled) == "auto"
+    #   config.creation_enabled = Rails.application.secrets.dig(:decidim, :ideas, :creation_enabled).present?
+    # end
+    # config.similarity_threshold = Rails.application.secrets.dig(:decidim, :ideas, :similarity_threshold).presence || 0.25
+    # config.similarity_limit = Rails.application.secrets.dig(:decidim, :ideas, :similarity_limit).presence || 5
+    # config.stats_cache_expiration_time = Rails.application.secrets.dig(:decidim, :ideas, :stats_cache_expiration_time).to_i.minutes
+    # config.max_time_in_validating_state = Rails.application.secrets.dig(:decidim, :ideas, :max_time_in_validating_state).to_i.days
+    config.do_not_require_authorization = Rails.application.secrets.dig(:decidim, :ideas, :do_not_require_authorization).present? || true
+  end
+end
+
 if Decidim.module_installed? :elections
   Decidim::Elections.configure do |config|
     config.setup_minimum_hours_before_start = Rails.application.secrets.dig(:elections, :setup_minimum_hours_before_start).presence || 3
@@ -478,6 +491,7 @@ if Decidim.module_installed? :elections
   end
 end
 
+Rails.application.config.i18n.raise_on_missing_translations = false
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
 
