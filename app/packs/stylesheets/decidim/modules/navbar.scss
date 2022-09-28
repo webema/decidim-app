@@ -13,11 +13,16 @@ $navbar-active-shadow-medium: inset 0 -8px 0 0 var(--primary);
 .off-canvas{
   background-color: $white;
   // background: transparent;
+  border-left: 1px solid #DEE2E6;
 
   .close-button{
     color: $black;
     padding: .2rem .5rem;
     margin-right: -.5rem;
+  }
+
+  .row {
+    padding: 0;
   }
 }
 
@@ -620,4 +625,9 @@ $navbar-active-shadow-medium: inset 0 -8px 0 0 var(--primary);
   @include breakpoint(medium){
     box-shadow: $navbar-active-shadow-medium;
   }
+}
+
+
+.usermenu-off-canvas, .usermenu-off-canvas-holder > .topbar__user__login {
+  border-color: #DEE2E6 !important;
 }
