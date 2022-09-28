@@ -816,8 +816,8 @@ de:
           message_2: Die empfohlene Größe für dieses Bild ist 512x512 Pixel.
         image:
           explanation: 'Anleitung für Bild:'
-          message_1: Vorzugsweise ein Querformat ohne Text.
-          message_2: Der Dienst schneidet die Datei zu.
+          message_1: Vorzugsweise im Querformat ohne Text
+          message_2: Das Bild wird ggf. beschnitten
       file_validation:
         allowed_file_extensions: 'Erlaubte Dateiendungen: %{extensions}'
         max_file_dimension: 'Maximale Dateigröße: %{resolution} Pixel'
@@ -1770,6 +1770,7 @@ Du bist nur noch einen Klick entfernt, dein Konto freizuschalten. Bestätige jet
         cc_by_license: Creative Commons Lizenz
         cookie_settings: Cookie Einstellungen
         decidim_logo: Decidim-Logo
+        laki_logo: Landeskirche Hannovers
         download_open_data: Open Data Dateien herunterladen
         made_with_open_source: Website mit <a target="_blank" href="https://github.com/decidim/decidim">freier Software erstellt</a>.
       header:

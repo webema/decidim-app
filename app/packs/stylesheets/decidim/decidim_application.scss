@@ -8,6 +8,8 @@
 
 $zp_gray: #DEE2E6;
 
+$light_gray: #f4f4f4;
+
 @import './zukunftsprozess/startpage';
 @import './zukunftsprozess/blog_posts';
 @import './zukunftsprozess/buttons';
@@ -370,7 +372,7 @@ ul.card-data {
 
     &:hover {
       color: black;
-      background-color: #DEE2E6;
+      background-color: $light_gray;
     }
   }
 
@@ -382,4 +384,23 @@ ul.card-data {
     }
   }
 
+}
+
+.callout.secondary {
+  background-color: $light_gray;
+  border-left: 8px solid var(--secondary);
+}
+
+
+.main-footer, .mini-footer {
+  background-color: var(--secondary);
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+.laki-logo {
+  width: 200px;
 }
