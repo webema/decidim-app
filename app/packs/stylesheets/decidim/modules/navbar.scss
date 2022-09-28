@@ -356,7 +356,7 @@ $navbar-active-shadow-medium: inset 0 -8px 0 0 var(--primary);
   }
 }
 
-.topbar__user__logged, .topbar__user__login{
+.topbar__user__logged {
   text-align: right;
   padding-right: 2.5rem;
   display: none;
@@ -449,6 +449,7 @@ $navbar-active-shadow-medium: inset 0 -8px 0 0 var(--primary);
 .topbar__user__login{
   text-align: right;
   line-height: 1.2;
+  font-size: 80%;
 
   a{
     color: $black;
@@ -555,8 +556,11 @@ $navbar-active-shadow-medium: inset 0 -8px 0 0 var(--primary);
 
 .main-nav {
   display: flex;
-  // justify-content: center;
-  justify-content: right;
+
+
+  @include breakpoint(medium){
+    justify-content: right;
+  }
 }
 
 /* Main nav */
