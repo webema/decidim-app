@@ -122,8 +122,10 @@
       // background-image: url("~images/processes_1200.png");
     }
 
-    label {
-      color: $white;
+    .filters {
+      label {
+        color: $white;
+      }
     }
 
     .order-by__tabs {
