@@ -3,3 +3,7 @@
 :queues:
   - decidim_app_<%= ENV['RAILS_ENV'] %>_default
   - decidim_app_<%= ENV['RAILS_ENV'] %>_mailers
+  - decidim_app_<%= ENV['RAILS_ENV'] %>_events
+  - decidim_app_<%= ENV['RAILS_ENV'] %>_exports
+  - decidim_app_<%= ENV['RAILS_ENV'] %>_metrics
+  - decidim_app_<%= ENV['RAILS_ENV'] %>_reminders
