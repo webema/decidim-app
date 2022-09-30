@@ -1015,7 +1015,7 @@ de:
     members:
       no_members: Diese Gruppe hat noch keine Mitglieder.
     menu:
-      help: Info
+      help: Info & Hilfe
       home: Start
     messaging:
       conversation_mailer:

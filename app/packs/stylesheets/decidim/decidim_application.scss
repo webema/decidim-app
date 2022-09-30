@@ -404,3 +404,22 @@ ul.card-data {
   float: right;
   width: 250px;
 }
+
+.upload-modal {
+  .upload-items {
+    .upload-item {
+      .progress-bar-wrapper {
+        .progress-bar-border {
+          border: 1px solid var(--secondary);
+
+          .progress-bar, &.filled {
+            background-color: var(--secondary);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
