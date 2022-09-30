@@ -12,6 +12,30 @@
 
     = stylesheet_pack_tag "decidim_core", media: "all"
 
-  %body
-    .lockup#content
-      = yield
+  %body.lockup
+
+    .footer-separator
+      .header{ role: 'banner' }
+        .title-bar
+          .row.column.topbar
+            .logo-wrapper
+              = image_tag('/zp_beta_logo.png', style: 'max-height: 50px', alt: 'Zukunftsprozess beta')
+
+      %main#content
+        .lockup-container
+          = yield
+
+
+    .footer
+      .main-footer
+        .row.column
+          Lorem ipsum dolor sit amet...
+
+      .mini-footer
+        .row
+          .medium-7.large-8.column
+
+          .medium-5.large-4.column
+            .laki-logo
+              = link_to('https://landeskirche-hannovers.de', rel: 'decidim noopener', target: '_blank') do
+                = image_pack_tag("media/images/laki_logo.png", alt: t("layouts.decidim.footer.laki_logo"))
