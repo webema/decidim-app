@@ -1016,6 +1016,7 @@ de:
     menu:
       help: Info & Hilfe
       home: Start
+
     messaging:
       conversation_mailer:
         comanagers_new_conversation:

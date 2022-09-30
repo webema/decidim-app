@@ -1,11 +1,16 @@
 <section id="zukunftsprozess" class="home-section zukunftsprozess">
+  <div class="reveal" id="helpSectionModal" data-reveal="true"></div>
   <div class="container">
     <div class="row small-up-1 medium-up-2">
       <div class="column">
         <div class="cta">
-          <h1>Willkommen!</h1>
-          <p>Hier kannst DU deine Kirche der Zukunft mitgestalten</p>
-          <p><%= link_to "mehr erfahren #{icon('chevron-right', class: 'inline')}", '#' %></p>
+          <h1>
+            <span>
+              <span class="blue">Kirche</span> <span class="green">gemeinsam</span> <span class="red">gestalten</span>
+            </span>
+          </h1>
+          <p><span>Willkommen auf deiner Beteiligungsplattform für die Kirche von Morgen</span></p>
+          <p><span><%= link_to "mehr erfahren #{icon('chevron-right', class: 'inline')}", '#', data: { open: 'helpSectionModal', open_url: "/help_sections/home" } %></span></p>
         </div>
       </div>
       <div class="column">
@@ -24,6 +29,7 @@
         <%- end %>
       </div>
     </div>
+
 
 
     <div class="row small-up-1 medium-up-3 buttons">

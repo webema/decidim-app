@@ -11,56 +11,169 @@
     @include breakpoint(small) {
       background-image: url("~images/startpage_640.jpg");
       background-size: 640px auto;
-      background-position: center top;
+      background-position: center 10px;
+      padding: 0 0 2rem;
+
+      .cta {
+        margin: 2rem 2rem 0 2rem;
+      }
+
+      h1 {
+        font-size: 1.4em;
+      }
+      p {
+        font-size: 1.4em;
+      }
     }
 
     @include breakpoint(medium) {
       background-image: url("~images/startpage_1024_new.jpg");
       background-size: 1024px auto;
       background-position: center 200px;
+      padding: 4rem 0 15rem;
+
+      .cta {
+        margin: 5rem 2rem 0 2rem;
+      }
+
+      h1 {
+        font-size: 1.4em;
+      }
+      p {
+        font-size: 1.4em;
+      }
     }
 
     @include breakpoint(large only) {
       background-image: url("~images/startpage_1200_new.jpg");
       background-size: 1200px auto;
       background-position: center 200px;
+      padding: 4rem 0 15rem;
+
+      h1 {
+        font-size: 1.6em;
+      }
+      p {
+        font-size: 1.6em;
+      }
     }
 
     @include breakpoint(xlarge only) {
       background-image: url("~images/startpage_1440_new.jpg");
       background-size: 1440px auto;
       background-position: center 200px;
+      padding: 4rem 0 15rem;
+
+      h1 {
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1.8em;
+      }
     }
 
     @include breakpoint(xxlarge only) {
       background-image: url("~images/startpage_2560.jpg");
       background-position: center 30px;
       background-size: 2560px auto;
+      padding: 4rem 0 15rem;
+
+      h1 {
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1.8em;
+      }
     }
   }
 
 
+
   .cta {
-    margin: 5rem 2rem 0 2rem;
+    // margin: 5rem 2rem 0 2rem;
+
+    p, h1 {
+      span {
+        background: rgba(255, 255, 255, 0.8);
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+      }
+    }
 
     h1 {
-      font-family: 'Literata', sans-serif;
+      // font-size: 1.8em;
+      // font-family: 'Literata', sans-serif;
       font-weight: 600;
+      line-height: 1.2;
+
+      .blue {
+        color: #00b5e5;
+      }
+
+      .green {
+        color: #76b82a;
+      }
+
+      .red {
+        color: #de007e;
+      }
     }
 
     p {
-      font-size: 1.6rem;
+      // font-size: 1.8em;
+      margin-bottom: 0;
     }
 
     a {
       text-decoration: none;
       font-weight: 600;
+      font-size: 1.4rem;
 
       .icon.inline {
         width: 16px;
         height: 16px;
       }
     }
+
+    // @include breakpoint(small) {
+    //   h1 {
+    //     font-size: 1.4em;
+    //   }
+    //   p {
+    //     font-size: 1.4em;
+    //   }
+    // }
+
+    // @include breakpoint(medium) {
+    //   h1 {
+    //     font-size: 1.4em;
+    //   }
+    //   p {
+    //     font-size: 1.4em;
+    //   }
+    // }
+
+    // @include breakpoint(large only) {
+    //   h1 {
+    //     font-size: 1.6em;
+    //   }
+    //   p {
+    //     font-size: 1.6em;
+    //   }
+    // }
+
+    // @include breakpoint(xlarge only) {
+    //   h1 {
+    //     font-size: 1.8em;
+    //   }
+    //   p {
+    //     font-size: 1.8em;
+    //   }
+    // }
+
+    // @include breakpoint(xxlarge only) {
+
+    // }
   }
 
   .blog-post {
