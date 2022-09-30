@@ -3,7 +3,7 @@
     - url = @custom_url_for_mail_root
   - else
     - url = decidim.root_url(host: organization.host)
-  = link_to url do
+  = link_to url, target: '_blank' do
     = image_tag('/zp_email_signature.png', style: 'max-height: 50px', alt: organization.name)
 - else
   = Decidim.application_name

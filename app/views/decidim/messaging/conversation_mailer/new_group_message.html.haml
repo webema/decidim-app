@@ -1,0 +1,11 @@
+%p.email-greeting= t(".greeting", recipient: @recipient.name)
+%p.email-instructions.email-small= t(".admin_in_group", group: @third_party.name)
+%p.email-instructions= t(".intro", sender: @sender.name, group: @third_party.name)
+%blockquote
+  %p
+    %em= @message
+-# %p.email-button.email-button__cta
+-#   = link_to decidim.profile_conversation_url(nickname: @third_party.nickname, id: @conversation.id, host: @host), decidim.profile_conversation_url(nickname: @third_party.nickname, id: @conversation.id, host: @host)
+
+%p.email-closing= t(".outro", link: link_to('.here', decidim.profile_conversation_url(nickname: @third_party.nickname, id: @conversation.id, host: @host)))
+

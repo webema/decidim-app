@@ -1,0 +1,10 @@
+%p.email-greeting= t(".greeting", recipient: @recipient.name)
+%p.email-instructions= t(".intro", sender: @sender.name)
+%blockquote
+  %p
+    %em= @message
+-# %p.email-button.email-button__cta
+-#   = link_to decidim.conversation_url(@conversation, host: @host), decidim.conversation_url(@conversation, host: @host)
+
+%p.email-closing= t(".outro", link: link_to('.here', decidim.conversation_url(@conversation, host: @host)))
+

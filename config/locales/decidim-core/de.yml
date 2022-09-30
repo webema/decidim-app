@@ -1021,38 +1021,44 @@ de:
       conversation_mailer:
         comanagers_new_conversation:
           admin_in_group: Du hast diese Benachrichtigung erhalten, weil du ein/e Administrator:in von %{group} bist.
-          greeting: Hallo, %{recipient}!
-          intro: "%{manager} hat eine Unterhaltung im Namen von %{group} begonnen. Klicke hier, um diese anzuzeigen:"
-          outro: Viel Spaß mit Decidim! TODO
+          greeting: Hallo %{recipient}!
+          intro: "%{manager} hat eine Unterhaltung im Namen von %{group} begonnen."
+          outro: Klicke %{link}, um diese anzuzeigen.
           subject: "%{manager} hat eine Unterhaltung als %{group} begonnen"
+          here: hier
         comanagers_new_message:
           admin_in_group: Du hast diese Benachrichtigung erhalten, weil du ein/e Administrator:in von %{group} bist.
-          greeting: Hallo, %{recipient}!
-          intro: "%{manager} hat Nachrichten in einer Unterhaltung im Namen von %{group} gesendet. Klicke hier, um diese anzuzeigen:"
-          outro: Viel Spaß mit Decidim! TODO
+          greeting: Hallo %{recipient}!
+          intro: "%{manager} hat Nachrichten in einer Unterhaltung im Namen von %{group} gesendet."
+          outro: Klicke %{link}, um diese anzuzeigen.
           subject: "%{manager} hat neue Nachrichten als %{group} gesendet"
+          here: hier
         new_conversation:
-          greeting: Hallo, %{recipient}!
-          intro: "%{sender} hat eine neue Unterhaltung mit dir begonnen. Klicke hier, um diese zu sehen:"
-          outro: Viel Spaß mit Decidim! TODO
+          greeting: Hallo %{recipient}!
+          intro: "%{sender} hat eine neue Unterhaltung mit dir begonnen."
+          outro: Klicke %{link}, um diese anzuzeigen.
           subject: "%{sender} hat ein Gespräch mit dir begonnen"
+          here: hier
         new_group_conversation:
           admin_in_group: Du hast diese Benachrichtigung erhalten, weil du ein/e Administrator:in von %{group} bist.
-          greeting: Hallo, %{recipient}!
-          intro: "%{sender} hat eine neue Unterhaltung mit der Gruppe %{group} begonnen. Klicke hier, um diese anzuzeigen:"
-          outro: Viel Spaß mit Decidim! TODO
+          greeting: Hallo %{recipient}!
+          intro: "%{sender} hat eine neue Unterhaltung mit der Gruppe %{group} begonnen."
+          outro: Klicke %{link}, um diese anzuzeigen.
           subject: "%{sender} hat eine Unterhaltung mit %{group} begonnen"
+          here: hier
         new_group_message:
           admin_in_group: Du hast diese Benachrichtigung erhalten, weil du ein/e Administrator:in von %{group} bist.
-          greeting: Hallo, %{recipient}!
-          intro: "%{sender} hat neue Nachrichten in einer Unterhaltung mit der Gruppe %{group} gesendet. Klicke hier, um diese anzuzeigen:"
-          outro: Viel Spaß mit Decidim! TODO
+          greeting: Hallo %{recipient}!
+          intro: "%{sender} hat neue Nachrichten in einer Unterhaltung mit der Gruppe %{group} gesendet."
+          outro: Klicke %{link}, um diese anzuzeigen.
           subject: "%{group} hat neue Nachrichten von %{sender}"
+          here: hier
         new_message:
-          greeting: Hallo, %{recipient}!
-          intro: "%{sender} hat neue Nachrichten in deiner Konversation gepostet. Klicke hier, um diese zu sehen:"
-          outro: Viel Spaß mit Decidim! TODO
-          subject: Du hast neue Nachrichten von %{sender}
+          greeting: Hallo %{recipient}!
+          intro: "%{sender} hat dir eine persönliche Nachricht geschickt:"
+          outro: Klicke %{link}, um die Nachricht zu beantworten.
+          subject: Du hast eine Nachricht auf Zukunftsprozess.de erhalten
+          here: hier
       conversations:
         add_conversation_users:
           add_max_users: 'Füge der Unterhaltung Benutzer:innen hinzu: max. 9 Benutzer:innen'
