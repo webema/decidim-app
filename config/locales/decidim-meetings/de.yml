@@ -143,13 +143,13 @@ de:
             notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde geschlossen.
           follower:
             email_intro: 'Die Sitzung "%{resource_title}" wurde geschlossen. Du kannst die Ergebnisse auf dieser Seite lesen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du der Sitzung "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du der Sitzung "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
             email_subject: Die Sitzung "%{resource_title}" wurde geschlossen
             notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde geschlossen.
         meeting_created:
           button_text: Für das Treffen anmelden
           email_intro: Die Sitzung "%{resource_title}" wurde zu "%{participatory_space_title}" hinzugefügt, welchem du folgst.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du "%{participatory_space_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{participatory_space_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Neue Sitzung zu %{participatory_space_title} hinzugefügt
           notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde zu %{participatory_space_title} hinzugefügt
         meeting_registration_confirmed:
@@ -161,7 +161,7 @@ de:
           notification_title: Die Slots der Sitzung <a href="%{resource_path}">%{resource_title}</a> sind zu über %{percentage}% belegt.
         meeting_updated:
           email_intro: 'Die Sitzung "%{resource_title}" wurde aktualisiert. Du kannst die neue Version auf der Sitzungs-Seite lesen:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du der Sitzung "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du der Sitzung "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Die Sitzung "%{resource_title}" wurde aktualisiert
           notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde aktualisiert.
         registration_code_validated:
@@ -171,12 +171,12 @@ de:
           notification_title: Dein Registrierungscode "%{registration_code}" für die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde bestätigt.
         registrations_enabled:
           email_intro: 'Die Sitzung "%{resource_title}" hat Registrierungen aktiviert. Du kannst sich auf der Sitzungs-Seite registrieren:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du der Sitzung "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du der Sitzung "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Die Sitzung "%{resource_title}" hat Registrierungen aktiviert.
           notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> hat Registrierungen aktiviert.
         upcoming_meeting:
           email_intro: Die Sitzung "%{resource_title}" beginnt in weniger als 48 Stunden.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du der Sitzung "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du der Sitzung "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Die Sitzung "%{resource_title}" beginnt in weniger als 48 Stunden.
           notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> beginnt in weniger als 48 Stunden.
     forms:

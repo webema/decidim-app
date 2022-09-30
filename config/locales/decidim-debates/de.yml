@@ -189,35 +189,34 @@ de:
             email_intro: |-
               Hallo,
               Eine neue Debatte "%{resource_title}" wurde in %{space_title} erstellt, sieh sie dir an und beteilige dich:
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{space_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
             email_subject: Neue Debatte "%{resource_title}" in %{space_title}
             notification_title: Die Debatte <a href="%{resource_path}">%{resource_title}</a> wurde in <a href="%{space_path}">%{space_title}</a> erstellt.
           user_followers:
             email_intro: |-
               Hallo,
               %{author_name} %{author_nickname}, dem du folgst, hat eine neue Debatte "%{resource_title}" erstellt. Sieh sie dir an und diskutiere mit:
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{author_nickname} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{author_nickname} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{author_nickname} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
             email_subject: Neue Debatte "%{resource_title}" von %{author_nickname}
             notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> hat die Debatte <a href="%{resource_path}">%{resource_title}</a> erstellt.
         creation_disabled:
           email_intro: 'Die Erstellung von Debatten ist in %{participatory_space_title} nicht mehr aktiviert. Du kannst weiterhin an offenen Debatten teilnehmen:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
-          email_subject: Die Erstellung von Debatten wurde in %{participatory_space_title} deaktiviert
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{participatory_space_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           notification_title: Die Erstellung von Debatten ist jetzt in <a href="%{participatory_space_url}">%{participatory_space_title}</a> deaktiviert
         creation_enabled:
           email_intro: 'Du kannst jetzt neue Debatten in %{participatory_space_title} eröffnen! Beteilige dich auf dieser Seite:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{participatory_space_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Debatten jetzt in %{participatory_space_title} verfügbar
           notification_title: Du kannst jetzt <a href="%{resource_path}">neue Debatten</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a> starten
         debate_closed:
           affected_user:
             email_intro: 'Die Debatte "%{resource_title}" wurde beendet. Du kannst die Resultate auf dieser Seite lesen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du der Debatte "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du der Debatte "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
             email_subject: Die "%{resource_title}" Debatte wurde beendet
             notification_title: Die Debatte <a href="%{resource_path}">%{resource_title}</a> wurde beendet.
           follower:
             email_intro: 'Die Debatte "%{resource_title}" wurde beendet. Du kannst die Resultate auf dieser Seite lesen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du der Debatte "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du der Debatte "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
             email_subject: Die "%{resource_title}" Debatte wurde beendet
             notification_title: Die Debatte <a href="%{resource_path}">%{resource_title}</a> wurde beendet.
     gamification:

@@ -31,8 +31,8 @@ de:
       sortitions:
         sortition_created:
           email_intro: Die Auslosung "%{resource_title}" wurde zu "%{participatory_space_title}" hinzugefügt, dem du folgst.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du "%{participatory_space_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
-          email_subject: Neue Sortierung wurde zu %{participatory_space_title}hinzugefügt
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{participatory_space_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+          email_subject: Neue Sortierung wurde zu %{participatory_space_title} hinzugefügt
           notification_title: Die Auslosung <a href="%{resource_path}">%{resource_title}</a> wurde zu %{participatory_space_title} hinzugefügt
     sortitions:
       admin:

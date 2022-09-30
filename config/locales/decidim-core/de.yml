@@ -621,7 +621,7 @@ de:
             notification_title: Der <a href="%{emendation_path}">Änderungsvorschlag</a> von <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> für <a href="%{amendable_path}">%{amendable_title}</a> wurde angenommen.
           follower:
             email_intro: 'Ein Änderungsvorschlag für %{amendable_title} wurde akzeptiert. Du kannst ihn auf dieser Seite sehen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{amendable_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{amendable_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{amendable_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
             email_subject: Akzeptierter Änderungsvorschlag für %{amendable_title} von %{emendation_author_nickname}
             notification_title: Der <a href="%{emendation_path}">Änderungsvorschlag</a> von <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> für <a href="%{amendable_path}">%{amendable_title}</a> wurde akzeptiert.
         amendment_created:
@@ -632,7 +632,7 @@ de:
             notification_title: Ein neuer Änderungsvorschlag für <a href="%{amendable_path}">%{amendable_title}</a> erstellt.
           follower:
             email_intro: 'Ein neuer Änderungsvorschlag für %{amendable_title} wurde erstellt. Du kannst ihn auf dieser Seite sehen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{amendable_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{amendable_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{amendable_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
             email_subject: Neuer Änderungsvorschlag für %{amendable_title}
             notification_title: Ein neuer Änderungsvorschlag für <a href="%{amendable_path}">%{amendable_title}</a> erstellt.
         amendment_promoted:
@@ -643,7 +643,7 @@ de:
             notification_title: Der <a href="%{emendation_path}">abgelehnte Änderungsvorschlag</a> für <a href="%{amendable_path}">%{amendable_title}</a> wurde von <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> als neue/n %{amendable_type} veröffentlicht.
           follower:
             email_intro: 'Ein abgelehnter Änderungsvorschlag für %{amendable_title} wurde als neue/n %{amendable_type} veröffentlicht. Du kannst ihn auf dieser Seite sehen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{amendable_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{amendable_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{amendable_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
             email_subject: Ein Änderungsvorschlag von %{emendation_author_nickname} wurde als neue/n %{amendable_type} veröffentlicht
             notification_title: Der <a href="%{emendation_path}">abgelehnte Änderungsvorschlag</a> für <a href="%{amendable_path}">%{amendable_title}</a> wurde von <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> als neue/n %{amendable_type} veröffentlicht.
         amendment_rejected:
@@ -654,25 +654,24 @@ de:
             notification_title: Der <a href="%{emendation_path}">Änderungsvorschlag</a> von <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> für <a href="%{amendable_path}">%{amendable_title}</a> wurde abgelehnt.
           follower:
             email_intro: 'Ein Änderungsvorschlag für %{amendable_title} wurde abgelehnt. Du kannst ihn auf dieser Seite sehen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{amendable_title}. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{amendable_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{amendable_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
             email_subject: Abgelehnter Änderungsvorschlag für %{amendable_title} von %{emendation_author_nickname}
             notification_title: Der <a href="%{emendation_path}">Änderungsvorschlag</a> von <a href="%{emendation_author_path}">%{emendation_author_nickname}</a> für <a href="%{amendable_path}">%{amendable_title}</a> wurde abgelehnt.
       attachments:
         attachment_created:
           email_intro: 'Ein neues Dokument wurde zu %{resource_title} hinzugefügt. Du kannst es auf dieser Seite sehen:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{resource_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{resource_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Aktualisierung von %{resource_title}
           notification_title: Ein <a href="%{resource_path}">neues Dokument</a> wurde zu <a href="%{attached_to_url}">%{resource_title}</a>hinzugefügt
       components:
         component_published:
           email_intro: 'Die Komponente %{resource_title} ist jetzt für %{participatory_space_title} aktiv. Du kannst das auf dieser Seite sehen:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
-          email_subject: Aktualisierung von %{participatory_space_title}
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{participatory_space_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           notification_title: Die Komponente %{resource_title} ist jetzt für <a href="%{resource_path}">%{participatory_space_title}</a> aktiv
       email_event:
         email_greeting: Hallo %{user_name},
         email_intro: 'Es wurde ein Update auf "%{resource_title}" vorgenommen. Du kannst das auf dieser Seite sehen:'
-        email_outro: Du hast diese Benachrichtigung erhalten, weil du "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+        email_outro: Du hast diese Benachrichtigung erhalten, weil du %{resource_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
         email_subject: Aktualisierung von %{resource_title}
       gamification:
         badge_earned:
@@ -743,13 +742,13 @@ de:
             <i>%{resource_content}</i>
       resource_endorsed:
         email_intro: '%{endorser_name} %{endorser_nickname}, dem du folgst, hat gerade "%{resource_title}" unterstützt, und wir denken, das könnte interessant für dich sein. Schaue es dir an und reden mit:'
-        email_outro: Du hast diese Benachrichtigung erhalten, weil du %{endorser_nickname} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+        email_outro: Du hast diese Benachrichtigung erhalten, weil du %{endorser_nickname} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{endorser_nickname} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
         email_subject: "%{endorser_nickname} hat eine neue Unterstützung vergeben"
         notification_title: <a href="%{resource_path}">%{resource_title}</a> %{resource_type} wurde von <a href="%{endorser_path}">%{endorser_name} %{endorser_nickname}</a> befürwortet.
       users:
         profile_updated:
           email_intro: Die <a href="%{resource_url}">Profilseite</a> von %{name} (%{nickname}), der du folgst, wurde aktualisiert.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{nickname} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{nickname} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{nickname} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: "%{nickname} hat ihr Profil aktualisiert"
           notification_title: Die <a href="%{resource_path}">Profilseite</a> von %{name} (%{nickname}), der du folgst, wurde aktualisiert.
         user_officialized:

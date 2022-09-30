@@ -123,17 +123,17 @@ de:
       comments:
         comment_by_followed_user:
           email_intro: "%{author_name} hat einen Kommentar zu %{resource_title} hinterlassen. Du kannst diesen auf dieser Seite lesen:"
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{author_name} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, besuche die Profil-Seite dieses Benutzers bzw. dieser Benutzerin.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{author_name} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, besuche die Profil-Seite dieses Benutzers bzw. dieser Benutzerin, um %{author_name} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Neuer Kommentar von %{author_name} zu %{resource_title}
           notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>.
         comment_by_followed_user_group:
           email_intro: 'Die Gruppe %{author_name} hat einen Kommentar in %{resource_title} hinterlassen. Du kannst diesen auf dieser Seite lesen:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{author_name} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, besuche die Profil-Seite dieser Gruppe.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{author_name} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, besuche die Profil-Seite dieser Gruppe, um %{author_name} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Neuer Kommentar von %{author_name} zu %{resource_title}
           notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>.
         comment_created:
           email_intro: "%{resource_title} wurde kommentiert. Du kannst den Kommentar auf dieser Seite lesen:"
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du "%{resource_title}" oder seinem Autor bzw. seiner Autorin folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, folge dem obigen Link.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{resource_title} oder seinem Autor bzw. seiner Autorin folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Neuer Kommentar von %{author_name} zu %{resource_title}
           notification_title: Es gibt einen neuen Kommentar von <a href="%{author_path}">%{author_name} %{author_nickname}</a> zu <a href="%{resource_path}">%{resource_title}</a>
         comment_downvoted:
