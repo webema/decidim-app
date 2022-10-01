@@ -55,6 +55,7 @@ Rails.application.configure do
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
+  config.cache_store = :mem_cache_store, ENV.fetch('MEMCACHED_HOST', 'localhost:11211'), { namespace: 'decidim-app-staging', expires_in: 1.day, compress: true }
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   config.active_job.queue_adapter = :sidekiq
@@ -119,9 +120,6 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
-
-
-  config.session_store :mem_cache_store
 end
 
 Mail.register_interceptor(
