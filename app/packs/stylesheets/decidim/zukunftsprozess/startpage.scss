@@ -179,7 +179,14 @@
 
   .blog-post {
     position: relative;
-    margin: 3rem 3rem 3rem 0;
+
+    @include breakpoint(small) {
+      margin: 2rem;
+    }
+
+    @include breakpoint(medium) {
+      margin: 3rem 3rem 3rem 0;
+    }
 
     img {
       transform: rotate(-2deg);
@@ -194,21 +201,53 @@
       transform: rotate(-2deg);
 
       background-color: $white;
-      width: 45%;
-      height: 35%;
 
-      padding: .5rem;
-      line-height: 1.4rem;
+      @include breakpoint(small) {
+        width: 45%;
+        font-size: .8rem;
+        line-height: 1rem;
+        padding: .3rem;
+      }
 
-      font-size: 1.2rem;
+      @include breakpoint(medium) {
+        width: 45%;
+        height: auto;
+        padding: .5rem;
+
+        font-size: .9rem;
+        line-height: 1.1rem;
+      }
+
+
+      @include breakpoint(large) {
+        width: 45%;
+        padding: .5rem;
+
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+      }
 
       a {
         text-decoration: none;
         font-weight: 600;
 
         .icon.inline {
-          width: 12px;
-          height: 12px;
+          @include breakpoint(small) {
+            width: 9px;
+            height: 9px;
+          }
+
+          @include breakpoint(medium) {
+            width: 10px;
+            height: 10px;
+          }
+
+
+          @include breakpoint(large) {
+            width: 12px;
+            height: 12px;
+          }
+
         }
       }
     }
@@ -230,16 +269,37 @@
   }
 
   .buttons {
-    margin-top: 3em;
+    @include breakpoint(small) {
+      margin: 2rem;
+    }
+
+    @include breakpoint(medium) {
+      margin: 3em auto 0;
+    }
 
     a.startpage_primary_button {
       display: flex;
       flex-direction: column;
       width: 100%;
       margin: 1rem 0;
-      font-size: 1.5rem;
-      padding-top: 3rem !important;
-      padding-bottom: 3rem !important;
+
+      @include breakpoint(small) {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        font-size: 1.5rem;
+      }
+
+      @include breakpoint(medium) {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+        font-size: 1.3rem;
+      }
+
+      @include breakpoint(large) {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+        font-size: 1.5rem;
+      }
 
       &.ideas, &.processes {
         transform: rotate(-2deg) !important;
