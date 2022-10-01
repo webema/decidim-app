@@ -19,9 +19,9 @@ de:
       message:
         body: Haupttext
       report:
-        details: Zusätzliche Kommentare
+        details: Möchtest du uns noch etwas sagen?
       user:
-        about: Über
+        about: "Über mich (Bspw.: Lieblingsplatz beim Kaffee/-Teetrinken, Wahlheimat, Wenn Du einen Wunsch frei hättest: Welcher wäre das?...)"
         email: Deine E-Mail
         locale: Spracheinstellung
         name: Dein Name
@@ -127,7 +127,7 @@ de:
           ok: Ja, ich möchte mein Konto löschen
           question: Bist du sicher, dass du dein Konto löschen möchtest?
           title: Mein Konto löschen
-        explanation: Bitte gib den Grund an, warum du dein Konto löschen möchtest (optional).
+        explanation: Schade! Erzähl uns doch gern kurz, warum du dein Konto löschen möchtest. Vielleicht können wir mit deiner Hilfe etwas verbessern? (optional).
       destroy:
         error: Beim Löschen deines Kontos ist ein Fehler aufgetreten.
         success: Dein Konto wurde erfolgreich gelöscht.
@@ -586,7 +586,7 @@ de:
         ready: Bereit
       show:
         download_data: Daten herunterladen
-        download_data_description: Eine Datei mit allen mit deinem Konto verknüpften Informationen, wird an <strong>%{user_email}</strong> gesendet. Diese E-Mail enthält eine .zip-Datei und ein Passwort, um diese zu entpacken.<br/><br/>Um die Datei zu entpacken, benötigst du <a href="https://www.7-zip.org/">7-Zip</a> (für Windows) oder <a href="https://www.keka.io/">Keka</a> (für MacOS). Wenn du Linux verwendest, wird es meistens standardmäßig installiert. Wenn nicht, kannst du <a href="https://gitlab.gnome.org/GNOME/file-roller">File Roller</a> oder <a href="https://peazip.github.io">PeaZip</a> verwenden.
+        download_data_description: Du bekommst eine E-Mail an <strong>%{user_email}</strong> zugeschickt. Darin findest Du eine .zip-Datei und ein Passwort. Diese Datei enthält alle mit deinem Konto verknüpften Informationen.<br/><br/>Um die Datei zu entpacken, benötigst du <a href="https://www.7-zip.org/">7-Zip</a> (für Windows) oder <a href="https://www.keka.io/">Keka</a> (für MacOS). Wenn du Linux verwendest, wird es meistens standardmäßig installiert. Wenn nicht, kannst du <a href="https://gitlab.gnome.org/GNOME/file-roller">File Roller</a> oder <a href="https://peazip.github.io">PeaZip</a> verwenden.
         request_data: Daten anfordern
     editor_images:
       create:
@@ -857,7 +857,7 @@ de:
         index:
           badge_title: "%{name} Abzeichen"
           how: Wie kannst du es verdienen?
-          page_description: Badges sind Anerkennungen für Aktionen der Teilnehmenden auf der Plattform. Wenn du die Plattform erkundest, mitmachst und kommunizierst, verdienst du verschiedene Abzeichen. Hier ist die Liste der Abzeichen und einige Möglichkeiten, wie du sie verdienen kannst.
+          page_description: Nutze die Möglichkeiten dieser Plattform! Stöbere herum, lies hier rein, diskutiere dort mit, hinterlasse Kommentare. Für jede Aktion bekommst du ein Abzeichen - eine Anerkennung. Schau mal, welche Abzeichen du sammeln kannst!
           title: Abzeichen
         invitations:
           conditions:
@@ -1184,7 +1184,7 @@ de:
         newsletter_notifications: Ich möchte Newsletter erhalten
         newsletters: Newsletter
         notification_settings:
-          close_meeting_reminder: Ich möchte per E-Mail über closed meetings unpublished reports informiert werden
+          close_meeting_reminder: Ich möchte per E-Mail an Berichte über abgeschlossene Meetings erinnert werden, die ich noch nicht veröffentlicht habe.
         notifications_sending_frequencies:
           daily: Täglich
           none: Keine
@@ -1386,25 +1386,25 @@ de:
         more: Mehr
         unfold: Entfalten
       filter_form_help:
-        help: Das untenstehende Formular filtert die Suchergebnisse dynamisch, wenn die Suchbedingungen geändert werden.
+        help: Filter
         skip: Zu Ergebnissen springen
       flag_modal:
         already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator bzw. einer Administratorin überprüft.
         close: Schließen
-        description: Ist dieser Inhalt unangemessen?
-        does_not_belong: Enthält illegale Aktivitäten, Selbstmorddrohungen, persönliche Informationen oder etwas anderes, von dem du denkst, dass es nicht auf %{organization_name} gehört.
-        offensive: Enthält Rassismus, Sexismus, Verunglimpfungen, persönliche Angriffe, Morddrohungen, Aufforderungen zum Selbstmord oder jede Form von Hassrede.
-        reason: Begründung
-        report: Bericht
+        description: Du findest, dieser Inhalt entspricht nicht unserer gnädigen Grundhaltung?
+        does_not_belong: Enthält Informationen, von denen du denkst, dass sie nichts mit unserem Zukunftsprozess zu tun haben?
+        offensive: Enthält eine respektlose, rassistische, sexistische, hässliche Sprache?
+        reason: "Bitte überprüfe für dich doch einmal, ob eine dieser Sachlagen zutrifft:"
+        report: Jetzt melden
         spam: Enthält Clickbait, Werbung, Scams oder Script Bots.
         title: Ein Problem melden
       flag_user_modal:
         already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator bzw. einer Administratorin überprüft.
         close: Schließen
         description: Was ist unangebracht im Zusammenhang mit dem/der Benutzer:in?
-        does_not_belong: Enthält illegale Aktivitäten, Selbstmorddrohungen, persönliche Informationen oder etwas anderes, von dem du denkst, dass es nicht auf %{organization_name} gehört.
-        offensive: Enthält Rassismus, Sexismus, Verunglimpfungen, persönliche Angriffe, Morddrohungen, Aufforderungen zum Selbstmord oder jede Form von Hassrede.
-        report: Melden
+        does_not_belong: Enthält Informationen, von denen du denkst, dass sie nichts mit unserem Zukunftsprozess zu tun haben?
+        offensive: Enthält eine respektlose, rassistische, sexistische, hässliche Sprache?
+        report: Benutzer:in melden
         spam: Enthält Clickbait, Werbung, Scams oder Script Bots.
         title: Unangemessenen Nutzer melden
       floating_help:
@@ -1496,7 +1496,7 @@ de:
       show:
         my_interests: Meine Interessen
         no_scopes: Diese Organisation hat noch keine Bereiche!
-        select_your_interests: Wähle die Themen aus, an denen du interessiert bist, um relevante Benachrichtigungen auf der Registerkarte "Zeitleiste" deines Profils zu erhalten.
+        select_your_interests: Wähle die Themen aus, die dich interessieren, um wichtige Benachrichtigungen in der "Zeitleiste" deines Profils zu erhalten.
         update_my_interests: Meine Interessen aktualisieren
       update:
         error: Beim Aktualisieren deiner Interessen ist ein Fehler aufgetreten.

@@ -80,7 +80,7 @@ de:
           already_reported: Dieser Inhalt wurde bereits gemeldet und wird von einem Administrator bzw. einer Administratorin überprüft.
           close: Schließen
           description: Ist dieser Inhalt unangemessen?
-          details: Zusätzliche Kommentare
+          details: Möchtest du uns noch etwas sagen?
           reasons:
             does_not_belong: Enthält illegale Aktivitäten, Selbstmorddrohungen, persönliche Informationen oder etwas anderes, von dem du denkst, dass es nicht auf %{organization_name} gehört.
             offensive: Enthält Rassismus, Sexismus, Verleumdungen, persönliche Angriffe, Morddrohungen, Aufforderungen zum Selbstmord oder jegliche Form von Hassrede.
