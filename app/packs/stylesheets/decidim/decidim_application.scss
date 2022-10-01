@@ -77,7 +77,7 @@ a, a.card__link {
   }
 }
 
-.card__image{
+.card__image:not(.badge__logo--small):not(.badge__logo) {
   width: 100%;
   max-height: 15rem;
   min-height: 10rem;
@@ -379,3 +379,55 @@ ul.card-data {
 
 
 
+
+
+// name specific
+#profile-tabs{
+  // Override foundation
+  &.tabs{
+    border: none;
+
+    .tabs-title{
+      &.is-active{
+        a{
+          color: var(--secondary);
+          border-bottom: 3px solid var(--secondary);
+        }
+      }
+
+      a{
+        color: var(--secondary);
+
+        &:focus,
+        &[aria-selected="true"]{
+          color: var(--secondary);
+          border-bottom: 3px solid var(--secondary)
+        }
+
+        &:hover{
+          text-decoration: none;
+          border-bottom: 3px solid var(--secondary);
+        }
+      }
+    }
+  }
+}
+
+.responsive-tab-block{
+  @media only screen and (max-width: 639px){
+    & > ul.tabs{
+      & > li{
+        &.is-active{
+          &::before{
+            border-top: 5px solid var(--secondary);
+          }
+        }
+
+        & > a{
+          border-bottom: 3px solid transparent;
+          color: green;
+        }
+      }
+    }
+  }
+}
