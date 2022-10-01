@@ -58,13 +58,14 @@ de:
           neutral_selected: Deine Meinung zu diesem Thema ist neutral
           positive: Positiv
           positive_selected: Deine Meinung zu diesem Thema ist positiv
+          info: Hier kannst du bestimmen wie dein Kommentar gemeint ist.
         remaining_characters: "%{count} Zeichen übrig"
         remaining_characters_1: "%{count} Zeichen übrig"
         title: Kommentar hinzufügen
       comment:
         alignment:
-          against: Gegen
-          in_favor: Zugunsten
+          against: Contra
+          in_favor: Pro
         confirm_destroy: Bist du sicher, dass du diesen Kommentar löschen willst?
         delete: Löschen
         deleted_at: Kommentar gelöscht am %{date}
