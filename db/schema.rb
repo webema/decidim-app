@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_10_181648) do
+ActiveRecord::Schema.define(version: 2022_10_02_093742) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -666,6 +666,13 @@ ActiveRecord::Schema.define(version: 2022_09_10_181648) do
     t.bigint "decidim_area_id"
     t.integer "comments_count", default: 0, null: false
     t.integer "follows_count", default: 0, null: false
+    t.integer "cached_votes_total", default: 0
+    t.integer "cached_votes_score", default: 0
+    t.integer "cached_votes_up", default: 0
+    t.integer "cached_votes_down", default: 0
+    t.integer "cached_weighted_score", default: 0
+    t.integer "cached_weighted_total", default: 0
+    t.float "cached_weighted_average", default: 0.0
     t.index "md5((description)::text)", name: "decidim_ideas_description_search"
     t.index ["answered_at"], name: "index_decidim_ideas_on_answered_at"
     t.index ["decidim_area_id"], name: "index_decidim_initiatives_on_decidim_area_id"
@@ -1715,6 +1722,22 @@ ActiveRecord::Schema.define(version: 2022_09_10_181648) do
     t.text "object_changes"
     t.index ["item_id", "item_type"], name: "index_versions_on_item_id_and_item_type"
     t.index ["item_type", "item_id"], name: "index_versions_on_item_type_and_item_id"
+  end
+
+  create_table "votes", force: :cascade do |t|
+    t.string "votable_type"
+    t.bigint "votable_id"
+    t.string "voter_type"
+    t.bigint "voter_id"
+    t.boolean "vote_flag"
+    t.string "vote_scope"
+    t.integer "vote_weight"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope"
+    t.index ["votable_type", "votable_id"], name: "index_votes_on_votable_type_and_votable_id"
+    t.index ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope"
+    t.index ["voter_type", "voter_id"], name: "index_votes_on_voter_type_and_voter_id"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
