@@ -36,6 +36,9 @@ gem 'lockup'
 
 gem 'dalli'
 
+gem "sentry-ruby"
+gem "sentry-rails"
+
 group :development, :test do
   gem 'byebug', '~> 11.0', platform: :mri
   gem 'brakeman'
