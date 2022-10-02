@@ -51,23 +51,23 @@ default: &default
   # Tasks for decidim-initiatives
   # see https://github.com/decidim/decidim/tree/develop/decidim-initiatives#rake-tasks
 
-  decidim_initiatives_check_validating:
-    cron: 10 0 * * *
-    class: InvokeRakeTaskJob
-    args:
-      task: decidim_initiatives:check_validating
+  # decidim_initiatives_check_validating:
+  #   cron: 10 0 * * *
+  #   class: InvokeRakeTaskJob
+  #   args:
+  #     task: decidim_ideas:check_validating
 
-  decidim_initiatives_check_published:
-    cron: 20 0 * * *
-    class: InvokeRakeTaskJob
-    args:
-      task: decidim_initiatives:check_published
+  # decidim_initiatives_check_published:
+  #   cron: 20 0 * * *
+  #   class: InvokeRakeTaskJob
+  #   args:
+  #     task: decidim_ideas:check_published
 
-  decidim_initiatives_notify_progress:
-    cron: 30 0 * * *
-    class: InvokeRakeTaskJob
-    args:
-      task: decidim_initiatives:notify_progress
+  # decidim_initiatives_notify_progress:
+  #   cron: 30 0 * * *
+  #   class: InvokeRakeTaskJob
+  #   args:
+  #     task: decidim_ideas:notify_progress
 
 development:
   <<: *default
