@@ -77,7 +77,7 @@ de:
       decidim/proposals/publish_proposal_event: Vorschlag veröffentlicht
       decidim/proposals/rejected_proposal_event: Vorschlag abgelehnt
       decidim/proposals/voting_enabled_event: Vorschlagsabstimmung aktiviert
-      decidim/proposal_note_created_event: Notiz zum Vorschlag
+      decidim/proposals/proposal_note_created_event: Notiz zum Vorschlag
   activerecord:
     models:
       decidim/proposals/collaborative_draft:
