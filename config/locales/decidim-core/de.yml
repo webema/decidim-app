@@ -441,7 +441,7 @@ de:
           comment: Kommentar
           debate: Debatte
           initiative: Inspiration
-          meeting: Treffen
+          meeting: Termin
           order: Budgeting vote
           post: Beitrag
           proposal: Vorschlag
@@ -768,7 +768,7 @@ de:
         all: Alle
         collaborative_draft: Kollaborativer Entwurf
         dummy_resource: Dummy-Ressourcen
-        meeting: Meetings
+        meeting: Termine
         project: Projekte
         proposal: Vorschläge
         result: Ergebnisse
@@ -1184,7 +1184,7 @@ de:
         newsletter_notifications: Ich möchte Newsletter erhalten
         newsletters: Newsletter
         notification_settings:
-          close_meeting_reminder: Ich möchte per E-Mail an Berichte über abgeschlossene Meetings erinnert werden, die ich noch nicht veröffentlicht habe.
+          close_meeting_reminder: Ich möchte per E-Mail an Berichte über abgeschlossene Termine erinnert werden, die ich noch nicht veröffentlicht habe.
         notifications_sending_frequencies:
           daily: Täglich
           none: Keine
@@ -1212,7 +1212,7 @@ de:
         verified: Überprüft
     pad_iframe:
       disclaimer: Der Inhalt dieses Blocks wurde von registrierten Benutzenden verfasst und gibt deren Meinung wieder. %{organization} kann nicht für den Inhalt verantwortlich gemacht werden.
-      explanation: Verwende dieses Pad, um während des Meetings gemeinsam Notizen zu machen.
+      explanation: Verwende dieses Pad, um während des Termins gemeinsam Notizen zu machen.
       pad: Pad
     pages:
       home:
@@ -1220,7 +1220,7 @@ de:
           debates: Diskussionen
           debates_explanation: Teile deine Ansichten und bereichere die aus deiner Sicht relevanten Themen.
           how_to_participate: Wie nehme ich an einem Prozess teil?
-          meetings: Meetings
+          meetings: Termine
           meetings_explanation: Finden heraus, wo und wann du an öffentlichen Veranstaltungen teilnehmen kannst.
           more_info: Mehr Informationen
           proposals: Vorschläge

@@ -458,10 +458,10 @@ de:
             update: Aktualisieren
           form:
             attachment_legend: "Titelbild und Anhänge hinzufügen"
-            created_in_meeting: Dieser Vorschlag stammt von einer Besprechung
+            created_in_meeting: Dieser Vorschlag stammt von einem Termin
             delete_attachment: Anhang löschen
             select_a_category: Kategorie auswählen
-            select_a_meeting: Besprechung auswählen
+            select_a_meeting: Termin auswählen
           index:
             actions: Aktionen
             assign_to_valuator: Zuweisen zu dem/der Gutachter:in
@@ -509,7 +509,7 @@ de:
             photos: Fotos
             proposals: Vorschläge
             ranking: "%{ranking} von %{total}"
-            related_meetings: Ähnliche Besprechungen
+            related_meetings: Ähnliche Termine
             remove_assignment: Zuweisung entfernen
             remove_assignment_confirmation: Bist du sicher, dass du diese/n Gutachter:in von diesem Vorschlag zurückziehen willst?
             valuators: Gutachter:innen
@@ -570,7 +570,7 @@ de:
           all: Alle
         filter_origin_values:
           all: Alle
-          meetings: Meetings
+          meetings: Termine
           official: Offiziell
           participants: Teilnehmer
           user_groups: Benutzer:innen-Gruppen
