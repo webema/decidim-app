@@ -25,7 +25,7 @@
               %fieldset
                 %legend= t("tos_title", scope: "decidim.devise.registrations.new")
                 .tos-text
-                  = decidim_sanitize_editor(translated_attribute(terms_and_conditions_page.content))
+                  = strip_tags(translated_attribute(terms_and_conditions_page.content))
               .field
                 - link = link_to t("terms", scope: "decidim.devise.registrations.new"), page_path("terms-and-conditions"), target: "_blank"
                 - label = t("tos_agreement", scope: "decidim.devise.registrations.new", link: link)
