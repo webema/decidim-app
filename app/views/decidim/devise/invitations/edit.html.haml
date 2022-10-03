@@ -24,12 +24,12 @@
             .card__content
               %fieldset
                 %legend= t("tos_title", scope: "decidim.devise.registrations.new")
-                .tos-text
-                  = strip_tags(translated_attribute(terms_and_conditions_page.content))
-              .field
-                - link = link_to t("terms", scope: "decidim.devise.registrations.new"), page_path("terms-and-conditions"), target: "_blank"
-                - label = t("tos_agreement", scope: "decidim.devise.registrations.new", link: link)
-                = f.check_box :tos_agreement, label: label, required: "required"
+                -# .tos-text
+                -#   = strip_tags(translated_attribute(terms_and_conditions_page.content))
+                .field
+                  - link = link_to t("terms", scope: "decidim.devise.registrations.new"), page_path("terms-and-conditions"), target: "_blank"
+                  - label = t("tos_agreement", scope: "decidim.devise.registrations.new", link: link)
+                  = f.check_box :tos_agreement, label: label, required: "required"
           #card__newsletter.card
             .card__content
               %fieldset
