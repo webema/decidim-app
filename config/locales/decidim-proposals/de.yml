@@ -77,6 +77,7 @@ de:
       decidim/proposals/publish_proposal_event: Vorschlag veröffentlicht
       decidim/proposals/rejected_proposal_event: Vorschlag abgelehnt
       decidim/proposals/voting_enabled_event: Vorschlagsabstimmung aktiviert
+      decidim/proposal_note_created_event: Notiz zum Vorschlag
   activerecord:
     models:
       decidim/proposals/collaborative_draft:
@@ -219,8 +220,8 @@ de:
           proposal_note_created:
             email_intro: Jemand hat eine Notiz zum Vorschlag "%{resource_title}" hinterlassen. Schaue dir diese im <a href="%{admin_proposal_info_url}">Admin-Panel</a> an
             email_outro: Du hast diese Benachrichtigung erhalten, weil du diesen Vorschlag bewerten kannst.
-            email_subject: Jemand hat eine Notiz für Vorschlag %{resource_title} erstellt.
-            notification_title: Jemand hat eine Notiz für den Vorschlag <a href="%{resource_path}">%{resource_title}</a>erstellt. Du kannst sie über das <a href="%{admin_proposal_info_path}">Admin-Panel</a> anzeigen
+            email_subject: Jemand hat eine Notiz zumschlag %{resource_title} erstellt.
+            notification_title: Jemand hat eine Notiz zum Vorschlag <a href="%{resource_path}">%{resource_title}</a> erstellt. Du kannst sie über das <a href="%{admin_proposal_info_path}">Admin-Panel</a> anzeigen
         collaborative_draft_access_accepted:
           email_subject: "%{requester_name} wurde zur Mitwirkung an %{resource_title} akzeptiert."
           notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> wurde zur Mitwirkung am kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> <strong>angenommen</strong>.
@@ -285,6 +286,7 @@ de:
           email_intro: Der Vorschlag "%{resource_title}" wurde zu "%{participatory_space_title}" hinzugefügt, welchem du folgst.
           email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Du kannst den Erhalt von Benachrichtigungen über den vorherigen Link beenden.
           email_subject: Neuer Vorschlag "%{resource_title}" zu %{participatory_space_title} hinzugefügt
+          notification_title: Der Vorschlag "%{resource_title}" wurde zu "%{participatory_space_title}" hinzugefügt.
         proposal_rejected:
           affected_user:
             email_intro: 'Dein Vorschlag "%{resource_title}" wurde abgelehnt. Du kannst die Antwort auf dieser Seite lesen:'
