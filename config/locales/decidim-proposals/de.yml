@@ -185,7 +185,7 @@ de:
             amendment_promotion_enabled: Hervorheben von Ergänzungen aktiviert
             amendment_promotion_enabled_help: Berichtigungsautoren können die abgelehnten Berichtigungen im Vorschlag hervorheben.
             amendment_reaction_enabled: Reaktionen auf Ergänzungen aktiviert
-            amendment_reaction_enabled_help: Vorschlagsautoren können die Berichtigungen von Teilnehmern akzeptieren oder ablehnen.
+            amendment_reaction_enabled_help: Vorschlagsautoren können die Berichtigungen von Teilnehmenden akzeptieren oder ablehnen.
             amendments_visibility: Sichtbarkeit der Ergänzungen
             amendments_visibility_choices:
               all: Ergänzungen sind für alle sichtbar
@@ -572,7 +572,7 @@ de:
           all: Alle
           meetings: Termine
           official: Offiziell
-          participants: Teilnehmer
+          participants: Teilnehmer:innen
           user_groups: Benutzer:innen-Gruppen
         filter_scope_values:
           all: Alle
