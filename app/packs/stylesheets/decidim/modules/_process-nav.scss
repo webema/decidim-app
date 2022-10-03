@@ -198,9 +198,30 @@ $nav-border-width: 3px;
 .process-nav__content {
   ul {
     li:first-child {
-      @include breakpoint(small down){
+      padding: 0 0 0 .5rem;
+
+      @include breakpoint(small only){
         display: none;
       }
+
+      @include breakpoint(medium){
+        width: 2rem;
+      }
+      @include breakpoint(large){
+        width: 4.3rem;
+      }
+
     }
   }
 }
+
+.process-nav {
+  @include breakpoint(small only){
+    padding-left: 1.5rem;
+
+    .process-nav__trigger__icon {
+      top: 0.25rem;
+    }
+  }
+}
+

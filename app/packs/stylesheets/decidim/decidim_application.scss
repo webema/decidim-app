@@ -314,6 +314,12 @@ ul.card-data {
   fieldset {
     margin-bottom: 0;
   }
+
+  .filters__section {
+    label {
+      color: $black !important;
+    }
+  }
 }
 
 .accordion-item {
@@ -432,13 +438,6 @@ ul.card-data {
   }
 }
 
-// .filters__section {
-//   .filters__help {
-//     display: none;
-//   }
-// }
-
-
 #card__tos {
   fieldset {
     margin: 0;
@@ -448,5 +447,11 @@ ul.card-data {
 #card__newsletter {
   fieldset {
     margin: 0;
+  }
+}
+
+.card--assembly, .card--process {
+  .card__status {
+    display: none;
   }
 }
