@@ -173,7 +173,7 @@ GIT
 
 GIT
   remote: https://github.com/webema/decidim-ideas.git
-  revision: fd08574e31e4055d5062714969bf110fbc5befcd
+  revision: 498f138141b066383e03f204eb8544f7c96b127e
   branch: main
   specs:
     decidim-ideas (0.27.0)
