@@ -530,7 +530,7 @@ de:
       registrations:
         new:
           already_have_an_account?: Hast du bereits ein Konto?
-          newsletter: Hiermit willige ein, gelegentlich einen Newsletter unter der oben angegebenen E-Mail-Adresse zu erhalten
+          newsletter: Hiermit willige ich ein, gelegentlich einen Newsletter unter der oben angegebenen E-Mail-Adresse zu erhalten
           newsletter_title: Kontakterlaubnis
           nickname_help: Dein Pseudonym in %{organization}. Kann nur Buchstaben, Zahlen, '-' und '_' enthalten.
           sign_in: Anmelden
