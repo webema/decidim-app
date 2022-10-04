@@ -1595,7 +1595,7 @@ Du bist nur noch einen Klick entfernt, dein Konto freizuschalten. Bestätige jet
         hello: Hallo %{email},
         ignore: |-
           Wenn du die Einladung nicht annehmen möchtest, ignoriere einfach diese E-Mail.<br />
-          dein Konto wird erst erstellt, wenn du auf den obigen Link zugreifst und deinen Benutzer:innen-Namen und dein Passwort festlegst.
+          Dein Konto wird erst erstellt, wenn du auf den obigen Link zugreifst und deinen Benutzer:innen-Namen und dein Passwort festlegst.
         invited_you_as_admin: "%{invited_by} hat dich als Admin von %{application} eingeladen. Du kannst die Einladung über den folgenden Link akzeptieren."
         invited_you_as_private_user: "%{invited_by} hat dich als Teilnehmer:in zu %{application} eingeladen. Du kannst die Einladung über den folgenden Link akzeptieren."
         someone_invited_you: Jemand hat dich zu %{application} eingeladen. Du kannst es über den folgenden Link akzeptieren.
