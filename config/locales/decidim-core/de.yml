@@ -1171,6 +1171,10 @@ de:
         daily: Tägliche Zusammenfassung
         weekly: Wöchentliche Zusammenfassung
       hello: Hallo %{name}
+      intro:
+        daily: 'Hier kommt Deine tägliche Zusammenfassung:'
+        weekly: 'Hier kommt Deine wöchentliche Zusammenfassung:'
+      outro: Du möchtest diese E-Mail nicht mehr erhalten? Dann passe einfach die Benachrichtigungs-Einstellungen in deinem Konto an.
       see_more: Weitere Benachrichtigungen ansehen
       subject: Dies ist deine E-Mail-Zusammenfassung
     notifications_settings:
