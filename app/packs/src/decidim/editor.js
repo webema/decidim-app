@@ -41,17 +41,18 @@ Quill.register({
   "modules/htmlEditButton": htmlEditButton
 })
 
-const quillFormats = ["bold", "italic", "link", "underline", "header", "list", "video", "image", "alt", "break", "width", "style", "code", "blockquote", "indent"];
+const quillFormats = ["bold", "italic", "link", "underline", "header", "list", "video", "image", "alt", "break", "width", "style", "blockquote", "indent"];
 
 export default function createQuillEditor(container) {
   const toolbar = $(container).data("toolbar");
   const disabled = $(container).data("disabled");
 
   let quillToolbar = [
-    ["bold", "italic", "underline", "linebreak"],
+    ["bold", "italic", "underline"],
+    ["linebreak"],
     [{ list: "ordered" }, { list: "bullet" }],
-    ["link", "clean"],
-    ["code", "blockquote"],
+    ["link"],
+    ["blockquote"],
     [{ "indent": "-1"}, { "indent": "+1" }]
   ];
 
@@ -82,7 +83,7 @@ export default function createQuillEditor(container) {
         "linebreak": lineBreakButtonHandler
       }
     },
-    htmlEditButton: {}
+    htmlEditButton: { buttonHTML: '&lt;&gt;'}
   };
   const $input = $(container).siblings('input[type="hidden"]');
   container.innerHTML = $input.val() || "";
