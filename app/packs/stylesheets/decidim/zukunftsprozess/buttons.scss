@@ -79,36 +79,50 @@ $button-color: #FEF166;
     border: 1px solid $button-color;
   }
 
-  button.follow-button:not(.card__button) {
+  button.follow-button:not(.card__button), .button.secondary.small, a.button.secondary.follow-button {
+    padding: .75rem 0;
+
     .icon-wrap {
-      border-right: 1px solid $button-color;
+      position:unset;
+
+
+      border: none;
+      margin: 0;
     }
 
-    &:hover {
-      .icon-wrap {
-        border-right: 1px solid $white;
-      }
+    .text-wrap {
+      display: inline;
+      margin: 0;
     }
   }
 
-  button.secondary:not(.card__button), a.button.secondary, button.secondary.active, a.button.button--sc:not(.hero-cta), .buttons__row .button, button.calendar {
-    // border: 1px solid #fef166;
-    background-color: $white;
+
+
+  // button.follow-button {
+  //   // border: 1px solid $button-color;
+
+  //   // &:hover {
+  //   //   background-color: $button-color;
+  //   // }
+  //   .icon-wrap {
+  //     border: none !important;
+  //   }
+  // }
+
+  button.secondary:not(.card__button),
+  a.button.secondary,
+  button.secondary.active,
+  a.button.button--sc:not(.hero-cta),
+  .buttons__row .button,
+  button.calendar,
+  .columns.section.view-side .button_to button.button,
+  a.button.follow-button {
+    background-color: transparent;
     color: var(--secondary);
     filter: brightness(100%);
     position: relative;
 
     border: none;
-
-    // border-top: 0;
-    // border-right: 0;
-    // border-left: 4px solid #ffe900;
-    // border-bottom: 4px solid #ffe900;
-    // left: 4px;
-    // top: -4px;
-
-    // padding-top: 19px;
-    // padding-bottom: 11px;
     transition: background-color .2s;
 
     &:hover {
@@ -167,6 +181,24 @@ $button-color: #FEF166;
 
 
     }
+  }
+
+  button.follow-button:not(.card__button), .button.secondary.small, a.button.follow-button {
+    &:before {
+      border-left: 3px solid $button-color;
+      border-bottom: 3px solid $button-color;
+    }
+
+    &:after {
+      top: -4px;
+      right: -4px;
+    }
+
+    &:hover:after {
+      top: 0px;
+      right: 0px;
+    }
+
   }
 }
 

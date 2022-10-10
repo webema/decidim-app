@@ -119,8 +119,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .follow-button {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  // padding-top: 0.5rem;
+  // padding-bottom: 0.5rem;
 
   font-size: 0.9rem;
 
@@ -458,4 +458,35 @@ ul.card-data {
 
 .ql-snow.ql-toolbar button, .ql-snow .ql-toolbar button {
   width: auto;
+}
+
+.assemblies, .processes {
+  .columns.section.view-side {
+    .row.collapse.buttons__row {
+      display: block;
+
+      .column.small-9.collapse, .column.small-12.collapse {
+        float: none;
+        display: block;
+        width: 100%;
+
+        margin-bottom: 1rem;
+
+        .button:first-child {
+          padding: 1rem;
+          min-width: 40px;
+          margin-right: .5rem;
+        }
+      }
+
+      .column.collapse.small-3 {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0;
+      }
+      // background-color: red;
+    }
+
+  }
 }
