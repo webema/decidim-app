@@ -46,6 +46,8 @@ $button-color: #FEF166;
       left: 5px;
       width: calc(100%);
       height: calc(100%);
+
+      transition: bottom .2s, left .2s;
     }
 
     &:hover:after {
@@ -107,9 +109,11 @@ $button-color: #FEF166;
 
     // padding-top: 19px;
     // padding-bottom: 11px;
+    transition: background-color .2s;
 
     &:hover {
       background-color: $button-color;
+      transition: background-color .2s;
       // left: 0px;
       // top: 0px;
 
@@ -136,6 +140,13 @@ $button-color: #FEF166;
       height: calc(100%);
     }
 
+    // &:hover:before {
+    //   border-left: 0px solid $button-color;
+    //   border-bottom: 0px solid $button-color;
+
+    //   transition: border-left .5s, border-bottom .5s;
+    // }
+
     &:after {
       content: '';
       position: absolute;
@@ -146,10 +157,15 @@ $button-color: #FEF166;
       right: -5px;
       width: calc(100% + 1px);
       height: calc(100% + 1px);
+
+      transition: top .2s, right .2s;
     }
 
     &:hover:after {
-      display: none;
+      top: 0px;
+      right: 0px;
+
+
     }
   }
 }
