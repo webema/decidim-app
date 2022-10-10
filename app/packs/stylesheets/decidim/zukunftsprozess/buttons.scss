@@ -1,6 +1,7 @@
 $button-color: #FEF166;
 
 #content {
+  a.button-primary,
   a.startpage_primary_button,
   a.like-button,
   a.title-action__action,
@@ -41,15 +42,15 @@ $button-color: #FEF166;
       content: '';
       position: absolute;
       border: 1px solid $black;
-      bottom: 4px;
-      left: 4px;
-      width: calc(100% - 1px);
-      height: calc(100% - 1px);
+      bottom: 5px;
+      left: 5px;
+      width: calc(100%);
+      height: calc(100%);
     }
 
     &:hover:after {
-      bottom: 2px;
-      left: 2px;
+      bottom: 0px;
+      left: 0px;
     }
   }
 
@@ -88,17 +89,69 @@ $button-color: #FEF166;
     }
   }
 
-  button.secondary:not(.card__button), a.button.secondary, button.secondary.active {
-    border: 1px solid $button-color;
-    background-color: transparent;
+  button.secondary:not(.card__button), a.button.secondary, button.secondary.active, a.button.button--sc:not(.hero-cta), .buttons__row .button, button.calendar {
+    // border: 1px solid #fef166;
+    background-color: $white;
     color: var(--secondary);
     filter: brightness(100%);
+    position: relative;
+
+    border: none;
+
+    // border-top: 0;
+    // border-right: 0;
+    // border-left: 4px solid #ffe900;
+    // border-bottom: 4px solid #ffe900;
+    // left: 4px;
+    // top: -4px;
+
+    // padding-top: 19px;
+    // padding-bottom: 11px;
 
     &:hover {
       background-color: $button-color;
+      // left: 0px;
+      // top: 0px;
+
+      // padding-top: 15px;
+      // padding-bottom: 15px;
+    }
+
+    // &:focus {
+    //   background-color: $button-color;
+    // }
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background-color: transparent;
+
+      border-left: 4px solid $button-color;
+      border-bottom: 4px solid $button-color;
+
+      width: calc(100%);
+      height: calc(100%);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: transparent;
+      border: 1px solid #ffe900;
+
+      top: -5px;
+      right: -5px;
+      width: calc(100% + 1px);
+      height: calc(100% + 1px);
+    }
+
+    &:hover:after {
+      display: none;
     }
   }
-
 }
 
 a.button, button.button {
