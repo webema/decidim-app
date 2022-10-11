@@ -490,3 +490,39 @@ ul.card-data {
 
   }
 }
+
+.hero-image {
+  .actions-wrapper {
+    margin-top: .5rem;
+  }
+
+  strong {
+    font-weight: normal;
+    font-size: .9rem;
+  }
+}
+
+.attachments_container {
+
+  legend {
+    font-size: .9rem;
+  }
+  .actions-wrapper {
+    // margin-top: .5rem;
+
+
+    button {
+      padding: .85rem .5rem;
+    }
+  }
+}
+
+.label-required.has-tip {
+  margin-bottom: 0;
+  padding: 0;
+  line-height: 1;
+
+  span {
+    line-height: 1;
+  }
+}

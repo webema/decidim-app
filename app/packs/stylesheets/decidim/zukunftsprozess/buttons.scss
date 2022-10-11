@@ -15,7 +15,10 @@ $button-color: #FEF166;
   .delete-account .button,
   .edit_user .button,
   #start-conversation-dialog-button,
-  form#new_message_ .button {
+  form#new_message_ .button,
+  .hero-image button.add-file,
+  button.add-file-hero_image,
+  button.add-file-documents {
     background-color: $button-color;
     border: 0 solid #E5E7EB;
     border-radius: 0;
@@ -121,7 +124,8 @@ $button-color: #FEF166;
   .buttons__row .button,
   button.calendar,
   .columns.section.view-side .button_to button.button,
-  a.button.follow-button {
+  a.button.follow-button,
+  .upload-container-for-documents button {
     background-color: transparent;
     color: var(--secondary);
     filter: brightness(100%);
