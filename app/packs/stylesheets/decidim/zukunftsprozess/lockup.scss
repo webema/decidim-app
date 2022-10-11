@@ -23,6 +23,30 @@ body.lockup {
     height: auto !important;
     min-height:100%;
     background-repeat: no-repeat;
+    text-align: center;
+
+    .heading {
+      margin-bottom: 4rem;
+
+      h1 {
+        font-size: 2.5rem;
+
+        &.small {
+          font-size: 1.5rem;
+        }
+
+        span {
+          background: rgba(255, 255, 255, 0.8);
+          -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+        }
+      }
+    }
+
+    .card {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     @include breakpoint(small) {
       background-image: url("~images/startpage_640.jpg");

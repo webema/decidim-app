@@ -18,7 +18,8 @@ $button-color: #FEF166;
   form#new_message_ .button,
   .hero-image button.add-file,
   button.add-file-hero_image,
-  button.add-file-documents {
+  button.add-file-documents,
+  .confirm-modal-footer .button:not(.clear) {
     background-color: $button-color;
     border: 0 solid #E5E7EB;
     border-radius: 0;
@@ -28,7 +29,7 @@ $button-color: #FEF166;
     font-weight: 700;
     justify-content: center;
     line-height: 1.5rem;
-    padding: .75rem .5rem;
+    padding: .75rem .75rem;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
