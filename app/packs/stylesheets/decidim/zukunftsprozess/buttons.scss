@@ -1,6 +1,6 @@
 $button-color: #FEF166;
 
-#content {
+#content, .reveal-overlay {
   a.button-primary,
   a.startpage_primary_button,
   a.like-button,
@@ -10,7 +10,12 @@ $button-color: #FEF166;
   form:not(.button_to) > button[type=submit]:not(.secondary),
   .actions > button[type=submit]:not(.secondary),
   .field > button[type=submit]:not(.secondary),
-  .show-more > button {
+  .show-more > button,
+  .download-your-data .button_to .button,
+  .delete-account .button,
+  .edit_user .button,
+  #start-conversation-dialog-button,
+  form#new_message_ .button {
     background-color: $button-color;
     border: 0 solid #E5E7EB;
     border-radius: 0;
