@@ -6,6 +6,8 @@ module Decidim
       helper Decidim::PaginateHelper
       layout 'decidim/admin/blog_posts'
 
+      before_action :enforce_permission
+
       def index
         @blog_posts = blog_posts_for_organization.order(created_at: :desc).page(params[:page]).per(2)
       end
@@ -59,6 +61,10 @@ module Decidim
       end
 
       private
+
+      def enforce_permission
+        enforce_permission_to :update, :organization
+      end
 
       def blog_post_params
         params[:ema_blog_post].to_unsafe_h
