@@ -1,6 +1,7 @@
 $button-color: #FEF166;
 
-#content, .reveal-overlay {
+#content, .reveal-overlay, #dc-dialog-wrapper {
+  .button.primary,
   a.button-primary,
   a.startpage_primary_button,
   a.like-button,
@@ -19,7 +20,10 @@ $button-color: #FEF166;
   .hero-image button.add-file,
   button.add-file-hero_image,
   button.add-file-documents,
-  .confirm-modal-footer .button:not(.clear) {
+  .confirm-modal-footer .button:not(.clear),
+  .answer-questionnaire__submit button,
+  button.add-file-avatar,
+  #dc-dialog-accept {
     background-color: $button-color;
     border: 0 solid #E5E7EB;
     border-radius: 0;
@@ -126,7 +130,8 @@ $button-color: #FEF166;
   button.calendar,
   .columns.section.view-side .button_to button.button,
   a.button.follow-button,
-  .upload-container-for-documents button {
+  .upload-container-for-documents button,
+  #dc-dialog-reject {
     background-color: transparent;
     color: var(--secondary);
     filter: brightness(100%);
