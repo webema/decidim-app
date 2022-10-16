@@ -170,7 +170,7 @@ de:
           email_subject: Dein Registrierungscode "%{registration_code}" für die Sitzung "%{resource_title}" wurde bestätigt
           notification_title: Dein Registrierungscode "%{registration_code}" für die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde bestätigt.
         registrations_enabled:
-          email_intro: 'Die Sitzung "%{resource_title}" hat Registrierungen aktiviert. Du kannst sich auf der Sitzungs-Seite registrieren:'
+          email_intro: 'Die Sitzung "%{resource_title}" hat Registrierungen aktiviert. Du kannst dich auf der Sitzungs-Seite registrieren:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du der Sitzung "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Die Sitzung "%{resource_title}" hat Registrierungen aktiviert.
           notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> hat Registrierungen aktiviert.
