@@ -16,6 +16,8 @@ module Decidim
       attribute :hero_image
       attribute :remove_hero_image, Boolean, default: false
 
+      attribute :hide_hero_image, Boolean, default: false
+
       validates :title, presence: true
       validates :hero_image, passthru: { to: Ema::BlogPost }
 

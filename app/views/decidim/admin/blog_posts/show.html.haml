@@ -6,7 +6,7 @@
           = t('title', scope: 'ema.blog_posts.admin.show')
 
       .card-section
-        - if @blog_post.hero_image.attached?
+        - if @blog_post.hero_image.attached? && !@blog_post.hide_hero_image
           = image_tag @blog_post.attached_uploader(:hero_image).variant_path :medium
 
         %h2.card__title

@@ -178,6 +178,7 @@
   }
 
   .blog-post {
+    display: block;
     position: relative;
 
     @include breakpoint(small) {
@@ -201,6 +202,22 @@
       transform: rotate(-2deg);
 
       background-color: $white;
+
+      font-weight: 400;
+      color: $black;
+
+      .link {
+        font-weight: 700;
+        color: var(--secondary);
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        svg {
+          height: 12px;
+        }
+      }
 
       @include breakpoint(small) {
         width: 45%;

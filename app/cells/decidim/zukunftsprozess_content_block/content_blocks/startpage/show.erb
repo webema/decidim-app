@@ -14,19 +14,20 @@
         </div>
       </div>
       <div class="column">
-        <%- if recent_blog_post.present? %>
-          <div class="blog-post">
-            <%- if recent_blog_post.hero_image.attached? %>
+        <% if recent_blog_post.present? %>
+          <%= link_to post_path(recent_blog_post), class: 'blog-post' do %>
+            <% if recent_blog_post.hero_image.attached? %>
               <%= image_tag recent_blog_post.attached_uploader(:hero_image).variant_path :medium %>
-            <%- end %>
+            <% end %>
             <div class="teaser">
               <%= truncate(recent_blog_post.title, length: 50) %>
-              <div class="text-right">
-                <%= link_to "weiterlesen #{icon('chevron-right', class: 'inline')}", post_path(recent_blog_post) %>
+              <div class="text-right link">
+                <%= "mehr #{icon('chevron-right', class: 'inline')}" %>
               </div>
             </div>
-          </div>
-        <%- end %>
+          <% end %>
+        <% end %>
+
       </div>
     </div>
 

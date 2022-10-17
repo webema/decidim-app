@@ -42,7 +42,8 @@ module Decidim
     def attributes
       {
         title: form.title,
-        body: form.body
+        body: form.body,
+        hide_hero_image: form.hide_hero_image
       }.merge(
         attachment_attributes(:hero_image)
       )
