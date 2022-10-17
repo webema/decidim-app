@@ -23,7 +23,8 @@ $button-color: #FEF166;
   .confirm-modal-footer .button:not(.clear),
   .answer-questionnaire__submit button,
   button.add-file-avatar,
-  #dc-dialog-accept {
+  #dc-dialog-accept,
+  .upload-container-for-hero_image button {
     background-color: $button-color;
     border: 0 solid #E5E7EB;
     border-radius: 0;

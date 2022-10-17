@@ -526,3 +526,9 @@ ul.card-data {
     line-height: 1;
   }
 }
+
+
+::placeholder{
+  color: gray;
+  font-size: .9rem;
+}
