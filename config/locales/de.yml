@@ -111,6 +111,7 @@ de:
         blog_posts: Aktuelles
       admin_menu:
         blog_posts: Blog
+        newsletters: Newsletter
 
     length_validator:
       minimum:

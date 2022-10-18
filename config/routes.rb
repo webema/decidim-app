@@ -20,6 +20,7 @@ Rails.application.routes.draw do
 
   Decidim::Admin::Engine.routes.draw do
     resources :posts, controller: 'blog_posts'
+    resources :newsletters, controller: 'email_exports'
   end
   get 'healthcheck' => 'healthcheck#index'
 end
