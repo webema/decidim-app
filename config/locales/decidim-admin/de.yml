@@ -632,7 +632,7 @@ de:
             unblock: Blockierung des/der Benutzer:in aufheben
             unreport: Meldung Rückgängig machen
           name: Name
-          nickname: Pseudonym
+          nickname: Kürzel
           reason: Grund
           reports: Anzahl Meldungen
           title: Liste der gemeldeten Benutzer:innen
@@ -745,7 +745,7 @@ de:
           block: Benutzer:in blockieren
           created_at: Hergestellt in
           name: Name
-          nickname: Pseudonym
+          nickname: Kürzel
           not_officialized: Nicht offiziell
           officialize: Offizialisieren
           officialized: Offizialisiert

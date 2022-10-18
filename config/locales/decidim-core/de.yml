@@ -14,7 +14,7 @@ de:
         document_number: Dokumentennummer
         email: E-Mail-Adresse
         name: Name
-        nickname: Pseudonym
+        nickname: Kürzel
         phone: Telefonnummer
       message:
         body: Haupttext
@@ -25,7 +25,7 @@ de:
         email: Deine E-Mail
         locale: Spracheinstellung
         name: Dein Name
-        nickname: Pseudonym
+        nickname: Kürzel
         password: Passwort
         password_confirmation: Bestätige dein Passwort
         personal_url: Persönliche URL
@@ -52,7 +52,7 @@ de:
       decidim/user:
         current_password: Aktuelles Passwort
         email: E-Mail
-        name: Pseudonym
+        name: Kürzel
         password: Passwort
         password_confirmation: Bestätigung des Passworts
         remember_me: Angemeldet bleiben
@@ -523,7 +523,7 @@ de:
           email_already_exists: Ein anderes Konto verwendet dieselbe E-Mail-Adresse
         new:
           complete_profile: Profil vervollständingen
-          nickname_help: Dein Pseudonym in %{organization}. Kann nur Buchstaben, Zahlen, '-' und '_' enthalten.
+          nickname_help: Gib hier ein Kürzel ein. Es darf keine Abstände, Umlaute oder Sonderzeichen enthalten. Andere Nutzer:innen können dich mit @Kürzel in Beiträgen verlinken.
           sign_up: Bitte vervollständige dein Profil
           subtitle: Bitte fülle das folgende Formular aus, um die Anmeldung abzuschließen
           username_help: Öffentlich sichtbarer Name, der in deinen Beiträgen angezeigt wird. Um Anonymität zu gewährleisten, kann es sich um einen beliebigen Namen handeln.
@@ -532,7 +532,7 @@ de:
           already_have_an_account?: Hast du bereits ein Konto?
           newsletter: Hiermit willige ich ein, gelegentlich einen Newsletter unter der oben angegebenen E-Mail-Adresse zu erhalten
           newsletter_title: Kontakterlaubnis
-          nickname_help: Dein Pseudonym in %{organization}. Kann nur Buchstaben, Zahlen, '-' und '_' enthalten.
+          nickname_help: Gib hier ein Kürzel ein. Es darf keine Abstände, Umlaute oder Sonderzeichen enthalten. Andere Nutzer:innen können dich mit @Kürzel in Beiträgen verlinken.
           sign_in: Anmelden
           sign_up: Registrieren
           sign_up_as:
@@ -576,7 +576,7 @@ de:
           publish_content: Inhalte für dich veröffentlichen
           see_email: Deine E-Mail anzeigen
           see_name: Deinen Namen anzeigen
-          see_username: Dein Pseudonym anzeigen
+          see_username: Dein Kürzel anzeigen
           this_application_will_be_able_to: 'Diese Anwendung wird in der Lage sein:'
           this_application_will_not_be_able_to: 'Diese Anwendung wird nicht in der Lage sein:'
           update_profile: Profil aktualisieren
@@ -934,7 +934,7 @@ de:
         email_help: E-Mail deiner Organisation, deiner Vereinigung, deines Kollektivs, deiner Gruppe usw.
         fill_in_for_verification: 'Fülle diese Felder aus, wenn deine Gruppe überprüft werden soll:'
         name_help: Name deiner Organisation, deiner Vereinigung, deines Kollektivs, deiner Gruppe usw.
-        nickname_help: Pseudonym deiner Organisation, deiner Vereinigung, deines Kollektivs, deiner Gruppe usw. Verwende keine Leerzeichen oder Akzente.
+        nickname_help: Kürzel deiner Organisation, deiner Vereinigung, deines Kollektivs, deiner Gruppe usw. Verwende keine Leerzeichen oder Akzente.
         phone_help: Verwende keine Bindestriche oder Leerzeichen
       join:
         error: Es ist ein Problem aufgetreten, der Gruppe beizutreten
@@ -1840,7 +1840,7 @@ Du bist nur noch einen Klick entfernt, dein Konto freizuschalten. Bestätige jet
     email_included_in_password: ist deiner E-Mail zu ähnlich
     fallback: ist ungültig
     name_included_in_password: ist deinem Namen zu ähnlich
-    nickname_included_in_password: ist deinem Pseudonym zu ähnlich
+    nickname_included_in_password: ist deinem Kürzel zu ähnlich
     not_enough_unique_characters: hat nicht genug eindeutige Zeichen
     password_not_allowed: ist nicht erlaubt
     password_repeated: ein früheres Passwort kann nicht wieder verwendet werden
