@@ -218,100 +218,100 @@ de:
       proposals:
         admin:
           proposal_note_created:
-            email_intro: Jemand hat eine Notiz zum Vorschlag "%{resource_title}" hinterlassen. Schaue dir diese im <a href="%{admin_proposal_info_url}">Admin-Panel</a> an
+            email_intro: Jemand hat eine Notiz zum Vorschlag <em>%{resource_title}</em> hinterlassen. Schaue dir diese im <a href="%{admin_proposal_info_url}">Admin-Panel</a> an
             email_outro: Du hast diese Benachrichtigung erhalten, weil du diesen Vorschlag bewerten kannst.
-            email_subject: Jemand hat eine Notiz zumschlag %{resource_title} erstellt.
+            email_subject: Jemand hat eine Notiz zum Vorschlag "%{resource_title}" erstellt.
             notification_title: Jemand hat eine Notiz zum Vorschlag <a href="%{resource_path}">%{resource_title}</a> erstellt. Du kannst sie über das <a href="%{admin_proposal_info_path}">Admin-Panel</a> anzeigen
         collaborative_draft_access_accepted:
-          email_subject: "%{requester_name} wurde zur Mitwirkung an %{resource_title} akzeptiert."
+          email_subject: '%{requester_name} wurde zur Mitwirkung an "%{resource_title}" akzeptiert.'
           notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> wurde zur Mitwirkung am kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> <strong>angenommen</strong>.
         collaborative_draft_access_rejected:
-          email_subject: "%{requester_name} wurde als Mitwirkender des kollaborativen Entwurfs %{resource_title} abgelehnt."
+          email_subject: '%{requester_name} wurde als Mitwirkender des kollaborativen Entwurfs "%{resource_title}" abgelehnt.'
           notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> wurde als Mitwirkender beim kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> <strong>abgelehnt</strong>.
         collaborative_draft_access_requested:
           email_subject: "%{requester_name} hat um Zugang zur Mitwirkung bei %{resource_title} angefragt."
           notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> hat Zugriff beantragt, um beim kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> mitzuwirken. Bitte <strong>den Antrag akzeptieren oder ablehnen</strong>.
         collaborative_draft_access_requester_accepted:
-          email_subject: Du wurdest als Mitwirkender von %{resource_title} angenommen.
+          email_subject: Du wurdest als Mitwirkender von "%{resource_title}" angenommen.
           notification_title: Du wurdest zur Mitwirkung am kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> <strong>akzeptiert</strong>.
         collaborative_draft_access_requester_rejected:
-          email_subject: Du wurdest als Mitwirkender von %{resource_title} abgelehnt.
+          email_subject: Du wurdest als Mitwirkender von "%{resource_title}" abgelehnt.
           notification_title: Du wurdest als Mitwirkender beim kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> <strong>abgelehnt</strong>.
         collaborative_draft_withdrawn:
-          email_subject: "%{author_name} %{author_nickname} hat den kollaborativen Entwurf %{resource_title} zurückgezogen."
+          email_subject: '%{author_name} %{author_nickname} hat den kollaborativen Entwurf "%{resource_title}" zurückgezogen.'
           notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> hat den kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> <strong>zurückgezogen</strong>.
         creation_enabled:
-          email_intro: 'Du kannst jetzt neue Vorschläge in %{participatory_space_title} erstellen! Beteilige dich auf dieser Seite:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{participatory_space_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-          email_subject: In %{participatory_space_title} sind jetzt Vorschläge verfügbar
+          email_intro: 'Du kannst jetzt neue Vorschläge in <em>%{participatory_space_title}</em> erstellen! Beteilige dich auf dieser Seite:'
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{participatory_space_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{participatory_space_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+          email_subject: In "%{participatory_space_title}" sind jetzt Vorschläge verfügbar
           notification_title: Du kannst jetzt <a href="%{resource_path}">neue Vorschläge</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a> erfassen
         endorsing_enabled:
-          email_intro: 'Du kannst Vorschläge in %{participatory_space_title} unterstützen! Beteilige dich auf dieser Seite:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{participatory_space_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-          email_subject: In %{participatory_space_title} ist es jetzt möglich, Vorschläge zu unterstützen
+          email_intro: 'Du kannst Vorschläge in <em>%{participatory_space_title}</em> unterstützen! Beteilige dich auf dieser Seite:'
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{participatory_space_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{participatory_space_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+          email_subject: In "%{participatory_space_title}" ist es jetzt möglich, Vorschläge zu unterstützen
           notification_title: Du kannst nun Vorschläge in <a href="%{participatory_space_url}">%{participatory_space_title}</a> <a href="%{resource_path}">unterstützen</a>
         proposal_accepted:
           affected_user:
-            email_intro: 'Dein Vorschlag "%{resource_title}" wurde angenommen. Du kannst die Antwort auf dieser Seite lesen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du ein/e Autor:in von "%{resource_title}" bist.
+            email_intro: 'Dein Vorschlag <em>%{resource_title}</em> wurde angenommen. Du kannst die Antwort auf dieser Seite lesen:'
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du ein/e Autor:in von <em>%{resource_title}</em> bist.
             email_subject: Dein Vorschlag wurde angenommen
             notification_title: Dein Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde angenommen.
           follower:
-            email_intro: 'Der Vorschlag "%{resource_title}" wurde akzeptiert. Du kannst die Antwort auf dieser Seite lesen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{resource_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+            email_intro: 'Der Vorschlag <em>%{resource_title}</em> wurde akzeptiert. Du kannst die Antwort auf dieser Seite lesen:'
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{resource_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{resource_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
             email_subject: Ein Vorschlag, dem du folgst, wurde akzeptiert
             notification_title: Der Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde angenommen.
         proposal_evaluating:
           affected_user:
-            email_intro: 'Dein Vorschlag "%{resource_title}" wird derzeit geprüft. Das Resultat wird auf dieser Seite aufgeschaltet werden:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du ein/e Autor:in von "%{resource_title}" bist.
+            email_intro: 'Dein Vorschlag <em>%{resource_title}</em> wird derzeit geprüft. Das Resultat wird auf dieser Seite aufgeschaltet werden:'
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du ein/e Autor:in von <em>%{resource_title}</em> bist.
             email_subject: Dein Vorschlag wird evaluiert
             notification_title: Dein Vorschlag <a href="%{resource_path}">%{resource_title}</a> wird evaluiert.
           follower:
-            email_intro: 'Der Vorschlag "%{resource_title}" wird derzeit geprüft. Das Resultat wird auf dieser Seite aufgeschaltet werden:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{resource_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+            email_intro: 'Der Vorschlag <em>%{resource_title}</em> wird derzeit geprüft. Das Resultat wird auf dieser Seite aufgeschaltet werden:'
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{resource_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{resource_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
             email_subject: Ein Vorschlag, dem du folgst, wird evaluiert
             notification_title: Der Vorschlag <a href="%{resource_path}">%{resource_title}</a> wird evaluiert.
         proposal_mentioned:
-          email_intro: Dein Vorschlag "%{mentioned_proposal_title}" wurde <a href="%{resource_url}">hier</a> in den Kommentaren erwähnt.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du ein/e Autor:in von "%{resource_title}" bist.
+          email_intro: Dein Vorschlag <em>%{mentioned_proposal_title}</em> wurde <a href="%{resource_url}">hier</a> in den Kommentaren erwähnt.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du ein/e Autor:in von <em>%{resource_title}</em> bist.
           email_subject: Dein Vorschlag "%{mentioned_proposal_title}" wurde erwähnt
-          notification_title: Dein Vorschlag "%{mentioned_proposal_title}" wurde <a href="%{resource_path}">hier</a> in den Kommentaren erwähnt.
+          notification_title: Dein Vorschlag <em>%{mentioned_proposal_title}</em> wurde <a href="%{resource_path}">hier</a> in den Kommentaren erwähnt.
         proposal_published:
-          email_intro: '%{author_name} %{author_nickname}, dem du folgst, hat einen neuen Vorschlag mit dem Namen "%{resource_title}" veröffentlicht. Sieh ihn dir an und dieskutiere mit:'
+          email_intro: '%{author_name} %{author_nickname}, dem du folgst, hat einen neuen Vorschlag <em>%{resource_title}</em> veröffentlicht. Sieh ihn dir an und dieskutiere mit:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du %{author_nickname} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{author_nickname} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Neuer Vorschlag "%{resource_title}" von %{author_nickname}
           notification_title: Der Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde von <a href="%{author_path}">%{author_name} %{author_nickname}</a> veröffentlicht.
         proposal_published_for_space:
-          email_intro: Der Vorschlag "%{resource_title}" wurde zu "%{participatory_space_title}" hinzugefügt, welchem du folgst.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Du kannst den Erhalt von Benachrichtigungen über den vorherigen Link beenden.
-          email_subject: Neuer Vorschlag "%{resource_title}" zu %{participatory_space_title} hinzugefügt
-          notification_title: Der Vorschlag "%{resource_title}" wurde zu "%{participatory_space_title}" hinzugefügt.
+          email_intro: Der Vorschlag <em>%{resource_title}</em> wurde zu <em>%{participatory_space_title}</em> hinzugefügt, welchem du folgst.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{participatory_space_title}</em> folgst. Du kannst den Erhalt von Benachrichtigungen über den vorherigen Link beenden.
+          email_subject: Neuer Vorschlag "%{resource_title}" zu "%{participatory_space_title}" hinzugefügt
+          notification_title: Der Vorschlag <em>%{resource_title}</em> wurde zu <em>%{participatory_space_title}</em> hinzugefügt.
         proposal_rejected:
           affected_user:
-            email_intro: 'Dein Vorschlag "%{resource_title}" wurde abgelehnt. Du kannst die Antwort auf dieser Seite lesen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du ein/e Autor:in von "%{resource_title}" bist.
+            email_intro: 'Dein Vorschlag <em>%{resource_title}</em> wurde abgelehnt. Du kannst die Antwort auf dieser Seite lesen:'
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du ein/e Autor:in von <em>%{resource_title}</em> bist.
             email_subject: Dein Vorschlag wurde abgelehnt
             notification_title: Dein Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde abgelehnt.
           follower:
-            email_intro: 'Der Vorschlag "%{resource_title}" wurde abgelehnt. Du kannst die Antwort auf dieser Seite lesen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du %{resource_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+            email_intro: 'Der Vorschlag <em>%{resource_title}</em> wurde abgelehnt. Du kannst die Antwort auf dieser Seite lesen:'
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{resource_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{resource_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
             email_subject: Ein Vorschlag, dem du folgst, wurde abgelehnt
             notification_title: Der Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde abgelehnt.
         proposal_update_category:
-          email_intro: 'Ein/e Administrator:in hat die Kategorie deines Vorschlags "%{resource_title}" aktualisiert, sieh ihn dir an:'
+          email_intro: 'Ein/e Administrator:in hat die Kategorie deines Vorschlags <em>%{resource_title}</em> aktualisiert, sieh ihn dir an:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du der/die Autor:in des Vorschlags bist.
-          email_subject: Die Vorschlagskategorie %{resource_title} wurde aktualisiert
+          email_subject: Die Vorschlagskategorie "%{resource_title}" wurde aktualisiert
           notification_title: Die Vorschlagskategorie <a href="%{resource_path}">%{resource_title}</a> wurde von einem Administrator bzw. einer Administratorin aktualisiert.
         proposal_update_scope:
-          email_intro: 'Ein/e Administrator:in hat den Bereich deines Vorschlags „%{resource_title}“ aktualisiert, sieh es dir auf dieser Seite an:'
+          email_intro: 'Ein/e Administrator:in hat den Bereich deines Vorschlags <em>%{resource_title}</em> aktualisiert, sieh es dir auf dieser Seite an:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du der/die Autor:in des Vorschlags bist.
-          email_subject: Der Bereich des Vorschlags %{resource_title} wurde aktualisiert
+          email_subject: Der Bereich des Vorschlags "%{resource_title}" wurde aktualisiert
           notification_title: Der Bereich des Vorschlags <a href="%{resource_path}">%{resource_title}</a> wurde von einem Administrator bzw. einer Administratorin aktualisiert.
         voting_enabled:
-          email_intro: 'Du kannst für Vorschläge in %{participatory_space_title} abstimmen! Beteilige dich auf dieser Seite:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{participatory_space_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-          email_subject: In %{participatory_space_title} ist es jetzt möglich, für Vorschläge abzustimmen
+          email_intro: 'Du kannst für Vorschläge in <em>%{participatory_space_title}</em> abstimmen! Beteilige dich auf dieser Seite:'
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{participatory_space_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{participatory_space_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+          email_subject: In "%{participatory_space_title}" ist es jetzt möglich, für Vorschläge abzustimmen
           notification_title: Du kannst jetzt für Vorschläge in <a href="%{participatory_space_url}">%{participatory_space_title}</a> <a href="%{resource_path}">abstimmen</a>
     gamification:
       badges:

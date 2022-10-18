@@ -410,10 +410,10 @@ de:
           notification_title: Du wurdest als Mitglied des Machwerks <a href="%{resource_path}">%{resource_name}</a> registriert. Gehe zur <a href="%{resource_path}">Machwerksseite</a>, um mitzuwirken!
       assembly:
         role_assigned:
-          email_intro: Du wurdest als %{role} für das Machwerk "%{resource_title}" ausgewählt.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du ein %{role} des Machwerks "%{resource_title}" bist.
-          email_subject: Du wurdest als %{role} für "%{resource_title}" ausgewählt.
-          notification_title: Du wurdest als %{role} für das Machwerk <a href="%{resource_url}">%{resource_title}</a> ausgewählt.
+          email_intro: Du wurdest als <em>%{role}</em> für das Machwerk <em>%{resource_title}</em> ausgewählt.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du ein <em>%{role}</em> des Machwerks "%{resource_title}" bist.
+          email_subject: Du wurdest als %{role} für %{resource_title} ausgewählt.
+          notification_title: Du wurdest als <em>%{role}</em> für das Machwerk <a href="%{resource_url}">%{resource_title}</a> ausgewählt.
     help:
       participatory_spaces:
         assemblies:

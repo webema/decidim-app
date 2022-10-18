@@ -36,14 +36,14 @@ de:
     events:
       surveys:
         survey_closed:
-          email_intro: Die Umfrage %{resource_title} in %{participatory_space_title} wurde geschlossen.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{participatory_space_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-          email_subject: Eine Umfrage ist in %{participatory_space_title}
+          email_intro: Die Umfrage <em>%{resource_title}</em> in <em>%{participatory_space_title}</em> wurde geschlossen.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{participatory_space_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{participatory_space_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+          email_subject: Umfrage in "%{participatory_space_title}" beendet
           notification_title: Die Umfrage <a href="%{resource_path}">%{resource_title}</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a> ist beendet.
         survey_opened:
-          email_intro: 'Die Umfrage %{resource_title} in %{participatory_space_title} ist jetzt geöffnet. Du kannst auf dieser Seite teilnehmen:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{participatory_space_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-          email_subject: Eine neue Umfrage in %{participatory_space_title}
+          email_intro: 'Die Umfrage <em>%{resource_title}</em> in <em>%{participatory_space_title}</em> ist jetzt geöffnet. Du kannst auf dieser Seite teilnehmen:'
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{participatory_space_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{participatory_space_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+          email_subject: Eine neue Umfrage in "%{participatory_space_title}"
           notification_title: Die Umfrage <a href="%{resource_path}">%{resource_title}</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a> ist jetzt geöffnet.
     metrics:
       survey_answers:

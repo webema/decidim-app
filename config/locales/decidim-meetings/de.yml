@@ -13,7 +13,7 @@ de:
         closing_report: Protokoll
         closing_visible: Ist sichtbar
         contributions_count: Anzahl der Beiträge
-        proposal_ids: An der Sitzung entstandene Vorschläge
+        proposal_ids: Während des Termins entstandene Vorschläge
         video_url: Video-URL
       meeting:
         address: Adresse
@@ -30,7 +30,7 @@ de:
         online_meeting_url: Online Termin URL
         organizer_gid: Erstellt als
         organizer_id: Veranstalter
-        private_meeting: Private Sitzung
+        private_meeting: Privater Termin
         registration_email_custom_content: Angepasster Inhalt des Registrierungs-E-Mails
         registration_form_enabled: Anmeldeformular aktiviert
         registration_terms: Registrierungsbedingungen
@@ -53,17 +53,17 @@ de:
             email:
               already_invited: Diese E-Mail wurde bereits eingeladen
     models:
-      decidim/meetings/close_meeting_event: Sitzung geschlossen
-      decidim/meetings/create_meeting_event: Sitzung
+      decidim/meetings/close_meeting_event: Termin geschlossen
+      decidim/meetings/create_meeting_event: Termin
       decidim/meetings/meeting_registrations_enabled_event: Registrierungen aktiviert
       decidim/meetings/meeting_registrations_over_percentage_event: Anmeldungen über Limit
-      decidim/meetings/upcoming_meeting_event: Kommende Sitzung
+      decidim/meetings/upcoming_meeting_event: Kommender Termin
       decidim/meetings/update_meeting_event: Termin aktualisiert
   activerecord:
     models:
       decidim/meetings/meeting:
-        one: Sitzung
-        other: Sitzungen
+        one: Termin
+        other: Termine
       decidim/meetings/minutes:
         one: Protokoll
         other: Protokoll
@@ -137,48 +137,48 @@ de:
       meetings:
         meeting_closed:
           affected_user:
-            email_intro: 'Deine Sitzung "%{resource_title}" wurde geschlossen. Du kannst die Ergebnisse auf dieser Seite lesen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du die Sitzung "%{resource_title}" organisiert hast.
-            email_subject: Die Sitzung "%{resource_title}" wurde geschlossen
-            notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde geschlossen.
+            email_intro: 'Dein Termin <em>%{resource_title}</em> wurde geschlossen. Du kannst die Ergebnisse auf dieser Seite lesen:'
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du den Termin <em>%{resource_title}</em> organisiert hast.
+            email_subject: Der Termin "%{resource_title}" wurde geschlossen
+            notification_title: Der Termin <a href="%{resource_path}">%{resource_title}</a> wurde geschlossen.
           follower:
-            email_intro: 'Die Sitzung "%{resource_title}" wurde geschlossen. Du kannst die Ergebnisse auf dieser Seite lesen:'
-            email_outro: Du hast diese Benachrichtigung erhalten, weil du der Sitzung "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-            email_subject: Die Sitzung "%{resource_title}" wurde geschlossen
-            notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde geschlossen.
+            email_intro: 'Der Termin <em>%{resource_title}</em> wurde geschlossen. Du kannst die Ergebnisse auf dieser Seite lesen:'
+            email_outro: Du hast diese Benachrichtigung erhalten, weil du dem Termin <em>%{resource_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{resource_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+            email_subject: Der Termin "%{resource_title}" wurde geschlossen
+            notification_title: Der Termin <a href="%{resource_path}">%{resource_title}</a> wurde geschlossen.
         meeting_created:
           button_text: Für den Termin anmelden
-          email_intro: Die Sitzung "%{resource_title}" wurde zu "%{participatory_space_title}" hinzugefügt, welchem du folgst.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{participatory_space_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-          email_subject: Neue Sitzung zu %{participatory_space_title} hinzugefügt
-          notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde zu %{participatory_space_title} hinzugefügt
+          email_intro: Der Termin <em>%{resource_title}</em> wurde zu <em>%{participatory_space_title}</em> hinzugefügt, welchem du folgst.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{participatory_space_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{participatory_space_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+          email_subject: Neuer Termin zu "%{participatory_space_title}" hinzugefügt
+          notification_title: Der Termin <a href="%{resource_path}">%{resource_title}</a> wurde zu <em>%{participatory_space_title}</em> hinzugefügt
         meeting_registration_confirmed:
-          notification_title: Deine Anmeldung zur Sitzung <a href="%{resource_url}">%{resource_title}</a> wurde bestätigt. Dein Registrierungscode ist %{registration_code}.
+          notification_title: Deine Anmeldung zum Termin <a href="%{resource_url}">%{resource_title}</a> wurde bestätigt. Dein Registrierungscode ist %{registration_code}.
         meeting_registrations_over_percentage:
-          email_intro: Die Slots der Sitzung "%{resource_title}" sind zu über %{percentage}% belegt.
+          email_intro: Die Slots des Termins <em>%{resource_title}</em> sind zu über %{percentage}% belegt.
           email_outro: Du hast diese Benachrichtigung erhalten, weil du ein/e Administrator:in des Teilnahmebereichs des Termins bist.
-          email_subject: Slots der Sitzung "%{resource_title}" über %{percentage}% belegt
-          notification_title: Die Slots der Sitzung <a href="%{resource_path}">%{resource_title}</a> sind zu über %{percentage}% belegt.
+          email_subject: Slots des Termins "%{resource_title}" über %{percentage}% belegt
+          notification_title: Die Slots des Termins <a href="%{resource_path}">%{resource_title}</a> sind zu über %{percentage}% belegt.
         meeting_updated:
-          email_intro: 'Die Sitzung "%{resource_title}" wurde aktualisiert. Du kannst die neue Version auf der Sitzungs-Seite lesen:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du der Sitzung "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-          email_subject: Die Sitzung "%{resource_title}" wurde aktualisiert
-          notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde aktualisiert.
+          email_intro: 'Der Termin <em>%{resource_title}</em> wurde aktualisiert. Du kannst die neue Version auf der Termin-Seite lesen:'
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du dem Termin <em>%{resource_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{resource_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+          email_subject: Der Termin "%{resource_title}" wurde aktualisiert
+          notification_title: Der Termin <a href="%{resource_path}">%{resource_title}</a> wurde aktualisiert.
         registration_code_validated:
-          email_intro: Dein Registrierungscode "%{registration_code}" für die Sitzung "%{resource_title}" wurde bestätigt.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil dein Registrierungscode für die Sitzung "%{resource_title}" validiert wurde.
-          email_subject: Dein Registrierungscode "%{registration_code}" für die Sitzung "%{resource_title}" wurde bestätigt
-          notification_title: Dein Registrierungscode "%{registration_code}" für die Sitzung <a href="%{resource_path}">%{resource_title}</a> wurde bestätigt.
+          email_intro: Dein Registrierungscode "%{registration_code}" für den Termin <em>%{resource_title}</em> wurde bestätigt.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil dein Registrierungscode für den Termin <em>%{resource_title}</em> validiert wurde.
+          email_subject: Dein Registrierungscode "%{registration_code}" für den Termin "%{resource_title}" wurde bestätigt
+          notification_title: Dein Registrierungscode "%{registration_code}" für den Termin <a href="%{resource_path}">%{resource_title}</a> wurde bestätigt.
         registrations_enabled:
-          email_intro: 'Die Sitzung "%{resource_title}" hat Registrierungen aktiviert. Du kannst dich auf der Sitzungs-Seite registrieren:'
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du der Sitzung "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-          email_subject: Die Sitzung "%{resource_title}" hat Registrierungen aktiviert.
-          notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> hat Registrierungen aktiviert.
+          email_intro: 'Der Termin <em>%{resource_title}</em> hat Registrierungen aktiviert. Du kannst dich auf der Termin-Seite registrieren:'
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du dem Termin <em>%{resource_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{resource_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+          email_subject: Der Termin "%{resource_title}" hat Registrierungen aktiviert.
+          notification_title: Der Termin <a href="%{resource_path}">%{resource_title}</a> hat Registrierungen aktiviert.
         upcoming_meeting:
-          email_intro: Die Sitzung "%{resource_title}" beginnt in weniger als 48 Stunden.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du der Sitzung "%{resource_title}" folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{resource_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-          email_subject: Die Sitzung "%{resource_title}" beginnt in weniger als 48 Stunden.
-          notification_title: Die Sitzung <a href="%{resource_path}">%{resource_title}</a> beginnt in weniger als 48 Stunden.
+          email_intro: Der Termin <em>%{resource_title}</em> beginnt in weniger als 48 Stunden.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du dem Termin <em>%{resource_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{resource_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+          email_subject: Der Termin "%{resource_title}" beginnt in weniger als 48 Stunden.
+          notification_title: Der Termin <a href="%{resource_path}">%{resource_title}</a> beginnt in weniger als 48 Stunden.
     forms:
       meetings:
         attendees_count_help_text: Vergiss nicht, die Gesamtzahl der Teilnehmenden an deinem Termin anzugeben, egal ob dieses persönlich, online oder hybrid stattgefunden hat.
@@ -186,14 +186,14 @@ de:
       badges:
         attended_meetings:
           conditions:
-            - Registriere dich für die Sitzungen, an denen du teilnehmen möchtest
-          description: Dieses Abzeichen wird gewährt, wenn du mehrere persönliche Sitzungen besuchst.
-          description_another: Diese/r Benutzer:in hat an %{score} Sitzungen teilgenommen.
-          description_own: Du hast an %{score} Sitzungen teilgenommen.
-          name: Besuchte Sitzungen
-          next_level_in: Nimm an %{score} weiteren Sitzungen teil, um das nächste Level zu erreichen!
-          unearned_another: Diese/r Benutzer:in hat noch kein Sitzungen besucht.
-          unearned_own: Du hast noch keine Sitzung besucht.
+            - Registriere dich für Termine, an denen du teilnehmen möchtest
+          description: Dieses Abzeichen wird gewährt, wenn du mehrere Termine besuchst.
+          description_another: Diese/r Benutzer:in hat an %{score} Terminen teilgenommen.
+          description_own: Du hast an %{score} Terminen teilgenommen.
+          name: Besuchte Termine
+          next_level_in: Nimm an %{score} weiteren Terminen teil, um das nächste Level zu erreichen!
+          unearned_another: Diese/r Benutzer:in hat noch keine Termine besucht.
+          unearned_own: Du hast noch keine Termine besucht.
     meetings:
       actions:
         agenda: Agenda
@@ -208,7 +208,7 @@ de:
             one: 'Der Termin kann nicht gelöscht werden, da %{count} Vorschlag mit dieser verbunden ist:'
             other: 'Der Termin kann nicht gelöscht werden, da %{count} Vorschläge mit dieser verbunden sind:'
         manage_poll: Umfrage verwalten
-        new: Neue Sitzung
+        new: Neuer Termin
         preview: Vorschau
         registrations: Anmeldungen
         title: Aktionen
@@ -278,17 +278,17 @@ de:
         meeting_closes:
           edit:
             close: Schließen
-            title: Sitzung beenden
+            title: Termin beenden
         meeting_copies:
           form:
             select_a_meeting_type: Bitte einen Termin-Typ auswählen
         meetings:
           close:
             invalid: Beim Schließen dieses Termine ist ein Problem aufgetreten
-            success: Sitzung erfolgreich abgeschlossen
+            success: Termin erfolgreich abgeschlossen
           create:
             invalid: Beim Erstellen dieses Termine ist ein Problem aufgetreten
-            success: Sitzung erfolgreich erstellt. Beachte, dass dies noch nicht veröffentlicht wurde. Du musst es manuell veröffentlichen.
+            success: Termin erfolgreich erstellt. Beachte, dass dies noch nicht veröffentlicht wurde. Du musst es manuell veröffentlichen.
           destroy:
             invalid:
               proposals_count:
@@ -302,7 +302,7 @@ de:
             address_help: 'Adresse: wird von Geocoder zur Lokalisierung verwendet'
             disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist dir bewusst, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer:innen dem externen Dienst zur Verfügung stellen.'
             location_help: 'Ort: an Benutzer:innen gerichtete Nachricht mit dem Treffpunkt'
-            location_hints_help: 'Hinweise zum Standort: Zusätzliche Informationen. Beispiel: das Stockwerk im Gebäude wenn es eine Sitzung vor Ort ist, oder das Passwort wenn es eine Online-Sitzung mit eingeschränktem Zugriff ist.'
+            location_hints_help: 'Hinweise zum Standort: Zusätzliche Informationen. Beispiel: das Stockwerk im Gebäude wenn es ein Termin vor Ort ist, oder das Passwort wenn es ein Online-Termin mit eingeschränktem Zugriff ist.'
             online_meeting_url_help: 'Link: Erlaubt Teilnehmern, sich direkt mit deinem Termin zu verbinden'
             registration_url_help: 'Link: Erlaubt den Teilnehmern den externen Service zu nutzen, den du für die Registrierung verwendest'
             select_a_meeting_type: Bitte eine Termin-Typ auswählen
@@ -313,8 +313,8 @@ de:
             create: Erstellen
             title: Termin erstellen
           publish:
-            invalid: Beim Veröffentlichen dieser Sitzung ist ein Fehler aufgetreten
-            success: Sitzung erfolgreich veröffentlicht
+            invalid: Beim Veröffentlichen dieses Termins ist ein Fehler aufgetreten
+            success: Termin erfolgreich veröffentlicht
           service:
             description: Beschreibung
             down: Nieder
@@ -326,11 +326,11 @@ de:
             add_service: Dienst hinzufügen
             services: Dienstleistungen
           unpublish:
-            invalid: Beim Aufheben der Veröffentlichung dieser Sitzung ist ein Fehler aufgetreten
-            success: Veröffentlichung der Sitzung erfolgreich rückgängig gemacht
+            invalid: Beim Aufheben der Veröffentlichung dieses Termins ist ein Fehler aufgetreten
+            success: Veröffentlichung des Termins erfolgreich rückgängig gemacht
           update:
             invalid: Beim Aktualisieren dieses Termine ist ein Problem aufgetreten
-            success: Sitzung erfolgreich aktualisiert
+            success: Termin erfolgreich aktualisiert
         meetings_poll:
           form:
             title: Fragebogen für %{questionnaire_for} bearbeiten
@@ -362,15 +362,15 @@ de:
             success: Registrierungscode erfolgreich validiert
       admin_log:
         invite:
-          create: "%{user_name} hat %{attendee_name} eingeladen, an der Sitzung %{resource_name} in %{space_name} teilzunehmen"
-          deleted: "%{user_name} hat die Einladung von %{attendee_name} zur Sitzung %{resource_name} in %{space_name} entfernt"
-          update: "%{user_name} hat %{attendee_name} eingeladen, an der Sitzung %{resource_name} in %{space_name} teilzunehmen"
+          create: "%{user_name} hat %{attendee_name} eingeladen, am Termin %{resource_name} in %{space_name} teilzunehmen"
+          deleted: "%{user_name} hat die Einladung von %{attendee_name} zum Termin %{resource_name} in %{space_name} entfernt"
+          update: "%{user_name} hat %{attendee_name} eingeladen, am Termin %{resource_name} in %{space_name} teilzunehmen"
         meeting:
-          close: "%{user_name} hat die Sitzung %{resource_name} in %{space_name} geschlossen"
-          create: "%{user_name} hat die Sitzung %{resource_name} in %{space_name} erstellt"
-          delete: "%{user_name} hat die Sitzung %{resource_name} aus %{space_name} gelöscht"
-          export_registrations: "%{user_name} hat die Anmeldungen der Sitzung %{resource_name} in %{space_name} exportiert"
-          update: "%{user_name} hat die Sitzung %{resource_name} in %{space_name} aktualisiert"
+          close: "%{user_name} hat den Termin %{resource_name} in %{space_name} geschlossen"
+          create: "%{user_name} hat den Termin %{resource_name} in %{space_name} erstellt"
+          delete: "%{user_name} hat den Termin %{resource_name} aus %{space_name} gelöscht"
+          export_registrations: "%{user_name} hat die Anmeldungen zum Termin %{resource_name} in %{space_name} exportiert"
+          update: "%{user_name} hat den Termin %{resource_name} in %{space_name} aktualisiert"
           value_types:
             organizer_presenter:
               not_found: 'Der Organisator wurde nicht in der Datenbank gefunden (ID: %{id})'
@@ -434,8 +434,8 @@ de:
       meeting_closes:
         edit:
           back: Zurück
-          close: Sitzung beenden
-          title: Sitzung beenden
+          close: Termin beenden
+          title: Termin beenden
       meetings:
         calendar_modal:
           add_to_calendar: Zum Kalender hinzufügen
@@ -464,7 +464,7 @@ de:
             all: Alle
             past: Vergangene
             upcoming: Bevorstehende
-          my_meetings: Meine Sitzungen
+          my_meetings: Meine Termine
           origin: Ursprung
           origin_values:
             all: Alle
@@ -490,7 +490,7 @@ de:
           create_as: Termin erstellen als
           disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist dir bewusst, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer:innen dem externen Dienst zur Verfügung stellen.'
           location_help: 'Ort: an Benutzer:innen gerichtete Nachricht mit dem Treffpunkt'
-          location_hints_help: 'Standorthinweise: Zusätzliche Informationen. Beispiel: die Etage des Gebäudes, wenn es sich um eine persönliche Sitzung oder das Sitzungspasswort, wenn es sich um einen Online-Termin mit eingeschränktem Zugriff handelt.'
+          location_hints_help: 'Standorthinweise: Zusätzliche Informationen. Beispiel: die Etage des Gebäudes, wenn es sich um einen Vor-Ort-Termin handelt oder das Passwort, wenn es sich um einen Online-Termin mit eingeschränktem Zugriff handelt.'
           online_meeting_url_help: 'Link: Erlaubt Teilnehmern, sich direkt mit deinem Termin zu verbinden'
           registration_url_help: 'Link: Erlaubt den Teilnehmern den externen Service zu nutzen, den du für die Registrierung verwendest'
           select_a_category: Bitte wählen sie eine Kategorie
@@ -520,14 +520,14 @@ de:
           contributions: Beiträge zählen
           date: Datum
           edit_meeting: Termin bearbeiten
-          going: Du hast dich für diese Sitzung angemeldet
+          going: Du hast dich für diesen Termin angemeldet
           join: Tritt dem Termin bei
           leave: Registrierung stornieren
-          leave_confirmation: Bist du sicher dass du deine Registrierung für diese Sitzung stornieren möchtest?
+          leave_confirmation: Bist du sicher dass du deine Registrierung für diesen Termin stornieren möchtest?
           link_available_soon: Link in Kürze verfügbar
           link_closed: Der Link, um an dem Termin teilzunehmen, wird einige Minuten vor dem Start verfügbar sein
           live_event: Dieser Termin findet gerade statt
-          meeting_minutes: Sitzungsprotokolle
+          meeting_minutes: Protokoll
           no_slots_available: Keine Steckplätze verfügbar
           organizations: Teilnahme an Organisationen
           registration_code_help_text: Dein Registrierungscode
@@ -543,7 +543,7 @@ de:
           withdraw_meeting: Termin zurückziehen
         update:
           invalid: Beim Aktualisieren des Termins ist ein Fehler aufgetreten.
-          success: Du hast die Sitzung erfolgreich aktualisiert.
+          success: Du hast den Termin erfolgreich aktualisiert.
       meetings_map:
         view_meeting: Termin anzeigen
       models:
@@ -600,7 +600,7 @@ de:
       registrations:
         create:
           invalid: Bei diesem Termin ist ein Problem aufgetreten.
-          success: Du bist der Sitzung erfolgreich beigetreten. Da du dich für die Sitzung registriert hast, wirst du benachrichtigt wenn sich an der Sitzung etwas ändert.
+          success: Du bist dem Termin erfolgreich beigetreten. Da du dich für den Termin registriert hast, wirst du benachrichtigt wenn sich an dem Termin etwas ändert.
         decline_invitation:
           invalid: Es ist ein Problem aufgetreten, dass die Einladung abgelehnt wurde.
           success: Du hast die Einladung erfolgreich abgelehnt.
@@ -612,7 +612,7 @@ de:
         in_person: In Person
         online: Online
       types:
-        private_meeting: Private Sitzung
+        private_meeting: Privater Termin
         transparent: Transparent
         withdraw: Zurückgezogen
       versions:
@@ -640,7 +640,7 @@ de:
         meeting_proposal: 'Ähnliche Vorschläge:'
         proposal_meeting: 'Ähnliche Termine:'
     statistics:
-      meetings_count: Sitzungen
+      meetings_count: Termine
   devise:
     mailer:
       join_meeting:

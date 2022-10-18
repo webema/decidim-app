@@ -84,9 +84,9 @@ de:
     events:
       blogs:
         post_created:
-          email_intro: Der Beitrag "%{resource_title}" wurde in "%{participatory_space_title}" veröffentlicht, dem du folgst.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du %{participatory_space_title} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{participatory_space_title} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
+          email_intro: Der Beitrag <em>%{resource_title}</em> wurde in <em>%{participatory_space_title}</em> veröffentlicht, dem du folgst.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{participatory_space_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{participatory_space_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Neuer Beitrag in %{participatory_space_title}
-          notification_title: Der Beitrag <a href="%{resource_path}">%{resource_title}</a> wurde in %{participatory_space_title} veröffentlicht
+          notification_title: Der Beitrag <a href="%{resource_path}">%{resource_title}</a> wurde in <em>%{participatory_space_title}</em> veröffentlicht
     statistics:
       posts_count: Beiträge
