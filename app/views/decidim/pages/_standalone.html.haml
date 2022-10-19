@@ -1,0 +1,12 @@
+.wrapper
+  .row.column
+    .page-title-wrapper
+      %h2
+        %span
+          = title
+
+    = cell "decidim/tos_page", :announcement
+    .card
+      .card__content= decidim_sanitize_editor_admin translated_attribute page.content
+    .columns.small-12
+      = cell "decidim/tos_page", :form

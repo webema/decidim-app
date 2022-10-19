@@ -1,0 +1,28 @@
+.wrapper
+  .row.column
+    .page-title-wrapper
+      %h2
+        %span
+          = title
+
+      %p.intro--text.subheading1
+        %span
+          = description
+
+    .main-container.tabbed-container
+      = cell "decidim/tos_page", :announcement
+      .row.collapse.main-container--side-panel
+        .columns.medium-4.large-3
+          .side-panel
+            %ul.tabs.vertical.side-panel__tabs
+              - pages.each do |sibling|
+                %li{:class => "tabs-title #{page == sibling ? "is-active" : nil}"}
+                  = link_to translated_attribute(sibling.title), page_path(sibling.slug)
+        .columns.medium-8.large-9
+          .main-container__content
+            .tabs-content.vertical
+              .static__content
+                %h2
+                  = translated_attribute page.title
+                = decidim_sanitize_editor_admin translated_attribute page.content
+      = cell "decidim/tos_page", :form

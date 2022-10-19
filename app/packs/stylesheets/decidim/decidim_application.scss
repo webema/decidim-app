@@ -7,6 +7,8 @@
 // By default this is empty.
 
 $zp_gray: #DEE2E6;
+$zp_gray_medium: lighten($zp_gray, 3%);
+$zp_gray_light: lighten($zp_gray, 7%);
 
 $light_gray: #f4f4f4;
 
@@ -532,3 +534,38 @@ ul.card-data {
   color: gray;
   font-size: .9rem;
 }
+
+.page-title-wrapper {
+  text-align: left;
+  margin-bottom: 4rem;
+
+  h2 {
+    font-family: 'Literata', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+    span {
+      padding: 0 0.5rem;
+      background: $zp_gray_light;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+  }
+
+  p.subheading1 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
+    span {
+      padding: 0 0.5rem;
+      background: $zp_gray_light;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+  }
+}
+
+
+

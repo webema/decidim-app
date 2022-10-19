@@ -29,7 +29,7 @@
 
 // color and design for different processes
 .off-canvas-wrapper {
-  background-color: $zp_gray;
+  background-color: $white;
 
   &.assemblies {
     background-color: #76b82a;
@@ -306,6 +306,12 @@
     .floating-helper__content {
       height: auto;
       min-height: auto;
+
+      h2 {
+        span {
+          background-color: $zp_gray_light;
+        }
+      }
     }
   }
 }
