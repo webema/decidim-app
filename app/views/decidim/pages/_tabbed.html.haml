@@ -5,9 +5,10 @@
         %span
           = title
 
-      %p.intro--text.subheading1
-        %span
-          = description
+      - if description.present?
+        %p.intro--text.subheading1
+          %span
+            = description
 
     .main-container.tabbed-container
       = cell "decidim/tos_page", :announcement
