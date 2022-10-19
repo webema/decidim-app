@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/webema/decidim-ideas.git
-  revision: 34da4665b6bb2ef12deb39be2c0898c369ad4cc9
+  revision: 65005c6f1bee18de49286f495e5d28085cfb84a3
   branch: main
   specs:
     decidim-ideas (0.27.0)
@@ -77,7 +77,7 @@ GEM
       zeitwerk (~> 2.3)
     acts_as_list (0.9.19)
       activerecord (>= 3.0)
-    acts_as_votable (0.13.2)
+    acts_as_votable (0.14.0)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
