@@ -535,3 +535,27 @@ ul.card-data {
   color: gray;
   font-size: .9rem;
 }
+
+.author-data--small {
+  display: inline;
+  float: left;
+}
+
+.publish-date {
+  font-size: 0.9em;
+
+  @media print, screen and (max-width: 64em) {
+    padding-left: 1.5rem;
+  }
+
+  @media print, screen and (min-width: 64em) {
+    &:before {
+      content: "";
+      margin-right: 0.8rem;
+      border-right: 1px solid #e8e8e8;
+      height: 0.7rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
