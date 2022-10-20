@@ -1,0 +1,81 @@
+.off-canvas-wrapper {
+  &.pages, &.posts {
+    .off-canvas-content {
+      background-repeat: no-repeat;
+
+      @include breakpoint(small) {
+        background-image: url("~images/startpage_640.jpg");
+        background-size: 640px auto;
+        background-position: center 10px;
+      }
+
+      @include breakpoint(medium) {
+        background-image: url("~images/startpage_1024_new.jpg");
+        background-size: 1024px auto;
+        background-position: center 150px;
+
+      }
+
+      @include breakpoint(large only) {
+        background-image: url("~images/startpage_1200_new.jpg");
+        background-size: 1200px auto;
+      }
+
+      @include breakpoint(xlarge only) {
+        background-image: url("~images/startpage_1440_new.jpg");
+        background-size: 1440px auto;
+      }
+
+      @include breakpoint(xxlarge only) {
+        background-image: url("~images/startpage_2560.jpg");
+        background-size: 2560px auto;
+      }
+    }
+
+    h3.section-heading {
+      span {
+        padding: 0 0.5rem;
+        background: rgba(255, 255, 255, 0.8);
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+      }
+    }
+
+  }
+
+  .page-title-wrapper {
+    text-align: left;
+    margin-bottom: 4rem;
+
+    h2 {
+      font-family: 'Literata', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+
+      span {
+        padding: 0 0.5rem;
+        background: $zp_gray_light;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+      }
+    }
+
+
+
+    p.subheading1 {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+
+      span {
+        padding: 0 0.5rem;
+        background: $zp_gray_light;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+      }
+    }
+  }
+}
+
+
