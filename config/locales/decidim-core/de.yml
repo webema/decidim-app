@@ -806,21 +806,21 @@ de:
         error: In diesem Feld ist ein Fehler aufgetreten.
       file_help:
         file:
-          explanation: 'Anleitung für Datei:'
+          explanation: 'Anleitung für die Datei:'
           message_1: Muss ein Bild oder ein Dokument sein.
-          message_2: Verwende für Bilder vorzugsweise das Querformat, der Dienst beschneidet das Bild.
+          message_2: Verwende für Bilder vorzugsweise das Querformat.
         icon:
           explanation: 'Hinweise für das Bild:'
           message_1: Muss ein quadratisches Bild sein.
           message_2: Die empfohlene Größe für dieses Bild ist 512x512 Pixel.
         image:
-          explanation: 'Anleitung für Bild:'
+          explanation: 'Anleitung für das Bild:'
           message_1: Vorzugsweise im Querformat ohne Text
           message_2: Das Bild wird ggf. beschnitten
       file_validation:
         allowed_file_extensions: 'Erlaubte Dateiendungen: %{extensions}'
-        max_file_dimension: 'Maximale Dateigröße: %{resolution} Pixel'
-        max_file_size: 'Maximale Dateigröße: %{megabytes}MB'
+        max_file_dimension: 'Maximale Dateiauflösung: %{resolution} Pixel'
+        max_file_size: 'Maximale Dateigröße: %{megabytes} MB'
       upload:
         labels:
           add_attachment: Anhang hinzufügen
@@ -841,6 +841,7 @@ de:
       upload_help:
         dropzone: Zum Hochladen hier klicken oder Dateien hierher ziehen
         explanation: Anleitung für %{attribute}
+        copyright: Durch Klick auf Speichern bestätige ich, dass hochgeladene Bilder und Dateien keine Urheber- oder Persönlichkeitsrechte verletzen.
     gamification:
       all_badges_link: Sieh dir alle verfügbaren Abzeichen an.
       badges:
