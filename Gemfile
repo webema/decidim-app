@@ -32,7 +32,7 @@ gem 'haml'
 gem 'rexml', '~> 3.2.5'
 
 # Password protect staging environment
-gem 'lockup'
+# gem 'lockup'
 
 gem 'dalli'
 
