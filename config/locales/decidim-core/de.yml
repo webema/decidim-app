@@ -1729,7 +1729,7 @@ Du bist nur noch einen Klick entfernt, dein Konto freizuschalten. Bestätige jet
     timestamp_error_message: Entschuldigung, das war zu schnell! Bitte erneut absenden
   layouts:
     decidim:
-      cookie_consent:
+      data_consent:
         cookie_details:
           columns:
             description: Beschreibung
@@ -1755,17 +1755,17 @@ Du bist nur noch einen Klick entfernt, dein Konto freizuschalten. Bestätige jet
           accept_all: Cookies zulassen
           accept_only_essential: Nur notwendige Cookies verwenden
           analytics:
-            description: Diese Cookies sammeln Informationen darüber, wie du auf dieser Website navigierst und interagierst. Die gesammelten Informationen werden verwendet, um dem Website-Betreiber zu helfen, die Website zu verbessern.
+            description: Diese Cookies sammeln Informationen über die Nutzung der Website und helfen, die Website zu verbessern.
             title: Analysen und Statistiken
           description: Wir verwenden Cookies, um die grundlegenden Funktionalitäten der Website zu gewährleisten und dein Online-Erlebnis zu verbessern. Du kannst die einzelnen Cookie-Kategorien jederzeit aktivieren oder deaktivieren.
           essential:
-            description: Diese Cookies sind für das einwandfreie Funktionieren dieser Website unerlässlich. Ohne diese Cookies würde die Website nicht richtig funktionieren.
+            description: Diese Cookies sind für das einwandfreie und sichere Funktionieren dieser Website unerlässlich. Sie werden automatisch im Browser gespeichert und können nicht deaktiviert werden.
             title: Notwendige
           marketing:
-            description: Diese Cookies sammeln Informationen darüber, wie du die Website nutzt, welche Seiten du besucht hast und welche Links du angeklickt hast.
+            description: Diese Cookies sammeln Informationen darüber, wie du die Website nutzt und ermöglichen personalisiertes Marketing auf verschiedenen Webseiten.
             title: Marketing
           preferences:
-            description: Diese Cookies ermöglichen es der Website, sich an die von dir in der Vergangenheit getroffenen Auswahlen zu erinnern
+            description: Diese Cookies ermöglichen es der Website, sich an die von dir in der Vergangenheit vorgenommene Einstellungen zu erinnern
             title: Präferenzen
           save_settings: Einstellungen speichern
           title: Cookie Einstellungen
