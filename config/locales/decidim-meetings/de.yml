@@ -7,7 +7,7 @@ de:
         duration: Dauer
         title: Titel
       close_meeting:
-        attendees_count: Anzahl der Teilnehmer
+        attendees_count: Anzahl der Teilnehmenden
         attending_organizations: Liste der Organisationen, die teilgenommen haben
         audio_url: Audio-URL
         closing_report: Protokoll
@@ -17,10 +17,10 @@ de:
         video_url: Video-URL
       meeting:
         address: Adresse
-        available_slots: Verfügbare Slots für diesen Termin
+        available_slots: Verfügbare Plätze für diesen Termin
         customize_registration_email: Registrierungs-E-Mail anpassen
         decidim_category_id: Kategorie
-        decidim_scope_id: Umfang
+        decidim_scope_id: Thema
         decidim_user_group_id: Benutzer:innen-Gruppe
         description: Beschreibung
         end_time: Endzeit
@@ -31,7 +31,7 @@ de:
         organizer_gid: Erstellt als
         organizer_id: Veranstalter
         private_meeting: Privater Termin
-        registration_email_custom_content: Angepasster Inhalt des Registrierungs-E-Mails
+        registration_email_custom_content: Angepasster Inhalt der Registrierungs-E-Mail
         registration_form_enabled: Anmeldeformular aktiviert
         registration_terms: Registrierungsbedingungen
         registration_url: Registrierungs-URL
@@ -39,7 +39,7 @@ de:
         show_embedded_iframe: Eingebetteten Iframe für diese URL anzeigen
         start_time: Startzeit
         title: Titel
-        transparent: Transparent
+        transparent: Sichtbar
         type_of_meeting: Art
     errors:
       models:
@@ -87,12 +87,12 @@ de:
               'false': Vergangenheit
               'true': Anstehend
           scope_id_eq:
-            label: Umfang
+            label: Thema
           with_any_origin:
             label: Ursprung
             values:
               official: Offiziell
-              participants: Teilnehmer
+              participants: Teilnehmende
               user_group: Benutzer:innen-Gruppen
           with_any_type:
             label: Art des Termins
@@ -102,8 +102,8 @@ de:
               online: Online
       meeting_copies:
         create:
-          error: Es gab einen Fehler beim Duplizieren dieses Termine.
-          success: Termin Duplizierung erfolgreich
+          error: Es gab einen Fehler beim Duplizieren dieses Termins.
+          success: Termin-Duplizierung erfolgreich
         new:
           copy: Kopieren
           select: Wähle die Daten aus, die du duplizieren möchtest
@@ -155,10 +155,10 @@ de:
         meeting_registration_confirmed:
           notification_title: Deine Anmeldung zum Termin <a href="%{resource_url}">%{resource_title}</a> wurde bestätigt. Dein Registrierungscode ist %{registration_code}.
         meeting_registrations_over_percentage:
-          email_intro: Die Slots des Termins <em>%{resource_title}</em> sind zu über %{percentage}% belegt.
+          email_intro: Die Plätze des Termins <em>%{resource_title}</em> sind zu über %{percentage}% belegt.
           email_outro: Du hast diese Benachrichtigung erhalten, weil du ein/e Administrator:in des Teilnahmebereichs des Termins bist.
-          email_subject: Slots des Termins "%{resource_title}" über %{percentage}% belegt
-          notification_title: Die Slots des Termins <a href="%{resource_path}">%{resource_title}</a> sind zu über %{percentage}% belegt.
+          email_subject: Plätze des Termins "%{resource_title}" über %{percentage}% belegt
+          notification_title: Die Plätze des Termins <a href="%{resource_path}">%{resource_title}</a> sind zu über %{percentage}% belegt.
         meeting_updated:
           email_intro: 'Der Termin <em>%{resource_title}</em> wurde aktualisiert. Du kannst die neue Version auf der Termin-Seite lesen:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du dem Termin <em>%{resource_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{resource_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
@@ -173,7 +173,7 @@ de:
           email_intro: 'Der Termin <em>%{resource_title}</em> hat Registrierungen aktiviert. Du kannst dich auf der Termin-Seite registrieren:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du dem Termin <em>%{resource_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{resource_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Der Termin "%{resource_title}" hat Registrierungen aktiviert.
-          notification_title: Der Termin <a href="%{resource_path}">%{resource_title}</a> hat Registrierungen aktiviert.
+          notification_title: Der Termin <a href="%{resource_path}">%{resource_title}</a> hat die Registrierungen aktiviert.
         upcoming_meeting:
           email_intro: Der Termin <em>%{resource_title}</em> beginnt in weniger als 48 Stunden.
           email_outro: Du hast diese Benachrichtigung erhalten, weil du dem Termin <em>%{resource_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{resource_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
@@ -205,8 +205,8 @@ de:
         edit: Bearbeiten
         invalid_destroy:
           proposals_count:
-            one: 'Der Termin kann nicht gelöscht werden, da %{count} Vorschlag mit dieser verbunden ist:'
-            other: 'Der Termin kann nicht gelöscht werden, da %{count} Vorschläge mit dieser verbunden sind:'
+            one: 'Der Termin kann nicht gelöscht werden, da %{count} Vorschlag mit diesem verbunden ist:'
+            other: 'Der Termin kann nicht gelöscht werden, da %{count} Vorschläge mit diesem verbunden sind:'
         manage_poll: Umfrage verwalten
         new: Neuer Termin
         preview: Vorschau
@@ -287,13 +287,13 @@ de:
             invalid: Beim Schließen dieses Termine ist ein Problem aufgetreten
             success: Termin erfolgreich abgeschlossen
           create:
-            invalid: Beim Erstellen dieses Termine ist ein Problem aufgetreten
-            success: Termin erfolgreich erstellt. Beachte, dass dies noch nicht veröffentlicht wurde. Du musst es manuell veröffentlichen.
+            invalid: Beim Erstellen dieses Termins ist ein Problem aufgetreten
+            success: Termin erfolgreich erstellt. Beachte, dass dieser noch nicht veröffentlicht wurde. Du musst ihn manuell veröffentlichen.
           destroy:
             invalid:
               proposals_count:
-                one: Der Termin kann nicht gelöscht werden, da %{count} Vorschlag mit dieser verbunden ist
-                other: Der Termin kann nicht gelöscht werden, da %{count} Vorschläge mit dieser verbunden sind
+                one: Der Termin kann nicht gelöscht werden, da %{count} Vorschlag mit diesem verbunden ist
+                other: Der Termin kann nicht gelöscht werden, da %{count} Vorschläge mit diesem verbunden sind
             success: Der Termin wurde erfolgreich gelöscht
           edit:
             title: Termin bearbeiten
@@ -303,8 +303,8 @@ de:
             disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist dir bewusst, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer:innen dem externen Dienst zur Verfügung stellen.'
             location_help: 'Ort: an Benutzer:innen gerichtete Nachricht mit dem Treffpunkt'
             location_hints_help: 'Hinweise zum Standort: Zusätzliche Informationen. Beispiel: das Stockwerk im Gebäude wenn es ein Termin vor Ort ist, oder das Passwort wenn es ein Online-Termin mit eingeschränktem Zugriff ist.'
-            online_meeting_url_help: 'Link: Erlaubt Teilnehmern, sich direkt mit deinem Termin zu verbinden'
-            registration_url_help: 'Link: Erlaubt den Teilnehmern den externen Service zu nutzen, den du für die Registrierung verwendest'
+            online_meeting_url_help: 'Link: Erlaubt Teilnehmenden, sich direkt mit deinem Termin zu verbinden'
+            registration_url_help: 'Link: Erlaubt den Teilnehmenden den externen Service zu nutzen, den du für die Registrierung verwendest'
             select_a_meeting_type: Bitte eine Termin-Typ auswählen
             select_a_registration_type: Bitte wähle eine Registrierungsart aus
           index:
@@ -351,7 +351,7 @@ de:
             registrations_count:
               one: Es wurde %{count} registriert.
               other: Es wurden %{count} Anmeldungen vorgenommen.
-            reserved_slots_help: Belasse es auf 0, wenn es keine reservierten Slots gibt
+            reserved_slots_help: Belasse es auf 0, wenn es keine reservierten Plätze gibt
             reserved_slots_less_than: Muss kleiner oder gleich %{count}
             title: Anmeldungen
           update:
@@ -373,7 +373,7 @@ de:
           update: "%{user_name} hat den Termin %{resource_name} in %{space_name} aktualisiert"
           value_types:
             organizer_presenter:
-              not_found: 'Der Organisator wurde nicht in der Datenbank gefunden (ID: %{id})'
+              not_found: 'Die organisierende Person wurde nicht in der Datenbank gefunden (ID: %{id})'
       application_helper:
         filter_category_values:
           all: Alle
@@ -394,7 +394,7 @@ de:
       close_meeting_reminder_mailer:
         close_meeting_reminder:
           hello: Hallo %{username},
-      conference_venues: Tagungsstätten
+      conference_venues: Tagungssorte
       content_blocks:
         upcoming_meetings:
           name: Bevorstehende Termine
@@ -406,7 +406,7 @@ de:
             meetings: Termine
             space_type: Partizipativer Raum
       iframe_access_level:
-        all: Alle Besucher
+        all: Alle Teilnehmenden
         registered: Registrierte Teilnehmende zu diesem Termin
         signed_in: Nur angemeldete Teilnehmer
       iframe_embed_type:
@@ -428,7 +428,7 @@ de:
             subject: Einladung, an einem Termin teilzunehmen
         registration_mailer:
           confirmation:
-            subject: Die Registrierung deiner Konferenz wurde bestätigt
+            subject: Die Registrierung deines Termins wurde bestätigt
       meeting:
         not_allowed: Du darfst diesen Termin nicht sehen
       meeting_closes:
@@ -471,7 +471,7 @@ de:
             official: Offiziell
             participants: Teilnehmer
             user_groups: Gruppen
-          scope: Umfang
+          scope: Thema
           search: Suche
           type: Art
           type_values:
@@ -483,18 +483,18 @@ de:
           close_modal: Dialog schließen
           filter: Filter
           filter_by: Filtern nach
-          unfold: Entfalten
+          unfold: Ausklappen
         form:
           address_help: 'Adresse: wird von Geocoder zur Lokalisierung verwendet'
           available_slots_help: Belasse es auf 0, wenn unbegrenzte Plätze zur Verfügung stehen
           create_as: Termin erstellen als
-          disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist dir bewusst, dass die Organisatoren von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer:innen dem externen Dienst zur Verfügung stellen.'
+          disclaimer: 'Haftungsausschluss: Durch Verwendung eines externen Registrierungssystems ist dir bewusst, dass die Organisierenden von %{organization} nicht für die Daten verantwortlich sind, welche Benutzer:innen dem externen Dienst zur Verfügung stellen.'
           location_help: 'Ort: an Benutzer:innen gerichtete Nachricht mit dem Treffpunkt'
           location_hints_help: 'Standorthinweise: Zusätzliche Informationen. Beispiel: die Etage des Gebäudes, wenn es sich um einen Vor-Ort-Termin handelt oder das Passwort, wenn es sich um einen Online-Termin mit eingeschränktem Zugriff handelt.'
-          online_meeting_url_help: 'Link: Erlaubt Teilnehmern, sich direkt mit deinem Termin zu verbinden'
-          registration_url_help: 'Link: Erlaubt den Teilnehmern den externen Service zu nutzen, den du für die Registrierung verwendest'
+          online_meeting_url_help: 'Link: Erlaubt Teilnehmenden, sich direkt mit deinem Termin zu verbinden'
+          registration_url_help: 'Link: Erlaubt den Teilnehmenden den externen Service zu nutzen, den du für die Registrierung verwendest'
           select_a_category: Bitte wählen sie eine Kategorie
-          select_a_meeting_type: Bitte eine Ternin-Art auswählen
+          select_a_meeting_type: Bitte eine Termin-Art auswählen
           select_a_registration_type: Bitte wähle eine Registrierungsart aus
         index:
           click_here: Alle Termine anzeigen
@@ -504,7 +504,7 @@ de:
         meeting_minutes:
           related_information: Zugehörige Informationen
         meetings:
-          no_meetings_warning: Keine Termin entspricht deinen Suchkriterien oder es ist kein Termin geplant.
+          no_meetings_warning: Kein Termin entspricht deinen Suchkriterien oder es ist kein Termin geplant.
           upcoming_meetings_warning: Momentan gibt es keine geplanten Termine, aber hier findest du alle aufgelisteten Termine.
         new:
           back: Zurück
@@ -528,15 +528,15 @@ de:
           link_closed: Der Link, um an dem Termin teilzunehmen, wird einige Minuten vor dem Start verfügbar sein
           live_event: Dieser Termin findet gerade statt
           meeting_minutes: Protokoll
-          no_slots_available: Keine Steckplätze verfügbar
-          organizations: Teilnahme an Organisationen
+          no_slots_available: Keine Plätze mehr verfügbar
+          organizations: Teilnehmende Organisationen
           registration_code_help_text: Dein Registrierungscode
           registration_state:
             validated: GÜLTIG
             validation_pending: Validierung ausstehend
           remaining_slots:
-            one: "%{count} Slot bleibt übrig"
-            other: "Noch %{count} Slots"
+            one: "%{count} Plätze bleibt übrig"
+            other: "Noch %{count} Plätze"
           view: Anzeigen
           visit_finished: Vergangene Termine anzeigen
           withdraw_btn_hint: Du kannst deinen Termin zurückziehen, wenn du deine Meinung änderst. Der Termin wird nicht gelöscht, er wird in der Liste der zurückgezogenen Termine angezeigt.
@@ -602,7 +602,7 @@ de:
           invalid: Bei diesem Termin ist ein Problem aufgetreten.
           success: Du bist dem Termin erfolgreich beigetreten. Da du dich für den Termin registriert hast, wirst du benachrichtigt wenn sich an dem Termin etwas ändert.
         decline_invitation:
-          invalid: Es ist ein Problem aufgetreten, dass die Einladung abgelehnt wurde.
+          invalid: Es ist ein Problem aufgetreten, so dass die Einladung abgelehnt wurde.
           success: Du hast die Einladung erfolgreich abgelehnt.
         destroy:
           invalid: Beim Verlassen dieses Termine ist ein Problem aufgetreten.
@@ -613,12 +613,12 @@ de:
         online: Online
       types:
         private_meeting: Privater Termin
-        transparent: Transparent
+        transparent: Sichtbar
         withdraw: Zurückgezogen
       versions:
         back_to_resource: Zurück zum Termin
       withdraw:
-        error: Beim Zurückziehen des Termine ist ein Fehler aufgetreten
+        error: Beim Zurückziehen des Termins ist ein Fehler aufgetreten
         success: Der Termin wurde erfolgreich zurückgezogen
     metrics:
       meetings:
