@@ -1,11 +1,15 @@
 .mini-footer
   .row
-    .medium-7.large-8.column
-      %a.cc-badge{:href => "http://creativecommons.org/licenses/by-sa/4.0/", :rel => "license noopener", :target => "_blank"}
-        = image_pack_tag("media/images/cc-badge.png", alt: t("layouts.decidim.footer.cc_by_license"))
-      = t("layouts.decidim.footer.made_with_open_source").html_safe
-    .medium-5.large-4.column
-      .laki-logo
+    .column.large-5.medium-5.small-12.large-push-7.medium-push-7
+      .laki-logo.logo
         = link_to('https://www.landeskirche-hannovers.de', rel: 'decidim noopener', target: '_blank') do
           = image_pack_tag("media/images/laki_logo.png", alt: t("layouts.decidim.footer.laki_logo"))
+    .column.large-7.medium-7.small-12.large-pull-5.medium-pull-5
+      .cc-logo.logo
+        %a.cc-badge{:href => "http://creativecommons.org/licenses/by-sa/4.0/", :rel => "license noopener", :target => "_blank"}
+          = image_pack_tag("media/images/cc-badge.png", alt: t("layouts.decidim.footer.cc_by_license"))
+        = t("layouts.decidim.footer.made_with_open_source").html_safe
+      .decidim-logo.logo
+        %a{:href => "https://decidim.org/", :rel => "decidim noopener", :target => "_blank"}
+          = image_pack_tag("media/images/decidim-logo.svg", alt: t("layouts.decidim.footer.decidim_logo"))
 

@@ -356,20 +356,6 @@ ul.card-data {
   border-left: 8px solid var(--secondary);
 }
 
-
-.main-footer, .mini-footer {
-  color: white;
-
-  a {
-    color: white;
-  }
-}
-
-.laki-logo {
-  float: right;
-  width: 250px;
-}
-
 .upload-modal {
   .upload-items {
     .upload-item {
@@ -565,5 +551,53 @@ ul.card-data {
   .copyright-notice {
     margin: 1rem 0 2rem;
     font-weight: 600;
+  }
+}
+
+.mini-footer {
+  .logo {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    display: inline;
+  }
+
+  .cc-logo, .decidim-logo {
+    float: left;
+  }
+
+  .cc-logo {
+    margin-right: 2rem;
+  }
+
+  .laki-logo {
+    @include breakpoint(medium) {
+      float: right;
+    }
+
+
+    @include breakpoint(small) {
+      float: left;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.main-footer, .mini-footer {
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+.laki-logo {
+  img {
+    width: 250px;
+  }
+}
+
+.decidim-logo {
+  img {
+    width: 100px;
   }
 }
