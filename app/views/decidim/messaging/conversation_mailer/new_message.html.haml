@@ -6,5 +6,4 @@
 -# %p.email-button.email-button__cta
 -#   = link_to decidim.conversation_url(@conversation, host: @host), decidim.conversation_url(@conversation, host: @host)
 
-%p.email-closing= t(".outro", link: link_to('.here', decidim.conversation_url(@conversation, host: @host)))
-
+%p.email-closing= sanitize(t(".outro", link: link_to('.here', decidim.conversation_url(@conversation, host: @host))))
