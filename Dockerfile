@@ -2,6 +2,9 @@ FROM nexus.devops-e.de:8090/ema/docker-rails:3.0
 
 RUN apt-get install libicu-dev
 
+ADD https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.bullseye_amd64.deb /tmp
+RUN apt install -y /tmp/wkhtmltox_0.12.6.1-2.bullseye_amd64.deb
+
 ENV APPDIR=/app \
   RAILS_PORT=3000 \
   RAILS_ENV=development \
