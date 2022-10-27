@@ -7,3 +7,4 @@
   - decidim_app_<%= ENV['RAILS_ENV'] %>_exports
   - decidim_app_<%= ENV['RAILS_ENV'] %>_metrics
   - decidim_app_<%= ENV['RAILS_ENV'] %>_reminders
+  - decidim_app_<%= ENV['RAILS_ENV'] %>_close_meeting_reminder
