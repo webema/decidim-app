@@ -258,7 +258,7 @@ de:
         button: '%{model_name} ändern'
         error: Bei der Änderung dieses Inhalts ist ein Fehler aufgetreten.
         help_text: Verbessere diese %{model_name} indem du ihre %{amendable_fields} änderst
-        promote_button: %{model_name} unterstützen
+        promote_button: '%{model_name} unterstützen'
         promote_confirm_text: Möchtest du diesen Änderungsvorschlag wirklich unterstützen?
         promote_help_text: Du kannst diesen Änderungsvorschlag unterstützen und als eigenständige %{model_name} veröffentlichen
         section_heading: Änderungen (%{count})
