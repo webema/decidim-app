@@ -614,3 +614,21 @@ ul.card-data {
     width: 100px;
   }
 }
+
+.card__label {
+  &.card--idea {
+    color: #00b5e5;
+  }
+
+  &.card--assembly {
+    color: #76b82a;
+  }
+
+  &.card--process {
+    color: #551285;
+  }
+
+  &.card--user {
+    color: #de007e;
+  }
+}
