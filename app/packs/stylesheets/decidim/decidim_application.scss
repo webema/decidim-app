@@ -60,12 +60,25 @@ html, body {
   }
 }
 
+.tabs {
+  .tabs-title, .tabs-title.is-active  {
+    a {
+      color: var(--secondary);
+      font-weight: 600;
+
+      &:hover, &:focus {
+        color: var(--secondary);
+      }
+    }
+  }
+}
+
 .card__content {
-  a {
+  a,  {
     color: var(--secondary);
     font-weight: 600;
 
-    &:hover {
+    &:hover, &:focus {
       color: var(--secondary);
     }
   }
@@ -75,7 +88,7 @@ a, a.card__link {
   color: var(--secondary);
   font-weight: 600;
 
-  &:hover {
+  &:hover, &:focus {
     color: var(--secondary);
   }
 }
