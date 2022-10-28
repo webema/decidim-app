@@ -93,6 +93,15 @@ a, a.card__link {
   }
 }
 
+.topbar__dropmenu .is-dropdown-submenu li a {
+  color: var(--secondary);
+  // font-weight: 600;
+
+  &:hover, &:focus {
+    color: var(--secondary);
+  }
+}
+
 .card__image:not(.badge__logo--small):not(.badge__logo) {
   width: 100%;
   max-height: 15rem;
