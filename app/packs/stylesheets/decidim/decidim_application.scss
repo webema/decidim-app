@@ -102,6 +102,13 @@ a, a.card__link {
   }
 }
 
+#user-menu-control {
+  color: black;
+  &:hover, &:focus {
+    color: black;
+  }
+}
+
 .card__image:not(.badge__logo--small):not(.badge__logo) {
   width: 100%;
   max-height: 15rem;
