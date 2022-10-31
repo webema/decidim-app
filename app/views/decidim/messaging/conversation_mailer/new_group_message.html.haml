@@ -7,5 +7,5 @@
 -# %p.email-button.email-button__cta
 -#   = link_to decidim.profile_conversation_url(nickname: @third_party.nickname, id: @conversation.id, host: @host), decidim.profile_conversation_url(nickname: @third_party.nickname, id: @conversation.id, host: @host)
 
-%p.email-closing= sanitize(t(".outro", link: link_to('.here', decidim.profile_conversation_url(nickname: @third_party.nickname, id: @conversation.id, host: @host))))
+%p.email-closing= sanitize(t(".outro", link: link_to(t('.here'), decidim.profile_conversation_url(nickname: @third_party.nickname, id: @conversation.id, host: @host))))
 
