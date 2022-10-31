@@ -1055,8 +1055,8 @@ de:
           here: hier
         new_message:
           greeting: Hallo %{recipient}!
-          intro: "%{sender} hat dir auf <a href='https://www.zukunftsprozess.de'>zukunftsprozess.de</a> eine persönliche Nachricht geschickt:"
-          outro: "Klicke %{link} und logg dich auf <a href='https://www.zukunftsprozess.de'>zukunftsprozess.de</a> ein, um die Nachricht vollständig anzusehen und darauf zu antworten."
+          intro: "%{sender} hat dir auf zukunftsprozess.de eine persönliche Nachricht geschickt:"
+          outro: "Klicke %{link} und logg dich auf zukunftsprozess.de ein, um die Nachricht vollständig anzusehen und darauf zu antworten."
           subject: Du hast eine Nachricht auf Zukunftsprozess.de erhalten
           here: hier
       conversations:
