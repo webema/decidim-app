@@ -6,7 +6,7 @@ module Ema
     helper Decidim::PaginateHelper
 
     def index
-      @blog_posts = blog_posts_for_organization.order(created_at: :desc).page(params[:page]).per(2)
+      @blog_posts = blog_posts_for_organization.order(created_at: :desc).page(params[:page]).per(10)
     end
 
     def show
