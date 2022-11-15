@@ -224,9 +224,9 @@ de:
           name: Mitglied
           positions:
             other: Andere
-            president: Präsident
-            secretary: Sekretär
-            vice_president: Vizepräsident
+            president: Präsident:in
+            secretary: Sekretär:in
+            vice_president: Vizepräsident:in
         assembly_user_role:
           fields:
             email: Email
