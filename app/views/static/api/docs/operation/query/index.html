@@ -4,6 +4,58 @@
 <h2>
 <a id="fields" class="anchor" href="#fields" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fields</h2>
 <div class="field-entry ">
+  <span id="commentable" class="field-name anchored">commentable (<code><a href="/api/docs/object/commentable">Commentable!</a></code>)</span>
+  <div class="description-wrapper">
+     <table class="arguments">
+  <thead>
+  <tr>
+    <th>Argument</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code class="anchored">id</code></td>
+  <td>
+    <code><a href="/api/docs/scalar/string">String!</a></code>
+  </td>
+  <td>
+    <p>The commentable's ID</p>
+   </td>
+  </tr>
+  <tr>
+  <td><code class="anchored">type</code></td>
+  <td>
+    <code><a href="/api/docs/scalar/string">String!</a></code>
+  </td>
+  <td>
+    <p>The commentable's class name. i.e. <code>Decidim::ParticipatoryProcess</code></p>
+   </td>
+  </tr>
+  <tr>
+  <td><code class="anchored">locale</code></td>
+  <td>
+    <code><a href="/api/docs/scalar/string">String!</a></code>
+  </td>
+  <td>
+    <p>The locale for which to get the comments text</p>
+   </td>
+  </tr>
+  <tr>
+  <td><code class="anchored">toggleTranslations</code></td>
+  <td>
+    <code><a href="/api/docs/scalar/boolean">Boolean!</a></code>
+  </td>
+  <td>
+    <p>Whether the user asked to toggle the machine translations or not.</p>
+   </td>
+  </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+<div class="field-entry ">
   <span id="participatoryprocesses" class="field-name anchored">participatoryProcesses (<code><a href="/api/docs/object/participatoryprocess">[ParticipatoryProcess!]</a></code>)</span>
   <div class="description-wrapper">
    <p>Lists all participatory_processes</p>
@@ -257,58 +309,6 @@
   </div>
 </div>
 <div class="field-entry ">
-  <span id="commentable" class="field-name anchored">commentable (<code><a href="/api/docs/object/commentable">Commentable!</a></code>)</span>
-  <div class="description-wrapper">
-     <table class="arguments">
-  <thead>
-  <tr>
-    <th>Argument</th>
-    <th>Type</th>
-    <th>Description</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td><code class="anchored">id</code></td>
-  <td>
-    <code><a href="/api/docs/scalar/string">String!</a></code>
-  </td>
-  <td>
-    <p>The commentable's ID</p>
-   </td>
-  </tr>
-  <tr>
-  <td><code class="anchored">type</code></td>
-  <td>
-    <code><a href="/api/docs/scalar/string">String!</a></code>
-  </td>
-  <td>
-    <p>The commentable's class name. i.e. <code>Decidim::ParticipatoryProcess</code></p>
-   </td>
-  </tr>
-  <tr>
-  <td><code class="anchored">locale</code></td>
-  <td>
-    <code><a href="/api/docs/scalar/string">String!</a></code>
-  </td>
-  <td>
-    <p>The locale for which to get the comments text</p>
-   </td>
-  </tr>
-  <tr>
-  <td><code class="anchored">toggleTranslations</code></td>
-  <td>
-    <code><a href="/api/docs/scalar/boolean">Boolean!</a></code>
-  </td>
-  <td>
-    <p>Whether the user asked to toggle the machine translations or not.</p>
-   </td>
-  </tr>
-  </tbody>
-</table>
-  </div>
-</div>
-<div class="field-entry ">
   <span id="participatoryprocessgroups" class="field-name anchored">participatoryProcessGroups (<code><a href="/api/docs/object/participatoryprocessgroup">[ParticipatoryProcessGroup!]!</a></code>)</span>
   <div class="description-wrapper">
    <p>Lists all participatory process groups</p>
@@ -466,15 +466,15 @@
   </div>
 </div>
 <div class="field-entry ">
-  <span id="initiativestypes" class="field-name anchored">initiativesTypes (<code><a href="/api/docs/object/initiativetype">[InitiativeType!]!</a></code>)</span>
+  <span id="ideastypes" class="field-name anchored">ideasTypes (<code><a href="/api/docs/object/ideatype">[IdeaType!]!</a></code>)</span>
   <div class="description-wrapper">
-   <p>Lists all initiative types</p>
+   <p>Lists all idea types</p>
   </div>
 </div>
 <div class="field-entry ">
-  <span id="initiativestype" class="field-name anchored">initiativesType (<code><a href="/api/docs/object/initiativetype">InitiativeType</a></code>)</span>
+  <span id="ideastype" class="field-name anchored">ideasType (<code><a href="/api/docs/object/ideatype">IdeaType</a></code>)</span>
   <div class="description-wrapper">
-   <p>Finds a initiative type</p>
+   <p>Finds a idea type</p>
      <table class="arguments">
   <thead>
   <tr>
@@ -490,7 +490,7 @@
     <code><a href="/api/docs/scalar/id">ID!</a></code>
   </td>
   <td>
-    <p>The ID of the initiative type</p>
+    <p>The ID of the idea type</p>
    </td>
   </tr>
   </tbody>
@@ -498,9 +498,9 @@
   </div>
 </div>
 <div class="field-entry ">
-  <span id="initiatives" class="field-name anchored">initiatives (<code><a href="/api/docs/object/initiative">[Initiative!]</a></code>)</span>
+  <span id="ideas" class="field-name anchored">ideas (<code><a href="/api/docs/object/idea">[Idea!]</a></code>)</span>
   <div class="description-wrapper">
-   <p>Lists all initiatives</p>
+   <p>Lists all ideas</p>
      <table class="arguments">
   <thead>
   <tr>
@@ -533,9 +533,9 @@
   </div>
 </div>
 <div class="field-entry ">
-  <span id="initiative" class="field-name anchored">initiative (<code><a href="/api/docs/object/initiative">Initiative</a></code>)</span>
+  <span id="idea" class="field-name anchored">idea (<code><a href="/api/docs/object/idea">Idea</a></code>)</span>
   <div class="description-wrapper">
-   <p>Finds a initiative</p>
+   <p>Finds a idea</p>
      <table class="arguments">
   <thead>
   <tr>
@@ -777,22 +777,22 @@
       
         
       <li>
-        <a href="/api/docs/object/initiative/" class="sidebar-link">
-          Initiative
+        <a href="/api/docs/object/idea/" class="sidebar-link">
+          Idea
         </a>
       </li>
       
         
       <li>
-        <a href="/api/docs/object/initiativecommitteemembertype/" class="sidebar-link">
-          InitiativeCommitteeMemberType
+        <a href="/api/docs/object/ideacommitteemembertype/" class="sidebar-link">
+          IdeaCommitteeMemberType
         </a>
       </li>
       
         
       <li>
-        <a href="/api/docs/object/initiativetype/" class="sidebar-link">
-          InitiativeType
+        <a href="/api/docs/object/ideatype/" class="sidebar-link">
+          IdeaType
         </a>
       </li>
       
@@ -1316,8 +1316,8 @@
       
         
         <li>
-          <a href="/api/docs/interface/initiativetypeinterface/" class="sidebar-link">
-            InitiativeTypeInterface
+          <a href="/api/docs/interface/ideatypeinterface/" class="sidebar-link">
+            IdeaTypeInterface
           </a>
         </li>
       
