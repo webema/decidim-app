@@ -60,7 +60,7 @@ spec:
         - name: HTTPS_PROXY_REDIRECT
           value: "1"
         - name: NGINX_SERVER_NAME
-          value: www.zukunftsprozess.de zukunftsprozess.de
+          value: www.zukunftsprozess.de zukunftsprozess.de zukunfts-prozess.de www.zukunfts-prozess.de
         imagePullPolicy: Always
         volumeMounts:
         - name: rails-data
