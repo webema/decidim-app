@@ -5,7 +5,7 @@ data:
   REDIS_URL: redis.redis.svc.cluster.local
   RAILS_LOG_TO_STDOUT: "true"
   DECIDIM_APPLICATION_NAME: Zukunft2030
-  DECIDIM_MAILER_SENDER: "Zukunftsprozess" <system@zukunftsprozess.de>
+  DECIDIM_MAILER_SENDER: system@zukunftsprozess.de
   QUEUE_ADAPTER: sidekiq
   STORAGE_PROVIDER: s3
   STORAGE_CDN_HOST: https://decidim-app-ema.fra1.cdn.digitaloceanspaces.com
