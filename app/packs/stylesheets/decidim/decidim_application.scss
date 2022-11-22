@@ -657,3 +657,12 @@ ul.card-data {
     }
   }
 }
+
+.meetings.listing {
+  .with_any_global_category_check_boxes_tree_filter,
+  .with_any_origin_check_boxes_tree_filter,
+  .with_any_space_check_boxes_tree_filter
+   {
+    display: none;
+  }
+}
