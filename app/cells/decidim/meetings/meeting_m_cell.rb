@@ -8,7 +8,7 @@ module Decidim
       include MeetingCellsHelper
 
       def has_authors?
-        true
+        false # do not show "offizieller termin"
       end
 
       def render_authorship

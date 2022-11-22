@@ -524,7 +524,7 @@ de:
           date: Datum
           edit_meeting: Termin bearbeiten
           going: Du hast dich für diesen Termin angemeldet
-          join: Tritt dem Termin bei
+          join: Termin beitreten
           leave: Registrierung stornieren
           leave_confirmation: Bist du sicher dass du deine Registrierung für diesen Termin stornieren möchtest?
           link_available_soon: Link in Kürze verfügbar
@@ -587,6 +587,7 @@ de:
             question: Frage
             question_replied: Frage beantwortet
       public_participants_list:
+        attending_participants: Angemeldete Teilnehmer:innen
         hidden_participants_count:
           one: und %{count} weitere Person
           other: und %{count} weitere Personen
