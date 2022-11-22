@@ -28,7 +28,7 @@ module Decidim
       end
 
       def description
-        present(model).description(strip_tags: true).truncate(120, separator: /\s/)
+        nil #present(model).description(strip_tags: true).truncate(120, separator: /\s/)
       end
 
       def badge
@@ -71,8 +71,12 @@ module Decidim
         withdrawn?
       end
 
+      # def resource_image_path
+      #   model.photo&.url
+      # end
+
       def resource_image_path
-        model.photo&.url || model.participatory_space.attached_uploader(:hero_image).variant_path(:large)
+        present(model).image_path.presence || model.photo&.url || model.participatory_space.attached_uploader(:hero_image).variant_path(:large)
       end
 
       def has_image?
@@ -114,7 +118,7 @@ module Decidim
       end
 
       def statuses
-        [:follow, :comments_count]
+        [] #[:follow, :comments_count]
       end
     end
   end
