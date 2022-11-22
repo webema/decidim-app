@@ -648,3 +648,12 @@ ul.card-data {
     color: #de007e;
   }
 }
+
+
+#meetings {
+  .card--meeting{
+    .card__top {
+      display: block;
+    }
+  }
+}

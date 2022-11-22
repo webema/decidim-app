@@ -676,7 +676,7 @@ ActiveRecord::Schema.define(version: 2022_10_17_142611) do
     t.jsonb "source"
     t.index "md5((description)::text)", name: "decidim_ideas_description_search"
     t.index ["answered_at"], name: "index_decidim_ideas_on_answered_at"
-    t.index ["decidim_area_id"], name: "index_decidim_initiatives_on_decidim_area_id"
+    t.index ["decidim_area_id"], name: "index_decidim_ideas_on_decidim_area_id"
     t.index ["decidim_author_id", "decidim_author_type"], name: "index_decidim_ideas_on_decidim_author"
     t.index ["decidim_organization_id"], name: "index_decidim_ideas_on_decidim_organization_id"
     t.index ["decidim_user_group_id"], name: "index_decidim_ideas_on_decidim_user_group_id"
