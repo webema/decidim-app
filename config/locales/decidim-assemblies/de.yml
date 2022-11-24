@@ -82,8 +82,8 @@ de:
         one: Werkraum
         other: Werkräume
       decidim/assembly_member:
-        one: Werkraum-Mitglieder
-        other: Mitglieder des Werkraums
+        one: Werkraum-Ansprechperson
+        other: Ansprechpersonen des Werkraums
       decidim/assembly_user_role:
         one: Werkraum-Admin-Rolle
         other: Werkraum-Admin-Rollen
@@ -145,21 +145,21 @@ de:
           title: Werkraum importieren
       assembly_members:
         create:
-          error: Beim Hinzufügen eines Mitglieds zu diesem Werkraum ist ein Fehler aufgetreten.
-          success: Mitglied wurde diesem Werkraum erfolgreich hinzugefügt.
+          error: Beim Hinzufügen einer Ansprechperson zu diesem Werkraum ist ein Fehler aufgetreten.
+          success: Ansprechperson wurde diesem Werkraum erfolgreich hinzugefügt.
         destroy:
-          success: Mitglied wurde erfolgreich aus diesem Werkraum entfernt.
+          success: Ansprechperson wurde erfolgreich aus diesem Werkraum entfernt.
         edit:
-          title: Aktualisiere die Mitglieder des Werkraums.
+          title: Aktualisiere die Ansprechpersonen des Werkraums.
           update: Aktualisieren
         index:
-          assembly_members_title: Mitglieder
+          assembly_members_title: Ansprechpersonen
         new:
           create: Erstellen
-          title: Neues Werkraum-Mitglied.
+          title: Neue Werkraum-Ansprechperson.
         update:
-          error: Beim Aktualisieren des Mitglieds dieses Werkraums ist ein Fehler aufgetreten.
-          success: Mitglied dieses Werkraums erfolgreich aktualisiert.
+          error: Beim Aktualisieren der Ansprechperson dieses Werkraums ist ein Fehler aufgetreten.
+          success: Ansprechperson dieses Werkraums erfolgreich aktualisiert.
       assembly_publications:
         create:
           error: Beim Veröffentlichen dieses Werkraums ist ein Fehler aufgetreten.
@@ -192,7 +192,7 @@ de:
         assemblies_settings: Einstellungen
         assemblies_submenu:
           assembly_admins: Admins
-          assembly_members: Mitglieder
+          assembly_members: Ansprechpersonen
           attachment_collections: Ordner
           attachment_files: Dateien
           attachments: Anhänge
@@ -221,7 +221,7 @@ de:
             designation_date: Datum der Benennung
             full_name: Name
             position: Aufgabe
-          name: Mitglied
+          name: Ansprechperson
           positions:
             other: Andere
             president: Präsident:in
@@ -251,9 +251,9 @@ de:
         unpublish: "%{user_name} hat den Werkraum %{resource_name} auf \"unveröffentlicht\" gesetzt"
         update: "%{user_name} hat den Werkraum %{resource_name} aktualisiert"
       assembly_member:
-        create: "%{user_name} hat das Mitglied %{resource_name} im Werkraum %{space_name} hinzugefügt"
-        delete: "%{user_name} hat das Mitglied %{resource_name} aus dem Werkraum %{space_name} entfernt"
-        update: "%{user_name} hat das Mitglied %{resource_name} im Werkraum %{space_name} aktualisiert"
+        create: "%{user_name} hat die Ansprechperson %{resource_name} im Werkraum %{space_name} hinzugefügt"
+        delete: "%{user_name} hat die Ansprechperson %{resource_name} aus dem Werkraum %{space_name} entfernt"
+        update: "%{user_name} hat die Ansprechperson %{resource_name} im Werkraum %{space_name} aktualisiert"
       assembly_setting:
         update: "%{user_name} hat die Werkraumeinstellungen aktualisiert"
       assembly_type:
@@ -307,7 +307,7 @@ de:
             explanation: 'Hinweise für das Bild:'
             image_guide: Vorzugsweise ein Bild im Querformat, das keinen Text enthält.
             non_user: Nichtbenutzer:in der Plattform
-            non_user_avatar_help: Du solltest die Zustimmung der Personen einholen, bevor du sie als Mitglied veröffentlichst.
+            non_user_avatar_help: Du solltest die Zustimmung der Personen einholen, bevor du sie als Ansprechperson veröffentlichst.
             select_a_position: Wähle eine Aufgabe
             select_user: Wähle eine/n Benutzer:in aus
             user_type: Benutzer:innen-Typ
@@ -329,7 +329,7 @@ de:
           title: Über diesen Werkraum
       assembly_members:
         index:
-          members: Mitglieder
+          members: Ansprechpersonen
       assembly_types:
         commission: Kommission
         consultative_advisory: Beratende
@@ -367,7 +367,7 @@ de:
             see_all_assemblies: Alle Werkräume anzeigen
         user_profile:
           member_of:
-            member_of: Mitglied von
+            member_of: Ansprechperson von
       show:
         area: Bereich
         assembly_type: Werkraum-Typ
@@ -400,14 +400,14 @@ de:
       assembly_member:
         designated_on: Benannt am
       index:
-        title: Mitglieder
+        title: Ansprechpersonen
     events:
       assemblies:
         create_assembly_member:
-          email_intro: Ein/e Admin des Werkraums <a href="%{resource_url}">%{resource_name}</a> hat dich als Mitglied eingeladen.
+          email_intro: Ein/e Admin des Werkraums <a href="%{resource_url}">%{resource_name}</a> hat dich als Ansprechperson eingeladen.
           email_outro: Du hast diese Benachrichtigung erhalten, weil du zu einem Werkraum eingeladen wurdest. Gehe zur <a href="%{resource_url}">Werkraumseite</a>, um mitzumachen!
-          email_subject: Du wurdest als Mitglied des Werkraums %{resource_name} eingeladen!
-          notification_title: Du wurdest als Mitglied des Werkraums <a href="%{resource_path}">%{resource_name}</a> registriert. Gehe zur <a href="%{resource_path}">Werkraumseite</a>, um mitzuwirken!
+          email_subject: Du wurdest als Ansprechperson des Werkraums %{resource_name} eingeladen!
+          notification_title: Du wurdest als Ansprechperson des Werkraums <a href="%{resource_path}">%{resource_name}</a> registriert. Gehe zur <a href="%{resource_path}">Werkraumseite</a>, um mitzuwirken!
       assembly:
         role_assigned:
           email_intro: Du wurdest als <em>%{role}</em> für Der Werkraum <em>%{resource_title}</em> ausgewählt.
@@ -417,8 +417,8 @@ de:
     help:
       participatory_spaces:
         assemblies:
-          contextual: "<p>Ein Werkraum ist eine Gruppe von Mitgliedern einer Organisation, die sich regelmäßig treffen, um Entscheidungen über einen bestimmten Bereich oder einen bestimmten Bereich der Organisation zu treffen.</p> <p>Werkräume halten Termine ab, einige sind privat und andere sind offen. Wenn sie offen sind, ist es möglich, an ihnen teilzunehmen (z. B. Teilnahme, wenn die Kapazität es erlaubt, Punkte auf die Tagesordnung setzen oder Vorschläge und Entscheidungen dieses Organs kommentieren).</p> <p>Beispiele: Eine Generalversammlung (die einmal im Jahr zusammentritt, um die wichtigsten Aktionslinien der Organisation sowie ihre Exekutivorgane per Abstimmung festzulegen), ein Gleichstellungsbeirat (der alle zwei Monate zusammentritt, um Vorschläge zur Verbesserung der Geschlechterbeziehungen vorzulegen In der Organisation sind eine Evaluierungskommission (die sich jeden Monat zur Überwachung eines Prozesses trifft) oder eine Garantieeinrichtung (die Vorfälle, Missbräuche oder Vorschläge zur Verbesserung der Entscheidungsverfahren sammelt) Beispiele für Werkräume.</p>\n"
-          page: "<p>Ein Werkraum ist eine Gruppe von Mitgliedern einer Organisation, die sich regelmäßig treffen, um Entscheidungen über einen bestimmten Bereich oder einen bestimmten Bereich der Organisation zu treffen.</p> <p>Werkräume halten Termine ab, einige sind privat und andere sind offen. Wenn sie offen sind, ist es möglich, an ihnen teilzunehmen (z. B. Teilnahme, wenn die Kapazität es erlaubt, Punkte auf die Tagesordnung setzen oder Vorschläge und Entscheidungen dieses Organs kommentieren).</p> <p>Beispiele: Eine Generalversammlung (die einmal im Jahr zusammentritt, um die wichtigsten Aktionslinien der Organisation sowie ihre Exekutivorgane per Abstimmung festzulegen), ein Gleichstellungsbeirat (der alle zwei Monate zusammentritt, um Vorschläge zur Verbesserung der Geschlechterbeziehungen vorzulegen In der Organisation sind eine Evaluierungskommission (die sich jeden Monat zur Überwachung eines Prozesses trifft) oder eine Garantieeinrichtung (die Vorfälle, Missbräuche oder Vorschläge zur Verbesserung der Entscheidungsverfahren sammelt) Beispiele für Werkräume.</p>\n"
+          contextual: "<p>Ein Werkraum ist eine Gruppe von Personen einer Organisation, die sich regelmäßig treffen, um Entscheidungen über einen bestimmten Bereich oder einen bestimmten Bereich der Organisation zu treffen.</p> <p>Werkräume halten Termine ab, einige sind privat und andere sind offen. Wenn sie offen sind, ist es möglich, an ihnen teilzunehmen (z. B. Teilnahme, wenn die Kapazität es erlaubt, Punkte auf die Tagesordnung setzen oder Vorschläge und Entscheidungen dieses Organs kommentieren).</p> <p>Beispiele: Eine Generalversammlung (die einmal im Jahr zusammentritt, um die wichtigsten Aktionslinien der Organisation sowie ihre Exekutivorgane per Abstimmung festzulegen), ein Gleichstellungsbeirat (der alle zwei Monate zusammentritt, um Vorschläge zur Verbesserung der Geschlechterbeziehungen vorzulegen In der Organisation sind eine Evaluierungskommission (die sich jeden Monat zur Überwachung eines Prozesses trifft) oder eine Garantieeinrichtung (die Vorfälle, Missbräuche oder Vorschläge zur Verbesserung der Entscheidungsverfahren sammelt) Beispiele für Werkräume.</p>\n"
+          page: "<p>Ein Werkraum ist eine Gruppe von Personen einer Organisation, die sich regelmäßig treffen, um Entscheidungen über einen bestimmten Bereich oder einen bestimmten Bereich der Organisation zu treffen.</p> <p>Werkräume halten Termine ab, einige sind privat und andere sind offen. Wenn sie offen sind, ist es möglich, an ihnen teilzunehmen (z. B. Teilnahme, wenn die Kapazität es erlaubt, Punkte auf die Tagesordnung setzen oder Vorschläge und Entscheidungen dieses Organs kommentieren).</p> <p>Beispiele: Eine Generalversammlung (die einmal im Jahr zusammentritt, um die wichtigsten Aktionslinien der Organisation sowie ihre Exekutivorgane per Abstimmung festzulegen), ein Gleichstellungsbeirat (der alle zwei Monate zusammentritt, um Vorschläge zur Verbesserung der Geschlechterbeziehungen vorzulegen In der Organisation sind eine Evaluierungskommission (die sich jeden Monat zur Überwachung eines Prozesses trifft) oder eine Garantieeinrichtung (die Vorfälle, Missbräuche oder Vorschläge zur Verbesserung der Entscheidungsverfahren sammelt) Beispiele für Werkräume.</p>\n"
           title: Was sind Werkräume?
     log:
       value_types:
@@ -460,7 +460,7 @@ de:
           more_info: Mehr Informationen
           take_part: Teilnehmen
       assembly_navigation:
-        assembly_member_menu_item: Mitglieder
+        assembly_member_menu_item: Ansprechpersonen
         assembly_menu_item: Werkraum
         all_assemblies_menu_item: Alle Werkräume
       assembly_widgets:
