@@ -7,8 +7,10 @@ Rails.application.routes.draw do
 
   require 'sidekiq/web'
 
-  authenticate :user, lambda { |u| u.admin? } do # TODO: should be system admin only
-    mount Sidekiq::Web => '/sidekiq'
+  namespace :system do
+    authenticate(:admin) do
+      mount Sidekiq::Web => '/sidekiq'
+    end
   end
 
   mount Decidim::Core::Engine => '/'
