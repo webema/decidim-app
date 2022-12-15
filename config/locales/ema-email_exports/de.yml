@@ -1,0 +1,8 @@
+de:
+  ema:
+    email_exports:
+      admin:
+        index:
+          title: Newsletter
+          description: Hier kannst du die Daten aller registrierten Nutzer:innen als CSV-Datei herunterladen, um diese in das Newsletter-Tool der EMA zu importieren.
+          new_email_export: CSV-Datei herunterladen
