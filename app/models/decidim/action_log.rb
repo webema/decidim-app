@@ -217,7 +217,7 @@ module Decidim
     # Whether this activity or log is visible for a given user (can also be nil)
     def visible_for?(user)
       resource_lazy.present? &&
-        (participatory_space_lazy.present? || resource_lazy.is_a?(Decidim::Idea)) &&
+        (participatory_space_lazy.present? || (resource_lazy.is_a?(Decidim::Idea) && resource_lazy.author == user)) &&
         !resource_lazy.try(:deleted?) &&
         !resource_lazy.try(:hidden?) &&
         (!resource_lazy.respond_to?(:can_participate?) || resource_lazy.try(:can_participate?, user))
