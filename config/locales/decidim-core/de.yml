@@ -440,12 +440,13 @@ de:
           collaborative_draft: Gemeinsamer Entwurf
           comment: Kommentar
           debate: Debatte
-          initiative: Inspiration
+          initiative: Initiative
           meeting: Termin
           order: Budgetabstimmung
           post: Beitrag
           proposal: Vorschlag
           question: Frage
+          idea: Inspiration
         title: 'Anzeigen:'
       dummy:
         actions:
