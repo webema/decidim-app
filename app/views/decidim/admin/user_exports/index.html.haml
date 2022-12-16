@@ -1,0 +1,16 @@
+.card
+  .card__content
+    .card-divider
+      %h2.card-title
+        = t('title', scope: 'ema.user_exports.admin.index')
+
+
+    .card-section
+      %p
+        = t('description', scope: 'ema.user_exports.admin.index')
+
+      %p
+        = t('count', scope: 'ema.user_exports.admin.index', count: @count)
+
+      = form_for :user_export, url: newsletters_path do |f|
+        = f.submit t('new_user_export', scope: 'ema.user_exports.admin.index')
