@@ -2,20 +2,17 @@
 
 module Decidim
   # A command with all the business logic when users are exported.
-  class EmailExport < Decidim::Command
+  class ExportUsers < Decidim::Command
     # Public: Initializes the command.
     #
     def initialize()
     end
 
-    # Executes the command. Broadcasts these events:
+    # Executes the command
     #
-    # - :ok when everything is valid, together with the report.
-    # - :invalid if the form wasn't valid and we couldn't proceed.
-    #
-    # Returns nothing.
+    # Returns csv-file.
     def call
-      attributes = %w{id email first_name last_name}
+      attributes = %w{id email name}
 
       CSV.generate(headers: true) do |csv|
         csv << attributes
@@ -29,7 +26,7 @@ module Decidim
     private
 
     def users
-      User.confirmed
+      Decidim::User.confirmed.where.not(newsletter_notifications_at: nil)
     end
   end
 end

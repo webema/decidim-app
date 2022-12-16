@@ -1,0 +1,9 @@
+de:
+  ema:
+    user_exports:
+      admin:
+        index:
+          title: Newsletter
+          description: Hier kannst du die Daten aller Nutzer:innen als CSV-Datei herunterladen, um diese in ein externes Newsletter-Tool zu importieren.
+          count: Aktuell gibt es %{count} Benutzer:innen, die den Newsletter abonniert haben.
+          new_user_export: CSV-Datei herunterladen
