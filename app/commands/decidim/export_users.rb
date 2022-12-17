@@ -5,7 +5,8 @@ module Decidim
   class ExportUsers < Decidim::Command
     # Public: Initializes the command.
     #
-    def initialize()
+    def initialize(users_for_export)
+      @users_for_export = users_for_export
     end
 
     # Executes the command
@@ -17,16 +18,10 @@ module Decidim
       CSV.generate(headers: true) do |csv|
         csv << attributes
 
-        users.each do |user|
+        @users_for_export.each do |user|
           csv << attributes.map{ |attr| user.send(attr) }
         end
       end
-    end
-
-    private
-
-    def users
-      Decidim::User.confirmed.where.not(newsletter_notifications_at: nil)
     end
   end
 end

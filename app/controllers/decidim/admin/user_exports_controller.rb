@@ -6,14 +6,22 @@ module Decidim
       before_action :enforce_permission
 
       def index
-        @count = Decidim::User.confirmed.where.not(newsletter_notifications_at: nil).count
+        @count = users_for_export.count
       end
 
       def create
-        send_data ExportUsers.new().call, filename: "decidim-users-#{Date.today}.csv"
+        send_data ExportUsers.new(users_for_export).call, filename: "decidim-users-#{Date.today}.csv"
       end
 
       private
+
+      def users_for_export
+        Decidim::User.confirmed
+        .not_deleted
+        .where(organization: @current_organization)
+        .where.not(newsletter_notifications_at: nil)
+        .order(id: :asc)
+      end
 
       def enforce_permission
         enforce_permission_to :update, :organization
