@@ -31,8 +31,7 @@ gem 'haml'
 # Hack?
 gem 'rexml', '~> 3.2.5'
 
-# Password protect staging environment
-gem 'lockup'
+
 
 gem 'dalli'
 
@@ -60,4 +59,6 @@ end
 group :staging do
   # avoid emailing your users from non-production environments [https://github.com/croaky/recipient_interceptor]
   gem 'recipient_interceptor'
+  # Password protect staging environment
+  gem 'lockup'
 end
