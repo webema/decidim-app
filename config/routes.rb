@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # mount Lockup::Engine, at: '/lockup'
+  mount Lockup::Engine, at: '/lockup'
 
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"

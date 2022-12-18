@@ -24,36 +24,9 @@
         .title-bar
           .row.column.topbar
             .logo-wrapper
-              = image_tag('/zp_beta_logo.png', style: 'max-height: 50px', alt: 'Zukunftsprozess beta')
+              = image_tag('/zp_logo.png', style: 'max-height: 50px', alt: 'Zukunftsprozess')
 
       %main#content
         .lockup-container
           .div
-            .heading
-              %h1.small
-                %span
-                  Hier verbirgt sich deine Beteiligungsplattform für die Kirche von morgen.
-              %h1
-                %span
-                  Am 01.11. um 19 Uhr lüften wir den Vorhang und hier wird der Livestream für alle sichtbar sein. 🎉🎉🎉​
-              %h1.small
-                %span
-                  Sei dabei, wenn es heißt: Zukunft live. Mit Talk, Gästen und Musik.
-
             = yield
-
-
-    .footer
-      .main-footer
-        .row.column
-          Du möchtest uns helfen die Beta-Version der Plattform zu testen? Oder du hast Probleme mit dem Zugang? E-Mail an:
-          = mail_to 'hilfe@zukunftsprozess.de'
-
-      .mini-footer
-        .row
-          .medium-7.large-8.column
-
-          .medium-5.large-4.column
-            .laki-logo
-              = link_to('https://landeskirche-hannovers.de', rel: 'decidim noopener', target: '_blank') do
-                = image_pack_tag("media/images/laki_logo.png", alt: t("layouts.decidim.footer.laki_logo"))
