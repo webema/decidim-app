@@ -1,0 +1,15 @@
+.process-header
+  .process-header__inner
+    .row.column.process-header__main{style: "background-image:url('#{current_participatory_space.attached_uploader(:banner_image).path}');"}
+    .process-header__container.row.collapse.column
+      .columns.mediumlarge-8.process-header__info
+        %div
+          %h1.text-highlight.heading2
+            = translated_attribute(current_participatory_space.title)
+        %div
+          %p.text-highlight.heading-small
+            - if current_participatory_space.hashtag.present?
+              %span.process-header__hashtag
+                = link_to "##{current_participatory_space.hashtag}", decidim.search_path(term: "##{current_participatory_space.hashtag}"), target: "_blank", class: "hashtag-mention", rel: "noopener"
+            = translated_attribute(current_participatory_space.subtitle)
+  = render partial: "layouts/decidim/assembly_navigation", locals: { participatory_space: current_participatory_space }
