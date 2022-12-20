@@ -1898,9 +1898,9 @@ Du bist nur noch einen Klick entfernt, dein Konto freizuschalten. Bestätige jet
       choose_diff_view_html: 'HTML-Ansicht:'
       choose_diff_view_mode: 'Vergleichsansicht:'
       choose_diff_view_mode_menu: Vergleichsmodus wählen
-      option_escaped: HTML filtern
+      option_escaped: HTML anzeigen
       option_split: Nebeneinander
-      option_unescaped: HTML anzeigen
+      option_unescaped: HTML filtern
       option_unified: Zusammengefasst
   views:
     pagination:
