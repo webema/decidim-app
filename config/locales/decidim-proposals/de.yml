@@ -641,14 +641,14 @@ de:
         new_collaborative_draft_button:
           new_collaborative_draft: Neuer gemeinsamer Entwurf
         orders:
-          label: 'Bestellentwürfe von:' TODO
+          label: 'Bestellentwürfe von: TODO'
           most_contributed: Am meisten beigetragen
           random: Zufällig
           recent: Kürzlich hinzugefügt
         requests:
           accepted_request:
             error: Konnte nicht als Mitbearbeiter:in akzeptiert werden, versuche es später erneut.
-            success: "@%{user} wurde erfolgreich als Mitbearbeiter:in akzeptiert".
+            success: "@%{user} wurde erfolgreich als Mitbearbeiter:in akzeptiert."
           access_requested:
             error: Deine Anfrage konnte nicht abgeschlossen werden. Versuche es später erneut.
             success: Deine Anfrage zur Zusammenarbeit wurde erfolgreich gesendet.
@@ -658,7 +658,7 @@ de:
             title: Anfragen zur Zusammenarbeit
           rejected_request:
             error: Konnte nicht als Mitbearbeiter:in abgelehnt werden, versuche es später erneut.
-            success: "@%{user} wurde erfolgreich als Mitbearbeiter:in abgelehnt".
+            success: "@%{user} wurde erfolgreich als Mitbearbeiter:in abgelehnt."
         show:
           back: Zurück
           edit: Den gemeinsamen Entwurf bearbeiten
