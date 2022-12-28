@@ -6,22 +6,22 @@ de:
         address: Adresse
         body: Haupttext
         category_id: Kategorie
-        decidim_scope_id: Umfang
+        decidim_scope_id: Thema
         has_address: Hat eine Adresse
-        scope_id: Bereich
+        scope_id: Thema
         state: Status
         title: Titel
         user_group_id: Kollaborativen Entwurf erstellen als
       proposal:
         address: Adresse
         answer: Antworten
-        answered_at: Beantwortet bei
+        answered_at: Beantwortet am
         automatic_hashtags: Hashtags werden automatisch hinzugefügt
         body: Haupttext
         category_id: Kategorie
-        decidim_scope_id: Umfang
+        decidim_scope_id: Thema
         has_address: Hat eine Adresse
-        scope_id: Bereich
+        scope_id: Thema
         state: Status
         suggested_hashtags: Vorgeschlagene Hashtags
         title: Titel
@@ -50,14 +50,14 @@ de:
         proposal:
           attributes:
             add_documents:
-              needs_to_be_reattached: Der Anhang muss erneut angehängt werden
+              needs_to_be_reattached: Der Anhang muss erneut hinzugefügt werden
             add_photos:
-              needs_to_be_reattached: Der Anhang muss erneut angehängt werden
+              needs_to_be_reattached: Der Anhang muss erneut hinzugefügt werden
             body:
               cant_be_equal_to_template: kann nicht gleich der Vorlage sein
               identical: UND Titel dürfen nicht identisch sein
             title:
-              identical: Der UND-Körper kann nicht identisch sein
+              identical: Der UND-Haupttext kann nicht identisch sein
         proposals_merge:
           attributes:
             base:
@@ -69,7 +69,7 @@ de:
     models:
       decidim/proposals/accepted_proposal_event: Vorschlag angenommen
       decidim/proposals/admin/update_proposal_category_event: Vorschlagskategorie geändert
-      decidim/proposals/admin/update_proposal_scope_event: Vorschlagsumfang geändert
+      decidim/proposals/admin/update_proposal_scope_event: Vorschlagsthema geändert
       decidim/proposals/creation_enabled_event: Vorschlagserstellung aktiviert
       decidim/proposals/endorsing_enabled_event: Vorschlagsunterstützung aktiviert
       decidim/proposals/evaluating_proposal_event: Der Vorschlag wird geprüft
@@ -91,7 +91,7 @@ de:
         other: Anmerkungen
       decidim/proposals/proposal_vote:
         one: Unterstützung
-        other: Unterstützer
+        other: Unterstützende
   decidim:
     admin:
       filters:
@@ -104,7 +104,7 @@ de:
               'false': Vorschläge
               'true': Änderungen
           scope_id_eq:
-            label: Umfang
+            label: Thema
           state_eq:
             label: Status
             values:
@@ -153,17 +153,17 @@ de:
               most_voted: Am meisten unterstützt
               random: Zufällig
               recent: Neueste
-              with_more_authors: Mit mehr Autoren/Autorinnen
+              with_more_authors: Mit mehreren Autor:innen
             geocoding_enabled: Geocoding aktiviert
-            minimum_votes_per_user: Mindeststimmen pro Nutzer
+            minimum_votes_per_user: Mindeststimmenzahl pro Nutzer:in
             new_proposal_body_template: Textvorlage für neuen Vorschlag
-            new_proposal_body_template_help: Du kannst den vorgefüllten Text der neuen Vorschläge bestimmen
+            new_proposal_body_template_help: Du kannst die Textvorlage für neue Vorschläge bestimmen
             new_proposal_help_text: Hilfetext für neue Vorschläge
             official_proposals_enabled: Offizielle Vorschläge aktiviert
             participatory_texts_enabled: Partizipative Texte aktiviert
             participatory_texts_enabled_readonly: Die Interaktion mit dieser Einstellung ist nicht möglich, wenn Vorschläge bestehen. Bitte erstelle eine neue „Vorschlagskomponente“, wenn du diese Funktion aktivieren möchtest, oder verwerfe alle importierten Vorschläge im Menü „Beteiligungstexte“, wenn du diese Funktion deaktivieren möchtest.
             proposal_answering_enabled: Vorschlagsantworten aktiviert
-            proposal_edit_before_minutes: Vorschläge können von Autoren/Autorinnen innerhalb dieser Zeit bearbeitet werden
+            proposal_edit_before_minutes: Vorschläge können von Autor:innen innerhalb dieser Zeit bearbeitet werden
             proposal_edit_time: Vorschläge bearbeiten
             proposal_edit_time_choices:
               infinite: Vorschläge können beliebig lang bearbeitet werden
@@ -175,25 +175,25 @@ de:
             proposal_wizard_step_3_help_text: Hilfetext "Fertigstellen"-Schritt im Vorschlagsassistenten
             proposal_wizard_step_4_help_text: Hilfetext "Veröffentlichen"-Schritt im Vorschlagsassistenten
             resources_permissions_enabled: Berechtigungen können für jeden Vorschlag festgelegt werden
-            scope_id: Bereich
-            scopes_enabled: Bereiche aktiviert
+            scope_id: Thema
+            scopes_enabled: Themen aktiviert
             threshold_per_proposal: Schwellenwert pro Vorschlag
             vote_limit: Unterstützungslimit pro Benutzer:in
           step:
-            amendment_creation_enabled: Ergänzungserstellung aktiviert
-            amendment_creation_enabled_help: Teilnehmende können Vorschläge ergänzen.
-            amendment_promotion_enabled: Hervorheben von Ergänzungen aktiviert
-            amendment_promotion_enabled_help: Berichtigungsautoren können die abgelehnten Berichtigungen im Vorschlag hervorheben.
-            amendment_reaction_enabled: Reaktionen auf Ergänzungen aktiviert
-            amendment_reaction_enabled_help: Vorschlagsautoren können die Berichtigungen von Teilnehmenden akzeptieren oder ablehnen.
-            amendments_visibility: Sichtbarkeit der Ergänzungen
+            amendment_creation_enabled: Erstellung von Änderungen aktiviert
+            amendment_creation_enabled_help: Teilnehmende können Vorschlägen Änderungen hinzufügen.
+            amendment_promotion_enabled: Hervorheben von Änderungen aktiviert
+            amendment_promotion_enabled_help: Änderungsautor:innen können abgelehnte Änderungen im Vorschlag hervorheben.
+            amendment_reaction_enabled: Reaktionen auf Änderungen aktiviert
+            amendment_reaction_enabled_help: Vorschlagsautor:innen können die Änderungen von Teilnehmenden akzeptieren oder ablehnen.
+            amendments_visibility: Sichtbarkeit der Änderungen
             amendments_visibility_choices:
-              all: Ergänzungen sind für alle sichtbar
-              participants: Ergänzungen sind nur für ihre Autoren/Autorinnen sichtbar
-            amendments_visibility_help: Wenn die Option „Ergänzungen sind nur für ihre Autoren/Autorinnen sichtbar“ ausgewählt ist, müssen Teilnehmende eingeloggt sein, um die vorgenommenen Ergänzungen zu sehen.
+              all: Änderungen sind für alle sichtbar
+              participants: Änderungen sind nur für ihre Autor:innen sichtbar
+            amendments_visibility_help: Wenn die Option Änderungen sind nur für ihre Autor:innen sichtbar“ ausgewählt ist, müssen Teilnehmende eingeloggt sein, um die vorgenommenen Änderungen zu sehen.
             announcement: Ankündigung
             answers_with_costs: Kosten für Vorschlagsantworten aktivieren
-            automatic_hashtags: Hashtags wurden allen Vorschlägen hinzugefügt
+            automatic_hashtags: Hashtags werden allen Vorschlägen hinzugefügt
             comments_blocked: Kommentare blockiert
             creation_enabled: Teilnehmende können Vorschläge erstellen
             default_sort_order: Standardsortierung für Vorschläge
@@ -205,7 +205,7 @@ de:
               most_voted: Am häufigsten unterstützt
               random: Zufällig
               recent: Neueste
-              with_more_authors: Mit mehr Autoren/Autorinnen
+              with_more_authors: Mit mehr Autor:innen
             endorsements_blocked: Unterstützung blockiert
             endorsements_enabled: Unterstützung aktiviert
             proposal_answering_enabled: Vorschlagsantworten aktiviert
@@ -218,37 +218,37 @@ de:
       proposals:
         admin:
           proposal_note_created:
-            email_intro: Jemand hat eine Notiz zum Vorschlag <em>%{resource_title}</em> hinterlassen. Schaue dir diese im <a href="%{admin_proposal_info_url}">Admin-Panel</a> an
+            email_intro: Jemand hat eine Notiz zum Vorschlag <em>%{resource_title}</em> hinterlassen. Schaue dir diese im <a href="%{admin_proposal_info_url}">Admin-Panel</a> an.
             email_outro: Du hast diese Benachrichtigung erhalten, weil du diesen Vorschlag bewerten kannst.
             email_subject: Jemand hat eine Notiz zum Vorschlag "%{resource_title}" erstellt.
-            notification_title: Jemand hat eine Notiz zum Vorschlag <a href="%{resource_path}">%{resource_title}</a> erstellt. Du kannst sie über das <a href="%{admin_proposal_info_path}">Admin-Panel</a> anzeigen
+            notification_title: Jemand hat eine Notiz zum Vorschlag <a href="%{resource_path}">%{resource_title}</a> erstellt. Du kannst sie über das <a href="%{admin_proposal_info_path}">Admin-Panel</a> ansehen.
         collaborative_draft_access_accepted:
           email_subject: '%{requester_name} wurde zur Mitwirkung an "%{resource_title}" akzeptiert.'
           notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> wurde zur Mitwirkung am kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> <strong>angenommen</strong>.
         collaborative_draft_access_rejected:
-          email_subject: '%{requester_name} wurde als Mitwirkender des kollaborativen Entwurfs "%{resource_title}" abgelehnt.'
-          notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> wurde als Mitwirkender beim kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> <strong>abgelehnt</strong>.
+          email_subject: '%{requester_name} wurde als Mitwirkende:r des kollaborativen Entwurfs "%{resource_title}" abgelehnt.'
+          notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> wurde als Mitwirkende:r beim kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> <strong>abgelehnt</strong>.
         collaborative_draft_access_requested:
           email_subject: "%{requester_name} hat um Zugang zur Mitwirkung bei %{resource_title} angefragt."
           notification_title: <a href="%{requester_path}">%{requester_name} %{requester_nickname}</a> hat Zugriff beantragt, um beim kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> mitzuwirken. Bitte <strong>den Antrag akzeptieren oder ablehnen</strong>.
         collaborative_draft_access_requester_accepted:
-          email_subject: Du wurdest als Mitwirkender von "%{resource_title}" angenommen.
+          email_subject: Du wurdest als Mitwirkende:r von "%{resource_title}" angenommen.
           notification_title: Du wurdest zur Mitwirkung am kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> <strong>akzeptiert</strong>.
         collaborative_draft_access_requester_rejected:
-          email_subject: Du wurdest als Mitwirkender von "%{resource_title}" abgelehnt.
-          notification_title: Du wurdest als Mitwirkender beim kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> <strong>abgelehnt</strong>.
+          email_subject: Du wurdest als Mitwirkende:r von "%{resource_title}" abgelehnt.
+          notification_title: Du wurdest als Mitwirkende:r beim kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> <strong>abgelehnt</strong>.
         collaborative_draft_withdrawn:
           email_subject: '%{author_name} %{author_nickname} hat den kollaborativen Entwurf "%{resource_title}" zurückgezogen.'
           notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> hat den kollaborativen Entwurf <a href="%{resource_path}">%{resource_title}</a> <strong>zurückgezogen</strong>.
         creation_enabled:
           email_intro: 'Du kannst jetzt neue Vorschläge in <em>%{participatory_space_title}</em> erstellen! Beteilige dich auf dieser Seite:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{participatory_space_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{participatory_space_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-          email_subject: In "%{participatory_space_title}" sind jetzt Vorschläge verfügbar
-          notification_title: Du kannst jetzt <a href="%{resource_path}">neue Vorschläge</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a> erfassen
+          email_subject: In "%{participatory_space_title}" sind jetzt Vorschläge verfügbar.
+          notification_title: Du kannst jetzt <a href="%{resource_path}">neue Vorschläge</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a> erfassen.
         endorsing_enabled:
           email_intro: 'Du kannst Vorschläge in <em>%{participatory_space_title}</em> unterstützen! Beteilige dich auf dieser Seite:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{participatory_space_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{participatory_space_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-          email_subject: In "%{participatory_space_title}" ist es jetzt möglich, Vorschläge zu unterstützen
+          email_subject: In "%{participatory_space_title}" ist es jetzt möglich, Vorschläge zu unterstützen.
           notification_title: Du kannst nun Vorschläge in <a href="%{participatory_space_url}">%{participatory_space_title}</a> <a href="%{resource_path}">unterstützen</a>
         proposal_accepted:
           affected_user:
@@ -259,77 +259,77 @@ de:
           follower:
             email_intro: 'Der Vorschlag <em>%{resource_title}</em> wurde akzeptiert. Du kannst die Antwort auf dieser Seite lesen:'
             email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{resource_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{resource_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-            email_subject: Ein Vorschlag, dem du folgst, wurde akzeptiert
+            email_subject: Ein Vorschlag, dem du folgst, wurde akzeptiert.
             notification_title: Der Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde angenommen.
         proposal_evaluating:
           affected_user:
-            email_intro: 'Dein Vorschlag <em>%{resource_title}</em> wird derzeit geprüft. Das Resultat wird auf dieser Seite aufgeschaltet werden:'
+            email_intro: 'Dein Vorschlag <em>%{resource_title}</em> wird derzeit geprüft. Das Resultat wird auf dieser Seite angezeigt werden:'
             email_outro: Du hast diese Benachrichtigung erhalten, weil du ein/e Autor:in von <em>%{resource_title}</em> bist.
-            email_subject: Dein Vorschlag wird evaluiert
-            notification_title: Dein Vorschlag <a href="%{resource_path}">%{resource_title}</a> wird evaluiert.
+            email_subject: Dein Vorschlag wird geprüft.
+            notification_title: Dein Vorschlag <a href="%{resource_path}">%{resource_title}</a> wird geprüft.
           follower:
-            email_intro: 'Der Vorschlag <em>%{resource_title}</em> wird derzeit geprüft. Das Resultat wird auf dieser Seite aufgeschaltet werden:'
+            email_intro: 'Der Vorschlag <em>%{resource_title}</em> wird derzeit geprüft. Das Resultat wird auf dieser Seite angezeigt werden:'
             email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{resource_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{resource_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-            email_subject: Ein Vorschlag, dem du folgst, wird evaluiert
-            notification_title: Der Vorschlag <a href="%{resource_path}">%{resource_title}</a> wird evaluiert.
+            email_subject: Ein Vorschlag, dem du folgst, wird geprüft.
+            notification_title: Der Vorschlag <a href="%{resource_path}">%{resource_title}</a> wird geprüft.
         proposal_mentioned:
           email_intro: Dein Vorschlag <em>%{mentioned_proposal_title}</em> wurde <a href="%{resource_url}">hier</a> in den Kommentaren erwähnt.
           email_outro: Du hast diese Benachrichtigung erhalten, weil du ein/e Autor:in von <em>%{resource_title}</em> bist.
-          email_subject: Dein Vorschlag "%{mentioned_proposal_title}" wurde erwähnt
+          email_subject: Dein Vorschlag "%{mentioned_proposal_title}" wurde erwähnt.
           notification_title: Dein Vorschlag <em>%{mentioned_proposal_title}</em> wurde <a href="%{resource_path}">hier</a> in den Kommentaren erwähnt.
         proposal_published:
-          email_intro: '%{author_name} %{author_nickname}, dem du folgst, hat einen neuen Vorschlag <em>%{resource_title}</em> veröffentlicht. Sieh ihn dir an und dieskutiere mit:'
+          email_intro: '%{author_name} %{author_nickname}, dem du folgst, hat einen neuen Vorschlag <em>%{resource_title}</em> veröffentlicht. Sieh ihn dir an und diskutiere mit:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du %{author_nickname} folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um %{author_nickname} zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Neuer Vorschlag "%{resource_title}" von %{author_nickname}
           notification_title: Der Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde von <a href="%{author_path}">%{author_name} %{author_nickname}</a> veröffentlicht.
         proposal_published_for_space:
           email_intro: Der Vorschlag <em>%{resource_title}</em> wurde zu <em>%{participatory_space_title}</em> hinzugefügt, welchem du folgst.
           email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{participatory_space_title}</em> folgst. Du kannst den Erhalt von Benachrichtigungen über den vorherigen Link beenden.
-          email_subject: Neuer Vorschlag "%{resource_title}" zu "%{participatory_space_title}" hinzugefügt
+          email_subject: Neuer Vorschlag "%{resource_title}" zu "%{participatory_space_title}" hinzugefügt.
           notification_title: Der Vorschlag <em>%{resource_title}</em> wurde zu <em>%{participatory_space_title}</em> hinzugefügt.
         proposal_rejected:
           affected_user:
             email_intro: 'Dein Vorschlag <em>%{resource_title}</em> wurde abgelehnt. Du kannst die Antwort auf dieser Seite lesen:'
             email_outro: Du hast diese Benachrichtigung erhalten, weil du ein/e Autor:in von <em>%{resource_title}</em> bist.
-            email_subject: Dein Vorschlag wurde abgelehnt
+            email_subject: Dein Vorschlag wurde abgelehnt.
             notification_title: Dein Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde abgelehnt.
           follower:
             email_intro: 'Der Vorschlag <em>%{resource_title}</em> wurde abgelehnt. Du kannst die Antwort auf dieser Seite lesen:'
             email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{resource_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{resource_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-            email_subject: Ein Vorschlag, dem du folgst, wurde abgelehnt
+            email_subject: Ein Vorschlag, dem du folgst, wurde abgelehnt.
             notification_title: Der Vorschlag <a href="%{resource_path}">%{resource_title}</a> wurde abgelehnt.
         proposal_update_category:
           email_intro: 'Ein/e Administrator:in hat die Kategorie deines Vorschlags <em>%{resource_title}</em> aktualisiert, sieh ihn dir an:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du der/die Autor:in des Vorschlags bist.
-          email_subject: Die Vorschlagskategorie "%{resource_title}" wurde aktualisiert
-          notification_title: Die Vorschlagskategorie <a href="%{resource_path}">%{resource_title}</a> wurde von einem Administrator bzw. einer Administratorin aktualisiert.
+          email_subject: Die Vorschlagskategorie "%{resource_title}" wurde aktualisiert.
+          notification_title: Die Vorschlagskategorie <a href="%{resource_path}">%{resource_title}</a> wurde von eine/r Administrator:in aktualisiert.
         proposal_update_scope:
           email_intro: 'Ein/e Administrator:in hat den Bereich deines Vorschlags <em>%{resource_title}</em> aktualisiert, sieh es dir auf dieser Seite an:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du der/die Autor:in des Vorschlags bist.
           email_subject: Der Bereich des Vorschlags "%{resource_title}" wurde aktualisiert
-          notification_title: Der Bereich des Vorschlags <a href="%{resource_path}">%{resource_title}</a> wurde von einem Administrator bzw. einer Administratorin aktualisiert.
+          notification_title: Der Bereich des Vorschlags <a href="%{resource_path}">%{resource_title}</a> wurde von eine/r Administrator:in aktualisiert.
         voting_enabled:
           email_intro: 'Du kannst für Vorschläge in <em>%{participatory_space_title}</em> abstimmen! Beteilige dich auf dieser Seite:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{participatory_space_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{participatory_space_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
-          email_subject: In "%{participatory_space_title}" ist es jetzt möglich, für Vorschläge abzustimmen
+          email_subject: In "%{participatory_space_title}" ist es jetzt möglich, für Vorschläge abzustimmen.
           notification_title: Du kannst jetzt für Vorschläge in <a href="%{participatory_space_url}">%{participatory_space_title}</a> <a href="%{resource_path}">abstimmen</a>
     gamification:
       badges:
         accepted_proposals:
           conditions:
-            - Wähle den Bereich für die Teilnahme deiner Interessen mit der Einreichung von Vorschlägen aktiviert TODO
-            - Versuche Vorschläge zu machen, die ausgeführt werden können. Auf diese Weise werden sie eher akzeptiert.
+            - Wähle im Bereich "mein Konto" die Themen aus, die dich interessieren. In der "Zeitleiste" deines Profils erhälst du nun Benachrichtigungen, wenn neue Vorschläge zu deinen Interessen erstellt wurden.
+            - Versuche selbst Vorschläge zu machen. Diese sollten möglichst umsetzbar sein. Auf diese Weise werden sie eher akzeptiert.
           description: Dieses Abzeichen wird gewährt, wenn du neue Vorschläge machst und diese angenommen werden.
           description_another: Diese/r Benutzer:in hat %{score} akzeptierte Vorschläge.
-          description_own: Du hast %{score} Vorschläge angenommen.
+          description_own: Du hast %{score} angenommene Vorschläge.
           name: Akzeptierte Vorschläge
           next_level_in: Erhalte %{score} weitere akzeptierte Vorschläge, um das nächste Level zu erreichen!
           unearned_another: Diese/r Benutzer:in hat noch keine akzeptierten Vorschläge.
           unearned_own: Du hast noch keine akzeptierten Vorschläge.
         proposal_votes:
           conditions:
-            - Stöbere und verbringe etwas Zeit, um die Vorschläge anderer Leute zu lesen
-            - Unterstütze die Vorschläge, die du magst oder interessant findest
+            - Stöbere und verbringe etwas Zeit, um die Vorschläge anderer Leute zu lesen.
+            - Unterstütze die Vorschläge, die du magst oder interessant findest.
           description: Dieses Abzeichen wird gewährt, wenn du Vorschläge anderer Personen unterstützt.
           description_another: Diese/r Benutzer:in hat %{score} Vorschläge unterstützt.
           description_own: Du hast %{score} Vorschläge unterstützt.
@@ -339,9 +339,9 @@ de:
           unearned_own: Du hast noch keine Vorschläge unterstützt.
         proposals:
           conditions:
-            - Wähle den Bereich für die Teilnahme deiner Interessen mit der Einreichung von Vorschlägen aktiviert TODO
-            - Neuen Vorschlag erstellen
-          description: Dieses Abzeichen wird gewährt, wenn du aktiv an neuen Vorschlägen teilnimmst.
+            - Wähle im Bereich "mein Konto" die Themen aus, die dich interessieren. In der "Zeitleiste" deines Profils erhälst du nun Benachrichtigungen, wenn neue Vorschläge zu deinen Interessen erstellt wurden.
+            - Erstelle selbst Vorschläge.
+          description: Dieses Abzeichen wird gewährt, wenn du aktiv neue Vorschläge erstellst.
           description_another: Diese/r Benutzer:in hat %{score} Vorschläge erstellt.
           description_own: Du hast %{score} Vorschläge erstellt.
           name: Vorschläge
@@ -350,7 +350,7 @@ de:
           unearned_own: Du hast noch keine Vorschläge erstellt.
     metrics:
       accepted_proposals:
-        description: Anzahl der von Benutzenden akzeptierten Vorschläge
+        description: Anzahl der von Benutze:innen akzeptierten Vorschläge
         object: Vorschläge
         title: Akzeptierte Vorschläge
       endorsements:
@@ -363,8 +363,8 @@ de:
         title: Vorschläge
       votes:
         description: Anzahl der Unterstützungen zu Vorschlägen
-        object: Unterstützer
-        title: Unterstützer
+        object: Unterstützungen
+        title: Unterstützungen
     participatory_spaces:
       highlighted_proposals:
         see_all: Alle anzeigen (%{count})
@@ -402,7 +402,7 @@ de:
             discard_all: Alle verwerfen
             import_doc: Dokument importieren
           discard:
-            success: Alle Mitentscheidungsentwürfe wurden verworfen.
+            success: Alle Mitmach-Texte wurden verworfen.
           import:
             invalid: Das Formular ist ungültig!
             invalid_file: Die Datei enthält Fehler. Bearbeite den Inhalt der Datei und laden diese erneut hoch.
@@ -411,7 +411,7 @@ de:
             info_1: Die folgenden Abschnitte wurden in Vorschläge konvertiert. Vor der Veröffentlichung kannst du diese überprüfen und anpassen.
             publish_document: Dokument veröffentlichen
             save_draft: Entwurf speichern
-            title: VORSCHAU TEILNEHMERTEXT
+            title: VORSCHAU TEILNEHMER:INNEN-TEXT
           new_import:
             accepted_mime_types:
               md: Markdown
@@ -421,8 +421,8 @@ de:
             title: DOKUMENT HINZUFÜGEN
             upload_document: Dokument hochladen
           publish:
-            invalid: Vorschläge konnten nicht veröffentlicht werden
-            success: Alle Vorschläge wurden veröffentlicht
+            invalid: Vorschläge konnten nicht veröffentlicht werden.
+            success: Alle Vorschläge wurden veröffentlicht.
           sections:
             article: "<em>Artikel</em>"
             section: "<em>Abschnitt:</em> <strong>%{title}</strong>"
@@ -433,10 +433,10 @@ de:
           form:
             accepted: Angenommen
             answer_proposal: Antworten
-            evaluating: In Bewertung
+            evaluating: In Überprüfung
             not_answered: Unbeantwortet
             rejected: Abgelehnt
-            title: Antwort auf Vorschlag %{title}
+            title: Antwort auf den Vorschlag %{title}
         proposal_notes:
           create:
             error: Beim Erstellen dieser Vorschlagsnotiz ist ein Fehler aufgetreten
@@ -464,12 +464,12 @@ de:
             select_a_meeting: Termin auswählen
           index:
             actions: Aktionen
-            assign_to_valuator: Zuweisen zu dem/der Gutachter:in
+            assign_to_valuator: Dem/der Gutachter:in zuweisen
             assign_to_valuator_button: Zuweisen
             cancel: Abbrechen
             change_category: Kategorie ändern
-            change_scope: Umfang ändern
-            merge: Zu einem neuen zusammenführen
+            change_scope: Thema ändern
+            merge: Zu einem neuen Vorschlag zusammenführen
             merge_button: Zusammenführen
             publish: Veröffentlichen
             publish_answers: Antworten veröffentlichen
@@ -481,7 +481,7 @@ de:
             unassign_from_valuator: Zuweisung an den/die Gutachter:in zurückziehen
             unassign_from_valuator_button: Zuweisung aufheben
             update: Aktualisieren
-            update_scope_button: Umfang aktualisieren
+            update_scope_button: Thema aktualisieren
           new:
             create: Erstellen
             title: Vorschlag erstellen
@@ -490,8 +490,8 @@ de:
             select_a_proposal: Bitte wähle einen Vorschlag
           show:
             amendments_count: Anzahl der Ergänzungen
-            assigned_valuators: Zugewiesen Gutachter:innen
-            authors: Autoren/Autorinnen
+            assigned_valuators: Zugewiesene Gutachter:innen
+            authors: Autor:innen
             body: Haupttext
             comments_count: Anzahl der Kommentare
             comments_negative_count: Dagegen
@@ -519,12 +519,12 @@ de:
             invalid: 'Diese Vorschläge gehörten bereits zur Kategorie %{subject_name}: %{proposals}.'
             select_a_category: Bitte wähle eine Kategorie
             select_a_proposal: Bitte wähle einen Vorschlag
-            success: 'Die Vorschlag wurde erfolgreich zur Kategorie %{subject_name} aktualisiert: %{proposals}.'
+            success: 'Der Vorschlag wurde erfolgreich zur Kategorie %{subject_name} hinzugefügt: %{proposals}.'
           update_scope:
-            invalid: 'Diese Vorschläge gehörten bereits um Umfang %{subject_name}: %{proposals}.'
+            invalid: 'Diese Vorschläge gehörten bereits zum Thema %{subject_name}: %{proposals}.'
             select_a_proposal: Bitte wähle einen Vorschlag
-            select_a_scope: Bitte wähle einen Umfang
-            success: 'Die Vorschläge wurden erfolgreich zum Umfang %{subject_name} aktualisiert: %{proposals}.'
+            select_a_scope: Bitte wähle ein Thema
+            success: 'Die Vorschläge wurden erfolgreich zum Thema %{subject_name} hinzugefügt: %{proposals}.'
         proposals_imports:
           create:
             invalid: Beim Importieren der Vorschläge ist ein Problem aufgetreten
@@ -537,31 +537,31 @@ de:
             title: Vorschläge importieren
         proposals_merges:
           create:
-            success: Erfolgreich die Vorschläge in eine neue zusammengeführt.
+            success: Vorschläge erfolgreich in einem neuen Vorschlag zusammengeführt.
         proposals_splits:
           create:
-            success: Die Vorschläge wurden erfolgreich in neue aufgeteilt.
+            success: Die Vorschläge wurden erfolgreich in neue Vorschläge aufgeteilt.
         valuation_assignments:
           create:
             invalid: Bei der Zuweisung von Vorschlägen an eine/n Gutachter:in ist ein Fehler aufgetreten
             success: Die Vorschläge wurden erfolgreich dem/der Gutachter:in zugewiesen
           delete:
             invalid: Beim Zurückziehen der Zuweisung von Vorschlägen an eine/n Gutachter:in ist ein Fehler aufgetreten
-            success: Die Zuweisung der Vorschläge wurden erfolgreich von dem/der Gutachter:in zurückgezogen
+            success: Die Zuweisung der Vorschläge an den/die Gutachter:in wurde erfolgreich zurückgezogen
       admin_log:
         proposal:
-          answer: "%{user_name} beantwortete den %{resource_name} Vorschlag auf den %{space_name} Feldern"
-          create: "%{user_name} hat den %{resource_name} Vorschlag auf den %{space_name} Feldern als offizieller Vorschlag erstellt"
+          answer: "%{user_name} beantwortete den %{resource_name} Vorschlag im Bereich %{space_name}"
+          create: "%{user_name} hat den %{resource_name} Vorschlag im Bereich %{space_name} als offiziellen Vorschlag deklariert"
           publish_answer: "%{user_name} veröffentlichte die Antwort auf den Vorschlag %{resource_name} im Bereich %{space_name}"
-          update: "%{user_name} aktualisiert den %{resource_name} offiziellen Vorschlag für die %{space_name} Flächen"
+          update: "%{user_name} aktualisierte den %{resource_name} offiziellen Vorschlag für den Bereich %{space_name}"
         proposal_note:
-          create: "%{user_name} eine private Notiz zu dem %{resource_name} Vorschlag auf dem %{space_name} Feld hinterlassen"
+          create: "%{user_name} hat eine private Notiz zu dem %{resource_name} Vorschlag im Bereich %{space_name} hinterlassen"
         valuation_assignment:
           create: "%{user_name} hat den Vorschlag %{resource_name} einem/einer Gutachter:in zugewiesen"
           delete: "%{user_name} hat die Zuweisung des Vorschlags %{proposal_title} an einen/eine Gutachter:in zurückgezogen"
       answers:
         accepted: Angenommen
-        evaluating: In Bewertung
+        evaluating: In Überprüfung
         not_answered: Unbeantwortet
         rejected: Abgelehnt
         withdrawn: Zurückgezogen
@@ -591,11 +591,11 @@ de:
           publish:
             error: Bei der Veröffentlichung des gemeinsamen Entwurfs sind Fehler aufgetreten.
             irreversible_action_modal:
-              body: Nachdem der Entwurf als Vorschlag veröffentlicht wurde, kann der Entwurf nicht mehr bearbeitet werden. Der Vorschlag akzeptiert keine neuen Autoren/Autorinnen oder Beiträge.
+              body: Nachdem der Entwurf als Vorschlag veröffentlicht wurde, kann der Entwurf nicht mehr bearbeitet werden. Der Vorschlag akzeptiert keine neuen Autor:innen oder Beiträge.
               cancel: Abbrechen
               ok: Als Vorschlag veröffentlichen
               title: Die folgende Aktion ist irreversibel
-            success: Collaborative Draft erfolgreich als Vorschlag veröffentlicht.
+            success: Gemeinsamer Entwurf erfolgreich als Vorschlag veröffentlicht.
           view_collaborative_draft: Gemeinsamen Entwurf anzeigen
           withdraw:
             error: Es gab Fehler beim Schließen des gemeinsamen Entwurfs.
@@ -607,11 +607,11 @@ de:
             success: Kollaborativer Entwurf erfolgreich zurückgezogen.
         count:
           drafts_count:
-            one: "%{count} kollaborativer Entwurf"
-            other: "%{count} kollaborative Entwürfe"
+            one: "%{count} gemeinsamer Entwurf"
+            other: "%{count} gemeinsame Entwürfe"
         create:
-          error: Beim Erstellen dieser kollaborativen Entwürfe ist ein Problem aufgetreten
-          success: Collaborative Draft wurde erfolgreich erstellt.
+          error: Beim Erstellen dieser gemeinsamen Entwürfe ist ein Problem aufgetreten
+          success: Gemeinsame Entwürfe wurde erfolgreich erstellt.
         edit:
           attachment_legend: "(Optional) Füge einen Anhang hinzu"
           back: Zurück
@@ -625,7 +625,7 @@ de:
           open: Offen
           published: Veröffentlicht
           related_to: In Zusammenhang mit
-          scope: Umfang
+          scope: Thema
           search: Suchen
           state: Status
           withdrawn: Zurückgezogen
@@ -641,33 +641,33 @@ de:
         new_collaborative_draft_button:
           new_collaborative_draft: Neuer gemeinsamer Entwurf
         orders:
-          label: 'Bestellentwürfe von:'
+          label: 'Bestellentwürfe von:' TODO
           most_contributed: Am meisten beigetragen
           random: Zufällig
           recent: Kürzlich hinzugefügt
         requests:
           accepted_request:
-            error: Könnte nicht als Mitarbeiter akzeptiert werden, versuche es später erneut.
-            success: "@%{user} wurde erfolgreich als Partner akzeptiert"
+            error: Konnte nicht als Mitbearbeiter:in akzeptiert werden, versuche es später erneut.
+            success: "@%{user} wurde erfolgreich als Mitbearbeiter:in akzeptiert".
           access_requested:
             error: Deine Anfrage konnte nicht abgeschlossen werden. Versuche es später erneut.
-            success: Deine Anfrage zur Zusammenarbeit wurde erfolgreich gesendet
+            success: Deine Anfrage zur Zusammenarbeit wurde erfolgreich gesendet.
           collaboration_requests:
             accept_request: Akzeptieren
             reject_request: Ablehnen
-            title: Zusammenarbeit Anfragen
+            title: Anfragen zur Zusammenarbeit
           rejected_request:
-            error: Konnte nicht als Mitarbeiter abgelehnt werden, versuche es später erneut.
-            success: "@%{user} wurde als Collaborator erfolgreich abgelehnt"
+            error: Konnte nicht als Mitbearbeiter:in abgelehnt werden, versuche es später erneut.
+            success: "@%{user} wurde erfolgreich als Mitbearbeiter:in abgelehnt".
         show:
           back: Zurück
           edit: Den gemeinsamen Entwurf bearbeiten
           final_proposal: Endgültiger Vorschlag
-          final_proposal_help_text: Dieser Entwurf ist fertig. Du kannst den endgültigen fertigen Vorschlag sehen
+          final_proposal_help_text: Dieser Entwurf ist fertig. Du kannst den endgültigen fertigen Vorschlag sehen.
           hidden_authors_count:
             one: und %{count} weitere Person
             other: und %{count} weitere Personen
-          info-message: Dies ist ein <strong>kollaborativen Entwurf</strong> für einen Vorschlag. Dies bedeutet, dass du den Autoren/Autorinnen helfen kannst, den Vorschlag zu gestalten, indem du den unten stehenden Kommentarabschnitt verwendest, oder ihn direkt verbesserst, indem du Zugriff anforderst, um ihn zu bearbeiten. Sobald die Autoren/Autorinnen dir Zugriff gewähren, kannst du Änderungen an diesem Entwurf vornehmen.
+          info-message: Dies ist ein <strong>gemeinsamer Entwurf</strong> für einen Vorschlag. Dies bedeutet, dass du den Autor:innen helfen kannst, den Vorschlag zu gestalten, indem du den unten stehenden Kommentarabschnitt verwendest, oder ihn direkt verbesserst, indem du Zugriff anforderst, um ihn zu bearbeiten. Sobald die Autor:innen dir Zugriff gewähren, kannst du Änderungen an diesem Entwurf vornehmen.
           publish: Veröffentlichen
           publish_info: Veröffentliche diese Version des Entwurfs oder
           published_proposal: Veröffentlichter Vorschlag
@@ -681,9 +681,9 @@ de:
           withdrawn: Zurückgezogen
         update:
           error: Beim Speichern des gemeinsamen Entwurfs sind Fehler aufgetreten.
-          success: Collaborative Draft wurde erfolgreich aktualisiert.
+          success: Gemeinsamer Entwurf wurde erfolgreich aktualisiert.
         wizard_aside:
-          back_from_collaborative_draft: Zurück zu gemeinschaftlichen Entwürfen
+          back_from_collaborative_draft: Zurück zu gemeinsamen Entwürfen.
           info: Du erstellst einen <strong>gemeinsamen Entwurf</strong>.
         wizard_header:
           title: Erstelle deinen gemeinsamen Entwurf
@@ -702,7 +702,7 @@ de:
       models:
         collaborative_draft:
           fields:
-            authors: Autoren/Autorinnen
+            authors: Autor:innen
             comments: Kommentare
             contributions: Beiträge
         proposal:
@@ -714,12 +714,12 @@ de:
             official_proposal: Offizieller Vorschlag
             published_answer: Veröffentlichte Antwort
             published_at: Veröffentlicht unter
-            scope: Umfang
+            scope: Thema
             state: Status
             title: Titel
             valuator: Gutachter:in
             valuators: Gutachter:innen
-            votes: Stimmen
+            votes: Unterstützungen
       new:
         limit_reached: Du kannst keine neuen Vorschläge erstellen, da du das Maximum erreicht hast.
       participatory_text_proposal:
@@ -734,7 +734,7 @@ de:
       proposals:
         compare:
           continue: Fortsetzen
-          no_similars_found: Gut gemacht! Keine ähnlichen Vorschläge gefunden
+          no_similars_found: Gut gemacht! Keine ähnlichen Vorschläge gefunden.
           title: Ähnliche Vorschläge
         complete:
           send: Senden
@@ -753,7 +753,7 @@ de:
           edit_documents: Dokumente bearbeiten
           edit_image: Bild bearbeiten
           gallery_legend: "(Optional) Ein Bild zur Vorschlagskarte hinzufügen"
-          select_a_category: Bitte wählen sie eine Kategorie
+          select_a_category: Bitte wähle eine Kategorie
           send: Abschicken
           title: Vorschlag bearbeiten
         edit_draft:
@@ -769,7 +769,7 @@ de:
           my_proposals: Meine Vorschläge
           origin: Ursprung
           related_to: Bezüglich
-          scope: Umfang
+          scope: Thema
           search: Suche
           state: Status
           type: Art
@@ -801,17 +801,17 @@ de:
           most_voted: Am meisten unterstützt
           random: Zufällig
           recent: Kürzlich hinzugefügt
-          with_more_authors: Mit mehr Autoren/Autorinnen
+          with_more_authors: Mit mehreren Autor:innen
         participatory_texts:
           index:
             document_index: Dokumentenindex
           view_index:
             see_index: Index anzeigen
         placeholder:
-          address: 37 Homewood Drive Brownsburg, IN 46112
+          address: Goethestraße 29, 30163 Hannover
         preview:
           announcement_body: Dein Vorschlag wurde als Entwurf gespeichert. Er muss veröffentlicht werden, damit er auf der Seite erscheint.
-          announcement_title: Dein Vorschlag wurde noch nicht veröffentlicht
+          announcement_title: Dein Vorschlag wurde noch nicht veröffentlicht.
           modify: Vorschlag ändern
           proposal_edit_before_minutes:
             one: Du kannst diesen Vorschlag in der ersten Minute nach seiner Veröffentlichung bearbeiten. Nach Ablauf dieses Zeitfensters kannst du diesen nicht mehr bearbeiten.
@@ -838,12 +838,12 @@ de:
             other: und %{count} weitere Personen
           link_to_collaborative_draft_help_text: Dieser Vorschlag ist das Ergebnis eines gemeinsamen Entwurfs. Überprüfe die Geschichte
           link_to_collaborative_draft_text: Gemeinsamen Entwurf anzeigen
-          link_to_promoted_emendation_help_text: Dieser Vorschlag hat eine markierte Berichtigung
-          link_to_promoted_emendation_text: Siehe abgelehnte Berichtigung.
-          link_to_proposal_from_emendation_help_text: Dies ist eine abgelehnte Berichtigung
+          link_to_promoted_emendation_help_text: Dieser Vorschlag hat eine markierte Änderung
+          link_to_promoted_emendation_text: Siehe abgelehnte Änderung.
+          link_to_proposal_from_emendation_help_text: Dies ist eine abgelehnte Änderung
           link_to_proposal_from_emendation_text: Den Vorschlag ansehen
           proposal_accepted_reason: 'Dieser Vorschlag wurde angenommen, weil:'
-          proposal_in_evaluation_reason: Dieser Vorschlag wird evaluiert
+          proposal_in_evaluation_reason: Dieser Vorschlag wird überprüft
           proposal_rejected_reason: 'Dieser Vorschlag wurde abgelehnt, weil:'
           read_less: Weniger lesen
           read_more: Weiterlesen
@@ -867,7 +867,7 @@ de:
             one: UNTERSTÜTZUNG
             other: UNTERSTÜTZUNGEN
           most_popular_proposal: Beliebteste Vorschläge
-          need_more_votes: Benötigt weitere Unterstützungen
+          need_more_votes: Benötigt weitere Unterstützung
         voting_rules:
           can_accumulate_supports_beyond_threshold:
             description: Jeder Vorschlag kann mehr als %{limit} Unterstützungen sammeln
@@ -878,7 +878,7 @@ de:
           proposal_limit:
             description: Du kannst bis zu %{limit} Vorschläge erstellen.
           threshold_per_proposal:
-            description: Um validiert zu werden, müssen die Vorschläge %{limit} Unterstützungen erreichen
+            description: Um anerkannt zu werden, müssen die Vorschläge %{limit} Unterstützungen erreichen
           title: 'Die Abstimmung unterliegt folgenden Regeln:'
           vote_limit:
             description: Du kannst bis zu %{limit} Vorschläge abstimmen.
@@ -889,7 +889,7 @@ de:
           back_from_step_1: Zurück zu Vorschlägen
           back_from_step_2: Zurück zu Vorschlägen
           back_from_step_3: Zurück zum Vergleich von Vorschlägen
-          back_from_step_4: Zurück zum Entwurf bearbeiten
+          back_from_step_4: Zurück zu Entwurf bearbeiten
           info: Du erstellst einen <strong>Vorschlag</strong>.
         wizard_steps:
           current_step: Aktueller Schritt
@@ -899,12 +899,12 @@ de:
           step_3: Abschließen
           step_4: Vorschlag veröffentlichen
           step_of: Schritt %{current_step_num} von %{total_steps}
-          title: Schritten zur Erstellung von Vorschlägen
+          title: Schritte zur Erstellung von Vorschlägen
       proposals_picker:
         choose_proposals: Vorschläge auswählen
         close: Schließen
-        more_proposals: Es gibt %{number} weitere Vorschläge. Spezifiziere deine Suche, um sie zu finden.
-        no_proposals: Kein Vorschlag entspricht deinen Suchkriterien oder es ist keine Vorschlag geplant.
+        more_proposals: Es gibt %{number} weitere Vorschläge. Bestimme deine Suche genauer, um sie zu finden.
+        no_proposals: Kein Vorschlag entspricht deinen Suchkriterien oder es ist keine Vorschlag vorhanden.
       publish:
         error: Beim Veröffentlichen des Vorschlags ist ein Fehler aufgetreten.
         success: Vorschlag erfolgreich veröffentlicht.
@@ -925,7 +925,7 @@ de:
           back_to_resource: Zurück zum Vorschlag gehen
       withdraw:
         errors:
-          has_supports: Dieser Vorschlag kann nicht zurückgezogen werden, da er bereits Unterstützung hat.
+          has_supports: Dieser Vorschlag kann nicht zurückgezogen werden, da er bereits unterstützt wird.
     resource_links:
       copied_from_component:
         proposal_proposal: Ähnliche Vorschläge
