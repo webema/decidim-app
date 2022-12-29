@@ -1,7 +1,5 @@
-GIT
-  remote: https://github.com/webema/decidim-ideas.git
-  revision: 94a410bbbd1736f3cd5b77c3dc1771a73e02a9e5
-  branch: main
+PATH
+  remote: ../decidim-ideas
   specs:
     decidim-ideas (0.27.0)
       acts_as_votable

@@ -11,8 +11,8 @@ DECIDIM_VERSION = '0.27.1'.freeze
 gem 'decidim', DECIDIM_VERSION
 # gem 'decidim-initiatives', DECIDIM_VERSION
 
-gem 'decidim-ideas', github: 'webema/decidim-ideas', branch: 'main'
-# gem 'decidim-ideas', path: '../decidim-ideas'
+# gem 'decidim-ideas', github: 'webema/decidim-ideas', branch: 'main'
+gem 'decidim-ideas', path: '../decidim-ideas'
 
 # gem "decidim-decidim_awesome"
 

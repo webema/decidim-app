@@ -1,0 +1,57 @@
+class FixVersions < ActiveRecord::Migration[6.1]
+  def change
+    def change
+
+
+      PaperTrail::Version.where.not(object: nil).find_each do |version|
+
+        if version.old_object_changes
+          object_changes = {}
+          old_object_changes = YAML.load(version.old_object_changes)
+
+          old_object_changes.each do |attribute, change|
+            object_change = []
+
+            change.each do |c|
+              begin
+                object_change << JSON.parse(c)
+              rescue
+                object_change << c
+              end
+            end
+            object_changes[attribute] = object_change
+          end
+
+          version.update!(object_changes: object_changes)
+        end
+      end
+
+
+    end
+  end
+end
+
+
+# def parse_i18n_changeset(attribute, values, type, diff)
+#   values_i18n = JSON.parse(values.last)
+
+#   Rails.logger.error '#'*100
+#   Rails.logger.error values_i18n.keys.to_yaml
+
+#   values_i18n.keys.each do |locale, _value|
+#     first_value = JSON.parse(values.first).try(:[], locale)
+#     last_value = JSON.parse(values.last).try(:[], locale)
+#     next if first_value == last_value
+
+#     attribute_locale = "#{attribute}_#{locale}".to_sym
+#     diff.update(
+#       attribute_locale => {
+#         type: type,
+#         label: generate_i18n_label(attribute, locale),
+#         old_value: first_value,
+#         new_value: last_value
+#       }
+#     )
+#   end
+#   diff
+# end
