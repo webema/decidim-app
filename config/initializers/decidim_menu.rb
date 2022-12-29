@@ -22,8 +22,8 @@ Decidim.menu :menu do |menu|
             active: :inclusive
   menu.move :assemblies, after: :ideas
   menu.move :participatory_processes, after: :assemblies
-  # menu.item 'Termine',
-  #           '/meetings',
-  #           position: 5,
-  #           active: :inclusive
+  menu.item 'Termine',
+            '/meetings',
+            position: 5,
+            active: :inclusive
 end
