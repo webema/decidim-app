@@ -332,3 +332,100 @@
 
 
 }
+
+
+.home-section.proposals {
+  .card-wrapper {
+    position: relative;
+    padding-top: 66.66%; /* 3:2  Aspect Ratio or 75% for 4:3 */
+
+    .card {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+      background-size: cover;
+
+
+
+      .teaser {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+
+        transform: rotate(-2deg);
+
+        width: 45%;
+        padding: .5rem;
+
+        background-color: $white;
+
+        font-weight: 400;
+        font-size: .9rem;
+        line-height: 1.1rem;
+        color: $black;
+
+        .link {
+          font-weight: 700;
+          color: var(--secondary);
+
+          svg {
+            height: 12px;
+          }
+        }
+
+        // @include breakpoint(small) {
+        //   width: 45%;
+        //   font-size: .8rem;
+        //   line-height: 1rem;
+        //   padding: .3rem;
+        // }
+
+        // @include breakpoint(medium) {
+        //   width: 45%;
+        //   height: auto;
+        //   padding: .5rem;
+
+        //   font-size: .9rem;
+        //   line-height: 1.1rem;
+        // }
+
+
+        // @include breakpoint(large) {
+        //   width: 45%;
+        //   padding: .5rem;
+
+        //   font-size: 1.2rem;
+        //   line-height: 1.4rem;
+        // }
+
+        a {
+          // text-decoration: none;
+          font-weight: 600;
+
+          .icon.inline {
+            @include breakpoint(small) {
+              width: 9px;
+              height: 9px;
+            }
+
+            @include breakpoint(medium) {
+              width: 10px;
+              height: 10px;
+            }
+
+
+            @include breakpoint(large) {
+              width: 12px;
+              height: 12px;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
