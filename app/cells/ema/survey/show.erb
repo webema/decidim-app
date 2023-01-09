@@ -1,9 +1,6 @@
 <div class="reveal ema-survey-modal" id="emaSurveyModal" data-reveal data-close-on-click="false" data-close-on-esc="false" data-survey-id="<%= current_survey_id %>">
   <div class="ema-survey-modal-header">
     <h2><%= current_survey.title %></h2>
-      <button class="close-button" data-close aria-label="Close reveal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
   </div>
 
   <div id="emaSurveyIntro" class="ema-survey-intro" data-toggler=".hidden">
@@ -17,8 +14,7 @@
     </button>
   </div>
 
-  <div class="ema-survey-iframe-container hidden" id="emaSurveyIframeContainer" data-toggler=".hidden">
-    <%= raw iframe_tag %>
+  <div class="ema-survey-iframe-container hidden" id="emaSurveyIframeContainer" data-toggler=".hidden" data-iframe='<%=  iframe_tag %>'>
   </div>
 
   <div id="emaSurveyOutro" class="ema-survey-outro hidden" data-toggler=".hidden" >
@@ -29,5 +25,4 @@
         Schließen
     </button>
   </div>
-
 </div>

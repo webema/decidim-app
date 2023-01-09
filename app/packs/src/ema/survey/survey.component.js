@@ -4,13 +4,18 @@ import { iframeResize } from "iframe-resizer"
 
 $(document).ready(async function() {
   await new Promise(r => setTimeout(r, 2000));
-  var surveyModal = $('#emaSurveyModal')
-  var modal = document.getElementById('emaSurveyModal')
+  const surveyModal = $('#emaSurveyModal')
+  const modal = document.getElementById('emaSurveyModal')
 
   if (surveyModal.length) {
 
-    var survey = new Foundation.Reveal(surveyModal);
+    const survey = new Foundation.Reveal(surveyModal);
     survey.open();
+
+    const iframeContainer = $('#emaSurveyIframeContainer')
+
+    const iFrameHtml = $(iframeContainer).data('iframe');
+    $(iframeContainer).html(iFrameHtml);
 
     const iframe = modal.querySelector('iframe');
     const loadingIndicator = modal.querySelector('.loading-indicator');
