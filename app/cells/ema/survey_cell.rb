@@ -28,10 +28,10 @@ module Ema
     end
 
     def iframe_tag
-      tag.div(class: 'resizable-iframe-container', data: { controller: 'iframe-resizer' }) do
+      tag.div(class: 'resizable-iframe-container') do
         tag.div(class: 'loading-indicator') do
           'Umfrage wird geladen...'
-        end + Decidim::IframeDisabler.new(tag.iframe(src: "#{current_survey.url}?iframe=true", id: 'myIframe', class: '')).perform.html_safe
+        end + tag.iframe(src: "#{current_survey.url}?iframe=true", id: 'myIframe', class: '')
       end
     end
 
