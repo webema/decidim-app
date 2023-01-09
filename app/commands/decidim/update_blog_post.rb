@@ -43,7 +43,8 @@ module Decidim
       {
         title: form.title,
         body: form.body,
-        hide_hero_image: form.hide_hero_image
+        hide_hero_image: form.hide_hero_image,
+        published: form.published
       }.merge(
         attachment_attributes(:hero_image)
       )

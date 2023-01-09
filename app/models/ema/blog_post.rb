@@ -15,5 +15,9 @@ module Ema
     belongs_to :organization, foreign_key: :decidim_organization_id, class_name: 'Decidim::Organization'
 
     validates :title, presence: true
+
+    scope :published, -> {
+      where(published: true)
+    }
   end
 end

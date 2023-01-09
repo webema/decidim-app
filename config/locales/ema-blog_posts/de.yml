@@ -1,9 +1,12 @@
 de:
-  activerecord:
+  activemodel:
     attributes:
-      ema/blog_post:
+      ema_blog_post:
         title: Titel
         body: Text
+        published: Öffentlich
+        hero_image: Kopfbild
+        hide_hero_image: Kopfbild verbergen
 
   decidim:
     blog_posts_content_block:
@@ -30,6 +33,9 @@ de:
           edit: Bearbeiten
           delete: Löschen
           delete_confirmation: <p>Bist Du sicher, dass Du diesen Blogpost löschen möchtest?</p>
+          published:
+            true: Öffentlich
+            false: Nicht öffentlich
         index:
           title: Blog
           new_blog_post: Neuer Blogpost

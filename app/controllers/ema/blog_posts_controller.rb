@@ -16,7 +16,7 @@ module Ema
     private
 
     def blog_posts_for_organization
-      @blog_posts_for_organization ||= Ema::BlogPost.where(organization: current_organization)
+      @blog_posts_for_organization ||= Ema::BlogPost.published.where(organization: current_organization)
     end
   end
 end

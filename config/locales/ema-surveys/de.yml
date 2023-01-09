@@ -1,12 +1,14 @@
 de:
-  activerecord:
+  activemodel:
     attributes:
-      ema/survey:
+      ema_survey:
         title: Titel
         body: Text
         hero_image: Kopfbild
         active: Umfrage ist aktiv
         url: URL des Formulars auf formulare-e.de
+        intro: Einleitung Text
+        outro: Danksagung Text
   ema:
     surveys:
       admin:
