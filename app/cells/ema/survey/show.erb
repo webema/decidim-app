@@ -1,0 +1,33 @@
+<div class="reveal ema-survey-modal" id="emaSurveyModal" data-reveal data-close-on-click="false" data-close-on-esc="false" data-survey-id="<%= current_survey_id %>">
+  <div class="ema-survey-modal-header">
+    <h2><%= current_survey.title %></h2>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div id="emaSurveyIntro" class="ema-survey-intro" data-toggler=".hidden">
+    <p>
+      <%= decidim_sanitize_editor_admin(current_survey.intro.html_safe) %>
+    </p>
+
+    <a class="button primary expanded" data-toggle="emaSurveyIntro emaSurveyIframeContainer">Ja gerne</a>
+    <button class="button expanded secondary" data-close aria-label="Close reveal" type="button">
+        Keine Zeit
+    </button>
+  </div>
+
+  <div class="ema-survey-iframe-container hidden" id="emaSurveyIframeContainer" data-toggler=".hidden">
+    <%= raw iframe_tag %>
+  </div>
+
+  <div id="emaSurveyOutro" class="ema-survey-outro hidden" data-toggler=".hidden" >
+    <p>
+      <%= decidim_sanitize_editor_admin(current_survey.outro.html_safe) %>
+    </p>
+    <button class="button expanded primary" data-close aria-label="Close reveal" type="button">
+        Schließen
+    </button>
+  </div>
+
+</div>

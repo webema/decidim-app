@@ -6,6 +6,13 @@ Decidim.menu :admin_menu do |menu|
             active: :inclusive,
             if: allowed_to?(:update, :organization, organization: current_organization)
 
+  menu.item I18n.t('admin_menu.surveys', scope: 'decidim.ema'),
+            '/admin/survey',
+            icon_name: 'question-mark',
+            position: 7.2,
+            active: :inclusive,
+            if: allowed_to?(:update, :organization, organization: current_organization)
+
   menu.remove_item :newsletters
   menu.item I18n.t('admin_menu.newsletters', scope: 'decidim.ema'),
             '/admin/newsletters',

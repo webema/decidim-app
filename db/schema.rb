@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_17_142611) do
+ActiveRecord::Schema.define(version: 2023_01_03_125402) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1664,6 +1664,18 @@ ActiveRecord::Schema.define(version: 2022_10_17_142611) do
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "hide_hero_image", default: false
     t.index ["decidim_organization_id"], name: "index_ema_blog_posts_on_decidim_organization_id"
+  end
+
+  create_table "ema_surveys", force: :cascade do |t|
+    t.string "title"
+    t.text "intro"
+    t.text "outro"
+    t.string "url"
+    t.boolean "active", default: false
+    t.bigint "decidim_organization_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["decidim_organization_id"], name: "index_ema_surveys_on_decidim_organization_id"
   end
 
   create_table "oauth_access_grants", force: :cascade do |t|

@@ -1,0 +1,31 @@
+= decidim_form_for(@form, url: survey_path, html: { class: 'form' }) do |f|
+  .card
+    .card__content
+      .card-divider
+        %h2.card-title
+          = t('title', scope: 'ema.surveys.admin.show')
+
+      .card-section
+        .row.column
+          = f.text_field :title, required: true
+
+        .row.column
+          .field
+            = f.editor :intro, lines: 4, toolbar: :full
+
+        .row.column
+          .field
+            = f.editor :outro, lines: 4, toolbar: :full
+
+        .row.column
+          = f.text_field :url, required: true
+
+        .row.column
+          = f.check_box :active
+
+        .row.columns.xlarge-6
+          .field
+            = f.upload :hero_image
+
+  .button--double
+    = f.submit t('save', scope: 'ema.surveys.admin.show'), class: 'button', data: { disable_with: true }
