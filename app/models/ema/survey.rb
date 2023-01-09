@@ -17,7 +17,7 @@ module Ema
 
     validates :title, :url, presence: true
     validate :endpoint, if: :url_changed?
-    validate :availability, if: :url_changed?
+    # validate :availability, if: :url_changed?
 
     private
 
