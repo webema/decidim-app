@@ -19,6 +19,9 @@ $light_gray: #f4f4f4;
 @import './zukunftsprozess/processes';
 @import './zukunftsprozess/lockup';
 @import './zukunftsprozess/static_pages';
+@import './zukunftsprozess/surveys';
+
+@import 'motion-ui/dist/motion-ui';
 
 html, body {
   text-transform: none !important;

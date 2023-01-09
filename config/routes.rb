@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   resources :help_sections, only: :show, module: 'decidim'
 
   Decidim::Admin::Engine.routes.draw do
+    resource :survey
     resources :posts, controller: 'blog_posts'
     resources :newsletters, controller: 'user_exports', only: %i[index create]
   end

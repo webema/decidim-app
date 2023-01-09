@@ -112,6 +112,7 @@ de:
       admin_menu:
         blog_posts: Blog
         newsletters: Newsletter
+        surveys: Umfragen
 
     length_validator:
       minimum:
