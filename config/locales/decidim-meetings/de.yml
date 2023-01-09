@@ -393,7 +393,7 @@ de:
         export_calendar: Kalender exportieren
       close_meeting_reminder_mailer:
         close_meeting_reminder:
-          body: Der Termin <a href="%{meeting_path}">"%{meeting_title}"</a> kann beendet werden. Bitte füge ein Protokoll über den "Termin beenden" button hinzu.
+          body: Der Termin <a href="%{meeting_path}">"%{meeting_title}"</a> kann beendet werden. Gehe hierfür ins Admin-Dashboard in die Terminübersicht und klicke auf das kleine Schloss-Symbol. Hierüber kannst du dem Termin auch ein Protokoll beifügen. Wir empfehlen dies zur höheren Transparenz.
           greetings: Viele Grüße,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
           hello: Hallo %{username},
           subject: Du kannst deinen Termin mit einem Protokoll auf %{organization_name} beenden
