@@ -50,5 +50,5 @@ function addToAnsweredSurveys(survey) {
   const surveyId = survey.getAttribute('data-survey-id');
   var answeredSurveys = new Set(JSON.parse(Cookies.get('decidim-answered-surveys') || JSON.stringify([])));
   answeredSurveys.add(surveyId);
-  Cookies.set('decidim-answered-surveys', JSON.stringify(Array.from(answeredSurveys)), { domain: 'localhost', expires: 365 });
+  Cookies.set('decidim-answered-surveys', JSON.stringify(Array.from(answeredSurveys)), { expires: 365 });
 }
