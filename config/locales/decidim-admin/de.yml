@@ -822,11 +822,11 @@ de:
           update: Aktualisieren
       participatory_space_private_users:
         create:
-          error: Beim Hinzufügen eines privaten Benutzers bzw. einer privaten Benutzerin für diese konKreation ist ein Fehler aufgetreten.
-          success: Der private Benutzerzugriff für diese konKreation wurde erfolgreich erstellt.
+          error: Beim Hinzufügen eines privaten Benutzers bzw. einer privaten Benutzerin ist ein Fehler aufgetreten.
+          success: Ein/e private Benutzer:in wurde erfolgreich erstellt.
         destroy:
-          error: Beim Löschen eines privaten Benutzers bzw. einer privaten Benutzerin für diese konKreation ist ein Fehler aufgetreten.
-          success: Der private Benutzerzugriff für diese konKreation wurde erfolgreich gelöscht.
+          error: Beim Löschen eines privaten Benutzers bzw. einer privaten Benutzerin ist ein Fehler aufgetreten.
+          success: Ein/e private Benutzer:in wurde erfolgreich gelöscht.
         index:
           import_via_csv: Aus CSV-Datein importieren
           title: Private Benutzer:innen
