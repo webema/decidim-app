@@ -10,6 +10,13 @@ $zp_gray: #DEE2E6;
 $zp_gray_medium: lighten($zp_gray, 3%);
 $zp_gray_light: lighten($zp_gray, 7%);
 
+$zp_blue: #00b5e5;
+$zp_purple: #551285;
+$zp_pink: #de007e;
+$zp_green: #76b82a;
+$zp_yellow: #ffe900;
+
+
 $light_gray: #f4f4f4;
 
 @import './zukunftsprozess/startpage';
@@ -667,5 +674,11 @@ ul.card-data {
   .with_any_space_check_boxes_tree_filter
    {
     display: none;
+  }
+}
+
+.tags {
+  a:hover {
+    text-decoration: none;
   }
 }
