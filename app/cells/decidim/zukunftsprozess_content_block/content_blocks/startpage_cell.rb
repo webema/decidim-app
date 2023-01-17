@@ -16,7 +16,7 @@ module Decidim
         end
 
         def recent_blog_post
-          Ema::BlogPost.where(organization: current_organization).order(created_at: :desc).first
+          Ema::BlogPost.published.where(organization: current_organization).order(created_at: :desc).first
         end
       end
     end
