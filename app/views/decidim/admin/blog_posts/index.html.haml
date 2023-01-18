@@ -12,6 +12,7 @@
           %tr
             %th Titel
             %th Erstellt
+            %th Veröffentlicht
             %th.table-list__actions
 
         %tbody
@@ -21,6 +22,8 @@
                 = link_to blog_post.title, post_path(blog_post)
               %td
                 = l(blog_post.created_at, format: :short)
+              %td
+                = t(blog_post.published.to_s, scope: 'ema.blog_posts.admin.show.published')
               %td
                 = icon_link_to 'eye', post_path(blog_post), t('show', scope: 'ema.blog_posts.admin.index')
                 = icon_link_to 'pencil', edit_post_path(blog_post), t('edit', scope: 'ema.blog_posts.admin.index')
