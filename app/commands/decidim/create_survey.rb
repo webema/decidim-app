@@ -41,6 +41,8 @@ module Decidim
       {
         title: form.title,
         intro: form.intro,
+        accept_button_text: form.accept_button_text,
+        decline_button_text: form.decline_button_text,
         outro: form.outro,
         active: form.active,
         url: form.url,
