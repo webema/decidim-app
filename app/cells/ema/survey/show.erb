@@ -8,9 +8,9 @@
       <%= decidim_sanitize_editor_admin(current_survey.intro.html_safe) %>
     </p>
 
-    <a class="button primary expanded" data-toggle="emaSurveyIntro emaSurveyIframeContainer">Ja gerne</a>
+    <a class="button primary expanded" data-toggle="emaSurveyIntro emaSurveyIframeContainer"><%= current_survey.accept_button_text %></a>
     <button class="button expanded secondary" data-close aria-label="Close reveal" type="button">
-        Keine Zeit
+        <%= current_survey.decline_button_text %>
     </button>
   </div>
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_09_130539) do
+ActiveRecord::Schema.define(version: 2023_01_19_162153) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1676,6 +1676,8 @@ ActiveRecord::Schema.define(version: 2023_01_09_130539) do
     t.bigint "decidim_organization_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "accept_button_text"
+    t.string "decline_button_text"
     t.index ["decidim_organization_id"], name: "index_ema_surveys_on_decidim_organization_id"
   end
 

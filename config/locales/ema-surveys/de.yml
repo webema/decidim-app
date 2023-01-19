@@ -9,6 +9,8 @@ de:
         url: URL des Formulars auf formulare-e.de
         intro: Einleitung Text
         outro: Danksagung Text
+        accept_button_text: Teilnehmen Button
+        decline_button_text: Nicht Teilnehmen Button
   ema:
     surveys:
       admin:
