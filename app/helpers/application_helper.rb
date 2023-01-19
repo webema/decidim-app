@@ -27,4 +27,8 @@ module ApplicationHelper
       decidim_participatory_processes.participatory_processes_path
     end
   end
+
+  def banner_image_path(process)
+    process.attached_uploader(:hero_image)&.variant_path(:large) || process.type.attached_uploader(:banner_image)&.path
+  end
 end
