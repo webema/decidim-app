@@ -19,6 +19,8 @@ module Ema
     validate :endpoint, if: :url_changed?
     # validate :availability, if: :url_changed?
 
+    auto_strip_attributes :url
+
     private
 
     def formulare_e_url?

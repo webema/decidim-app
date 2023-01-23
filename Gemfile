@@ -38,6 +38,8 @@ gem 'dalli'
 gem "sentry-ruby"
 gem "sentry-rails"
 
+gem "auto_strip_attributes", "~> 2.6"
+
 group :development, :test do
   gem 'byebug', '~> 11.0', platform: :mri
   gem 'brakeman'
