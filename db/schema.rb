@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_19_162153) do
+ActiveRecord::Schema.define(version: 2023_01_24_180522) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1665,6 +1665,17 @@ ActiveRecord::Schema.define(version: 2023_01_19_162153) do
     t.boolean "hide_hero_image", default: false
     t.boolean "published", default: true
     t.index ["decidim_organization_id"], name: "index_ema_blog_posts_on_decidim_organization_id"
+  end
+
+  create_table "ema_sent_emails", force: :cascade do |t|
+    t.string "mailer"
+    t.string "action"
+    t.string "mailer_action"
+    t.string "to"
+    t.string "from"
+    t.string "subject"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "ema_surveys", force: :cascade do |t|

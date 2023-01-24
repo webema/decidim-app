@@ -6,6 +6,7 @@ module EmailLoggingAfterFilter
       private
 
       def log_email
+        Ema::SentEmail.create(log_email_hash)
         Rails.logger.info("sent email: #{log_email_hash.to_json}") if email_was_sent?
       end
 
