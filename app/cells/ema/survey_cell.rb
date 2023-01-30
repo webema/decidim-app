@@ -8,6 +8,7 @@ module Ema
     include Decidim::SanitizeHelper
 
     def show
+      return if cookies['decidim-consent'] == '{}'
       return unless current_survey.present?
       return if answered_surveys.include?(current_survey_id)
       render
