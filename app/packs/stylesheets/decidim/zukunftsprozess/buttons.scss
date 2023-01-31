@@ -68,6 +68,10 @@ $button-color: #FEF166;
       bottom: 0px;
       left: 0px;
     }
+
+    &.button-primary-white {
+      background-color: $white;
+    }
   }
 
   @media (min-width: 768px) {
