@@ -8,7 +8,7 @@ module Ema
     include Decidim::SanitizeHelper
 
     def show
-      return if cookies['decidim-consent'] == '{}'
+      return if data_consent_unanswered
       return unless current_survey.present?
       return if answered_surveys.include?(current_survey_id)
       render
@@ -18,6 +18,12 @@ module Ema
 
     def cookies
       parent_controller.send(:cookies)
+    end
+
+    def data_consent_unanswered
+      JSON.parse(cookies['decidim-consent']).keys.none?
+    rescue
+      true
     end
 
     def answered_surveys

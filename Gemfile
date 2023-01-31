@@ -31,8 +31,6 @@ gem 'haml'
 # Hack?
 gem 'rexml', '~> 3.2.5'
 
-
-
 gem 'dalli'
 
 gem "sentry-ruby"

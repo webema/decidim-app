@@ -14,6 +14,7 @@ $(document).ready(async function() {
 
     const iframeContainer = $('#emaSurveyIframeContainer')
 
+    await new Promise(r => setTimeout(r, 100)); // prevent decidim from blocking iframe
     const iFrameHtml = $(iframeContainer).data('iframe');
     $(iframeContainer).html(iFrameHtml);
 
