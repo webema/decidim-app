@@ -1,4 +1,4 @@
-FROM nexus.devops-e.de:8090/ema/docker-rails:3.0
+FROM nexus.devops-e.de:8090/ema/docker-rails@sha256:b51e6b7935aec20b640aff3e89378a5391b0f6e1bac3811d7de6815bd5bdfcbf
 
 RUN apt-get install libicu-dev
 
