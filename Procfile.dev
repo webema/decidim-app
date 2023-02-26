@@ -1,0 +1,3 @@
+web: unset PORT && bin/rails server
+css: bin/webpack-dev-server
+scheduler: export RAILS_ENV=development && bundle exec sidekiq
