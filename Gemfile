@@ -41,6 +41,7 @@ gem "auto_strip_attributes", "~> 2.6"
 group :development, :test do
   gem 'byebug', '~> 11.0', platform: :mri
   gem 'brakeman'
+  gem 'dotenv-rails'
   gem 'decidim-dev', DECIDIM_VERSION
 end
 
