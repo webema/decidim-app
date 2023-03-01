@@ -526,5 +526,5 @@ de:
         step: Schritt %{current} von %{total}
         view_steps: Schritte anzeigen
       process_navigation:
-        process_menu_item: KonKreation
+        process_menu_item: Prozess
         all_participatory_processes_menu_item: Alle Prozesse
