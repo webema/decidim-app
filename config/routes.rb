@@ -18,7 +18,11 @@ Rails.application.routes.draw do
   mount Decidim::Core::Engine => '/'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  resources :posts, controller: 'blog_posts', only: %i[index show], module: 'ema'
+  mount Ema::Blog::Engine => '/posts'
+
+  Ema::Blog::Engine.routes.draw do
+    resources :posts, path: '', controller: 'blog_posts', only: %i[index show], as: 'ema_blog_posts'
+  end
 
   resources :help_sections, only: :show, module: 'decidim'
 

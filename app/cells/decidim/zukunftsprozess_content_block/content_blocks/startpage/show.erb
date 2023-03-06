@@ -15,7 +15,7 @@
       </div>
       <div class="column">
         <% if recent_blog_post.present? %>
-          <%= link_to post_path(recent_blog_post), class: 'blog-post' do %>
+          <%= link_to Ema::Blog::Engine.routes.url_helpers.ema_blog_post_path(recent_blog_post), class: 'blog-post' do %>
             <% if recent_blog_post.hero_image.attached? %>
               <%= image_tag recent_blog_post.attached_uploader(:hero_image).variant_path :medium %>
             <% end %>

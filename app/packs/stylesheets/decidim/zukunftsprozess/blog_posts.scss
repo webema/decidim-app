@@ -12,6 +12,14 @@
   .ql-video {
     max-width: 600px;
   }
+
+  .expanded {
+    .wrapper {
+      padding: 0 !important;
+      .row {
+      }
+    }
+  }
 }
 
 .blog-posts {

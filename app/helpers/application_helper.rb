@@ -31,4 +31,8 @@ module ApplicationHelper
   def banner_image_path(process)
     process.attached_uploader(:hero_image)&.variant_path(:large) || process.type.attached_uploader(:banner_image)&.path
   end
+
+  def ema_blog_engine
+    @@ema_blog_engine_url_helpers ||= Ema::Blog::Engine.routes.url_helpers
+  end
 end

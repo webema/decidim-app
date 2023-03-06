@@ -16,10 +16,10 @@
         .media-object-section
           .image
             - if blog_post.hero_image.attached?
-              = link_to post_path(blog_post) do
+              = link_to ema_blog_engine.ema_blog_post_path(blog_post) do
                 = image_tag blog_post.attached_uploader(:hero_image).variant_path :small
         .media-object-section.text
-          = link_to post_path(blog_post), class: 'card__link' do
+          = link_to ema_blog_engine.ema_blog_post_path(blog_post), class: 'card__link' do
             %h2.card__title
               = blog_post.title
 
