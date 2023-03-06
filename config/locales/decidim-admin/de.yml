@@ -583,7 +583,7 @@ de:
             subject: Gegenstand
           name: Newsletter
         participatory_space_private_user:
-          name: private/r Benutzer:in des Prozesses
+          name: private/r Benutzer:in der konKreation
         scope:
           fields:
             name: Name
