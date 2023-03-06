@@ -7,18 +7,14 @@ Rails.application.routes.draw do
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
 
+  mount Ema::Blog::Engine => '/posts'
+
   require 'sidekiq/web'
 
   namespace :system do
     authenticate(:admin) do
       mount Sidekiq::Web => '/sidekiq'
     end
-  end
-
-  mount Ema::Blog::Engine => '/posts'
-
-  Ema::Blog::Engine.routes.draw do
-    resources :posts, path: '', controller: 'blog_posts', only: %i[index show], as: 'ema_blog_posts'
   end
 
   mount Decidim::Core::Engine => '/'
@@ -31,5 +27,6 @@ Rails.application.routes.draw do
     resources :posts, controller: 'blog_posts'
     resources :newsletters, controller: 'user_exports', only: %i[index create]
   end
+
   get 'healthcheck' => 'healthcheck#index'
 end
