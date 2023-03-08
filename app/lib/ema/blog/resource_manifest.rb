@@ -56,7 +56,7 @@ module Ema
 
       # The name of the class that handles the permissions for this resource. It will
       # probably have the form of `Decidim::<MyComponent>::Permissions`.
-      attribute :permissions_class_name, String, default: "Decidim::DefaultPermissions"
+      # attribute :permissions_class_name, String, default: "Decidim::DefaultPermissions"
 
       validates :model_class_name, :route_name, :name, presence: true
 
@@ -77,6 +77,10 @@ module Ema
       #   model_class.joins(:component).where(decidim_components: { id: component_ids })
       # end
 
+      def name
+        'Blog'
+      end
+
       # Finds the current class with the given `model_class_name`
       # in order to avoid problems with Rails' autoloading.
       #
@@ -94,9 +98,9 @@ module Ema
       # it raises an exception. If the class name is not set, it returns nil.
       #
       # Returns a Class.
-      def permissions_class
-        permissions_class_name&.constantize
-      end
+      # def permissions_class
+      #   permissions_class_name&.constantize
+      # end
 
       # The name of the named Rails route to create the url to the resource.
       #

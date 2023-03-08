@@ -7,8 +7,6 @@ Rails.application.routes.draw do
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
 
-  mount Ema::Blog::Engine => '/posts'
-
   require 'sidekiq/web'
 
   namespace :system do
@@ -27,6 +25,12 @@ Rails.application.routes.draw do
     resources :posts, controller: 'blog_posts'
     resources :newsletters, controller: 'user_exports', only: %i[index create]
   end
+
+  # Decidim::Core::Engine.routes.draw do
+  #   resources :posts, controller: 'blog_posts', only: %i[index show], as: 'ema_blog_posts'
+  # end
+
+  mount Ema::Blog::Engine => '/posts'
 
   get 'healthcheck' => 'healthcheck#index'
 end
