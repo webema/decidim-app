@@ -98,15 +98,20 @@ module Ema
       # it raises an exception. If the class name is not set, it returns nil.
       #
       # Returns a Class.
-      # def permissions_class
-      #   permissions_class_name&.constantize
-      # end
+      def permissions_class
+        Ema::Blog::Permissions
+      end
 
       # The name of the named Rails route to create the url to the resource.
       #
       # Returns a String.
       def route_name
         'ema_blog_post'
+      end
+
+
+      def icon
+        nil
       end
     end
   end

@@ -26,11 +26,7 @@ Rails.application.routes.draw do
     resources :newsletters, controller: 'user_exports', only: %i[index create]
   end
 
-  # Decidim::Core::Engine.routes.draw do
-  #   resources :posts, controller: 'blog_posts', only: %i[index show], as: 'ema_blog_posts'
-  # end
-
-  mount Ema::Blog::Engine => '/posts'
+  resources :posts, controller: 'ema/blog/blog_posts', only: %i[index show], as: 'ema_blog_posts'
 
   get 'healthcheck' => 'healthcheck#index'
 end

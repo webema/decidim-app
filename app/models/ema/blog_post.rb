@@ -44,5 +44,13 @@ module Ema
     def resource_manifest
       Ema::Blog::ResourceManifest.new
     end
+
+    def manifest
+      Ema::Blog::ResourceManifest.new
+    end
+
+    def moderators
+      organization.admins
+    end
   end
 end
