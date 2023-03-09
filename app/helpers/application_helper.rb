@@ -35,4 +35,10 @@ module ApplicationHelper
   def ema_blog_engine
     @@ema_blog_engine_url_helpers ||= Ema::Blog::Engine.routes.url_helpers
   end
+
+  def required_label(text)
+    text + tag.span(data: { tooltip: true, disable_hover: false, keep_on_hover: true, toggle: 'tos-tooltip', resize: 'tos-tooltip', yeti_box: 'tos-tooltip' }, class: 'label-required has-tip', aria: { describedby: 'tos-tooltip' }, title: 'Erforderlich') do
+      tag.span('*', aria: { hidden: true }) + tag.span('erforderlich', class: 'show-for-sr')
+    end
+  end
 end

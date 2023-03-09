@@ -38,7 +38,7 @@
               -# .tos-text
               -#   = decidim_sanitize_editor(translated_attribute(terms_and_conditions_page.content))
               .field
-                = f.check_box :tos_agreement, label: t(".tos_agreement", link: link_to(t(".terms"), page_path("terms-and-conditions")))
+                = f.check_box :tos_agreement, label: required_label(t(".tos_agreement", link: link_to(t(".terms"), page_path("terms-and-conditions")))), required: 'required'
           #card__newsletter.card
             .card__content
               %h3= t(".newsletter_title")
