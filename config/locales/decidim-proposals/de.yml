@@ -644,7 +644,7 @@ de:
           label: 'Bestellentwürfe von: TODO'
           most_contributed: Am meisten beigetragen
           random: Zufällig
-          recent: Kürzlich hinzugefügt
+          recent: Neueste zuerst
         requests:
           accepted_request:
             error: Konnte nicht als Mitbearbeiter:in akzeptiert werden, versuche es später erneut.
@@ -800,7 +800,7 @@ de:
           most_followed: Am meisten gefolgt
           most_voted: Am meisten unterstützt
           random: Zufällig
-          recent: Kürzlich hinzugefügt
+          recent: Neueste zuerst
           with_more_authors: Mit mehreren Autor:innen
         participatory_texts:
           index:

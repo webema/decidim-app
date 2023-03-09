@@ -109,7 +109,6 @@ module Ema
         'ema_blog_post'
       end
 
-
       def icon
         nil
       end

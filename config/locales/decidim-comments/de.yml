@@ -93,7 +93,7 @@ de:
           best_rated: Am besten bewertet
           most_discussed: Meist diskutiert
           older: Chronologisch
-          recent: Kürzlich hinzugefügt
+          recent: Neueste zuerst
         title: 'Sortieren nach:'
       comment_thread:
         title: Konversation mit %{authorName}
