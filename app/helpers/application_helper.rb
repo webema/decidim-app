@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def extended_navigation_bar(items, max_items: 5)
+  def extended_navigation_bar(items, max_items: 6)
     return unless items.count > 1
 
     items.prepend({
