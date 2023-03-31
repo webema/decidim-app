@@ -691,4 +691,22 @@ button.ql-video {
   .ql-formats:last-child {
     display: none !important;
   }
+
+  .ql-formats {
+    margin-right: .5rem !important;
+
+    button {
+      svg {
+        height: 16px;
+      }
+
+      padding-right: .25rem !important;
+      padding-left: .25rem !important;
+    }
+  }
+}
+
+
+label {
+  line-height: 1.5;
 }

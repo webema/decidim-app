@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_06_093605) do
+ActiveRecord::Schema.define(version: 2023_03_31_095430) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -674,6 +674,18 @@ ActiveRecord::Schema.define(version: 2023_03_06_093605) do
     t.integer "cached_weighted_total", default: 0
     t.float "cached_weighted_average", default: 0.0
     t.jsonb "source"
+    t.jsonb "problem"
+    t.jsonb "current_state"
+    t.jsonb "steps"
+    t.jsonb "boards"
+    t.jsonb "obstacles"
+    t.jsonb "time"
+    t.jsonb "hours"
+    t.jsonb "cooperations"
+    t.jsonb "staff"
+    t.jsonb "working_hours"
+    t.jsonb "costs"
+    t.jsonb "info"
     t.index "md5((description)::text)", name: "decidim_ideas_description_search"
     t.index ["answered_at"], name: "index_decidim_ideas_on_answered_at"
     t.index ["decidim_area_id"], name: "index_decidim_ideas_on_decidim_area_id"
