@@ -682,3 +682,13 @@ ul.card-data {
     text-decoration: none;
   }
 }
+
+button.ql-video {
+  display: none !important;
+}
+
+.ql-toolbar {
+  .ql-formats:last-child {
+    display: none !important;
+  }
+}
