@@ -1,4 +1,7 @@
 # frozen_string_literal: true
+require 'redis'
+
+REDIS = Redis.new(url: "redis://#{ENV['REDIS_URL']}:6379/5")
 
 Decidim.configure do |config|
   # The name of the application
@@ -62,24 +65,22 @@ Decidim.configure do |config|
   # When used, please read carefully the terms of service for your service
   # provider.
   #
-  # config.maps = {
-  #   provider: :osm,
-  #   api_key: Rails.application.secrets.maps[:api_key],
-  #   dynamic: {
-  #     tile_layer: {
-  #       url: "https://tiles.example.org/{z}/{x}/{y}.png?key={apiKey}&{foo}",
-  #       api_key: true,
-  #       foo: "bar=baz",
-  #       attribution: %(
-  #         <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap</a> contributors
-  #       ).strip
-  #       # Translatable attribution:
-  #       # attribution: -> { I18n.t("tile_layer_attribution") }
-  #     }
-  #   },
-  #   static: { url: "https://staticmap.example.org/" },
-  #   geocoding: { host: "nominatim.example.org", use_https: true }
-  # }
+  config.maps = {
+    provider: :osm,
+    dynamic: {
+      tile_layer: {
+        url: "https://tileserver.devops-e.de/styles/bright/{z}/{x}/{y}.png",
+        attribution: %(
+          <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap</a> contributors
+        ).strip
+      }
+    },
+    # static: { url: "https://staticmap.example.org/" },
+    # geocoding: {
+    #   host: "nominatim.example.org",
+    #   use_https: true
+    # }
+  }
   #
   # == Combination (OpenStreetMap default + HERE Maps dynamic map tiles) ==
   # config.maps = {
@@ -97,15 +98,17 @@ Decidim.configure do |config|
   # settings. The maps configuration will manage which geocoding service to use,
   # so that does not need any additional configuration here. Use this only for
   # the global geocoder preferences.
-  # config.geocoder = {
-  #   # geocoding service request timeout, in seconds (default 3):
-  #   timeout: 5,
-  #   # set default units to kilometers:
-  #   units: :km,
-  #   # caching (see https://github.com/alexreisner/geocoder#caching for details):
-  #   cache: Redis.new,
-  #   cache_prefix: "..."
-  # }
+  config.geocoder = {
+    lookup: :photon,
+    photon: {
+      host: "photon.devops-e.de"
+    },
+    http_headers: { "Authorization" => ENV['PHOTON_API_KEY'] },
+    language: 'de',
+
+    cache: REDIS
+  }
+
   if Rails.application.secrets.maps.present? && Rails.application.secrets.maps[:static_provider].present?
     static_provider = Rails.application.secrets.maps[:static_provider]
     dynamic_provider = Rails.application.secrets.maps[:dynamic_provider]
