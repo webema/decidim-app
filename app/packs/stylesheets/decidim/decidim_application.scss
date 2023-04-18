@@ -710,3 +710,45 @@ button.ql-video {
 label {
   line-height: 1.5;
 }
+
+
+.card__content.address {
+  padding: 0;
+
+  .address__info {
+    display: block;
+    font-size: .9em;
+
+    .address__icon {
+      display: none;
+    }
+
+    .address__details {
+      margin: .5rem;
+    }
+  }
+
+  .address__map {
+    width: 50%;
+
+    .static-map {
+      width: 100%;
+      height: 200px;
+
+      .svg-icon-svg {
+        path {
+          fill: $zp_pink !important;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(small only) {
+    display: block;
+
+    .address__map, .address__info {
+      width: 100%;
+      display: block;
+    }
+  }
+}
