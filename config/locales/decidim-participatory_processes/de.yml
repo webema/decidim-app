@@ -18,20 +18,20 @@ de:
         hero_image: Hauptbild
         local_area: Organisationsbereich
         meta_scope: Bereichs-Metadaten
-        participatory_process_group_id: konKreationen-Gruppe
+        participatory_process_group_id: Prozess-Gruppe
         participatory_scope: Was wird entschieden?
         participatory_structure: Wie wird es entschieden?
         promoted: Hervorgehoben
         private_space: Privat
         published_at: Veröffentlicht unter
-        related_process_ids: Ähnliche konKreationen
+        related_process_ids: Ähnliche Prozesse
         scope_id: Themenbereich
         scope_type_max_depth_id: Umfang-Filtertiefe
         scopes_enabled: Themen aktiviert
         short_description: Kurzbeschreibung
         show_metrics: Metriken anzeigen
         show_statistics: Statistiken anzeigen
-        participatory_process_type_id: konKreationen-Typ
+        participatory_process_type_id: Prozess-Typ
         slug: URL-Slug
         start_date: Startdatum
         subtitle: Untertitel
@@ -46,7 +46,7 @@ de:
         hero_image: Bild
         local_area: Organisationsbereich
         meta_scope: Informationen zum Bereich
-        participatory_process_ids: Ähnliche konKreationen
+        participatory_process_ids: Ähnliche Prozesse
         participatory_scope: Was wird entschieden
         participatory_structure: Wie wird es entschieden
         target: Wer nimmt teil
@@ -77,11 +77,11 @@ de:
   activerecord:
     models:
       decidim/participatory_process:
-        one: konKreation
-        other: konKreationen
+        one: Prozess
+        other: Prozesse
       decidim/participatory_process_group:
-        one: konKreationen-Gruppe
-        other: konKreationen-Gruppen
+        one: Prozess-Gruppe
+        other: Prozess-Gruppen
       decidim/participatory_process_step:
         one: Phase
         other: Phasen
@@ -95,25 +95,25 @@ de:
         duplicate: Duplizieren
         edit: Bearbeiten
         filter:
-          all_processes: Alle konKreationen anzeigen
-          process_groups: konKreationen-Gruppen
+          all_processes: Alle Prozesse anzeigen
+          process_groups: Prozess-Gruppen
         import_process: Importieren
-        new_process: Neue konKreation
-        new_process_group: Neue konKreationen-Gruppe
+        new_process: Neuer Prozess
+        new_process_group: Neue Prozess-Gruppe
         new_process_step: Neue Phase
-        new_process_type: Neuer konKreationen-Typ
+        new_process_type: Neuer Prozess-Typ
         new_process_user_role: Neue/r Benutzer:in
         preview: Vorschau
         publish: Veröffentlichen
         resend_invitation: Einladung erneut senden
         unpublish: Veröffentlichung rückgängig machen
       menu:
-        participatory_process_groups: konKreationen-Gruppen
+        participatory_process_groups: Prozess-Gruppen
         participatory_process_groups_submenu:
           info: Info
           landing_page: Startseite
-        participatory_process_types: konKreationen-Typen
-        participatory_processes: konKreationen
+        participatory_process_types: Prozess-Typen
+        participatory_processes: Prozesse
         participatory_processes_submenu:
           attachment_collections: Ordner
           attachment_files: Dateien
@@ -133,28 +133,28 @@ de:
             promoted: Hervorgehoben
             published: Veröffentlicht
             title: Titel
-          name: konKreation
+          name: Prozess
         participatory_process_group:
           fields:
             title: Titel
-          name: konKreationen-Gruppe
+          name: Prozess-Gruppe
         participatory_process_step:
           fields:
             end_date: Enddatum
             start_date: Anfangsdatum
             title: Titel
-          name: konKreationen-Schritt
+          name: Prozesse-Schritt
         participatory_process_type:
           fields:
             created_at: Erstellt am
             title: Titel
-          name: konKreationen-Typ
+          name: Prozess-Typ
         participatory_process_user_role:
           fields:
             email: Email
             name: Name
             role: Rolle
-          name: konKreationen-Benutzer:in
+          name: Prozesse-Benutzer:in
           roles:
             admin: Administrator:in
             collaborator: Mitarbeiter:in
@@ -168,7 +168,7 @@ de:
         new:
           copy: Kopieren
           select: Wähle aus, welche Daten du duplizieren möchtest
-          title: konKreation duplizieren
+          title: Prozess duplizieren
       participatory_process_group_landing_page:
         edit:
           active_content_blocks: Aktive Inhaltsblöcke
@@ -178,46 +178,46 @@ de:
           update: Aktualisieren
       participatory_process_groups:
         destroy:
-          error: Beim Löschen der konKreationen-Gruppe ist ein Fehler aufgetreten.
-          success: konKreation erfolgreich gelöscht.
+          error: Beim Löschen der Prozess-Gruppe ist ein Fehler aufgetreten.
+          success: Prozess erfolgreich gelöscht.
         edit:
-          title: konKreationen-Gruppe bearbeiten
+          title: Prozess-Gruppe bearbeiten
           update: Aktualisieren
         new:
           create: Erstellen
-          title: Neue konKreationen-Gruppe
+          title: Neue Prozess-Gruppe
         update:
-          error: Beim Aktualisieren dieser konKreationen-Gruppe ist ein Fehler aufgetreten.
-          success: konKreationen-Gruppe wurde erfolgreich aktualisiert.
+          error: Beim Aktualisieren dieser Prozess-Gruppe ist ein Fehler aufgetreten.
+          success: Prozess-Gruppe wurde erfolgreich aktualisiert.
       participatory_process_imports:
         create:
-          error: Beim Importieren dieser konKreation ist ein Fehler aufgetreten.
-          success: Die konKreation wurde erfolgreich importiert.
+          error: Beim Importieren dieses Prozesses ist ein Fehler aufgetreten.
+          success: Der Prozess wurde erfolgreich importiert.
         new:
           import: Importieren
           select: Wähle aus, welche Daten du importieren möchtest
-          title: konKreation importieren
+          title: Prozess importieren
       participatory_process_publications:
         create:
-          error: Bei der Veröffentlichung dieser konKreation ist ein Fehler aufgetreten.
-          success: konKreation erfolgreich veröffentlicht.
+          error: Bei der Veröffentlichung dieses Prozesses ist ein Fehler aufgetreten.
+          success: Prozess erfolgreich veröffentlicht.
         destroy:
-          error: Beim Aufheben der Veröffentlichung dieser konKreation ist ein Fehler aufgetreten.
-          success: Die konKreation wurde auf nicht veröffentlicht gestellt.
+          error: Beim Aufheben der Veröffentlichung dieses Prozesses ist ein Fehler aufgetreten.
+          success: Der Prozess wurde auf nicht veröffentlicht gestellt.
       participatory_process_step_activations:
         create:
-          error: Beim Aktivieren des Schrittes dieser konKreation ist ein Fehler aufgetreten.
-          success: Der Schritt dieser konKreation wurde erfolgreich aktiviert
+          error: Beim Aktivieren des Schrittes dieses Prozesses ist ein Fehler aufgetreten.
+          success: Der Schritt dieses Prozesses wurde erfolgreich aktiviert
       participatory_process_steps:
         create:
-          error: Beim Erstellen eines neuen partizipativen konKreationen-Schritts ist ein Fehler aufgetreten.
-          success: Der Schritt dieser konKreation wurde erfolgreich erstellt
+          error: Beim Erstellen eines neuen partizipativen Prozesse-Schritts ist ein Fehler aufgetreten.
+          success: Der Schritt dieses Prozesses wurde erfolgreich erstellt
         default_title: Einführung
         destroy:
           error:
             active_step: Der aktive Schritt kann nicht gelöscht werden.
-            last_step: Der letzte Schritt einer konKreation kann nicht gelöscht werden.
-          success: Der Schritt dieser konKreation wurde erfolgreich gelöscht
+            last_step: Der letzte Schritt eines Prozesses kann nicht gelöscht werden.
+          success: Der Schritt dieses Prozesses wurde erfolgreich gelöscht
         edit:
           title: Beteiligungsschritt bearbeiten
           update: Aktualisieren
@@ -225,50 +225,50 @@ de:
           steps_title: Schritte
         new:
           create: Erstellen
-          title: Neuer partizipativer konKreationen-Schritt
+          title: Neuer partizipativer Prozesse-Schritt
         ordering:
-          error: Beim Neuanordnen der Schritte dieser konKreation ist ein Fehler aufgetreten.
+          error: Beim Neuanordnen der Schritte dieses Prozesses ist ein Fehler aufgetreten.
         update:
-          error: Beim Aktualisieren des Schrittes dieser konKreation ist ein Fehler aufgetreten.
-          success: Partizipativer konKreationen-Schritt erfolgreich aktualisiert.
+          error: Beim Aktualisieren des Schrittes dieses Prozesses ist ein Fehler aufgetreten.
+          success: Partizipativer Prozesse-Schritt erfolgreich aktualisiert.
       participatory_process_types:
         create:
-          error: Beim Erstellen eines neuen konKreationen-Typs ist ein Fehler aufgetreten.
-          success: konKreationen-Typ erfolgreich erstellt.
+          error: Beim Erstellen eines neuen Prozess-Typs ist ein Fehler aufgetreten.
+          success: Prozess-Typ erfolgreich erstellt.
         destroy:
-          success: konKreationen-Typ erfolgreich gelöscht.
+          success: Prozess-Typ erfolgreich gelöscht.
         edit:
-          title: konKreationen-Typ bearbeiten
+          title: Prozess-Typ bearbeiten
           update: Aktualisieren
         form:
           title: Titel
         new:
           create: Erstellen
-          title: Neuer konKreationen-Typ
+          title: Neuer Prozess-Typ
         update:
-          error: Beim Aktualisieren dieses konKreationen-Typs ist ein Fehler aufgetreten.
-          success: konKreationen-Typ erfolgreich aktualisiert.
+          error: Beim Aktualisieren dieses Prozess-Typs ist ein Fehler aufgetreten.
+          success: Prozess-Typ erfolgreich aktualisiert.
       participatory_process_user_roles:
         create:
-          error: Beim Hinzufügen eines Benutzers bzw. einer Benutzerin zu dieser konKreation ist ein Fehler aufgetreten.
-          success: Der/Die Benutzer:in wurde dieser konKreation erfolgreich hinzugefügt.
+          error: Beim Hinzufügen eines Benutzers bzw. einer Benutzerin zu diesem Prozess ist ein Fehler aufgetreten.
+          success: Der/Die Benutzer:in wurde diesem Prozess erfolgreich hinzugefügt.
         destroy:
-          success: Der/Die Benutzer:in wurde erfolgreich aus dieser konKreation entfernt.
+          success: Der/Die Benutzer:in wurde erfolgreich aus diesem Prozess entfernt.
         edit:
-          title: Administrator:in der konKreation aktualisieren
+          title: Administrator:in des Prozesses aktualisieren
           update: Aktualisieren
         index:
           process_admins_title: Benutzer:innen
         new:
           create: Erstellen
-          title: Neue/r Benutzer:in der konKreation
+          title: Neue/r Benutzer:in des Prozesses
         update:
-          error: Bei der Aktualisierung des Administrators bzw. der Administratorin für diese konKreation ist ein Fehler aufgetreten.
-          success: Der/Die Administrator:in für diese konKreation wurde erfolgreich aktualisiert.
+          error: Bei der Aktualisierung des Administrators bzw. der Administratorin für diesen Prozess ist ein Fehler aufgetreten.
+          success: Der/Die Administrator:in für diesen Prozess wurde erfolgreich aktualisiert.
       participatory_processes:
         create:
-          error: Beim Erstellen einer neuen konKreation ist ein Fehler aufgetreten.
-          success: konKreation erfolgreich erstellt. Konfiguriere jetzt deren Schritte.
+          error: Beim Erstellen eines neuen Prozesses ist ein Fehler aufgetreten.
+          success: Prozess erfolgreich erstellt. Konfiguriere jetzt dessen Schritte.
         edit:
           update: Aktualisieren
         index:
@@ -278,81 +278,81 @@ de:
           published: Veröffentlicht
         new:
           create: Erstellen
-          title: Neue konKreation
+          title: Neuer Prozess
         update:
-          error: Beim Aktualisieren dieser konKreation ist ein Fehler aufgetreten.
-          success: konKreation erfolgreich aktualisiert.
+          error: Beim Aktualisieren des Prozesses ist ein Fehler aufgetreten.
+          success: Prozess erfolgreich aktualisiert.
       participatory_processes_copies:
         create:
-          error: Beim Duplizieren dieser konKreation ist ein Fehler aufgetreten.
-          success: konKreation erfolgreich dupliziert.
+          error: Beim Duplizieren des Prozesses ist ein Fehler aufgetreten.
+          success: Prozess erfolgreich dupliziert.
       participatory_processes_group:
         create:
-          error: Beim Erstellen einer neuen konKreationen-Gruppe ist ein Fehler aufgetreten.
-          success: konKreation-Gruppe erfolgreich erstellt.
+          error: Beim Erstellen einer neuen Prozess-Gruppe ist ein Fehler aufgetreten.
+          success: Prozess-Gruppe erfolgreich erstellt.
       titles:
-        participatory_process_groups: konKreationen-Gruppe
-        participatory_process_types: konKreationen-Typen
-        participatory_processes: konKreationen
+        participatory_process_groups: Prozess-Gruppe
+        participatory_process_types: Prozess-Typen
+        participatory_processes: Prozesse
       users:
         resend_invitation:
           error: Beim erneuten Senden der Einladung ist ein Fehler aufgetreten.
           success: Einladung wird erfolgreich erneut gesendet.
     admin_log:
       participatory_process:
-        create: "%{user_name} hat die konKreation %{resource_name} erstellt"
-        duplicate: "%{user_name} hat die konKreation %{resource_name} dupliziert"
-        export: "%{user_name} hat die konKreation %{resource_name} exportiert"
-        import: "%{user_name} hat die konKreation %{resource_name} importiert"
-        publish: "%{user_name} hat die konKreation %{resource_name} veröffentlicht"
-        unpublish: "%{user_name} hat die konKreation %{resource_name} auf \"unveröffentlicht\" gesetzt"
-        update: "%{user_name} hat die konKreation %{resource_name} aktualisiert"
+        create: "%{user_name} hat den Prozess %{resource_name} erstellt"
+        duplicate: "%{user_name} hat den Prozess %{resource_name} dupliziert"
+        export: "%{user_name} hat den Prozess %{resource_name} exportiert"
+        import: "%{user_name} hat den Prozess %{resource_name} importiert"
+        publish: "%{user_name} hat den Prozess %{resource_name} veröffentlicht"
+        unpublish: "%{user_name} hat den Prozess %{resource_name} auf \"unveröffentlicht\" gesetzt"
+        update: "%{user_name} hat den Prozess %{resource_name} aktualisiert"
       participatory_process_group:
-        create: "%{user_name} hat die konKreationen-Gruppe %{resource_name} erstellt"
-        update: "%{user_name} hat die konKreationen-Gruppe %{resource_name} aktualisiert"
+        create: "%{user_name} hat die Prozess-Gruppe %{resource_name} erstellt"
+        update: "%{user_name} hat die Prozess-Gruppe %{resource_name} aktualisiert"
       participatory_process_step:
         activate: "%{user_name} hat den Schritt %{resource_name} in %{space_name} aktiviert"
         create: "%{user_name} hat den Schritt %{resource_name} in %{space_name} erstellt"
         delete: "%{user_name} hat den Schritt %{resource_name} aus %{space_name} gelöscht"
         update: "%{user_name} hat den Schritt %{resource_name} in %{space_name} aktualisiert"
       participatory_process_type:
-        create: "%{user_name} hat den konKreationen-Typ %{resource_name} erstellt"
-        delete: "%{user_name} hat den konKreationen-Typ %{resource_name} gelöscht"
+        create: "%{user_name} hat den Prozess-Typ %{resource_name} erstellt"
+        delete: "%{user_name} hat den Prozess-Typ %{resource_name} gelöscht"
       participatory_process_user_role:
-        create: "%{user_name} lud den/die Benutzer:in %{resource_name} zu der %{space_name} konKreation ein"
-        delete: "%{user_name} entfernte den/die Benutzer:in %{resource_name} aus der %{space_name} konKreation"
-        update: "%{user_name} änderte die Rolle des Benutzers bzw. der Benutzerin %{resource_name} in der %{space_name} konKreation"
+        create: "%{user_name} lud den/die Benutzer:in %{resource_name} zum %{space_name} Prozess ein"
+        delete: "%{user_name} entfernte den/die Benutzer:in %{resource_name} aus dem %{space_name} Prozess"
+        update: "%{user_name} änderte die Rolle des Benutzers bzw. der Benutzerin %{resource_name} im %{space_name} Prozess"
     events:
       participatory_process:
         role_assigned:
-          email_intro: Du wurdest als <em>%{role}</em> für die konKreation <em>%{resource_title}</em> ausgewählt.
-          email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{role}</em> in der konKreation <em>%{resource_title}</em> bist.
+          email_intro: Du wurdest als <em>%{role}</em> für den Prozess <em>%{resource_title}</em> ausgewählt.
+          email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{role}</em> im Prozess <em>%{resource_title}</em> bist.
           email_subject: Du wurdest als %{role} für "%{resource_title}" ausgewählt.
-          notification_title: Du wurdest als <em>%{role}</em> für die konKreation <a href="%{resource_url}">%{resource_title}</a> ausgewählt.
+          notification_title: Du wurdest als <em>%{role}</em> für den Prozess <a href="%{resource_url}">%{resource_title}</a> ausgewählt.
         step_activated:
-          email_intro: 'Der konKreationen-Schritt <em>%{resource_title}</em> ist jetzt aktiv in <em>%{participatory_space_title}</em>. Du kannst das auf dieser Seite sehen:'
+          email_intro: 'Der Prozesse-Schritt <em>%{resource_title}</em> ist jetzt aktiv in <em>%{participatory_space_title}</em>. Du kannst das auf dieser Seite sehen:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{participatory_space_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{participatory_space_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Aktualisierung von "%{participatory_space_title}"
-          notification_title: Der konKreationen-Schritt <em>%{resource_title}</em> ist jetzt aktiv in <a href="%{resource_path}">%{participatory_space_title}</a>
+          notification_title: Der Prozesse-Schritt <em>%{resource_title}</em> ist jetzt aktiv in <a href="%{resource_path}">%{participatory_space_title}</a>
         step_changed:
           email_intro: 'Die Daten für den Schritt <em>%{resource_title}</em> in <em>%{participatory_space_title}</em> wurden aktualisiert. Du kannst das auf dieser Seite sehen:'
           email_outro: Du hast diese Benachrichtigung erhalten, weil du <em>%{participatory_space_title}</em> folgst. Falls du keine solchen Benachrichtigungen mehr erhalten möchtest, nutze den obigen Link, um <em>%{participatory_space_title}</em> zu entfolgen. Alternativ kannst du im Bereich "Mein Konto" die Einstellungen für Benachrichtigungen anpassen.
           email_subject: Aktualisierung von "%{participatory_space_title}"
-          notification_title: Die Daten für den konKreationen-Schritt <a href="%{resource_path}">%{resource_title}</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a> wurden aktualisiert.
+          notification_title: Die Daten für den Prozesse-Schritt <a href="%{resource_path}">%{resource_title}</a> in <a href="%{participatory_space_url}">%{participatory_space_title}</a> wurden aktualisiert.
     help:
       participatory_spaces:
         participatory_processes:
-          contextual: "<p>Eine <strong>konKreation</strong> ist eine Folge von Partizipations-Aktivitäten (z.B. zuerst eine Umfrage ausfüllen, dann Vorschläge machen, diese face-to-face oder an virtuellen Treffen diskutieren, und sie schließlich zu priorisieren) mit dem Ziel, ein bestimmtes Thema zu definieren und Entscheidungen dazu zu treffen.</p> <p>Beispiele für konKreationen sind: ein Verfahren zur Wahl von Ausschussmitgliedern (bei dem die Kandidaturen zuerst präsentiert und anschließend debattiert werden, und schließlich eine Kandidatur ausgewählt wird), die partizipative Budgets (bei denen Vorschläge gemacht und wirtschaftlich bewertet werden und über das verfügbare Geld abgestimmt wird), ein strategischer Planungsprozess, die gemeinschaftliche Ausarbeitung einer Vorschrift oder Norm, die Gestaltung eines städtischen Raums oder die Erstellung einer öffentlichen Strategie.</p>\n"
-          page: "<p>Eine <strong>konKreation</strong> ist eine Folge von Partizipations-Aktivitäten (z.B. zuerst eine Umfrage ausfüllen, dann Vorschläge machen, diese face-to-face oder an virtuellen Treffen diskutieren, und sie schließlich zu priorisieren) mit dem Ziel, ein bestimmtes Thema zu definieren und Entscheidungen dazu zu treffen.</p> <p>Beispiele für konKreationen sind: ein Verfahren zur Wahl von Ausschussmitgliedern (bei dem die Kandidaturen zuerst präsentiert und anschließend debattiert werden, und schließlich eine Kandidatur ausgewählt wird), die partizipative Budgets (bei denen Vorschläge gemacht und wirtschaftlich bewertet werden und über das verfügbare Geld abgestimmt wird), ein strategischer Planungsprozess, die gemeinschaftliche Ausarbeitung einer Vorschrift oder Norm, die Gestaltung eines städtischen Raums oder die Erstellung einer öffentlichen Strategie.</p>\n"
-          title: Was ist eine konKreation?
+          contextual: "<p>Ein <strong>Prozess</strong> ist eine Folge von Partizipations-Aktivitäten (z.B. zuerst eine Umfrage ausfüllen, dann Vorschläge machen, diese face-to-face oder an virtuellen Treffen diskutieren, und sie schließlich zu priorisieren) mit dem Ziel, ein bestimmtes Thema zu definieren und Entscheidungen dazu zu treffen.</p> <p>Beispiele für Prozesse sind: ein Verfahren zur Wahl von Ausschussmitgliedern (bei dem die Kandidaturen zuerst präsentiert und anschließend debattiert werden, und schließlich eine Kandidatur ausgewählt wird), die partizipative Budgets (bei denen Vorschläge gemacht und wirtschaftlich bewertet werden und über das verfügbare Geld abgestimmt wird), ein strategischer Planungsprozess, die gemeinschaftliche Ausarbeitung einer Vorschrift oder Norm, die Gestaltung eines städtischen Raums oder die Erstellung einer öffentlichen Strategie.</p>\n"
+          page: "<p>Ein <strong>Prozess</strong> ist eine Folge von Partizipations-Aktivitäten (z.B. zuerst eine Umfrage ausfüllen, dann Vorschläge machen, diese face-to-face oder an virtuellen Treffen diskutieren, und sie schließlich zu priorisieren) mit dem Ziel, ein bestimmtes Thema zu definieren und Entscheidungen dazu zu treffen.</p> <p>Beispiele für Prozesse sind: ein Verfahren zur Wahl von Ausschussmitgliedern (bei dem die Kandidaturen zuerst präsentiert und anschließend debattiert werden, und schließlich eine Kandidatur ausgewählt wird), die partizipative Budgets (bei denen Vorschläge gemacht und wirtschaftlich bewertet werden und über das verfügbare Geld abgestimmt wird), ein strategischer Planungsprozess, die gemeinschaftliche Ausarbeitung einer Vorschrift oder Norm, die Gestaltung eines städtischen Raums oder die Erstellung einer öffentlichen Strategie.</p>\n"
+          title: Was ist ein Prozess?
     menu:
-      processes: konKreationen
-      participatory_processes: konKreationen
+      processes: Prozesse
+      participatory_processes: Prozesse
     metrics:
       participatory_processes:
-        description: Anzahl der konKreationen in dieser Organisation
-        object: konKreationen
-        title: konKreationen
+        description: Anzahl der Prozesse in dieser Organisation
+        object: Prozesse
+        title: Prozesse
     participatory_process:
       show:
         related_assemblies: Ähnliche Werkräume
@@ -371,21 +371,21 @@ de:
           participatory_structure: Wie wird es entschieden
           target: Wer nimmt teil
         participatory_processes:
-          name: konKreationen
+          name: Prozesse
         stats:
           name: Statistiken
         title:
           meta_scope: Umfang
           name: Titel, Beschreibung und Hashtag
           participatory_processes:
-            one: 1 konKreation
-            other: "%{count} konKreationen"
+            one: 1 Prozess
+            other: "%{count} Prozesse"
       show:
-        title: Partizipative konKreationen-Gruppen
+        title: Partizipative Prozess-Gruppen
     participatory_process_steps:
       index:
-        process_steps: konKreationen-Schritte
-        title: Partizipative konKreationen-Schritte
+        process_steps: Prozesse-Schritte
+        title: Partizipative Prozesse-Schritte
     participatory_processes:
       admin:
         content_blocks:
@@ -396,7 +396,7 @@ de:
             json: JSON
         participatory_process_copies:
           form:
-            slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf diese konKreation verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
+            slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf diesen Prozess verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
         participatory_process_groups:
           form:
             metadata: Metadaten
@@ -405,67 +405,67 @@ de:
         participatory_process_imports:
           form:
             document_legend: Dokument hinzufügen
-            slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf diese konKreation verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
+            slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf diesen Prozess verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
         participatory_process_steps:
           form:
             cta_path_help: 'Verwende hier Teilpfade, nicht vollständige URLs. Akzeptiert Buchstaben, Zahlen, Bindestriche und Schrägstriche und muss mit einem Buchstaben beginnen. Wenn nicht eingestellt, wird die Schaltfläche nicht angezeigt. Beispiel: %{url}'
             cta_text_help: Wenn nicht eingestellt, wird die Schaltfläche nicht angezeigt.
         participatory_processes:
           form:
-            announcement_help: Der Text, den du hier eingibst, wird dem/der Benutzer:in direkt unter den Informationen zur konKreation angezeigt.
+            announcement_help: Der Text, den du hier eingibst, wird dem/der Benutzer:in direkt unter den Informationen zum Prozess angezeigt.
             duration: Dauer
             filters: Filter
             images: Bilder
             metadata: Metadaten
             other: Andere
-            related_processes: Ähnliche konKreationen
+            related_processes: Ähnliche Prozesse
             scope_type_max_depth_help: Beschränke die Bereichs-Filtertiefe; der Filter zeigt nur Ergebnisse von Allgemein bis zum ausgewählten Bereichstyp an.
             select_an_area: Wähle einen Bereich aus
-            select_participatory_process_type: Wähle einen konKreationen-Typ aus
-            select_process_group: Wähle eine konKreationen-Gruppe aus
-            slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf diese konKreation verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
+            select_participatory_process_type: Wähle einen Prozess-Typ aus
+            select_process_group: Wähle eine Prozess-Gruppe aus
+            slug_help: 'URL-Slugs werden zum Generieren der URLs verwendet, die auf diesen Prozess verweisen. Akzeptiert nur Buchstaben, Zahlen und Bindestriche und muss mit einem Buchstaben beginnen. Beispiel: %{url}'
             title: Allgemeine Information
             visbility: Sichtbarkeit
       content_blocks:
         highlighted_processes:
-          name: Hervorgehobene konKreationen
+          name: An diesen Prozessen kannst du dich aktuell beteiligen
       index:
-        title: konKreationen
+        title: Prozesse
       last_activity:
-        new_participatory_process: Neue konKreation
+        new_participatory_process: Neuer Prozess
       pages:
         home:
           highlighted_processes:
-            active_processes: Aktive konKreationen
+            active_processes: Aktive Prozesse
             active_step: Aktiver Schritt
             more_information: Mehr Informationen
             participate: Sich beteiligen
-            participate_in: An konKreation %{resource_name} teilnehmen
-            processes_button_title: Link zur konKreationen-Seite die alle konKreationen anzeigt
-            see_all_processes: Alle konKreationen anzeigen
+            participate_in: Am Prozess %{resource_name} teilnehmen
+            processes_button_title: Link zur Prozesse-Seite die alle Prozesse anzeigt
+            see_all_processes: Alle Prozesse anzeigen
       participatory_process_steps:
         index:
-          back_to_process: Zurück zur konKreation-Seite
+          back_to_process: Zurück zur Prozess-Seite
       participatory_processes:
         filters:
           all_types: Alle Typen
           counters:
             active:
-              one: 1 aktive konKreation
-              other: "%{count} aktive konKreationen"
+              one: 1 aktiver Prozess
+              other: "%{count} aktive Prozesse"
             all:
-              one: 1 konKreation
-              other: "%{count} konKreationen"
+              one: 1 Prozess
+              other: "%{count} Prozesse"
             past:
-              one: 1 vergangene konKreation
-              other: "%{count} vergangene konKreationen"
+              one: 1 vergangener Prozess
+              other: "%{count} vergangene Prozesse"
             upcoming:
-              one: 1 bevorstehende konKreation
-              other: "%{count} bevorstehende konKreationen"
+              one: 1 bevorstehender Prozess
+              other: "%{count} bevorstehende Prozesse"
           explanations:
-            no_active: Keine aktiven konKreationen
-            no_active_nor_upcoming: Keine aktiven oder zukünftigen konKreationen
-            no_active_nor_upcoming_callout: Es gibt keine aktiven oder zukünftigen konKreationen. Hier ist eine Liste der vergangenen.
+            no_active: Keine aktiven Prozesse
+            no_active_nor_upcoming: Keine aktiven oder zukünftigen Prozesse
+            no_active_nor_upcoming_callout: Es gibt keine aktiven oder zukünftigen Prozesse. Hier ist eine Liste der vergangenen.
           filter_by: Anzeigen
           names:
             active: Aktive
@@ -476,50 +476,50 @@ de:
         index:
           loading: Ergebnisse werden geladen ...
         show:
-          title: Über diese konKreation
+          title: Über diesen Prozess
       show:
         area: Bereich
-        belongs_to_group: Diese konKreation gehört zu
+        belongs_to_group: Dieser Prozess gehört zu
         dates: Daten
         developer_group: Promoter:innen-Gruppe
         end_date: Enddatum
         local_area: Organisationsbereich
         participatory_scope: Was wird entschieden?
         participatory_structure: Wie wird es entschieden
-        private_space: Dies ist eine private konKreation
-        related_processes: Ähnliche konKreationen
+        private_space: Dies ist eine privater Prozess
+        related_processes: Ähnliche Prozesse
         scope: Umfang
         start_date: Startdatum
         target: Wer nimmt teil?
         unspecified: Keine Angabe
     statistics:
-      processes_count: konKreationen
+      processes_count: Prozesse
   layouts:
     decidim:
       participatory_process_groups:
         participatory_process_group:
           browse: Durchsuche
-          browse_resource: konKreationen-Gruppe %{resource_name} durchsuchen
-          processes_count: 'konKreationen:'
+          browse_resource: Prozess-Gruppe %{resource_name} durchsuchen
+          processes_count: 'Prozesse:'
       participatory_process_widgets:
         show:
           active_step: Aktiver Schritt
           take_part: Teilnehmen
       participatory_processes:
         index:
-          promoted_processes: Hervorgehobene konKreationen
+          promoted_processes: An diesen Prozessen kannst du dich aktuell beteiligen
         participatory_process:
           active_step: 'Aktueller Schritt:'
           more_info: Mehr Info
-          more_info_about: Weitere Informationen zu konKreation %{resource_name}
+          more_info_about: Weitere Informationen zum Prozess %{resource_name}
           take_part: Teilnehmen
-          take_part_in: Beteilige dich sich an der konKreation %{resource_name}
+          take_part_in: Beteilige dich am Prozess %{resource_name}
         promoted_process:
           active_step: 'Aktueller Schritt:'
           more_info: Mehr Informationen
-          more_info_about: Weitere Informationen zur konKreation %{resource_name}
+          more_info_about: Weitere Informationen zum Prozess %{resource_name}
           take_part: Teilnehmen
-          take_part_in: Beteilige dich sich an der konKreation %{resource_name}
+          take_part_in: Beteilige dich am Prozess %{resource_name}
         promoted_process_group:
           more_info: Mehr Info
       process_header_steps:
@@ -527,4 +527,4 @@ de:
         view_steps: Schritte anzeigen
       process_navigation:
         process_menu_item: KonKreation
-        all_participatory_processes_menu_item: Alle konKreationen
+        all_participatory_processes_menu_item: Alle Prozesse
