@@ -752,3 +752,11 @@ label {
     }
   }
 }
+
+.leaflet-marker-icon {
+  .svg-icon-svg {
+    path {
+      fill: $zp_pink !important;
+    }
+  }
+}
