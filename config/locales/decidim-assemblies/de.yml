@@ -22,7 +22,7 @@ de:
         decidim_assemblies_type_id: Werkraum-Typ
         decidim_scope_id: Thema
         description: Beschreibung
-        developer_group: Promoter:innen-Gruppe
+        developer_group: Kontakt
         domain: Domain
         duration: Endet am
         facebook: Facebook
@@ -34,7 +34,7 @@ de:
         internal_organisation: Interne Organisation
         announcement: Ankündigung
         is_transparent: sichtbar
-        local_area: Organisationsbereich
+        local_area: Förderung
         meta_scope: Bereichs-Metadaten
         parent_id: Haupt-Werkraum
         participatory_processes_ids: Ähnliche Prozesse
@@ -376,7 +376,7 @@ de:
         composition: Zusammensetzung
         created_by: Erstellt von
         creation_date: Erstellt am
-        developer_group: Promoter:innen-Gruppe
+        developer_group: Kontakt
         duration: Endet am
         included_at: Hinzugefügt am
         indefinite_duration: Unbestimmt
@@ -384,7 +384,7 @@ de:
         is_transparent:
           'false': nicht sichtbar
           'true': sichtbar
-        local_area: Organisationsbereich
+        local_area: Förderung
         participatory_scope: Was wird entschieden?
         participatory_structure: Wie wird entschieden?
         private_space: Dies ist ein privater Werkraum
