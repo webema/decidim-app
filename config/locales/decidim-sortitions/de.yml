@@ -4,10 +4,10 @@ de:
     attributes:
       sortition:
         additional_info: Sortierinformationen
-        decidim_category_id: Kategorien der Vorschläge, in denen du die Auslosung anwenden möchtest
-        decidim_proposals_component_id: Vorschläge festgelegt
+        decidim_category_id: Kategorien der Beiträge, in denen du die Auslosung anwenden möchtest
+        decidim_proposals_component_id: Beiträge festgelegt
         dice: Ergebnis des Würfelwurfs. Wirf einen 6-seitigen Würfel oder suche nach einem anderen zufälligen Weg, um eine Zahl von 1 bis 6 zu erzeugen, und gib die resultierende Zahl vor einigen Zeugen ein. Dies trägt zur Qualität und zur Gewährleistung der Zufälligkeit des Ergebnisses bei
-        target_items: Anzahl der auszuwählenden Vorschläge (gibt die Anzahl der Vorschläge an, die du auswählen möchtest, indem du viele der Vorschläge auswählst, die du zuvor ausgewählt hast)
+        target_items: Anzahl der auszuwählenden Beiträge (gibt die Anzahl der Beiträge an, die du auswählen möchtest, indem du viele der Beiträge auswählst, die du zuvor ausgewählt hast)
         title: Titel
         witnesses: Zeugen
     models:
@@ -46,7 +46,7 @@ de:
             fields:
               category: Kategorie
               created_at: Erstellungsdatum
-              decidim_proposals_component: Vorschlagskomponente
+              decidim_proposals_component: Beitragskomponente
               dice: Würfel
               reference: Referenz
               request_timestamp: Zeit zeichnen
@@ -72,15 +72,15 @@ de:
             update: Aktualisieren
           form:
             all_categories: Alle Kategorien
-            select_proposal_component: Wähle die Vorschläge aus
-            title: Neue Sortierung für Vorschläge
+            select_proposal_component: Wähle die Beiträge aus
+            title: Neue Sortierung für Beiträge
           index:
             title: Sortierungen
           new:
             create: Erstellen
             title: Neue Sortierung
           show:
-            selected_proposals: Vorschläge für die Auslosung ausgewählt
+            selected_proposals: Beiträge für die Auslosung ausgewählt
           update:
             error: Beim Aktualisieren der Sortierung ist ein Fehler aufgetreten.
             success: Die Sortierung wurde erfolgreich aktualisiert
@@ -92,8 +92,8 @@ de:
       sortitions:
         count:
           proposals_count:
-            one: 1 Vorschlag
-            other: "%{count} Vorschläge"
+            one: 1 Beitrag
+            other: "%{count} Beiträge"
         filters:
           active: Aktiv
           all: Alle
@@ -108,35 +108,35 @@ de:
           filter_by: Filtern nach
           unfold: Entfalten
         linked_sortitions:
-          selected_proposals: Ausgewählte Vorschläge
+          selected_proposals: Ausgewählte Beiträge
         orders:
           label: 'Sortieren nach:'
           random: Zufällig
           recent: Kürzlich hinzugefügt
         results_count:
           count:
-            one: ausgewählter Vorschlag
-            other: ausgewählte Vorschläge
+            one: ausgewählter Beitrag
+            other: ausgewählte Beiträge
         show:
           algorithm: Sortieralgorithmuscode
           any_category: aus allen Kategorien
           back: Zurück zur Liste
           cancelled: Stornierte Sortierung
-          candidate_proposal_ids: Reihenfolge der Sortierungsvorschläge und IDs
-          candidate_proposals_info: 'Die Sortierung wurde unter den folgenden Vorschlägen (%{category_label}) durchgeführt, mit den folgenden IDs (in Fettschrift die ausgewählten Vorschläge)  '
+          candidate_proposal_ids: Reihenfolge der SortierungsBeiträge und IDs
+          candidate_proposals_info: 'Die Sortierung wurde unter den folgenden Beiträgen (%{category_label}) durchgeführt, mit den folgenden IDs (in Fettschrift die ausgewählten Beiträge)  '
           category: aus der %{category} Kategorie
           dice_result: "(1) Würfelergebnis"
-          introduction: 'Diese Seite enthält die Ergebnisse der Sortierung %{reference}. Durch diese Sortierung wurde %{target_items} Anzahl von Ergebnissen zufällig und mit einer gleichen Wahrscheinlichkeitsverteilung aus dem unten angezeigten Satz von Vorschlägen ausgewählt. Zusammen mit den Ergebnissen bieten die auf dieser Seite angezeigten Informationen alle Informationen, die erforderlich sind, um die Garantien zu maximieren und die Ergebnisse zu reproduzieren. Der Schlüssel zur Qualität dieser Sortierung ist die doppelte Zufälligkeit, die durch das Rollen eines Würfels (verifiziert durch Zeugen) und den genauen Zeitpunkt der Sortierung bereitgestellt wird, der eine Eingabe für einen Algorithmus liefert, der eine zufällige Auswahl erzeugt. Der Zeitsaat für die Sortierung ist so genau (Sekunden), dass es unmöglich ist, von Menschen kontrolliert zu werden, wodurch eine doppelte "unkontrollierbare" Eingabe bereitgestellt wird, um ein faires Ergebnis zu garantieren.  '
+          introduction: 'Diese Seite enthält die Ergebnisse der Sortierung %{reference}. Durch diese Sortierung wurde %{target_items} Anzahl von Ergebnissen zufällig und mit einer gleichen Wahrscheinlichkeitsverteilung aus dem unten angezeigten Satz von Beiträgen ausgewählt. Zusammen mit den Ergebnissen bieten die auf dieser Seite angezeigten Informationen alle Informationen, die erforderlich sind, um die Garantien zu maximieren und die Ergebnisse zu reproduzieren. Der Schlüssel zur Qualität dieser Sortierung ist die doppelte Zufälligkeit, die durch das Rollen eines Würfels (verifiziert durch Zeugen) und den genauen Zeitpunkt der Sortierung bereitgestellt wird, der eine Eingabe für einen Algorithmus liefert, der eine zufällige Auswahl erzeugt. Der Zeitsaat für die Sortierung ist so genau (Sekunden), dass es unmöglich ist, von Menschen kontrolliert zu werden, wodurch eine doppelte "unkontrollierbare" Eingabe bereitgestellt wird, um ein faires Ergebnis zu garantieren.  '
           mathematical_result: Ergebnis (1) x (2)
-          proposals_selected_by_sortition: Vorschläge nach der Sortierung ausgewählt
+          proposals_selected_by_sortition: Beiträge nach der Sortierung ausgewählt
           sortition_reproducibility_details: Einzelheiten der Sortierreproduzierbarkeit
           time_seed: "(2) Zeit Samen"
           witnesses: Zeugen
         sortition:
           random_seed: Zufallssamen
           selected_proposals:
-            one: Vorschlag ausgewählt
-            other: Vorschläge ausgewählt
+            one: Beitrag ausgewählt
+            other: Beiträge ausgewählt
           view: Anzeigen
         sortition_author:
           deleted: Gelöschter Benutzer:innen

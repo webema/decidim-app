@@ -13,7 +13,7 @@ de:
         closing_report: Protokoll
         closing_visible: Ist sichtbar
         contributions_count: Anzahl der Beiträge
-        proposal_ids: Während des Termins entstandene Vorschläge
+        proposal_ids: Während des Termins entstandene Beiträge
         video_url: Video-URL
       meeting:
         address: Adresse
@@ -205,8 +205,8 @@ de:
         edit: Bearbeiten
         invalid_destroy:
           proposals_count:
-            one: 'Der Termin kann nicht gelöscht werden, da %{count} Vorschlag mit diesem verbunden ist:'
-            other: 'Der Termin kann nicht gelöscht werden, da %{count} Vorschläge mit diesem verbunden sind:'
+            one: 'Der Termin kann nicht gelöscht werden, da %{count} Beitrag mit diesem verbunden ist:'
+            other: 'Der Termin kann nicht gelöscht werden, da %{count} Beiträge mit diesem verbunden sind:'
         manage_poll: Umfrage verwalten
         new: Neuer Termin
         preview: Vorschau
@@ -292,8 +292,8 @@ de:
           destroy:
             invalid:
               proposals_count:
-                one: Der Termin kann nicht gelöscht werden, da %{count} Vorschlag mit diesem verbunden ist
-                other: Der Termin kann nicht gelöscht werden, da %{count} Vorschläge mit diesem verbunden sind
+                one: Der Termin kann nicht gelöscht werden, da %{count} Beitrag mit diesem verbunden ist
+                other: Der Termin kann nicht gelöscht werden, da %{count} Beiträge mit diesem verbunden sind
             success: Der Termin wurde erfolgreich gelöscht
           edit:
             title: Termin bearbeiten
@@ -641,7 +641,7 @@ de:
         meeting_result: 'Ähnliche Ergebnisse:'
         result_meeting: 'Ähnliche Termine:'
       proposals_from_meeting:
-        meeting_proposal: 'Ähnliche Vorschläge:'
+        meeting_proposal: 'Ähnliche Beiträge:'
         proposal_meeting: 'Ähnliche Termine:'
     statistics:
       meetings_count: Termine
