@@ -11,12 +11,12 @@ de:
         copy_steps: Phasen kopieren
         decidim_area_id: Bereich
         description: Beschreibung
-        developer_group: Promoter:innen-Gruppe
+        developer_group: Kontakt
         domain: Domäne
         end_date: Enddatum
         hashtag: Hashtag
         hero_image: Hauptbild
-        local_area: Organisationsbereich
+        local_area: Förderung
         meta_scope: Bereichs-Metadaten
         participatory_process_group_id: Prozess-Gruppe
         participatory_scope: Was wird entschieden?
@@ -44,7 +44,7 @@ de:
         group_url: Website
         hashtag: Hashtag
         hero_image: Bild
-        local_area: Organisationsbereich
+        local_area: Förderung
         meta_scope: Informationen zum Bereich
         participatory_process_ids: Ähnliche Prozesse
         participatory_scope: Was wird entschieden
@@ -481,9 +481,9 @@ de:
         area: Bereich
         belongs_to_group: Dieser Prozess gehört zu
         dates: Daten
-        developer_group: Promoter:innen-Gruppe
+        developer_group: Kontakt
         end_date: Enddatum
-        local_area: Organisationsbereich
+        local_area: Förderung
         participatory_scope: Was wird entschieden?
         participatory_structure: Wie wird es entschieden
         private_space: Dies ist eine privater Prozess
