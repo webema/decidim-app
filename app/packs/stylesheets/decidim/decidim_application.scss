@@ -683,7 +683,6 @@ ul.card-data {
   }
 }
 
-
 .read-more-content,
 .read-more,
 .toggler {
@@ -693,6 +692,11 @@ ul.card-data {
   &.expanded {
     display: block;
     .read-more {
+      display: block;
+    }
+  }
+}
+
 .tags {
   a:hover {
     text-decoration: none;
