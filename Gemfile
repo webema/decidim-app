@@ -6,7 +6,7 @@ source 'https://nexus.devops-e.de/repository/rubygems'
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = '0.27.1'.freeze
+DECIDIM_VERSION = '0.27.2'.freeze
 
 gem 'decidim', DECIDIM_VERSION
 # gem 'decidim-initiatives', DECIDIM_VERSION
@@ -31,12 +31,12 @@ gem 'haml'
 # Hack?
 gem 'rexml', '~> 3.2.5'
 
-
-
 gem 'dalli'
 
 gem "sentry-ruby"
 gem "sentry-rails"
+
+gem "auto_strip_attributes", "~> 2.6"
 
 group :development, :test do
   gem 'byebug', '~> 11.0', platform: :mri

@@ -15,7 +15,9 @@
         .card__author
           = l(@blog_post.created_at, format: :short)
 
-      = decidim_sanitize_editor_admin(@blog_post.body.html_safe)
+        = decidim_sanitize_editor_admin(@blog_post.body.html_safe)
+
+        = t(@blog_post.published.to_s, scope: 'ema.blog_posts.admin.show.published')
 
   .button--double
     = link_to t('back', scope: 'ema.blog_posts.admin.show'), posts_path, class: 'button'

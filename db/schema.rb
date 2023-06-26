@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_17_142611) do
+ActiveRecord::Schema.define(version: 2023_04_26_135224) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -674,6 +674,12 @@ ActiveRecord::Schema.define(version: 2022_10_17_142611) do
     t.integer "cached_weighted_total", default: 0
     t.float "cached_weighted_average", default: 0.0
     t.jsonb "source"
+    t.jsonb "problem"
+    t.jsonb "steps"
+    t.jsonb "obstacles"
+    t.jsonb "staff"
+    t.jsonb "info"
+    t.jsonb "miscellaneous"
     t.index "md5((description)::text)", name: "decidim_ideas_description_search"
     t.index ["answered_at"], name: "index_decidim_ideas_on_answered_at"
     t.index ["decidim_area_id"], name: "index_decidim_ideas_on_decidim_area_id"
@@ -711,6 +717,7 @@ ActiveRecord::Schema.define(version: 2022_10_17_142611) do
     t.boolean "only_global_scope_enabled", default: false, null: false
     t.boolean "attachments_enabled", default: false, null: false
     t.boolean "comments_enabled", default: true, null: false
+    t.boolean "active", default: true
     t.index ["decidim_organization_id"], name: "index_decidim_idea_types_on_decidim_organization_id"
   end
 
@@ -1663,7 +1670,34 @@ ActiveRecord::Schema.define(version: 2022_10_17_142611) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "hide_hero_image", default: false
+    t.boolean "published", default: true
+    t.integer "comments_count", default: 0, null: false
     t.index ["decidim_organization_id"], name: "index_ema_blog_posts_on_decidim_organization_id"
+  end
+
+  create_table "ema_sent_emails", force: :cascade do |t|
+    t.string "mailer"
+    t.string "action"
+    t.string "mailer_action"
+    t.string "to"
+    t.string "from"
+    t.string "subject"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "ema_surveys", force: :cascade do |t|
+    t.string "title"
+    t.text "intro"
+    t.text "outro"
+    t.string "url"
+    t.boolean "active", default: false
+    t.bigint "decidim_organization_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "accept_button_text"
+    t.string "decline_button_text"
+    t.index ["decidim_organization_id"], name: "index_ema_surveys_on_decidim_organization_id"
   end
 
   create_table "oauth_access_grants", force: :cascade do |t|

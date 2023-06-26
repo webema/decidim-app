@@ -16,7 +16,7 @@ module Decidim
         end
 
         def recent_blog_posts
-          Ema::BlogPost.where(organization: current_organization).order(created_at: :desc).limit(4)
+          Ema::BlogPost.published.where(organization: current_organization).order(created_at: :desc).limit(4)
         end
 
         # def i18n_scope

@@ -9,6 +9,7 @@ data:
   QUEUE_ADAPTER: sidekiq
   STORAGE_PROVIDER: s3
   STORAGE_CDN_HOST: https://decidim-app-ema.fra1.cdn.digitaloceanspaces.com
+  PHOTON_API_KEY: 314y4va5zi
 metadata:
   name: decidim-app-production-config
   namespace: decidim
@@ -24,6 +25,7 @@ data:
   QUEUE_ADAPTER: sidekiq
   STORAGE_PROVIDER: s3
   STORAGE_CDN_HOST: https://decidim-app-ema-staging.fra1.cdn.digitaloceanspaces.com
+  PHOTON_API_KEY: 314y4va5zi
 metadata:
   name: decidim-app-staging-config
   namespace: decidim

@@ -10,6 +10,13 @@ $zp_gray: #DEE2E6;
 $zp_gray_medium: lighten($zp_gray, 3%);
 $zp_gray_light: lighten($zp_gray, 7%);
 
+$zp_blue: #00b5e5;
+$zp_purple: #551285;
+$zp_pink: #de007e;
+$zp_green: #76b82a;
+$zp_yellow: #ffe900;
+
+
 $light_gray: #f4f4f4;
 
 @import './zukunftsprozess/startpage';
@@ -19,6 +26,15 @@ $light_gray: #f4f4f4;
 @import './zukunftsprozess/processes';
 @import './zukunftsprozess/lockup';
 @import './zukunftsprozess/static_pages';
+@import './zukunftsprozess/surveys';
+
+@import 'motion-ui/dist/motion-ui';
+
+:root {
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+}
 
 html, body {
   text-transform: none !important;
@@ -677,7 +693,86 @@ ul.card-data {
   &.expanded {
     display: block;
     .read-more {
+.tags {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+button.ql-video {
+  display: none !important;
+}
+
+.ql-toolbar {
+  .ql-formats:last-child {
+    display: none !important;
+  }
+
+  .ql-formats {
+    margin-right: .5rem !important;
+
+    button {
+      svg {
+        height: 16px;
+      }
+
+      padding-right: .25rem !important;
+      padding-left: .25rem !important;
+    }
+  }
+}
+
+
+label {
+  line-height: 1.5;
+}
+
+
+.card__content.address {
+  padding: 0;
+
+  .address__info {
+    display: block;
+    font-size: .9em;
+
+    .address__icon {
+      display: none;
+    }
+
+    .address__details {
+      margin: .5rem;
+    }
+  }
+
+  .address__map {
+    width: 50%;
+
+    .static-map {
+      width: 100%;
+      height: 200px;
+
+      .svg-icon-svg {
+        path {
+          fill: $zp_pink !important;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(small only) {
+    display: block;
+
+    .address__map, .address__info {
+      width: 100%;
       display: block;
+    }
+  }
+}
+
+.leaflet-marker-icon {
+  .svg-icon-svg {
+    path {
+      fill: $zp_pink !important;
     }
   }
 }

@@ -537,7 +537,7 @@ de:
           sign_up: Registrieren
           sign_up_as:
             legend: Registrieren als
-          subtitle: Registriere dich, um Inspirationen einzugeben, Werkräume und konKreationen mitzugestalten und abzustimmen.
+          subtitle: Registriere dich, um Praxisbeispiele einzugeben, Werkräume und Prozesse mitzugestalten und abzustimmen.
           terms: Nutzungsbedingungen
           tos_agreement: Mit der Anmeldung stimmst du den %{link} zu.
           tos_title: Nutzungsbedingungen
@@ -770,7 +770,7 @@ de:
         dummy_resource: Dummy-Ressourcen
         meeting: Termine
         project: Projekte
-        proposal: Vorschläge
+        proposal: Beiträge
         result: Ergebnisse
     fingerprint:
       check: Fingerabdruck überprüfen
@@ -963,7 +963,7 @@ de:
     help:
       main_topic:
         default_page:
-          content: "<p>In %{organization} kannst du durch die Felder, die du im oberen Menü siehst, an verschiedenen Themen teilnehmen: konKreationen, Werkräume, Inspirationen.</p> <p>In jedem Bereich findest du verschiedene Optionen für die Teilnahme: Vorschläge machen - einzeln oder mit anderen -, an Debatten teilnehmen, Prioritäten für umzusetzende Projekte setzen, persönliche Treffen und andere Veranstaltungen besuchen.</p>\n"
+          content: "<p>In %{organization} kannst du durch die Felder, die du im oberen Menü siehst, an verschiedenen Themen teilnehmen: Prozesse, Werkräume, Praxisbeispiele.</p> <p>In jedem Bereich findest du verschiedene Optionen für die Teilnahme: Beiträge erstellen - einzeln oder mit anderen -, an Debatten teilnehmen, Prioritäten für umzusetzende Projekte setzen, persönliche Treffen und andere Veranstaltungen besuchen.</p>\n"
           title: Was kann ich in %{organization} tun?
         description: Lese mehr über %{organization}
         title: Allgemeine Hilfe
@@ -989,8 +989,10 @@ de:
         create_with_space: "%{user_name} hat %{resource_name} in %{space_name} erstellt"
         delete: "%{user_name} hat %{resource_name} gelöscht"
         delete_with_space: "%{user_name} hat %{resource_name} in %{space_name} gelöscht"
+        publish_with_space: "%{user_name} hat %{resource_name} in %{space_name} veröffentlicht"
         unknown_action: "%{user_name} hat eine Aktion an %{resource_name} ausgeführt"
         unknown_action_with_space: "%{user_name} hat eine Aktion an %{resource_name} in %{space_name} ausgeführt"
+        unpublish_with_space: "%{user_name} hat %{resource_name} in %{space_name} depubliziert"
         update: "%{user_name} hat %{resource_name} aktualisiert"
         update_permissions_with_space: "%{user_name} hat die Berechtigungen für %{resource_name} in %{space_name} aktualisiert"
         update_with_space: "%{user_name} hat %{resource_name} in %{space_name} aktualisiert"
@@ -1105,7 +1107,7 @@ de:
       download:
         csv: Daten herunterladen (CSV)
       followers:
-        description: Anzahl der Benutzer:innen, die dieser konKreation folgen
+        description: Anzahl der Benutzer:innen, die diesem Prozess folgen
         object: Follows
         title: Follows
       participants:
@@ -1228,8 +1230,8 @@ de:
           meetings: Termine
           meetings_explanation: Finde heraus, wo und wann du an öffentlichen Terminen teilnehmen kannst.
           more_info: Mehr Informationen
-          proposals: Vorschläge
-          proposals_explanation: Mache Vorschläge, unterstütze bestehende Vorschläge und fördere die Änderungen, die du gut findest.
+          proposals: Beiträge
+          proposals_explanation: Erstelle Beiträge, unterstütze bestehende Beiträge und fördere die Änderungen, die du gut findest.
         footer_sub_hero:
           footer_sub_hero_body: Lasst uns eine offenere, transparentere und kollaborativere Gesellschaft aufbauen.<br /> Beitreten, teilnehmen und entscheiden.
           footer_sub_hero_headline: Willkommen auf der Beteiligungsplattform %{organization}.
@@ -1543,7 +1545,7 @@ de:
       show:
         version_index: Version %{index}
     welcome_notification:
-      default_body: <p>Hallo {{name}}, danke für deine Anmeldung bei {{organization}} und herzlich willkommen!</p><ul><li>Wenn du dir einen Überblick verschaffen möchtest, was du hier tun kannst, sieh dir den Abschnitt <a href="{{help_url}}">Hilfe</a> .</li><li>Sobald du diesen gelesen hast, erhältst du dein erstes Abzeichen. Hier findest du eine <a href="{{badges_url}}">Liste aller Abzeichen</a> die du erhalten kannst, wenn du bei {{organization}}</li><li>mitmachst. Zu guter Letzt, vernetze dich mit anderen Benutzer:innen! Mach Vorschläge, kommentiere und diskutiere, wie Kirche Zukunft sein kann. Verwende überzeugende Argumente, höre zu und sei offen für die Argumente anderer. Äußere deine Ideen auf konkrete Weise, antworte geduldig und entschlossen. Verteidige deine Ideen und schließe dich den Ideen anderer an.
+      default_body: <p>Hallo {{name}}, danke für deine Anmeldung bei {{organization}} und herzlich willkommen!</p><ul><li>Wenn du dir einen Überblick verschaffen möchtest, was du hier tun kannst, sieh dir den Abschnitt <a href="{{help_url}}">Hilfe</a> .</li><li>Sobald du diesen gelesen hast, erhältst du dein erstes Abzeichen. Hier findest du eine <a href="{{badges_url}}">Liste aller Abzeichen</a> die du erhalten kannst, wenn du bei {{organization}}</li><li>mitmachst. Zu guter Letzt, vernetze dich mit anderen Benutzer:innen! Erstelle Beiträge, kommentiere und diskutiere, wie Kirche Zukunft sein kann. Verwende überzeugende Argumente, höre zu und sei offen für die Argumente anderer. Äußere deine Ideen auf konkrete Weise, antworte geduldig und entschlossen. Verteidige deine Ideen und schließe dich den Ideen anderer an.
       default_subject: Danke, dass du {{organization}} beigetreten bist!
     wizard_step_form:
       wizard_aside:
@@ -1612,7 +1614,7 @@ Du bist nur noch einen Klick entfernt, dein Konto freizuschalten. Bestätige jet
       invite_collaborator:
         subject: Du wurdest eingeladen, bei %{organization} mitzumachen
       invite_private_user:
-        subject: Du wurdest zu einer privaten konKreation (einem Beteiligungsprozess) auf %{organization} eingeladen
+        subject: Du wurdest zu einem privaten Prozess (einem Beteiligungsprozess) auf %{organization} eingeladen
       organization_admin_invitation_instructions:
         subject: Du wurdest eingeladen, %{organization} zu administrieren
       password_change:

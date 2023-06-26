@@ -1,4 +1,19 @@
-FROM nexus.devops-e.de:8090/ema/docker-rails:3.0
+FROM ruby:3.0.4
+
+ENV LANG C.UTF-8
+
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - \
+    && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
+    && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
+    && apt-get update \
+    && apt-get install -y \
+      build-essential \
+      imagemagick \
+      libpq-dev \
+      pngquant \
+      yarn
+
+RUN gem install bundler -v "2.3.18"
 
 RUN apt-get install libicu-dev
 

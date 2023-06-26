@@ -15,7 +15,7 @@
       </div>
       <div class="column">
         <% if recent_blog_post.present? %>
-          <%= link_to post_path(recent_blog_post), class: 'blog-post' do %>
+          <%= link_to Ema::Blog::Engine.routes.url_helpers.ema_blog_post_path(recent_blog_post), class: 'blog-post' do %>
             <% if recent_blog_post.hero_image.attached? %>
               <%= image_tag recent_blog_post.attached_uploader(:hero_image).variant_path :medium %>
             <% end %>
@@ -36,24 +36,24 @@
     <div class="row small-up-1 medium-up-3 buttons">
         <div class="column">
           <a href="/ideas" class="startpage_primary_button ideas">
-            Inspirationen
+            Praxisbeispiele
 
-            <div class="small">Finde Praxisbeispiele und trage Ideen bei.</div>
+            <div class="small">Lass dich von den Erfahrungen anderer inspirieren.</div>
           </a>
         </div>
         <div class="column">
           <a href="/assemblies" class="startpage_primary_button assemblies">
             Werkräume
 
-            <div class="small">Bearbeite Themen mit anderen.</div>
+            <div class="small">Entdecke laufende Initiativen.</div>
           </a>
 
         </div>
         <div class="column">
           <a href="/processes" class="startpage_primary_button processes">
-            konKreationen
+            Prozesse
 
-            <div class="small">Entwickle Lösungen und bewirke Veränderungen.</div>
+            <div class="small">Informiere dich über laufende Veränderungsprozesse.</div>
           </a>
         </div>
       </div>

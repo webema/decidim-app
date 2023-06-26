@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def extended_navigation_bar(items, max_items: 5)
+  def extended_navigation_bar(items, max_items: 6)
     return unless items.count > 1
 
     items.prepend({
@@ -25,6 +25,20 @@ module ApplicationHelper
       decidim_assemblies.assemblies_path
     when Decidim::ParticipatoryProcess
       decidim_participatory_processes.participatory_processes_path
+    end
+  end
+
+  def banner_image_path(process)
+    process.attached_uploader(:hero_image)&.variant_path(:large) || process.type.attached_uploader(:banner_image)&.path
+  end
+
+  def ema_blog_engine
+    @@ema_blog_engine_url_helpers ||= Ema::Blog::Engine.routes.url_helpers
+  end
+
+  def required_label(text)
+    text + tag.span(data: { tooltip: true, disable_hover: false, keep_on_hover: true, toggle: 'tos-tooltip', resize: 'tos-tooltip', yeti_box: 'tos-tooltip' }, class: 'label-required has-tip', aria: { describedby: 'tos-tooltip' }, title: 'Erforderlich') do
+      tag.span('*', aria: { hidden: true }) + tag.span('erforderlich', class: 'show-for-sr')
     end
   end
 end

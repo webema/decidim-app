@@ -17,6 +17,13 @@
           .field
             = f.upload :hero_image
 
+          .field
+            = f.check_box :hide_hero_image
+
+        .row.column
+          .field
+            = f.check_box :published
+
   .button--double
     = f.submit t('save', scope: 'ema.blog_posts.admin.new'), class: 'button', data: { disable_with: true }
     = link_to t('cancel', scope: 'ema.blog_posts.admin.new'), posts_path, class: 'button'

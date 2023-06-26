@@ -295,6 +295,7 @@
       flex-direction: column;
       width: 100%;
       margin: 1rem 0;
+      height: 130px;
 
       @include breakpoint(small) {
         padding-top: 2rem !important;
