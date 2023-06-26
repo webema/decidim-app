@@ -30,6 +30,12 @@ $light_gray: #f4f4f4;
 
 @import 'motion-ui/dist/motion-ui';
 
+:root {
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+}
+
 html, body {
   text-transform: none !important;
 }
