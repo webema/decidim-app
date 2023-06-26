@@ -679,7 +679,7 @@ ActiveRecord::Schema.define(version: 2023_04_26_135224) do
     t.jsonb "obstacles"
     t.jsonb "staff"
     t.jsonb "info"
-    t.text "miscellaneous"
+    t.jsonb "miscellaneous"
     t.index "md5((description)::text)", name: "decidim_ideas_description_search"
     t.index ["answered_at"], name: "index_decidim_ideas_on_answered_at"
     t.index ["decidim_area_id"], name: "index_decidim_ideas_on_decidim_area_id"
