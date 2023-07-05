@@ -2,14 +2,18 @@
   "name": "decidim_app",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-methods": "^7.18.6",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@decidim/browserslist-config": "^0.27.3",
     "@decidim/core": "^0.27.3",
     "@decidim/elections": "^0.27.3",
     "@decidim/webpacker": "^0.26.7",
     "@fontsource/literata": "^4.5.10",
     "@fontsource/open-sans": "^4.5.11",
+    "graphql-ws": "^5.14.0",
     "iframe-resizer": "^4.3.2",
-    "quill-html-edit-button": "^2.2.12"
+    "quill-html-edit-button": "^2.2.12",
+    "workbox-webpack-plugin": "^7.0.0"
   },
   "version": "0.1.0",
   "devDependencies": {
