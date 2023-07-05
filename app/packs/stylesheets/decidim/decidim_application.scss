@@ -683,6 +683,20 @@ ul.card-data {
   }
 }
 
+.read-more-content,
+.read-more,
+.toggler {
+  display: none;
+  margin-top: 1rem;
+
+  &.expanded {
+    display: block;
+    .read-more {
+      display: block;
+    }
+  }
+}
+
 .tags {
   a:hover {
     text-decoration: none;

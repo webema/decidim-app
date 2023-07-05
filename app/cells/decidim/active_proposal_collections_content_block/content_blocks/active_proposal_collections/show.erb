@@ -1,0 +1,21 @@
+<section class="wrapper-home home-section proposals">
+  <div class="row" id="assemblies-with-active-proposals">
+    <h3 class="section-heading"><%= t('title', scope: 'decidim.active_proposal_collections_content_block.content_blocks.active_proposal_collections') %></h3>
+    <div class="row collapse">
+      <div class="row small-up-1 medium-up-2 large-up-3 card-grid">
+        <% active_proposals_components.each do |component| %>
+          <div class="column">
+            <div class="card-wrapper">
+              <%= link_to Decidim::Assemblies::Engine.routes.url_helpers.decidim_assembly_proposals_path(component.participatory_space, component), class: "card card__link", style: "background-image:url('#{component.participatory_space.attached_uploader(:hero_image).path}')" do %>
+                <div class="teaser">
+                  <%= translated_attribute(component.settings.announcement) %>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <a class="button expanded hollow button--sc home-section__cta" title="Link zur konKreationen-Seite die alle Werkräume anzeigt" href="/processes">Alle Werkräume anzeigen</a>
+    </div>
+  </div>
+</section>

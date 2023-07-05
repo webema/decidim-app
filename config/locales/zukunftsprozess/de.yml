@@ -4,3 +4,8 @@ de:
       content_blocks:
         startpage:
           name: Zukunftsprozess
+    active_proposal_collections_content_block:
+      content_blocks:
+        active_proposal_collections:
+          name: Aktive Vorschlagssammlungen
+          title: Hier sammeln Werkräume deine Vorschläge
