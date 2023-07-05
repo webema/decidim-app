@@ -16,7 +16,7 @@ module Decidim
         end
 
         def active_proposals_components
-          @active_proposals_components ||= Decidim::Component.where(participatory_space_id: public_assemblies_ids, participatory_space_type: 'Decidim::Assembly' ).where( manifest_name: 'proposals' ).where.not( published_at: nil )
+          @active_proposals_components ||= Decidim::Component.where(participatory_space_id: public_assemblies_ids, participatory_space_type: 'Decidim::Assembly' ).where( manifest_name: 'proposals' ).where.not( published_at: nil ).where("(settings->'default_step'->>'creation_enabled')::boolean = true")
         end
 
         private
