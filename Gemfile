@@ -6,7 +6,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = '0.27.3'.freeze
+DECIDIM_VERSION = '0.27.4'.freeze
 
 gem 'decidim', DECIDIM_VERSION
 # gem 'decidim-initiatives', DECIDIM_VERSION
